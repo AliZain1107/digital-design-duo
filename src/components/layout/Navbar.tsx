@@ -17,7 +17,8 @@ const Navbar: React.FC = () => {
         <div className="self-stretch flex min-h-11 flex-col items-stretch text-base text-[rgba(89,50,134,1)] font-medium whitespace-nowrap tracking-[-0.16px] leading-[1.2] justify-center w-[100px] my-auto">
           <Link
             to="/pricing"
-            className="relative flex max-w-full w-[100px] flex-col overflow-hidden justify-center flex-1 px-6 py-3 rounded-lg max-md:px-5"
+            className="relative flex max-w-full w-[100px] flex-col overflow-hidden justify-center flex-1 px-6 py-3 rounded-lg max-md:px-5 transition-all duration-300 hover:bg-purple-50 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-200"
+            aria-label="Go to Pricing"
           >
             <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
             <div className="self-center z-0 w-full">
@@ -29,7 +30,8 @@ const Navbar: React.FC = () => {
         <div className="self-stretch flex min-h-11 flex-col items-stretch text-base text-[rgba(89,50,134,1)] font-medium whitespace-nowrap tracking-[-0.16px] leading-[1.2] justify-center w-[82px] my-auto">
           <Link
             to="/blog"
-            className="relative flex w-[82px] flex-col overflow-hidden justify-center flex-1 px-6 py-3 rounded-lg max-md:px-5"
+            className="relative flex w-[82px] flex-col overflow-hidden justify-center flex-1 px-6 py-3 rounded-lg max-md:px-5 transition-all duration-300 hover:bg-purple-50 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-200"
+            aria-label="Go to Blog"
           >
             <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
             <div className="self-center z-0 w-full">
