@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -95,7 +94,6 @@
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
   }
@@ -114,4 +112,14 @@
 
 .animate-slide-in-right {
   animation: slide-in-right 1s ease-out forwards;
+}
+
+/* Add smooth transition for carousel items */
+.embla__slide {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
 }
