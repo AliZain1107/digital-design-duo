@@ -12,10 +12,12 @@ import Stats from "@/components/home/Stats";
 import Testimonials from "@/components/home/Testimonials";
 import BlogSection from "@/components/home/BlogSection";
 import FAQ from "@/components/home/FAQ";
+import CursorImageFollow from "@/components/home/CursorImageFollow";
 
 const Index: React.FC = () => {
   return (
     <div className="bg-white flex min-h-[992px] flex-col items-center">
+      <CursorImageFollow />
       <div className="flex w-full flex-col items-stretch max-md:max-w-full">
         <Navbar />
         <Hero />
