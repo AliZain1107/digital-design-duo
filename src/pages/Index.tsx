@@ -1,11 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/home/Hero";
+import SupportedBy from "@/components/home/SupportedBy";
+import Showcase from "@/components/home/Showcase";
+import HowItWorks from "@/components/home/HowItWorks";
+import UnlockPotential from "@/components/home/UnlockPotential";
+import ArchitectureRevolution from "@/components/home/ArchitectureRevolution";
+import Stats from "@/components/home/Stats";
+import Testimonials from "@/components/home/Testimonials";
+import BlogSection from "@/components/home/BlogSection";
+import FAQ from "@/components/home/FAQ";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="bg-white flex min-h-[992px] flex-col items-center">
+      <div className="flex w-full flex-col items-stretch max-md:max-w-full">
+        <Navbar />
+        <Hero />
+        <SupportedBy />
+        <Showcase />
+        <HowItWorks />
+        <UnlockPotential />
+        <ArchitectureRevolution />
+        <Stats />
+        <Testimonials />
+        <BlogSection />
+        <FAQ />
+        <Footer />
       </div>
     </div>
   );
