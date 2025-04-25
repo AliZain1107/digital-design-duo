@@ -1,11 +1,7 @@
 
 import React from "react";
 
-interface ShowcaseScrollProps {
-  direction?: "left-to-right" | "right-to-left";
-}
-
-const ShowcaseScroll: React.FC<ShowcaseScrollProps> = ({ direction = "right-to-left" }) => {
+const ShowcaseScroll: React.FC = () => {
   const images = [
     "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
     "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
@@ -13,11 +9,9 @@ const ShowcaseScroll: React.FC<ShowcaseScrollProps> = ({ direction = "right-to-l
     "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
   ];
 
-  const animationClass = direction === "left-to-right" ? "animate-showcase-reverse" : "animate-showcase";
-
   return (
-    <div className="w-full overflow-hidden">
-      <div className={`flex ${animationClass}`}>
+    <div className="w-full overflow-hidden mt-8">
+      <div className="flex animate-showcase">
         {images.map((src, index) => (
           <img
             key={index}
