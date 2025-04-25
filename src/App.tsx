@@ -26,6 +26,7 @@ const App = () => (
           <Route path="/video-guide" element={<NotFound />} />
           <Route path="/terms" element={<NotFound />} />
           <Route path="/privacy" element={<NotFound />} />
+          <Route path="/get-started" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

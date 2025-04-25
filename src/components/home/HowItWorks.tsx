@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -72,7 +73,7 @@ const HowItWorks: React.FC = () => {
               </div>
               <Link
                 to="/get-started"
-                className="relative flex min-h-11 w-[198px] max-w-full flex-col overflow-hidden text-base text-white font-medium tracking-[-0.16px] leading-[1.2] justify-center mt-[33px] px-6 py-3 rounded-lg max-md:px-5"
+                className="relative flex min-h-11 w-[198px] max-w-full flex-col overflow-hidden text-base text-white font-medium tracking-[-0.16px] leading-[1.2] justify-center mt-[33px] px-6 py-3 rounded-lg max-md:px-5 transition-all duration-300 hover:opacity-90 hover:scale-105"
               >
                 <div className="bg-[rgba(250,111,64,1)] absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
                 <div className="self-center z-0 w-full">
