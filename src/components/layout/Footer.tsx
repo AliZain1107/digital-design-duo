@@ -63,80 +63,50 @@ const Footer: React.FC = () => {
           <div className="self-stretch z-0 text-base text-black font-normal w-[173px] my-auto">
             <div className="w-full">Copyright 2025 STYLY</div>
           </div>
+          
           <div className="self-stretch z-0 flex min-w-60 min-h-6 items-center gap-4 text-base text-black font-normal my-auto">
-            <div className="self-stretch flex min-h-6 flex-col items-stretch justify-center w-[93px] my-auto">
-              <Link
-                to="/video-guide"
-                className="flex w-[93px] items-center justify-center flex-1 h-full"
+            {["Video Guide", "Terms", "Privacy"].map((item) => (
+              <div 
+                key={item} 
+                className="self-stretch flex min-h-6 flex-col items-stretch justify-center my-auto"
               >
-                <div className="self-stretch w-[93px] my-auto">
-                  <div className="w-full">Video Guide</div>
-                </div>
-              </Link>
-            </div>
-            <div className="self-stretch flex min-h-6 flex-col items-stretch whitespace-nowrap justify-center w-[47px] my-auto">
-              <Link
-                to="/terms"
-                className="flex w-[47px] items-center justify-center flex-1 h-full"
-              >
-                <div className="self-stretch w-[47px] my-auto">
-                  <div className="w-full">Terms</div>
-                </div>
-              </Link>
-            </div>
-            <div className="self-stretch flex min-h-6 flex-col items-stretch whitespace-nowrap justify-center w-14 my-auto">
-              <Link
-                to="/privacy"
-                className="flex w-14 items-center justify-center flex-1 h-full"
-              >
-                <div className="self-stretch w-14 my-auto">
-                  <div className="w-full">Privacy</div>
-                </div>
-              </Link>
-            </div>
-            <button className="self-stretch flex flex-col items-stretch text-[rgba(51,51,51,1)] text-center justify-center w-[113px] my-auto">
+                <Link
+                  to={`/${item.toLowerCase().replace(" ", "-")}`}
+                  className="flex items-center justify-center flex-1 h-full transition-all duration-300 hover:text-[rgba(89,50,134,1)] hover:scale-105"
+                >
+                  <div className="self-stretch my-auto">
+                    <div className="w-full">{item}</div>
+                  </div>
+                </Link>
+              </div>
+            ))}
+            
+            <button className="self-stretch flex flex-col items-stretch text-[rgba(51,51,51,1)] text-center justify-center my-auto transition-all duration-300 hover:text-[rgba(89,50,134,1)] hover:scale-105">
               <div className="flex w-full items-stretch flex-1 h-full">
                 Cookie Settings
               </div>
             </button>
           </div>
+          
           <div className="self-stretch z-0 flex items-center gap-6 my-auto">
-            <a
-              href="https://twitter.com/stylyai"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/317bf886270ad921f9e34236d0e5c987e6b6b44f?placeholderIfAbsent=true"
-                alt="Twitter"
-                className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
-              />
-            </a>
-            <a
-              href="https://facebook.com/stylyai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="self-stretch flex min-h-[33px] flex-col items-stretch justify-center w-8 my-auto"
-            >
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f1363a9d29455e2269ec5d9ca13a13a5a82687e6?placeholderIfAbsent=true"
-                alt="Facebook"
-                className="aspect-[0.97] object-contain w-8 flex-1"
-              />
-            </a>
-            <a
-              href="https://instagram.com/stylyai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="self-stretch flex flex-col items-stretch justify-center w-[30px] my-auto"
-            >
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/4b59e1e015784fa9603fa900d8c80b5d1d01a1f8?placeholderIfAbsent=true"
-                alt="Instagram"
-                className="aspect-[1] object-contain w-[30px] flex-1"
-              />
-            </a>
+            {["Twitter", "Facebook", "Instagram"].map((social, index) => (
+              <a
+                key={social}
+                href={`https://${social.toLowerCase()}.com/stylyai`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-all duration-300 hover:scale-110 hover:opacity-80"
+              >
+                
+                <img
+                  src={`https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/317bf886270ad921f9e34236d0e5c987e6b6b44f?placeholderIfAbsent=true`}
+                  alt={social}
+                  className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+                />
+              </a>
+            ))}
           </div>
+
           <div className="absolute z-0 flex min-w-60 shrink-0 h-[66px] w-[1884px] border-[rgba(250,111,64,1)] border-t top-0 -bottom-px inset-x-0 max-md:max-w-full" />
         </div>
       </div>
