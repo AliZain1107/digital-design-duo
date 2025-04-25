@@ -8,11 +8,13 @@ const Footer: React.FC = () => {
         <div className="flex w-full text-base max-md:max-w-full">
           <div className="flex min-w-60 w-full gap-[40px_100px] justify-between flex-wrap flex-1 shrink basis-[0%] max-md:max-w-full">
             <div className="flex min-w-60 flex-col text-[rgba(89,50,134,1)] font-normal w-80">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/c0c4240138138be279efc42010c10acdb8bedd5d?placeholderIfAbsent=true"
-                alt="STYLY Logo"
-                className="aspect-[2.67] object-contain w-20"
-              />
+              <Link to="/" className="transition-transform duration-300 hover:scale-105">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/c0c4240138138be279efc42010c10acdb8bedd5d?placeholderIfAbsent=true"
+                  alt="STYLY Logo"
+                  className="aspect-[2.67] object-contain w-20"
+                />
+              </Link>
               <div className="self-stretch flex w-full items-center leading-6 justify-center mt-[15px]">
                 <div className="self-stretch min-w-60 w-full flex-1 shrink basis-[0%] my-auto">
                   <div className="w-full pb-px">
@@ -37,7 +39,7 @@ const Footer: React.FC = () => {
                 <div className="self-stretch flex items-center gap-3 my-auto">
                   <Link
                     to="/login"
-                    className="self-stretch relative flex min-h-11 flex-col overflow-hidden text-[rgba(89,50,134,1)] justify-center w-[94px] my-auto px-6 py-3 rounded-lg max-md:px-5"
+                    className="self-stretch relative flex min-h-11 flex-col overflow-hidden text-[rgba(89,50,134,1)] justify-center w-[94px] my-auto px-6 py-3 rounded-lg max-md:px-5 transition-all duration-300 hover:bg-purple-50 hover:scale-105"
                   >
                     <div className="bg-white absolute z-0 flex min-h-11 w-[94px] rounded-lg inset-0" />
                     <div className="self-center z-0 w-[46px]">
@@ -47,7 +49,7 @@ const Footer: React.FC = () => {
                   </Link>
                   <Link
                     to="/signup"
-                    className="self-stretch relative flex min-h-11 flex-col overflow-hidden text-white justify-center w-[107px] my-auto px-6 py-3 rounded-lg max-md:px-5"
+                    className="self-stretch relative flex min-h-11 flex-col overflow-hidden text-white justify-center w-[107px] my-auto px-6 py-3 rounded-lg max-md:px-5 transition-all duration-300 hover:opacity-90 hover:scale-105"
                   >
                     <div className="bg-[rgba(250,111,64,1)] absolute z-0 flex min-h-11 max-w-full w-[107px] rounded-lg inset-0" />
                     <div className="self-center z-0 w-[59px]">
@@ -89,21 +91,18 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="self-stretch z-0 flex items-center gap-6 my-auto">
-            {["Twitter", "Facebook", "Instagram"].map((social, index) => (
-              <a
+            {["Twitter", "Facebook", "Instagram"].map((social) => (
+              <Link
                 key={social}
-                href={`https://${social.toLowerCase()}.com/stylyai`}
-                target="_blank"
-                rel="noopener noreferrer"
+                to={`/social/${social.toLowerCase()}`}
                 className="transition-all duration-300 hover:scale-110 hover:opacity-80"
               >
-                
                 <img
                   src={`https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/317bf886270ad921f9e34236d0e5c987e6b6b44f?placeholderIfAbsent=true`}
                   alt={social}
                   className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
                 />
-              </a>
+              </Link>
             ))}
           </div>
 

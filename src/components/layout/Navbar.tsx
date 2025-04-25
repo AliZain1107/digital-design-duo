@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -5,7 +6,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="bg-white relative flex min-h-[100px] w-full items-center overflow-hidden justify-between px-20 py-[11px] max-md:max-w-full max-md:px-5">
       <div className="self-stretch z-0 flex min-w-60 min-h-[79px] items-center flex-1 shrink basis-[0%] my-auto max-md:max-w-full">
-        <Link to="/">
+        <Link to="/" className="transition-transform duration-300 hover:scale-105">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
             alt="STYLY Logo"
