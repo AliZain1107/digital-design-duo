@@ -5,12 +5,12 @@ const ShowcaseScroll: React.FC = () => {
   const images = [
     "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
     "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
-    "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png", // Additional duplicates for continuous scrolling
+    "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
     "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
   ];
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden mt-8">
       <div className="flex animate-showcase">
         {images.map((src, index) => (
           <img
