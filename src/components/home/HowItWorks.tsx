@@ -43,14 +43,15 @@ const HowItWorks: React.FC = () => {
             No Credit Card Required, No Commitments
           </div>
         </div>
-        {/* Right: Image/Slider */}
+        {/* Right: Animation */}
         <div className="flex-1 min-w-[320px] md:max-w-[600px] w-full md:pr-8 lg:pr-16 flex items-center justify-center">
-          {/* Replace the img below with your slider if needed */}
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/9f00f31607c1506a27ab5d6e228d3ee96291ac80?placeholderIfAbsent=true"
-            alt="Interior design process"
-            className="aspect-[1.02] object-contain w-full rounded-[20px]"
-          />
+          <div className="w-full overflow-hidden rounded-[20px] shadow-lg">
+            <img
+              src="/lovable-uploads/Dark Green and Light Green Clean Informative Marketing Tips Carousel Instagram Post (750 x 1115 px) (750 x 1115 px) (2).gif"
+              alt="Interior design transformation process"
+              className="w-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>

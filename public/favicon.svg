@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple purple square with rounded corners -->
+  <rect width="32" height="32" rx="8" fill="rgba(89,50,134,1)"/>
+  
+  <!-- Simple interior design icon - stylized couch -->
+  <rect x="6" y="18" width="20" height="7" rx="2" fill="white"/>
+  <rect x="8" y="15" width="16" height="3" rx="1" fill="white"/>
+  
+  <!-- Lamp element -->
+  <path d="M16 6L16 10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M12 13C12 11 14 10 16 10C18 10 20 11 20 13" fill="white"/>
+</svg> 

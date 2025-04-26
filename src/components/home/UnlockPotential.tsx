@@ -27,6 +27,14 @@ const UnlockPotential: React.FC = () => {
       image: "/lovable-uploads/6.png",
       link: "/homeowners",
     },
+    {
+      image: "/lovable-uploads/7.png",
+      link: "/commercial-spaces",
+    },
+    {
+      image: "/lovable-uploads/8.png",
+      link: "/architects",
+    },
   ];
 
   return (
@@ -55,19 +63,19 @@ const UnlockPotential: React.FC = () => {
           Be inspired as our AI brings your design ideas to life.
         </p>
 
-        {/* Image Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        {/* Image Grid - improved layout with 8 images */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3">
           {images.map((item, index) => (
             <Link 
               key={index} 
               to={item.link}
-              className="group rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02]"
+              className="group rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02]"
             >
-              <div className="aspect-[4/3] w-full">
+              <div className="aspect-[16/9] w-full">
                 <img
                   src={item.image}
                   alt={`Interior design example ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-contain bg-gray-50 transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </Link>
