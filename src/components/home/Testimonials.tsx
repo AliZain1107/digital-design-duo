@@ -18,9 +18,9 @@ const testimonials: TestimonialProps[] = [
   {
     name: "Emma",
     role: "First-Time Homeowner",
-    image: "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
-    beforeImage: "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
-    afterImage: "/lovable-uploads/9b430da7-ba45-4cad-94f5-1c7fe6c26599.png",
+    image: "/lovable-uploads/1.png",
+    beforeImage: "/lovable-uploads/2.png",
+    afterImage: "/lovable-uploads/3.png",
     description: "Faced with a tight budget for her fixer-upper, Emma discovered Styly.io and found smart, cost-effective ways to renovate her new home.",
     stats: [
       { text: "Saved $2,500 on designer fees", color: "bg-purple-600" },
@@ -32,9 +32,9 @@ const testimonials: TestimonialProps[] = [
   {
     name: "Marcus",
     role: "Airbnb Host",
-    image: "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
-    beforeImage: "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
-    afterImage: "/lovable-uploads/9b430da7-ba45-4cad-94f5-1c7fe6c26599.png",
+    image: "/lovable-uploads/4.png",
+    beforeImage: "/lovable-uploads/5.png",
+    afterImage: "/lovable-uploads/6.png",
     description: "Looking to boost his Airbnb bookings, Marcus used Styly.io to create unique, appealing interiors that set his properties apart from the competition.",
     stats: [
       { text: "Bookings up 40% across all properties", color: "bg-purple-600" },
@@ -45,9 +45,9 @@ const testimonials: TestimonialProps[] = [
   {
     name: "Sophia",
     role: "Real Estate Developer",
-    image: "/lovable-uploads/9b430da7-ba45-4cad-94f5-1c7fe6c26599.png",
-    beforeImage: "/lovable-uploads/9a47401a-d20f-4787-bbea-ed082e933d4d.png",
-    afterImage: "/lovable-uploads/9b430da7-ba45-4cad-94f5-1c7fe6c26599.png",
+    image: "/lovable-uploads/7.png",
+    beforeImage: "/lovable-uploads/8.png",
+    afterImage: "/lovable-uploads/9.png",
     description: "Challenged to pre-sell apartments in a new complex, Sophia leveraged Styly.io to create compelling visualizations that helped potential buyers envision their future homes.",
     stats: [
       { text: "70% units pre-sold before completion", color: "bg-purple-600" },
@@ -60,48 +60,54 @@ const testimonials: TestimonialProps[] = [
 
 const TestimonialCard: React.FC<{ testimonial: TestimonialProps }> = ({ testimonial }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden p-6 flex flex-col gap-4">
-      {/* User Profile */}
-      <div className="flex items-start gap-4">
-        <img 
-          src={testimonial.image} 
-          alt={testimonial.name}
-          className="w-20 h-20 rounded-md object-cover"
-        />
-        <div>
-          <h3 className="text-lg font-bold text-purple-900">{testimonial.name}</h3>
-          <p className="text-sm text-green-600">{testimonial.role}</p>
-          <p className="text-sm mt-2 text-gray-700">{testimonial.description}</p>
+    <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+      {/* User Profile with Description */}
+      <div className="p-6 pb-4">
+        <div className="flex items-start gap-4 mb-4">
+          <img 
+            src={testimonial.image} 
+            alt={testimonial.name}
+            className="w-16 h-16 rounded-lg object-cover"
+          />
+          <div>
+            <h3 className="text-lg font-bold text-purple-900">{testimonial.name}</h3>
+            <p className="text-sm text-blue-600 font-medium">{testimonial.role}</p>
+          </div>
         </div>
+        <p className="text-sm text-gray-700 leading-relaxed">{testimonial.description}</p>
       </div>
       
       {/* Styly.io Button */}
-      <Link to="/" className="block w-full py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-500 text-white text-center font-medium hover:opacity-90 transition-opacity">
+      <Link to="/" className="mx-6 mb-4 block py-2 rounded-md bg-gradient-to-r from-purple-600 to-purple-500 text-white text-center font-medium hover:opacity-90 transition-opacity">
         www.styly.io
       </Link>
       
       {/* Before/After Images */}
-      <div className="grid grid-cols-2 gap-2 my-2">
-        <div>
-          <img 
-            src={testimonial.beforeImage} 
-            alt="Before" 
-            className="w-full h-24 object-cover rounded-md"
-          />
-          <p className="text-xs text-gray-500 mt-1">Before</p>
+      <div className="grid grid-cols-2 gap-4 mx-6 mb-4">
+        <div className="flex flex-col">
+          <div className="h-24 overflow-hidden rounded-lg mb-1">
+            <img 
+              src={testimonial.beforeImage} 
+              alt="Before" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <p className="text-xs text-gray-500 text-center">Before</p>
         </div>
-        <div>
-          <img 
-            src={testimonial.afterImage} 
-            alt="After" 
-            className="w-full h-24 object-cover rounded-md"
-          />
-          <p className="text-xs text-gray-500 mt-1">After</p>
+        <div className="flex flex-col">
+          <div className="h-24 overflow-hidden rounded-lg mb-1">
+            <img 
+              src={testimonial.afterImage} 
+              alt="After" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <p className="text-xs text-gray-500 text-center">After</p>
         </div>
       </div>
       
       {/* Stats */}
-      <div className="flex flex-col gap-2 mt-2">
+      <div className="flex flex-col gap-2 mx-6 mb-6">
         {testimonial.stats.map((stat, index) => (
           <div 
             key={index} 
@@ -117,8 +123,14 @@ const TestimonialCard: React.FC<{ testimonial: TestimonialProps }> = ({ testimon
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="bg-white py-20 px-6 md:px-10">
+    <section className="bg-gray-50 py-20 px-6 md:px-10">
       <div className="max-w-7xl mx-auto w-full">
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Success Stories</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            See how our customers are transforming spaces and achieving real results with our AI-powered design platform
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} testimonial={testimonial} />
