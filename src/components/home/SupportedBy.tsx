@@ -38,25 +38,43 @@ const partnerLogos = [
 
 const SupportedBy: React.FC = () => {
   return (
-    <section className="bg-white py-12 md:py-16">
-      <div className="max-w-[1400px] w-full mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+    <section className="bg-white py-10 md:py-12 overflow-hidden">
+      <div className="max-w-[1400px] w-full mx-auto px-4 sm:px-6 md:px-10">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
           Supported
         </h2>
-        
-        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-14">
-          {partnerLogos.map((logo, index) => (
-            <div 
-              key={index} 
-              className="w-[100px] h-[40px] sm:w-[120px] sm:h-[50px] md:w-[130px] md:h-[60px] lg:w-[140px] lg:h-[60px] flex items-center justify-center"
-            >
-              <img
-                src={logo.src}
-                alt={logo.name}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-          ))}
+
+        <div className="relative w-full overflow-hidden">
+          <div className="inline-flex animate-marquee whitespace-nowrap">
+            {partnerLogos.map((logo, index) => (
+              <div 
+                key={index} 
+                className="flex items-center justify-center mx-6 md:mx-10"
+                style={{ minWidth: '130px', height: '50px' }}
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.name}
+                  className="max-h-full object-contain"
+                />
+              </div>
+            ))}
+            
+            {/* Duplicate logos to ensure continuous scrolling */}
+            {partnerLogos.map((logo, index) => (
+              <div 
+                key={`duplicate-${index}`} 
+                className="flex items-center justify-center mx-6 md:mx-10"
+                style={{ minWidth: '130px', height: '50px' }}
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.name}
+                  className="max-h-full object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
