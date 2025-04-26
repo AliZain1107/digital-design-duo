@@ -1,19 +1,59 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
-interface TestimonialProps {
+interface Testimonial {
   name: string;
-  role: string;
-  profileImage: string;
-  description: string;
-  beforeImage: string;
-  afterImage: string;
-  beforeLabel: string;
-  afterLabel: string;
-  stats: string[];
+  username: string;
+  country: string;
+  countryFlag: string;
+  text: string;
 }
 
-const testimonials: TestimonialProps[] = [
+const testimonials: Testimonial[] = [
+  {
+    name: "Creative Spaces Agency",
+    username: "@CreativeSpaces",
+    country: "United States",
+    countryFlag: "🇺🇸",
+    text: "As a boutique design agency, we've accelerated project delivery by 30% using your AI-driven interior architecture. Truly a game-changer!"
+  },
+  {
+    name: "Modern Studio Agency",
+    username: "@ModernStudio",
+    country: "Germany",
+    countryFlag: "🇩🇪",
+    text: "Our agency scaled client presentations effortlessly with your AI, increasing win rates by 20%. Exceptional tool for professional designers!"
+  },
+  {
+    name: "Hans Müller",
+    username: "@zuzu254",
+    country: "Switzerland",
+    countryFlag: "🇨🇭",
+    text: "The architecture for interior AI is breathtaking! 🏢 I'm fascinated by the fusion of form and function in every room, enhanced by your cutting-edge AI. 👏 Kudos to your exceptional team!"
+  },
+  {
+    name: "Jean-Pierre Dubois",
+    username: "@dubois60",
+    country: "France",
+    countryFlag: "🇫🇷",
+    text: "Your architecture is magnificent! I'm impressed by the seamless blend of aesthetics and functionality in every corner. Bravo on your exceptional work! 👍"
+  },
+  {
+    name: "Olivia Thompson Ray",
+    username: "@RayrayT",
+    country: "United Kingdom",
+    countryFlag: "🇬🇧",
+    text: "I'm in awe of the architectural genius evident in every detail of my new design interior ideas, all meticulously crafted with the help of interior AI. The harmonious mix of traditional and modern styles is truly inspiring 🎯"
+  },
+  {
+    name: "Hans Müller",
+    username: "@zuzu254",
+    country: "Switzerland",
+    countryFlag: "🇨🇭",
+    text: "The architecture for exterior AI is breathtaking! 🏢 I'm fascinated by the fusion of form and function in every room, enhanced by your cutting-edge AI. 👏 Kudos to your exceptional team!"
+  }
+];
+
+const caseStudies = [
   {
     name: "Emma",
     role: "First-Time Homeowner",
@@ -63,93 +103,83 @@ const testimonials: TestimonialProps[] = [
   }
 ];
 
-const TestimonialCard: React.FC<{ testimonial: TestimonialProps }> = ({ testimonial }) => {
-  const gradientColors = [
-    "from-purple-600 to-purple-400",
-    "from-purple-500 to-purple-300",
-    "from-purple-400 to-purple-200",
-    "from-purple-300 to-purple-100"
-  ];
-
-  return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col">
-      {/* Header with profile image and details */}
-      <div className="flex items-start space-x-4 mb-4">
-        <img 
-          src={testimonial.profileImage}
-          alt={testimonial.name}
-          className="w-14 h-14 rounded-lg object-cover"
-        />
-        <div>
-          <h3 className="text-xl font-bold text-purple-800">{testimonial.name}</h3>
-          <p className="text-sm font-medium text-blue-600">{testimonial.role}</p>
-        </div>
-      </div>
-      
-      {/* Description */}
-      <p className="text-gray-700 mb-5">{testimonial.description}</p>
-      
-      {/* Styly.io button */}
-      <Link 
-        to="/"
-        className="w-full bg-purple-600 text-white text-center py-3 rounded-lg font-medium mb-6 hover:bg-purple-700 transition-colors"
-      >
-        www.styly.io
-      </Link>
-      
-      {/* Before/After Images */}
-      <div className="grid grid-cols-2 gap-4 mb-6">
-        <div>
-          <div className="relative rounded-lg overflow-hidden mb-1">
-            <img 
-              src={testimonial.beforeImage}
-              alt="Before"
-              className="w-full h-auto aspect-[4/3] object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-purple-600 text-white text-[10px] font-bold py-1 px-2 text-center">
-              {testimonial.beforeLabel}
-            </div>
-          </div>
-          <p className="text-center text-xs text-gray-500">Before</p>
-        </div>
-        <div>
-          <div className="relative rounded-lg overflow-hidden mb-1">
-            <img 
-              src={testimonial.afterImage}
-              alt="After"
-              className="w-full h-auto aspect-[4/3] object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-purple-600 text-white text-[10px] font-bold py-1 px-2 text-center">
-              {testimonial.afterLabel}
-            </div>
-          </div>
-          <p className="text-center text-xs text-gray-500">After</p>
-        </div>
-      </div>
-      
-      {/* Stats list */}
-      <div className="space-y-2 mt-auto">
-        {testimonial.stats.map((stat, index) => (
-          <div 
-            key={index}
-            className={`bg-gradient-to-r ${gradientColors[index % gradientColors.length]} text-white py-2 px-4 rounded-full text-sm font-medium`}
-          >
-            {stat}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 const Testimonials: React.FC = () => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const testimonialsPerPage = 3;
+  const totalPages = Math.ceil(testimonials.length / testimonialsPerPage);
+
+  const goToPrev = () => {
+    setCurrentPage((prev) => (prev === 0 ? totalPages - 1 : prev - 1));
+  };
+
+  const goToNext = () => {
+    setCurrentPage((prev) => (prev === totalPages - 1 ? 0 : prev + 1));
+  };
+
+  const getCurrentTestimonials = () => {
+    const start = currentPage * testimonialsPerPage;
+    const end = start + testimonialsPerPage;
+    return testimonials.slice(start, end);
+  };
+
   return (
-    <section className="bg-gray-50 py-20 px-6 md:px-10">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard key={index} testimonial={testimonial} />
-          ))}
+    <section className="w-full py-20 px-4 sm:px-6 md:px-8 bg-gray-50">
+      <div className="max-w-[1800px] mx-auto">
+        {/* Social Testimonials */}
+        <div className="mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-purple-800 text-center mb-4">
+                Don't just take our word for it
+            </h2>
+          <p className="text-lg md:text-xl text-gray-700 text-center mb-12">
+                Hear from some of our amazing customers who used our product
+          </p>
+
+          <div className="bg-gray-100 p-6 md:p-8 lg:p-12 rounded-3xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {getCurrentTestimonials().map((testimonial, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white rounded-2xl shadow-lg p-8 transition-all duration-300 hover:shadow-2xl"
+                >
+                  <div className="flex items-center mb-4">
+                    <div className="h-16 w-16 rounded-full bg-red-500 flex items-center justify-center text-white text-2xl mr-4">
+                      {testimonial.countryFlag}
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-gray-900 text-xl md:text-2xl">{testimonial.name}</h3>
+                      <p className="text-base text-gray-500">{testimonial.username}</p>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
+                    {testimonial.text}
+                  </p>
+                </div>
+              ))}
+              </div>
+
+            {/* Navigation */}
+            <div className="flex justify-center mt-8 gap-2">
+              <button 
+                onClick={goToPrev}
+                className="h-10 w-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-gray-100 transition-colors"
+                aria-label="Previous testimonials"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-purple-800">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+              <button 
+                onClick={goToNext}
+                className="h-10 w-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-gray-100 transition-colors"
+                aria-label="Next testimonials"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-purple-800">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

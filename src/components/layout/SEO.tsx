@@ -10,19 +10,19 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = "STYLY - AI Design Tool for Modern Spaces",
-  description = "Redesign empty rooms into styled, market-ready interiors for real estate, renovation, and retail. No tools, no downloads. Just results.",
-  keywords = "AI design, interior design, room design, real estate visualization, renovation planning, AI home design",
+  title = "STYLY - AI-Powered Interior & Exterior Design Platform",
+  description = "STYLY is an AI-powered interior and exterior design platform that transforms empty spaces into beautifully furnished, realistic visuals. Upload a photo or describe your desired space without complex prompting or technical expertise. Ideal for real estate, renovations, and retail.",
+  keywords = "AI interior design, AI exterior design, virtual staging, real estate visualization, AI home design, interior design app, styly, styly.io, renovation planning, AI-powered design, property marketing, interior design tool, real estate marketing, B2B design solutions, B2C design solutions",
   ogImage = "https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2",
   ogUrl = "https://styly.io",
   structuredData,
 }) => {
   const defaultStructuredData = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
+    "@type": "SoftwareApplication",
     "name": "STYLY",
     "applicationCategory": "DesignApplication",
-    "operatingSystem": "Web",
+    "operatingSystem": "Web, iOS, Android",
     "description": description,
     "offers": {
       "@type": "Offer",
@@ -31,8 +31,20 @@ const SEO: React.FC<SEOProps> = ({
       "availability": "https://schema.org/InStock"
     },
     "screenshot": ogImage,
-    "featureList": "AI interior design, Real estate visualization, Home renovation planning",
-    "url": ogUrl
+    "featureList": "AI interior design, Virtual staging, Real estate visualization, WhatsApp integration, Mobile app, Web platform",
+    "url": ogUrl,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "256",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "STYLY",
+      "url": ogUrl
+    }
   };
 
   const jsonLd = structuredData || defaultStructuredData;
@@ -104,6 +116,18 @@ const SEO: React.FC<SEOProps> = ({
     setMetaTag('language', 'English');
     setMetaTag('author', 'STYLY');
     setMetaTag('theme-color', '#593286');
+    setMetaTag('application-name', 'STYLY');
+    setMetaTag('apple-mobile-web-app-title', 'STYLY');
+    setMetaTag('apple-mobile-web-app-capable', 'yes');
+    
+    // Improved SEO tags for discovery
+    setMetaTag('msapplication-TileColor', '#593286');
+    setMetaTag('msapplication-config', '/browserconfig.xml');
+    setMetaTag('format-detection', 'telephone=no');
+    
+    // Improved mobile experience tags
+    setMetaTag('mobile-web-app-capable', 'yes');
+    setMetaTag('apple-mobile-web-app-status-bar-style', 'default');
     
     // Cleanup function when component unmounts
     return () => {

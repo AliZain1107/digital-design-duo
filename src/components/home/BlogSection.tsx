@@ -66,8 +66,8 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
 
 const BlogSection: React.FC = () => {
   return (
-    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center pt-10 pb-[60px] px-20 max-md:max-w-full max-md:px-5">
-      <div className="w-[1663px] max-w-full overflow-hidden">
+    <section className="bg-white w-full py-20 px-4 sm:px-6 md:px-8">
+      <div className="w-full max-w-[1800px] mx-auto">
         <div className="text-black font-semibold px-8 max-md:max-w-full max-md:px-5">
           <div className="flex w-full flex-col items-center max-md:max-w-full">
             <div className="flex w-[768px] max-w-full flex-col items-center">
