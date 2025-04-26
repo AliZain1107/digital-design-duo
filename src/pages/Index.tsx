@@ -11,6 +11,7 @@ import Testimonials from "@/components/home/Testimonials";
 import BlogSection from "@/components/home/BlogSection";
 import FAQ from "@/components/home/FAQ";
 import SEO from "@/components/layout/SEO";
+import VideoSection from "@/components/home/VideoSection";
 
 const Index: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const Index: React.FC = () => {
         <Navbar />
         <Hero />
         <SupportedBy />
+        <VideoSection />
         <HowItWorks />
         <UnlockPotential />
         <ArchitectureRevolution />
