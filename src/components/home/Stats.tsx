@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react";
 
 const useCountUp = (end: number, duration: number = 2000) => {
@@ -71,45 +70,29 @@ const Stats: React.FC = () => {
 
   return (
     <section ref={ref} className="bg-[rgba(242,242,242,1)] flex w-full flex-col overflow-hidden items-center justify-center py-24 max-md:max-w-full">
-      <div className="flex w-[1799px] max-w-full flex-col overflow-hidden items-center px-20 max-md:px-5">
-        <div className="w-[1280px] max-w-full">
-          <div className="text-4xl text-[rgba(89,50,134,1)] font-extralight text-center tracking-[-0.72px] leading-none px-8 max-md:max-w-full max-md:px-5">
-            <div className="flex w-full flex-col items-center max-md:max-w-full">
-              <div className="w-[768px] max-w-full">
-                <div className="flex w-full flex-col items-center pl-8 pr-[23px] max-md:max-w-full max-md:px-5">
-                  <div className="flex max-w-full w-[713px] flex-col items-stretch pb-3.5 px-[49px] max-md:px-5">
-                    <div className="max-md:max-w-full">
-                      STYLY: Not chance, but the culmination of{" "}
-                    </div>
-                    <div className="self-center mt-[15px] max-md:max-w-full">
-                      rigorous quantitative research.
-                    </div>
-                  </div>
-                </div>
+      <div className="w-full max-w-7xl px-2 sm:px-6 md:px-12">
+        <div className="text-4xl text-[rgba(89,50,134,1)] font-extralight text-center tracking-[-0.72px] leading-none px-4 md:px-8">
+          <div className="flex flex-col items-center">
+            <div className="max-w-2xl">
+              <div className="flex flex-col items-center pb-3.5">
+                <div>STYLY: Not chance, but the culmination of</div>
+                <div className="mt-4">rigorous quantitative research.</div>
               </div>
             </div>
           </div>
-          <div className="w-full mt-[58px] px-8 max-md:max-w-full max-md:mt-10 max-md:px-5">
-            <div className="bg-[rgba(90,50,135,1)] flex w-full gap-8 flex-wrap pt-[63px] pb-16 px-16 rounded-2xl max-md:max-w-full max-md:px-5">
-              {stats.map((stat, index) => (
-                <div key={index} className="relative min-w-60 flex-1 shrink basis-[0%]">
-                  <div className="z-0 w-full">
-                    <div className="w-full text-6xl text-white font-semibold whitespace-nowrap text-center tracking-[-1.2px] leading-[1.2] pb-px max-md:text-[40px]">
-                      {counters[index].count}+
-                    </div>
-                    <div className="w-full mt-[11px]">
-                      <div className="w-full text-lg text-white font-medium text-center leading-loose pb-px">
-                        {stat.label}
-                      </div>
-                      <div className="w-full pt-[18px]">
-                        <div className="flex min-h-7 w-full" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute z-0 flex min-h-[158px] max-w-full w-[248px] top-px bottom-0 inset-x-0" />
+        </div>
+        <div className="w-full mt-12 md:mt-[58px] px-0 md:px-8">
+          <div className="bg-[rgba(90,50,135,1)] flex gap-8 overflow-x-auto pt-12 pb-12 px-4 md:px-16 rounded-2xl">
+            {stats.map((stat, index) => (
+              <div key={index} className="flex flex-col items-center min-w-[220px] flex-shrink-0">
+                <div className="text-5xl md:text-6xl text-white font-semibold whitespace-nowrap text-center tracking-[-1.2px] leading-[1.2] pb-1">
+                  {counters[index].count}+
                 </div>
-              ))}
-            </div>
+                <div className="mt-3 text-base md:text-lg text-white font-medium text-center leading-loose">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
