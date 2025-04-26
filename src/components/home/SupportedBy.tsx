@@ -1,26 +1,62 @@
-
 import React from "react";
+
+// Define the logos array
+const partnerLogos = [
+  {
+    name: "Startup Europe",
+    src: "/companies logo/1.png",
+  },
+  {
+    name: "NVIDIA",
+    src: "/companies logo/2.png",
+  },
+  {
+    name: "Inception Program",
+    src: "/companies logo/3.png",
+  },
+  {
+    name: "AWS Startups",
+    src: "/companies logo/4.png",
+  },
+  {
+    name: "Stripe",
+    src: "/companies logo/5.png",
+  },
+  {
+    name: "Product Hunt",
+    src: "/companies logo/6.png",
+  },
+  {
+    name: "Vestbee",
+    src: "/companies logo/7.png",
+  },
+  {
+    name: "La French Tech",
+    src: "/companies logo/8.png",
+  },
+];
 
 const SupportedBy: React.FC = () => {
   return (
-    <section className="self-center z-10 flex mt-[-21px] w-full max-w-[2032px] flex-col overflow-hidden items-center justify-center max-md:max-w-full">
-      <div className="flex h-[42px] w-[186px] max-w-full items-center overflow-hidden text-[29px] font-bold leading-[1.4] justify-center pb-px">
-        <div className="self-stretch w-[186px] my-auto">
-          <h2 className="w-full pb-px">Supported By</h2>
-        </div>
-      </div>
-      <div className="flex min-h-[90px] w-full overflow-hidden mt-2.5">
-        <div className="animate-marquee flex items-center space-x-8">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/042accf674f26cbc41485969aceb5554f214b0af?placeholderIfAbsent=true"
-            alt="Partner logos"
-            className="aspect-[22.22] object-contain w-full max-w-[2012px] flex-1"
-          />
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/042accf674f26cbc41485969aceb5554f214b0af?placeholderIfAbsent=true"
-            alt="Partner logos"
-            className="aspect-[22.22] object-contain w-full max-w-[2012px] flex-1"
-          />
+    <section className="bg-white py-12 md:py-16">
+      <div className="max-w-[1400px] w-full mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+          Supported
+        </h2>
+        
+        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-14">
+          {partnerLogos.map((logo, index) => (
+            <div 
+              key={index} 
+              className="w-[100px] h-[40px] sm:w-[120px] sm:h-[50px] md:w-[130px] md:h-[60px] lg:w-[140px] lg:h-[60px] flex items-center justify-center"
+            >
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
