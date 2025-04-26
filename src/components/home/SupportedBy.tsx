@@ -49,13 +49,13 @@ const SupportedBy: React.FC = () => {
             {partnerLogos.map((logo, index) => (
               <div 
                 key={index} 
-                className="flex items-center justify-center mx-6 md:mx-10"
-                style={{ minWidth: '130px', height: '50px' }}
+                className="flex items-center justify-center mx-2"
+                style={{ minWidth: '160px', height: '70px' }}
               >
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="max-h-full object-contain"
+                  className="max-h-full max-w-[140px] object-contain"
                 />
               </div>
             ))}
@@ -64,13 +64,13 @@ const SupportedBy: React.FC = () => {
             {partnerLogos.map((logo, index) => (
               <div 
                 key={`duplicate-${index}`} 
-                className="flex items-center justify-center mx-6 md:mx-10"
-                style={{ minWidth: '130px', height: '50px' }}
+                className="flex items-center justify-center mx-2"
+                style={{ minWidth: '160px', height: '70px' }}
               >
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="max-h-full object-contain"
+                  className="max-h-full max-w-[140px] object-contain"
                 />
               </div>
             ))}
