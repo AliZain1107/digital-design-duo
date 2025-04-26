@@ -38,9 +38,9 @@ const partnerLogos = [
 
 const SupportedBy: React.FC = () => {
   return (
-    <section className="bg-white py-10 md:py-12 overflow-hidden">
+    <section className="bg-white py-16 md:py-20 overflow-hidden">
       <div className="max-w-[1400px] w-full mx-auto px-4 sm:px-6 md:px-10">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
           Supported
         </h2>
 
@@ -49,13 +49,13 @@ const SupportedBy: React.FC = () => {
             {partnerLogos.map((logo, index) => (
               <div 
                 key={index} 
-                className="flex items-center justify-center mx-2"
-                style={{ minWidth: '200px', height: '100px' }}
+                className="flex items-center justify-center mx-3"
+                style={{ minWidth: '350px', height: '180px' }}
               >
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="max-h-[90px] max-w-[180px] object-contain"
+                  className="max-h-[160px] max-w-[320px] object-contain"
                 />
               </div>
             ))}
@@ -64,13 +64,13 @@ const SupportedBy: React.FC = () => {
             {partnerLogos.map((logo, index) => (
               <div 
                 key={`duplicate-${index}`} 
-                className="flex items-center justify-center mx-2"
-                style={{ minWidth: '200px', height: '100px' }}
+                className="flex items-center justify-center mx-3"
+                style={{ minWidth: '350px', height: '180px' }}
               >
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="max-h-[90px] max-w-[180px] object-contain"
+                  className="max-h-[160px] max-w-[320px] object-contain"
                 />
               </div>
             ))}
