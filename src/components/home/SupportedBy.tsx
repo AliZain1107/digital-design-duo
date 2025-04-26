@@ -50,12 +50,12 @@ const SupportedBy: React.FC = () => {
               <div 
                 key={index} 
                 className="flex items-center justify-center mx-2"
-                style={{ minWidth: '160px', height: '70px' }}
+                style={{ minWidth: '200px', height: '100px' }}
               >
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="max-h-full max-w-[140px] object-contain"
+                  className="max-h-[90px] max-w-[180px] object-contain"
                 />
               </div>
             ))}
@@ -65,12 +65,12 @@ const SupportedBy: React.FC = () => {
               <div 
                 key={`duplicate-${index}`} 
                 className="flex items-center justify-center mx-2"
-                style={{ minWidth: '160px', height: '70px' }}
+                style={{ minWidth: '200px', height: '100px' }}
               >
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="max-h-full max-w-[140px] object-contain"
+                  className="max-h-[90px] max-w-[180px] object-contain"
                 />
               </div>
             ))}
