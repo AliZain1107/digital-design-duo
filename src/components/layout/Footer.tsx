@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/lib/i18n";
 
 const Footer: React.FC = () => {
+  const { t } = useLanguage();
   // Add function to handle cookie settings
   const handleCookieSettings = () => {
     // Implementation for cookie settings dialog would go here
-    alert("Cookie settings dialog would open here");
+    alert(t.footerCookieSettings);
   };
 
   return (
@@ -23,15 +25,14 @@ const Footer: React.FC = () => {
             </Link>
             <div className="w-full mt-4">
               <p className="leading-6">
-                The architecture revolution: redefining <br />
-                interior design with AI.
+                {t.footerSlogan}
               </p>
             </div>
             <a
               href="mailto:Contact@styly.io"
               className="mt-3 hover:text-[rgba(250,111,64,1)] transition-colors"
             >
-              Contact us: Contact@styly.io
+              {t.footerContact}
             </a>
           </div>
           
@@ -41,13 +42,13 @@ const Footer: React.FC = () => {
               to="/login"
               className="relative flex overflow-hidden text-[rgba(89,50,134,1)] justify-center py-3 px-6 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-300 hover:bg-purple-50 hover:scale-105"
             >
-              <span className="font-medium">Log In</span>
+              <span className="font-medium">{t.footerLogin}</span>
             </Link>
             <Link
               to="/signup"
               className="relative flex overflow-hidden text-white justify-center py-3 px-6 rounded-lg bg-[rgba(250,111,64,1)] transition-all duration-300 hover:opacity-90 hover:scale-105"
             >
-              <span className="font-medium">Sign Up</span>
+              <span className="font-medium">{t.footerSignup}</span>
             </Link>
           </div>
         </div>
@@ -56,26 +57,34 @@ const Footer: React.FC = () => {
         <div className="relative border-t border-[rgba(250,111,64,1)] mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-5">
           {/* Copyright */}
           <div className="text-base text-black font-normal order-3 md:order-1">
-            <p>Copyright 2025 STYLY</p>
+            <p>{t.footerCopyrightYear}</p>
           </div>
           
           {/* Links */}
           <div className="flex flex-wrap justify-center items-center gap-4 text-base text-black font-normal order-1 md:order-2">
-            {["Video Guide", "Terms", "Privacy"].map((item) => (
-              <Link
-                key={item}
-                to={`/${item.toLowerCase().replace(" ", "-")}`}
-                className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
-              >
-                {item}
-              </Link>
-            ))}
-            
+            <Link
+              to="/video-guide"
+              className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
+            >
+              {t.footerVideoGuide}
+            </Link>
+            <Link
+              to="/terms"
+              className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
+            >
+              {t.footerTerms}
+            </Link>
+            <Link
+              to="/privacy"
+              className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
+            >
+              {t.footerPrivacy}
+            </Link>
             <button 
               onClick={handleCookieSettings}
               className="text-[rgba(51,51,51,1)] text-center transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline cursor-pointer"
             >
-              Cookie Settings
+              {t.footerCookieSettings}
             </button>
           </div>
           

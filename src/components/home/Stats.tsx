@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useLanguage } from "@/lib/i18n";
 
 const useCountUp = (end: number, duration: number = 2000) => {
   const [count, setCount] = useState(0);
@@ -35,12 +36,13 @@ const useCountUp = (end: number, duration: number = 2000) => {
 };
 
 const Stats: React.FC = () => {
+  const { t, language } = useLanguage();
   const ref = useRef<HTMLDivElement>(null);
   const stats = [
-    { value: 8000, label: "hours of development" },
-    { value: 25, label: "Top Designers approved" },
-    { value: 250, label: "Companies trusted" },
-    { value: 32, label: "Research articles" },
+    { value: 8000, label: t.statsHours },
+    { value: 25, label: t.statsDesigners },
+    { value: 250, label: t.statsCompanies },
+    { value: 32, label: t.statsArticles },
   ];
 
   const counters = stats.map(stat => useCountUp(stat.value));
@@ -75,8 +77,8 @@ const Stats: React.FC = () => {
           <div className="flex flex-col items-center">
             <div className="max-w-2xl">
               <div className="flex flex-col items-center pb-3.5">
-                <div>STYLY: Not chance, but the culmination of</div>
-                <div className="mt-4">rigorous quantitative research.</div>
+                <div>{t.statsHeading1}</div>
+                <div className="mt-4">{t.statsHeading2}</div>
               </div>
             </div>
           </div>

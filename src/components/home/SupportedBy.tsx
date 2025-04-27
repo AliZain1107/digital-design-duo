@@ -1,6 +1,13 @@
 import React from "react";
+import { useLanguage } from "@/lib/i18n";
 
 const SupportedBy: React.FC = () => {
+  const { t, language } = useLanguage();
+  
+  // Debug output to verify language and translations
+  console.log("Current language in SupportedBy:", language);
+  console.log("SupportedBy translation:", t.supportedBy);
+  
   const partnerLogos = [
     {
       name: "Startup Europe",
@@ -45,62 +52,57 @@ const SupportedBy: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20 w-full" aria-label="Our trusted partners and supporters">
-      <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-0">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
-          Supported by
+    <section 
+      className="py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 max-w-full overflow-hidden"
+      key={`supported-by-${language}`}
+    >
+      <div className="container mx-auto text-center mb-8 md:mb-12">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 mb-2">
+          {t.supportedBy}
         </h2>
-
-        <div className="relative w-full overflow-hidden">
-          {/* Left fade gradient - responsive width */}
-          <div className="absolute left-0 top-0 h-full w-[60px] xs:w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] z-10 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
-          
-          <div className="w-full overflow-hidden">
-            <div 
-              className="flex whitespace-nowrap w-max hover:pause-animation"
-              style={{ animation: "marquee 25s linear infinite" }}
-            >
-              {/* First set of logos */}
-              {partnerLogos.map((logo, index) => (
-                <div
-                  key={`logo-1-${index}`} 
-                  className="inline-flex flex-shrink-0 px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8"
-                >
-                  <div className="w-[100px] xs:w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-[80px] xs:h-[90px] sm:h-[100px] md:h-[120px] lg:h-[140px] flex items-center justify-center">
-                    <img
-                      src={logo.src}
-                      alt={`${logo.name} - ${logo.description}`}
-                      title={`${logo.name} - Styly.io partner for AI-powered interior design`}
-                      className="max-h-[60px] max-w-[90px] xs:max-h-[70px] xs:max-w-[100px] sm:max-h-[80px] sm:max-w-[120px] md:max-h-[100px] md:max-w-[140px] lg:max-h-[120px] lg:max-w-[160px] object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              ))}
-              
-              {/* Second set of logos for seamless looping */}
-              {partnerLogos.map((logo, index) => (
-                <div
-                  key={`logo-2-${index}`} 
-                  className="inline-flex flex-shrink-0 px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8"
-                >
-                  <div className="w-[100px] xs:w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-[80px] xs:h-[90px] sm:h-[100px] md:h-[120px] lg:h-[140px] flex items-center justify-center">
-                    <img
-                      src={logo.src}
-                      alt={`${logo.name} - ${logo.description}`}
-                      title={`${logo.name} - Styly.io partner for AI-powered interior design`}
-                      className="max-h-[60px] max-w-[90px] xs:max-h-[70px] xs:max-w-[100px] sm:max-h-[80px] sm:max-w-[120px] md:max-h-[100px] md:max-w-[140px] lg:max-h-[120px] lg:max-w-[160px] object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+      </div>
+      
+      {/* Container with gradients for fade effect */}
+      <div className="relative max-w-full mx-auto overflow-hidden">
+        {/* Left fade gradient */}
+        <div className="absolute top-0 left-0 w-24 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
+        
+        {/* Main logos container */}
+        <div className="flex overflow-hidden">
+          <div className="flex space-x-16 animate-marquee hover:pause-animation">
+            {partnerLogos.map((logo, index) => (
+              <div
+                key={`logo-1-${index}`}
+                className="w-24 sm:w-32 md:w-36 lg:w-40 flex-shrink-0 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.description}
+                  className="h-10 sm:h-12 md:h-14"
+                />
+              </div>
+            ))}
           </div>
           
-          {/* Right fade gradient - responsive width */}
-          <div className="absolute right-0 top-0 h-full w-[60px] xs:w-[70px] sm:w-[80px] md:w-[100px] lg:w-[120px] z-10 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+          {/* Duplicate set for seamless looping */}
+          <div className="flex space-x-16 animate-marquee hover:pause-animation">
+            {partnerLogos.map((logo, index) => (
+              <div
+                key={`logo-2-${index}`}
+                className="w-24 sm:w-32 md:w-36 lg:w-40 flex-shrink-0 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.description}
+                  className="h-10 sm:h-12 md:h-14"
+                />
+              </div>
+            ))}
+          </div>
         </div>
+        
+        {/* Right fade gradient */}
+        <div className="absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-white to-transparent z-10"></div>
       </div>
     </section>
   );

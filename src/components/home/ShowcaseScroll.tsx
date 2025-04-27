@@ -1,6 +1,11 @@
 import React from "react";
+import { useLanguage } from "@/lib/i18n";
 
 const ShowcaseScroll: React.FC = () => {
+  // Add language debugging
+  const { language, t } = useLanguage();
+  console.log("Current language in ShowcaseScroll:", language);
+  
   // First row of images - from revolution folder
   const topRowImages = [
     "/revolution/1.png",
@@ -51,10 +56,10 @@ const ShowcaseScroll: React.FC = () => {
         {bottomRowImages.map((src, index) => (
           <div key={`bottom-${index}`} className="h-auto w-[300px] sm:w-[350px] md:w-[500px] flex-shrink-0 mx-2">
             <img
-              src={src}
+            src={src}
               alt={`Interior Design Showcase ${index + 1 + topRowImages.length}`}
               className="h-full w-full object-cover rounded-xl shadow-md"
-            />
+          />
           </div>
         ))}
       </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLanguage } from "@/lib/i18n";
 
 interface Testimonial {
   name: string;
@@ -8,7 +9,7 @@ interface Testimonial {
   text: string;
 }
 
-const testimonials: Testimonial[] = [
+const testimonialsEn: Testimonial[] = [
   {
     name: "Creative Spaces Agency",
     username: "@CreativeSpaces",
@@ -50,6 +51,51 @@ const testimonials: Testimonial[] = [
     country: "Switzerland",
     countryFlag: "🇨🇭",
     text: "The architecture for exterior AI is breathtaking! 🏢 I'm fascinated by the fusion of form and function in every room, enhanced by your cutting-edge AI. 👏 Kudos to your exceptional team!"
+  }
+];
+
+const testimonialsFr: Testimonial[] = [
+  {
+    name: "Creative Spaces Agency",
+    username: "@CreativeSpaces",
+    country: "États-Unis",
+    countryFlag: "🇺🇸",
+    text: "En tant qu'agence de design boutique, nous avons accéléré la livraison des projets de 30 % grâce à votre architecture d'intérieur pilotée par l'IA. C'est vraiment une révolution !"
+  },
+  {
+    name: "Modern Studio Agency",
+    username: "@ModernStudio",
+    country: "Allemagne",
+    countryFlag: "🇩🇪",
+    text: "Notre agence a facilité les présentations clients grâce à votre IA, augmentant le taux de réussite de 20 %. Outil exceptionnel pour les designers professionnels !"
+  },
+  {
+    name: "Hans Müller",
+    username: "@zuzu254",
+    country: "Suisse",
+    countryFlag: "🇨🇭",
+    text: "L'architecture pour l'IA d'intérieur est à couper le souffle ! 🏢 Je suis fasciné par la fusion de la forme et de la fonction dans chaque pièce, améliorée par votre IA de pointe. 👏 Bravo à votre équipe exceptionnelle !"
+  },
+  {
+    name: "Jean-Pierre Dubois",
+    username: "@dubois60",
+    country: "France",
+    countryFlag: "🇫🇷",
+    text: "Votre architecture est magnifique ! Je suis impressionné par la fusion harmonieuse de l'esthétique et de la fonctionnalité dans chaque recoin. Bravo pour votre travail exceptionnel ! 👍"
+  },
+  {
+    name: "Olivia Thompson Ray",
+    username: "@RayrayT",
+    country: "Royaume-Uni",
+    countryFlag: "🇬🇧",
+    text: "Je suis impressionnée par le génie architectural présent dans chaque détail de mes nouvelles idées d'intérieur, toutes soigneusement réalisées avec l'aide de l'IA d'intérieur. Le mélange harmonieux de styles traditionnels et modernes est vraiment inspirant 🎯"
+  },
+  {
+    name: "Hans Müller",
+    username: "@zuzu254",
+    country: "Suisse",
+    countryFlag: "🇨🇭",
+    text: "L'architecture pour l'IA d'extérieur est à couper le souffle ! 🏢 Je suis fasciné par la fusion de la forme et de la fonction dans chaque pièce, améliorée par votre IA de pointe. 👏 Bravo à votre équipe exceptionnelle !"
   }
 ];
 
@@ -104,9 +150,18 @@ const caseStudies = [
 ];
 
 const Testimonials: React.FC = () => {
+  const { t, language } = useLanguage();
+  const testimonials = language === 'fr' ? testimonialsFr : testimonialsEn;
   const [currentPage, setCurrentPage] = useState(0);
   const testimonialsPerPage = 3;
   const totalPages = Math.ceil(testimonials.length / testimonialsPerPage);
+
+  // Debug output to verify language and translations
+  console.log("Current language in Testimonials:", language);
+  console.log("Testimonials translations:", {
+    dontTakeOurWord: t.dontTakeOurWord,
+    hearFromCustomers: t.hearFromCustomers
+  });
 
   const goToPrev = () => {
     setCurrentPage((prev) => (prev === 0 ? totalPages - 1 : prev - 1));
@@ -123,15 +178,15 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-20 px-4 sm:px-6 md:px-8 bg-gray-50">
+    <section className="w-full py-20 px-4 sm:px-6 md:px-8 bg-gray-50" key={`testimonials-${language}`}>
       <div className="max-w-[1800px] mx-auto">
         {/* Social Testimonials */}
         <div className="mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-purple-800 text-center mb-4">
-                Don't just take our word for it
-            </h2>
+            {t.dontTakeOurWord}
+          </h2>
           <p className="text-lg md:text-xl text-gray-700 text-center mb-12">
-                Hear from some of our amazing customers who used our product
+            {t.hearFromCustomers}
           </p>
 
           <div className="bg-gray-100 p-6 md:p-8 lg:p-12 rounded-3xl">
@@ -156,7 +211,7 @@ const Testimonials: React.FC = () => {
                   </p>
                 </div>
               ))}
-              </div>
+            </div>
 
             {/* Navigation */}
             <div className="flex justify-center mt-8 gap-2">
@@ -169,7 +224,7 @@ const Testimonials: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                 </svg>
               </button>
-              <button 
+              <button
                 onClick={goToNext}
                 className="h-10 w-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-gray-100 transition-colors"
                 aria-label="Next testimonials"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import {
@@ -7,15 +7,33 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useLanguage } from "@/lib/i18n";
 
 const Navbar: React.FC = () => {
-  const [language, setLanguage] = useState("English");
+  const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  const languages = ["English", "Spanish", "French", "German", "Japanese"];
+  // Debug log for current language
+  console.log("Current language in Navbar:", language);
+  
+  // Debug effect to monitor language changes
+  useEffect(() => {
+    console.log("Language changed to:", language);
+  }, [language]);
+  
+  const languages = [
+    { code: "en", name: "English" },
+    { code: "fr", name: "Français" }
+  ];
   
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+  
+  // Enhanced language switcher with debug
+  const handleLanguageChange = (lang: 'en' | 'fr') => {
+    console.log("Language switch requested to:", lang);
+    setLanguage(lang);
   };
   
   return (
@@ -49,7 +67,7 @@ const Navbar: React.FC = () => {
           >
             <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
             <div className="self-center z-10 w-full">
-              <div className="w-full">Pricing</div>
+              <div className="w-full">{t.pricing}</div>
             </div>
             <div className="border absolute z-0 flex min-h-11 w-full rounded-lg border-[rgba(89,50,134,1)] border-solid inset-0" />
           </Link>
@@ -62,7 +80,7 @@ const Navbar: React.FC = () => {
           >
             <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
             <div className="self-center z-10 w-full">
-              <div className="w-full">Blog</div>
+              <div className="w-full">{t.blog}</div>
             </div>
             <div className="border absolute z-0 flex min-h-11 w-full rounded-lg border-[rgba(89,50,134,1)] border-solid inset-0" />
           </Link>
@@ -74,7 +92,7 @@ const Navbar: React.FC = () => {
           >
             <div className="bg-[rgba(250,111,64,1)] absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
             <div className="self-center z-10 w-full">
-              <div className="w-full">Sign In</div>
+              <div className="w-full">{t.signIn}</div>
             </div>
           </Link>
         </div>
@@ -82,18 +100,18 @@ const Navbar: React.FC = () => {
           <DropdownMenu>
             <DropdownMenuTrigger className="bg-white flex items-center gap-[5px] overflow-hidden justify-center pt-1 pb-[5px] rounded-md px-2 transition-all duration-300 hover:bg-gray-50 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-200">
               <div className="self-stretch text-[15px] text-[rgba(89,50,134,1)] font-medium whitespace-nowrap tracking-[-0.15px] leading-[30px] w-[51px] my-auto">
-                <div className="w-full pb-px">{language}</div>
+                <div className="w-full pb-px">{language === 'en' ? 'English' : 'Français'}</div>
               </div>
               <ChevronDown className="h-3.5 w-3.5 text-[rgba(89,50,134,1)]" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="bg-white border border-gray-200 shadow-lg z-50">
               {languages.map((lang) => (
                 <DropdownMenuItem 
-                  key={lang}
-                  className="cursor-pointer hover:bg-purple-50 focus:bg-purple-50"
-                  onClick={() => setLanguage(lang)}
+                  key={lang.code}
+                  className={`cursor-pointer hover:bg-purple-50 focus:bg-purple-50 ${language === lang.code ? 'bg-purple-50 font-medium' : ''}`}
+                  onClick={() => handleLanguageChange(lang.code as 'en' | 'fr')}
                 >
-                  {lang}
+                  {lang.name}
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
@@ -125,33 +143,39 @@ const Navbar: React.FC = () => {
             className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Pricing
+            {t.pricing}
           </Link>
           <Link
             to="/blog"
             className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Blog
+            {t.blog}
           </Link>
           <Link
             to="/signin"
             className="bg-orange-500 text-white font-medium py-3 rounded-lg text-center hover:bg-orange-600 transition-all mt-2"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Sign In
+            {t.signIn}
           </Link>
           <div className="mt-4 pt-4 border-t border-gray-100">
             <div className="text-gray-600 text-sm mb-2">Select Language:</div>
-            <select 
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-200"
-            >
+            <div className="flex gap-2">
               {languages.map(lang => (
-                <option key={lang} value={lang}>{lang}</option>
+                <button
+                  key={lang.code}
+                  className={`py-2 px-4 rounded-md transition-all ${
+                    language === lang.code 
+                      ? "bg-purple-600 text-white" 
+                      : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                  }`}
+                  onClick={() => handleLanguageChange(lang.code as 'en' | 'fr')}
+                >
+                  {lang.name}
+                </button>
               ))}
-            </select>
+            </div>
           </div>
         </div>
       </div>

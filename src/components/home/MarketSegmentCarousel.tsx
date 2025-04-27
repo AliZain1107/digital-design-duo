@@ -1,183 +1,165 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useLanguage } from '@/lib/i18n';
+import { Link } from 'react-router-dom';
+import clsx from 'clsx';
 
 interface MarketSegment {
-  image: string;
+  id: number;
   title: string;
+  image: string;
   link: string;
 }
 
 const MarketSegmentCarousel: React.FC = () => {
-  // Market segments data
+  const { t, language } = useLanguage();
+  
+  console.log("MarketSegmentCarousel rendering with language:", language);
+  console.log("MarketSegmentCarousel translations:", {
+    tailoredSolutions: t.tailoredSolutionsForEveryNeed,
+    aiDesignTool: t.aiDesignToolServesDiverseMarkets,
+    realEstateProfessionals: t.realEstateProfessionals
+  });
+
   const marketSegments: MarketSegment[] = [
     {
-      image: "/lovable-uploads/1.png",
-      title: "REAL ESTATE PROFESSIONALS",
-      link: "/real-estate"
+      id: 1,
+      title: t.realEstateProfessionals,
+      image: "/lovable-uploads/real-estate.png",
+      link: "#real-estate"
     },
     {
-      image: "/lovable-uploads/2.png",
-      title: "HOMEOWNERS & RENTERS",
-      link: "/homeowners"
+      id: 2,
+      title: t.homeownersRenters,
+      image: "/lovable-uploads/homeowners.png",
+      link: "#homeowners"
     },
     {
-      image: "/lovable-uploads/3.png", 
-      title: "STARTUPS & TECH-SAVVY CREATORS",
-      link: "/startups"
+      id: 3,
+      title: t.startupsTechCreators,
+      image: "/lovable-uploads/startups.png",
+      link: "#startups"
     },
     {
-      image: "/lovable-uploads/4.png",
-      title: "INTERIOR DESIGNERS & ARCHITECTS",
-      link: "/designers"
+      id: 4,
+      title: t.interiorDesignersArchitects,
+      image: "/lovable-uploads/interior-designers.png",
+      link: "#designers"
     },
     {
-      image: "/lovable-uploads/5.png",
-      title: "RETAILERS & BRANDS",
-      link: "/retailers"
+      id: 5,
+      title: t.retailersBrands,
+      image: "/lovable-uploads/retailers.png",
+      link: "#retailers"
     },
     {
-      image: "/lovable-uploads/6.png",
-      title: "WALLPAPER BRANDS",
-      link: "/wallpaper"
+      id: 6,
+      title: t.wallpaperBrands,
+      image: "/lovable-uploads/wallpaper.png",
+      link: "#wallpaper"
     },
     {
-      image: "/lovable-uploads/7.png",
-      title: "WALLPAPER & FLOORING BRANDS",
-      link: "/flooring-wallpaper"
+      id: 7,
+      title: t.wallpaperFlooringBrands,
+      image: "/lovable-uploads/home-decor.png",
+      link: "#flooring"
     },
     {
-      image: "/lovable-uploads/8.png",
-      title: "FLOORING BRANDS",
-      link: "/flooring"
+      id: 8,
+      title: t.flooringBrands,
+      image: "/lovable-uploads/flooring.png",
+      link: "#flooring-brands"
     }
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-  
-  // Auto-advance function
-  const goToNext = useCallback(() => {
-    setActiveIndex((prev) => (prev === marketSegments.length - 1 ? 0 : prev + 1));
-  }, [marketSegments.length]);
+
+  const goToNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % marketSegments.length);
+  };
 
   const goToPrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? marketSegments.length - 1 : prev - 1));
+    setActiveIndex((prevIndex) => (prevIndex - 1 + marketSegments.length) % marketSegments.length);
   };
 
   const goToIndex = (index: number) => {
     setActiveIndex(index);
-    // Pause auto-advance temporarily when user manually selects an image
-    setIsPaused(true);
-    setTimeout(() => setIsPaused(false), 5000); // Resume after 5 seconds
   };
-  
-  // Set up auto-advancing with useEffect
+
+  // Auto-advance the carousel every 5 seconds
   useEffect(() => {
-    let intervalId: NodeJS.Timeout;
-    
-    if (!isPaused) {
-      intervalId = setInterval(() => {
-        goToNext();
-      }, 5000); // Change slide every 5 seconds
-    }
-    
-    // Clean up interval on component unmount or when paused
-    return () => {
-      if (intervalId) clearInterval(intervalId);
-    };
-  }, [goToNext, isPaused]);
+    const timer = setInterval(goToNext, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
-    <section className="w-full py-24 bg-white">
-      <div className="max-w-[1800px] mx-auto px-4 sm:px-6 md:px-8">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-          <span className="bg-gradient-to-r from-purple-700 to-orange-500 bg-clip-text text-transparent">
-            Tailored Solutions For Every Need
-          </span>
-        </h2>
-        <p className="text-xl md:text-2xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">
-          Our AI design tool serves diverse market segments with specialized features
-        </p>
+    <section className="bg-white py-16 md:py-24">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-4 tracking-tight">
+            {t.tailoredSolutionsForEveryNeed}
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            {t.aiDesignToolServesDiverseMarkets}
+          </p>
+        </div>
 
-        {/* Main carousel container */}
-        <div className="relative max-w-5xl mx-auto">
-          {/* Large image display */}
-          <div 
-            className="relative overflow-hidden rounded-2xl shadow-xl mb-8"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
-            <Link to={marketSegments[activeIndex].link}>
-              <img 
-                src={marketSegments[activeIndex].image} 
-                alt={marketSegments[activeIndex].title}
-                className="w-full aspect-video object-cover transition-transform duration-700"
-              />
-              
-              {/* Title overlay */}
-              <div className="absolute bottom-0 left-0 right-0 bg-indigo-800/90 text-white py-5 px-6">
-                <h3 className="text-2xl md:text-3xl font-bold text-center">{marketSegments[activeIndex].title}</h3>
+        <div className="max-w-6xl mx-auto">
+          {/* Main Image Display */}
+          <div className="relative aspect-[16/9] md:aspect-[3/2] lg:aspect-[16/9] mb-6 overflow-hidden rounded-xl shadow-xl">
+            <div className="absolute inset-0 bg-black/30 z-10 flex items-end">
+              <div className="p-6 text-white w-full">
+                <h3 className="text-xl md:text-2xl font-bold mb-2">
+                  {marketSegments[activeIndex].title}
+                </h3>
               </div>
+            </div>
+            <Link to={marketSegments[activeIndex].link} className="block w-full h-full relative">
+              <img
+                src={marketSegments[activeIndex].image}
+                alt={marketSegments[activeIndex].title}
+                className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                loading="eager"
+              />
             </Link>
             
-            {/* Navigation buttons */}
+            {/* Navigation Arrows */}
             <button 
-              onClick={(e) => {
-                e.preventDefault();
-                goToPrev();
-                setIsPaused(true);
-                setTimeout(() => setIsPaused(false), 5000);
-              }}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-purple-800 rounded-full p-3 shadow-lg transition-all duration-300"
-              aria-label="Previous"
+              onClick={goToPrev}
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md transition-all"
+              aria-label="Previous image"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button 
-              onClick={(e) => {
-                e.preventDefault();
-                goToNext();
-                setIsPaused(true);
-                setTimeout(() => setIsPaused(false), 5000);
-              }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-purple-800 rounded-full p-3 shadow-lg transition-all duration-300"
-              aria-label="Next"
+              onClick={goToNext}
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md transition-all"
+              aria-label="Next image"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
-            
-            {/* Progress indicators */}
-            <div className="absolute bottom-20 left-0 right-0 flex justify-center gap-2 py-2">
-              {marketSegments.map((_, index) => (
-                <div 
-                  key={`indicator-${index}`}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    index === activeIndex ? 'w-8 bg-white' : 'w-2 bg-white/60'
-                  }`}
-                />
-              ))}
-            </div>
           </div>
           
-          {/* Thumbnail navigation */}
-          <div className="flex flex-wrap justify-center gap-2">
+          {/* Thumbnail Navigation */}
+          <div className="grid grid-cols-4 md:grid-cols-8 gap-2 md:gap-4">
             {marketSegments.map((segment, index) => (
               <button
-                key={index}
+                key={segment.id}
                 onClick={() => goToIndex(index)}
-                className={`w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden transition-all ${
-                  activeIndex === index ? "ring-4 ring-purple-600 scale-110" : "opacity-70 hover:opacity-100"
-                }`}
+                className={clsx(
+                  "relative aspect-square overflow-hidden rounded-lg transition-all",
+                  activeIndex === index ? "ring-4 ring-blue-500 scale-105" : "opacity-70 hover:opacity-100"
+                )}
                 aria-label={`View ${segment.title}`}
               >
                 <img
                   src={segment.image}
                   alt={segment.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
+                  loading="lazy"
                 />
               </button>
             ))}

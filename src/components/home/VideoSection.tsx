@@ -1,13 +1,15 @@
 import React from "react";
+import { useLanguage } from "@/lib/i18n";
 
 const VideoSection: React.FC = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="bg-purple-50 py-32 w-full">
       <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-purple-900 mb-6">
-            <span className="block transform -skew-y-1">Revolutionize Your Space</span>
-            <span className="block transform skew-y-1">with AI</span>
+            <span className="block transform -skew-y-1">{t.seeItInAction}</span>
           </h2>
           <p className="text-xl md:text-2xl text-purple-700 max-w-3xl mx-auto font-light">
             See how our AI platform transforms interior design with just a few clicks
@@ -31,7 +33,7 @@ const VideoSection: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Watch More Videos
+              {t.watchDemo}
             </button>
           </div>
         </div>
