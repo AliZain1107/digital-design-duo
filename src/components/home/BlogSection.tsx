@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/lib/i18n";
 
 interface BlogPost {
   id: number;
@@ -65,22 +66,27 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
 };
 
 const BlogSection: React.FC = () => {
+  const { t, language } = useLanguage();
+
+  // Debug output to verify language and translations
+  console.log("Current language in BlogSection:", language);
+  console.log("Blog translation:", t.blog);
+  
   return (
-    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center pt-10 pb-[60px] px-20 max-md:max-w-full max-md:px-5">
-      <div className="w-[1663px] max-w-full overflow-hidden">
+    <section className="bg-white w-full py-20 px-4 sm:px-6 md:px-8" key={`blog-section-${language}`}>
+      <div className="w-full max-w-[1800px] mx-auto">
         <div className="text-black font-semibold px-8 max-md:max-w-full max-md:px-5">
           <div className="flex w-full flex-col items-center max-md:max-w-full">
             <div className="flex w-[768px] max-w-full flex-col items-center">
               <div className="w-[34px] text-base text-[rgba(250,111,64,1)] whitespace-nowrap pb-px">
-                Blog
+                {t.blog}
               </div>
               <h2 className="w-full text-4xl text-center tracking-[-0.72px] leading-none mt-[19px]">
-                <div className="w-full pb-px max-md:max-w-full">New trends</div>
+                <div className="w-full pb-px max-md:max-w-full">{t.blogTrends}</div>
               </h2>
               <div className="w-full text-xl font-normal text-center mt-[19px]">
                 <div className="w-full pb-px max-md:max-w-full">
-                  The latest industry news, interviews, technologies, and
-                  resources.
+                  {t.blogDescription}
                 </div>
               </div>
             </div>
