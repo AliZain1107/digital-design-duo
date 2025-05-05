@@ -6,7 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LanguageForceUpdate from "./lib/LanguageForceUpdate";
-
+import Blog from "./pages/Blog";
+import BlogPostPage from "./pages/BlogPostPage";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -19,7 +20,8 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/pricing" element={<NotFound />} />
-            <Route path="/blog" element={<NotFound />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/signin" element={<NotFound />} />
             <Route path="/login" element={<NotFound />} />
             <Route path="/signup" element={<NotFound />} />

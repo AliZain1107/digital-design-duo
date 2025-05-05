@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
   };
   
   return (
-    <header className="bg-white relative flex min-h-[100px] w-full items-center overflow-hidden justify-between px-5 sm:px-10 lg:px-20 py-[11px] max-md:max-w-full">
+    <header className="bg-white relative flex min-h-[100px] w-full items-center overflow-hidden justify-between px-5 sm:px-10 lg:px-20 py-[11px] max-md:max-w-full border-b border-gray-800 z-20">
       <div className="self-stretch z-10 flex min-w-60 min-h-[79px] items-center flex-1 shrink basis-[0%] my-auto max-md:max-w-full">
         <Link to="/" className="transition-transform duration-300 hover:scale-105">
           <img

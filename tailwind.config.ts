@@ -69,7 +69,10 @@ export default {
           'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
-        }
+        },
+        fontFamily: {
+          nunito: ['Nunito', 'sans-serif'], // Wrap Nunito in quotes if it has spaces
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
