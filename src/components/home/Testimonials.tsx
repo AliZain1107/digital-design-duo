@@ -182,10 +182,10 @@ const Testimonials: React.FC = () => {
       <div className="max-w-[1800px] mx-auto">
         {/* Social Testimonials */}
         <div className="mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-purple-800 text-center mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-purple-800 text-center mb-4 pl-8 flex">
             {t.dontTakeOurWord}
           </h2>
-          <p className="text-lg md:text-xl text-gray-700 text-center mb-12">
+          <p className="text-lg md:text-xl text-gray-700 text-center mb-12 flex pl-8">
             {t.hearFromCustomers}
           </p>
 

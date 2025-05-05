@@ -71,7 +71,9 @@ export default {
           ring: 'hsl(var(--sidebar-ring))'
         },
         fontFamily: {
-          nunito: ['Nunito', 'sans-serif'], // Wrap Nunito in quotes if it has spaces
+          baloo: ['"Baloo 2"', 'cursive'],
+          inter: ['"Inter"', 'sans-serif'],
+          montagu: ["'Montagu Slab'", "serif"],
         },
       },
       borderRadius: {

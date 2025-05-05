@@ -57,10 +57,13 @@ const SupportedBy: React.FC = () => {
       key={`supported-by-${language}`}
     >
       <div className="container mx-auto text-center mb-8 md:mb-12">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 mb-2">
-          {t.supportedBy}
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-2">
+          <span className="bg-gradient-to-r from-[#593286] to-[#FA6F40] bg-clip-text text-transparent">
+            {t.supportedBy}
+          </span>
         </h2>
       </div>
+
       
       {/* Container with gradients for fade effect */}
       <div className="relative max-w-full mx-auto overflow-hidden">

@@ -291,7 +291,7 @@ const Index: React.FC = () => {
   const seoStructuredData = language === "fr" || location.pathname.startsWith("/fr") ? structuredDataFr : structuredData;
 
   return (
-    <div className="bg-white flex flex-col w-full min-h-screen" key={`index-${language}`}>
+    <div className="bg-white flex flex-col w-full min-h-screen  " key={`index-${language}`}>
       <SEO 
         title={seoMeta.title}
         description={seoMeta.description}

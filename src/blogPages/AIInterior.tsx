@@ -75,13 +75,13 @@ const TipsToSaveBig2025: React.FC = () => {
         <img
           src="https://framerusercontent.com/images/qwNLVoWFq8EGoCFXGZ2jVmDfcJo.webp"
           alt="AI Home Design Trends"
-          className="w-full rounded-xl object-cover"
+          className="w-full h-[500px] rounded-xl object-cover"
         />
 
         <img
           src="https://framerusercontent.com/images/JlnrrzUwSWVZYpELxVUSK4pac.webp"
           alt="AI Room Planner Tool"
-          className="w-full rounded-xl object-cover"
+          className="w-full h-[500px] rounded-xl object-cover"
         />
 
         <h2 className="text-lg font-semibold">Why Choose Styly for Your Home Interiors?</h2>

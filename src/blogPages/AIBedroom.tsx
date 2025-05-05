@@ -6,6 +6,7 @@ const AiBedroomDesign: React.FC = () => {
       
 
       <div className="max-w-4xl space-y-6 text-gray-800 text-sm">
+      <div className="max-w-3xl space-y-6 text-gray-800 text-sm">
         <div>
           <h2 className="text-lg font-semibold">Table of Contents:</h2>
           <ul className="list-disc pl-5 space-y-1">
@@ -101,14 +102,16 @@ const AiBedroomDesign: React.FC = () => {
             <div key={idx} className="space-y-2">
               <h3 className="font-semibold text-base my-5">{idx + 1}. {item.title}</h3>
               <p className="text-sm mb-4">Prompt: {item.prompt}</p>
-              <img src={item.img} alt={item.title} className="rounded-md w-64 pt-4" />
+              <h3 className="font-semibold text-base">{idx + 1}. {item.title}</h3>
+              <p className="text-sm">Prompt: {item.prompt}</p>
+              <img src={item.img} alt={item.title} className="rounded-md h-[500px] w-64" />
             </div>
           ))}
         </section>
 
         <section>
-          <h2 className="text-lg font-semibold my-5">Expert Design Tips</h2>
-          <ul className="list-disc pl-5 space-y-1 gap-4">
+          <h2 className="text-lg font-semibold">Expert Design Tips</h2>
+          <ul className="list-disc pl-5 space-y-1">
             <li>Consider natural light when choosing colors</li>
             <li>Ensure walkable space around furniture</li>
             <li>Layer lighting for flexibility</li>
@@ -148,7 +151,7 @@ const AiBedroomDesign: React.FC = () => {
         <img
         src="https://framerusercontent.com/images/QHngMSH11seHyWEaHUx8lIoGQA.png"
         alt="footer banner"
-        className="w-full max-w-3xl object-cover rounded-lg"
+        className="w-full h-[500px] max-w-3xl object-cover rounded-lg"
       />
 
 

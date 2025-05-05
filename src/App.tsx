@@ -7,7 +7,16 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LanguageForceUpdate from "./lib/LanguageForceUpdate";
 import Blog from "./pages/Blog";
-import BlogPostPage from "./pages/BlogPostPage";
+import BlogPostPage from "./pages/BlogPostPage" ;
+
+import '@fontsource/baloo-2/600.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/600.css';
+
+import "@fontsource/montagu-slab"; // Defaults to weight 400
+import "@fontsource/montagu-slab/700.css"; // Bold variant
+
+
 const queryClient = new QueryClient();
 
 const App = () => (
