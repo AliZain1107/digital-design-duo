@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
@@ -13,20 +13,30 @@ import FAQ from "@/components/home/FAQ";
 import SEO from "@/components/layout/SEO";
 import VideoSection from "@/components/home/VideoSection";
 import DesignWithAI from "@/components/home/DesignWithAI";
-import { useLanguage } from "@/lib/i18n";
+import { useLanguage, LanguageContext, Language } from "@/lib/i18n";
+import { useContext, useState } from "react";
 
 const Index: React.FC = () => {
+  const { language, setLanguage } = useContext(LanguageContext);
+  const stateLang: Language = language ?? "en";
   // Get current language to force re-render when it changes
-  const { language, setLanguage } = useLanguage();
+  // const [currentLang, setCurrentLang] = useState<Language>(stateLang);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    if (location.pathname.startsWith("/fr")) {
-      setLanguage("fr");
-    } else if (location.pathname === "/" || location.pathname.startsWith("/en")) {
-      setLanguage("en");
+    const pathLang = location.pathname.startsWith("/fr") ? "fr" : "en";
+    setLanguage(pathLang);
+
+    if (location.pathname !== `/${pathLang}`) {
+      const newPath = location.pathname.replace(/^\/(en|fr)/, `/${pathLang}`);
+      navigate(newPath, { replace: true });
     }
-  }, [location.pathname, setLanguage]);
+  }, [location.pathname, navigate]);
+
+  // useEffect(() => {
+  //   setLanguage("en");
+  // }, [])
   
   console.log("Index page rendering with language:", language);
 

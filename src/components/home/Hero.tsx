@@ -103,7 +103,6 @@ const Hero: React.FC = () => {
               width="180" 
               height="128"
               loading="eager"
-              fetchPriority="high"
               decoding="async"
               itemProp="image"
             />

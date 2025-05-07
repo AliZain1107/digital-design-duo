@@ -17,10 +17,10 @@ const BlogPostPage: React.FC = () => {
     <div>
       <Navbar />
       <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-10">
-        <h1 className="text-[12px] text-center text-gray-400 mb-4 mt-10">
+        <h1 className="text-xl text-center text-gray-800 font-semibold mb-4 mt-10">
           {post.title}
         </h1>
-        <p className="text-[12px] text-center text-gray-400 mb-5">
+        <p className="text-xl text-center text-gray-800 mb-5">
           {post.date}
         </p>
         <img

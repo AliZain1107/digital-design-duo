@@ -1,94 +1,68 @@
 import React from "react";
+import { useLanguage } from "@/lib/i18n"; // Import the useLanguage hook
 
 const RealEstateVirtualStaging: React.FC = () => {
+  const { t } = useLanguage(); // Get the translation function from context
+
   return (
     <>
-      <div className="flex flex-col gap-6 text-gray-600 text-[12px] leading-relaxed p-5">
+      <div className="flex flex-col gap-6 text-gray-600 text-base leading-relaxed p-5">
         <p>
-          The real estate landscape has fundamentally transformed since 2023,
-          with AI-powered virtual staging now firmly established as an essential
-          tool for successful agents. According to the National Association of
-          Realtors' 2025 Home Buyers and Sellers{" "}
+          {t.realEstateLandscape}
           <a
             href="https://www.nar.realtor/research-and-statistics/research-reports"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            Generational Trends Report
+            {t.generationalTrendsReport}
           </a>
-          , an overwhelming 99% of home buyers begin their search online, making
-          digital presentation not just important but critical for sales
-          success. Let's examine how today's agents are leveraging AI virtual
-          staging to drive results in today's competitive market.
+          {t.buyersBeginSearch}
         </p>
 
         <h3 className="text-[12px] text-gray-600">
-          The Virtual Staging Revolution: Current Market Statistics
+          {t.virtualStagingRevolution}
         </h3>
         <ul className="list-disc pl-6 space-y-2">
-          <li>
-            Properties with AI virtual staging receive 2.7x more inquiries than
-            traditional listings
-          </li>
-          <li>
-            Virtually staged properties sell 31% faster than non-staged homes
-          </li>
-          <li>
-            AI staging delivers 98% cost reduction compared to physical staging
-          </li>
-          <li>
-            Properties with AI-enhanced photos command 5–8% higher selling
-            prices
-          </li>
-          <li>92% of buyers struggle to visualize potential in empty spaces</li>
+          <li>{t.propertiesWithAIStaging}</li>
+          <li>{t.virtuallyStagedSellFaster}</li>
+          <li>{t.aiStagingCostReduction}</li>
+          <li>{t.propertiesWithAIEnhancedPhotos}</li>
+          <li>{t.buyersStruggleToVisualize}</li>
         </ul>
 
         <p>
-          Source:{" "}
+          {t.source}{" "}
           <a
             href="https://www.realestatestagingassociation.com/research"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            Real Estate Staging Association 2025 Impact Report
+            {t.realEstateStagingAssociation}
           </a>
         </p>
 
         <h3 className="text-[12px] text-gray-600 font-semibold">
-          Why AI-Powered Virtual Staging is Now Industry Standard
+          {t.whyAIStagingIndustryStandard}
         </h3>
         <ol className="list-decimal pl-6 space-y-3">
           <li>
-            <strong>Economic Efficiency</strong>: In 2025's fluctuating real
-            estate market, traditional physical staging averages $3,500–$10,000
-            per property, while AI-powered virtual staging with Styly.io starts
-            at less than $100 per property. This dramatic difference has made
-            virtual staging standard practice for properties at all price
-            points.
+            <strong>{t.economicEfficiency}</strong>: {t.economicEfficiencyDescription}
           </li>
           <li>
-            <strong>Speed-to-Market Advantage</strong>: "In today's market,
-            listing speed matters more than ever," notes Jennifer Chen, a
-            top-producing agent with Compass in Seattle. "With Styly.io, I can
-            have professionally staged photos ready within an hour of the
-            photographer delivering raw images. This kind of turnaround was
-            unimaginable just two years ago."
+            <strong>{t.speedToMarket}</strong>: {t.speedToMarketDescription}
           </li>
           <li>
-            <strong>Market-Specific Customization</strong>: Current AI virtual
-            staging allows agents to:
+            <strong>{t.marketSpecificCustomization}</strong>: {t.marketSpecificCustomizationDescription}
           </li>
         </ol>
 
         <ul className="list-disc pl-6 space-y-2">
-          <li>Target specific buyer demographics with tailored designs</li>
-          <li>Adjust staging based on real-time market feedback</li>
-          <li>Create seasonal variations to keep listings fresh</li>
-          <li>
-            Generate multiple design options for diverse buyer preferences
-          </li>
+          <li>{t.targetSpecificBuyerDemographics}</li>
+          <li>{t.adjustStagingRealTimeFeedback}</li>
+          <li>{t.createSeasonalVariations}</li>
+          <li>{t.generateDesignOptions}</li>
         </ul>
       </div>
       <div className="max-w-5xl mx-auto px-4 mt-14 mb-14">
@@ -103,98 +77,76 @@ const RealEstateVirtualStaging: React.FC = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-6 text-gray-600 text-[12px] leading-relaxed p-5">
+      <div className="flex flex-col gap-6 text-gray-600 text-base leading-relaxed p-5">
         <h2 className="text-xl font-medium text-gray-700">
-          Real-World Success Stories from 2025
+          {t.realWorldSuccessStories}
         </h2>
 
         {/* Case Study 1 */}
         <div>
           <h3 className="text-sm font-semibold">
-            Case Study 1: Mixed-Use Development in Austin
+            {t.caseStudy1Title}
           </h3>
           <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-            <li>Property: 12-unit new construction, completely empty</li>
-            <li>Challenge: Needed to pre-sell 60% before completion</li>
-            <li>
-              Solution: AI-staged with Styly.io showing multiple configuration
-              options
-            </li>
-            <li>Result: 75% pre-sold within 45 days</li>
+            <li>{t.caseStudy1Property}</li>
+            <li>{t.caseStudy1Challenge}</li>
+            <li>{t.caseStudy1Solution}</li>
+            <li>{t.caseStudy1Result}</li>
           </ul>
         </div>
 
         {/* Case Study 2 */}
         <div>
           <h3 className="text-sm font-semibold">
-            Case Study 2: Historic Renovation Project
+            {t.caseStudy2Title}
           </h3>
           <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-            <li>Property: 1920s craftsman requiring significant updates</li>
-            <li>Challenge: Buyers couldn't visualize modern possibilities</li>
-            <li>
-              Solution: Virtual renovation showcasing contemporary interior
-              while preserving character
-            </li>
-            <li>Result: Sold at 12% above neighborhood comps</li>
+            <li>{t.caseStudy2Property}</li>
+            <li>{t.caseStudy2Challenge}</li>
+            <li>{t.caseStudy2Solution}</li>
+            <li>{t.caseStudy2Result}</li>
           </ul>
         </div>
 
         {/* Agent Implementation */}
         <div>
           <h3 className="text-base font-semibold">
-            How Leading Agents Are Implementing AI Staging in 2025
+            {t.agentImplementationTitle}
           </h3>
-
           <div className="mt-4">
-            <h4 className="font-semibold">1. Segmented Marketing Approaches</h4>
-            <p className="mt-1">
-              Today's sophisticated agents use Styly.io to create targeted
-              presentations:
-            </p>
+            <h4 className="font-semibold">{t.segmentedMarketingApproaches}</h4>
+            <p className="mt-1">{t.segmentedMarketingDescription}</p>
             <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-              <li>Empty-nester downsizing designs</li>
-              <li>First-time homebuyer configurations</li>
-              <li>Work-from-home optimized layouts</li>
-              <li>Multigenerational living arrangements</li>
+              <li>{t.emptyNesterDownsizing}</li>
+              <li>{t.firstTimeHomebuyer}</li>
+              <li>{t.workFromHomeLayouts}</li>
+              <li>{t.multigenerationalLiving}</li>
             </ul>
           </div>
 
           <div className="mt-4">
             <h4 className="font-semibold">
-              2.{" "}
-              <a href="../" className="text-blue-600">
-                <span className="underline">Renovation Visualization</span>{" "}
-                <span className="text-gray-500">
-                  With construction costs at all-time highs, agents are showing
-                  potential:
-                </span>
-              </a>
+              {t.renovationVisualizationTitle}
             </h4>
-            <p className="mt-1">
-              With construction costs at all-time highs, agents are showing
-              potential:
-            </p>
+            <p className="mt-1">{t.renovationVisualizationDescription}</p>
             <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-              <li>Energy-efficient upgrades with projected savings</li>
-              <li>Space reconfiguration possibilities</li>
-              <li>Modern updates to dated properties</li>
-              <li>Accessibility modifications</li>
+              <li>{t.energyEfficientUpgrades}</li>
+              <li>{t.spaceReconfiguration}</li>
+              <li>{t.modernUpdates}</li>
+              <li>{t.accessibilityModifications}</li>
             </ul>
           </div>
 
           <div className="mt-4">
             <h4 className="font-semibold">
-              3. Digital-First Marketing Integration
+              {t.digitalMarketingIntegration}
             </h4>
-            <p className="mt-1">
-              Properties staged with Styly.io in 2025 are seeing:
-            </p>
+            <p className="mt-1">{t.digitalMarketingDescription}</p>
             <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-              <li>53% higher engagement on social platforms</li>
-              <li>2.2x longer time spent on listing pages</li>
-              <li>40% more saved/favorited listings</li>
-              <li>Significantly higher quality leads</li>
+              <li>{t.higherEngagement}</li>
+              <li>{t.longerTimeSpent}</li>
+              <li>{t.moreSavedListings}</li>
+              <li>{t.higherQualityLeads}</li>
             </ul>
           </div>
         </div>
@@ -202,77 +154,56 @@ const RealEstateVirtualStaging: React.FC = () => {
         {/* Market Analysis */}
         <div>
           <h3 className="text-base font-semibold">
-            Current Market Analysis and Projections
+            {t.currentMarketAnalysis}
           </h3>
           <p className="mt-2">
-            According to McKinsey &amp; Company's 2025{" "}
+            {t.marketAnalysisDescription}
             <a
               href="https://www.mckinsey.com/industries/real-estate/our-insights"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 underline"
             >
-              Real Estate Technology Report
+              {t.realEstateTechReport}
             </a>
-            :
           </p>
           <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-            <li>AI staging adoption has reached 78% among successful agents</li>
-            <li>
-              94% of luxury properties now use AI staging as standard practice
-            </li>
-            <li>The virtual staging market has grown 87% since 2023</li>
-            <li>Traditional physical staging services have declined by 35%</li>
+            <li>{t.aiStagingAdoption}</li>
+            <li>{t.luxuryPropertiesUseAI}</li>
+            <li>{t.virtualStagingMarketGrowth}</li>
+            <li>{t.declineOfPhysicalStaging}</li>
           </ul>
         </div>
 
         {/* Best Practices */}
         <div>
           <h3 className="text-base font-medium text-gray-600">
-            Evidence-Based Best Practices for 2025
+            {t.evidenceBasedBestPractices}
           </h3>
           <div className="mt-4">
-            <h4 className="font-semibold">1. Segmented Marketing Approaches</h4>
+            <h4 className="font-semibold">{t.segmentedMarketingApproaches}</h4>
             <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-              <li>Wide-angle, high-resolution images</li>
-              <li>Consistent height and perspective</li>
-              <li>Empty, clean spaces for optimal AI processing</li>
+              <li>{t.highResolutionImages}</li>
+              <li>{t.consistentHeightPerspective}</li>
+              <li>{t.cleanSpacesForAI}</li>
             </ul>
           </div>
 
           <div className="mt-4">
-            <h4 className="font-semibold">2. Strategic Application</h4>
-
+            <h4 className="font-semibold">{t.strategicApplication}</h4>
             <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-              <li>Focus on problematic spaces first</li>
-              <li>Showcase versatility in primary rooms</li>
-              <li>Demonstrate lifestyle possibilities</li>
+              <li>{t.focusOnProblematicSpaces}</li>
+              <li>{t.showcaseVersatility}</li>
+              <li>{t.demonstrateLifestylePossibilities}</li>
             </ul>
           </div>
 
           <div className="mt-4">
-            <h4 className="font-semibold">3. Market-Responsive Design</h4>
-
+            <h4 className="font-semibold">{t.marketResponsiveDesign}</h4>
             <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
-              <li>Research local buyer preferences</li>
-              <li>Align with current design trends</li>
-              <li>Consider property-specific architectural elements</li>
-            </ul>
-          </div>
-          <div className="mt-4">
-            <h3 className="text-[12px] font-medium text-gray-600">
-              The Styly.io Advantage in Today's Market
-            </h3>
-            <h3 className="text-[12px] font-medium text-gray-600 mt-5">
-              What distinguishes Styly.io in the now-crowded virtual staging
-              marketplace:
-            </h3>
-            <ul className="list-disc list-inside pl-4 mt-2 space-y-1 text-[12px]">
-              <li>Industry-leading photorealism</li>
-              <li>Multi-platform accessibility (WhatsApp, web, mobile)</li>
-              <li>No technical expertise required</li>
-              <li>Consistent results across diverse property types</li>
-              <li>Enterprise solutions for brokerages and teams</li>
+              <li>{t.researchLocalPreferences}</li>
+              <li>{t.alignWithDesignTrends}</li>
+              <li>{t.considerPropertyElements}</li>
             </ul>
           </div>
         </div>
@@ -291,41 +222,39 @@ const RealEstateVirtualStaging: React.FC = () => {
       </div>
       <div>
         <h2 className="text-base text-gray-800 font-semibold">
-          Expert Analysis
+          {t.expertAnalysis}
         </h2>
-        <p className="text-[12px] mt-5">
-          "The question is no longer whether to use AI staging, but how to use
-          it most effectively," states Dr. Emily Rodriguez, Real Estate
-          Economics Professor at UCLA. "Platforms like Styly.io have evolved
-          from novelty to necessity, particularly as buyer expectations for
-          digital presentation have reached unprecedented levels."
-        </p>
+        <p className="text-base mt-5">{t.expertAnalysisQuote}</p>
 
-        <h3 className="text-[12px] text-gray-800 font-medium mt-5">
-          The 2025 Reality
+        <h3 className="text-base text-gray-800 font-medium mt-5">
+          {t.the2025Reality}
         </h3>
-        <p className="text-[12px] text-gray-800}">
-          AI-powered virtual staging is now firmly embedded in successful real
-          estate practice. The competitive advantage has shifted from simply
-          using the technology to implementing it strategically and effectively.
+        <p className="text-base text-gray-800">
+          {t.aiStagingEmbeddedInPractice}
         </p>
 
         <h3 className="text-sm font-medium mt-5">
-          Transform Your Real Estate Business Today
+          {t.transformRealEstateBusiness}
         </h3>
-        <p className="text-[12px] text-gray-800 mt-5">
-          {" "}
-          Experience the real market advantage of AI-powered virtual staging
-          with Styly.io. Our platform helps real estate professionals:
+        <p className="text-base text-gray-800 mt-5">
+          {t.experienceAIAdvantage}
         </p>
 
-        <ul className="list-disc list-inside space-y-2 text-[12px] text-gray-800 mt-5">
-          <li>Meet modern buyer expectations</li>
-          <li>Maximize property values in any market</li>
-          <li>Reduce days-on-market</li>
-          <li>Scale marketing efforts efficiently</li>
-          <li>Deliver consistent, professional presentation</li>
+        <ul className="list-disc list-inside space-y-2 text-base text-gray-800 mt-5">
+          <li>{t.meetBuyerExpectations}</li>
+          <li>{t.maximizePropertyValues}</li>
+          <li>{t.reduceDaysOnMarket}</li>
+          <li>{t.scaleMarketingEfforts}</li>
+          <li>{t.deliverConsistentPresentation}</li>
         </ul>
+      </div>
+      <div className="flex items-center justify-center gap-6 text-gray-600 text-base leading-relaxed p-5">
+        <a
+          href="./real-estate-agents-ai-virtual-staging"
+          className="text-base text-blue-400 hover:underline"
+        >
+          {t.realEstateVirtualStaging}
+        </a>
       </div>
     </>
   );

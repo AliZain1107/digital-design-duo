@@ -5,7 +5,6 @@ const AiBedroomDesign: React.FC = () => {
     <div className="flex flex-col items-center px-4 py-10 space-y-12">
       
 
-      <div className="max-w-4xl space-y-6 text-gray-800 text-sm">
       <div className="max-w-3xl space-y-6 text-gray-800 text-sm">
         <div>
           <h2 className="text-lg font-semibold">Table of Contents:</h2>
@@ -100,8 +99,6 @@ const AiBedroomDesign: React.FC = () => {
             },
           ].map((item, idx) => (
             <div key={idx} className="space-y-2">
-              <h3 className="font-semibold text-base my-5">{idx + 1}. {item.title}</h3>
-              <p className="text-sm mb-4">Prompt: {item.prompt}</p>
               <h3 className="font-semibold text-base">{idx + 1}. {item.title}</h3>
               <p className="text-sm">Prompt: {item.prompt}</p>
               <img src={item.img} alt={item.title} className="rounded-md h-[500px] w-64" />
