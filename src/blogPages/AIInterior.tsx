@@ -1,68 +1,57 @@
-import React from "react";
+import { useLanguage } from "@/lib/i18n"; // Adjust path accordingly
 
 const TipsToSaveBig2025: React.FC = () => {
+  const { t } = useLanguage(); // Get the translation object based on the current language
+
   return (
     <div className="flex flex-col items-center px-4 py-10 space-y-8">
-      
       <div className="max-w-3xl space-y-6 text-gray-800 text-sm">
         <p>
-          Transforming your home interiors doesn’t have to break the bank. With the
-          advent of advanced tools like <strong>Styly’s free AI room design</strong> solutions,
-          you can achieve stunning results on a budget. Here are 10 expert tips to help
-          you save big on your home interiors while using the latest AI-powered tools.
+          {t.introductionText1}
+          <strong>{t.stylyAI}</strong> {t.introductionText2}
         </p>
 
         <div className="space-y-4">
           {[
             {
-              title: "Plan Before You Spend",
-              content:
-                "Proper planning is essential to avoid unnecessary expenses. Use free AI interior design tools like Styly to visualize your ideas before committing to them."
+              title: t.planBeforeYouSpend,
+              content: t.planBeforeYouSpendContent,
             },
             {
-              title: "Optimize Room Layout with AI",
-              content:
-                "Leverage an AI room decorator to experiment with layouts. Tools like Styly can provide multiple design options to utilize space efficiently."
+              title: t.optimizeRoomLayoutWithAI,
+              content: t.optimizeRoomLayoutWithAIContent,
             },
             {
-              title: "Upcycle Furniture",
-              content:
-                "Give your furniture a fresh look by upcycling. Pair this with Styly’s AI room design features to visualize revamped pieces in your interiors."
+              title: t.upcycleFurniture,
+              content: t.upcycleFurnitureContent,
             },
             {
-              title: "Focus on DIY Projects",
-              content:
-                "Add a personal touch with DIY decor. Use free AI room design tools to guide your projects and align them with your design theme."
+              title: t.focusOnDIYProjects,
+              content: t.focusOnDIYProjectsContent,
             },
             {
-              title: "Shop Smart for Materials",
-              content:
-                "Look for discounts or second-hand options. AI tools help visualize how materials will work, preventing wasted purchases."
+              title: t.shopSmartForMaterials,
+              content: t.shopSmartForMaterialsContent,
             },
             {
-              title: "Prioritize Key Elements",
-              content:
-                "Focus your budget on impactful items like lighting. AI design tools help identify high-value, budget-friendly options."
+              title: t.prioritizeKeyElements,
+              content: t.prioritizeKeyElementsContent,
             },
             {
-              title: "Experiment with Colors Virtually",
-              content:
-                "Before buying, test color palettes using Styly’s free AI tools. Save money by getting it right on the first try."
+              title: t.experimentWithColorsVirtually,
+              content: t.experimentWithColorsVirtuallyContent,
             },
             {
-              title: "Invest in Multi-Functional Furniture",
-              content:
-                "Opt for items like sofa beds or ottomans with storage. Visualize them with AI tools to ensure the best fit."
+              title: t.investInMultiFunctionalFurniture,
+              content: t.investInMultiFunctionalFurnitureContent,
             },
             {
-              title: "Use AI for Accessory Placement",
-              content:
-                "Styly’s AI can recommend where to place accessories for a polished look without overbuying."
+              title: t.useAIForAccessoryPlacement,
+              content: t.useAIForAccessoryPlacementContent,
             },
             {
-              title: "Stay Updated with Trends",
-              content:
-                "AI platforms offer trend insights. Use them to incorporate stylish updates without a complete redo."
+              title: t.stayUpdatedWithTrends,
+              content: t.stayUpdatedWithTrendsContent,
             },
           ].map((tip, i) => (
             <div key={i}>
@@ -84,29 +73,24 @@ const TipsToSaveBig2025: React.FC = () => {
           className="w-full h-[500px] rounded-xl object-cover"
         />
 
-        <h2 className="text-lg font-semibold">Why Choose Styly for Your Home Interiors?</h2>
-        <p>
-          Styly’s <strong>AI interior design free</strong> tools make it easy to create
-          personalized, budget-friendly interiors. Whether redecorating a room or your
-          whole home, Styly empowers you to:
-        </p>
+        <h2 className="text-lg font-semibold">{t.whyChooseStyly}</h2>
+        <p>{t.stylyDescription}</p>
         <ul className="list-disc pl-5">
-          <li>Visualize designs instantly</li>
-          <li>Experiment with layouts and styles</li>
-          <li>Save money by avoiding costly mistakes</li>
+          <li>{t.visualizeDesigns}</li>
+          <li>{t.experimentWithLayouts}</li>
+          <li>{t.saveMoney}</li>
         </ul>
 
         <p>
-          Get started with Styly today and take the stress out of home interiors in 2025.
-          Experience the future of design with
+          {t.getStartedWithStyly}{" "}
           <a href="../" target="_blank" className="text-blue-600 font-semibold">
-            {" "}free AI room design
+            {t.freeAIRoomDesign}
           </a>{" "}
-          tools and transform your space like a pro!
+          {t.transformYourSpace}
         </p>
 
         <div className="pt-6 border-t text-center">
-          <p className="font-semibold">Follow Us here:</p>
+          <p className="font-semibold">{t.followUsHere}</p>
           <div className="space-x-4 mt-2">
             <a
               href="https://www.instagram.com/stylyio/"
@@ -114,7 +98,7 @@ const TipsToSaveBig2025: React.FC = () => {
               className="text-blue-500"
               rel="noopener"
             >
-              Instagram
+              {t.instagram}
             </a>
             <a
               href="../"
@@ -122,7 +106,7 @@ const TipsToSaveBig2025: React.FC = () => {
               className="text-blue-500"
               rel="noopener"
             >
-              LinkedIn
+              {t.linkedin}
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61558770901420"
@@ -130,7 +114,7 @@ const TipsToSaveBig2025: React.FC = () => {
               className="text-blue-500"
               rel="noopener"
             >
-              Facebook
+              {t.facebook}
             </a>
           </div>
         </div>

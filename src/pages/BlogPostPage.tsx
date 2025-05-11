@@ -26,7 +26,7 @@ const BlogPostPage: React.FC = () => {
         <img
           src={post.image}
           alt={post.title}
-          className="w-full h-1/2 rounded mb-4 block rounded-inherit object-center object-cover p-4"
+          className="w-full h-[500px] rounded-3xl mb-4 block rounded-inherit object-center object-cover p-4"
         />
         <post.Component />
       </div>

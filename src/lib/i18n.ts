@@ -204,8 +204,276 @@ export interface Translations {
   deliverConsistentPresentation: string;
   realEstateVirtualStaging: string;
 
-}
+  marketOverview: string;
+  keyEvaluationCriteria: string;
+  marketLeaders: string;
+  emergingInnovators: string;
+  stylyAdvantage: string;
+  performanceMetrics: string;
+  caseStudy: string;
+  futureTrends: string;
+  expertPerspectives: string;
+  makingTheRightChoice: string;
+  conclusion: string;
+  foyr: string;
+  knownForCommercialApplications: string;
+  palette: string;
+  focusesOnColorHarmony: string;
+  pablo: string;
+  specializesInLightingDesign: string;
+  reroomAI: string;
+  notableForRenovationProjects: string;
+  promeAI: string;
+  specializesInTextureGeneration: string;
+  realTimeStyleTransferTechnology: string;
+  advancedMaterialRecognition: string;
+  intelligentSpaceOptimization: string;
+  timeSaved: string;
+  reductionInInitialDesignPhase: string;
+  clientSatisfactionRates: string;
+  positiveFeedback: string;
+  costReduction: string;
+  averageSavingsInProjectPlanning: string;
+  reduceDesignIterationTime: string;
+  cutDesignCosts: string;
+  integrationOfARVRTechnologies: string;
 
+  sustainableDesignAutomation: string;
+  aiToolsAreNotReplacingDesigners: string;
+  yourSpecificNeedsAndUseCases: string;
+  budgetConstraints: string;
+  whileEachPlatformOffersUniqueAdvantages: string;
+  emergesAsAComprehensiveSolution: string;
+
+  //AI Bedroom
+  tableOfContents: string;
+  introduction: string;
+  aiInBedroomDesign: string;
+  aiInBedroomDesignText: string;
+  stylyioOverview: string;
+  stylyioOverviewText: string;
+  scandinavianSerenity: string;
+  scandinavianBedroomPrompt: string;
+  modernLuxurySuite: string;
+  modernLuxurySuitePrompt: string;
+  coastalRetreat: string;
+  coastalBedroomPrompt: string;
+  urbanIndustrial: string;
+  urbanIndustrialPrompt: string;
+  bohemianDreams: string;
+  bohemianDreamsPrompt: string;
+  eclecticFusion: string;
+  eclecticFusionPrompt: string;
+  minimalistZen: string;
+  minimalistZenPrompt: string;
+  vintageCharm: string;
+  vintageCharmPrompt: string;
+
+  expertDesignTips: string;
+  expertDesignTipsText: string;
+  japaneseMinimalism: string;
+  japaneseMinimalismPrompt: string;
+  introductionText: string;
+  eightAIPoweredBedroomDesigns: string;
+  japaneseZen: string;
+  japaneseZenPrompt: string;
+  midCenturyModern: string;
+  midCenturyModernPrompt: string;
+  contemporaryGlam: string;
+  contemporaryGlamPrompt: string;
+
+  considerNaturalLight: string;
+  ensureWalkableSpace: string;
+  layerLighting: string;
+  includeHiddenStorage: string;
+  useCalmingMaterials: string;
+
+  negativePromptGuidelines: string;
+  avoidClutter: string;
+  keepLightingNatural: string;
+  stickToDesignStyle: string;
+  maintainProportions: string;
+
+  sourcesAndResearch: string;
+  nationalSleepFoundation: string;
+  interiorDesignMagazine: string;
+  asidAnnualReport: string;
+  harvardHealthSleepStudies: string;
+  conclusionText: string;
+  keywords: string;
+  followUsHere: string;
+  linkedin: string;
+  instagram: string;
+  facebook: string;
+  prompt: string;
+
+  // General
+  welcomeMessage: string;
+  profileTitle: string;
+  logoutButton: string;
+  settingsTitle: string;
+  saveButton: string;
+  cancelButton: string;
+  loadingMessage: string;
+  errorMessage: string;
+  successMessage: string;
+
+  // Dashboard Section
+  dashboardTitle: string;
+  viewAnalytics: string;
+  viewReports: string;
+  viewTasks: string;
+
+  // Task Management
+  taskManagementTitle: string;
+  taskListTitle: string;
+  taskAssignButton: string;
+  taskCompleteButton: string;
+  taskInProgress: string;
+  taskCompleted: string;
+  taskOverdue: string;
+
+  // Analytics Section
+  analyticsTitle: string;
+  viewDetailsButton: string;
+  totalTasksCompleted: string;
+  totalTasksAssigned: string;
+  tasksInProgress: string;
+  tasksCompleted: string;
+
+  // Settings Section
+  settingsSubtitle: string;
+  updateProfileButton: string;
+  changePasswordButton: string;
+  languageSelection: string;
+  notificationSettings: string;
+  saveChangesButton: string;
+
+  // Notifications Section
+  notificationTitle: string;
+  notificationNewTaskAssigned: string;
+  notificationTaskCompleted: string;
+  notificationNewMessage: string;
+
+  // User Profile Section
+  profileEditTitle: string;
+  profileSaveButton: string;
+  profileCancelButton: string;
+  profilePictureUpload: string;
+  profileName: string;
+  profileEmail: string;
+  profilePhone: string;
+  profileAddress: string;
+
+  // Error and Success Messages
+  errorUpdatingProfile: string;
+  successUpdatingProfile: string;
+  errorSavingChanges: string;
+  successSavingChanges: string;
+  errorLoadingData: string;
+  successLoadingData: string;
+  creatingTrendySpaces: string;
+  introductionText1: string;
+  introductionText2: string;
+  understandingAestheticPreferences: string;
+  aestheticPreferencesText: string;
+  colorPalettes: string;
+  colorPalettesText: string;
+  eclecticFurnitureAndDecor: string;
+  eclecticFurnitureAndDecorText: string;
+  minimalistMeetsMaximalist: string;
+  minimalistMeetsMaximalistText: string;
+  keyElementsOfInstagramWorthyInterior: string;
+  instagramWorthyDefinition: string;
+  naturalLighting: string;
+  naturalLightingText: string;
+  accentWalls: string;
+  accentWallsText: string;
+  statementPieces: string;
+  statementPiecesText: string;
+  greeneryAndPlants: string;
+  greeneryAndPlantsText: string;
+  layeredTextures: string;
+  layeredTexturesText: string;
+  declutteredVisuals: string;
+  declutteredVisualsText: string;
+  incorporatingSustainabilityAndTechnology: string;
+  sustainabilityTechText: string;
+  sustainableMaterials: string;
+  sustainableMaterialsText: string;
+  smartHomeTechnology: string;
+  smartHomeTechnologyText: string;
+  multiFunctionalFurniture: string;
+  multiFunctionalFurnitureText: string;
+  caseStudiesAndExamples: string;
+  caseStudyIntro: string;
+  economicEfficiencyText: string;
+  geometricDreamBedroom: string;
+  geometricDreamBedroomText: string;
+  cafeInspiredKitchenNook: string;
+  cafeInspiredKitchenNookText: string;
+  bohoOutdoorBalcony: string;
+  bohoOutdoorBalconyText: string;
+  diyInstagramWorthyMakeovers: string;
+  diyTipsIntro: string;
+  startWithMoodBoard: string;
+  startWithMoodBoardText: string;
+  maximizeWhatYouHave: string;
+  maximizeWhatYouHaveText: string;
+  getCreativeWithPaint: string;
+  getCreativeWithPaintText: string;
+  thriftForJewels: string;
+  thriftForJewelsText: string;
+  accessorizeThoughtfully: string;
+  accessorizeThoughtfullyText: string;
+  playWithAnglesForPhotos: string;
+  playWithAnglesForPhotosText: string;
+  socialMediaShapingDesignTrends: string;
+  socialMediaShapingDesignTrendsText: string;
+  crowdsourcingCreativity: string;
+  crowdsourcingCreativityText: string;
+  massAppealToNicheInterests: string;
+  massAppealToNicheInterestsText: string;
+  interactiveShopping: string;
+  interactiveShoppingText: string;
+  empoweringNewCreators: string;
+  empoweringNewCreatorsText: string;
+  shareYourBestSpace: string;
+  shareYourBestSpaceText: string;
+  shareYourBestSpaceInstagram: string;
+  prevArticle: string;
+  nextArticle: string;
+  readMore: string;
+  stylyAI: string;
+  planBeforeYouSpend: string;
+  planBeforeYouSpendContent: string;
+  optimizeRoomLayoutWithAI: string;
+  optimizeRoomLayoutWithAIContent: string;
+  upcycleFurniture: string;
+  upcycleFurnitureContent: string;
+  focusOnDIYProjects: string;
+  focusOnDIYProjectsContent: string;
+  shopSmartForMaterials: string;
+  shopSmartForMaterialsContent: string;
+  prioritizeKeyElements: string;
+  prioritizeKeyElementsContent: string;
+  experimentWithColorsVirtually: string;
+  experimentWithColorsVirtuallyContent: string;
+  investInMultiFunctionalFurniture: string;
+  investInMultiFunctionalFurnitureContent: string;
+  useAIForAccessoryPlacement: string;
+  useAIForAccessoryPlacementContent: string;
+  stayUpdatedWithTrends: string;
+  stayUpdatedWithTrendsContent: string;
+  whyChooseStyly: string;
+  stylyDescription: string;
+  visualizeDesigns: string;
+  experimentWithLayouts: string;
+  saveMoney: string;
+  getStartedWithStyly: string;
+  freeAIRoomDesign: string;
+  transformYourSpace: string;
+}
 // Define translations for English and French
 export const translations: Record<Language, Translations> = {
   en: {
@@ -213,6 +481,31 @@ export const translations: Record<Language, Translations> = {
     pricing: "Pricing",
     blog: "Blog",
     signIn: "Sign In",
+
+    // Add missing properties
+    expertDesignTipsText: "Expert design tips to enhance your interiors.",
+    japaneseMinimalism: "Japanese Minimalism",
+    japaneseMinimalismPrompt:
+      "Japanese minimalism: clean lines, natural materials, serene ambiance...",
+    prompt: "Enter your design preferences here...",
+
+    // Add missing properties
+    marketOverview: "Market Overview",
+    eclecticFusion: "Eclectic Fusion",
+    eclecticFusionPrompt:
+      "Eclectic fusion: mix of styles, vibrant colors, unique objects...",
+    minimalistZen: "Minimalist Zen",
+    minimalistZenPrompt:
+      "Minimalist Zen: clean lines, neutral palette, calming ambiance...",
+    vintageCharm: "Vintage Charm",
+    vintageCharmPrompt:
+      "Vintage charm: antique furniture, classic details, warm atmosphere...",
+    keywords:
+      "Keywords: AI bedroom design, minimalist design, vintage design, eclectic design",
+    followUsHere: "Follow Us Here!",
+    linkedin: "LinkedIn",
+    instagram: "Instagram",
+    facebook: "Facebook",
 
     // Hero section
     welcomeToFuture: "Welcome to the Future of Design",
@@ -475,19 +768,343 @@ export const translations: Record<Language, Translations> = {
     scaleMarketingEfforts: "Scale marketing efforts efficiently",
     deliverConsistentPresentation:
       "Deliver consistent, professional presentation",
-    realEstateVirtualStaging: "Gen Z’s Ultimate Guide to Instagram-Worthy Interiors",
-    howRealEstateAgentsBoostSales: "How Real Estate Agents Are Boosting Sales with AI-Powered Virtual Staging: The 2025 Market Reality",
-    genZUltimateGuideToInteriors: "Gen Z's Ultimate Guide to Instagram-Worthy Interiors",
-    howToBuildYourHouse: "How to Build Your Own House with AI Tools Including Porch Design",
-    ultimateGuideToAIInteriorDesign: "The Ultimate Guide to AI Interior Design Tools in 2025: A Comprehensive Comparison",
-    eightStunningAIBedroomDesigns: "Eight Stunning AI-Generated Bedroom Designs: Transform Your Space with Styly.io",
-    expertTipsOnHomeInteriors: "10 Expert Tips to Save Big on Home Interiors in 2025",
+    realEstateVirtualStaging:
+      "Gen Z’s Ultimate Guide to Instagram-Worthy Interiors",
+    howRealEstateAgentsBoostSales:
+      "How Real Estate Agents Are Boosting Sales with AI-Powered Virtual Staging: The 2025 Market Reality",
+    genZUltimateGuideToInteriors:
+      "Gen Z's Ultimate Guide to Instagram-Worthy Interiors",
+    howToBuildYourHouse:
+      "How to Build Your Own House with AI Tools Including Porch Design",
+    ultimateGuideToAIInteriorDesign:
+      "The Ultimate Guide to AI Interior Design Tools in 2025: A Comprehensive Comparison",
+    eightStunningAIBedroomDesigns:
+      "Eight Stunning AI-Generated Bedroom Designs: Transform Your Space with Styly.io",
+    expertTipsOnHomeInteriors:
+      "10 Expert Tips to Save Big on Home Interiors in 2025",
+
+    // New Keys for Market Leaders
+    foyr: "Foyr",
+    knownForCommercialApplications: "Known for commercial applications",
+    palette: "Palette",
+    focusesOnColorHarmony: "Focuses on color harmony",
+    pablo: "Pablo",
+    specializesInLightingDesign: "Specializes in lighting design",
+
+    // New Keys for Emerging Innovators
+    reroomAI: "Reroom AI",
+    notableForRenovationProjects: "Notable for renovation projects",
+    promeAI: "PromeAI",
+    specializesInTextureGeneration: "Specializes in texture generation",
+
+    // Styly Advantage
+    realTimeStyleTransferTechnology: "Real-time style transfer technology",
+    advancedMaterialRecognition: "Advanced material recognition",
+    intelligentSpaceOptimization: "Intelligent space optimization",
+
+    // Performance Metrics
+    timeSaved: "Time saved",
+    reductionInInitialDesignPhase: "reduction in initial design phase",
+    clientSatisfactionRates: "Client satisfaction rates",
+    positiveFeedback: "positive feedback",
+    costReduction: "Cost reduction",
+    averageSavingsInProjectPlanning: "average savings in project planning",
+
+    // Case Study
+    reduceDesignIterationTime: "Reduce design iteration time",
+    cutDesignCosts: "Cut design costs",
+
+    // Future Trends
+    integrationOfARVRTechnologies: "Integration of AR/VR technologies",
+    sustainableDesignAutomation: "Sustainable design automation",
+
+    // Expert Perspectives
+    aiToolsAreNotReplacingDesigners:
+      "AI tools are not replacing designers; they're empowering them to be more creative and efficient",
+
+    // Making the Right Choice
+    yourSpecificNeedsAndUseCases: "Your specific needs and use cases",
+    budgetConstraints: "Budget constraints",
+
+    // Conclusion
+    whileEachPlatformOffersUniqueAdvantages:
+      "While each platform offers unique advantages",
+    emergesAsAComprehensiveSolution:
+      "emerges as a comprehensive solution that combines powerful AI capabilities with user-friendly features",
+    keyEvaluationCriteria: "Key Evaluation Criteria",
+    marketLeaders: "Market Leaders",
+    emergingInnovators: "Emerging Innovators",
+    stylyAdvantage: "Styly Advantage",
+    performanceMetrics: "Performance Metrics",
+    caseStudy: "Case Study",
+    futureTrends: "Future Trends",
+    expertPerspectives: "Expert Perspectives",
+    makingTheRightChoice: "Making the Right Choice",
+    conclusion: "Conclusion",
+
+    // Table of Contents
+    tableOfContents: "Table of Contents:",
+    introduction: "Introduction",
+    aiInBedroomDesign: "AI in Bedroom Design",
+    stylyioOverview: "Styly.io: Your AI-Powered Bedroom Design Companion",
+    eightAIPoweredBedroomDesigns: "Eight AI-Powered Bedroom Designs",
+    expertDesignTips: "Expert Design Tips",
+
+    // Introduction
+    introductionText:
+      "Bedrooms are our sanctuaries. According to the National Sleep Foundation, we spend about one-third of our lives there. It’s vital to create a space that fosters both comfort and style. AI tools like Styly.io are changing the game in bedroom design.",
+
+    // AI in Bedroom Design
+    aiInBedroomDesignText:
+      "A recent study from Interior Design magazine found AI tools cut down initial concept time by 60%. This gives designers more room to personalize and perfect their designs.",
+
+    // Styly.io Overview
+    stylyioOverviewText:
+      "Whether you're a designer or a homeowner, Styly.io helps you create beautiful bedroom spaces with ease. It combines advanced AI with intuitive design.",
+
+    // Eight AI-Powered Bedroom Designs
+    scandinavianSerenity: "Scandinavian Serenity",
+    scandinavianBedroomPrompt:
+      "Scandinavian bedroom: minimalist design, light wood furniture, white walls, natural light...",
+    modernLuxurySuite: "Modern Luxury Suite",
+    modernLuxurySuitePrompt:
+      "Contemporary luxury bedroom: high ceilings, champagne metallic details, smart lighting...",
+    coastalRetreat: "Coastal Retreat",
+    coastalBedroomPrompt:
+      "Coastal bedroom: soft blues and sandy beiges, sheer curtains, beach vibes...",
+    urbanIndustrial: "Urban Industrial",
+    urbanIndustrialPrompt:
+      "Industrial chic: exposed brick, steel-frame windows, leather accents...",
+    bohemianDreams: "Bohemian Dreams",
+    bohemianDreamsPrompt:
+      "Boho vibes: macramé, plants, vintage rug, cozy lighting...",
+    japaneseZen: "Japanese Zen",
+    japaneseZenPrompt:
+      "Japanese minimalist: tatami mats, bamboo accents, peaceful harmony...",
+    midCenturyModern: "Mid-Century Modern",
+    midCenturyModernPrompt:
+      "Mid-century modern: walnut, geometric patterns, iconic pieces...",
+    contemporaryGlam: "Contemporary Glam",
+    contemporaryGlamPrompt:
+      "Glamorous style: velvet headboard, crystal lighting, mirrored furniture...",
+
+    // Expert Design Tips
+    considerNaturalLight: "Consider natural light when choosing colors",
+    ensureWalkableSpace: "Ensure walkable space around furniture",
+    layerLighting: "Layer lighting for flexibility",
+    includeHiddenStorage: "Include hidden or built-in storage",
+    useCalmingMaterials: "Use calming, sleep-promoting materials",
+
+    // Negative Prompt Guidelines
+    negativePromptGuidelines: "Negative Prompt Guidelines",
+    avoidClutter: "Avoid overcrowded or cluttered layouts",
+    keepLightingNatural: "Keep lighting consistent and natural-looking",
+    stickToDesignStyle: "Stick to a unified design style",
+    maintainProportions: "Maintain proper scale and proportion",
+
+    // Sources and Research
+    sourcesAndResearch: "Sources and Research",
+    nationalSleepFoundation: "National Sleep Foundation",
+    interiorDesignMagazine: "Interior Design Magazine",
+    asidAnnualReport: "ASID Annual Report",
+    harvardHealthSleepStudies: "Harvard Health Sleep Studies",
+
+    // Conclusion
+    conclusionText:
+      "With Styly.io, you can design your bedroom exactly how you imagine it. From calm Scandinavian vibes to glamorous hotel-like luxury, the power is in your hands—backed by smart AI.",
+
+    creatingTrendySpaces:
+      "Creating Trendy Spaces: The Gen Z Guide to Instagram-Worthy Interiors",
+    introductionText1:
+      "If there’s one generation redefining self-expression through personal spaces, it’s Gen Z. Armed with a camera phone, sharp aesthetic preferences, and a wide social media audience, this generation knows how to create and showcase enviable Instagram-worthy interiors.",
+    introductionText2:
+      "But how do you design a space that’s trendy, personal, AND ready for the camera? This guide has you covered. Whether you’re creating an unforgettable feed or just want to spruce up your space, we’ll help you craft the perfect Instagram-worthy interior.",
+    understandingAestheticPreferences:
+      "Understanding Gen Z’s Aesthetic Preferences",
+    aestheticPreferencesText:
+      "Gen Z isn’t satisfied with cookie-cutter designs. They’re blending bold aesthetics, nostalgic touches, and functionality to make their spaces truly unique.",
+    colorPalettes: "Color Palettes",
+    colorPalettesText:
+      "Gen Z gravitates toward vibrant color combinations. Think sage green, lavender, muted pinks, and splashes of bold yellows or blues. Their preference? Personalizing spaces with colors that reflect individuality while keeping a cozy vibe.",
+    eclecticFurnitureAndDecor: "Eclectic Furniture and Decor",
+    eclecticFurnitureAndDecorText:
+      "Instead of mainstream furniture collections, Gen Z hunts for unique vintage finds, second-hand treasures, and quirky accent pieces. It’s style-meets-sustainability on a budget.",
+    minimalistMeetsMaximalist: "Minimalist Meets Maximalist",
+    minimalistMeetsMaximalistText:
+      "Gen Z decorates on one extreme or the other. Some lean into minimalist Nordic styles with clean lines and whites, while others go full maximalist with layered textures, bold patterns, and curated clutter that feels intentional.",
+    keyElementsOfInstagramWorthyInterior:
+      "Key Elements of an Instagram-Worthy Interior",
+    instagramWorthyDefinition:
+      "What defines “Instagram-worthy”? It’s all about creating that wow factor. These elements can make any room pop both in real life and on camera:",
+    naturalLighting: "Natural Lighting",
+    naturalLightingText:
+      "Lighting can make or break your photos. Large windows, sheer curtains, and strategically placed mirrors maximize the natural light. Think soft and diffused, not harsh.",
+    accentWalls: "Accent Walls",
+    accentWallsText:
+      "From funky wallpaper to a gallery of art, accent walls are a striking focal point. Popular choices include geometric murals, DIY photo walls, and plant-covered walls.",
+    statementPieces: "Statement Pieces",
+    statementPiecesText:
+      "Maybe it’s a retro velvet couch or a neon sign above the bed. Statement pieces anchor the room’s aesthetics and create visual interest.",
+    greeneryAndPlants: "Greenery and Plants",
+    greeneryAndPlantsText:
+      "Every Instagram-worthy room has some green. From lush monstera leaves to hanging ivy, plants bring vibrancy and life to a space.",
+    layeredTextures: "Layered Textures",
+    layeredTexturesText:
+      "Think soft rugs, chunky blankets, fluffy pillows, and textured wallpapers. Layering textures adds depth, making the room feel both visually dynamic and cozy.",
+    declutteredVisuals: "Decluttered Visuals",
+    declutteredVisualsText:
+      "While Gen Z embraces curated chaos, clutter that’s well-organized is key. Decorative baskets, minimalist shelves, and hidden storage keep the scene crisp and clean for the camera.",
+    incorporatingSustainabilityAndTechnology:
+      "Incorporating Sustainability and Technology",
+    sustainabilityTechText:
+      "Gen Z doesn’t just care about aesthetics—they care about the planet and staying connected. Here’s how they integrate sustainability and smart tech into their designs:",
+    sustainableMaterials: "Sustainable Materials",
+    sustainableMaterialsText:
+      "Eco-conscious design is non-negotiable for this generation. Think recycled wood furniture, bamboo decor, and upcycled pieces from thrift stores. They prioritize ethical choices over fast furniture trends.",
+    smartHomeTechnology: "Smart Home Technology",
+    smartHomeTechnologyText:
+      "Integrating tech like voice-controlled lights, smart speakers, and app-enabled air purifiers is common. Tools like home decor AI free platforms, like Styly’s AI room planner, make designing a breeze.",
+    multiFunctionalFurniture: "Multi-functional Furniture",
+    multiFunctionalFurnitureText:
+      "Small spaces are optimized with dual-purpose furniture—think storage ottomans, foldable desks, and Murphy beds. It’s trendy AND practical.",
+    caseStudiesAndExamples: "Case Studies and Real-Life Examples",
+    caseStudyIntro:
+      "What makes a space Insta-famous? Here are some standout examples of interiors that broke the algorithm:",
+    economicEfficiencyText:
+      "A small apartment oozing coziness with a jungle of hanging plants, vintage furniture, and muted tones. Pro Tip? Use contrasting pots for your plants!",
+    geometricDreamBedroom: "Geometric Dream Bedroom",
+    geometricDreamBedroomText:
+      "Featuring pastel-colored geometric wall designs paired with minimal shelves, this room exemplifies Gen Z’s blend of minimalist decor with bold personal statements.",
+    cafeInspiredKitchenNook: "Café-Inspired Kitchen Nook",
+    cafeInspiredKitchenNookText:
+      "A kitchen with industrial bar stools, subway tiles, and niche coffee setups has been a hit, with some posts getting hundreds of thousands of likes.",
+    bohoOutdoorBalcony: "Boho Outdoor Balcony",
+    bohoOutdoorBalconyText:
+      "Think rattan chairs, fairy lights, and layered outdoor rugs. It’s cozy, budget-friendly, and becomes an instant nighttime photo favorite.",
+    diyInstagramWorthyMakeovers: "Tips for DIY Instagram-Worthy Makeovers",
+    diyTipsIntro:
+      "Want to recreate one of these stunning spaces? With a little creativity and effort, you can. Here are some affordable DIY tips:",
+    startWithMoodBoard: "Start with a Mood Board",
+    startWithMoodBoardText:
+      "Use an AI room decorator like Styly’s AI room design free tool. Upload images of your space, try different layouts, and find inspiration that suits your vibe.",
+    maximizeWhatYouHave: "Maximize What You Have",
+    maximizeWhatYouHaveText:
+      "Rearrange existing furniture to see your room in a new light. Sometimes shifting a couch or bed to another spot can transform the room.",
+    getCreativeWithPaint: "Get Creative With Paint",
+    getCreativeWithPaintText:
+      "A can of paint goes a long way! Create accents or frames on walls with bold shapes or opt for a monochromatic corner in one shade.",
+    thriftForJewels: "Thrift for Jewels",
+    thriftForJewelsText:
+      "Shop at local second-hand stores or antique markets for quirky finds, like retro chairs or vintage vases.",
+    accessorizeThoughtfully: "Accessorize Thoughtfully",
+    accessorizeThoughtfullyText:
+      "Choose budget-friendly details like fairy lights, pillows with geometric designs, or sleek vases to elevate your space.",
+    playWithAnglesForPhotos: "Play With Angles for Photos",
+    playWithAnglesForPhotosText:
+      "Once your space is done, experiment with camera angles, lighting, and photo filters to capture its charm.",
+    socialMediaShapingDesignTrends:
+      "The Role of Social Media in Shaping Design Trends",
+    socialMediaShapingDesignTrendsText:
+      "Social media isn’t just about showcasing—it’s shaping what’s trendy. Here’s how Instagram plays a vital role:",
+    crowdsourcingCreativity: "Crowdsourcing Creativity",
+    crowdsourcingCreativityText:
+      "Through hashtags like #RoomGoals or #AestheticInteriors, people can easily draw inspiration. Trends spread fast because of this visibility.",
+    massAppealToNicheInterests: "Mass Appeal to Niche Interests",
+    massAppealToNicheInterestsText:
+      "Platforms give rise to niche aesthetics such as “cottage core” or “dark academia,” helping like-minded groups build communities.",
+    interactiveShopping: "Interactive Shopping",
+    interactiveShoppingText:
+      "Social media integrations now allow users to shop directly from inspirational posts. Just tap, and add to cart.",
+    empoweringNewCreators: "Empowering New Creators",
+    empoweringNewCreatorsText:
+      "Interior enthusiasts and influencers are not just reshaping design but careers. With thousands of followers, they’re dictating the future of interiors.",
+    shareYourBestSpace: "Share Your Best Space",
+    shareYourBestSpaceText:
+      "Creating Instagram-worthy interiors involves creativity, tech-savvy tools, and an eye for detail. But most importantly, it’s about YOU.",
+    shareYourBestSpaceInstagram:
+      "What’s your favorite tip? Share your Insta-worthy spaces with us @Stylyio, and don’t forget to try our AI room planner to design your next masterpiece.",
+    prevArticle:
+      "How Real Estate Agents Are Boosting Sales with AI-Powered Virtual Staging: The 2025 Market Reality",
+    nextArticle:
+      "How to Build Your Own House with AI Tools Including Porch Design",
+    readMore: "Read More",
+    introductionText1:
+      "Transforming your home interiors doesn’t have to break the bank. With the advent of advanced tools like",
+    stylyAI: "Styly’s free AI room design",
+    introductionText2:
+      "solutions, you can achieve stunning results on a budget. Here are 10 expert tips to help you save big on your home interiors while using the latest AI-powered tools.",
+
+    // Tips
+    planBeforeYouSpend: "Plan Before You Spend",
+    planBeforeYouSpendContent:
+      "Proper planning is essential to avoid unnecessary expenses. Use free AI interior design tools like Styly to visualize your ideas before committing to them.",
+    optimizeRoomLayoutWithAI: "Optimize Room Layout with AI",
+    optimizeRoomLayoutWithAIContent:
+      "Leverage an AI room decorator to experiment with layouts. Tools like Styly can provide multiple design options to utilize space efficiently.",
+    upcycleFurniture: "Upcycle Furniture",
+    upcycleFurnitureContent:
+      "Give your furniture a fresh look by upcycling. Pair this with Styly’s AI room design features to visualize revamped pieces in your interiors.",
+    focusOnDIYProjects: "Focus on DIY Projects",
+    focusOnDIYProjectsContent:
+      "Add a personal touch with DIY decor. Use free AI room design tools to guide your projects and align them with your design theme.",
+    shopSmartForMaterials: "Shop Smart for Materials",
+    shopSmartForMaterialsContent:
+      "Look for discounts or second-hand options. AI tools help visualize how materials will work, preventing wasted purchases.",
+    prioritizeKeyElements: "Prioritize Key Elements",
+    prioritizeKeyElementsContent:
+      "Focus your budget on impactful items like lighting. AI design tools help identify high-value, budget-friendly options.",
+    experimentWithColorsVirtually: "Experiment with Colors Virtually",
+    experimentWithColorsVirtuallyContent:
+      "Before buying, test color palettes using Styly’s free AI tools. Save money by getting it right on the first try.",
+    investInMultiFunctionalFurniture: "Invest in Multi-Functional Furniture",
+    investInMultiFunctionalFurnitureContent:
+      "Opt for items like sofa beds or ottomans with storage. Visualize them with AI tools to ensure the best fit.",
+    useAIForAccessoryPlacement: "Use AI for Accessory Placement",
+    useAIForAccessoryPlacementContent:
+      "Styly’s AI can recommend where to place accessories for a polished look without overbuying.",
+    stayUpdatedWithTrends: "Stay Updated with Trends",
+    stayUpdatedWithTrendsContent:
+      "AI platforms offer trend insights. Use them to incorporate stylish updates without a complete redo.",
+
+    // Why Choose Styly
+    whyChooseStyly: "Why Choose Styly for Your Home Interiors?",
+    stylyDescription:
+      "Styly’s free AI interior design tools make it easy to create personalized, budget-friendly interiors. Whether redecorating a room or your whole home, Styly empowers you to:",
+    visualizeDesigns: "Visualize designs instantly",
+    experimentWithLayouts: "Experiment with layouts and styles",
+    saveMoney: "Save money by avoiding costly mistakes",
+    getStartedWithStyly: "Get started with Styly today and take the stress out of home interiors in 2025. ",
+    freeAIRoomDesign: "free AI room design",
+    transformYourSpace: "tools and transform your space like a pro!",
+
   },
   fr: {
+    // Add missing properties with placeholder translations
+    eclecticFusion: "Fusion éclectique",
+    eclecticFusionPrompt:
+      "Fusion éclectique : mélange de styles, couleurs vibrantes, objets uniques...",
+    minimalistZen: "Zen minimaliste",
+    minimalistZenPrompt:
+      "Zen minimaliste : lignes épurées, palette neutre, ambiance apaisante...",
+    vintageCharm: "Charme vintage",
+    vintageCharmPrompt:
+      "Charme vintage : meubles anciens, détails classiques, ambiance chaleureuse...",
+    keywords:
+      "Mots-clés : design de chambre IA, design minimaliste, design vintage, design éclectique",
+    followUsHere: "Suivez-nous ici !",
+    linkedin: "LinkedIn",
+    instagram: "Instagram",
+    facebook: "Facebook",
     // Navbar
     pricing: "Tarification",
     blog: "Blog",
     signIn: "Connexion",
+    expertDesignTipsText:
+      "Conseils de design d'experts pour améliorer vos intérieurs.",
+    japaneseMinimalism: "Minimalisme japonais",
+    japaneseMinimalismPrompt:
+      "Minimalisme japonais : lignes épurées, matériaux naturels, ambiance sereine...",
+    prompt: "Entrez vos préférences de design ici...",
 
     // Hero section
     welcomeToFuture: "Bienvenue dans le Futur du Design",
@@ -768,13 +1385,341 @@ export const translations: Record<Language, Translations> = {
     scaleMarketingEfforts: "Accélérez les efforts marketing efficacement",
     deliverConsistentPresentation:
       "Offrez une présentation professionnelle et cohérente",
-    realEstateVirtualStaging: "Guide ultime pour les intérieurs Instagramables de Gen Z",
-    howRealEstateAgentsBoostSales: "Comment les agents immobiliers augmentent les ventes avec le home staging virtuel AI : La réalité du marché de 2025",
-    genZUltimateGuideToInteriors: "Guide ultime pour les intérieurs Instagramables de Gen Z",
-    howToBuildYourHouse: "Comment construire votre propre maison avec des outils AI incluant le design de la terrasse",
-    ultimateGuideToAIInteriorDesign: "Guide ultime pour les outils de design d'intérieur IA en 2025 : Une comparaison complète",
-    eightStunningAIBedroomDesigns: "Huit designs d'intérieurs AI-générés : Transformez votre espace avec Styly.io",
-    expertTipsOnHomeInteriors: "10 conseils experts pour économiser de l'argent sur les intérieurs en 2025",
+    realEstateVirtualStaging:
+      "Guide ultime pour les intérieurs Instagramables de Gen Z",
+    howRealEstateAgentsBoostSales:
+      "Comment les agents immobiliers augmentent les ventes avec le home staging virtuel AI : La réalité du marché de 2025",
+    genZUltimateGuideToInteriors:
+      "Guide ultime pour les intérieurs Instagramables de Gen Z",
+    howToBuildYourHouse:
+      "Comment construire votre propre maison avec des outils AI incluant le design de la terrasse",
+    ultimateGuideToAIInteriorDesign:
+      "Guide ultime pour les outils de design d'intérieur IA en 2025 : Une comparaison complète",
+    eightStunningAIBedroomDesigns:
+      "Huit designs d'intérieurs AI-générés : Transformez votre espace avec Styly.io",
+    expertTipsOnHomeInteriors:
+      "10 conseils experts pour économiser de l'argent sur les intérieurs en 2025",
+
+    marketOverview: "Aperçu du marché",
+    keyEvaluationCriteria: "Critères d'évaluation clés",
+    marketLeaders: "Les leaders du marché et leurs offres uniques",
+    emergingInnovators: "Innovateurs émergents",
+    stylyAdvantage: "L'avantage Styly.io",
+    performanceMetrics: "Mesures de performance",
+    caseStudy: "Étude de cas : Solutions de design transformatives",
+    futureTrends: "Tendances et innovations futures",
+    expertPerspectives: "Perspectives d'experts",
+    makingTheRightChoice: "Faire le bon choix",
+    conclusion: "Conclusion",
+
+    // New Keys for Market Leaders
+    foyr: "Foyr",
+    knownForCommercialApplications: "Connu pour les applications commerciales",
+    palette: "Palette",
+    focusesOnColorHarmony: "Se concentre sur l'harmonie des couleurs",
+    pablo: "Pablo",
+    specializesInLightingDesign: "Spécialiste de la conception d'éclairage",
+
+    // New Keys for Emerging Innovators
+    reroomAI: "Reroom AI",
+    notableForRenovationProjects: "Remarquable pour les projets de rénovation",
+    promeAI: "PromeAI",
+    specializesInTextureGeneration: "Spécialiste de la génération de textures",
+
+    // Styly Advantage
+    realTimeStyleTransferTechnology:
+      "Technologie de transfert de style en temps réel",
+    advancedMaterialRecognition: "Reconnaissance avancée des matériaux",
+    intelligentSpaceOptimization: "Optimisation intelligente de l'espace",
+
+    // Performance Metrics
+    timeSaved: "Temps gagné",
+    reductionInInitialDesignPhase:
+      "réduction de la phase de conception initiale",
+    clientSatisfactionRates: "Taux de satisfaction des clients",
+    positiveFeedback: "retours positifs",
+    costReduction: "Réduction des coûts",
+    averageSavingsInProjectPlanning:
+      "économies moyennes dans la planification des projets",
+
+    // Case Study
+    reduceDesignIterationTime: "Réduire le temps d'itération de conception",
+    cutDesignCosts: "Réduire les coûts de conception",
+
+    // Future Trends
+    integrationOfARVRTechnologies: "Intégration des technologies AR/VR",
+    sustainableDesignAutomation: "Automatisation de la conception durable",
+
+    // Expert Perspectives
+    aiToolsAreNotReplacingDesigners:
+      "Les outils d'IA ne remplacent pas les designers, ils les aident à être plus créatifs et efficaces",
+
+    // Making the Right Choice
+    yourSpecificNeedsAndUseCases:
+      "Vos besoins spécifiques et cas d'utilisation",
+    budgetConstraints: "Contraintes budgétaires",
+
+    // Conclusion
+    whileEachPlatformOffersUniqueAdvantages:
+      "Bien que chaque plateforme offre des avantages uniques",
+    emergesAsAComprehensiveSolution:
+      "émerge comme une solution complète alliant des capacités d'IA puissantes et des fonctionnalités faciles à utiliser",
+    // Table of Contents
+    tableOfContents: "Table des matières:",
+    introduction: "Introduction",
+    aiInBedroomDesign: "L'IA dans la conception de chambres",
+    stylyioOverview:
+      "Styly.io : Votre compagnon de conception de chambres alimenté par l'IA",
+    eightAIPoweredBedroomDesigns:
+      "Huit conceptions de chambres alimentées par l'IA",
+    expertDesignTips: "Conseils d'experts en conception",
+
+    // Introduction
+    introductionText:
+      "Les chambres sont nos sanctuaires. Selon la National Sleep Foundation, nous y passons environ un tiers de notre vie. Il est essentiel de créer un espace qui favorise à la fois le confort et le style. Des outils d'IA comme Styly.io révolutionnent la conception des chambres.",
+
+    // AI in Bedroom Design
+    aiInBedroomDesignText:
+      "Une étude récente de la revue Interior Design a révélé que les outils d'IA réduisent de 60 % le temps de conception initial. Cela donne aux designers plus de place pour personnaliser et perfectionner leurs conceptions.",
+
+    // Styly.io Overview
+    stylyioOverviewText:
+      "Que vous soyez designer ou propriétaire, Styly.io vous aide à créer facilement de magnifiques espaces de chambre. Il combine une IA avancée avec un design intuitif.",
+
+    // Eight AI-Powered Bedroom Designs
+    scandinavianSerenity: "Sérénité scandinave",
+    scandinavianBedroomPrompt:
+      "Chambre scandinave : design minimaliste, meubles en bois clair, murs blancs, lumière naturelle...",
+    modernLuxurySuite: "Suite de luxe moderne",
+    modernLuxurySuitePrompt:
+      "Chambre contemporaine de luxe : hauts plafonds, détails métalliques champagne, éclairage intelligent...",
+    coastalRetreat: "Retraite côtière",
+    coastalBedroomPrompt:
+      "Chambre côtière : bleus doux et beiges sable, rideaux légers, ambiance de plage...",
+    urbanIndustrial: "Industriel urbain",
+    urbanIndustrialPrompt:
+      "Chic industriel : briques apparentes, fenêtres en acier, accents en cuir...",
+    bohemianDreams: "Rêves bohèmes",
+    bohemianDreamsPrompt:
+      "Ambiance boho : macramé, plantes, tapis vintage, éclairage cosy...",
+    japaneseZen: "Zen japonais",
+    japaneseZenPrompt:
+      "Minimalisme japonais : tatamis, accents en bambou, harmonie paisible...",
+    midCenturyModern: "Moderne des années 50",
+    midCenturyModernPrompt:
+      "Moderne des années 50 : noyer, motifs géométriques, pièces iconiques...",
+    contemporaryGlam: "Glamour contemporain",
+    contemporaryGlamPrompt:
+      "Style glamour : tête de lit en velours, éclairage cristallin, meubles en miroir...",
+
+    // Expert Design Tips
+    considerNaturalLight:
+      "Tenez compte de la lumière naturelle lors du choix des couleurs",
+    ensureWalkableSpace:
+      "Assurez-vous qu'il y a de l'espace pour circuler autour des meubles",
+    layerLighting: "Superposez les éclairages pour plus de flexibilité",
+    includeHiddenStorage:
+      "Ajoutez des espaces de rangement dissimulés ou intégrés",
+    useCalmingMaterials:
+      "Utilisez des matériaux apaisants, favorisant le sommeil",
+
+    // Negative Prompt Guidelines
+    negativePromptGuidelines: "Directives pour les prompts négatifs",
+    avoidClutter: "Évitez les mises en page encombrées ou surchargées",
+    keepLightingNatural: "Maintenez un éclairage naturel et cohérent",
+    stickToDesignStyle: "Restez fidèle à un style de design unifié",
+    maintainProportions: "Respectez les proportions et les échelles adéquates",
+
+    // Sources and Research
+    sourcesAndResearch: "Sources et recherches",
+    nationalSleepFoundation: "National Sleep Foundation",
+    interiorDesignMagazine: "Interior Design Magazine",
+    asidAnnualReport: "Rapport annuel ASID",
+    harvardHealthSleepStudies: "Études sur le sommeil de Harvard",
+
+    // Conclusion
+    conclusionText:
+      "Avec Styly.io, vous pouvez concevoir votre chambre exactement comme vous l'imaginez. Des ambiances scandinaves apaisantes à un luxe de type hôtel glamour, le pouvoir est entre vos mains, soutenu par une IA intelligente.",
+    creatingTrendySpaces:
+      "Créer des espaces tendance et dignes d'Instagram",
+    
+
+    // Introduction
+    introductionText1:
+      "S'il y a bien une génération qui redéfinit l'expression de soi à travers les espaces personnels, c'est bien la génération Z. Armée de son téléphone portable, de préférences esthétiques marquées et d'une large audience sur les réseaux sociaux, cette génération sait comment créer et présenter des intérieurs dignes d'Instagram.",
+    introductionText2:
+      "Mais comment concevoir un espace qui soit tendance, personnel ET prêt pour la caméra ? Ce guide est fait pour vous. Que vous créiez un feed inoubliable ou que vous souhaitiez simplement améliorer votre espace, nous vous aiderons à créer l'intérieur parfait pour Instagram.",
+
+    // Understanding Gen Z’s Aesthetic Preferences
+    understandingAestheticPreferences:
+      "Comprendre les préférences esthétiques de la génération Z",
+    aestheticPreferencesText:
+      "La génération Z n'est pas satisfaite des designs standards. Elle mélange audacieusement l'esthétique, des touches nostalgiques et la fonctionnalité pour rendre leurs espaces véritablement uniques.",
+
+    // Gen Z's Design Preferences
+    colorPalettes: "Palettes de couleurs",
+    colorPalettesText:
+      "La génération Z privilégie des combinaisons de couleurs vibrantes. Pensez au vert sauge, à la lavande, aux roses doux et aux éclats de jaunes ou bleus audacieux. Leur préférence ? Personnaliser les espaces avec des couleurs qui reflètent l'individualité tout en conservant une ambiance chaleureuse.",
+    eclecticFurnitureAndDecor: "Mobilier et décoration éclectiques",
+    eclecticFurnitureAndDecorText:
+      "Au lieu de collections de meubles grand public, la génération Z recherche des objets uniques, des trésors d'occasion et des pièces décoratives insolites. C'est le style qui rencontre la durabilité, et ce, avec un petit budget.",
+    minimalistMeetsMaximalist: "Minimalisme et maximalisme",
+    minimalistMeetsMaximalistText:
+      "La génération Z décore selon deux extrêmes. Certains se tournent vers les styles nordiques minimalistes avec des lignes épurées et des couleurs blanches, tandis que d'autres adoptent un maximalisme total avec des textures superposées, des motifs audacieux et du désordre organisé qui semble intentionnel.",
+
+    // Key Elements of Instagram-Worthy Interior
+    keyElementsOfInstagramWorthyInterior:
+      "Éléments clés d'un intérieur digne d'Instagram",
+    instagramWorthyDefinition:
+      "Qu'est-ce qui définit un intérieur digne d'Instagram ? Tout est dans la création de cet effet waouh. Ces éléments peuvent rendre n'importe quelle pièce attrayante, en vrai comme sur caméra :",
+    naturalLighting: "Lumière naturelle",
+    naturalLightingText:
+      "L'éclairage peut faire ou défaire vos photos. De grandes fenêtres, des rideaux transparents et des miroirs stratégiquement placés maximisent la lumière naturelle. L'idée est de choisir une lumière douce et diffuse, non agressive.",
+    accentWalls: "Murs d'accent",
+    accentWallsText:
+      "Des papiers peints funky à une galerie d'art, les murs d'accent sont un point focal frappant. Les choix populaires incluent les fresques géométriques, les murs photo faits maison et les murs recouverts de plantes.",
+    statementPieces: "Pièces maîtresses",
+    statementPiecesText:
+      "Cela peut être un canapé en velours rétro ou un néon au-dessus du lit. Les pièces maîtresses ancrent l'esthétique de la pièce et créent de l'intérêt visuel.",
+    greeneryAndPlants: "Verdure et plantes",
+    greeneryAndPlantsText:
+      "Chaque pièce digne d'Instagram a un peu de vert. Des feuilles de monstera luxuriantes aux plantes suspendues, les plantes apportent de la vitalité et de la vie à un espace.",
+    layeredTextures: "Textures superposées",
+    layeredTexturesText:
+      "Pensez à des tapis doux, des couvertures épaisses, des coussins moelleux et des papiers peints texturés. Superposer des textures ajoute de la profondeur, rendant la pièce visuellement dynamique et cosy.",
+    declutteredVisuals: "Visuels épurés",
+    declutteredVisualsText:
+      "Bien que la génération Z embrasse le chaos organisé, un encombrement bien rangé est essentiel. Des paniers décoratifs, des étagères minimalistes et du rangement caché gardent la scène propre et nette pour la caméra.",
+
+    // Sustainability and Technology in Gen Z's Design
+    incorporatingSustainabilityAndTechnology:
+      "Intégration de la durabilité et de la technologie",
+    sustainabilityTechText:
+      "La génération Z ne se soucie pas seulement de l'esthétique, mais aussi de la planète et de la connexion. Voici comment elle intègre la durabilité et la technologie dans ses conceptions :",
+    sustainableMaterials: "Matériaux durables",
+    sustainableMaterialsText:
+      "Le design éco-responsable est incontournable pour cette génération. Pensez à des meubles en bois recyclé, des décorations en bambou et des objets récupérés dans les magasins de seconde main. Ils privilégient des choix éthiques plutôt que les tendances de meubles jetables.",
+    smartHomeTechnology: "Technologie de maison intelligente",
+    smartHomeTechnologyText:
+      "L'intégration de technologies comme des lumières contrôlées par la voix, des haut-parleurs intelligents et des purificateurs d'air connectés est courante. Des outils comme les plateformes de décoration intérieure alimentées par l'IA, comme le planificateur de pièces Styly, facilitent la conception.",
+    multiFunctionalFurniture: "Mobilier multifonction",
+    multiFunctionalFurnitureText:
+      "Les petits espaces sont optimisés avec des meubles à double fonction : pensez aux poufs de rangement, aux bureaux pliables et aux lits escamotables. C'est à la fois tendance et pratique.",
+
+    // Case Studies
+    caseStudiesAndExamples: "Études de cas et exemples concrets",
+    caseStudyIntro:
+      "Qu'est-ce qui rend un espace célèbre sur Instagram ? Voici quelques exemples marquants d'intérieurs qui ont cassé l'algorithme :",
+    economicEfficiency: "Efficacité économique",
+    economicEfficiencyText:
+      "Un petit appartement qui déborde de confort, avec une jungle de plantes suspendues, des meubles vintage et des tons doux. Astuce pro ? Utilisez des pots contrastants pour vos plantes !",
+    geometricDreamBedroom: "Chambre de rêve géométrique",
+    geometricDreamBedroomText:
+      "Avec des murs géométriques pastel et des étagères minimalistes, cette chambre illustre le mélange du décor minimaliste de la génération Z avec des déclarations personnelles audacieuses.",
+    cafeInspiredKitchenNook: "Coin cuisine inspiré d'un café",
+    cafeInspiredKitchenNookText:
+      "Une cuisine avec des tabourets industriels, des carreaux métro et des installations de café de niche a fait sensation, avec des publications atteignant des centaines de milliers de likes.",
+    bohoOutdoorBalcony: "Balcon extérieur bohème",
+    bohoOutdoorBalconyText:
+      "Pensez à des chaises en rotin, des guirlandes lumineuses et des tapis d'extérieur superposés. C'est cosy, économique et devient un incontournable des photos nocturnes.",
+
+    // DIY Instagram-Worthy Makeovers
+    diyInstagramWorthyMakeovers:
+      "Conseils pour des relooking Instagram dignes de ce nom",
+    diyTipsIntro:
+      "Vous voulez recréer l'un de ces espaces impressionnants ? Avec un peu de créativité et d'efforts, vous pouvez. Voici quelques astuces DIY abordables :",
+    startWithMoodBoard: "Commencez avec un mood board",
+    startWithMoodBoardText:
+      "Utilisez un décorateur de pièces alimenté par l'IA comme le planificateur de pièces Styly. Téléchargez des images de votre espace, essayez différentes mises en page et trouvez l'inspiration qui correspond à votre style.",
+    maximizeWhatYouHave: "Optimisez ce que vous avez",
+    maximizeWhatYouHaveText:
+      "Réorganisez les meubles existants pour voir votre pièce sous un nouvel angle. Parfois, déplacer un canapé ou un lit peut transformer la pièce.",
+    getCreativeWithPaint: "Soyez créatif avec la peinture",
+    getCreativeWithPaintText:
+      "Un pot de peinture peut faire des merveilles ! Créez des accents ou des cadres sur les murs avec des formes audacieuses ou optez pour un coin monochromatique dans une seule teinte.",
+    thriftForJewels: "Cherchez des bijoux dans les magasins de seconde main",
+    thriftForJewelsText:
+      "Faites du shopping dans les magasins de seconde main locaux ou les marchés antiques pour dénicher des objets insolites, comme des chaises rétro ou des vases vintage.",
+    accessorizeThoughtfully: "Accessoirisez de manière réfléchie",
+    accessorizeThoughtfullyText:
+      "Choisissez des détails économiques comme des guirlandes lumineuses, des coussins à motifs géométriques ou des vases élégants pour rehausser votre espace.",
+    playWithAnglesForPhotos: "Jouez avec les angles pour les photos",
+    playWithAnglesForPhotosText:
+      "Une fois que votre espace est prêt, expérimentez avec les angles de caméra, l'éclairage et les filtres photo pour capturer son charme.",
+    socialMediaShapingDesignTrends:
+      "Le rôle des médias sociaux dans la définition des tendances de design",
+    socialMediaShapingDesignTrendsText:
+      "Les médias sociaux ne servent pas seulement à exposer : ils façonnent ce qui est tendance. Voici comment Instagram joue un rôle clé :",
+    crowdsourcingCreativity: "Collecte de créativité",
+    crowdsourcingCreativityText:
+      "Grâce à des hashtags comme #RoomGoals ou #AestheticInteriors, les gens peuvent facilement s'inspirer. Les tendances se propagent rapidement grâce à cette visibilité.",
+    massAppealToNicheInterests: "Appel massif aux intérêts de niche",
+    massAppealToNicheInterestsText:
+      "Les plateformes permettent à des esthétiques de niche telles que le “cottage core” ou le “dark academia” de se développer, permettant à des groupes partageant les mêmes idées de créer des communautés.",
+    interactiveShopping: "Shopping interactif",
+    interactiveShoppingText:
+      "Les intégrations sociales permettent désormais aux utilisateurs d'acheter directement à partir des publications inspirantes. Il suffit de cliquer et d'ajouter au panier.",
+    empoweringNewCreators: "Donner du pouvoir aux nouveaux créateurs",
+    empoweringNewCreatorsText:
+      "Les passionnés de décoration intérieure et les influenceurs ne redéfinissent pas seulement le design, mais aussi leurs carrières. Avec des milliers de followers, ils dictent l'avenir du design d'intérieur.",
+    shareYourBestSpace: "Partagez votre meilleur espace",
+    shareYourBestSpaceText:
+      "Créer un intérieur digne d'Instagram implique de la créativité, des outils technologiques et un sens du détail. Mais surtout, cela parle de VOUS.",
+    shareYourBestSpaceInstagram:
+      "Quelle est votre astuce préférée ? Partagez vos espaces Insta-dignes avec nous @Stylyio, et n'oubliez pas d'essayer notre planificateur de pièces IA pour concevoir votre prochain chef-d'œuvre.",
+    prevArticle: "Article précédent",
+    nextArticle: "Article suivant",
+    
+    introductionText1:
+      "Transformer l'intérieur de votre maison ne doit pas coûter une fortune. Avec l'avènement des outils avancés comme",
+    stylyAI: "les outils gratuits de conception de chambres alimentés par l'IA de Styly",
+    introductionText2:
+      ", vous pouvez obtenir des résultats étonnants avec un budget limité. Voici 10 conseils d'experts pour vous aider à économiser gros sur l'intérieur de votre maison tout en utilisant les derniers outils alimentés par l'IA.",
+
+    // Tips
+    planBeforeYouSpend: "Planifiez avant de dépenser",
+    planBeforeYouSpendContent:
+      "Une bonne planification est essentielle pour éviter les dépenses inutiles. Utilisez des outils gratuits de conception intérieure alimentés par l'IA comme Styly pour visualiser vos idées avant de vous y engager.",
+    optimizeRoomLayoutWithAI: "Optimisez la disposition de la pièce avec l'IA",
+    optimizeRoomLayoutWithAIContent:
+      "Exploitez un décorateur de pièces IA pour expérimenter les agencements. Des outils comme Styly peuvent fournir plusieurs options de conception pour utiliser efficacement l'espace.",
+    upcycleFurniture: "Recyclage des meubles",
+    upcycleFurnitureContent:
+      "Donnez un nouveau look à vos meubles en les recyclant. Associez cela aux fonctionnalités de conception de pièces IA de Styly pour visualiser les pièces rénovées dans vos intérieurs.",
+    focusOnDIYProjects: "Concentrez-vous sur les projets DIY",
+    focusOnDIYProjectsContent:
+      "Ajoutez une touche personnelle avec des décorations DIY. Utilisez des outils gratuits de conception intérieure alimentés par l'IA pour guider vos projets et les aligner avec votre thème de design.",
+    shopSmartForMaterials: "Achetez intelligemment vos matériaux",
+    shopSmartForMaterialsContent:
+      "Recherchez des réductions ou des options d'occasion. Les outils IA aident à visualiser comment les matériaux fonctionneront, évitant ainsi les achats inutiles.",
+    prioritizeKeyElements: "Priorisez les éléments clés",
+    prioritizeKeyElementsContent:
+      "Concentrez votre budget sur des éléments impactants comme l'éclairage. Les outils de conception IA aident à identifier des options abordables et de grande valeur.",
+    experimentWithColorsVirtually: "Expérimentez virtuellement les couleurs",
+    experimentWithColorsVirtuallyContent:
+      "Avant d'acheter, testez des palettes de couleurs à l'aide des outils gratuits de Styly. Économisez de l'argent en obtenant la bonne couleur dès la première tentative.",
+    investInMultiFunctionalFurniture: "Investissez dans du mobilier multifonction",
+    investInMultiFunctionalFurnitureContent:
+      "Optez pour des articles comme des canapés-lits ou des ottomans avec rangement. Visualisez-les avec des outils IA pour garantir le meilleur ajustement.",
+    useAIForAccessoryPlacement: "Utilisez l'IA pour le placement des accessoires",
+    useAIForAccessoryPlacementContent:
+      "L'IA de Styly peut recommander où placer les accessoires pour un look soigné sans trop acheter.",
+    stayUpdatedWithTrends: "Restez à jour avec les tendances",
+    stayUpdatedWithTrendsContent:
+      "Les plateformes IA offrent des informations sur les tendances. Utilisez-les pour intégrer des mises à jour stylées sans devoir tout refaire.",
+
+    // Why Choose Styly
+    whyChooseStyly: "Pourquoi choisir Styly pour l'intérieur de votre maison ?",
+    stylyDescription:
+      "Les outils gratuits de conception intérieure alimentés par l'IA de Styly facilitent la création d'intérieurs personnalisés et économiques. Que vous redécoriez une pièce ou toute votre maison, Styly vous permet de :",
+    visualizeDesigns: "Visualisez instantanément les conceptions",
+    experimentWithLayouts: "Expérimentez avec des agencements et des styles",
+    saveMoney: "Économisez de l'argent en évitant des erreurs coûteuses",
+    getStartedWithStyly:
+      "Commencez avec Styly aujourd'hui et simplifiez-vous la vie pour l'aménagement de vos intérieurs en 2025.",
+    freeAIRoomDesign: "outils gratuits de conception de chambres IA",
+    transformYourSpace: "et transformez votre espace comme un pro !",
+
   },
 };
 
