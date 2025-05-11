@@ -25,10 +25,15 @@ const Index: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const pathLang = location.pathname.startsWith("/fr") ? "fr" : "en";
+    let pathLang: Language;
+    if (location.pathname === "/" || location.pathname === "") {
+      pathLang = "fr";
+    } else {
+      pathLang = location.pathname.startsWith("/fr") ? "fr" : "en";
+    }
     setLanguage(pathLang);
 
-    if (location.pathname !== `/${pathLang}`) {
+    if (location.pathname !== `/${pathLang}` && location.pathname !== "/") {
       const newPath = location.pathname.replace(/^\/(en|fr)/, `/${pathLang}`);
       navigate(newPath, { replace: true });
     }
