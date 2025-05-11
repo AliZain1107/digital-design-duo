@@ -109,8 +109,8 @@ const Hero: React.FC = () => {
           </div>
 
           {/* CTA Button */}
-          <Link
-            to="/upload"
+          <a
+            href="https://app.styly.io"
             className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold px-7 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg md:text-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl mb-7 sm:mb-8 md:mb-10 transform"
             aria-label="Upload a photo to redesign your space with AI"
             itemProp="potentialAction"
@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
             itemType="https://schema.org/Action"
           >
             <span itemProp="name">{t.uploadPhoto}</span>
-          </Link>
+          </a>
 
           {/* Supporting text */}
           <p className="text-gray-900 font-semibold text-xs xs:text-sm md:text-lg lg:text-xl text-[#A5A5A5] ">

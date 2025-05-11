@@ -16,7 +16,7 @@ const VideoSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="w-full mx-auto">
+        <div className="w-full max-w-2xl mx-auto">
           <div className="relative pb-[56.25%] h-0 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
             <iframe 
               className="absolute top-0 left-0 w-full h-full rounded-2xl"
