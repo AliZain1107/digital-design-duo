@@ -33,7 +33,11 @@ const Navbar: React.FC = () => {
   // Enhanced language switcher with debug
   const handleLanguageChange = (lang: "en" | "fr") => {
     console.log("Language switch requested to:", lang);
-    setLanguage(lang);
+    if (lang === "en") {
+      window.location.href = "https://www.styly.io";
+    } else {
+      setLanguage(lang);
+    }
   };
 
   return (
@@ -87,19 +91,19 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <div className="flex items-center justify-start md:justify-end flex-wrap gap-3 mb-8 md:mb-0 w-full md:flex-1">
-          <Link
-            to="/signin"
+          <a
+            href="https://app.styly.io"
             className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg max-md:px-5 border border-[rgba(89,50,134,1)] transition-all duration-300 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
           >
             <div className="bg-[rgba(250,111,64,1)] absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
             <div className="self-center z-10 w-full">
               <div className="w-full">
-                <a className="text-white whitespace-nowrap inline-block">
+                <span className="text-white whitespace-nowrap inline-block">
                   {t.signIn}
-                </a>
+                </span>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
         <div className="self-stretch my-auto">
           <DropdownMenu>

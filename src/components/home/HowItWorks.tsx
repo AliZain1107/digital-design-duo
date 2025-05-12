@@ -91,12 +91,12 @@ const HowItWorks: React.FC = () => {
 
         {/* CTA section */}
         <div className="text-center mt-12 px-4 py-8 rounded-2xl bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-100">
-          <Link
-            to="/get-started"
+          <a
+            href="https://app.styly.io"
             className="inline-block text-lg md:text-xl bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold px-10 py-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-1"
           >
             {t.getStartedFree}
-          </Link>
+          </a>
           <div className="text-base md:text-lg text-gray-600 font-medium mt-5 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-green-600 mr-2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

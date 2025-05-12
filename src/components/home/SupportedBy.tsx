@@ -76,12 +76,12 @@ const SupportedBy: React.FC = () => {
             {partnerLogos.map((logo, index) => (
               <div
                 key={`logo-1-${index}`}
-                className="w-24 sm:w-32 md:w-36 lg:w-40 flex-shrink-0 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="w-32 sm:w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300"
               >
                 <img
                   src={logo.src}
                   alt={logo.description}
-                  className="h-10 sm:h-12 md:h-14"
+                  className="h-16 sm:h-20 md:h-24"
                 />
               </div>
             ))}
@@ -92,12 +92,12 @@ const SupportedBy: React.FC = () => {
             {partnerLogos.map((logo, index) => (
               <div
                 key={`logo-2-${index}`}
-                className="w-24 sm:w-32 md:w-36 lg:w-40 flex-shrink-0 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="w-32 sm:w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300"
               >
                 <img
                   src={logo.src}
                   alt={logo.description}
-                  className="h-10 sm:h-12 md:h-14"
+                  className="h-16 sm:h-20 md:h-24"
                 />
               </div>
             ))}
