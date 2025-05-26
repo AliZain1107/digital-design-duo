@@ -15,6 +15,27 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
     if (post.slug === "2025-interior-design-trends") {
       return t.interiorTrends2025Title;
     }
+    if (post.slug === "free-ai-interior-design-software") {
+      return t.freeAIDesignTitle;
+    }
+    if (post.slug === "real-estate-agents-ai-virtual-staging") {
+      return t.realEstateAgentsAIVirtualStagingTitle;
+    }
+    if (post.slug === "gen-z-instagram-worthy-interiors") {
+      return t.genZInstagramWorthyInteriorsTitle;
+    }
+    if (post.slug === "build-house-ai-tools-porch-design") {
+      return t.buildHouseAIToolsPorchDesignTitle;
+    }
+    if (post.slug === "ultimate-guide-AI") {
+      return t.ultimateGuideAIInteriorDesignTitle;
+    }
+    if (post.slug === "AI-Bedroom") {
+      return t.eightStunningAIBedroomDesignsTitle;
+    }
+    if (post.slug === "AI-Interior") {
+      return t.expertTipsHomeInteriorsTitle;
+    }
     // For other blog posts, use the original title
     return post.title;
   };
@@ -27,9 +48,15 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
     return post.slug;
   };
 
+  // Generate language-specific URL
+  const getBlogUrl = () => {
+    const slug = getSlug();
+    return `/${language}/blog/${slug}`;
+  };
+
   return (
     <Link
-      to={`/blog/${getSlug()}`}
+      to={getBlogUrl()}
       className="bg-white shadow-md rounded-[20px] w-[431px] overflow-hidden flex flex-col max-md:max-w-full"
     >
       {/* Fixed-height image container with padding */}
@@ -52,12 +79,25 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   );
 };
 
-const BlogSection: React.FC = () => {
+interface BlogSectionProps {
+  maxPosts?: number; // Optional prop to limit number of posts shown
+}
+
+const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts }) => {
   const { t, language } = useLanguage();
 
-  // Debug output to verify language and translations
-  console.log("Current language in BlogSection:", language);
-  console.log("Blog translation:", t.blog);
+  // Function to parse date string and convert to Date object for sorting
+  const parseDate = (dateString: string): Date => {
+    // Handle different date formats
+    const date = new Date(dateString);
+    return date;
+  };
+
+  // Sort blog posts by date (most recent first) and optionally limit the number
+  const sortedBlogPosts = [...blogPosts]
+    .sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());
+
+  const displayedBlogPosts = maxPosts ? sortedBlogPosts.slice(0, maxPosts) : sortedBlogPosts;
 
   return (
     <section className="bg-white w-full py-20 px-4 sm:px-6 md:px-8" key={`blog-section-${language}`}>
@@ -81,7 +121,7 @@ const BlogSection: React.FC = () => {
         </div>
         <div className="flex items-center overflow-hidden justify-center mt-[9px] py-10">
           <div className="self-stretch flex justify-between min-w-60 min-h-[488px] w-full items-stretch px-6 gap-6 flex-wrap flex-1 shrink basis-[0%] my-auto max-md:max-w-full">
-            {blogPosts.map((post) => (
+            {displayedBlogPosts.map((post) => (
               <BlogPostCard key={post.id} post={post} />
             ))}
           </div>
