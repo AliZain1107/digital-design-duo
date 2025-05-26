@@ -35,31 +35,35 @@ const Footer: React.FC = () => {
               {t.footerContact}
             </a>
           </div>
-          
+
           {/* Login/Signup Buttons */}
           <div className="flex items-center justify-start md:justify-end flex-wrap gap-3 mb-8 md:mb-0 w-full md:flex-1">
-            <Link
-              to="/login"
+            <a
+              href="https://app.styly.io"
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative flex overflow-hidden text-[rgba(89,50,134,1)] justify-center py-3 px-6 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-300 hover:bg-purple-50 hover:scale-105"
             >
               <span className="font-medium">{t.footerLogin}</span>
-            </Link>
-            <Link
-              to="/signup"
+            </a>
+            <a
+              href="https://app.styly.io"
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative flex overflow-hidden text-white justify-center py-3 px-6 rounded-lg bg-[rgba(250,111,64,1)] transition-all duration-300 hover:opacity-90 hover:scale-105"
             >
               <span className="font-medium">{t.footerSignup}</span>
-            </Link>
+            </a>
           </div>
         </div>
-        
+
         {/* Footer Bottom */}
         <div className="relative border-t border-[rgba(250,111,64,1)] mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-5">
           {/* Copyright */}
           <div className="text-base text-black font-normal order-3 md:order-1">
             <p>{t.footerCopyrightYear}</p>
           </div>
-          
+
           {/* Links */}
           <div className="flex flex-wrap justify-center items-center gap-4 text-base text-black font-normal order-1 md:order-2">
             <Link
@@ -69,31 +73,31 @@ const Footer: React.FC = () => {
               {t.footerVideoGuide}
             </Link>
             <Link
-              to="/terms"
+              to="/conditions"
               className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
             >
               {t.footerTerms}
             </Link>
             <Link
-              to="/privacy"
+              to="/confidentialite"
               className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
             >
               {t.footerPrivacy}
             </Link>
-            <button 
+            <button
               onClick={handleCookieSettings}
               className="text-[rgba(51,51,51,1)] text-center transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline cursor-pointer"
             >
               {t.footerCookieSettings}
             </button>
           </div>
-          
+
           {/* Social Icons */}
           <div className="flex items-center justify-center gap-6 order-2 md:order-3 my-4 md:my-0">
             {[
-              { name: "LinkedIn", url: "https://linkedin.com" },
-              { name: "LinkedIn", url: "https://linkedin.com" },
-              { name: "LinkedIn", url: "https://linkedin.com" }
+              { name: "LinkedIn", url: "https://linkedin.com", icon: "/linkedin.svg" },
+              { name: "Facebook", url: "https://facebook.com", icon: "/facebook.svg" },
+              { name: "Instagram", url: "https://instagram.com", icon: "/instagram.svg" }
             ].map((social, index) => (
               <a
                 key={index}
@@ -103,7 +107,7 @@ const Footer: React.FC = () => {
                 className="transition-all duration-300 hover:scale-125 hover:opacity-80"
               >
                 <img
-                  src={`https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/317bf886270ad921f9e34236d0e5c987e6b6b44f?placeholderIfAbsent=true`}
+                  src={social.icon}
                   alt={social.name}
                   className="aspect-[1] object-contain w-6"
                 />

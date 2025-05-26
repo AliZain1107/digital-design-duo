@@ -9,6 +9,8 @@ import LanguageForceUpdate from "./lib/LanguageForceUpdate";
 import { LanguageProvider } from "./lib/LanguageProvider";
 import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 
 import '@fontsource/baloo-2/600.css';
 import '@fontsource/inter/400.css';
@@ -38,8 +40,9 @@ const App = () => (
               <Route path="/signup" element={<NotFound />} />
               <Route path="/social/:platform" element={<NotFound />} />
               <Route path="/video-guide" element={<NotFound />} />
-              <Route path="/terms" element={<NotFound />} />
-              <Route path="/privacy" element={<NotFound />} />
+              <Route path="/conditions" element={<Terms />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/confidentialite" element={<Privacy />} />
               <Route path="/get-started" element={<Index />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

@@ -109,6 +109,112 @@ export interface Translations {
   footerVideoGuide: string;
   footerCookieSettings: string;
 
+  // Terms of Service page
+  termsOfService: string;
+  termsLastUpdated: string;
+  legalNotice: string;
+  legalNoticeContent: string;
+  hosting: string;
+  hostingContent: string;
+  definitions: string;
+  definitionsContent: string;
+  generalConditions: string;
+  article1: string;
+  article1Content: string;
+  article2: string;
+  article2Content: string;
+  article3: string;
+  article3Content: string;
+  article4: string;
+  article4Content: string;
+  article5: string;
+  article5Content: string;
+  article6: string;
+  article6Content: string;
+  article7: string;
+  article7Content: string;
+  article8: string;
+  article8Content: string;
+  article9: string;
+  article9Content: string;
+  article10: string;
+  article10Content: string;
+  article11: string;
+  article11Content: string;
+  article12: string;
+  article12Content: string;
+  article13: string;
+  article13Content: string;
+  freeTrial: string;
+  freeTrialContent: string;
+  paidPlan: string;
+  paidPlanContent: string;
+  noRefundPolicy: string;
+  noRefundPolicyContent: string;
+  userResponsibility: string;
+  userResponsibilityContent: string;
+
+  // Privacy Policy page
+  privacyPolicy: string;
+  privacyLastUpdated: string;
+  privacyIntro: string;
+  privacyIntroContent: string;
+  dataWeCollect: string;
+  dataWeCollectContent: string;
+  accountData: string;
+  accountDataContent: string;
+  stylyImageData: string;
+  stylyImageDataContent: string;
+  browsingData: string;
+  browsingDataContent: string;
+  howWeUseData: string;
+  howWeUseDataContent: string;
+  purposeLegalBasisTable: string;
+  tableHeaderPurpose: string;
+  tableHeaderLegalBasis: string;
+  tablePurpose1: string;
+  tableLegalBasis1: string;
+  tablePurpose2: string;
+  tableLegalBasis2: string;
+  tablePurpose3: string;
+  tableLegalBasis3: string;
+  tablePurpose4: string;
+  tableLegalBasis4: string;
+  tablePurpose5: string;
+  tableLegalBasis5: string;
+  whoHasAccess: string;
+  whoHasAccessContent: string;
+  authorities: string;
+  authoritiesContent: string;
+  thirdPartyProviders: string;
+  thirdPartyProvidersContent: string;
+  dataRetention: string;
+  dataRetentionContent: string;
+  retentionAccount: string;
+  retentionAccountContent: string;
+  retentionImages: string;
+  retentionImagesContent: string;
+  retentionBrowsing: string;
+  retentionBrowsingContent: string;
+  internationalTransfers: string;
+  internationalTransfersContent: string;
+  dataSecurity: string;
+  dataSecurityContent: string;
+  yourRights: string;
+  yourRightsContent: string;
+  rightAccess: string;
+  rightRectification: string;
+  rightErasure: string;
+  rightRestriction: string;
+  rightPortability: string;
+  rightObject: string;
+  rightWithdrawConsent: string;
+  rightComplaint: string;
+  privacyChanges: string;
+  privacyChangesContent: string;
+  privacyContact: string;
+  privacyContactContent: string;
+
   // Stats section
   statsHeading1: string;
   statsHeading2: string;
@@ -638,6 +744,112 @@ export const translations: Record<Language, Translations> = {
     footerCopyrightYear: "Copyright 2025 STYLY",
     footerVideoGuide: "Video Guide",
     footerCookieSettings: "Cookie Settings",
+
+    // Terms of Service page
+    termsOfService: "General Terms and Conditions of Use",
+    termsLastUpdated: "Last updated: January 2025",
+    legalNotice: "I. Legal Notice",
+    legalNoticeContent: "The Styly mobile and web application and the website styly.io are developed and published by ODK. The company's registered address is: 14 Rue Jean Jaurès, 92800, France.",
+    hosting: "II. Hosting",
+    hostingContent: "The servers used by the Styly application are hosted by Amazon Web Services (AWS). The website styly.io is hosted by Hostinger. Styly.io reserves the right to modify or delete all or part of the site and/or the Styly application without prior notice. Styly.io cannot be held liable to users or any third party for any modification of the Service and/or website. By continuing to use the application and/or website, you fully accept these Terms and Conditions of Use. The version currently online is the only one applicable until replaced.",
+    definitions: "1. Definitions",
+    definitionsContent: "General Terms and Conditions of Use (GTU): This document outlining the rights and obligations of the parties. Personal Data: Data identifying or making it possible to identify an individual, directly or indirectly, under GDPR. Intellectual Property Rights: All rights related to copyrights, trademarks, patents, trade secrets, domain names, etc. License: Limited right to use the intellectual property strictly to access and use the Service. Parties: All users of the Product. Product: The Styly application, the website, and all components. Service: The application and/or website and their content and functionality. Site: The website accessible at https://styly.io. Application: The Styly mobile app. User(s): Any person using the Service.",
+    generalConditions: "2. General Conditions",
+    article1: "Article 1 – Access to the Service",
+    article1Content: "The Service is free to access. Users must not misuse the Service or extract data for unrelated purposes, such as spamming or developing competing services.",
+    article2: "Article 2 – Intellectual Property",
+    article2Content: "All content on the Service (text, visuals, code, media, etc.) is protected by intellectual property law. Styly.io grants a non-transferable, non-exclusive License for use of the Service. No element of the Service may be copied or reused without prior written consent from Styly.io.",
+    article3: "Article 3 – Service Management",
+    article3Content: "Styly.io reserves the right to: Limit, suspend, or restrict access to the Service; Remove content that disrupts functionality or violates laws; Interrupt the Service for maintenance or updates.",
+    article4: "Article 4 – Liability",
+    article4Content: "Styly.io makes no guarantees about the accuracy, completeness, or reliability of the Service. Users are responsible for monitoring updates and securing their own devices and data. Styly.io is not liable for: Service interruptions; Third-party claims resulting from a User's use of the Service; Technical or legal issues arising from misuse of the Service. Users must indemnify Styly.io if legal action is taken due to their actions.",
+    article5: "Article 5 – External Links",
+    article5Content: "Styly.io is not responsible for the content or reliability of any third-party websites or applications linked from the Service.",
+    article6: "Article 6 – Personal Data",
+    article6Content: "Styly.io collects and processes Personal Data in accordance with applicable laws. For more information, Users should consult the Privacy Policy and Cookie Policy. By continuing to use the Service, Users consent to the use of cookies.",
+    article7: "Article 7 – Prohibited Uses",
+    article7Content: "Users are prohibited from using the Service for: Unlawful activities; Infringing on intellectual property; Harassment or discrimination; Collecting personal data; Hacking, phishing, scraping, or spamming; Any immoral or obscene purposes; Circumventing security features. Styly.io reserves the right to terminate access for any breach of these rules.",
+    article8: "Article 8 – User Accounts",
+    article8Content: "To access the Service, Users must register using Apple Sign-In. Users are responsible for their own login credentials and activity. The Service uses AI to generate interior designs from photos, available in 'creative' or 'home staging' modes.",
+    article9: "Article 9 – Content Rights and Usage",
+    article9Content: "Styly.io holds all intellectual property rights over the content it shares. Users must: Respect third-party image and moral rights; Credit authorship where necessary; Request permission for any use of protected content. If disputes arise, all parties must cooperate fully with Styly.io in legal proceedings.",
+    article10: "Article 10 – Severability",
+    article10Content: "If any clause in these GTU is found to be unenforceable, the remaining clauses remain valid and enforceable.",
+    article11: "Article 11 – Governing Law and Jurisdiction",
+    article11Content: "These GTU are governed by French law. Exclusive jurisdiction is assigned to the courts of Bordeaux, including for emergency or multi-party proceedings.",
+    article12: "Article 12 – Modification of Terms",
+    article12Content: "Styly.io reserves the right to update these GTU at any time. Users are responsible for checking updates. Continued use of the Service implies acceptance of the latest version.",
+    article13: "13. Free Trial, Paid Plan, and No Refund Policy",
+    article13Content: "Styly.io provides comprehensive terms for trial and paid services with a strict no-refund policy.",
+    freeTrial: "13.1 – Free Trial",
+    freeTrialContent: "Styly.io provides a Free Trial to help Users evaluate the Service. The length and limits of the trial are clearly indicated. Users are responsible for assessing whether the Service meets their needs during this trial period. Access to premium features ends once the trial expires unless a Paid Plan is selected.",
+    paidPlan: "13.2 – Paid Plan",
+    paidPlanContent: "By subscribing to a Paid Plan: Users agree to the pricing, billing cycle, and scope of services offered; Charges are made in advance and are due regardless of actual usage; It is the User's responsibility to manage cancellations to avoid automatic renewals.",
+    noRefundPolicy: "13.3 – No Refund Policy",
+    noRefundPolicyContent: "All purchases and payments made to Styly.io are final and non-refundable. This includes, but is not limited to: Dissatisfaction with the Service; Mistaken or duplicate purchases; Lack of usage; Forgetting to cancel a subscription. Styly.io is under no obligation to process refunds via email, customer support, or payment providers. By using the Service and subscribing to a Paid Plan, Users accept this strict no-refund policy.",
+    userResponsibility: "13.4 – User Responsibility",
+    userResponsibilityContent: "Users are responsible for: Evaluating the Free Trial before subscribing; Understanding the features and billing conditions; Managing their account and payment settings. Styly.io disclaims all responsibility for misuse, oversight, or misinterpretation by the User.",
+
+    // Privacy Policy page
+    privacyPolicy: "Privacy Policy of Styly.io",
+    privacyLastUpdated: "Last updated: 25.04.2025",
+    privacyIntro: "Introduction",
+    privacyIntroContent: "This Privacy Policy describes how Styly.io ('we', 'our', or 'us') collects, uses, and protects your personal information when you use our AI-powered interior design platform. We are committed to protecting your privacy and complying with the General Data Protection Regulation (GDPR) and other applicable data protection laws.",
+    dataWeCollect: "1. Data We Collect",
+    dataWeCollectContent: "We collect different types of data to provide and improve our services:",
+    accountData: "Account Data",
+    accountDataContent: "When you create an account, we collect your email address, name, and authentication information through Apple Sign-In. This data is necessary to provide you with access to our services and manage your account.",
+    stylyImageData: "Styly Image Data",
+    stylyImageDataContent: "We collect and process images you upload to our platform for AI-powered interior design generation. This includes the original images you provide and the AI-generated design outputs we create for you.",
+    browsingData: "Browsing Data",
+    browsingDataContent: "We automatically collect certain information about your device and how you interact with our platform, including IP address, browser type, device information, usage patterns, and cookies.",
+    howWeUseData: "2. How We Use Your Data",
+    howWeUseDataContent: "We use your personal data for the following purposes, based on the legal grounds specified:",
+    purposeLegalBasisTable: "Purpose and Legal Basis Table",
+    tableHeaderPurpose: "Purpose",
+    tableHeaderLegalBasis: "Legal Basis",
+    tablePurpose1: "Provide AI interior design services",
+    tableLegalBasis1: "Contract performance",
+    tablePurpose2: "Account management and authentication",
+    tableLegalBasis2: "Contract performance",
+    tablePurpose3: "Platform improvement and analytics",
+    tableLegalBasis3: "Legitimate interest",
+    tablePurpose4: "Customer support",
+    tableLegalBasis4: "Contract performance",
+    tablePurpose5: "Marketing communications (with consent)",
+    tableLegalBasis5: "Consent",
+    whoHasAccess: "3. Who Has Access to Your Data",
+    whoHasAccessContent: "We may share your personal data with the following parties under specific circumstances:",
+    authorities: "Authorities",
+    authoritiesContent: "We may disclose your data to law enforcement, regulatory authorities, or other government agencies when required by law, court order, or to protect our rights and safety.",
+    thirdPartyProviders: "Third-Party Service Providers",
+    thirdPartyProvidersContent: "We work with trusted service providers who help us operate our platform, including cloud hosting services (AWS), authentication services (Apple), and analytics providers. These providers are contractually bound to protect your data.",
+    dataRetention: "4. Data Retention",
+    dataRetentionContent: "We retain your personal data for different periods depending on the type of data and purpose:",
+    retentionAccount: "Account Data",
+    retentionAccountContent: "Retained for the duration of your account plus 3 years after account deletion for legal and business purposes.",
+    retentionImages: "Image Data",
+    retentionImagesContent: "Original uploaded images are deleted after 30 days. AI-generated designs are retained for 1 year unless you request earlier deletion.",
+    retentionBrowsing: "Browsing Data",
+    retentionBrowsingContent: "Analytics and usage data is retained for 2 years for platform improvement purposes.",
+    internationalTransfers: "5. International Transfers",
+    internationalTransfersContent: "Your data may be transferred to and processed in countries outside the European Economic Area (EEA). We ensure appropriate safeguards are in place, including Standard Contractual Clauses and adequacy decisions, to protect your data in accordance with GDPR requirements.",
+    dataSecurity: "6. Data Security",
+    dataSecurityContent: "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. This includes encryption, access controls, regular security assessments, and staff training on data protection.",
+    yourRights: "7. Your Rights",
+    yourRightsContent: "Under GDPR, you have the following rights regarding your personal data:",
+    rightAccess: "Right of access: Request copies of your personal data",
+    rightRectification: "Right to rectification: Request correction of inaccurate data",
+    rightErasure: "Right to erasure: Request deletion of your data",
+    rightRestriction: "Right to restrict processing: Limit how we use your data",
+    rightPortability: "Right to data portability: Receive your data in a portable format",
+    rightObject: "Right to object: Object to processing based on legitimate interests",
+    rightWithdrawConsent: "Right to withdraw consent: Withdraw consent for marketing communications",
+    rightComplaint: "Right to lodge a complaint: Contact your local data protection authority",
+    privacyChanges: "8. Changes to This Privacy Policy",
+    privacyChangesContent: "We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy on our website and updating the 'Last updated' date. Your continued use of our services after such changes constitutes acceptance of the updated policy.",
+    privacyContact: "9. Contact",
+    privacyContactContent: "If you have any questions about this Privacy Policy or wish to exercise your rights, please contact us at contact@styly.io. We will respond to your request within 30 days as required by GDPR.",
 
     // Stats section
     statsHeading1: "STYLY: Not chance, but the culmination of",
@@ -1244,6 +1456,112 @@ export const translations: Record<Language, Translations> = {
     footerVideoGuide: "Guide Vidéo",
     footerCookieSettings: "Paramètres des cookies",
 
+    // Terms of Service page
+    termsOfService: "Conditions Générales d'Utilisation",
+    termsLastUpdated: "Dernière mise à jour : Janvier 2025",
+    legalNotice: "I. Mention Légale",
+    legalNoticeContent: "L'application mobile et web Styly et le site web styly.io sont développés et publiés par ODK. L'adresse du siège social de l'entreprise est : 14 Rue Jean Jaurès, 92800, France.",
+    hosting: "II. Hébergement",
+    hostingContent: "Les serveurs utilisés par l'application Styly sont hébergés par Amazon Web Services (AWS). Le site web styly.io est hébergé par Hostinger. Styly.io se réserve le droit de modifier ou de supprimer tout ou partie du site et/ou de l'application Styly sans préavis. Styly.io ne peut être tenu responsable envers les utilisateurs ou tout tiers de toute modification du Service et/ou du site web. En continuant à utiliser l'application et/ou le site web, vous acceptez pleinement ces Conditions Générales d'Utilisation. La version actuellement en ligne est la seule applicable jusqu'à son remplacement.",
+    definitions: "1. Définitions",
+    definitionsContent: "Conditions Générales d'Utilisation (CGU) : Ce document décrivant les droits et obligations des parties. Données Personnelles : Données identifiant ou permettant d'identifier un individu, directement ou indirectement, selon le RGPD. Droits de Propriété Intellectuelle : Tous les droits liés aux droits d'auteur, marques, brevets, secrets commerciaux, noms de domaine, etc. Licence : Droit limité d'utiliser la propriété intellectuelle strictement pour accéder et utiliser le Service. Parties : Tous les utilisateurs du Produit. Produit : L'application Styly, le site web et tous les composants. Service : L'application et/ou le site web et leur contenu et fonctionnalité. Site : Le site web accessible à https://styly.io. Application : L'application mobile Styly. Utilisateur(s) : Toute personne utilisant le Service.",
+    generalConditions: "2. Conditions Générales",
+    article1: "Article 1 – Accès au Service",
+    article1Content: "Le Service est gratuit d'accès. Les utilisateurs ne doivent pas abuser du Service ou extraire des données à des fins non liées, comme le spam ou le développement de services concurrents.",
+    article2: "Article 2 – Propriété Intellectuelle",
+    article2Content: "Tout le contenu du Service (texte, visuels, code, médias, etc.) est protégé par la loi sur la propriété intellectuelle. Styly.io accorde une Licence non transférable et non exclusive pour l'utilisation du Service. Aucun élément du Service ne peut être copié ou réutilisé sans le consentement écrit préalable de Styly.io.",
+    article3: "Article 3 – Gestion du Service",
+    article3Content: "Styly.io se réserve le droit de : Limiter, suspendre ou restreindre l'accès au Service ; Supprimer le contenu qui perturbe la fonctionnalité ou viole les lois ; Interrompre le Service pour maintenance ou mises à jour.",
+    article4: "Article 4 – Responsabilité",
+    article4Content: "Styly.io ne garantit pas l'exactitude, l'exhaustivité ou la fiabilité du Service. Les utilisateurs sont responsables de surveiller les mises à jour et de sécuriser leurs propres appareils et données. Styly.io n'est pas responsable de : Interruptions de service ; Réclamations de tiers résultant de l'utilisation du Service par un Utilisateur ; Problèmes techniques ou juridiques découlant d'une mauvaise utilisation du Service. Les utilisateurs doivent indemniser Styly.io si une action en justice est intentée en raison de leurs actions.",
+    article5: "Article 5 – Liens Externes",
+    article5Content: "Styly.io n'est pas responsable du contenu ou de la fiabilité de tout site web ou application tiers lié depuis le Service.",
+    article6: "Article 6 – Données Personnelles",
+    article6Content: "Styly.io collecte et traite les Données Personnelles conformément aux lois applicables. Pour plus d'informations, les Utilisateurs doivent consulter la Politique de Confidentialité et la Politique des Cookies. En continuant à utiliser le Service, les Utilisateurs consentent à l'utilisation des cookies.",
+    article7: "Article 7 – Utilisations Interdites",
+    article7Content: "Il est interdit aux utilisateurs d'utiliser le Service pour : Activités illégales ; Violation de la propriété intellectuelle ; Harcèlement ou discrimination ; Collecte de données personnelles ; Piratage, hameçonnage, grattage ou spam ; Tout but immoral ou obscène ; Contournement des fonctionnalités de sécurité. Styly.io se réserve le droit de résilier l'accès pour toute violation de ces règles.",
+    article8: "Article 8 – Comptes Utilisateur",
+    article8Content: "Pour accéder au Service, les Utilisateurs doivent s'inscrire en utilisant Apple Sign-In. Les utilisateurs sont responsables de leurs propres identifiants de connexion et de leur activité. Le Service utilise l'IA pour générer des designs d'intérieur à partir de photos, disponibles en modes 'créatif' ou 'home staging'.",
+    article9: "Article 9 – Droits de Contenu et Utilisation",
+    article9Content: "Styly.io détient tous les droits de propriété intellectuelle sur le contenu qu'il partage. Les utilisateurs doivent : Respecter les droits d'image et moraux de tiers ; Créditer la paternité si nécessaire ; Demander l'autorisation pour toute utilisation de contenu protégé. En cas de litiges, toutes les parties doivent coopérer pleinement avec Styly.io dans les procédures judiciaires.",
+    article10: "Article 10 – Divisibilité",
+    article10Content: "Si une clause de ces CGU est jugée inapplicable, les clauses restantes demeurent valides et applicables.",
+    article11: "Article 11 – Droit Applicable et Juridiction",
+    article11Content: "Ces CGU sont régies par le droit français. La juridiction exclusive est attribuée aux tribunaux de Bordeaux, y compris pour les procédures d'urgence ou multi-parties.",
+    article12: "Article 12 – Modification des Conditions",
+    article12Content: "Styly.io se réserve le droit de mettre à jour ces CGU à tout moment. Les utilisateurs sont responsables de vérifier les mises à jour. L'utilisation continue du Service implique l'acceptation de la dernière version.",
+    article13: "13. Essai Gratuit, Plan Payant et Politique de Non-Remboursement",
+    article13Content: "Styly.io fournit des conditions complètes pour les services d'essai et payants avec une politique stricte de non-remboursement.",
+    freeTrial: "13.1 – Essai Gratuit",
+    freeTrialContent: "Styly.io fournit un Essai Gratuit pour aider les Utilisateurs à évaluer le Service. La durée et les limites de l'essai sont clairement indiquées. Les utilisateurs sont responsables d'évaluer si le Service répond à leurs besoins pendant cette période d'essai. L'accès aux fonctionnalités premium se termine une fois l'essai expiré, sauf si un Plan Payant est sélectionné.",
+    paidPlan: "13.2 – Plan Payant",
+    paidPlanContent: "En s'abonnant à un Plan Payant : Les utilisateurs acceptent les tarifs, le cycle de facturation et la portée des services offerts ; Les frais sont facturés à l'avance et sont dus indépendamment de l'utilisation réelle ; Il est de la responsabilité de l'Utilisateur de gérer les annulations pour éviter les renouvellements automatiques.",
+    noRefundPolicy: "13.3 – Politique de Non-Remboursement",
+    noRefundPolicyContent: "Tous les achats et paiements effectués à Styly.io sont définitifs et non remboursables. Cela inclut, mais sans s'y limiter : Insatisfaction du Service ; Achats erronés ou en double ; Manque d'utilisation ; Oubli d'annuler un abonnement. Styly.io n'a aucune obligation de traiter les remboursements par e-mail, support client ou fournisseurs de paiement. En utilisant le Service et en s'abonnant à un Plan Payant, les Utilisateurs acceptent cette politique stricte de non-remboursement.",
+    userResponsibility: "13.4 – Responsabilité de l'Utilisateur",
+    userResponsibilityContent: "Les utilisateurs sont responsables de : Évaluer l'Essai Gratuit avant de s'abonner ; Comprendre les fonctionnalités et conditions de facturation ; Gérer leurs paramètres de compte et de paiement. Styly.io décline toute responsabilité pour mauvaise utilisation, négligence ou mauvaise interprétation par l'Utilisateur.",
+
+    // Privacy Policy page
+    privacyPolicy: "Politique de Confidentialité de Styly.io",
+    privacyLastUpdated: "Dernière mise à jour : 25.04.2025",
+    privacyIntro: "Introduction",
+    privacyIntroContent: "Cette Politique de Confidentialité décrit comment Styly.io ('nous', 'notre' ou 'nos') collecte, utilise et protège vos informations personnelles lorsque vous utilisez notre plateforme de design d'intérieur alimentée par l'IA. Nous nous engageons à protéger votre vie privée et à nous conformer au Règlement Général sur la Protection des Données (RGPD) et autres lois applicables sur la protection des données.",
+    dataWeCollect: "1. Données que Nous Collectons",
+    dataWeCollectContent: "Nous collectons différents types de données pour fournir et améliorer nos services :",
+    accountData: "Données de Compte",
+    accountDataContent: "Lorsque vous créez un compte, nous collectons votre adresse e-mail, nom et informations d'authentification via Apple Sign-In. Ces données sont nécessaires pour vous fournir l'accès à nos services et gérer votre compte.",
+    stylyImageData: "Données d'Images Styly",
+    stylyImageDataContent: "Nous collectons et traitons les images que vous téléchargez sur notre plateforme pour la génération de design d'intérieur alimentée par l'IA. Cela inclut les images originales que vous fournissez et les sorties de design générées par l'IA que nous créons pour vous.",
+    browsingData: "Données de Navigation",
+    browsingDataContent: "Nous collectons automatiquement certaines informations sur votre appareil et la façon dont vous interagissez avec notre plateforme, y compris l'adresse IP, le type de navigateur, les informations sur l'appareil, les modèles d'utilisation et les cookies.",
+    howWeUseData: "2. Comment Nous Utilisons Vos Données",
+    howWeUseDataContent: "Nous utilisons vos données personnelles aux fins suivantes, basées sur les fondements juridiques spécifiés :",
+    purposeLegalBasisTable: "Tableau des Finalités et Bases Légales",
+    tableHeaderPurpose: "Finalité",
+    tableHeaderLegalBasis: "Base Légale",
+    tablePurpose1: "Fournir des services de design d'intérieur IA",
+    tableLegalBasis1: "Exécution du contrat",
+    tablePurpose2: "Gestion de compte et authentification",
+    tableLegalBasis2: "Exécution du contrat",
+    tablePurpose3: "Amélioration de la plateforme et analyses",
+    tableLegalBasis3: "Intérêt légitime",
+    tablePurpose4: "Support client",
+    tableLegalBasis4: "Exécution du contrat",
+    tablePurpose5: "Communications marketing (avec consentement)",
+    tableLegalBasis5: "Consentement",
+    whoHasAccess: "3. Qui a Accès à Vos Données",
+    whoHasAccessContent: "Nous pouvons partager vos données personnelles avec les parties suivantes dans des circonstances spécifiques :",
+    authorities: "Autorités",
+    authoritiesContent: "Nous pouvons divulguer vos données aux forces de l'ordre, autorités réglementaires ou autres agences gouvernementales lorsque requis par la loi, ordonnance du tribunal, ou pour protéger nos droits et sécurité.",
+    thirdPartyProviders: "Fournisseurs de Services Tiers",
+    thirdPartyProvidersContent: "Nous travaillons avec des fournisseurs de services de confiance qui nous aident à exploiter notre plateforme, y compris les services d'hébergement cloud (AWS), les services d'authentification (Apple) et les fournisseurs d'analyses. Ces fournisseurs sont contractuellement tenus de protéger vos données.",
+    dataRetention: "4. Conservation des Données",
+    dataRetentionContent: "Nous conservons vos données personnelles pendant différentes périodes selon le type de données et la finalité :",
+    retentionAccount: "Données de Compte",
+    retentionAccountContent: "Conservées pendant la durée de votre compte plus 3 ans après la suppression du compte à des fins légales et commerciales.",
+    retentionImages: "Données d'Images",
+    retentionImagesContent: "Les images originales téléchargées sont supprimées après 30 jours. Les designs générés par l'IA sont conservés pendant 1 an sauf si vous demandez une suppression plus tôt.",
+    retentionBrowsing: "Données de Navigation",
+    retentionBrowsingContent: "Les données d'analyse et d'utilisation sont conservées pendant 2 ans à des fins d'amélioration de la plateforme.",
+    internationalTransfers: "5. Transferts Internationaux",
+    internationalTransfersContent: "Vos données peuvent être transférées et traitées dans des pays en dehors de l'Espace Économique Européen (EEE). Nous nous assurons que des garanties appropriées sont en place, y compris les Clauses Contractuelles Standard et les décisions d'adéquation, pour protéger vos données conformément aux exigences du RGPD.",
+    dataSecurity: "6. Sécurité des Données",
+    dataSecurityContent: "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre l'accès non autorisé, l'altération, la divulgation ou la destruction. Cela inclut le chiffrement, les contrôles d'accès, les évaluations de sécurité régulières et la formation du personnel sur la protection des données.",
+    yourRights: "7. Vos Droits",
+    yourRightsContent: "Sous le RGPD, vous avez les droits suivants concernant vos données personnelles :",
+    rightAccess: "Droit d'accès : Demander des copies de vos données personnelles",
+    rightRectification: "Droit de rectification : Demander la correction de données inexactes",
+    rightErasure: "Droit à l'effacement : Demander la suppression de vos données",
+    rightRestriction: "Droit de limitation du traitement : Limiter la façon dont nous utilisons vos données",
+    rightPortability: "Droit à la portabilité des données : Recevoir vos données dans un format portable",
+    rightObject: "Droit d'opposition : S'opposer au traitement basé sur des intérêts légitimes",
+    rightWithdrawConsent: "Droit de retirer le consentement : Retirer le consentement pour les communications marketing",
+    rightComplaint: "Droit de déposer une plainte : Contacter votre autorité locale de protection des données",
+    privacyChanges: "8. Modifications de Cette Politique de Confidentialité",
+    privacyChangesContent: "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Nous vous informerons de tout changement important en publiant la nouvelle Politique de Confidentialité sur notre site web et en mettant à jour la date de 'Dernière mise à jour'. Votre utilisation continue de nos services après de tels changements constitue l'acceptation de la politique mise à jour.",
+    privacyContact: "9. Contact",
+    privacyContactContent: "Si vous avez des questions concernant cette Politique de Confidentialité ou souhaitez exercer vos droits, veuillez nous contacter à contact@styly.io. Nous répondrons à votre demande dans les 30 jours comme requis par le RGPD.",
+
     // Stats section
     statsHeading1: "STYLY : Pas le hasard, mais l'aboutissement d'une",
     statsHeading2: "recherche quantitative rigoureuse.",
@@ -1542,7 +1860,7 @@ export const translations: Record<Language, Translations> = {
       "Avec Styly.io, vous pouvez concevoir votre chambre exactement comme vous l'imaginez. Des ambiances scandinaves apaisantes à un luxe de type hôtel glamour, le pouvoir est entre vos mains, soutenu par une IA intelligente.",
     creatingTrendySpaces:
       "Créer des espaces tendance et dignes d'Instagram",
-    
+
 
     // Introduction
     introductionText1:
@@ -1669,7 +1987,7 @@ export const translations: Record<Language, Translations> = {
       "Quelle est votre astuce préférée ? Partagez vos espaces Insta-dignes avec nous @Stylyio, et n'oubliez pas d'essayer notre planificateur de pièces IA pour concevoir votre prochain chef-d'œuvre.",
     prevArticle: "Article précédent",
     nextArticle: "Article suivant",
-    
+
     introductionText1:
       "Transformer l'intérieur de votre maison ne doit pas coûter une fortune. Avec l'avènement des outils avancés comme",
     stylyAI: "les outils gratuits de conception de chambres alimentés par l'IA de Styly",
