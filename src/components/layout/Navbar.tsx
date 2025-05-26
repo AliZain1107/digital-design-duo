@@ -33,11 +33,7 @@ const Navbar: React.FC = () => {
   // Enhanced language switcher with debug
   const handleLanguageChange = (lang: "en" | "fr") => {
     console.log("Language switch requested to:", lang);
-    if (lang === "en") {
-      window.location.href = "https://www.styly.io";
-    } else {
-      setLanguage(lang);
-    }
+    setLanguage(lang);
   };
 
   return (
@@ -67,8 +63,10 @@ const Navbar: React.FC = () => {
       {/* Desktop Navigation */}
       <nav className="self-stretch z-10 hidden md:flex min-w-60 min-h-11 items-center gap-4 justify-center my-auto">
         <div className="flex items-center justify-start md:justify-end flex-wrap gap-3 mb-8 md:mb-0 w-full md:flex-1">
-          <Link
-            to="/pricing"
+          <a
+            href="https://app.styly.io/pricing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg max-md:px-5 border border-[rgba(89,50,134,1)] transition-all duration-200 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
             aria-label="Go to Pricing"
           >
@@ -76,7 +74,7 @@ const Navbar: React.FC = () => {
             <div className="self-center z-10 w-full">
               <div className="w-full">{t.pricing}</div>
             </div>
-          </Link>
+          </a>
         </div>
         <div className="flex items-center justify-start md:justify-end flex-wrap gap-3 mb-8 md:mb-0 w-full md:flex-1">
           <Link
@@ -162,13 +160,15 @@ const Navbar: React.FC = () => {
           </button>
         </div>
         <div className="flex flex-col gap-4">
-          <Link
-            to="/pricing"
+          <a
+            href="https://app.styly.io/pricing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
             onClick={() => setMobileMenuOpen(false)}
           >
             {t.pricing}
-          </Link>
+          </a>
           <Link
             to="/blog"
             className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"

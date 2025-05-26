@@ -5,16 +5,38 @@ import { blogPosts } from "@/components/data/blogPosts";
 import type { BlogPost } from "@/components/data/blogPosts";
 
 const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
+  const { t, language } = useLanguage();
+
+  // Get the translated title for specific blog posts
+  const getTranslatedTitle = () => {
+    if (post.slug === "revolutionizing-architecture-engineering-construction-ai") {
+      return t.revolutionizingArchitectureTitle;
+    }
+    if (post.slug === "2025-interior-design-trends") {
+      return t.interiorTrends2025Title;
+    }
+    // For other blog posts, use the original title
+    return post.title;
+  };
+
+  // Get the appropriate slug based on language
+  const getSlug = () => {
+    if (language === "fr" && post.slugFr) {
+      return post.slugFr;
+    }
+    return post.slug;
+  };
+
   return (
     <Link
-      to={`/blog/${post.slug}`}
+      to={`/blog/${getSlug()}`}
       className="bg-white shadow-md rounded-[20px] w-[431px] overflow-hidden flex flex-col max-md:max-w-full"
     >
       {/* Fixed-height image container with padding */}
       <div className="h-[220px] w-full bg-white flex items-center justify-center p-4">
         <img
           src={post.image}
-          alt={post.title}
+          alt={getTranslatedTitle()}
           className="w-full h-[200px] object-fit rounded-[10px] max-md:max-w-full"
           />
       </div>
@@ -22,7 +44,7 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
       {/* Text content */}
       <div className="flex flex-col px-4 py-3">
         <h3 className="text-[21px] font-bold text-[#333] leading-[1.4]">
-          {post.title}
+          {getTranslatedTitle()}
         </h3>
         <p className="text-[11px] text-[#999] tracking-wide mt-2">{post.date}</p>
       </div>
@@ -36,7 +58,7 @@ const BlogSection: React.FC = () => {
   // Debug output to verify language and translations
   console.log("Current language in BlogSection:", language);
   console.log("Blog translation:", t.blog);
-  
+
   return (
     <section className="bg-white w-full py-20 px-4 sm:px-6 md:px-8" key={`blog-section-${language}`}>
       <div className="w-full max-w-[1800px] mx-auto">

@@ -11,6 +11,7 @@ import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
+import CookieBanner from "./components/layout/CookieBanner";
 
 import '@fontsource/baloo-2/600.css';
 import '@fontsource/inter/400.css';
@@ -47,6 +48,9 @@ const App = () => (
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
+
+            {/* Cookie Banner - appears on all pages */}
+            <CookieBanner />
           </BrowserRouter>
       </LanguageProvider>
     </TooltipProvider>

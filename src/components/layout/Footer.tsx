@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/lib/i18n";
+import CookieSettings from "./CookieSettings";
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
-  // Add function to handle cookie settings
+  const [isCookieSettingsOpen, setIsCookieSettingsOpen] = useState(false);
+
   const handleCookieSettings = () => {
-    // Implementation for cookie settings dialog would go here
-    alert(t.footerCookieSettings);
+    setIsCookieSettingsOpen(true);
   };
 
   return (
@@ -116,6 +117,12 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Cookie Settings Popup */}
+      <CookieSettings
+        isOpen={isCookieSettingsOpen}
+        onClose={() => setIsCookieSettingsOpen(false)}
+      />
     </footer>
   );
 };

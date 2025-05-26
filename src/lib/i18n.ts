@@ -109,6 +109,20 @@ export interface Translations {
   footerVideoGuide: string;
   footerCookieSettings: string;
 
+  // Cookie Settings popup
+  cookieSettingsTitle: string;
+  cookieSettingsDescription: string;
+  essentialCookies: string;
+  essentialCookiesDescription: string;
+  analyticsCookies: string;
+  analyticsCookiesDescription: string;
+  marketingCookies: string;
+  marketingCookiesDescription: string;
+  acceptAll: string;
+  acceptSelected: string;
+  rejectAll: string;
+  close: string;
+
   // Terms of Service page
   termsOfService: string;
   termsLastUpdated: string;
@@ -579,6 +593,81 @@ export interface Translations {
   getStartedWithStyly: string;
   freeAIRoomDesign: string;
   transformYourSpace: string;
+
+  // Revolutionizing Architecture blog post
+  revolutionizingArchitectureTitle: string;
+  revolutionizingArchitectureIntro: string;
+  revolutionizingArchitectureTableOfContents: string;
+  revolutionizingArchitectureIntroduction: string;
+  revolutionizingArchitectureIntroductionText: string;
+  revolutionizingArchitectureAITransformation: string;
+  revolutionizingArchitectureAITransformationText: string;
+  revolutionizingArchitectureKeyBenefits: string;
+  revolutionizingArchitectureKeyBenefitsText: string;
+  revolutionizingArchitectureBenefit1: string;
+  revolutionizingArchitectureBenefit1Text: string;
+  revolutionizingArchitectureBenefit2: string;
+  revolutionizingArchitectureBenefit2Text: string;
+  revolutionizingArchitectureBenefit3: string;
+  revolutionizingArchitectureBenefit3Text: string;
+  revolutionizingArchitectureBenefit4: string;
+  revolutionizingArchitectureBenefit4Text: string;
+  revolutionizingArchitectureRealWorldApplications: string;
+  revolutionizingArchitectureRealWorldApplicationsText: string;
+  revolutionizingArchitectureApplication1: string;
+  revolutionizingArchitectureApplication1Text: string;
+  revolutionizingArchitectureApplication2: string;
+  revolutionizingArchitectureApplication2Text: string;
+  revolutionizingArchitectureApplication3: string;
+  revolutionizingArchitectureApplication3Text: string;
+  revolutionizingArchitectureFuture: string;
+  revolutionizingArchitectureFutureText: string;
+  revolutionizingArchitectureConclusion: string;
+  revolutionizingArchitectureConclusionText: string;
+  revolutionizingArchitectureCTATitle: string;
+  revolutionizingArchitectureCTAText: string;
+  revolutionizingArchitectureCTAButton: string;
+
+  // Interior Design Trends 2025 Blog Post
+  interiorTrends2025Title: string;
+  interiorTrends2025TableOfContents: string;
+  interiorTrends2025Introduction: string;
+  interiorTrends2025IntroductionText: string;
+  interiorTrends2025WhatsIn: string;
+  interiorTrends2025WhatsOut: string;
+  interiorTrends2025StylyRole: string;
+  interiorTrends2025Conclusion: string;
+  interiorTrends2025EcoConscious: string;
+  interiorTrends2025EcoConsciousText: string;
+  interiorTrends2025EcoConsciousStyly: string;
+  interiorTrends2025Biophilic: string;
+  interiorTrends2025BiophilicText: string;
+  interiorTrends2025BiophilicStyly: string;
+  interiorTrends2025SmartHome: string;
+  interiorTrends2025SmartHomeText: string;
+  interiorTrends2025SmartHomeStyly: string;
+  interiorTrends2025BoldColors: string;
+  interiorTrends2025BoldColorsText: string;
+  interiorTrends2025BoldColorsStyly: string;
+  interiorTrends2025Multifunctional: string;
+  interiorTrends2025MultifunctionalText: string;
+  interiorTrends2025MultifunctionalStyly: string;
+  interiorTrends2025OverlyMinimalistic: string;
+  interiorTrends2025OverlyMinimalisticText: string;
+  interiorTrends2025AllWhiteKitchens: string;
+  interiorTrends2025AllWhiteKitchensText: string;
+  interiorTrends2025OpenShelving: string;
+  interiorTrends2025OpenShelvingText: string;
+  interiorTrends2025FastFurniture: string;
+  interiorTrends2025FastFurnitureText: string;
+  interiorTrends2025StylyRoleText: string;
+  interiorTrends2025StylyFeature1: string;
+  interiorTrends2025StylyFeature2: string;
+  interiorTrends2025StylyFeature3: string;
+  interiorTrends2025ConclusionText: string;
+  interiorTrends2025CTATitle: string;
+  interiorTrends2025CTAText: string;
+  interiorTrends2025CTAButton: string;
 }
 // Define translations for English and French
 export const translations: Record<Language, Translations> = {
@@ -744,6 +833,20 @@ export const translations: Record<Language, Translations> = {
     footerCopyrightYear: "Copyright 2025 STYLY",
     footerVideoGuide: "Video Guide",
     footerCookieSettings: "Cookie Settings",
+
+    // Cookie Settings popup
+    cookieSettingsTitle: "Cookie Settings",
+    cookieSettingsDescription: "We use cookies to enhance your experience on our website. You can choose which types of cookies to accept.",
+    essentialCookies: "Essential Cookies",
+    essentialCookiesDescription: "These cookies are necessary for the website to function and cannot be switched off. They are usually only set in response to actions made by you.",
+    analyticsCookies: "Analytics Cookies",
+    analyticsCookiesDescription: "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+    marketingCookies: "Marketing Cookies",
+    marketingCookiesDescription: "These cookies are used to deliver advertisements more relevant to you and your interests.",
+    acceptAll: "Accept All",
+    acceptSelected: "Accept Selected",
+    rejectAll: "Reject All",
+    close: "Close",
 
     // Terms of Service page
     termsOfService: "General Terms and Conditions of Use",
@@ -1289,6 +1392,81 @@ export const translations: Record<Language, Translations> = {
     freeAIRoomDesign: "free AI room design",
     transformYourSpace: "tools and transform your space like a pro!",
 
+    // Revolutionizing Architecture blog post
+    revolutionizingArchitectureTitle: "Revolutionizing Architecture, Engineering, and Construction with AI",
+    revolutionizingArchitectureIntro: "Discover how artificial intelligence is transforming the AEC industry with innovative design solutions and enhanced efficiency.",
+    revolutionizingArchitectureTableOfContents: "Table of Contents",
+    revolutionizingArchitectureIntroduction: "Introduction",
+    revolutionizingArchitectureIntroductionText: "The Architecture, Engineering, and Construction (AEC) industry stands at the precipice of a technological revolution. Artificial Intelligence (AI) is no longer a futuristic concept but a present reality that's reshaping how we design, plan, and construct our built environment. From automated design generation to predictive maintenance, AI is transforming every aspect of the construction lifecycle.",
+    revolutionizingArchitectureAITransformation: "The AI Transformation in AEC",
+    revolutionizingArchitectureAITransformationText: "The integration of AI in the AEC industry represents a paradigm shift from traditional methods to intelligent, data-driven approaches. Machine learning algorithms can now analyze vast datasets to optimize building performance, predict structural issues, and generate innovative design solutions that were previously impossible to conceive.",
+    revolutionizingArchitectureKeyBenefits: "Key Benefits of AI in Architecture and Construction",
+    revolutionizingArchitectureKeyBenefitsText: "The implementation of AI technologies in the AEC sector brings numerous advantages that are revolutionizing the industry:",
+    revolutionizingArchitectureBenefit1: "Enhanced Design Efficiency",
+    revolutionizingArchitectureBenefit1Text: "AI-powered design tools can generate multiple design iterations in minutes, allowing architects to explore more creative possibilities while reducing time-to-market significantly.",
+    revolutionizingArchitectureBenefit2: "Improved Cost Estimation",
+    revolutionizingArchitectureBenefit2Text: "Machine learning algorithms analyze historical project data to provide more accurate cost predictions, helping prevent budget overruns and improve project profitability.",
+    revolutionizingArchitectureBenefit3: "Predictive Maintenance",
+    revolutionizingArchitectureBenefit3Text: "AI systems can monitor building performance in real-time and predict maintenance needs before issues become critical, extending building lifespan and reducing operational costs.",
+    revolutionizingArchitectureBenefit4: "Sustainable Design Optimization",
+    revolutionizingArchitectureBenefit4Text: "AI algorithms can optimize building designs for energy efficiency, material usage, and environmental impact, supporting the industry's move toward sustainable construction practices.",
+    revolutionizingArchitectureRealWorldApplications: "Real-World Applications",
+    revolutionizingArchitectureRealWorldApplicationsText: "AI is already making significant impacts across various aspects of the AEC industry:",
+    revolutionizingArchitectureApplication1: "Generative Design",
+    revolutionizingArchitectureApplication1Text: "Tools like Autodesk's Dreamcatcher and Styly.io's AI interior design platform use algorithms to generate thousands of design options based on specified parameters, enabling architects to discover innovative solutions.",
+    revolutionizingArchitectureApplication2: "Construction Site Safety",
+    revolutionizingArchitectureApplication2Text: "AI-powered computer vision systems monitor construction sites in real-time, identifying safety hazards and ensuring compliance with safety protocols, significantly reducing workplace accidents.",
+    revolutionizingArchitectureApplication3: "Building Information Modeling (BIM) Enhancement",
+    revolutionizingArchitectureApplication3Text: "AI enhances BIM systems by automatically detecting clashes, optimizing schedules, and improving collaboration between different stakeholders in the construction process.",
+    revolutionizingArchitectureFuture: "The Future of AI in AEC",
+    revolutionizingArchitectureFutureText: "As AI technology continues to evolve, we can expect even more transformative applications in the AEC industry. From fully automated construction robots to AI-designed smart cities, the future promises unprecedented innovation in how we create and manage our built environment.",
+    revolutionizingArchitectureConclusion: "Conclusion",
+    revolutionizingArchitectureConclusionText: "The integration of AI in architecture, engineering, and construction is not just an opportunity—it's an imperative for staying competitive in the modern market. Organizations that embrace these technologies today will be the leaders of tomorrow's built environment. The revolution has begun, and the time to act is now.",
+    revolutionizingArchitectureCTATitle: "Experience AI-Powered Design Today",
+    revolutionizingArchitectureCTAText: "Ready to revolutionize your design process? Try Styly.io's AI-powered interior design platform and experience the future of architectural visualization.",
+    revolutionizingArchitectureCTAButton: "Get Started with Styly.io",
+
+    // Interior Design Trends 2025 Blog Post
+    interiorTrends2025Title: "2025 Interior Design Trends: What's In and What's Out",
+    interiorTrends2025TableOfContents: "Table of Contents",
+    interiorTrends2025Introduction: "Introduction",
+    interiorTrends2025IntroductionText: "As we step into 2025, the world of interior design continues to evolve, blending creativity with technology like never before. For homeowners, interior designers, and design enthusiasts, the latest trends not only shape the aesthetics of spaces but also emphasize functionality, sustainability, and personalization. In this blog, we explore what's hot and what's not in 2025 interior design trends—and how you can use free AI room design tools like Styly to stay ahead of the curve.",
+    interiorTrends2025WhatsIn: "What's In: 2025 Interior Design Trends",
+    interiorTrends2025WhatsOut: "What's Out: Trends to Leave Behind",
+    interiorTrends2025StylyRole: "How Styly Revolutionizes Interior Design",
+    interiorTrends2025Conclusion: "Conclusion",
+    interiorTrends2025EcoConscious: "1. Eco-Conscious Design",
+    interiorTrends2025EcoConsciousText: "Sustainability takes center stage as homeowners prioritize eco-friendly materials like reclaimed wood, bamboo, and recycled metal. Incorporating greenery through indoor plants and vertical gardens is also a top trend.",
+    interiorTrends2025EcoConsciousStyly: "How Styly Helps: With our free AI interior design platform, you can experiment with eco-friendly layouts and visualize sustainable materials in your space before committing to a purchase.",
+    interiorTrends2025Biophilic: "2. Biophilic Elements",
+    interiorTrends2025BiophilicText: "The connection between nature and design deepens, with biophilic patterns, textures, and colors becoming key elements. Think earthy tones, natural fibers, and organic shapes.",
+    interiorTrends2025BiophilicStyly: "Styly Tip: Use our AI room decorator to explore nature-inspired designs tailored to your preferences.",
+    interiorTrends2025SmartHome: "3. Smart Home Integration",
+    interiorTrends2025SmartHomeText: "Interior design in 2025 seamlessly integrates technology. From smart lighting systems to AI-powered appliances, homes are becoming more intuitive and efficient.",
+    interiorTrends2025SmartHomeStyly: "How You Benefit: Styly's AI interior design free features make it easy to create smart layouts and plan the integration of tech into your design.",
+    interiorTrends2025BoldColors: "4. Bold Colors and Maximalism",
+    interiorTrends2025BoldColorsText: "Gone are the days of strictly minimalistic spaces. Vibrant hues, eclectic patterns, and maximalist décor are in vogue, reflecting individuality and a sense of playfulness.",
+    interiorTrends2025BoldColorsStyly: "Styly's Role: Experiment with bold color palettes using our free AI room design tools and see what works best for your space.",
+    interiorTrends2025Multifunctional: "5. Multifunctional Spaces",
+    interiorTrends2025MultifunctionalText: "With work-from-home trends persisting, multifunctional rooms that serve as offices, gyms, or entertainment hubs are a must.",
+    interiorTrends2025MultifunctionalStyly: "Styly Advantage: Plan and design multipurpose spaces effortlessly with Styly's AI room design free software.",
+    interiorTrends2025OverlyMinimalistic: "1. Overly Minimalistic Interiors",
+    interiorTrends2025OverlyMinimalisticText: "While minimalism isn't entirely gone, the stark, cold look of ultra-minimalist spaces is fading. Homeowners are now embracing warmth, comfort, and personalization.",
+    interiorTrends2025AllWhiteKitchens: "2. All-White Kitchens",
+    interiorTrends2025AllWhiteKitchensText: "All-white kitchens are being replaced by warm, earthy tones or vibrant splashes of color that make the heart of the home feel more inviting.",
+    interiorTrends2025OpenShelving: "3. Open Shelving Overload",
+    interiorTrends2025OpenShelvingText: "While open shelving remains functional, its excessive use is being replaced by a mix of closed cabinets and curated open displays.",
+    interiorTrends2025FastFurniture: "4. Fast Furniture",
+    interiorTrends2025FastFurnitureText: "Disposable furniture that doesn't last is falling out of favor. Instead, durable, high-quality pieces with timeless appeal are trending.",
+    interiorTrends2025StylyRoleText: "With Styly's cutting-edge technology, you can harness the power of AI to create stunning, personalized interiors effortlessly. Whether you're a homeowner seeking inspiration or an interior designer planning spaces, our platform offers:",
+    interiorTrends2025StylyFeature1: "Free AI Interior Design Tools: Get started at no cost with intuitive design features.",
+    interiorTrends2025StylyFeature2: "AI Room Decorator: Generate and visualize design ideas tailored to your style and needs.",
+    interiorTrends2025StylyFeature3: "Free AI Room Design Solutions: Plan, customize, and perfect every detail of your space.",
+    interiorTrends2025ConclusionText: "Interior design trends for 2025 are all about merging style with substance, sustainability, and technology. Whether you're revamping your living room or designing a completely new space, staying on-trend is easier than ever with Styly's AI interior design free tools.",
+    interiorTrends2025CTATitle: "Start Your Design Journey Today",
+    interiorTrends2025CTAText: "Transform your spaces effortlessly with Styly's free AI interior design tools. Experience the future of interior design and create your dream home with just a few clicks.",
+    interiorTrends2025CTAButton: "Get Started with Styly.io",
+
   },
   fr: {
     // Add missing properties with placeholder translations
@@ -1455,6 +1633,20 @@ export const translations: Record<Language, Translations> = {
     footerCopyrightYear: "Copyright 2025 STYLY",
     footerVideoGuide: "Guide Vidéo",
     footerCookieSettings: "Paramètres des cookies",
+
+    // Cookie Settings popup
+    cookieSettingsTitle: "Paramètres des cookies",
+    cookieSettingsDescription: "Nous utilisons des cookies pour améliorer votre expérience sur notre site web. Vous pouvez choisir quels types de cookies accepter.",
+    essentialCookies: "Cookies essentiels",
+    essentialCookiesDescription: "Ces cookies sont nécessaires au fonctionnement du site web et ne peuvent pas être désactivés. Ils ne sont généralement définis qu'en réponse à des actions que vous effectuez.",
+    analyticsCookies: "Cookies d'analyse",
+    analyticsCookiesDescription: "Ces cookies nous aident à comprendre comment les visiteurs interagissent avec notre site web en collectant et en rapportant des informations de manière anonyme.",
+    marketingCookies: "Cookies marketing",
+    marketingCookiesDescription: "Ces cookies sont utilisés pour diffuser des publicités plus pertinentes pour vous et vos intérêts.",
+    acceptAll: "Tout accepter",
+    acceptSelected: "Accepter la sélection",
+    rejectAll: "Tout refuser",
+    close: "Fermer",
 
     // Terms of Service page
     termsOfService: "Conditions Générales d'Utilisation",
@@ -2037,6 +2229,81 @@ export const translations: Record<Language, Translations> = {
       "Commencez avec Styly aujourd'hui et simplifiez-vous la vie pour l'aménagement de vos intérieurs en 2025.",
     freeAIRoomDesign: "outils gratuits de conception de chambres IA",
     transformYourSpace: "et transformez votre espace comme un pro !",
+
+    // Revolutionizing Architecture blog post
+    revolutionizingArchitectureTitle: "Révolutionner l'Architecture, l'Ingénierie et la Construction avec l'IA",
+    revolutionizingArchitectureIntro: "Découvrez comment l'intelligence artificielle transforme l'industrie AEC avec des solutions de design innovantes et une efficacité améliorée.",
+    revolutionizingArchitectureTableOfContents: "Table des Matières",
+    revolutionizingArchitectureIntroduction: "Introduction",
+    revolutionizingArchitectureIntroductionText: "L'industrie de l'Architecture, de l'Ingénierie et de la Construction (AEC) se trouve au bord d'une révolution technologique. L'Intelligence Artificielle (IA) n'est plus un concept futuriste mais une réalité présente qui redéfinit la façon dont nous concevons, planifions et construisons notre environnement bâti. De la génération automatisée de designs à la maintenance prédictive, l'IA transforme chaque aspect du cycle de vie de la construction.",
+    revolutionizingArchitectureAITransformation: "La Transformation IA dans l'AEC",
+    revolutionizingArchitectureAITransformationText: "L'intégration de l'IA dans l'industrie AEC représente un changement de paradigme des méthodes traditionnelles vers des approches intelligentes et basées sur les données. Les algorithmes d'apprentissage automatique peuvent maintenant analyser de vastes ensembles de données pour optimiser les performances des bâtiments, prédire les problèmes structurels et générer des solutions de design innovantes qui étaient auparavant impossibles à concevoir.",
+    revolutionizingArchitectureKeyBenefits: "Avantages Clés de l'IA dans l'Architecture et la Construction",
+    revolutionizingArchitectureKeyBenefitsText: "La mise en œuvre des technologies IA dans le secteur AEC apporte de nombreux avantages qui révolutionnent l'industrie :",
+    revolutionizingArchitectureBenefit1: "Efficacité de Design Améliorée",
+    revolutionizingArchitectureBenefit1Text: "Les outils de design alimentés par l'IA peuvent générer plusieurs itérations de design en minutes, permettant aux architectes d'explorer plus de possibilités créatives tout en réduisant significativement le temps de mise sur le marché.",
+    revolutionizingArchitectureBenefit2: "Estimation des Coûts Améliorée",
+    revolutionizingArchitectureBenefit2Text: "Les algorithmes d'apprentissage automatique analysent les données historiques de projets pour fournir des prédictions de coûts plus précises, aidant à prévenir les dépassements de budget et améliorer la rentabilité des projets.",
+    revolutionizingArchitectureBenefit3: "Maintenance Prédictive",
+    revolutionizingArchitectureBenefit3Text: "Les systèmes IA peuvent surveiller les performances des bâtiments en temps réel et prédire les besoins de maintenance avant que les problèmes ne deviennent critiques, prolongeant la durée de vie des bâtiments et réduisant les coûts opérationnels.",
+    revolutionizingArchitectureBenefit4: "Optimisation du Design Durable",
+    revolutionizingArchitectureBenefit4Text: "Les algorithmes IA peuvent optimiser les designs de bâtiments pour l'efficacité énergétique, l'utilisation des matériaux et l'impact environnemental, soutenant le mouvement de l'industrie vers des pratiques de construction durables.",
+    revolutionizingArchitectureRealWorldApplications: "Applications du Monde Réel",
+    revolutionizingArchitectureRealWorldApplicationsText: "L'IA fait déjà des impacts significatifs dans divers aspects de l'industrie AEC :",
+    revolutionizingArchitectureApplication1: "Design Génératif",
+    revolutionizingArchitectureApplication1Text: "Des outils comme Dreamcatcher d'Autodesk et la plateforme de design d'intérieur IA de Styly.io utilisent des algorithmes pour générer des milliers d'options de design basées sur des paramètres spécifiés, permettant aux architectes de découvrir des solutions innovantes.",
+    revolutionizingArchitectureApplication2: "Sécurité des Chantiers de Construction",
+    revolutionizingArchitectureApplication2Text: "Les systèmes de vision par ordinateur alimentés par l'IA surveillent les chantiers de construction en temps réel, identifiant les dangers de sécurité et assurant la conformité aux protocoles de sécurité, réduisant significativement les accidents du travail.",
+    revolutionizingArchitectureApplication3: "Amélioration de la Modélisation des Informations du Bâtiment (BIM)",
+    revolutionizingArchitectureApplication3Text: "L'IA améliore les systèmes BIM en détectant automatiquement les conflits, optimisant les horaires et améliorant la collaboration entre les différentes parties prenantes du processus de construction.",
+    revolutionizingArchitectureFuture: "L'Avenir de l'IA dans l'AEC",
+    revolutionizingArchitectureFutureText: "Alors que la technologie IA continue d'évoluer, nous pouvons nous attendre à des applications encore plus transformatrices dans l'industrie AEC. Des robots de construction entièrement automatisés aux villes intelligentes conçues par l'IA, l'avenir promet une innovation sans précédent dans la façon dont nous créons et gérons notre environnement bâti.",
+    revolutionizingArchitectureConclusion: "Conclusion",
+    revolutionizingArchitectureConclusionText: "L'intégration de l'IA dans l'architecture, l'ingénierie et la construction n'est pas seulement une opportunité—c'est un impératif pour rester compétitif sur le marché moderne. Les organisations qui embrassent ces technologies aujourd'hui seront les leaders de l'environnement bâti de demain. La révolution a commencé, et le moment d'agir est maintenant.",
+    revolutionizingArchitectureCTATitle: "Découvrez le Design Alimenté par l'IA Aujourd'hui",
+    revolutionizingArchitectureCTAText: "Prêt à révolutionner votre processus de design ? Essayez la plateforme de design d'intérieur alimentée par l'IA de Styly.io et découvrez l'avenir de la visualisation architecturale.",
+    revolutionizingArchitectureCTAButton: "Commencer avec Styly.io",
+
+    // Interior Design Trends 2025 Blog Post
+    interiorTrends2025Title: "Tendances Design d'Intérieur 2025 : Ce qui est Tendance et ce qui ne l'est Plus",
+    interiorTrends2025TableOfContents: "Table des Matières",
+    interiorTrends2025Introduction: "Introduction",
+    interiorTrends2025IntroductionText: "Alors que nous entrons dans 2025, le monde du design d'intérieur continue d'évoluer, mêlant créativité et technologie comme jamais auparavant. Pour les propriétaires, les designers d'intérieur et les passionnés de design, les dernières tendances façonnent non seulement l'esthétique des espaces mais mettent également l'accent sur la fonctionnalité, la durabilité et la personnalisation. Dans ce blog, nous explorons ce qui est tendance et ce qui ne l'est plus dans les tendances design d'intérieur 2025—et comment vous pouvez utiliser les outils gratuits de design de chambre IA comme Styly pour rester à la pointe.",
+    interiorTrends2025WhatsIn: "Ce qui est Tendance : Tendances Design d'Intérieur 2025",
+    interiorTrends2025WhatsOut: "Ce qui ne l'est Plus : Tendances à Abandonner",
+    interiorTrends2025StylyRole: "Comment Styly Révolutionne le Design d'Intérieur",
+    interiorTrends2025Conclusion: "Conclusion",
+    interiorTrends2025EcoConscious: "1. Design Éco-Responsable",
+    interiorTrends2025EcoConsciousText: "La durabilité occupe le devant de la scène alors que les propriétaires privilégient les matériaux écologiques comme le bois récupéré, le bambou et le métal recyclé. L'intégration de verdure par des plantes d'intérieur et des jardins verticaux est également une tendance majeure.",
+    interiorTrends2025EcoConsciousStyly: "Comment Styly Aide : Avec notre plateforme gratuite de design d'intérieur IA, vous pouvez expérimenter avec des aménagements écologiques et visualiser des matériaux durables dans votre espace avant de vous engager dans un achat.",
+    interiorTrends2025Biophilic: "2. Éléments Biophiliques",
+    interiorTrends2025BiophilicText: "La connexion entre la nature et le design s'approfondit, avec des motifs, textures et couleurs biophiliques devenant des éléments clés. Pensez aux tons terreux, fibres naturelles et formes organiques.",
+    interiorTrends2025BiophilicStyly: "Conseil Styly : Utilisez notre décorateur de chambre IA pour explorer des designs inspirés de la nature adaptés à vos préférences.",
+    interiorTrends2025SmartHome: "3. Intégration Maison Intelligente",
+    interiorTrends2025SmartHomeText: "Le design d'intérieur en 2025 intègre parfaitement la technologie. Des systèmes d'éclairage intelligents aux appareils alimentés par l'IA, les maisons deviennent plus intuitives et efficaces.",
+    interiorTrends2025SmartHomeStyly: "Comment Vous en Bénéficiez : Les fonctionnalités gratuites de design d'intérieur IA de Styly facilitent la création d'aménagements intelligents et la planification de l'intégration technologique dans votre design.",
+    interiorTrends2025BoldColors: "4. Couleurs Audacieuses et Maximalisme",
+    interiorTrends2025BoldColorsText: "Fini le temps des espaces strictement minimalistes. Les teintes vibrantes, motifs éclectiques et décor maximaliste sont en vogue, reflétant l'individualité et un sens du jeu.",
+    interiorTrends2025BoldColorsStyly: "Rôle de Styly : Expérimentez avec des palettes de couleurs audacieuses en utilisant nos outils gratuits de design de chambre IA et voyez ce qui fonctionne le mieux pour votre espace.",
+    interiorTrends2025Multifunctional: "5. Espaces Multifonctionnels",
+    interiorTrends2025MultifunctionalText: "Avec les tendances de télétravail qui persistent, les pièces multifonctionnelles qui servent de bureaux, salles de sport ou centres de divertissement sont indispensables.",
+    interiorTrends2025MultifunctionalStyly: "Avantage Styly : Planifiez et concevez des espaces polyvalents sans effort avec le logiciel gratuit de design de chambre IA de Styly.",
+    interiorTrends2025OverlyMinimalistic: "1. Intérieurs Excessivement Minimalistes",
+    interiorTrends2025OverlyMinimalisticText: "Bien que le minimalisme ne soit pas entièrement disparu, l'aspect austère et froid des espaces ultra-minimalistes s'estompe. Les propriétaires embrassent maintenant la chaleur, le confort et la personnalisation.",
+    interiorTrends2025AllWhiteKitchens: "2. Cuisines Entièrement Blanches",
+    interiorTrends2025AllWhiteKitchensText: "Les cuisines entièrement blanches sont remplacées par des tons chauds et terreux ou des touches vibrantes de couleur qui rendent le cœur de la maison plus accueillant.",
+    interiorTrends2025OpenShelving: "3. Surcharge d'Étagères Ouvertes",
+    interiorTrends2025OpenShelvingText: "Bien que les étagères ouvertes restent fonctionnelles, leur utilisation excessive est remplacée par un mélange d'armoires fermées et d'affichages ouverts soigneusement sélectionnés.",
+    interiorTrends2025FastFurniture: "4. Mobilier Jetable",
+    interiorTrends2025FastFurnitureText: "Le mobilier jetable qui ne dure pas tombe en disgrâce. À la place, les pièces durables et de haute qualité avec un attrait intemporel sont tendance.",
+    interiorTrends2025StylyRoleText: "Avec la technologie de pointe de Styly, vous pouvez exploiter la puissance de l'IA pour créer des intérieurs époustouflants et personnalisés sans effort. Que vous soyez un propriétaire cherchant l'inspiration ou un designer d'intérieur planifiant des espaces, notre plateforme offre :",
+    interiorTrends2025StylyFeature1: "Outils Gratuits de Design d'Intérieur IA : Commencez gratuitement avec des fonctionnalités de design intuitives.",
+    interiorTrends2025StylyFeature2: "Décorateur de Chambre IA : Générez et visualisez des idées de design adaptées à votre style et besoins.",
+    interiorTrends2025StylyFeature3: "Solutions Gratuites de Design de Chambre IA : Planifiez, personnalisez et perfectionnez chaque détail de votre espace.",
+    interiorTrends2025ConclusionText: "Les tendances de design d'intérieur pour 2025 consistent à fusionner le style avec la substance, la durabilité et la technologie. Que vous rénoviez votre salon ou conceviez un espace complètement nouveau, rester à la mode est plus facile que jamais avec les outils gratuits de design d'intérieur IA de Styly.",
+    interiorTrends2025CTATitle: "Commencez Votre Voyage Design Aujourd'hui",
+    interiorTrends2025CTAText: "Transformez vos espaces sans effort avec les outils gratuits de design d'intérieur IA de Styly. Découvrez l'avenir du design d'intérieur et créez la maison de vos rêves en quelques clics.",
+    interiorTrends2025CTAButton: "Commencer avec Styly.io",
 
   },
 };
