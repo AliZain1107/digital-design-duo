@@ -10,13 +10,13 @@ const BiophilicDesignAI: React.FC = () => {
       title: "Creating Biophilic Interior Designs with Styly AI",
       description: "Discover how to create biophilic interior designs using STYLY.io's AI tools. Learn to integrate nature into your spaces for wellness and beauty.",
       keywords: "biophilic design AI, nature interior design, AI biophilic spaces, natural design AI, wellness design, STYLY.io biophilic, green interior design",
-      ogImage: "/biophilic-design-ai-hero.webp"
+      ogImage: "/biophilic-design-plants-natural-interior.webp"
     },
     fr: {
       title: "Créer des Designs d'Intérieur Biophiliques avec l'IA Styly",
       description: "Découvrez comment créer des designs d'intérieur biophiliques avec les outils IA de STYLY.io. Apprenez à intégrer la nature dans vos espaces.",
       keywords: "design biophilique IA, design intérieur nature, espaces biophiliques IA, design naturel IA, design bien-être, biophilique STYLY.io, design intérieur vert",
-      ogImage: "/biophilic-design-ai-hero.webp"
+      ogImage: "/biophilic-design-plants-natural-interior.webp"
     }
   };
 
@@ -204,7 +204,7 @@ const BiophilicDesignAI: React.FC = () => {
                     {" "}pour l'inspiration naturelle
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-green-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Recherche Scientifique :</strong> Selon{" "}
@@ -385,7 +385,7 @@ const BiophilicDesignAI: React.FC = () => {
                     {" "}for natural inspiration
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-green-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Scientific Research:</strong> According to{" "}
