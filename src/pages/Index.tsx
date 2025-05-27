@@ -42,7 +42,7 @@ const Index: React.FC = () => {
   // useEffect(() => {
   //   setLanguage("en");
   // }, [])
-  
+
   console.log("Index page rendering with language:", language);
 
   // English meta
@@ -305,13 +305,23 @@ const Index: React.FC = () => {
   const seoMeta = language === "fr" || location.pathname.startsWith("/fr") ? metaFr : meta;
   const seoStructuredData = language === "fr" || location.pathname.startsWith("/fr") ? structuredDataFr : structuredData;
 
+  // Generate language-specific URLs for hreflang
+  const currentUrl = language === "fr" ? "https://styly.io/fr" : "https://styly.io/en";
+  const alternateUrls = {
+    en: "https://styly.io/en",
+    fr: "https://styly.io/fr"
+  };
+
   return (
     <div className="bg-white flex flex-col w-full min-h-screen  " key={`index-${language}`}>
-      <SEO 
+      <SEO
         title={seoMeta.title}
         description={seoMeta.description}
         keywords={seoMeta.keywords}
         structuredData={seoStructuredData}
+        ogUrl={currentUrl}
+        language={language}
+        alternateUrls={alternateUrls}
       />
       <div className="flex w-full flex-col">
         <Navbar />
@@ -323,7 +333,7 @@ const Index: React.FC = () => {
         <ArchitectureRevolution />
         <Stats />
         <Testimonials />
-        <BlogSection />
+        <BlogSection maxPosts={4} />
         <FAQ />
         <Footer />
       </div>

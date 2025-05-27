@@ -11,6 +11,11 @@ interface SEOProps {
   dateModified?: string;
   category?: string;
   tags?: string[];
+  language?: "en" | "fr";
+  alternateUrls?: {
+    en?: string;
+    fr?: string;
+  };
 }
 
 /**
@@ -27,7 +32,9 @@ const SEO: React.FC<SEOProps> = ({
   datePublished = "2024-01-01",
   dateModified = "2024-08-01",
   category = "Interior Design",
-  tags = ["AI design", "interior design", "real estate", "virtual staging"]
+  tags = ["AI design", "interior design", "real estate", "virtual staging"],
+  language = "en",
+  alternateUrls
 }) => {
   const defaultStructuredData = {
     "@context": "https://schema.org",
@@ -64,14 +71,14 @@ const SEO: React.FC<SEOProps> = ({
   useEffect(() => {
     // Set document title with optimized format
     document.title = title;
-    
+
     // Helper function to create or update meta tags
     const setMetaTag = (name: string, content: string, property?: string) => {
       // Try to find existing tag first
-      let element = property 
+      let element = property
         ? document.querySelector(`meta[property="${property}"]`)
         : document.querySelector(`meta[name="${name}"]`);
-      
+
       // If tag doesn't exist, create it
       if (!element) {
         element = document.createElement('meta');
@@ -82,7 +89,7 @@ const SEO: React.FC<SEOProps> = ({
         }
         document.head.appendChild(element);
       }
-      
+
       // Set the content
       element.setAttribute('content', content);
     };
@@ -91,7 +98,7 @@ const SEO: React.FC<SEOProps> = ({
     setMetaTag('description', description);
     setMetaTag('keywords', keywords);
     setMetaTag('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=5.0');
-    
+
     // Set Open Graph tags
     setMetaTag('og:title', title, 'og:title');
     setMetaTag('og:description', description, 'og:description');
@@ -102,8 +109,15 @@ const SEO: React.FC<SEOProps> = ({
     setMetaTag('og:url', ogUrl, 'og:url');
     setMetaTag('og:type', 'website', 'og:type');
     setMetaTag('og:site_name', 'STYLY.io', 'og:site_name');
-    setMetaTag('og:locale', 'en_US', 'og:locale');
-    
+
+    // Set locale based on language
+    const locale = language === "fr" ? "fr_FR" : "en_US";
+    setMetaTag('og:locale', locale, 'og:locale');
+
+    // Add alternate locale
+    const alternateLocale = language === "fr" ? "en_US" : "fr_FR";
+    setMetaTag('og:locale:alternate', alternateLocale, 'og:locale:alternate');
+
     // Set Twitter Card tags
     setMetaTag('twitter:card', 'summary_large_image');
     setMetaTag('twitter:site', '@StylyDesign');
@@ -112,7 +126,7 @@ const SEO: React.FC<SEOProps> = ({
     setMetaTag('twitter:description', description);
     setMetaTag('twitter:image', ogImage);
     setMetaTag('twitter:image:alt', 'STYLY.io AI Interior Design Platform');
-    
+
     // Set canonical URL
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
@@ -121,7 +135,7 @@ const SEO: React.FC<SEOProps> = ({
       document.head.appendChild(canonicalLink);
     }
     canonicalLink.setAttribute('href', ogUrl);
-    
+
     // Set structured data
     let scriptElement = document.querySelector('script[type="application/ld+json"]');
     if (!scriptElement) {
@@ -130,36 +144,36 @@ const SEO: React.FC<SEOProps> = ({
       document.head.appendChild(scriptElement);
     }
     scriptElement.textContent = JSON.stringify(jsonLd);
-    
+
     // Set additional meta tags
     setMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
-    setMetaTag('language', 'English');
+    setMetaTag('language', language === "fr" ? "French" : "English");
     setMetaTag('author', 'STYLY');
     setMetaTag('theme-color', '#593286');
     setMetaTag('application-name', 'STYLY');
     setMetaTag('apple-mobile-web-app-title', 'STYLY');
     setMetaTag('apple-mobile-web-app-capable', 'yes');
-    
+
     // Improved SEO tags for discovery
     setMetaTag('msapplication-TileColor', '#593286');
     setMetaTag('msapplication-config', '/browserconfig.xml');
     setMetaTag('format-detection', 'telephone=no');
-    
+
     // Improved mobile experience tags
     setMetaTag('mobile-web-app-capable', 'yes');
     setMetaTag('apple-mobile-web-app-status-bar-style', 'default');
-    
+
     // Add article-specific tags if applicable
     setMetaTag('article:publisher', 'https://facebook.com/StylyDesign', 'article:publisher');
     setMetaTag('article:published_time', datePublished, 'article:published_time');
     setMetaTag('article:modified_time', dateModified, 'article:modified_time');
-    
+
     // Add category and tags
     setMetaTag('article:section', category, 'article:section');
     tags.forEach((tag, index) => {
       setMetaTag(`article:tag:${index}`, tag, `article:tag:${index}`);
     });
-    
+
     // Add alternate language versions if available
     const addAlternateLanguageLink = (lang: string, url: string) => {
       let linkElement = document.querySelector(`link[hreflang="${lang}"]`);
@@ -171,12 +185,29 @@ const SEO: React.FC<SEOProps> = ({
       }
       linkElement.setAttribute('href', url);
     };
-    
-    // Example language alternates (uncomment and modify if multilingual)
-    // addAlternateLanguageLink('en', `${ogUrl}/en`);
-    // addAlternateLanguageLink('es', `${ogUrl}/es`);
-    // addAlternateLanguageLink('fr', `${ogUrl}/fr`);
-    
+
+    // Clear existing hreflang links to avoid duplicates
+    const existingHreflangs = document.querySelectorAll('link[hreflang]');
+    existingHreflangs.forEach(link => link.remove());
+
+    // Add hreflang links for current page
+    if (alternateUrls) {
+      if (alternateUrls.en) {
+        addAlternateLanguageLink('en', alternateUrls.en);
+      }
+      if (alternateUrls.fr) {
+        addAlternateLanguageLink('fr', alternateUrls.fr);
+      }
+    } else {
+      // Default hreflang for homepage and other pages
+      const baseUrl = ogUrl.replace(/\/(en|fr)$/, '');
+      addAlternateLanguageLink('en', `${baseUrl}/en`);
+      addAlternateLanguageLink('fr', `${baseUrl}/fr`);
+    }
+
+    // Add x-default hreflang (points to default language)
+    addAlternateLanguageLink('x-default', alternateUrls?.en || `${ogUrl.replace(/\/(en|fr)$/, '')}/en`);
+
     // Add link preconnect for performance optimization
     const addPreconnect = (url: string, crossorigin: boolean = false) => {
       let linkElement = document.querySelector(`link[rel="preconnect"][href="${url}"]`);
@@ -190,21 +221,21 @@ const SEO: React.FC<SEOProps> = ({
         document.head.appendChild(linkElement);
       }
     };
-    
+
     // Common domains to preconnect for performance
     addPreconnect('https://cdn.builder.io');
     addPreconnect('https://fonts.googleapis.com');
     addPreconnect('https://fonts.gstatic.com', true);
-    
+
     // Cleanup function when component unmounts
     return () => {
       // We don't actually remove meta tags on cleanup as it may affect other pages
       // This is intentional to avoid flickering when navigating between pages
     };
-  }, [title, description, keywords, ogImage, ogUrl, jsonLd, datePublished, dateModified, category, tags]);
+  }, [title, description, keywords, ogImage, ogUrl, jsonLd, datePublished, dateModified, category, tags, language, alternateUrls]);
 
   // This component doesn't render anything visible
   return null;
 };
 
-export default SEO; 
+export default SEO;

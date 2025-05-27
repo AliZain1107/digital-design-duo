@@ -1,7 +1,9 @@
-import { useLanguage } from "@/lib/i18n"; // Adjust path accordingly
+import React from "react";
+import { useLanguage } from "@/lib/i18n";
+import { Link } from "react-router-dom";
 
 const BuildHouseAI: React.FC = () => {
-  const { t } = useLanguage(); // Get the translation object based on the current language
+  const { t, language } = useLanguage(); // Get the translation object based on the current language
 
   return (
     <div className="flex flex-col items-center px-4 py-10 space-y-10">
@@ -31,6 +33,28 @@ const BuildHouseAI: React.FC = () => {
           <li>Advanced material recognition</li>
           <li>Intelligent space optimization</li>
         </ul>
+        <p className="text-blue-600 mt-2">
+          <a
+            href="https://www.archdaily.com/tag/artificial-intelligence"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            ArchDaily highlights AI as the most significant advancement in design technology
+          </a>
+        </p>
+        <div className="bg-purple-50 p-4 rounded-lg mt-3">
+          <p className="text-purple-700 font-medium">
+            <a
+              href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Experience Styly's advanced AI features - try our comprehensive design platform
+            </a>
+          </p>
+        </div>
 
         <h2 className="text-xl font-semibold">{t.performanceMetrics}</h2>
         <ul className="list-disc pl-5">
@@ -67,6 +91,34 @@ const BuildHouseAI: React.FC = () => {
           While each platform offers unique advantages, Styly.io emerges as a comprehensive solution that
           combines powerful AI capabilities with user-friendly features.
         </p>
+        <p className="mt-2">
+          <Link
+            to="/blog/free-ai-interior-design-software"
+            className="text-purple-600 hover:underline"
+          >
+            Get started with our free AI interior design software
+          </Link>
+        </p>
+        <p className="mt-2">
+          <Link
+            to="/blog/2025-interior-design-trends"
+            className="text-purple-600 hover:underline"
+          >
+            Explore the latest 2025 interior design trends with AI tools
+          </Link>
+        </p>
+        <div className="bg-orange-50 p-4 rounded-lg mt-4">
+          <p className="text-orange-700 font-medium">
+            <a
+              href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Start your AI interior design journey today - compare and choose the best tools
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );

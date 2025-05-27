@@ -1,11 +1,44 @@
 import React from "react";
 import { useLanguage } from "@/lib/i18n"; // Import the useLanguage hook
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const RealEstateVirtualStaging: React.FC = () => {
-  const { t } = useLanguage(); // Get the translation function from context
+  const { t, language } = useLanguage(); // Get the translation function from context
+
+  const seoMeta = {
+    en: {
+      title: "How Real Estate Agents Are Boosting Sales with AI-Powered Virtual Staging: The 2025 Market Reality | Styly.io",
+      description: "Discover how real estate agents are revolutionizing property sales with AI-powered virtual staging. Learn about market statistics, success stories, and implementation strategies for 2025.",
+      keywords: "AI virtual staging, real estate staging, property marketing, virtual home staging, real estate AI, property sales, home staging technology"
+    },
+    fr: {
+      title: "Comment les Agents Immobiliers Boostent leurs Ventes avec le Home Staging Virtuel IA : La Réalité du Marché 2025 | Styly.io",
+      description: "Découvrez comment les agents immobiliers révolutionnent les ventes immobilières avec le home staging virtuel IA. Statistiques du marché, études de cas et stratégies d'implémentation pour 2025.",
+      keywords: "home staging virtuel IA, staging immobilier, marketing immobilier, staging maison virtuel, IA immobilier, ventes propriétés, technologie staging"
+    }
+  };
+
+  const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
+  const canonicalUrl = language === "fr"
+    ? "https://styly.io/fr/blog/agents-immobiliers-home-staging-virtuel-ia"
+    : "https://styly.io/en/blog/real-estate-agents-ai-virtual-staging";
 
   return (
     <>
+      <Helmet>
+        <title>{currentMeta.title}</title>
+        <meta name="description" content={currentMeta.description} />
+        <meta name="keywords" content={currentMeta.keywords} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={currentMeta.title} />
+        <meta property="og:description" content={currentMeta.description} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={currentMeta.title} />
+        <meta name="twitter:description" content={currentMeta.description} />
+      </Helmet>
       <div className="flex flex-col gap-6 text-gray-600 text-base leading-relaxed p-5">
         <p>
           {t.realEstateLandscape}
@@ -41,6 +74,26 @@ const RealEstateVirtualStaging: React.FC = () => {
           >
             {t.realEstateStagingAssociation}
           </a>
+        </p>
+
+        <p className="text-blue-600 mt-2">
+          <a
+            href="https://www.architecturaldigest.com/story/virtual-staging-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Architectural Digest reports that virtual staging is becoming the industry standard
+          </a>
+        </p>
+
+        <p className="mt-2">
+          <Link
+            to="/blog/free-ai-interior-design-software"
+            className="text-purple-600 hover:underline"
+          >
+            Discover how our free AI interior design software powers virtual staging
+          </Link>
         </p>
 
         <h3 className="text-[12px] text-gray-600 font-semibold">
@@ -108,6 +161,19 @@ const RealEstateVirtualStaging: React.FC = () => {
           </ul>
         </div>
 
+        <div className="bg-purple-50 p-4 rounded-lg mt-4">
+          <p className="text-purple-700 font-medium">
+            <a
+              href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {t.transformRealEstateListings}
+            </a>
+          </p>
+        </div>
+
         {/* Agent Implementation */}
         <div>
           <h3 className="text-base font-semibold">
@@ -173,6 +239,26 @@ const RealEstateVirtualStaging: React.FC = () => {
             <li>{t.virtualStagingMarketGrowth}</li>
             <li>{t.declineOfPhysicalStaging}</li>
           </ul>
+
+          <p className="text-blue-600 mt-2">
+            <a
+              href="https://www.houzz.fr/magazine/immobilier-staging-virtuel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Houzz research shows virtual staging increases buyer interest by 83%
+            </a>
+          </p>
+
+          <p className="mt-2">
+            <Link
+              to="/blog/revolutionizing-architecture-engineering-construction-ai"
+              className="text-purple-600 hover:underline"
+            >
+              Learn how AI is transforming the entire real estate and construction industry
+            </Link>
+          </p>
         </div>
 
         {/* Best Practices */}
@@ -247,6 +333,28 @@ const RealEstateVirtualStaging: React.FC = () => {
           <li>{t.scaleMarketingEfforts}</li>
           <li>{t.deliverConsistentPresentation}</li>
         </ul>
+
+        <p className="mt-4">
+          <Link
+            to="/blog/2025-interior-design-trends"
+            className="text-purple-600 hover:underline"
+          >
+            Stay ahead with the latest 2025 interior design trends for staging
+          </Link>
+        </p>
+
+        <div className="bg-orange-50 p-4 rounded-lg mt-4">
+          <p className="text-orange-700 font-medium">
+            <a
+              href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {t.startBoostingRealEstateSales}
+            </a>
+          </p>
+        </div>
       </div>
       <div className="flex items-center justify-center gap-6 text-gray-600 text-base leading-relaxed p-5">
         <a
