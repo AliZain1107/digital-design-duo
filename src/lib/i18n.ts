@@ -26,6 +26,13 @@ export interface Translations {
   eightStunningAIBedroomDesignsTitle: string;
   expertTipsHomeInteriorsTitle: string;
 
+  // New blog post titles
+  top5ChallengesInteriorDesignTitle: string;
+  commercialInteriorDesignAITitle: string;
+  creatingOutdoorSpacesAITitle: string;
+  costEffectivenessAIDesignTitle: string;
+  transformingSmallLivingSpacesTitle: string;
+
   // Hero section
   welcomeToFuture: string;
   mostUsedAITool: string;
@@ -1228,6 +1235,13 @@ export const translations: Record<Language, Translations> = {
     expertTipsHomeInteriorsTitle:
       "10 Expert Tips to Save Big on Home Interiors in 2025",
 
+    // New blog post titles
+    top5ChallengesInteriorDesignTitle: "Top 5 Challenges in Interior Design and How AI Can Solve Them",
+    commercialInteriorDesignAITitle: "How AI is Shaping the Future of Commercial Interior Design",
+    creatingOutdoorSpacesAITitle: "Creating Outdoor Spaces with AI: A Guide to Designing Stunning Exteriors",
+    costEffectivenessAIDesignTitle: "The Cost-Effectiveness of AI in Design: How Styly Saves You Money",
+    transformingSmallLivingSpacesTitle: "Transforming Small Living Spaces: Interior Design Solutions for Compact Homes",
+
     // New Keys for Market Leaders
     foyr: "Foyr",
     knownForCommercialApplications: "Known for commercial applications",
@@ -2160,6 +2174,13 @@ export const translations: Record<Language, Translations> = {
       "Huit designs d'intérieurs AI-générés : Transformez votre espace avec Styly.io",
     expertTipsOnHomeInteriors:
       "10 conseils experts pour économiser de l'argent sur les intérieurs en 2025",
+
+    // New blog post titles
+    top5ChallengesInteriorDesignTitle: "Top 5 des Défis en Design d'Intérieur et Comment l'IA Peut les Résoudre",
+    commercialInteriorDesignAITitle: "Comment l'IA Façonne l'Avenir du Design d'Intérieur Commercial",
+    creatingOutdoorSpacesAITitle: "Créer des Espaces Extérieurs avec l'IA : Un Guide pour Concevoir des Extérieurs Époustouflants",
+    costEffectivenessAIDesignTitle: "La Rentabilité de l'IA en Design : Comment Styly Vous Fait Économiser",
+    transformingSmallLivingSpacesTitle: "Transformer les Petits Espaces de Vie : Solutions de Design d'Intérieur pour Maisons Compactes",
 
     marketOverview: "Aperçu du marché",
     keyEvaluationCriteria: "Critères d'évaluation clés",

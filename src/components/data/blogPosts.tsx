@@ -21,6 +21,11 @@ import AILandscapeDesign from "@/blogPages/AILandscapeDesign";
 import CulturalDesignAI from "@/blogPages/CulturalDesignAI";
 import TextureImportanceDesign from "@/blogPages/TextureImportanceDesign";
 import SustainableLandscapesAI from "@/blogPages/SustainableLandscapesAI";
+import Top5ChallengesInteriorDesign from "@/blogPages/Top5ChallengesInteriorDesign";
+import CommercialInteriorDesignAI from "@/blogPages/CommercialInteriorDesignAI";
+import CreatingOutdoorSpacesAI from "@/blogPages/CreatingOutdoorSpacesAI";
+import CostEffectivenessAIDesign from "@/blogPages/CostEffectivenessAIDesign";
+import TransformingSmallLivingSpaces from "@/blogPages/TransformingSmallLivingSpaces";
 
 export interface BlogPost {
   id: number;
@@ -246,5 +251,50 @@ export const blogPosts: BlogPost[] = [
     slug: "AI-Interior",
     slugFr: "10-conseils-experts-economiser-interieurs-maison",
     Component: AIInterior,
+  },
+  {
+    id: 24,
+    title: "Top 5 Challenges in Interior Design and How AI Can Solve Them",
+    date: "Sep 13, 2024",
+    image: "/top-5-challenges-interior-design-ai.webp",
+    slug: "top-5-challenges-interior-design-ai-solutions",
+    slugFr: "top-5-defis-design-interieur-solutions-ia",
+    Component: Top5ChallengesInteriorDesign,
+  },
+  {
+    id: 25,
+    title: "How AI is Shaping the Future of Commercial Interior Design",
+    date: "Sep 5, 2024",
+    image: "/commercial-interior-design-ai-future.webp",
+    slug: "ai-future-commercial-interior-design",
+    slugFr: "ia-avenir-design-interieur-commercial",
+    Component: CommercialInteriorDesignAI,
+  },
+  {
+    id: 26,
+    title: "Creating Outdoor Spaces with AI: A Guide to Designing Stunning Exteriors",
+    date: "Aug 30, 2024",
+    image: "/creating-outdoor-spaces-ai-design.webp",
+    slug: "creating-outdoor-spaces-ai-design-guide",
+    slugFr: "creer-espaces-exterieurs-ia-guide-design",
+    Component: CreatingOutdoorSpacesAI,
+  },
+  {
+    id: 27,
+    title: "The Cost-Effectiveness of AI in Design: How Styly Saves You Money",
+    date: "Aug 26, 2024",
+    image: "/cost-effectiveness-ai-design-savings.webp",
+    slug: "cost-effectiveness-ai-design-styly-savings",
+    slugFr: "rentabilite-ia-design-economies-styly",
+    Component: CostEffectivenessAIDesign,
+  },
+  {
+    id: 28,
+    title: "Transforming Small Living Spaces: Interior Design Solutions for Compact Homes",
+    date: "Aug 3, 2024",
+    image: "/transforming-small-living-spaces-compact.webp",
+    slug: "transforming-small-living-spaces-design-solutions",
+    slugFr: "transformer-petits-espaces-vie-solutions-design",
+    Component: TransformingSmallLivingSpaces,
   },
 ];
