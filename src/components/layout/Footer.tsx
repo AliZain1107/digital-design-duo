@@ -68,6 +68,12 @@ const Footer: React.FC = () => {
           {/* Links */}
           <div className="flex flex-wrap justify-center items-center gap-4 text-base text-black font-normal order-1 md:order-2">
             <Link
+              to="/blog"
+              className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
+            >
+              {t.footerBlog}
+            </Link>
+            <Link
               to="/video-guide"
               className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
             >

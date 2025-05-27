@@ -1,11 +1,27 @@
-import React from "react";
-import { useLanguage } from "@/lib/i18n";
+import React, { useEffect, useContext } from "react";
+import { useLocation } from "react-router-dom";
+import { LanguageContext, Language } from "@/lib/i18n";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/layout/SEO";
 
 const Privacy: React.FC = () => {
-  const { t, language } = useLanguage();
+  const { language, setLanguage, t } = useContext(LanguageContext);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Detect language from URL path
+    let pathLang: Language;
+    if (location.pathname.startsWith("/fr/confidentialite") || location.pathname.startsWith("/fr") || location.pathname === "/confidentialite") {
+      pathLang = "fr";
+    } else if (location.pathname.startsWith("/en/privacy") || location.pathname.startsWith("/en")) {
+      pathLang = "en";
+    } else {
+      // Default based on route
+      pathLang = location.pathname === "/confidentialite" ? "fr" : "en";
+    }
+    setLanguage(pathLang);
+  }, [location.pathname, setLanguage]);
 
 
 
@@ -24,12 +40,22 @@ const Privacy: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
 
+  // Generate language-specific URLs for hreflang
+  const currentUrl = language === "fr" ? "https://styly.io/fr/confidentialite" : "https://styly.io/en/privacy";
+  const alternateUrls = {
+    en: "https://styly.io/en/privacy",
+    fr: "https://styly.io/fr/confidentialite"
+  };
+
   return (
     <div className="bg-white flex flex-col w-full min-h-screen">
       <SEO
         title={currentMeta.title}
         description={currentMeta.description}
         keywords={currentMeta.keywords}
+        ogUrl={currentUrl}
+        language={language}
+        alternateUrls={alternateUrls}
       />
       <div className="flex w-full flex-col">
         <Navbar />

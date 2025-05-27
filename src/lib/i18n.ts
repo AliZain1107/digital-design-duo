@@ -18,6 +18,14 @@ export interface Translations {
   eightStunningAIBedroomDesigns: string;
   expertTipsOnHomeInteriors: string;
 
+  // Blog post titles for French translation
+  realEstateAgentsAIVirtualStagingTitle: string;
+  genZInstagramWorthyInteriorsTitle: string;
+  buildHouseAIToolsPorchDesignTitle: string;
+  ultimateGuideAIInteriorDesignTitle: string;
+  eightStunningAIBedroomDesignsTitle: string;
+  expertTipsHomeInteriorsTitle: string;
+
   // Hero section
   welcomeToFuture: string;
   mostUsedAITool: string;
@@ -108,6 +116,7 @@ export interface Translations {
   footerCopyrightYear: string;
   footerVideoGuide: string;
   footerCookieSettings: string;
+  footerBlog: string;
 
   // Cookie Settings popup
   cookieSettingsTitle: string;
@@ -668,6 +677,112 @@ export interface Translations {
   interiorTrends2025CTATitle: string;
   interiorTrends2025CTAText: string;
   interiorTrends2025CTAButton: string;
+
+  // Enhanced content with links and references
+  interiorTrends2025BiophilicLink: string;
+  interiorTrends2025BiophilicExternal: string;
+  interiorTrends2025SmartHomeCTA: string;
+  interiorTrends2025BoldColorsExternal: string;
+  interiorTrends2025MultifunctionalLink: string;
+  interiorTrends2025KitchenExternal: string;
+  interiorTrends2025MinimalismLink: string;
+  interiorTrends2025StylyRoleCTA: string;
+
+  // Enhanced content for Revolutionizing Architecture blog
+  revolutionizingArchitectureAIDesignLink: string;
+  revolutionizingArchitectureArchDailyExternal: string;
+  revolutionizingArchitectureBIM_CTA: string;
+  revolutionizingArchitectureGenerativeExternal: string;
+  revolutionizingArchitectureInteriorLink: string;
+  revolutionizingArchitectureSmartBuildingExternal: string;
+  revolutionizingArchitectureFutureLink: string;
+  revolutionizingArchitectureFutureCTA: string;
+
+  // Free AI Interior Design Blog Post
+  freeAIDesignTitle: string;
+  freeAIDesignTableOfContents: string;
+  freeAIDesignIntroduction: string;
+  freeAIDesignIntroductionText: string;
+  freeAIDesignWhyChooseStyly: string;
+  freeAIDesignWhyChooseStylyText: string;
+  freeAIDesignFeature1: string;
+  freeAIDesignFeature2: string;
+  freeAIDesignFeature3: string;
+  freeAIDesignFeature4: string;
+  freeAIDesignHouzzExternal: string;
+  freeAIDesignKeyFeatures: string;
+  freeAIDesignAIPowered: string;
+  freeAIDesignAIPoweredText: string;
+  freeAIDesignExtensiveLibrary: string;
+  freeAIDesignExtensiveLibraryText: string;
+  freeAIDesignElleExternal: string;
+  freeAIDesignUserFriendly: string;
+  freeAIDesignUserFriendlyText: string;
+  freeAIDesignTryNowCTA: string;
+  freeAIDesignFreeCredits: string;
+  freeAIDesignFreeCreditsText: string;
+  freeAIDesignBenefits: string;
+  freeAIDesignCostEffective: string;
+  freeAIDesignCostEffectiveText: string;
+  freeAIDesignTimeSaving: string;
+  freeAIDesignTimeSavingText: string;
+  freeAIDesignCustomizable: string;
+  freeAIDesignCustomizableText: string;
+  freeAIDesignTrendsLink: string;
+  freeAIDesignHowToStart: string;
+  freeAIDesignStep1: string;
+  freeAIDesignStep2: string;
+  freeAIDesignStep3: string;
+  freeAIDesignStep4: string;
+  freeAIDesignMarieExternal: string;
+  freeAIDesignRoomDecorator: string;
+  freeAIDesignRoomDecoratorText: string;
+  freeAIDesignExpertTipsLink: string;
+  freeAIDesignWhyStandsOut: string;
+  freeAIDesignWhyStandsOutText: string;
+  freeAIDesignCoteMaisonExternal: string;
+  freeAIDesignExperienceCTA: string;
+  freeAIDesignConclusion: string;
+  freeAIDesignConclusionText: string;
+  freeAIDesignArchitectureLink: string;
+  freeAIDesignCTATitle: string;
+  freeAIDesignCTAText: string;
+  freeAIDesignCTAButton: string;
+
+  // Real Estate Virtual Staging Blog Post - Hardcoded text translations
+  transformRealEstateListings: string;
+  startBoostingRealEstateSales: string;
+
+  // Viral AI Room Design Prompts Blog Post
+  viralAIRoomDesignPromptsTitle: string;
+  viralAIRoomDesignPromptsDescription: string;
+
+  // New Phase 1 Blog Posts
+  impactAIInteriorDesignerTitle: string;
+  aiVirtualRealityDesignTitle: string;
+  aiAccessibleDesignTitle: string;
+
+  // New Phase 2 Blog Posts
+  dataAIPoweredDesignTitle: string;
+  modernFamilyDesignTitle: string;
+  sustainableDesignAITitle: string;
+  aiSpacePlanningSmallApartmentsTitle: string;
+  biophilicDesignAITitle: string;
+
+  // New Phase 3 Blog Posts
+  scienceColorDesignTitle: string;
+  sustainableLandscapesAITitle: string;
+  aiLandscapeDesignTitle: string;
+  culturalDesignAITitle: string;
+  textureImportanceDesignTitle: string;
+
+  // Video Guide Page
+  videoGuide: string;
+  videoTutorials: string;
+  learnAIInteriorDesign: string;
+  discoverHowToUseAITools: string;
+  readyToTransformSpaces: string;
+  getStartedWithFreeAITools: string;
 }
 // Define translations for English and French
 export const translations: Record<Language, Translations> = {
@@ -833,6 +948,7 @@ export const translations: Record<Language, Translations> = {
     footerCopyrightYear: "Copyright 2025 STYLY",
     footerVideoGuide: "Video Guide",
     footerCookieSettings: "Cookie Settings",
+    footerBlog: "Blog",
 
     // Cookie Settings popup
     cookieSettingsTitle: "Cookie Settings",
@@ -1096,6 +1212,20 @@ export const translations: Record<Language, Translations> = {
     eightStunningAIBedroomDesigns:
       "Eight Stunning AI-Generated Bedroom Designs: Transform Your Space with Styly.io",
     expertTipsOnHomeInteriors:
+      "10 Expert Tips to Save Big on Home Interiors in 2025",
+
+    // Blog post titles for French translation
+    realEstateAgentsAIVirtualStagingTitle:
+      "How Real Estate Agents Are Boosting Sales with AI-Powered Virtual Staging: The 2025 Market Reality",
+    genZInstagramWorthyInteriorsTitle:
+      "Gen Z's Ultimate Guide to Instagram-Worthy Interiors",
+    buildHouseAIToolsPorchDesignTitle:
+      "How to Build Your Own House with AI Tools Including Porch Design",
+    ultimateGuideAIInteriorDesignTitle:
+      "The Ultimate Guide to AI Interior Design Tools in 2025: A Comprehensive Comparison",
+    eightStunningAIBedroomDesignsTitle:
+      "Eight Stunning AI-Generated Bedroom Designs: Transform Your Space with Styly.io",
+    expertTipsHomeInteriorsTitle:
       "10 Expert Tips to Save Big on Home Interiors in 2025",
 
     // New Keys for Market Leaders
@@ -1467,6 +1597,112 @@ export const translations: Record<Language, Translations> = {
     interiorTrends2025CTAText: "Transform your spaces effortlessly with Styly's free AI interior design tools. Experience the future of interior design and create your dream home with just a few clicks.",
     interiorTrends2025CTAButton: "Get Started with Styly.io",
 
+    // Enhanced content with links and references
+    interiorTrends2025BiophilicLink: "Discover our complete guide on creating biophilic interior designs",
+    interiorTrends2025BiophilicExternal: "According to ArchDaily, biophilic design can improve well-being by up to 15%",
+    interiorTrends2025SmartHomeCTA: "Try our AI room planner to design smart, connected spaces",
+    interiorTrends2025BoldColorsExternal: "Elle Décoration reports that maximalist interiors are the top trend for 2025",
+    interiorTrends2025MultifunctionalLink: "See our expert tips on creating multifunctional home offices",
+    interiorTrends2025KitchenExternal: "Houzz data shows 73% of homeowners are moving away from all-white kitchens",
+    interiorTrends2025MinimalismLink: "Read our article on balancing minimalism with warmth in modern homes",
+    interiorTrends2025StylyRoleCTA: "Experience these trends firsthand with our free AI interior design platform",
+
+    // Enhanced content for Revolutionizing Architecture blog
+    revolutionizingArchitectureAIDesignLink: "Explore our comprehensive guide to AI-powered interior design tools",
+    revolutionizingArchitectureArchDailyExternal: "ArchDaily reports that AI is transforming 85% of architectural workflows",
+    revolutionizingArchitectureBIM_CTA: "Try our AI design platform to create intelligent building models",
+    revolutionizingArchitectureGenerativeExternal: "According to Autodesk research, generative design reduces project time by 40%",
+    revolutionizingArchitectureInteriorLink: "See how AI is revolutionizing interior design in our latest trends guide",
+    revolutionizingArchitectureSmartBuildingExternal: "AD Magazine highlights smart buildings as the future of sustainable architecture",
+    revolutionizingArchitectureFutureLink: "Read our expert tips on preparing for the AI-driven construction future",
+    revolutionizingArchitectureFutureCTA: "Start building the future today with our AI-powered design tools",
+
+    // Free AI Interior Design Blog Post
+    freeAIDesignTitle: "Free AI Interior Design Software - Transform Your Space",
+    freeAIDesignTableOfContents: "Table of Contents",
+    freeAIDesignIntroduction: "Introduction",
+    freeAIDesignIntroductionText: "In today's fast-paced world, designing beautiful and functional spaces has become easier than ever, thanks to technological advancements. Styly is at the forefront of this revolution, offering free AI interior design software that empowers you to bring your creative visions to life. Whether you're a homeowner looking to redecorate or a professional designer seeking innovative tools, Styly provides the perfect solution for all your interior design needs.",
+    freeAIDesignWhyChooseStyly: "Why Choose Styly for AI Room Design?",
+    freeAIDesignWhyChooseStylyText: "Styly leverages advanced AI room design free tools to deliver exceptional results in minutes. With our intuitive platform, you can:",
+    freeAIDesignFeature1: "Generate stunning room layouts tailored to your preferences",
+    freeAIDesignFeature2: "Experiment with different furniture arrangements and color schemes",
+    freeAIDesignFeature3: "Visualize your ideas in 3D without any design experience required",
+    freeAIDesignFeature4: "Save time and money by avoiding costly design mistakes",
+    freeAIDesignHouzzExternal: "Houzz reports that AI design tools increase project efficiency by 60%",
+    freeAIDesignKeyFeatures: "Key Features of Styly's Free AI Interior Design Software",
+    freeAIDesignAIPowered: "AI-Powered Suggestions",
+    freeAIDesignAIPoweredText: "Our smart algorithm analyzes your room dimensions, style preferences, and functional requirements to generate personalized design suggestions.",
+    freeAIDesignExtensiveLibrary: "Extensive Design Library",
+    freeAIDesignExtensiveLibraryText: "Explore a wide range of furniture, décor items, and finishes to create a design that reflects your personality and lifestyle.",
+    freeAIDesignElleExternal: "Elle Décoration highlights AI as the future of personalized interior design",
+    freeAIDesignUserFriendly: "User-Friendly Interface",
+    freeAIDesignUserFriendlyText: "No technical skills? No problem! Styly's simple drag-and-drop functionality makes designing fun and accessible for everyone.",
+    freeAIDesignTryNowCTA: "Try our intuitive AI design interface now - no experience required",
+    freeAIDesignFreeCredits: "Free Credits to Get Started",
+    freeAIDesignFreeCreditsText: "Sign up today and receive free credits to start designing your dream spaces.",
+    freeAIDesignBenefits: "Benefits of Using Styly for Free AI Room Design",
+    freeAIDesignCostEffective: "Cost-Effective",
+    freeAIDesignCostEffectiveText: "Eliminate the need for expensive design consultations",
+    freeAIDesignTimeSaving: "Time-Saving",
+    freeAIDesignTimeSavingText: "Quickly visualize multiple design ideas without lengthy back-and-forths",
+    freeAIDesignCustomizable: "Customizable",
+    freeAIDesignCustomizableText: "Tweak every element to match your exact vision",
+    freeAIDesignTrendsLink: "Discover the latest 2025 interior design trends to inspire your AI-generated designs",
+    freeAIDesignHowToStart: "How to Get Started with Styly",
+    freeAIDesignStep1: "Visit www.styly.io",
+    freeAIDesignStep2: "Create your account and claim your free AI room design credits",
+    freeAIDesignStep3: "Upload your room dimensions or choose from pre-set templates",
+    freeAIDesignStep4: "Experiment with layouts, colors, and furniture to create your dream space!",
+    freeAIDesignMarieExternal: "Marie Claire Maison showcases AI as revolutionizing home decoration accessibility",
+    freeAIDesignRoomDecorator: "Transform Your Spaces with a Free AI Room Decorator",
+    freeAIDesignRoomDecoratorText: "Styly goes beyond basic design tools, acting as your AI room decorator. With advanced customization options and the ability to visualize designs in real time, you can turn any space into a masterpiece.",
+    freeAIDesignExpertTipsLink: "Learn expert tips for budget-friendly interior design with AI tools",
+    freeAIDesignWhyStandsOut: "Why Styly Stands Out",
+    freeAIDesignWhyStandsOutText: "Unlike other platforms, Styly combines powerful AI technology with an easy-to-use interface, making free AI interior design accessible to everyone. Plus, our focus on both interior and exterior design ensures that your entire home is a reflection of your style.",
+    freeAIDesignCoteMaisonExternal: "Côté Maison emphasizes the importance of accessible design tools for modern homeowners",
+    freeAIDesignExperienceCTA: "Experience the future of interior design with our comprehensive AI platform",
+    freeAIDesignConclusion: "Conclusion",
+    freeAIDesignConclusionText: "Styly is changing the game for free AI interior design by providing an innovative and user-friendly platform. Whether you're redesigning a single room or reimagining your entire home, Styly offers the tools to make it happen.",
+    freeAIDesignArchitectureLink: "Explore how AI is revolutionizing architecture and construction industries",
+    freeAIDesignCTATitle: "Start Your Free AI Design Journey Today",
+    freeAIDesignCTAText: "Transform your spaces effortlessly with Styly's free AI interior design software. Create stunning room layouts, experiment with furniture arrangements, and bring your creative visions to life.",
+    freeAIDesignCTAButton: "Get Started with Free Credits",
+
+    // Real Estate Virtual Staging Blog Post - Hardcoded text translations
+    transformRealEstateListings: "Transform your real estate listings with our AI virtual staging tools",
+    startBoostingRealEstateSales: "Start boosting your real estate sales with AI-powered virtual staging today",
+
+    // Viral AI Room Design Prompts Blog Post
+    viralAIRoomDesignPromptsTitle: "6 Viral AI Room Design Prompts: Create Your Dream Bedroom with STYLY.io",
+    viralAIRoomDesignPromptsDescription: "Discover 6 viral AI room design prompts that consistently generate jaw-dropping bedroom results. Transform your space with STYLY.io's AI room designer.",
+
+    // New Phase 1 Blog Posts
+    impactAIInteriorDesignerTitle: "The Impact of AI on the Role of the Interior Designer: A Collaborative Future",
+    aiVirtualRealityDesignTitle: "The Intersection of AI and Virtual Reality in Design: What the Future Holds",
+    aiAccessibleDesignTitle: "AI in Accessible Design: Creating Inclusive Spaces with Styly",
+
+    // New Phase 2 Blog Posts
+    dataAIPoweredDesignTitle: "The Role of Data in AI-Powered Design: How Insights Drive Better Aesthetics",
+    modernFamilyDesignTitle: "Designing for the Modern Family: Using AI to Create Functional and Stylish Homes",
+    sustainableDesignAITitle: "Designing for Sustainability: Using AI to Create Eco-Friendly Spaces",
+    aiSpacePlanningSmallApartmentsTitle: "Leveraging AI to Optimize Space Planning in Small Apartments",
+    biophilicDesignAITitle: "Creating Biophilic Interior Designs with Styly AI",
+
+    // New Phase 3 Blog Posts
+    scienceColorDesignTitle: "The Science of Color in Design: How AI Helps You Choose the Perfect Palette",
+    sustainableLandscapesAITitle: "Reducing Carbon Footprints: Sustainable Landscapes with Styly AI",
+    aiLandscapeDesignTitle: "AI in Landscape Design: Creating Beautiful Outdoor Spaces with Styly",
+    culturalDesignAITitle: "Interior Designing for Different Cultures: Leveraging AI for Culturally Sensitive Spaces",
+    textureImportanceDesignTitle: "The Importance of Texture in Interior Design: How Styly Can Help",
+
+    // Video Guide Page
+    videoGuide: "Video Guide",
+    videoTutorials: "Video Tutorials",
+    learnAIInteriorDesign: "Learn AI Interior Design",
+    discoverHowToUseAITools: "Learn how to use our AI tools to transform your interior spaces",
+    readyToTransformSpaces: "Ready to transform your spaces?",
+    getStartedWithFreeAITools: "Get started now with our free AI tools",
+
   },
   fr: {
     // Add missing properties with placeholder translations
@@ -1633,6 +1869,7 @@ export const translations: Record<Language, Translations> = {
     footerCopyrightYear: "Copyright 2025 STYLY",
     footerVideoGuide: "Guide Vidéo",
     footerCookieSettings: "Paramètres des cookies",
+    footerBlog: "Blog",
 
     // Cookie Settings popup
     cookieSettingsTitle: "Paramètres des cookies",
@@ -1897,6 +2134,20 @@ export const translations: Record<Language, Translations> = {
       "Offrez une présentation professionnelle et cohérente",
     realEstateVirtualStaging:
       "Guide ultime pour les intérieurs Instagramables de Gen Z",
+
+    // Blog post titles for French translation
+    realEstateAgentsAIVirtualStagingTitle:
+      "Comment les Agents Immobiliers Boostent leurs Ventes avec le Home Staging Virtuel IA : La Réalité du Marché 2025",
+    genZInstagramWorthyInteriorsTitle:
+      "Guide Ultime de la Génération Z pour des Intérieurs Dignes d'Instagram",
+    buildHouseAIToolsPorchDesignTitle:
+      "Comment Construire sa Propre Maison avec les Outils IA, y compris la Conception de Porche",
+    ultimateGuideAIInteriorDesignTitle:
+      "Le Guide Ultime des Outils de Design d'Intérieur IA en 2025 : Une Comparaison Complète",
+    eightStunningAIBedroomDesignsTitle:
+      "Huit Designs de Chambres IA Époustouflants : Transformez Votre Espace avec Styly.io",
+    expertTipsHomeInteriorsTitle:
+      "10 Conseils d'Experts pour Économiser Gros sur l'Intérieur de la Maison en 2025",
     howRealEstateAgentsBoostSales:
       "Comment les agents immobiliers augmentent les ventes avec le home staging virtuel AI : La réalité du marché de 2025",
     genZUltimateGuideToInteriors:
@@ -2304,6 +2555,112 @@ export const translations: Record<Language, Translations> = {
     interiorTrends2025CTATitle: "Commencez Votre Voyage Design Aujourd'hui",
     interiorTrends2025CTAText: "Transformez vos espaces sans effort avec les outils gratuits de design d'intérieur IA de Styly. Découvrez l'avenir du design d'intérieur et créez la maison de vos rêves en quelques clics.",
     interiorTrends2025CTAButton: "Commencer avec Styly.io",
+
+    // Enhanced content with links and references
+    interiorTrends2025BiophilicLink: "Découvrez notre guide complet sur la création de designs d'intérieur biophiliques",
+    interiorTrends2025BiophilicExternal: "Selon ArchDaily, le design biophilique peut améliorer le bien-être jusqu'à 15%",
+    interiorTrends2025SmartHomeCTA: "Essayez notre planificateur de chambre IA pour concevoir des espaces intelligents et connectés",
+    interiorTrends2025BoldColorsExternal: "Elle Décoration rapporte que les intérieurs maximalistes sont la tendance phare de 2025",
+    interiorTrends2025MultifunctionalLink: "Voir nos conseils d'experts pour créer des bureaux à domicile multifonctionnels",
+    interiorTrends2025KitchenExternal: "Les données Houzz montrent que 73% des propriétaires s'éloignent des cuisines entièrement blanches",
+    interiorTrends2025MinimalismLink: "Lisez notre article sur l'équilibre entre minimalisme et chaleur dans les maisons modernes",
+    interiorTrends2025StylyRoleCTA: "Découvrez ces tendances de première main avec notre plateforme gratuite de design d'intérieur IA",
+
+    // Enhanced content for Revolutionizing Architecture blog
+    revolutionizingArchitectureAIDesignLink: "Explorez notre guide complet des outils de design d'intérieur alimentés par l'IA",
+    revolutionizingArchitectureArchDailyExternal: "ArchDaily rapporte que l'IA transforme 85% des flux de travail architecturaux",
+    revolutionizingArchitectureBIM_CTA: "Essayez notre plateforme de design IA pour créer des modèles de bâtiments intelligents",
+    revolutionizingArchitectureGenerativeExternal: "Selon la recherche Autodesk, le design génératif réduit le temps de projet de 40%",
+    revolutionizingArchitectureInteriorLink: "Découvrez comment l'IA révolutionne le design d'intérieur dans notre guide des dernières tendances",
+    revolutionizingArchitectureSmartBuildingExternal: "AD Magazine met en avant les bâtiments intelligents comme l'avenir de l'architecture durable",
+    revolutionizingArchitectureFutureLink: "Lisez nos conseils d'experts pour se préparer à l'avenir de la construction pilotée par l'IA",
+    revolutionizingArchitectureFutureCTA: "Commencez à construire l'avenir aujourd'hui avec nos outils de design alimentés par l'IA",
+
+    // Free AI Interior Design Blog Post
+    freeAIDesignTitle: "Logiciel Gratuit de Design d'Intérieur IA - Transformez Votre Espace",
+    freeAIDesignTableOfContents: "Table des Matières",
+    freeAIDesignIntroduction: "Introduction",
+    freeAIDesignIntroductionText: "Dans le monde rapide d'aujourd'hui, concevoir des espaces beaux et fonctionnels est devenu plus facile que jamais, grâce aux avancées technologiques. Styly est à l'avant-garde de cette révolution, offrant un logiciel gratuit de design d'intérieur IA qui vous permet de donner vie à vos visions créatives. Que vous soyez un propriétaire cherchant à redécorer ou un designer professionnel recherchant des outils innovants, Styly fournit la solution parfaite pour tous vos besoins de design d'intérieur.",
+    freeAIDesignWhyChooseStyly: "Pourquoi Choisir Styly pour le Design de Chambre IA ?",
+    freeAIDesignWhyChooseStylyText: "Styly exploite des outils avancés de design de chambre IA gratuits pour livrer des résultats exceptionnels en minutes. Avec notre plateforme intuitive, vous pouvez :",
+    freeAIDesignFeature1: "Générer des aménagements de pièces époustouflants adaptés à vos préférences",
+    freeAIDesignFeature2: "Expérimenter avec différents arrangements de meubles et schémas de couleurs",
+    freeAIDesignFeature3: "Visualiser vos idées en 3D sans aucune expérience de design requise",
+    freeAIDesignFeature4: "Économiser du temps et de l'argent en évitant les erreurs de design coûteuses",
+    freeAIDesignHouzzExternal: "Houzz rapporte que les outils de design IA augmentent l'efficacité des projets de 60%",
+    freeAIDesignKeyFeatures: "Caractéristiques Clés du Logiciel Gratuit de Design d'Intérieur IA de Styly",
+    freeAIDesignAIPowered: "Suggestions Alimentées par l'IA",
+    freeAIDesignAIPoweredText: "Notre algorithme intelligent analyse les dimensions de votre pièce, les préférences de style et les exigences fonctionnelles pour générer des suggestions de design personnalisées.",
+    freeAIDesignExtensiveLibrary: "Bibliothèque de Design Étendue",
+    freeAIDesignExtensiveLibraryText: "Explorez une large gamme de meubles, d'articles de décoration et de finitions pour créer un design qui reflète votre personnalité et votre style de vie.",
+    freeAIDesignElleExternal: "Elle Décoration met en avant l'IA comme l'avenir du design d'intérieur personnalisé",
+    freeAIDesignUserFriendly: "Interface Conviviale",
+    freeAIDesignUserFriendlyText: "Pas de compétences techniques ? Pas de problème ! La fonctionnalité simple de glisser-déposer de Styly rend le design amusant et accessible à tous.",
+    freeAIDesignTryNowCTA: "Essayez notre interface de design IA intuitive maintenant - aucune expérience requise",
+    freeAIDesignFreeCredits: "Crédits Gratuits pour Commencer",
+    freeAIDesignFreeCreditsText: "Inscrivez-vous aujourd'hui et recevez des crédits gratuits pour commencer à concevoir vos espaces de rêve.",
+    freeAIDesignBenefits: "Avantages d'Utiliser Styly pour le Design de Chambre IA Gratuit",
+    freeAIDesignCostEffective: "Économique",
+    freeAIDesignCostEffectiveText: "Éliminez le besoin de consultations de design coûteuses",
+    freeAIDesignTimeSaving: "Gain de Temps",
+    freeAIDesignTimeSavingText: "Visualisez rapidement plusieurs idées de design sans longs allers-retours",
+    freeAIDesignCustomizable: "Personnalisable",
+    freeAIDesignCustomizableText: "Ajustez chaque élément pour correspondre à votre vision exacte",
+    freeAIDesignTrendsLink: "Découvrez les dernières tendances de design d'intérieur 2025 pour inspirer vos designs générés par IA",
+    freeAIDesignHowToStart: "Comment Commencer avec Styly",
+    freeAIDesignStep1: "Visitez www.styly.io",
+    freeAIDesignStep2: "Créez votre compte et réclamez vos crédits gratuits de design de chambre IA",
+    freeAIDesignStep3: "Téléchargez les dimensions de votre pièce ou choisissez parmi les modèles prédéfinis",
+    freeAIDesignStep4: "Expérimentez avec les aménagements, couleurs et meubles pour créer votre espace de rêve !",
+    freeAIDesignMarieExternal: "Marie Claire Maison présente l'IA comme révolutionnant l'accessibilité de la décoration maison",
+    freeAIDesignRoomDecorator: "Transformez Vos Espaces avec un Décorateur de Chambre IA Gratuit",
+    freeAIDesignRoomDecoratorText: "Styly va au-delà des outils de design de base, agissant comme votre décorateur de chambre IA. Avec des options de personnalisation avancées et la capacité de visualiser les designs en temps réel, vous pouvez transformer n'importe quel espace en chef-d'œuvre.",
+    freeAIDesignExpertTipsLink: "Apprenez les conseils d'experts pour le design d'intérieur économique avec les outils IA",
+    freeAIDesignWhyStandsOut: "Pourquoi Styly Se Démarque",
+    freeAIDesignWhyStandsOutText: "Contrairement aux autres plateformes, Styly combine une technologie IA puissante avec une interface facile à utiliser, rendant le design d'intérieur IA gratuit accessible à tous. De plus, notre focus sur le design intérieur et extérieur assure que toute votre maison reflète votre style.",
+    freeAIDesignCoteMaisonExternal: "Côté Maison souligne l'importance des outils de design accessibles pour les propriétaires modernes",
+    freeAIDesignExperienceCTA: "Découvrez l'avenir du design d'intérieur avec notre plateforme IA complète",
+    freeAIDesignConclusion: "Conclusion",
+    freeAIDesignConclusionText: "Styly change la donne pour le design d'intérieur IA gratuit en fournissant une plateforme innovante et conviviale. Que vous redécoriez une seule pièce ou réimaginiez toute votre maison, Styly offre les outils pour y arriver.",
+    freeAIDesignArchitectureLink: "Explorez comment l'IA révolutionne les industries de l'architecture et de la construction",
+    freeAIDesignCTATitle: "Commencez Votre Voyage de Design IA Gratuit Aujourd'hui",
+    freeAIDesignCTAText: "Transformez vos espaces sans effort avec le logiciel gratuit de design d'intérieur IA de Styly. Créez des aménagements de pièces époustouflants, expérimentez avec les arrangements de meubles et donnez vie à vos visions créatives.",
+    freeAIDesignCTAButton: "Commencer avec des Crédits Gratuits",
+
+    // Real Estate Virtual Staging Blog Post - Hardcoded text translations
+    transformRealEstateListings: "Transformez vos annonces immobilières avec nos outils de home staging virtuel IA",
+    startBoostingRealEstateSales: "Commencez à booster vos ventes immobilières avec le home staging virtuel IA dès aujourd'hui",
+
+    // Viral AI Room Design Prompts Blog Post
+    viralAIRoomDesignPromptsTitle: "6 Prompts Viraux de Design de Chambre IA : Créez Votre Chambre de Rêve avec STYLY.io",
+    viralAIRoomDesignPromptsDescription: "Découvrez 6 prompts viraux de design de chambre IA qui génèrent des résultats époustouflants. Transformez votre espace avec le designer IA de STYLY.io.",
+
+    // New Phase 1 Blog Posts
+    impactAIInteriorDesignerTitle: "L'Impact de l'IA sur le Rôle du Designer d'Intérieur : Un Avenir Collaboratif",
+    aiVirtualRealityDesignTitle: "L'Intersection de l'IA et de la Réalité Virtuelle en Design : Ce que l'Avenir Nous Réserve",
+    aiAccessibleDesignTitle: "L'IA dans le Design Accessible : Créer des Espaces Inclusifs avec Styly",
+
+    // New Phase 2 Blog Posts
+    dataAIPoweredDesignTitle: "Le Rôle des Données dans le Design Alimenté par l'IA : Comment les Insights Améliorent l'Esthétique",
+    modernFamilyDesignTitle: "Design pour la Famille Moderne : Utiliser l'IA pour Créer des Maisons Fonctionnelles et Élégantes",
+    sustainableDesignAITitle: "Design pour la Durabilité : Utiliser l'IA pour Créer des Espaces Éco-Responsables",
+    aiSpacePlanningSmallApartmentsTitle: "Exploiter l'IA pour Optimiser la Planification d'Espace dans les Petits Appartements",
+    biophilicDesignAITitle: "Créer des Designs d'Intérieur Biophiliques avec l'IA Styly",
+
+    // New Phase 3 Blog Posts
+    scienceColorDesignTitle: "La Science de la Couleur en Design : Comment l'IA Vous Aide à Choisir la Palette Parfaite",
+    sustainableLandscapesAITitle: "Réduire l'Empreinte Carbone : Paysages Durables avec l'IA Styly",
+    aiLandscapeDesignTitle: "L'IA dans le Design Paysager : Créer de Beaux Espaces Extérieurs avec Styly",
+    culturalDesignAITitle: "Design d'Intérieur pour Différentes Cultures : Exploiter l'IA pour des Espaces Culturellement Sensibles",
+    textureImportanceDesignTitle: "L'Importance de la Texture en Design d'Intérieur : Comment Styly Peut Aider",
+
+    // Video Guide Page
+    videoGuide: "Guide Vidéo",
+    videoTutorials: "Tutoriels Vidéo",
+    learnAIInteriorDesign: "Apprenez le Design Intérieur IA",
+    discoverHowToUseAITools: "Découvrez comment utiliser nos outils IA pour transformer vos espaces intérieurs",
+    readyToTransformSpaces: "Prêt à transformer vos espaces ?",
+    getStartedWithFreeAITools: "Commencez dès maintenant avec nos outils IA gratuits",
 
   },
 };

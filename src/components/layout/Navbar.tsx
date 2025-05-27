@@ -76,18 +76,7 @@ const Navbar: React.FC = () => {
             </div>
           </a>
         </div>
-        <div className="flex items-center justify-start md:justify-end flex-wrap gap-3 mb-8 md:mb-0 w-full md:flex-1">
-          <Link
-            to="/blog"
-            className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg max-md:px-5 border border-[rgba(89,50,134,1)] transition-all duration-200 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
-            aria-label="Go to Blog"
-          >
-            <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
-            <div className="self-center z-10 w-full">
-              <div className="w-full">{t.blog}</div>
-            </div>
-          </Link>
-        </div>
+
         <div className="flex items-center justify-start md:justify-end flex-wrap gap-3 mb-8 md:mb-0 w-full md:flex-1">
           <a
             href="https://app.styly.io"
@@ -169,13 +158,7 @@ const Navbar: React.FC = () => {
           >
             {t.pricing}
           </a>
-          <Link
-            to="/blog"
-            className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            {t.blog}
-          </Link>
+
           <Link
             to="/signin"
             className="bg-orange-500 text-white font-medium py-3 rounded-lg text-center hover:bg-orange-600 transition-all mt-2"

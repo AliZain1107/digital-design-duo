@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage } from "@/lib/i18n";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const InteriorDesignTrends2025: React.FC = () => {
   const { t, language } = useLanguage();
@@ -19,9 +20,9 @@ const InteriorDesignTrends2025: React.FC = () => {
   };
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
-  const canonicalUrl = language === "fr" 
-    ? "https://styly.io/blog/tendances-design-interieur-2025"
-    : "https://styly.io/blog/2025-interior-design-trends";
+  const canonicalUrl = language === "fr"
+    ? "https://styly.io/fr/blog/tendances-design-interieur-2025"
+    : "https://styly.io/en/blog/2025-interior-design-trends";
 
   return (
     <>
@@ -59,7 +60,7 @@ const InteriorDesignTrends2025: React.FC = () => {
             <img
               src="/2025-interior-design-trends-hero.webp"
               alt={t.interiorTrends2025Title}
-              className="w-full h-auto rounded-lg shadow-md"
+              className="w-full h-64 object-cover rounded-lg shadow-md"
             />
           </div>
 
@@ -72,7 +73,7 @@ const InteriorDesignTrends2025: React.FC = () => {
           {/* What's In Section */}
           <section>
             <h2 className="text-lg font-semibold">{t.interiorTrends2025WhatsIn}</h2>
-            
+
             {/* Eco-Conscious Design */}
             <div className="mt-4">
               <h3 className="text-md font-semibold">{t.interiorTrends2025EcoConscious}</h3>
@@ -84,7 +85,25 @@ const InteriorDesignTrends2025: React.FC = () => {
             <div className="mt-4">
               <h3 className="text-md font-semibold">{t.interiorTrends2025Biophilic}</h3>
               <p>{t.interiorTrends2025BiophilicText}</p>
+              <p className="text-blue-600 mt-2">
+                <a
+                  href="https://www.archdaily.com/tag/biophilic-design"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {t.interiorTrends2025BiophilicExternal}
+                </a>
+              </p>
               <p className="italic text-gray-600 mt-2">{t.interiorTrends2025BiophilicStyly}</p>
+              <p className="mt-2">
+                <Link
+                  to="/blog/free-ai-interior-design-software"
+                  className="text-purple-600 hover:underline"
+                >
+                  {t.interiorTrends2025BiophilicLink}
+                </Link>
+              </p>
             </div>
 
             {/* Smart Home Integration */}
@@ -92,6 +111,18 @@ const InteriorDesignTrends2025: React.FC = () => {
               <h3 className="text-md font-semibold">{t.interiorTrends2025SmartHome}</h3>
               <p>{t.interiorTrends2025SmartHomeText}</p>
               <p className="italic text-gray-600 mt-2">{t.interiorTrends2025SmartHomeStyly}</p>
+              <div className="bg-purple-50 p-4 rounded-lg mt-3">
+                <p className="text-purple-700 font-medium">
+                  <a
+                    href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    {t.interiorTrends2025SmartHomeCTA}
+                  </a>
+                </p>
+              </div>
             </div>
 
             {/* Middle Image */}
@@ -99,7 +130,7 @@ const InteriorDesignTrends2025: React.FC = () => {
               <img
                 src="/interior-design-trends-2025-middle.webp"
                 alt={t.interiorTrends2025BoldColors}
-                className="w-full h-auto rounded-lg shadow-md"
+                className="w-full h-48 object-cover rounded-lg shadow-md"
               />
             </div>
 
@@ -107,6 +138,16 @@ const InteriorDesignTrends2025: React.FC = () => {
             <div className="mt-4">
               <h3 className="text-md font-semibold">{t.interiorTrends2025BoldColors}</h3>
               <p>{t.interiorTrends2025BoldColorsText}</p>
+              <p className="text-blue-600 mt-2">
+                <a
+                  href="https://www.elle.fr/Deco"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {t.interiorTrends2025BoldColorsExternal}
+                </a>
+              </p>
               <p className="italic text-gray-600 mt-2">{t.interiorTrends2025BoldColorsStyly}</p>
             </div>
 
@@ -115,23 +156,49 @@ const InteriorDesignTrends2025: React.FC = () => {
               <h3 className="text-md font-semibold">{t.interiorTrends2025Multifunctional}</h3>
               <p>{t.interiorTrends2025MultifunctionalText}</p>
               <p className="italic text-gray-600 mt-2">{t.interiorTrends2025MultifunctionalStyly}</p>
+              <p className="mt-2">
+                <Link
+                  to="/blog/10-expert-tips-to-save-big-on-home-interiors-in-2025"
+                  className="text-purple-600 hover:underline"
+                >
+                  {t.interiorTrends2025MultifunctionalLink}
+                </Link>
+              </p>
             </div>
           </section>
 
           {/* What's Out Section */}
           <section>
             <h2 className="text-lg font-semibold">{t.interiorTrends2025WhatsOut}</h2>
-            
+
             {/* Overly Minimalistic */}
             <div className="mt-4">
               <h3 className="text-md font-semibold">{t.interiorTrends2025OverlyMinimalistic}</h3>
               <p>{t.interiorTrends2025OverlyMinimalisticText}</p>
+              <p className="mt-2">
+                <Link
+                  to="/blog/revolutionizing-architecture-engineering-construction-ai"
+                  className="text-purple-600 hover:underline"
+                >
+                  {t.interiorTrends2025MinimalismLink}
+                </Link>
+              </p>
             </div>
 
             {/* All-White Kitchens */}
             <div className="mt-4">
               <h3 className="text-md font-semibold">{t.interiorTrends2025AllWhiteKitchens}</h3>
               <p>{t.interiorTrends2025AllWhiteKitchensText}</p>
+              <p className="text-blue-600 mt-2">
+                <a
+                  href="https://www.houzz.com/magazine/kitchen-trends-2025"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {t.interiorTrends2025KitchenExternal}
+                </a>
+              </p>
             </div>
 
             {/* Open Shelving Overload */}
@@ -152,7 +219,7 @@ const InteriorDesignTrends2025: React.FC = () => {
             <img
               src="/interior-design-trends-bottom.webp"
               alt={t.interiorTrends2025StylyRole}
-              className="w-full h-auto rounded-lg shadow-md"
+              className="w-full h-48 object-cover rounded-lg shadow-md"
             />
           </div>
 
@@ -165,6 +232,18 @@ const InteriorDesignTrends2025: React.FC = () => {
               <li>{t.interiorTrends2025StylyFeature2}</li>
               <li>{t.interiorTrends2025StylyFeature3}</li>
             </ul>
+            <div className="bg-orange-50 p-4 rounded-lg mt-4">
+              <p className="text-orange-700 font-medium">
+                <a
+                  href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {t.interiorTrends2025StylyRoleCTA}
+                </a>
+              </p>
+            </div>
           </section>
 
           {/* Conclusion */}

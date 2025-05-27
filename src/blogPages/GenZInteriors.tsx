@@ -1,9 +1,11 @@
-import { useLanguage } from "@/lib/i18n"; // Adjust path accordingly
+import React from "react";
+import { useLanguage } from "@/lib/i18n";
+import { Link } from "react-router-dom";
 import "@fontsource/nunito"; // Defaults to weight 400
 import "@fontsource/nunito/400.css"; // Specify weight
 
 const GenZInteriors: React.FC = () => {
-  const { t } = useLanguage(); // Get the translation object based on the current language
+  const { t, language } = useLanguage(); // Get the translation object based on the current language
 
   return (
     <>
@@ -13,6 +15,24 @@ const GenZInteriors: React.FC = () => {
         </h3>
         <p>{t.introductionText1}</p>
         <p>{t.introductionText2}</p>
+        <p className="text-blue-600 mt-2">
+          <a
+            href="https://www.elledecoration.fr/deco/tendances/generation-z-decoration"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Elle Décoration highlights Gen Z as the most influential generation in interior design trends
+          </a>
+        </p>
+        <p className="mt-2">
+          <Link
+            to="/blog/2025-interior-design-trends"
+            className="text-purple-600 hover:underline"
+          >
+            Discover the latest 2025 interior design trends that Gen Z is embracing
+          </Link>
+        </p>
 
         <h3 className="text-xl font-bold text-gray-800">
           {t.understandingAestheticPreferences}
@@ -62,6 +82,28 @@ const GenZInteriors: React.FC = () => {
           {t.multiFunctionalFurniture}
         </h2>
         <p>{t.multiFunctionalFurnitureText}</p>
+        <p className="text-blue-600 mt-2">
+          <a
+            href="https://www.marieclaire.fr/maison/decoration/generation-z-durable"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Marie Claire Maison emphasizes Gen Z's commitment to sustainable interior design
+          </a>
+        </p>
+        <div className="bg-purple-50 p-4 rounded-lg mt-3">
+          <p className="text-purple-700 font-medium">
+            <a
+              href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Create sustainable, tech-savvy interiors with our AI design tools
+            </a>
+          </p>
+        </div>
 
         <h3 className="text-xl font-bold text-gray-800">
           {t.caseStudiesAndExamples}
@@ -103,6 +145,14 @@ const GenZInteriors: React.FC = () => {
       <div className="flex flex-col items-start space-y-4">
         <h2 className="text-2xl font-bold">{t.diyInstagramWorthyMakeovers}</h2>
         <p className="text-[12px] text-gray-800">{t.diyTipsIntro}</p>
+        <p className="mt-2">
+          <Link
+            to="/blog/10-expert-tips-to-save-big-on-home-interiors-in-2025"
+            className="text-purple-600 hover:underline text-[12px]"
+          >
+            Learn expert tips for budget-friendly DIY interior design projects
+          </Link>
+        </p>
 
         <ol className="list-decimal list-inside space-y-2 text-[12px] text-gray-800 mt-5">
           <li>
@@ -178,6 +228,36 @@ const GenZInteriors: React.FC = () => {
         <h2 className="text-2xl font-bold text-gray-700">{t.shareYourBestSpace}</h2>
         <p className="text-[12px] text-gray-700">{t.shareYourBestSpaceText}</p>
         <p className="text-[12px] text-gray-700">{t.shareYourBestSpaceInstagram}</p>
+        <p className="text-blue-600 mt-2">
+          <a
+            href="https://www.cotemaison.fr/decoration/reseaux-sociaux-decoration"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline text-[12px]"
+          >
+            Côté Maison explores how social media is reshaping interior design trends
+          </a>
+        </p>
+        <p className="mt-2">
+          <Link
+            to="/blog/free-ai-interior-design-software"
+            className="text-purple-600 hover:underline text-[12px]"
+          >
+            Create Instagram-worthy spaces with our free AI interior design tools
+          </Link>
+        </p>
+        <div className="bg-orange-50 p-4 rounded-lg mt-4">
+          <p className="text-orange-700 font-medium text-[12px]">
+            <a
+              href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Start creating your Gen Z-inspired, Instagram-worthy interior today
+            </a>
+          </p>
+        </div>
       </div>
 
       <div className="flex items-center justify-between mt-12">

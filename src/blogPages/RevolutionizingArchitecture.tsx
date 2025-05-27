@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage } from "@/lib/i18n";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const RevolutionizingArchitecture: React.FC = () => {
   const { t, language } = useLanguage();
@@ -20,8 +21,8 @@ const RevolutionizingArchitecture: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/blog/revolutionner-architecture-ingenierie-construction-ia"
-    : "https://styly.io/blog/revolutionizing-architecture-engineering-construction-ai";
+    ? "https://styly.io/fr/blog/revolutionner-architecture-ingenierie-construction-ia"
+    : "https://styly.io/en/blog/revolutionizing-architecture-engineering-construction-ai";
 
   return (
     <>
@@ -72,6 +73,24 @@ const RevolutionizingArchitecture: React.FC = () => {
           <section>
             <h2 className="text-lg font-semibold">{t.revolutionizingArchitectureAITransformation}</h2>
             <p>{t.revolutionizingArchitectureAITransformationText}</p>
+            <p className="text-blue-600 mt-2">
+              <a
+                href="https://www.archdaily.com/tag/artificial-intelligence"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                {t.revolutionizingArchitectureArchDailyExternal}
+              </a>
+            </p>
+            <p className="mt-2">
+              <Link
+                to="/blog/free-ai-interior-design-software"
+                className="text-purple-600 hover:underline"
+              >
+                {t.revolutionizingArchitectureAIDesignLink}
+              </Link>
+            </p>
           </section>
 
           {/* Key Benefits */}
@@ -90,6 +109,28 @@ const RevolutionizingArchitecture: React.FC = () => {
               <div>
                 <h3 className="font-semibold text-base">2. {t.revolutionizingArchitectureBenefit2}</h3>
                 <p>{t.revolutionizingArchitectureBenefit2Text}</p>
+                <p className="text-blue-600 mt-2">
+                  <a
+                    href="https://www.autodesk.com/solutions/generative-design"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    {t.revolutionizingArchitectureGenerativeExternal}
+                  </a>
+                </p>
+                <div className="bg-purple-50 p-4 rounded-lg mt-3">
+                  <p className="text-purple-700 font-medium">
+                    <a
+                      href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      {t.revolutionizingArchitectureBIM_CTA}
+                    </a>
+                  </p>
+                </div>
               </div>
 
               {/* Benefit 3 */}
@@ -135,6 +176,24 @@ const RevolutionizingArchitecture: React.FC = () => {
               <div>
                 <h3 className="font-semibold text-base">{t.revolutionizingArchitectureApplication3}</h3>
                 <p>{t.revolutionizingArchitectureApplication3Text}</p>
+                <p className="text-blue-600 mt-2">
+                  <a
+                    href="https://www.architecturaldigest.com/story/smart-buildings-sustainable-future"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    {t.revolutionizingArchitectureSmartBuildingExternal}
+                  </a>
+                </p>
+                <p className="mt-2">
+                  <Link
+                    to="/blog/2025-interior-design-trends"
+                    className="text-purple-600 hover:underline"
+                  >
+                    {t.revolutionizingArchitectureInteriorLink}
+                  </Link>
+                </p>
               </div>
             </div>
           </section>
@@ -150,6 +209,26 @@ const RevolutionizingArchitecture: React.FC = () => {
           <section>
             <h2 className="text-lg font-semibold">{t.revolutionizingArchitectureFuture}</h2>
             <p>{t.revolutionizingArchitectureFutureText}</p>
+            <p className="mt-2">
+              <Link
+                to="/blog/10-expert-tips-to-save-big-on-home-interiors-in-2025"
+                className="text-purple-600 hover:underline"
+              >
+                {t.revolutionizingArchitectureFutureLink}
+              </Link>
+            </p>
+            <div className="bg-orange-50 p-4 rounded-lg mt-4">
+              <p className="text-orange-700 font-medium">
+                <a
+                  href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {t.revolutionizingArchitectureFutureCTA}
+                </a>
+              </p>
+            </div>
           </section>
 
           {/* Conclusion */}

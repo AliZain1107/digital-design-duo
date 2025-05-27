@@ -1,7 +1,9 @@
-import { useLanguage } from "@/lib/i18n"; // Adjust path accordingly
+import React from "react";
+import { useLanguage } from "@/lib/i18n";
+import { Link } from "react-router-dom";
 
 const AiBedroomDesign: React.FC = () => {
-  const { t } = useLanguage(); // Get the translation object based on the current language
+  const { t, language } = useLanguage(); // Get the translation object based on the current language
 
   return (
     <div className="flex flex-col items-center px-4 py-10 space-y-12">
@@ -29,19 +31,49 @@ const AiBedroomDesign: React.FC = () => {
         <section>
           <h2 className="text-lg font-semibold">{t.aiInBedroomDesign}</h2>
           <p>{t.aiInBedroomDesignText}</p>
+          <p className="text-blue-600 mt-2">
+            <a
+              href="https://www.elledecoration.fr/deco/tendances/ai-interior-design"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Elle Décoration reports that AI design tools are revolutionizing bedroom personalization
+            </a>
+          </p>
+          <p className="mt-2">
+            <Link
+              to="/blog/free-ai-interior-design-software"
+              className="text-purple-600 hover:underline"
+            >
+              Discover our comprehensive guide to free AI interior design software
+            </Link>
+          </p>
         </section>
 
         {/* Styly.io: Your AI-Powered Bedroom Design Companion */}
         <section>
           <h2 className="text-lg font-semibold">{t.stylyioOverview}</h2>
           <p>{t.stylyioOverviewText}</p>
+          <div className="bg-purple-50 p-4 rounded-lg mt-3">
+            <p className="text-purple-700 font-medium">
+              <a
+                href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Try our AI bedroom design tool now - create stunning bedrooms in minutes
+              </a>
+            </p>
+          </div>
         </section>
 
         {/* Image */}
         <img
           src="https://framerusercontent.com/images/VdJeNlAZKmKbGqtOEU5p1QGZs.jpg"
           alt="ai bedroom sample"
-          className="w-full h-[500px] rounded-lg object-cover"
+          className="w-full h-64 rounded-lg object-cover"
         />
 
         {/* Eight AI-Powered Bedroom Designs */}
@@ -84,7 +116,7 @@ const AiBedroomDesign: React.FC = () => {
             <div key={idx} className="space-y-2">
               <h3 className="font-semibold text-base">{idx + 1}. {item.title}</h3>
               <p className="text-sm">{t.prompt}: {item.prompt}</p>
-              <img src={item.img} alt={item.title} className="rounded-md h-[200px] w-64" />
+              <img src={item.img} alt={item.title} className="rounded-md h-40 w-64 object-cover" />
             </div>
           ))}
         </section>
@@ -99,6 +131,24 @@ const AiBedroomDesign: React.FC = () => {
             <li>{t.includeHiddenStorage}</li>
             <li>{t.useCalmingMaterials}</li>
           </ul>
+          <p className="text-blue-600 mt-2">
+            <a
+              href="https://www.marieclaire.fr/maison/decoration/chambre"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Marie Claire Maison emphasizes the importance of lighting in bedroom design
+            </a>
+          </p>
+          <p className="mt-2">
+            <Link
+              to="/blog/2025-interior-design-trends"
+              className="text-purple-600 hover:underline"
+            >
+              Explore the latest 2025 interior design trends for bedrooms
+            </Link>
+          </p>
         </section>
 
         {/* Negative Prompt Guidelines */}
@@ -134,7 +184,7 @@ const AiBedroomDesign: React.FC = () => {
         <img
           src="https://framerusercontent.com/images/QHngMSH11seHyWEaHUx8lIoGQA.png"
           alt="footer banner"
-          className="w-full h-[500px] max-w-3xl object-cover rounded-lg"
+          className="w-full h-64 max-w-3xl object-cover rounded-lg"
         />
 
         {/* Conclusion */}
@@ -142,6 +192,26 @@ const AiBedroomDesign: React.FC = () => {
           <h2 className="text-lg font-semibold">{t.conclusion}</h2>
           <p>{t.conclusionText}</p>
           <p>{t.keywords}</p>
+          <p className="mt-2">
+            <Link
+              to="/blog/revolutionizing-architecture-engineering-construction-ai"
+              className="text-purple-600 hover:underline"
+            >
+              Learn how AI is transforming the entire architecture and construction industry
+            </Link>
+          </p>
+          <div className="bg-orange-50 p-4 rounded-lg mt-4">
+            <p className="text-orange-700 font-medium">
+              <a
+                href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Start designing your dream bedroom today with our AI-powered tools
+              </a>
+            </p>
+          </div>
         </section>
 
         {/* Follow Us Section */}
