@@ -127,6 +127,72 @@
   </url>
 
   <!-- Blog Posts - Latest First -->
+  <!-- 5 AI-powered Interior Design Software Solutions in 2024 -->
+  <url>
+    <loc>https://styly.io/en/blog/5-ai-powered-interior-design-software-solutions-2024</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/5-ai-powered-interior-design-software-solutions-2024"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/5-solutions-logiciels-design-interieur-ia-2024"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/5-ai-powered-interior-design-software-solutions-2024"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-room-decorator.webp</image:loc>
+      <image:title>5 AI-powered Interior Design Software Solutions in 2024</image:title>
+      <image:caption>Compare the best AI interior design software tools and solutions</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/5-solutions-logiciels-design-interieur-ia-2024</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/5-ai-powered-interior-design-software-solutions-2024"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/5-solutions-logiciels-design-interieur-ia-2024"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/5-ai-powered-interior-design-software-solutions-2024"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-room-decorator.webp</image:loc>
+      <image:title>5 Solutions Logicielles de Design Intérieur IA en 2024</image:title>
+      <image:caption>Comparez les meilleurs outils et solutions logicielles de design intérieur IA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- AI Image Generation: Interior Design by Adobe Firefly -->
+  <url>
+    <loc>https://styly.io/en/blog/ai-image-generation-interior-design-adobe-firefly</loc>
+    <lastmod>2024-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-image-generation-interior-design-adobe-firefly"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/generation-images-ia-design-interieur-adobe-firefly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-image-generation-interior-design-adobe-firefly"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-room-design-free.webp</image:loc>
+      <image:title>AI Image Generation: Interior Design by Adobe Firefly</image:title>
+      <image:caption>Explore Adobe Firefly for AI image generation in interior design</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/generation-images-ia-design-interieur-adobe-firefly</loc>
+    <lastmod>2024-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-image-generation-interior-design-adobe-firefly"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/generation-images-ia-design-interieur-adobe-firefly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-image-generation-interior-design-adobe-firefly"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-room-design-free.webp</image:loc>
+      <image:title>Génération d'Images IA : Design Intérieur par Adobe Firefly</image:title>
+      <image:caption>Explorez Adobe Firefly pour la génération d'images IA en design intérieur</image:caption>
+    </image:image>
+  </url>
+
   <!-- How Generative AI is Revolutionizing Interior Design -->
   <url>
     <loc>https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design</loc>
