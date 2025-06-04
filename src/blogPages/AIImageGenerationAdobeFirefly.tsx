@@ -121,76 +121,6 @@ const AIImageGenerationAdobeFirefly: React.FC = () => {
                 </div>
               </div>
             </div>
-          </>
-        ) : (
-          <>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <p className="text-lg text-gray-700 mb-4">
-                Welcome to our exploration of AI image generation platforms, where we delve into the world of creativity and innovation. In this article, we'll embark on a journey to discover the capabilities of Adobe Firefly, a leading AI image generation tool.
-              </p>
-            </div>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Table of Contents:</h2>
-            <ol className="list-decimal list-inside text-gray-700 mb-8 space-y-2">
-              <li><strong>Introduction</strong></li>
-              <li><strong>Adobe Firefly: Features and Pricing</strong></li>
-              <li><strong>Prompts for Adobe Firefly Illustrator</strong></li>
-              <li><strong>Final Thoughts and Recommendations</strong></li>
-            </ol>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Introduction</h2>
-            <p className="text-gray-700 mb-6">
-              Welcome to our exploration of AI image generation platforms, where we delve into the world of creativity and innovation. In this article, we'll embark on a journey to discover the capabilities of Adobe Firefly, a leading AI image generation tool. Join us as we unravel its features, delve into its pricing, explore its functionality, and provide valuable insights to guide your creative endeavours.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Adobe Firefly: Features and Pricing</h2>
-            <p className="text-gray-700 mb-6">
-              Step into the realm of limitless creativity with Adobe Firefly, an AI image generation platform designed to empower creators of all levels. Explore its array of features tailored to unleash your imagination. From generating realistic landscapes to crafting whimsical illustrations, Firefly offers a versatile toolkit for bringing your ideas to life.
-            </p>
-
-            <p className="text-gray-700 mb-6">
-              Discover the pricing options that suit your needs, whether you're a casual creator or a professional designer. With a free option for exploration and subscription plans for advanced features, Firefly ensures accessibility without compromising on quality.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-              <img
-                src="/ai-room-design-free.webp"
-                alt="AI image generation interior design"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-              <img
-                src="/ai-interior-design-technology.webp"
-                alt="Adobe Firefly interior design"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-            </div>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Prompts for Adobe Firefly Illustrator</h2>
-            <p className="text-gray-700 mb-6">
-              Unlock the full potential of Adobe Firefly with tailored prompts designed to ignite your creativity. Whether you seek to evoke nostalgia with vintage-inspired illustrations or embark on an adventure through fantastical realms, Firefly Illustrator offers prompts to suit every artistic vision.
-            </p>
-
-            <p className="text-gray-700 mb-6">
-              Explore prompts for various styles, from abstract art to photorealistic landscapes, and witness how Firefly transforms your ideas into captivating visuals. With its intuitive interface and powerful AI algorithms, Firefly Illustrator empowers you to create with ease and precision.
-            </p>
-
-            <div className="bg-blue-50 p-6 rounded-lg my-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Interior Design Prompt Examples:</h3>
-              <div className="space-y-4 text-gray-700">
-                <div className="bg-white p-4 rounded border-l-4 border-blue-500">
-                  <h4 className="font-semibold mb-2">1. Hospital Transformation</h4>
-                  <p className="text-sm italic">"Transformation of the hospital, Detailed and Comfortable Workspaces, Incorporating Realistic Modern Design Elements and muted Colors with Pops of Orange and Cyan."</p>
-                </div>
-                <div className="bg-white p-4 rounded border-l-4 border-blue-500">
-                  <h4 className="font-semibold mb-2">2. High-Resolution Interior Photography</h4>
-                  <p className="text-sm italic">"High-resolution photography interior design, stairs, main stage, modern design, high ceiling, cozy atmosphere, Living room, fireplace, floor lamp, glass table, beige carpet, photorealistic."</p>
-                </div>
-                <div className="bg-white p-4 rounded border-l-4 border-blue-500">
-                  <h4 className="font-semibold mb-2">3. Full Bed Integration</h4>
-                  <p className="text-sm italic">"Full Bed Integration in Patient Rooms, Optimizing Space for Realistic Comfort and Functionality, Incorporating Modern High-Tech Medical Equipment Seamlessly."</p>
-                </div>
-              </div>
-            </div>
 
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Réflexions Finales et Recommandations</h2>
             <p className="text-gray-700 mb-6">
@@ -276,6 +206,56 @@ const AIImageGenerationAdobeFirefly: React.FC = () => {
           </>
         ) : (
           <>
+            <div className="bg-gray-50 p-6 rounded-lg mb-8">
+              <p className="text-lg text-gray-700 mb-4">
+                Welcome to our exploration of AI image generation platforms, where we delve into the world of creativity and innovation. In this article, we'll embark on a journey to discover the capabilities of Adobe Firefly, a leading AI image generation tool.
+              </p>
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Table of Contents:</h2>
+            <ol className="list-decimal list-inside text-gray-700 mb-8 space-y-2">
+              <li><strong>Introduction</strong></li>
+              <li><strong>Adobe Firefly: Features and Pricing</strong></li>
+              <li><strong>Prompts for Adobe Firefly Illustrator</strong></li>
+              <li><strong>Final Thoughts and Recommendations</strong></li>
+            </ol>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Introduction</h2>
+            <p className="text-gray-700 mb-6">
+              Welcome to our exploration of AI image generation platforms, where we delve into the world of creativity and innovation. In this article, we'll embark on a journey to discover the capabilities of Adobe Firefly, a leading AI image generation tool. Join us as we unravel its features, delve into its pricing, explore its functionality, and provide valuable insights to guide your creative endeavours.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Adobe Firefly: Features and Pricing</h2>
+            <p className="text-gray-700 mb-6">
+              Step into the realm of limitless creativity with Adobe Firefly, an AI image generation platform designed to empower creators of all levels. Explore its array of features tailored to unleash your imagination. From generating realistic landscapes to crafting whimsical illustrations, Firefly offers a versatile toolkit for bringing your ideas to life.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              Discover the pricing options that suit your needs, whether you're a casual creator or a professional designer. With a free option for exploration and subscription plans for advanced features, Firefly ensures accessibility without compromising on quality.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+              <img
+                src="/ai-room-design-free.webp"
+                alt="AI image generation interior design"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <img
+                src="/ai-interior-design-technology.webp"
+                alt="Adobe Firefly interior design"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Prompts for Adobe Firefly Illustrator</h2>
+            <p className="text-gray-700 mb-6">
+              Unlock the full potential of Adobe Firefly with tailored prompts designed to ignite your creativity. Whether you seek to evoke nostalgia with vintage-inspired illustrations or embark on an adventure through fantastical realms, Firefly Illustrator offers prompts to suit every artistic vision.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              Explore prompts for various styles, from abstract art to photorealistic landscapes, and witness how Firefly transforms your ideas into captivating visuals. With its intuitive interface and powerful AI algorithms, Firefly Illustrator empowers you to create with ease and precision.
+            </p>
+
             <div className="bg-blue-50 p-6 rounded-lg my-8">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Interior Design Prompt Examples:</h3>
               <div className="space-y-4 text-gray-700">
