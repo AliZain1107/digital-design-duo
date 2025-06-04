@@ -36,6 +36,8 @@ import AIAssistantInteriorDesignPrompts from "@/blogPages/AIAssistantInteriorDes
 import GenerativeAIRevolutionizingDesign from "@/blogPages/GenerativeAIRevolutionizingDesign";
 import AIImageGenerationAdobeFirefly from "@/blogPages/AIImageGenerationAdobeFirefly";
 import FiveAIPoweredInteriorDesignSoftware from "@/blogPages/FiveAIPoweredInteriorDesignSoftware";
+import TenPerfectInteriorDesignStyles from "@/blogPages/TenPerfectInteriorDesignStyles";
+import InteriorAIInterviewSophiaRenard from "@/blogPages/InteriorAIInterviewSophiaRenard";
 
 export interface BlogPost {
   id: number;
@@ -396,5 +398,23 @@ export const blogPosts: BlogPost[] = [
     slug: "ai-image-generation-interior-design-adobe-firefly",
     slugFr: "generation-images-ia-design-interieur-adobe-firefly",
     Component: AIImageGenerationAdobeFirefly,
+  },
+  {
+    id: 39,
+    title: "10 Perfect Interior Design Style: Timeless Elegance and Modern Flair",
+    date: "Jun 24, 2024",
+    image: "/interior-design-styles-collection.webp",
+    slug: "10-perfect-interior-design-style-timeless-elegance-modern-flair",
+    slugFr: "10-styles-design-interieur-parfaits-elegance-intemporelle-moderne",
+    Component: TenPerfectInteriorDesignStyles,
+  },
+  {
+    id: 40,
+    title: "Interior AI and Interior Design: An Interview with Visionary Architect, Sophia Renard",
+    date: "Apr 8, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "interior-ai-design-interview-visionary-architect-sophia-renard",
+    slugFr: "ia-design-interieur-interview-architecte-visionnaire-sophia-renard",
+    Component: InteriorAIInterviewSophiaRenard,
   },
 ];

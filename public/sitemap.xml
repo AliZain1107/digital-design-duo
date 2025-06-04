@@ -127,6 +127,72 @@
   </url>
 
   <!-- Blog Posts - Latest First -->
+  <!-- 10 Perfect Interior Design Style: Timeless Elegance and Modern Flair -->
+  <url>
+    <loc>https://styly.io/en/blog/10-perfect-interior-design-style-timeless-elegance-modern-flair</loc>
+    <lastmod>2024-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/10-perfect-interior-design-style-timeless-elegance-modern-flair"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/10-styles-design-interieur-parfaits-elegance-intemporelle-moderne"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/10-perfect-interior-design-style-timeless-elegance-modern-flair"/>
+    <image:image>
+      <image:loc>https://styly.io/interior-design-styles-collection.webp</image:loc>
+      <image:title>10 Perfect Interior Design Style: Timeless Elegance and Modern Flair</image:title>
+      <image:caption>Discover 10 perfect interior design styles combining timeless elegance and modern flair</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/10-styles-design-interieur-parfaits-elegance-intemporelle-moderne</loc>
+    <lastmod>2024-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/10-perfect-interior-design-style-timeless-elegance-modern-flair"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/10-styles-design-interieur-parfaits-elegance-intemporelle-moderne"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/10-perfect-interior-design-style-timeless-elegance-modern-flair"/>
+    <image:image>
+      <image:loc>https://styly.io/interior-design-styles-collection.webp</image:loc>
+      <image:title>10 Styles de Design Intérieur Parfaits : Élégance Intemporelle et Flair Moderne</image:title>
+      <image:caption>Découvrez 10 styles de design intérieur parfaits alliant élégance intemporelle et modernité</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Interior AI and Interior Design: An Interview with Visionary Architect, Sophia Renard -->
+  <url>
+    <loc>https://styly.io/en/blog/interior-ai-design-interview-visionary-architect-sophia-renard</loc>
+    <lastmod>2024-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/interior-ai-design-interview-visionary-architect-sophia-renard"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/ia-design-interieur-interview-architecte-visionnaire-sophia-renard"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/interior-ai-design-interview-visionary-architect-sophia-renard"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-technology.webp</image:loc>
+      <image:title>Interior AI and Interior Design: An Interview with Visionary Architect, Sophia Renard</image:title>
+      <image:caption>Exclusive interview with visionary architect Sophia Renard on AI in interior design</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/ia-design-interieur-interview-architecte-visionnaire-sophia-renard</loc>
+    <lastmod>2024-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/interior-ai-design-interview-visionary-architect-sophia-renard"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/ia-design-interieur-interview-architecte-visionnaire-sophia-renard"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/interior-ai-design-interview-visionary-architect-sophia-renard"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-technology.webp</image:loc>
+      <image:title>IA et Design Intérieur : Interview avec l'Architecte Visionnaire, Sophia Renard</image:title>
+      <image:caption>Interview exclusive avec l'architecte visionnaire Sophia Renard sur l'IA en design intérieur</image:caption>
+    </image:image>
+  </url>
+
   <!-- 5 AI-powered Interior Design Software Solutions in 2024 -->
   <url>
     <loc>https://styly.io/en/blog/5-ai-powered-interior-design-software-solutions-2024</loc>
