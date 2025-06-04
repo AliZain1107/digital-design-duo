@@ -88,12 +88,12 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
               <img
-                src="/ai-assistant-interior-design-prompts.webp"
+                src="/ai-interior-design-technology.webp"
                 alt="Assistant IA design intérieur prompts"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src="/chatgpt-interior-design-assistant.webp"
+                src="/ai-room-design-free.webp"
                 alt="ChatGPT assistant design intérieur"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -128,7 +128,7 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src="/ai-room-design-prompts-examples.webp"
+                src="/viral-ai-room-design-prompts-hero.webp"
                 alt="Exemples prompts design chambre IA"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -182,16 +182,56 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
               <h3 className="text-lg font-semibold text-gray-800 mb-4">
                 Articles Connexes :
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-3 text-gray-700">
                 <li>
-                  <a href="/fr/blog/comment-ia-generative-revolutionne-design-interieur" className="text-blue-600 hover:underline">
+                  <a href="/fr/blog/comment-ia-generative-revolutionne-design-interieur" className="text-blue-600 hover:underline font-medium">
                     → Comment l'IA Générative Révolutionne le Design Intérieur
                   </a>
+                  <span className="text-sm text-gray-600 block ml-4">Découvrez les technologies IA qui transforment le design</span>
                 </li>
                 <li>
-                  <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:underline">
+                  <a href="/fr/blog/6-prompts-viraux-design-chambre-ia-styly" className="text-blue-600 hover:underline font-medium">
+                    → 6 Prompts Viraux de Design de Chambre IA
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Exemples pratiques de prompts pour créer des chambres époustouflantes</span>
+                </li>
+                <li>
+                  <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:underline font-medium">
                     → Logiciel Gratuit de Design Intérieur IA
                   </a>
+                  <span className="text-sm text-gray-600 block ml-4">Outils IA gratuits pour transformer vos espaces</span>
+                </li>
+                <li>
+                  <a href="/fr/blog/impact-ia-role-designer-interieur" className="text-blue-600 hover:underline font-medium">
+                    → L'Impact de l'IA sur le Rôle du Designer d'Intérieur
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Comment l'IA transforme la profession de designer</span>
+                </li>
+                <li>
+                  <a href="/fr/blog/guide-ultime-outils-design-interieur-ia-2025" className="text-blue-600 hover:underline font-medium">
+                    → Guide Ultime des Outils de Design Intérieur IA 2025
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Comparaison complète des meilleurs outils IA</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-lg mt-8">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                💡 Ressources Externes Recommandées :
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>
+                  <a href="https://www.elle.fr/Deco" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    → Elle Décoration - Tendances Design
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Inspiration et tendances décoration</span>
+                </li>
+                <li>
+                  <a href="https://www.houzz.fr/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    → Houzz France - Idées Décoration
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Plateforme de design et décoration</span>
                 </li>
               </ul>
             </div>
@@ -241,12 +281,12 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
               <img
-                src="/ai-assistant-interior-design-prompts.webp"
+                src="/ai-interior-design-technology.webp"
                 alt="AI assistant interior design prompts"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src="/chatgpt-interior-design-assistant.webp"
+                src="/ai-room-design-free.webp"
                 alt="ChatGPT interior design assistant"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -281,7 +321,7 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src="/ai-room-design-prompts-examples.webp"
+                src="/viral-ai-room-design-prompts-hero.webp"
                 alt="AI room design prompts examples"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -336,16 +376,56 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
               <h3 className="text-lg font-semibold text-gray-800 mb-4">
                 Related Articles:
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-3 text-gray-700">
                 <li>
-                  <a href="/en/blog/how-generative-ai-revolutionizing-interior-design" className="text-blue-600 hover:underline">
+                  <a href="/en/blog/how-generative-ai-revolutionizing-interior-design" className="text-blue-600 hover:underline font-medium">
                     → How Generative AI is Revolutionizing Interior Design
                   </a>
+                  <span className="text-sm text-gray-600 block ml-4">Discover AI technologies transforming design</span>
                 </li>
                 <li>
-                  <a href="/en/blog/free-ai-interior-design-software" className="text-blue-600 hover:underline">
+                  <a href="/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" className="text-blue-600 hover:underline font-medium">
+                    → 6 Viral AI Room Design Prompts
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Practical prompt examples for stunning bedroom designs</span>
+                </li>
+                <li>
+                  <a href="/en/blog/free-ai-interior-design-software" className="text-blue-600 hover:underline font-medium">
                     → Free AI Interior Design Software
                   </a>
+                  <span className="text-sm text-gray-600 block ml-4">Free AI tools to transform your spaces</span>
+                </li>
+                <li>
+                  <a href="/en/blog/impact-ai-role-interior-designer" className="text-blue-600 hover:underline font-medium">
+                    → The Impact of AI on Interior Designer Role
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">How AI is transforming the design profession</span>
+                </li>
+                <li>
+                  <a href="/en/blog/ultimate-guide-AI" className="text-blue-600 hover:underline font-medium">
+                    → Ultimate Guide to AI Interior Design Tools 2025
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Comprehensive comparison of the best AI tools</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-lg mt-8">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                💡 Recommended External Resources:
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>
+                  <a href="https://www.architecturaldigest.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    → Architectural Digest - Design Inspiration
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Premium design and architecture content</span>
+                </li>
+                <li>
+                  <a href="https://www.houzz.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    → Houzz - Home Design Platform
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Leading platform for home design and decoration</span>
                 </li>
               </ul>
             </div>

@@ -78,7 +78,7 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
               <img
-                src="/generative-ai-interior-design-revolution.webp"
+                src="/ai-room-decorator.webp"
                 alt="Révolution IA générative design intérieur"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -101,12 +101,12 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
               <img
-                src="/virtual-reality-interior-design.webp"
+                src="/ai-virtual-reality-design-hero.webp"
                 alt="Réalité virtuelle design intérieur"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src="/augmented-reality-home-design.webp"
+                src="/ai-room-planner-residential.webp"
                 alt="Réalité augmentée design maison"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -134,7 +134,7 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src="/ai-project-management-design.webp"
+                src="/ai-room-planner-customization.webp"
                 alt="Gestion projet IA design"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -164,16 +164,62 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
               <h3 className="text-lg font-semibold text-gray-800 mb-4">
                 Articles Connexes :
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-3 text-gray-700">
                 <li>
-                  <a href="/fr/blog/assistant-ia-design-interieur-prompts-chatgpt" className="text-blue-600 hover:underline">
+                  <a href="/fr/blog/assistant-ia-design-interieur-prompts-chatgpt" className="text-blue-600 hover:underline font-medium">
                     → Assistant IA en Design Intérieur - Meilleurs Prompts
                   </a>
+                  <span className="text-sm text-gray-600 block ml-4">Guide pratique pour utiliser ChatGPT et autres IA en design</span>
                 </li>
                 <li>
-                  <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:underline">
+                  <a href="/fr/blog/intersection-ia-realite-virtuelle-design" className="text-blue-600 hover:underline font-medium">
+                    → L'Intersection de l'IA et de la Réalité Virtuelle
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">L'avenir du design avec IA et VR</span>
+                </li>
+                <li>
+                  <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:underline font-medium">
                     → Logiciel Gratuit de Design Intérieur IA
                   </a>
+                  <span className="text-sm text-gray-600 block ml-4">Outils IA gratuits pour transformer vos espaces</span>
+                </li>
+                <li>
+                  <a href="/fr/blog/impact-ia-role-designer-interieur" className="text-blue-600 hover:underline font-medium">
+                    → L'Impact de l'IA sur le Rôle du Designer
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Collaboration entre IA et designers professionnels</span>
+                </li>
+                <li>
+                  <a href="/fr/blog/role-donnees-design-alimente-ia" className="text-blue-600 hover:underline font-medium">
+                    → Le Rôle des Données dans le Design IA
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Comment les données améliorent l'esthétique</span>
+                </li>
+                <li>
+                  <a href="/fr/blog/personnalisation-ia-avenir-design-interieur" className="text-blue-600 hover:underline font-medium">
+                    → Personnalisation IA : L'Avenir du Design
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Solutions de design personnalisées par l'IA</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-lg mt-8">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                💡 Ressources Externes Recommandées :
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>
+                  <a href="https://www.marie-claire.fr/maison/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    → Marie Claire Maison - Tendances Déco
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Inspiration et actualités décoration</span>
+                </li>
+                <li>
+                  <a href="https://www.cotemaison.fr/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    → Côté Maison - Design Intérieur
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Magazine de référence en décoration</span>
                 </li>
               </ul>
             </div>
@@ -213,7 +259,7 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
               <img
-                src="/generative-ai-interior-design-revolution.webp"
+                src="/ai-room-decorator.webp"
                 alt="Generative AI interior design revolution"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -236,12 +282,12 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
               <img
-                src="/virtual-reality-interior-design.webp"
+                src="/ai-virtual-reality-design-hero.webp"
                 alt="Virtual reality interior design"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src="/augmented-reality-home-design.webp"
+                src="/ai-room-planner-residential.webp"
                 alt="Augmented reality home design"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -269,7 +315,7 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src="/ai-project-management-design.webp"
+                src="/ai-room-planner-customization.webp"
                 alt="AI project management design"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -299,16 +345,62 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
               <h3 className="text-lg font-semibold text-gray-800 mb-4">
                 Related Articles:
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-3 text-gray-700">
                 <li>
-                  <a href="/en/blog/ai-assistant-interior-design-chatgpt-prompts" className="text-blue-600 hover:underline">
+                  <a href="/en/blog/ai-assistant-interior-design-chatgpt-prompts" className="text-blue-600 hover:underline font-medium">
                     → AI Assistant in Interior Design - Best Prompts
                   </a>
+                  <span className="text-sm text-gray-600 block ml-4">Practical guide for using ChatGPT and other AI in design</span>
                 </li>
                 <li>
-                  <a href="/en/blog/free-ai-interior-design-software" className="text-blue-600 hover:underline">
+                  <a href="/en/blog/intersection-ai-virtual-reality-design" className="text-blue-600 hover:underline font-medium">
+                    → The Intersection of AI and Virtual Reality
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Future of design with AI and VR technology</span>
+                </li>
+                <li>
+                  <a href="/en/blog/free-ai-interior-design-software" className="text-blue-600 hover:underline font-medium">
                     → Free AI Interior Design Software
                   </a>
+                  <span className="text-sm text-gray-600 block ml-4">Free AI tools to transform your spaces</span>
+                </li>
+                <li>
+                  <a href="/en/blog/impact-ai-role-interior-designer" className="text-blue-600 hover:underline font-medium">
+                    → The Impact of AI on Interior Designer Role
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Collaboration between AI and professional designers</span>
+                </li>
+                <li>
+                  <a href="/en/blog/role-data-ai-powered-design" className="text-blue-600 hover:underline font-medium">
+                    → The Role of Data in AI-Powered Design
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">How data insights drive better aesthetics</span>
+                </li>
+                <li>
+                  <a href="/en/blog/ai-driven-customization-future-interior-design" className="text-blue-600 hover:underline font-medium">
+                    → AI-Driven Customization: Future of Design
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Personalized design solutions powered by AI</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-lg mt-8">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                💡 Recommended External Resources:
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>
+                  <a href="https://www.dezeen.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    → Dezeen - Architecture & Design Magazine
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">Leading architecture and design publication</span>
+                </li>
+                <li>
+                  <a href="https://www.archdaily.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    → ArchDaily - Architecture News
+                  </a>
+                  <span className="text-sm text-gray-600 block ml-4">World's most visited architecture website</span>
                 </li>
               </ul>
             </div>
