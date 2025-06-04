@@ -32,6 +32,12 @@ export interface Translations {
   creatingOutdoorSpacesAITitle: string;
   costEffectivenessAIDesignTitle: string;
   transformingSmallLivingSpacesTitle: string;
+  aiDrivenCustomizationFutureTitle: string;
+  residentialInteriorDesignGuideTitle: string;
+  futuristicInteriorDesignStylesTitle: string;
+  roomPlannerAISarahJohnsonEvaluationsTitle: string;
+  innovativeStairRailingIdeasTitle: string;
+  designLivingRoomLikeProTitle: string;
 
   // Hero section
   welcomeToFuture: string;
@@ -1241,6 +1247,12 @@ export const translations: Record<Language, Translations> = {
     creatingOutdoorSpacesAITitle: "Creating Outdoor Spaces with AI: A Guide to Designing Stunning Exteriors",
     costEffectivenessAIDesignTitle: "The Cost-Effectiveness of AI in Design: How Styly Saves You Money",
     transformingSmallLivingSpacesTitle: "Transforming Small Living Spaces: Interior Design Solutions for Compact Homes",
+    aiDrivenCustomizationFutureTitle: "Why AI-Driven Customization is the Future of Interior Design",
+    residentialInteriorDesignGuideTitle: "Residential Interior Design: A Guide to Planning Spaces with Styly",
+    futuristicInteriorDesignStylesTitle: "Futuristic Interior Design Styles: How Styly AI Shapes Tomorrow's Homes Today",
+    roomPlannerAISarahJohnsonEvaluationsTitle: "The Good, The Bad, and The Room Planner AI: Sarah Johnson's Honest Styly.io Evaluations",
+    innovativeStairRailingIdeasTitle: "Innovative Interior Stair Railing Ideas: Custom Designs Powered by Styly AI",
+    designLivingRoomLikeProTitle: "Design Your Living Room Like a Pro with Styly",
 
     // New Keys for Market Leaders
     foyr: "Foyr",
@@ -2181,6 +2193,12 @@ export const translations: Record<Language, Translations> = {
     creatingOutdoorSpacesAITitle: "Créer des Espaces Extérieurs avec l'IA : Un Guide pour Concevoir des Extérieurs Époustouflants",
     costEffectivenessAIDesignTitle: "La Rentabilité de l'IA en Design : Comment Styly Vous Fait Économiser",
     transformingSmallLivingSpacesTitle: "Transformer les Petits Espaces de Vie : Solutions de Design d'Intérieur pour Maisons Compactes",
+    aiDrivenCustomizationFutureTitle: "Pourquoi la Personnalisation IA est l'Avenir du Design Intérieur",
+    residentialInteriorDesignGuideTitle: "Design Intérieur Résidentiel : Un Guide pour Planifier les Espaces avec Styly",
+    futuristicInteriorDesignStylesTitle: "Styles de Design Intérieur Futuriste : Comment l'IA Styly Façonne les Maisons de Demain",
+    roomPlannerAISarahJohnsonEvaluationsTitle: "Le Bon, le Mauvais et le Planificateur IA : Évaluations Honnêtes de Sarah Johnson sur Styly.io",
+    innovativeStairRailingIdeasTitle: "Idées Innovantes de Rampes d'Escalier Intérieur : Designs Personnalisés par l'IA Styly",
+    designLivingRoomLikeProTitle: "Concevoir Votre Salon Comme un Professionnel avec Styly",
 
     marketOverview: "Aperçu du marché",
     keyEvaluationCriteria: "Critères d'évaluation clés",

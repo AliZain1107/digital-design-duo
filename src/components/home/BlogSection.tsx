@@ -78,6 +78,21 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
     if (post.slug === "texture-importance-interior-design-styly") {
       return t.textureImportanceDesignTitle;
     }
+    if (post.slug === "top-5-challenges-interior-design-ai-solutions") {
+      return t.top5ChallengesInteriorDesignTitle;
+    }
+    if (post.slug === "ai-future-commercial-interior-design") {
+      return t.commercialInteriorDesignAITitle;
+    }
+    if (post.slug === "creating-outdoor-spaces-ai-design-guide") {
+      return t.creatingOutdoorSpacesAITitle;
+    }
+    if (post.slug === "cost-effectiveness-ai-design-styly-savings") {
+      return t.costEffectivenessAIDesignTitle;
+    }
+    if (post.slug === "transforming-small-living-spaces-design-solutions") {
+      return t.transformingSmallLivingSpacesTitle;
+    }
     // For other blog posts, use the original title
     return post.title;
   };

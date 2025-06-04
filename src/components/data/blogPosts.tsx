@@ -26,6 +26,12 @@ import CommercialInteriorDesignAI from "@/blogPages/CommercialInteriorDesignAI";
 import CreatingOutdoorSpacesAI from "@/blogPages/CreatingOutdoorSpacesAI";
 import CostEffectivenessAIDesign from "@/blogPages/CostEffectivenessAIDesign";
 import TransformingSmallLivingSpaces from "@/blogPages/TransformingSmallLivingSpaces";
+import AIDrivenCustomizationFuture from "@/blogPages/AIDrivenCustomizationFuture";
+import ResidentialInteriorDesignGuide from "@/blogPages/ResidentialInteriorDesignGuide";
+import FuturisticInteriorDesignStyles from "@/blogPages/FuturisticInteriorDesignStyles";
+import RoomPlannerAISarahJohnsonEvaluations from "@/blogPages/RoomPlannerAISarahJohnsonEvaluations";
+import InnovativeStairRailingIdeas from "@/blogPages/InnovativeStairRailingIdeas";
+import DesignLivingRoomLikePro from "@/blogPages/DesignLivingRoomLikePro";
 
 export interface BlogPost {
   id: number;
@@ -296,5 +302,59 @@ export const blogPosts: BlogPost[] = [
     slug: "transforming-small-living-spaces-design-solutions",
     slugFr: "transformer-petits-espaces-vie-solutions-design",
     Component: TransformingSmallLivingSpaces,
+  },
+  {
+    id: 29,
+    title: "Why AI-Driven Customization is the Future of Interior Design",
+    date: "Aug 20, 2024",
+    image: "/ai-driven-customization-future-interior-design.webp",
+    slug: "ai-driven-customization-future-interior-design",
+    slugFr: "personnalisation-ia-avenir-design-interieur",
+    Component: AIDrivenCustomizationFuture,
+  },
+  {
+    id: 30,
+    title: "Residential Interior Design: A Guide to Planning Spaces with Styly",
+    date: "Aug 14, 2024",
+    image: "/residential-interior-design-guide-planning.webp",
+    slug: "residential-interior-design-guide-planning-spaces",
+    slugFr: "guide-design-interieur-residentiel-planification-espaces",
+    Component: ResidentialInteriorDesignGuide,
+  },
+  {
+    id: 31,
+    title: "Futuristic Interior Design Styles: How Styly AI Shapes Tomorrow's Homes Today",
+    date: "Jul 27, 2024",
+    image: "/futuristic-interior-design-styles-styly-ai.webp",
+    slug: "futuristic-interior-design-styles-styly-ai",
+    slugFr: "styles-design-interieur-futuriste-ia-styly",
+    Component: FuturisticInteriorDesignStyles,
+  },
+  {
+    id: 32,
+    title: "The Good, The Bad, and The Room Planner AI: Sarah Johnson's Honest Styly.io Evaluations",
+    date: "Jul 25, 2024",
+    image: "/room-planner-ai-sarah-johnson-evaluations.webp",
+    slug: "room-planner-ai-sarah-johnson-styly-evaluations",
+    slugFr: "planificateur-chambre-ia-evaluations-sarah-johnson-styly",
+    Component: RoomPlannerAISarahJohnsonEvaluations,
+  },
+  {
+    id: 33,
+    title: "Innovative Interior Stair Railing Ideas: Custom Designs Powered by Styly AI",
+    date: "Jul 22, 2024",
+    image: "/innovative-stair-railing-ideas-styly-ai.webp",
+    slug: "innovative-interior-stair-railing-ideas-styly-ai",
+    slugFr: "idees-rampes-escalier-interieur-innovantes-ia-styly",
+    Component: InnovativeStairRailingIdeas,
+  },
+  {
+    id: 34,
+    title: "Design Your Living Room Like a Pro with Styly",
+    date: "Jul 19, 2024",
+    image: "/design-living-room-like-pro-styly.webp",
+    slug: "design-living-room-like-pro-styly",
+    slugFr: "concevoir-salon-comme-professionnel-styly",
+    Component: DesignLivingRoomLikePro,
   },
 ];

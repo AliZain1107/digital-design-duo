@@ -70,6 +70,78 @@ const BlogPostPage: React.FC = () => {
     if (post.slug === "6-viral-ai-room-design-prompts-create-dream-bedroom-styly") {
       return t.viralAIRoomDesignPromptsTitle;
     }
+    if (post.slug === "impact-ai-role-interior-designer") {
+      return t.impactAIInteriorDesignerTitle;
+    }
+    if (post.slug === "intersection-ai-virtual-reality-design") {
+      return t.aiVirtualRealityDesignTitle;
+    }
+    if (post.slug === "ai-accessible-design-inclusive-spaces") {
+      return t.aiAccessibleDesignTitle;
+    }
+    if (post.slug === "role-data-ai-powered-design") {
+      return t.dataAIPoweredDesignTitle;
+    }
+    if (post.slug === "modern-family-design-ai-functional-homes") {
+      return t.modernFamilyDesignTitle;
+    }
+    if (post.slug === "sustainable-design-ai-eco-friendly-spaces") {
+      return t.sustainableDesignAITitle;
+    }
+    if (post.slug === "ai-space-planning-optimization-small-apartments") {
+      return t.aiSpacePlanningSmallApartmentsTitle;
+    }
+    if (post.slug === "creating-biophilic-interior-designs-styly-ai") {
+      return t.biophilicDesignAITitle;
+    }
+    if (post.slug === "science-color-design-ai-perfect-palette") {
+      return t.scienceColorDesignTitle;
+    }
+    if (post.slug === "reducing-carbon-footprints-sustainable-landscapes-ai") {
+      return t.sustainableLandscapesAITitle;
+    }
+    if (post.slug === "ai-landscape-design-outdoor-spaces-styly") {
+      return t.aiLandscapeDesignTitle;
+    }
+    if (post.slug === "cultural-interior-design-ai-sensitive-spaces") {
+      return t.culturalDesignAITitle;
+    }
+    if (post.slug === "texture-importance-interior-design-styly") {
+      return t.textureImportanceDesignTitle;
+    }
+    if (post.slug === "top-5-challenges-interior-design-ai-solutions") {
+      return t.top5ChallengesInteriorDesignTitle;
+    }
+    if (post.slug === "ai-future-commercial-interior-design") {
+      return t.commercialInteriorDesignAITitle;
+    }
+    if (post.slug === "creating-outdoor-spaces-ai-design-guide") {
+      return t.creatingOutdoorSpacesAITitle;
+    }
+    if (post.slug === "cost-effectiveness-ai-design-styly-savings") {
+      return t.costEffectivenessAIDesignTitle;
+    }
+    if (post.slug === "transforming-small-living-spaces-design-solutions") {
+      return t.transformingSmallLivingSpacesTitle;
+    }
+    if (post.slug === "ai-driven-customization-future-interior-design") {
+      return t.aiDrivenCustomizationFutureTitle;
+    }
+    if (post.slug === "residential-interior-design-guide-planning-spaces") {
+      return t.residentialInteriorDesignGuideTitle;
+    }
+    if (post.slug === "futuristic-interior-design-styles-styly-ai") {
+      return t.futuristicInteriorDesignStylesTitle;
+    }
+    if (post.slug === "room-planner-ai-sarah-johnson-styly-evaluations") {
+      return t.roomPlannerAISarahJohnsonEvaluationsTitle;
+    }
+    if (post.slug === "innovative-interior-stair-railing-ideas-styly-ai") {
+      return t.innovativeStairRailingIdeasTitle;
+    }
+    if (post.slug === "design-living-room-like-pro-styly") {
+      return t.designLivingRoomLikeProTitle;
+    }
     // For other blog posts, use the original title
     return post.title;
   };
