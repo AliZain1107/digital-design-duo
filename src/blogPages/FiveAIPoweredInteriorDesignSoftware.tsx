@@ -117,72 +117,6 @@ const FiveAIPoweredInteriorDesignSoftware: React.FC = () => {
                 </p>
               </div>
             </div>
-          </>
-        ) : (
-          <>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <p className="text-lg text-gray-700 mb-4">
-                The artificial versus natural debate is a never-ending one. Despite how efficient and effective the artificial might prove to be, it's natural that people regard it with more respect owing to its originality and sustainability. However, with the advent of AI interior design tools, the creative abilities of interior designers are truly coming out in full force, blurring the lines between the artificial and the natural.
-              </p>
-            </div>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Key Takeaways:</h2>
-            <ul className="list-disc list-inside text-gray-700 mb-8 space-y-2">
-              <li>AI-powered interior design tools can streamline workflows, enhance personalization, elevate visualization, and unlock new realms of creativity.</li>
-              <li>Styly.io's generative AI offers unparalleled customization options compared to other generic AI tools.</li>
-              <li>Integrating AI-driven design capabilities can help architect leaders drive value for their clients.</li>
-              <li>The future of interior design is poised to be transformed by the power of generative AI.</li>
-            </ul>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Introduction</h2>
-            <p className="text-gray-700 mb-6">
-              <a href="https://styly.io" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Interior design AI</a> has become the talk of the town among preeminent designers. With more and more positive use cases of AI-powered tools emerging every day, interior designers are rapidly making the 'AI shift' to supercharge their workflows and deliver state-of-the-art designs regularly.
-            </p>
-
-            <p className="text-gray-700 mb-6">
-              A lot of things must be done right for an interior design project to be successful and make a lasting impression. Some of the best interior designs serve as an exhibition of timeless decorative art that many take inspiration from. To create such designs, the designer has to execute a multitude of tasks ranging from research and coordination to inspection, communication, and planning.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-              <img
-                src="/ai-interior-design-free-tools.webp"
-                alt="AI interior design software solutions"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-              <img
-                src="/ai-room-planner-customization.webp"
-                alt="AI design tools 2024"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-            </div>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Advantages of AI for Interior Design</h2>
-            <p className="text-gray-700 mb-6">
-              Artificial intelligence and its components like machine learning, when coupled with interior design software solutions, can be very advantageous for all types of interior design projects. Here are some of the most prominent advantages of AI for interior design:
-            </p>
-
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg border-l-4 border-blue-500 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">1. Space Planning</h3>
-                <p className="text-gray-700">
-                  Space planning is undoubtedly the most important aspect of any interior design. Accurate measurements and dimensions are crucial in optimizing the layout of a space. This is where an AI room planner can come in handy. By automatically analyzing the space and calculating furniture measurements, an AI-based interior design tool can help you plan a room to perfection.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg border-l-4 border-green-500 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">2. Design Suggestions</h3>
-                <p className="text-gray-700">
-                  Even the most talented and experienced designers need inspiration and suggestions. Since it's important to ensure that each design element matches the exact preference of the client, getting suggestions for furniture and other elements according to the client's taste can prove to be a game-changer.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg border-l-4 border-purple-500 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">3. Material Selection</h3>
-                <p className="text-gray-700">
-                  Material selection is another decisive aspect of a functional as well as aesthetic design. Selecting a material type that is conducive to the style and utility of a space is critical. With an AI-powered interior design software solution, material selection becomes a walk in the park.
-                </p>
-              </div>
-            </div>
 
             <h2 className="text-2xl font-bold text-gray-800 mb-4">5 Meilleurs Outils de Design Intérieur IA 2024</h2>
             <p className="text-gray-700 mb-6">
@@ -343,6 +277,73 @@ const FiveAIPoweredInteriorDesignSoftware: React.FC = () => {
                 <a href="https://www.facebook.com/profile.php?id=61558770901420" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline mx-2">Facebook</a>
               </p>
             </div>
+          </>
+        ) : (
+          <>
+            <div className="bg-gray-50 p-6 rounded-lg mb-8">
+              <p className="text-lg text-gray-700 mb-4">
+                The artificial versus natural debate is a never-ending one. Despite how efficient and effective the artificial might prove to be, it's natural that people regard it with more respect owing to its originality and sustainability. However, with the advent of AI interior design tools, the creative abilities of interior designers are truly coming out in full force, blurring the lines between the artificial and the natural.
+              </p>
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Key Takeaways:</h2>
+            <ul className="list-disc list-inside text-gray-700 mb-8 space-y-2">
+              <li>AI-powered interior design tools can streamline workflows, enhance personalization, elevate visualization, and unlock new realms of creativity.</li>
+              <li>Styly.io's generative AI offers unparalleled customization options compared to other generic AI tools.</li>
+              <li>Integrating AI-driven design capabilities can help architect leaders drive value for their clients.</li>
+              <li>The future of interior design is poised to be transformed by the power of generative AI.</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Introduction</h2>
+            <p className="text-gray-700 mb-6">
+              <a href="https://styly.io" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Interior design AI</a> has become the talk of the town among preeminent designers. With more and more positive use cases of AI-powered tools emerging every day, interior designers are rapidly making the 'AI shift' to supercharge their workflows and deliver state-of-the-art designs regularly.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              A lot of things must be done right for an interior design project to be successful and make a lasting impression. Some of the best interior designs serve as an exhibition of timeless decorative art that many take inspiration from. To create such designs, the designer has to execute a multitude of tasks ranging from research and coordination to inspection, communication, and planning.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+              <img
+                src="/ai-interior-design-free-tools.webp"
+                alt="AI interior design software solutions"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <img
+                src="/ai-room-planner-customization.webp"
+                alt="AI design tools 2024"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Advantages of AI for Interior Design</h2>
+            <p className="text-gray-700 mb-6">
+              Artificial intelligence and its components like machine learning, when coupled with interior design software solutions, can be very advantageous for all types of interior design projects. Here are some of the most prominent advantages of AI for interior design:
+            </p>
+
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-blue-500 shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">1. Space Planning</h3>
+                <p className="text-gray-700">
+                  Space planning is undoubtedly the most important aspect of any interior design. Accurate measurements and dimensions are crucial in optimizing the layout of a space. This is where an AI room planner can come in handy. By automatically analyzing the space and calculating furniture measurements, an AI-based interior design tool can help you plan a room to perfection.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-green-500 shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">2. Design Suggestions</h3>
+                <p className="text-gray-700">
+                  Even the most talented and experienced designers need inspiration and suggestions. Since it's important to ensure that each design element matches the exact preference of the client, getting suggestions for furniture and other elements according to the client's taste can prove to be a game-changer.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-purple-500 shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">3. Material Selection</h3>
+                <p className="text-gray-700">
+                  Material selection is another decisive aspect of a functional as well as aesthetic design. Selecting a material type that is conducive to the style and utility of a space is critical. With an AI-powered interior design software solution, material selection becomes a walk in the park.
+                </p>
+              </div>
+            </div>
+
           </>
         ) : (
           <>
@@ -576,47 +577,7 @@ const FiveAIPoweredInteriorDesignSoftware: React.FC = () => {
   );
 };
 
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">5 Best AI Interior Design Tools 2024</h2>
-            <p className="text-gray-700 mb-6">
-              Now that we've talked about the advantages of AI for interior design, let's dive into the best AI interior design tools and their unique features. All these software solutions use AI capabilities in some way or the other, helping interior designers like you explore your creative potential to the fullest.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-              <img
-                src="/ai-room-decorator.webp"
-                alt="AI interior design tools 2024"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-              <img
-                src="/ai-interior-design-technology.webp"
-                alt="AI design software comparison"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-            </div>
-
-            <div className="bg-blue-50 p-6 rounded-lg my-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-6">Tool Comparison:</h3>
-
-              <div className="space-y-6">
-                <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h4 className="text-lg font-semibold text-gray-800 mb-3">🏠 RoomGPT</h4>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                    <div>
-                      <strong>Features:</strong>
-                      <p className="text-gray-600">Web-based design, range of furniture and decor options, perfect for online use without downloads.</p>
-                    </div>
-                    <div>
-                      <strong>User-Friendliness:</strong>
-                      <p className="text-gray-600">Beginner-friendly, easy to use with straightforward interface.</p>
-                    </div>
-                    <div>
-                      <strong>Pricing:</strong>
-                      <p className="text-gray-600">Free and paid versions starting at $59/month.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-lg shadow-sm">
+export default FiveAIPoweredInteriorDesignSoftware;
                   <h4 className="text-lg font-semibold text-gray-800 mb-3">🏗️ Houzz Pro</h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                     <div>
