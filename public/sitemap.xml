@@ -127,6 +127,72 @@
   </url>
 
   <!-- Blog Posts - Latest First -->
+  <!-- How Generative AI is Revolutionizing Interior Design -->
+  <url>
+    <loc>https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <image:image>
+      <image:loc>https://styly.io/generative-ai-interior-design-revolution.webp</image:loc>
+      <image:title>How Generative AI is Revolutionizing Interior Design</image:title>
+      <image:caption>Discover how generative AI transforms interior design with revolutionary tools</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/comment-ia-generative-revolutionne-design-interieur</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <image:image>
+      <image:loc>https://styly.io/generative-ai-interior-design-revolution.webp</image:loc>
+      <image:title>Comment l'IA Générative Révolutionne le Design Intérieur</image:title>
+      <image:caption>Découvrez comment l'IA générative transforme le design intérieur avec des outils révolutionnaires</image:caption>
+    </image:image>
+  </url>
+
+  <!-- AI Assistant in Interior Design - Best Prompts -->
+  <url>
+    <loc>https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-assistant-interior-design-prompts.webp</image:loc>
+      <image:title>AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral</image:title>
+      <image:caption>Best prompts for using AI assistants in interior design projects</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/assistant-ia-design-interieur-prompts-chatgpt</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-assistant-interior-design-prompts.webp</image:loc>
+      <image:title>Assistant IA en Design Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral</image:title>
+      <image:caption>Meilleurs prompts pour utiliser les assistants IA dans les projets de design intérieur</image:caption>
+    </image:image>
+  </url>
+
   <!-- 10 Expert Tips to Save Big on Home Interiors in 2025 -->
   <url>
     <loc>https://styly.io/en/blog/10-expert-tips-save-big-home-interiors-2025</loc>

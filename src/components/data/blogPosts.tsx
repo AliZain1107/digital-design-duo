@@ -32,6 +32,8 @@ import FuturisticInteriorDesignStyles from "@/blogPages/FuturisticInteriorDesign
 import RoomPlannerAISarahJohnsonEvaluations from "@/blogPages/RoomPlannerAISarahJohnsonEvaluations";
 import InnovativeStairRailingIdeas from "@/blogPages/InnovativeStairRailingIdeas";
 import DesignLivingRoomLikePro from "@/blogPages/DesignLivingRoomLikePro";
+import AIAssistantInteriorDesignPrompts from "@/blogPages/AIAssistantInteriorDesignPrompts";
+import GenerativeAIRevolutionizingDesign from "@/blogPages/GenerativeAIRevolutionizingDesign";
 
 export interface BlogPost {
   id: number;
@@ -356,5 +358,23 @@ export const blogPosts: BlogPost[] = [
     slug: "design-living-room-like-pro-styly",
     slugFr: "concevoir-salon-comme-professionnel-styly",
     Component: DesignLivingRoomLikePro,
+  },
+  {
+    id: 35,
+    title: "How Generative AI is Revolutionizing Interior Design?",
+    date: "Jun 23, 2024",
+    image: "/generative-ai-interior-design-revolution.webp",
+    slug: "how-generative-ai-revolutionizing-interior-design",
+    slugFr: "comment-ia-generative-revolutionne-design-interieur",
+    Component: GenerativeAIRevolutionizingDesign,
+  },
+  {
+    id: 36,
+    title: "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral",
+    date: "May 12, 2024",
+    image: "/ai-assistant-interior-design-prompts.webp",
+    slug: "ai-assistant-interior-design-chatgpt-prompts",
+    slugFr: "assistant-ia-design-interieur-prompts-chatgpt",
+    Component: AIAssistantInteriorDesignPrompts,
   },
 ];
