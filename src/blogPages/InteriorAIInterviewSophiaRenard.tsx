@@ -123,78 +123,6 @@ const InteriorAIInterviewSophiaRenard: React.FC = () => {
                 En tant qu'architecte, mon espoir profond pour l'évolution de l'architecture et du design intérieur est de créer des espaces qui non seulement répondent aux besoins d'aujourd'hui mais inspirent aussi les générations futures à rêver grand et repousser les limites de ce qui est possible. En embrassant l'éthique de design minimaliste de simplicité et de clarté, nous pouvons créer des espaces qui résonnent avec l'esprit humain et favorisent un sentiment de connexion et d'appartenance.
               </p>
             </div>
-          </>
-        ) : (
-          <>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <p className="text-lg text-gray-700 mb-4">
-                In the realm of <a href="https://styly.io" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">AI architecture</a> and interior design, where creativity meets functionality, each architect's journey is as unique as the structures they design. We had the privilege of sitting down with Sophia Renard, a renowned architect whose innovative designs seamlessly blend timeless elegance with cutting-edge technologies.
-              </p>
-            </div>
-
-            <div className="bg-blue-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
-              <p className="text-lg text-gray-700 italic font-medium">
-                "Sophia envisions a future where AI becomes the silent collaborator, enhancing designers' creative processes and pushing the boundaries of architectural possibility."
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-              <img
-                src="/ai-interior-design-technology.webp"
-                alt="Sophia Renard visionary architect"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-              <img
-                src="/ai-room-planner-customization.webp"
-                alt="Modern AI architecture"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-            </div>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Sophia's Journey</h2>
-            <p className="text-gray-700 mb-6">
-              My journey into architecture was ignited by the breathtaking landmarks of my native Paris. From the timeless beauty of Notre-Dame to the modernist marvels of the Pompidou Center, I was enamored by the artistry and craftsmanship that imbued these architectural wonders with a sense of Bohemian elegance and avant-garde creativity.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Interior AI is Already Here</h2>
-            <p className="text-gray-700 mb-6">
-              What excites me most about the future of architecture and interior design is the boundless potential for innovation and creativity. Emerging technologies such as <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">artificial intelligence</a> (AI) offer unprecedented opportunities to push the boundaries of design and create truly transformative spaces that embrace the Japandi aesthetic of harmonious fusion and minimalist elegance.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Navigating Challenges and Collaboration</h2>
-            <p className="text-gray-700 mb-6">
-              Collaborating with clients on architectural projects presents its own set of challenges, but I believe that open communication and a deep understanding of the client's needs are key to navigating these challenges successfully. By embracing the Coastal design philosophy of adaptability and resilience, we can navigate through design iterations and decision-making processes with grace and integrity.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-              <img
-                src="/ai-room-decorator.webp"
-                alt="AI design collaboration"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-              <img
-                src="/ai-virtual-reality-design-hero.webp"
-                alt="Modern architecture innovation"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-            </div>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Advice to Emerging Architects</h2>
-            <p className="text-gray-700 mb-6">
-              My advice to emerging architects is to stay true to your vision and never stop learning. The journey to becoming a successful architect is filled with challenges, but it's those challenges that ultimately shape you into the designer you are meant to be. Embrace the Scandinavian principle of simplicity and functionality, and let your passion for innovation guide you on your path to success.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Innovative Technological Solutions</h2>
-            <p className="text-gray-700 mb-6">
-              Innovative technological solutions such as AI image generators and virtual reality simulations offer architects new ways to communicate and iterate on their designs, ultimately leading to better outcomes for clients and designers alike. By harnessing the power of <a href="https://styly.io" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">AI interior design</a>, we can embark on a journey of exploration and experimentation, pushing the boundaries of what is possible in the realm of interior design.
-            </p>
-
-            <div className="bg-yellow-50 p-6 rounded-lg my-8 border-l-4 border-yellow-500">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">"Interior design Ideas will be more comprehensive"</h3>
-              <p className="text-gray-700">
-                As an architect, my profound hope for the evolution of architecture and interior design is to create spaces that not only meet the needs of today but also inspire future generations to dream big and push the boundaries of what is possible. By embracing the Minimalist design ethos of simplicity and clarity, we can create spaces that resonate with the human spirit and foster a sense of connection and belonging.
-              </p>
-            </div>
 
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Conclusion</h2>
             <p className="text-gray-700 mb-6">
@@ -268,6 +196,76 @@ const InteriorAIInterviewSophiaRenard: React.FC = () => {
           </>
         ) : (
           <>
+            <div className="bg-gray-50 p-6 rounded-lg mb-8">
+              <p className="text-lg text-gray-700 mb-4">
+                In the realm of <a href="https://styly.io" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">AI architecture</a> and interior design, where creativity meets functionality, each architect's journey is as unique as the structures they design. We had the privilege of sitting down with Sophia Renard, a renowned architect whose innovative designs seamlessly blend timeless elegance with cutting-edge technologies.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+              <p className="text-lg text-gray-700 italic font-medium">
+                "Sophia envisions a future where AI becomes the silent collaborator, enhancing designers' creative processes and pushing the boundaries of architectural possibility."
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+              <img
+                src="/ai-interior-design-technology.webp"
+                alt="Sophia Renard visionary architect"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <img
+                src="/ai-room-planner-customization.webp"
+                alt="Modern AI architecture"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Sophia's Journey</h2>
+            <p className="text-gray-700 mb-6">
+              My journey into architecture was ignited by the breathtaking landmarks of my native Paris. From the timeless beauty of Notre-Dame to the modernist marvels of the Pompidou Center, I was enamored by the artistry and craftsmanship that imbued these architectural wonders with a sense of Bohemian elegance and avant-garde creativity.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Interior AI is Already Here</h2>
+            <p className="text-gray-700 mb-6">
+              What excites me most about the future of architecture and interior design is the boundless potential for innovation and creativity. Emerging technologies such as <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">artificial intelligence</a> (AI) offer unprecedented opportunities to push the boundaries of design and create truly transformative spaces that embrace the Japandi aesthetic of harmonious fusion and minimalist elegance.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Navigating Challenges and Collaboration</h2>
+            <p className="text-gray-700 mb-6">
+              Collaborating with clients on architectural projects presents its own set of challenges, but I believe that open communication and a deep understanding of the client's needs are key to navigating these challenges successfully. By embracing the Coastal design philosophy of adaptability and resilience, we can navigate through design iterations and decision-making processes with grace and integrity.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+              <img
+                src="/ai-room-decorator.webp"
+                alt="AI design collaboration"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <img
+                src="/ai-virtual-reality-design-hero.webp"
+                alt="Modern architecture innovation"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Advice to Emerging Architects</h2>
+            <p className="text-gray-700 mb-6">
+              My advice to emerging architects is to stay true to your vision and never stop learning. The journey to becoming a successful architect is filled with challenges, but it's those challenges that ultimately shape you into the designer you are meant to be. Embrace the Scandinavian principle of simplicity and functionality, and let your passion for innovation guide you on your path to success.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Innovative Technological Solutions</h2>
+            <p className="text-gray-700 mb-6">
+              Innovative technological solutions such as AI image generators and virtual reality simulations offer architects new ways to communicate and iterate on their designs, ultimately leading to better outcomes for clients and designers alike. By harnessing the power of <a href="https://styly.io" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">AI interior design</a>, we can embark on a journey of exploration and experimentation, pushing the boundaries of what is possible in the realm of interior design.
+            </p>
+
+            <div className="bg-yellow-50 p-6 rounded-lg my-8 border-l-4 border-yellow-500">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">"Interior design Ideas will be more comprehensive"</h3>
+              <p className="text-gray-700">
+                As an architect, my profound hope for the evolution of architecture and interior design is to create spaces that not only meet the needs of today but also inspire future generations to dream big and push the boundaries of what is possible. By embracing the Minimalist design ethos of simplicity and clarity, we can create spaces that resonate with the human spirit and foster a sense of connection and belonging.
+              </p>
+            </div>
+
             <div className="bg-yellow-50 p-6 rounded-lg my-8 border-l-4 border-yellow-500">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">"Interior design Ideas will be more comprehensive"</h3>
               <p className="text-gray-700">
