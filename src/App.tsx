@@ -36,7 +36,11 @@ const App = () => (
               <Route path="/fr" element={<Index />} />
               <Route path="/pricing" element={<NotFound />} />
 
-              {/* English routes - redirect to external site */}
+              {/* English blog routes - redirect to external blog */}
+              <Route path="/en/blog" element={<Blog />} />
+              <Route path="/en/blog/:slug" element={<BlogPostPage />} />
+
+              {/* Other English routes - redirect to external site */}
               <Route path="/en" element={<EnglishRedirect />} />
               <Route path="/en/*" element={<EnglishRedirect />} />
 
