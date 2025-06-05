@@ -10,13 +10,13 @@ const AILandscapeDesign: React.FC = () => {
       title: "AI in Landscape Design: Creating Beautiful Outdoor Spaces with Styly",
       description: "Discover how AI revolutionizes landscape design. Learn to create stunning outdoor spaces with STYLY.io's AI tools for gardens and exteriors.",
       keywords: "AI landscape design, outdoor space design, AI garden planner, landscape AI tools, exterior design AI, STYLY.io landscape",
-      ogImage: "/ai-landscape-design-hero.webp"
+      ogImage: "/landscape-design-outdoor-garden-modern.webp"
     },
     fr: {
       title: "L'IA dans le Design Paysager : Créer de Beaux Espaces Extérieurs avec Styly",
       description: "Découvrez comment l'IA révolutionne le design paysager. Apprenez à créer de magnifiques espaces extérieurs avec les outils IA de STYLY.io.",
       keywords: "design paysager IA, design espace extérieur, planificateur jardin IA, outils paysage IA, design extérieur IA, paysage STYLY.io",
-      ogImage: "/ai-landscape-design-hero.webp"
+      ogImage: "/landscape-design-outdoor-garden-modern.webp"
     }
   };
 
@@ -191,7 +191,7 @@ const AILandscapeDesign: React.FC = () => {
                     {" "}pour les espaces familiaux
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-green-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Tendance Paysage :</strong> Selon{" "}
@@ -359,7 +359,7 @@ const AILandscapeDesign: React.FC = () => {
                     {" "}for family-friendly spaces
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-green-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Landscape Trend:</strong> According to{" "}

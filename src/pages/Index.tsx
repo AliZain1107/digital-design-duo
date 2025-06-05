@@ -28,8 +28,13 @@ const Index: React.FC = () => {
     let pathLang: Language;
     if (location.pathname === "/" || location.pathname === "") {
       pathLang = "fr";
+    } else if (location.pathname.startsWith("/en")) {
+      // Redirect English URLs to external site
+      console.log("English URL detected, redirecting to external site: https://www.styly.io");
+      window.location.href = "https://www.styly.io";
+      return;
     } else {
-      pathLang = location.pathname.startsWith("/fr") ? "fr" : "en";
+      pathLang = location.pathname.startsWith("/fr") ? "fr" : "fr"; // Default to French
     }
     setLanguage(pathLang);
 
@@ -39,24 +44,29 @@ const Index: React.FC = () => {
     }
   }, [location.pathname, navigate]);
 
+  // Scroll to top when component mounts or language changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [language]);
+
   // useEffect(() => {
   //   setLanguage("en");
   // }, [])
 
   console.log("Index page rendering with language:", language);
 
-  // English meta
+  // English meta - matching www.styly.io format
   const meta = {
-    title: "STYLY - #1 AI Interior & Exterior Design Platform | Real Estate Visualization Tool",
+    title: "AI Room Design & Interior Design Tool with Free Credits | Styly",
     description: "Transform empty spaces into stunning, photo-realistic interiors in seconds with STYLY - the leading AI design tool. Upload photos via web, mobile or WhatsApp. No technical skills needed. Trusted by 20,000+ real estate pros, interior designers & homeowners.",
-    keywords: "AI interior design app, virtual staging software, real estate visualization tool, interior design AI, home renovation design, WhatsApp interior design, property marketing tool, AI visualization, interior design without technical skills, photo-realistic interior design"
+    keywords: "AI room design, interior design tool, free AI interior design, AI room planner, virtual staging, real estate visualization, home design AI, interior design app, room designer, AI home design, free interior design software, AI interior design generator"
   };
 
-  // French meta (translated via Google Translate API)
+  // French meta - matching www.styly.io format with French translation
   const metaFr = {
-    title: "STYLY - Plateforme #1 d'IA pour la décoration intérieure et extérieure | Outil de visualisation immobilière",
+    title: "Design de Chambre IA & Outil de Design Intérieur avec Crédits Gratuits | Styly",
     description: "Transformez des espaces vides en intérieurs époustouflants et photoréalistes en quelques secondes avec STYLY - l'outil de design IA de référence. Téléchargez des photos via le web, mobile ou WhatsApp. Aucune compétence technique requise. Approuvé par plus de 20 000 professionnels de l'immobilier, designers d'intérieur et propriétaires.",
-    keywords: "application IA design intérieur, logiciel home staging virtuel, outil visualisation immobilière, IA décoration intérieure, design rénovation maison, WhatsApp design intérieur, outil marketing immobilier, visualisation IA, design intérieur sans compétences techniques, design intérieur photoréaliste"
+    keywords: "design chambre IA, outil design intérieur, design intérieur IA gratuit, planificateur chambre IA, home staging virtuel, visualisation immobilière, design maison IA, application design intérieur, concepteur chambre, design maison IA, logiciel design intérieur gratuit, générateur design intérieur IA"
   };
 
   // Structured data for English
@@ -65,9 +75,9 @@ const Index: React.FC = () => {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://styly.io/#webpage",
-        "url": "https://styly.io/",
-        "name": "Styly.io - #1 AI Interior & Exterior Design Platform",
+        "@id": "https://styly.io/en#webpage",
+        "url": "https://styly.io/en",
+        "name": "AI Room Design & Interior Design Tool with Free Credits | Styly",
         "description": "Styly is an AI-powered virtual staging platform serving B2B and B2C markets. Instantly transforms empty interior spaces into realistic, beautifully furnished visuals. Upload a photo or use WhatsApp to create stunning designs with no technical expertise.",
         "isPartOf": {
           "@type": "WebSite",
@@ -94,7 +104,7 @@ const Index: React.FC = () => {
               "@type": "ListItem",
               "position": 1,
               "item": {
-                "@id": "https://styly.io/",
+                "@id": "https://styly.io/en",
                 "name": "Home"
               }
             }
@@ -186,9 +196,9 @@ const Index: React.FC = () => {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://styly.io/#webpage",
+        "@id": "https://styly.io/fr#webpage",
         "url": "https://styly.io/fr",
-        "name": "Styly.io - Plateforme d'IA pour la décoration intérieure et extérieure",
+        "name": "Design de Chambre IA & Outil de Design Intérieur avec Crédits Gratuits | Styly",
         "description": "Styly est une plateforme de home staging virtuel alimentée par l'IA, au service des marchés B2B et B2C. Elle transforme instantanément les espaces intérieurs vides en visuels réalistes et magnifiquement meublés. Téléchargez une photo ou utilisez WhatsApp pour créer des designs époustouflants sans expertise technique.",
         "isPartOf": {
           "@type": "WebSite",
@@ -305,12 +315,15 @@ const Index: React.FC = () => {
   const seoMeta = language === "fr" || location.pathname.startsWith("/fr") ? metaFr : meta;
   const seoStructuredData = language === "fr" || location.pathname.startsWith("/fr") ? structuredDataFr : structuredData;
 
-  // Generate language-specific URLs for hreflang
+  // Generate language-specific URLs for hreflang and self-canonical
   const currentUrl = language === "fr" ? "https://styly.io/fr" : "https://styly.io/en";
   const alternateUrls = {
     en: "https://styly.io/en",
     fr: "https://styly.io/fr"
   };
+
+  // Self-canonical URL (points to current page)
+  const canonicalUrl = currentUrl;
 
   return (
     <div className="bg-white flex flex-col w-full min-h-screen  " key={`index-${language}`}>
@@ -319,7 +332,7 @@ const Index: React.FC = () => {
         description={seoMeta.description}
         keywords={seoMeta.keywords}
         structuredData={seoStructuredData}
-        ogUrl={currentUrl}
+        ogUrl={canonicalUrl}
         language={language}
         alternateUrls={alternateUrls}
       />

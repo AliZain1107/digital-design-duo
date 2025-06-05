@@ -10,13 +10,13 @@ const AISpacePlanningSmallApartments: React.FC = () => {
       title: "Leveraging AI to Optimize Space Planning in Small Apartments",
       description: "Discover how AI revolutionizes small apartment design. Learn to maximize space with STYLY.io's AI room planner and create functional, stylish small spaces.",
       keywords: "AI space planning, small apartment design, AI room planner, space optimization, small space design, apartment AI design, STYLY.io apartments",
-      ogImage: "/ai-space-planning-apartments-hero.webp"
+      ogImage: "/small-apartment-space-planning-modern.webp"
     },
     fr: {
       title: "Exploiter l'IA pour Optimiser la Planification d'Espace dans les Petits Appartements",
       description: "Découvrez comment l'IA révolutionne le design de petits appartements. Apprenez à maximiser l'espace avec le planificateur de pièce IA de STYLY.io.",
       keywords: "planification espace IA, design petit appartement, planificateur pièce IA, optimisation espace, design petit espace, design appartement IA, appartements STYLY.io",
-      ogImage: "/ai-space-planning-apartments-hero.webp"
+      ogImage: "/small-apartment-space-planning-modern.webp"
     }
   };
 
@@ -195,7 +195,7 @@ const AISpacePlanningSmallApartments: React.FC = () => {
                     {" "}pour commencer votre projet
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-blue-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Astuce d'Expert :</strong> Selon{" "}
@@ -367,7 +367,7 @@ const AISpacePlanningSmallApartments: React.FC = () => {
                     {" "}to start your project
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-blue-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Expert Tip:</strong> According to{" "}

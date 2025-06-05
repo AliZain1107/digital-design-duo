@@ -1,4 +1,5 @@
 import React from "react";
+import { useLanguage } from "@/lib/i18n";
 
 const images = [
   "https://via.placeholder.com/400x300?text=Case+1",
@@ -7,6 +8,8 @@ const images = [
 ];
 
 const CaseStudyImages: React.FC = () => {
+  const { language } = useLanguage();
+
   return (
     <section className="w-full flex flex-col items-center py-12">
       <div className="flex flex-row flex-wrap justify-center gap-8 w-full max-w-6xl">
@@ -14,7 +17,10 @@ const CaseStudyImages: React.FC = () => {
           <div key={idx} className="rounded-2xl overflow-hidden shadow bg-white flex items-center justify-center w-[350px] h-[260px]">
             <img
               src={src}
-              alt={`Case Study ${idx + 1}`}
+              alt={language === "fr"
+                ? `Étude de cas ${idx + 1} - Design chambre IA et générateur design intérieur IA avec home staging virtuel`
+                : `Case Study ${idx + 1} - AI room design and interior design AI generator with virtual staging`
+              }
               className="w-full h-full object-cover"
             />
           </div>

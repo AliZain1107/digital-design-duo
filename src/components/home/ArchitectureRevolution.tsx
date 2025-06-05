@@ -1,25 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ShowcaseScroll from "./ShowcaseScroll";
 import { useLanguage } from "@/lib/i18n";
 
 const ArchitectureRevolution: React.FC = () => {
-  const { t, language } = useLanguage();
-
-  // Add debug logging
-  console.log("ArchitectureRevolution rendering with language:", language);
-  console.log("ArchitectureRevolution translations:", {
-    architectureRevolution: t.architectureRevolution,
-    homeDesignByAI: t.homeDesignByAI,
-  });
+  const { t } = useLanguage();
 
   // Ensure translation exists or fallback
   const architectureRevolutionText = t.architectureRevolution || "Default Architecture Revolution Text";
   const homeDesignByAIText = t.homeDesignByAI || "Default Home Design by AI Text";
-
-  // Add effect to log when language changes
-  useEffect(() => {
-    console.log("ArchitectureRevolution language changed to:", language);
-  }, [language]);
 
   return (
     <section className="bg-gradient-to-b from-white to-gray-100 w-full py-28 overflow-hidden">

@@ -21,6 +21,19 @@ import AILandscapeDesign from "@/blogPages/AILandscapeDesign";
 import CulturalDesignAI from "@/blogPages/CulturalDesignAI";
 import TextureImportanceDesign from "@/blogPages/TextureImportanceDesign";
 import SustainableLandscapesAI from "@/blogPages/SustainableLandscapesAI";
+import Top5ChallengesInteriorDesign from "@/blogPages/Top5ChallengesInteriorDesign";
+import CommercialInteriorDesignAI from "@/blogPages/CommercialInteriorDesignAI";
+import CreatingOutdoorSpacesAI from "@/blogPages/CreatingOutdoorSpacesAI";
+import CostEffectivenessAIDesign from "@/blogPages/CostEffectivenessAIDesign";
+import TransformingSmallLivingSpaces from "@/blogPages/TransformingSmallLivingSpaces";
+import AIDrivenCustomizationFuture from "@/blogPages/AIDrivenCustomizationFuture";
+import ResidentialInteriorDesignGuide from "@/blogPages/ResidentialInteriorDesignGuide";
+import FuturisticInteriorDesignStyles from "@/blogPages/FuturisticInteriorDesignStyles";
+import RoomPlannerAISarahJohnsonEvaluations from "@/blogPages/RoomPlannerAISarahJohnsonEvaluations";
+import InnovativeStairRailingIdeas from "@/blogPages/InnovativeStairRailingIdeas";
+import DesignLivingRoomLikePro from "@/blogPages/DesignLivingRoomLikePro";
+import AIAssistantInteriorDesignPrompts from "@/blogPages/AIAssistantInteriorDesignPrompts";
+import GenerativeAIRevolutionizingDesign from "@/blogPages/GenerativeAIRevolutionizingDesign";
 
 export interface BlogPost {
   id: number;
@@ -91,7 +104,7 @@ export const blogPosts: BlogPost[] = [
     id: 7,
     title: "Leveraging AI to Optimize Space Planning in Small Apartments",
     date: "Oct 6, 2024",
-    image: "/ai-space-planning-apartments-hero.webp",
+    image: "/small-apartment-space-planning-modern.webp",
     slug: "ai-space-planning-optimization-small-apartments",
     slugFr: "ia-optimisation-planification-espace-petits-appartements",
     Component: AISpacePlanningSmallApartments,
@@ -100,7 +113,7 @@ export const blogPosts: BlogPost[] = [
     id: 8,
     title: "Creating Biophilic Interior Designs with Styly AI",
     date: "Oct 2, 2024",
-    image: "/biophilic-design-ai-hero.webp",
+    image: "/biophilic-design-plants-natural-interior.webp",
     slug: "creating-biophilic-interior-designs-styly-ai",
     slugFr: "creation-designs-interieur-biophiliques-ia-styly",
     Component: BiophilicDesignAI,
@@ -127,7 +140,7 @@ export const blogPosts: BlogPost[] = [
     id: 11,
     title: "AI in Landscape Design: Creating Beautiful Outdoor Spaces with Styly",
     date: "Sep 27, 2024",
-    image: "/ai-landscape-design-hero.webp",
+    image: "/landscape-design-outdoor-garden-modern.webp",
     slug: "ai-landscape-design-outdoor-spaces-styly",
     slugFr: "ia-design-paysager-espaces-exterieurs-styly",
     Component: AILandscapeDesign,
@@ -136,7 +149,7 @@ export const blogPosts: BlogPost[] = [
     id: 12,
     title: "Interior Designing for Different Cultures: Leveraging AI for Culturally Sensitive Spaces",
     date: "Sep 21, 2024",
-    image: "/cultural-design-ai-hero.webp",
+    image: "/cultural-design-multicultural-interior.webp",
     slug: "cultural-interior-design-ai-sensitive-spaces",
     slugFr: "design-interieur-cultures-ia-espaces-sensibles",
     Component: CulturalDesignAI,
@@ -145,7 +158,7 @@ export const blogPosts: BlogPost[] = [
     id: 13,
     title: "The Importance of Texture in Interior Design: How Styly Can Help",
     date: "Sep 19, 2024",
-    image: "/texture-importance-design-hero.webp",
+    image: "/texture-materials-interior-design-wood.webp",
     slug: "texture-importance-interior-design-styly",
     slugFr: "importance-texture-design-interieur-styly",
     Component: TextureImportanceDesign,
@@ -246,5 +259,122 @@ export const blogPosts: BlogPost[] = [
     slug: "AI-Interior",
     slugFr: "10-conseils-experts-economiser-interieurs-maison",
     Component: AIInterior,
+  },
+  {
+    id: 24,
+    title: "Top 5 Challenges in Interior Design and How AI Can Solve Them",
+    date: "Sep 13, 2024",
+    image: "/top-5-challenges-interior-design-ai.webp",
+    slug: "top-5-challenges-interior-design-ai-solutions",
+    slugFr: "top-5-defis-design-interieur-solutions-ia",
+    Component: Top5ChallengesInteriorDesign,
+  },
+  {
+    id: 25,
+    title: "How AI is Shaping the Future of Commercial Interior Design",
+    date: "Sep 5, 2024",
+    image: "/commercial-interior-design-ai-future.webp",
+    slug: "ai-future-commercial-interior-design",
+    slugFr: "ia-avenir-design-interieur-commercial",
+    Component: CommercialInteriorDesignAI,
+  },
+  {
+    id: 26,
+    title: "Creating Outdoor Spaces with AI: A Guide to Designing Stunning Exteriors",
+    date: "Aug 30, 2024",
+    image: "/creating-outdoor-spaces-ai-design.webp",
+    slug: "creating-outdoor-spaces-ai-design-guide",
+    slugFr: "creer-espaces-exterieurs-ia-guide-design",
+    Component: CreatingOutdoorSpacesAI,
+  },
+  {
+    id: 27,
+    title: "The Cost-Effectiveness of AI in Design: How Styly Saves You Money",
+    date: "Aug 26, 2024",
+    image: "/cost-effectiveness-ai-design-savings.webp",
+    slug: "cost-effectiveness-ai-design-styly-savings",
+    slugFr: "rentabilite-ia-design-economies-styly",
+    Component: CostEffectivenessAIDesign,
+  },
+  {
+    id: 28,
+    title: "Transforming Small Living Spaces: Interior Design Solutions for Compact Homes",
+    date: "Aug 3, 2024",
+    image: "/transforming-small-living-spaces-compact.webp",
+    slug: "transforming-small-living-spaces-design-solutions",
+    slugFr: "transformer-petits-espaces-vie-solutions-design",
+    Component: TransformingSmallLivingSpaces,
+  },
+  {
+    id: 29,
+    title: "Why AI-Driven Customization is the Future of Interior Design",
+    date: "Aug 20, 2024",
+    image: "/ai-driven-customization-future-interior-design.webp",
+    slug: "ai-driven-customization-future-interior-design",
+    slugFr: "personnalisation-ia-avenir-design-interieur",
+    Component: AIDrivenCustomizationFuture,
+  },
+  {
+    id: 30,
+    title: "Residential Interior Design: A Guide to Planning Spaces with Styly",
+    date: "Aug 14, 2024",
+    image: "/residential-interior-design-guide-planning.webp",
+    slug: "residential-interior-design-guide-planning-spaces",
+    slugFr: "guide-design-interieur-residentiel-planification-espaces",
+    Component: ResidentialInteriorDesignGuide,
+  },
+  {
+    id: 31,
+    title: "Futuristic Interior Design Styles: How Styly AI Shapes Tomorrow's Homes Today",
+    date: "Jul 27, 2024",
+    image: "/futuristic-interior-design-styles-styly-ai.webp",
+    slug: "futuristic-interior-design-styles-styly-ai",
+    slugFr: "styles-design-interieur-futuriste-ia-styly",
+    Component: FuturisticInteriorDesignStyles,
+  },
+  {
+    id: 32,
+    title: "The Good, The Bad, and The Room Planner AI: Sarah Johnson's Honest Styly.io Evaluations",
+    date: "Jul 25, 2024",
+    image: "/room-planner-ai-sarah-johnson-evaluations.webp",
+    slug: "room-planner-ai-sarah-johnson-styly-evaluations",
+    slugFr: "planificateur-chambre-ia-evaluations-sarah-johnson-styly",
+    Component: RoomPlannerAISarahJohnsonEvaluations,
+  },
+  {
+    id: 33,
+    title: "Innovative Interior Stair Railing Ideas: Custom Designs Powered by Styly AI",
+    date: "Jul 22, 2024",
+    image: "/innovative-stair-railing-ideas-styly-ai.webp",
+    slug: "innovative-interior-stair-railing-ideas-styly-ai",
+    slugFr: "idees-rampes-escalier-interieur-innovantes-ia-styly",
+    Component: InnovativeStairRailingIdeas,
+  },
+  {
+    id: 34,
+    title: "Design Your Living Room Like a Pro with Styly",
+    date: "Jul 19, 2024",
+    image: "/design-living-room-like-pro-styly.webp",
+    slug: "design-living-room-like-pro-styly",
+    slugFr: "concevoir-salon-comme-professionnel-styly",
+    Component: DesignLivingRoomLikePro,
+  },
+  {
+    id: 35,
+    title: "How Generative AI is Revolutionizing Interior Design?",
+    date: "Jun 23, 2024",
+    image: "/ai-room-decorator.webp",
+    slug: "how-generative-ai-revolutionizing-interior-design",
+    slugFr: "comment-ia-generative-revolutionne-design-interieur",
+    Component: GenerativeAIRevolutionizingDesign,
+  },
+  {
+    id: 36,
+    title: "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral",
+    date: "May 12, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "ai-assistant-interior-design-chatgpt-prompts",
+    slugFr: "assistant-ia-design-interieur-prompts-chatgpt",
+    Component: AIAssistantInteriorDesignPrompts,
   },
 ];

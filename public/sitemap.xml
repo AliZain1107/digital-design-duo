@@ -4,97 +4,765 @@
       xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
       xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Main Pages -->
   <url>
     <loc>https://styly.io/</loc>
-    <lastmod>2024-08-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/"/>
     <image:image>
-      <image:loc>https://styly.io/hero-image.png</image:loc>
+      <image:loc>https://styly.io/aiinterior.png</image:loc>
       <image:title>STYLY - AI-Powered Interior Design Platform</image:title>
       <image:caption>Transform empty spaces into beautifully furnished interiors with AI</image:caption>
     </image:image>
-    <image:image>
-      <image:loc>https://styly.io/aiinterior.png</image:loc>
-      <image:title>#1 AI Interior Design App Award</image:title>
-      <image:caption>STYLY awarded as the #1 AI Interior Design App of 2024</image:caption>
-    </image:image>
   </url>
-  
+
+  <url>
+    <loc>https://styly.io/en</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/"/>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/"/>
+  </url>
+
+  <!-- Core Application Pages -->
   <url>
     <loc>https://styly.io/upload</loc>
-    <lastmod>2024-08-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <mobile:mobile/>
-    <image:image>
-      <image:loc>https://styly.io/upload-interface.png</image:loc>
-      <image:title>STYLY Upload Interface</image:title>
-      <image:caption>Easy-to-use interface for uploading your space photos</image:caption>
-    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/upload"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/upload"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/upload"/>
   </url>
 
   <url>
     <loc>https://styly.io/pricing</loc>
-    <lastmod>2024-08-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-  </url>
-
-  <url>
-    <loc>https://styly.io/blog</loc>
-    <lastmod>2024-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/pricing"/>
   </url>
 
   <url>
     <loc>https://styly.io/get-started</loc>
-    <lastmod>2024-08-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <image:image>
-      <image:loc>https://styly.io/get-started-guide.png</image:loc>
-      <image:title>Getting Started with STYLY</image:title>
-      <image:caption>Step-by-step guide to using STYLY's AI interior design features</image:caption>
-    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/get-started"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/get-started"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/get-started"/>
   </url>
 
   <url>
     <loc>https://styly.io/video-guide</loc>
-    <lastmod>2024-08-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile/>
-    <video:video>
-      <video:thumbnail_loc>https://styly.io/video-thumbnail.jpg</video:thumbnail_loc>
-      <video:title>How to Design Spaces with STYLY AI</video:title>
-      <video:description>Watch this step-by-step video guide on how to transform any space using STYLY's AI design tools</video:description>
-      <video:content_loc>https://styly.io/videos/tutorial.mp4</video:content_loc>
-      <video:duration>180</video:duration>
-    </video:video>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/video-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/video-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/video-guide"/>
+  </url>
+
+  <!-- Blog Index Pages -->
+  <url>
+    <loc>https://styly.io/blog</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/blog"/>
   </url>
 
   <url>
+    <loc>https://styly.io/en/blog</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/blog"/>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/blog"/>
+  </url>
+
+  <!-- Blog Posts - Latest First -->
+  <!-- How Generative AI is Revolutionizing Interior Design -->
+  <url>
+    <loc>https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-room-decorator.webp</image:loc>
+      <image:title>How Generative AI is Revolutionizing Interior Design</image:title>
+      <image:caption>Discover how generative AI transforms interior design with revolutionary tools</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/comment-ia-generative-revolutionne-design-interieur</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-room-decorator.webp</image:loc>
+      <image:title>Comment l'IA Générative Révolutionne le Design Intérieur</image:title>
+      <image:caption>Découvrez comment l'IA générative transforme le design intérieur avec des outils révolutionnaires</image:caption>
+    </image:image>
+  </url>
+
+  <!-- AI Assistant in Interior Design - Best Prompts -->
+  <url>
+    <loc>https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-technology.webp</image:loc>
+      <image:title>AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral</image:title>
+      <image:caption>Best prompts for using AI assistants in interior design projects</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/assistant-ia-design-interieur-prompts-chatgpt</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-technology.webp</image:loc>
+      <image:title>Assistant IA en Design Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral</image:title>
+      <image:caption>Meilleurs prompts pour utiliser les assistants IA dans les projets de design intérieur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 10 Expert Tips to Save Big on Home Interiors in 2025 -->
+  <url>
+    <loc>https://styly.io/en/blog/10-expert-tips-save-big-home-interiors-2025</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/10-expert-tips-save-big-home-interiors-2025"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/10-conseils-experts-economiser-decoration-interieure-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/10-expert-tips-save-big-home-interiors-2025"/>
+    <image:image>
+      <image:loc>https://styly.io/expert-tips-save-big-home-interiors-hero.webp</image:loc>
+      <image:title>10 Expert Tips to Save Big on Home Interiors in 2025</image:title>
+      <image:caption>Budget-friendly interior design tips using AI tools</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/10-conseils-experts-economiser-decoration-interieure-2025</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/10-expert-tips-save-big-home-interiors-2025"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/10-conseils-experts-economiser-decoration-interieure-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/10-expert-tips-save-big-home-interiors-2025"/>
+    <image:image>
+      <image:loc>https://styly.io/expert-tips-save-big-home-interiors-hero.webp</image:loc>
+      <image:title>10 Conseils d'Experts pour Économiser sur la Décoration Intérieure en 2025</image:title>
+      <image:caption>Conseils de décoration intérieure économiques avec des outils IA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 6 Viral AI Room Design Prompts -->
+  <url>
+    <loc>https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/6-prompts-viraux-design-chambre-ia-styly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly"/>
+    <image:image>
+      <image:loc>https://styly.io/viral-ai-room-design-prompts-hero.webp</image:loc>
+      <image:title>6 Viral AI Room Design Prompts: Create Your Dream Bedroom</image:title>
+      <image:caption>Viral AI prompts for stunning bedroom designs</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/6-prompts-viraux-design-chambre-ia-styly</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/6-prompts-viraux-design-chambre-ia-styly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly"/>
+    <image:image>
+      <image:loc>https://styly.io/viral-ai-room-design-prompts-hero.webp</image:loc>
+      <image:title>6 Prompts Viraux de Design de Chambre IA</image:title>
+      <image:caption>Prompts IA viraux pour des designs de chambre époustouflants</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 2025 Interior Design Trends -->
+  <url>
+    <loc>https://styly.io/en/blog/2025-interior-design-trends</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/2025-interior-design-trends"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/tendances-design-interieur-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/2025-interior-design-trends"/>
+    <image:image>
+      <image:loc>https://styly.io/2025-interior-design-trends-hero.webp</image:loc>
+      <image:title>2025 Interior Design Trends: What's In and What's Out</image:title>
+      <image:caption>Latest interior design trends for 2025</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/tendances-design-interieur-2025</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/2025-interior-design-trends"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/tendances-design-interieur-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/2025-interior-design-trends"/>
+    <image:image>
+      <image:loc>https://styly.io/2025-interior-design-trends-hero.webp</image:loc>
+      <image:title>Tendances Design d'Intérieur 2025 : Ce qui est Tendance</image:title>
+      <image:caption>Dernières tendances de design d'intérieur pour 2025</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Free AI Interior Design Software -->
+  <url>
+    <loc>https://styly.io/en/blog/free-ai-interior-design-software</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/free-ai-interior-design-software"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/logiciel-gratuit-design-interieur-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/free-ai-interior-design-software"/>
+    <image:image>
+      <image:loc>https://styly.io/free-ai-interior-design-hero.webp</image:loc>
+      <image:title>Free AI Interior Design Software - Transform Your Space</image:title>
+      <image:caption>Free AI tools for interior design transformation</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/logiciel-gratuit-design-interieur-ia</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/free-ai-interior-design-software"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/logiciel-gratuit-design-interieur-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/free-ai-interior-design-software"/>
+    <image:image>
+      <image:loc>https://styly.io/free-ai-interior-design-hero.webp</image:loc>
+      <image:title>Logiciel Gratuit de Design d'Intérieur IA - Transformez Votre Espace</image:title>
+      <image:caption>Outils IA gratuits pour la transformation de design d'intérieur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Need Luxury Bathroom on a Budget -->
+  <url>
+    <loc>https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips</loc>
+    <lastmod>2024-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/salle-bain-luxe-budget-conseils-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips"/>
+    <image:image>
+      <image:loc>https://styly.io/luxury-bathroom-budget-ai-hero.webp</image:loc>
+      <image:title>Need Luxury Bathroom on a Budget? Here's How!</image:title>
+      <image:caption>Create luxury bathroom designs on a budget with AI</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/salle-bain-luxe-budget-conseils-ia</loc>
+    <lastmod>2024-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/salle-bain-luxe-budget-conseils-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips"/>
+    <image:image>
+      <image:loc>https://styly.io/luxury-bathroom-budget-ai-hero.webp</image:loc>
+      <image:title>Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !</image:title>
+      <image:caption>Créer des designs de salle de bain luxueux avec un budget grâce à l'IA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- The Impact of AI on the Role of the Interior Designer -->
+  <url>
+    <loc>https://styly.io/en/blog/impact-ai-role-interior-designer</loc>
+    <lastmod>2024-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/impact-ai-role-interior-designer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/impact-ia-role-designer-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/impact-ai-role-interior-designer"/>
+    <image:image>
+      <image:loc>https://styly.io/impact-ai-interior-designer-hero.webp</image:loc>
+      <image:title>The Impact of AI on the Role of the Interior Designer</image:title>
+      <image:caption>How AI is transforming the interior design profession</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/impact-ia-role-designer-interieur</loc>
+    <lastmod>2024-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/impact-ai-role-interior-designer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/impact-ia-role-designer-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/impact-ai-role-interior-designer"/>
+    <image:image>
+      <image:loc>https://styly.io/impact-ai-interior-designer-hero.webp</image:loc>
+      <image:title>L'Impact de l'IA sur le Rôle du Designer d'Intérieur</image:title>
+      <image:caption>Comment l'IA transforme la profession de designer d'intérieur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- AI & Interior Design: Revolution or Replacement -->
+  <url>
+    <loc>https://styly.io/en/blog/ai-interior-design-revolution-or-replacement</loc>
+    <lastmod>2024-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-interior-design-revolution-or-replacement"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/ia-design-interieur-revolution-ou-remplacement"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-interior-design-revolution-or-replacement"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-revolution-replacement.webp</image:loc>
+      <image:title>AI & Interior Design: Revolution or Replacement?</image:title>
+      <image:caption>Exploring AI's impact on interior design profession</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/ia-design-interieur-revolution-ou-remplacement</loc>
+    <lastmod>2024-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-interior-design-revolution-or-replacement"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/ia-design-interieur-revolution-ou-remplacement"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-interior-design-revolution-or-replacement"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-revolution-replacement.webp</image:loc>
+      <image:title>IA & Design Intérieur : Révolution ou Remplacement ?</image:title>
+      <image:caption>Explorer l'impact de l'IA sur la profession de design d'intérieur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Transforming Small Living Spaces -->
+  <url>
+    <loc>https://styly.io/en/blog/transforming-small-living-spaces-design-solutions</loc>
+    <lastmod>2024-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/transforming-small-living-spaces-design-solutions"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/transformer-petits-espaces-vie-solutions-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/transforming-small-living-spaces-design-solutions"/>
+    <image:image>
+      <image:loc>https://styly.io/transforming-small-living-spaces-compact.webp</image:loc>
+      <image:title>Transforming Small Living Spaces: Interior Design Solutions</image:title>
+      <image:caption>Smart design solutions for compact homes and apartments</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/transformer-petits-espaces-vie-solutions-design</loc>
+    <lastmod>2024-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/transforming-small-living-spaces-design-solutions"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/transformer-petits-espaces-vie-solutions-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/transforming-small-living-spaces-design-solutions"/>
+    <image:image>
+      <image:loc>https://styly.io/transforming-small-living-spaces-compact.webp</image:loc>
+      <image:title>Transformer les Petits Espaces de Vie : Solutions de Design</image:title>
+      <image:caption>Solutions de design intelligentes pour maisons et appartements compacts</image:caption>
+    </image:image>
+  </url>
+
+  <!-- The Intersection of AI and Virtual Reality in Design -->
+  <url>
+    <loc>https://styly.io/en/blog/intersection-ai-virtual-reality-design</loc>
+    <lastmod>2024-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/intersection-ai-virtual-reality-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/intersection-ia-realite-virtuelle-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/intersection-ai-virtual-reality-design"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-virtual-reality-design-hero.webp</image:loc>
+      <image:title>The Intersection of AI and Virtual Reality in Design</image:title>
+      <image:caption>Future of design with AI and VR technology</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/intersection-ia-realite-virtuelle-design</loc>
+    <lastmod>2024-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/intersection-ai-virtual-reality-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/intersection-ia-realite-virtuelle-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/intersection-ai-virtual-reality-design"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-virtual-reality-design-hero.webp</image:loc>
+      <image:title>L'Intersection de l'IA et de la Réalité Virtuelle en Design</image:title>
+      <image:caption>L'avenir du design avec la technologie IA et VR</image:caption>
+    </image:image>
+  </url>
+
+  <!-- AI in Accessible Design -->
+  <url>
+    <loc>https://styly.io/en/blog/ai-accessible-design-inclusive-spaces</loc>
+    <lastmod>2024-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-accessible-design-inclusive-spaces"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/ia-design-accessible-espaces-inclusifs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-accessible-design-inclusive-spaces"/>
+    <image:image>
+      <image:loc>https://styly.io/accessible-design-modern-wheelchair-interior.webp</image:loc>
+      <image:title>AI in Accessible Design: Creating Inclusive Spaces</image:title>
+      <image:caption>Creating accessible and inclusive interior designs with AI</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/ia-design-accessible-espaces-inclusifs</loc>
+    <lastmod>2024-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-accessible-design-inclusive-spaces"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/ia-design-accessible-espaces-inclusifs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-accessible-design-inclusive-spaces"/>
+    <image:image>
+      <image:loc>https://styly.io/accessible-design-modern-wheelchair-interior.webp</image:loc>
+      <image:title>L'IA dans le Design Accessible : Créer des Espaces Inclusifs</image:title>
+      <image:caption>Créer des designs d'intérieur accessibles et inclusifs avec l'IA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- The Role of Data in AI-Powered Design -->
+  <url>
+    <loc>https://styly.io/en/blog/role-data-ai-powered-design</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/role-data-ai-powered-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/role-donnees-design-alimente-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/role-data-ai-powered-design"/>
+    <image:image>
+      <image:loc>https://styly.io/data-analytics-interior-design-dashboard.webp</image:loc>
+      <image:title>The Role of Data in AI-Powered Design</image:title>
+      <image:caption>How data insights drive better interior design aesthetics</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/role-donnees-design-alimente-ia</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/role-data-ai-powered-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/role-donnees-design-alimente-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/role-data-ai-powered-design"/>
+    <image:image>
+      <image:loc>https://styly.io/data-analytics-interior-design-dashboard.webp</image:loc>
+      <image:title>Le Rôle des Données dans le Design Alimenté par l'IA</image:title>
+      <image:caption>Comment les insights de données améliorent l'esthétique du design d'intérieur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Designing for the Modern Family -->
+  <url>
+    <loc>https://styly.io/en/blog/modern-family-design-ai-functional-homes</loc>
+    <lastmod>2024-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/modern-family-design-ai-functional-homes"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/design-famille-moderne-ia-maisons-fonctionnelles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/modern-family-design-ai-functional-homes"/>
+    <image:image>
+      <image:loc>https://styly.io/modern-family-home-functional-stylish.webp</image:loc>
+      <image:title>Designing for the Modern Family: Using AI to Create Functional Homes</image:title>
+      <image:caption>AI-powered design solutions for modern family living</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/design-famille-moderne-ia-maisons-fonctionnelles</loc>
+    <lastmod>2024-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/modern-family-design-ai-functional-homes"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/design-famille-moderne-ia-maisons-fonctionnelles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/modern-family-design-ai-functional-homes"/>
+    <image:image>
+      <image:loc>https://styly.io/modern-family-home-functional-stylish.webp</image:loc>
+      <image:title>Design pour la Famille Moderne : Utiliser l'IA pour Créer des Maisons Fonctionnelles</image:title>
+      <image:caption>Solutions de design alimentées par l'IA pour la vie familiale moderne</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Designing for Sustainability -->
+  <url>
+    <loc>https://styly.io/en/blog/sustainable-design-ai-eco-friendly-spaces</loc>
+    <lastmod>2024-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/sustainable-design-ai-eco-friendly-spaces"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/design-durabilite-ia-espaces-eco-responsables"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/sustainable-design-ai-eco-friendly-spaces"/>
+    <image:image>
+      <image:loc>https://styly.io/sustainable-eco-friendly-interior-design.webp</image:loc>
+      <image:title>Designing for Sustainability: Using AI to Create Eco-Friendly Spaces</image:title>
+      <image:caption>Sustainable interior design solutions powered by AI</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/design-durabilite-ia-espaces-eco-responsables</loc>
+    <lastmod>2024-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/sustainable-design-ai-eco-friendly-spaces"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/design-durabilite-ia-espaces-eco-responsables"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/sustainable-design-ai-eco-friendly-spaces"/>
+    <image:image>
+      <image:loc>https://styly.io/sustainable-eco-friendly-interior-design.webp</image:loc>
+      <image:title>Design pour la Durabilité : Utiliser l'IA pour Créer des Espaces Éco-Responsables</image:title>
+      <image:caption>Solutions de design d'intérieur durables alimentées par l'IA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- The Science of Color in Design -->
+  <url>
+    <loc>https://styly.io/en/blog/science-color-design-ai-perfect-palette</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/science-color-design-ai-perfect-palette"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/science-couleur-design-ia-palette-parfaite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/science-color-design-ai-perfect-palette"/>
+    <image:image>
+      <image:loc>https://styly.io/color-theory-palette-interior-design.webp</image:loc>
+      <image:title>The Science of Color in Design: How AI Helps You Choose the Perfect Palette</image:title>
+      <image:caption>AI-powered color theory and palette selection for interior design</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/science-couleur-design-ia-palette-parfaite</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/science-color-design-ai-perfect-palette"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/science-couleur-design-ia-palette-parfaite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/science-color-design-ai-perfect-palette"/>
+    <image:image>
+      <image:loc>https://styly.io/color-theory-palette-interior-design.webp</image:loc>
+      <image:title>La Science de la Couleur en Design : Comment l'IA Vous Aide à Choisir la Palette Parfaite</image:title>
+      <image:caption>Théorie des couleurs et sélection de palette alimentées par l'IA pour le design d'intérieur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Reducing Carbon Footprints: Sustainable Landscapes -->
+  <url>
+    <loc>https://styly.io/en/blog/reducing-carbon-footprints-sustainable-landscapes-ai</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/reducing-carbon-footprints-sustainable-landscapes-ai"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/reduire-empreinte-carbone-paysages-durables-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/reducing-carbon-footprints-sustainable-landscapes-ai"/>
+    <image:image>
+      <image:loc>https://styly.io/sustainable-landscape-garden-eco-design.webp</image:loc>
+      <image:title>Reducing Carbon Footprints: Sustainable Landscapes with Styly AI</image:title>
+      <image:caption>Eco-friendly landscape design solutions with AI technology</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/reduire-empreinte-carbone-paysages-durables-ia</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/reducing-carbon-footprints-sustainable-landscapes-ai"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/reduire-empreinte-carbone-paysages-durables-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/reducing-carbon-footprints-sustainable-landscapes-ai"/>
+    <image:image>
+      <image:loc>https://styly.io/sustainable-landscape-garden-eco-design.webp</image:loc>
+      <image:title>Réduire l'Empreinte Carbone : Paysages Durables avec l'IA Styly</image:title>
+      <image:caption>Solutions de design paysager éco-responsables avec la technologie IA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Leveraging AI to Optimize Space Planning -->
+  <url>
+    <loc>https://styly.io/en/blog/ai-space-planning-optimization-small-apartments</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-space-planning-optimization-small-apartments"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/ia-optimisation-planification-espace-petits-appartements"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-space-planning-optimization-small-apartments"/>
+    <image:image>
+      <image:loc>https://styly.io/small-apartment-space-planning-modern.webp</image:loc>
+      <image:title>Leveraging AI to Optimize Space Planning in Small Apartments</image:title>
+      <image:caption>Smart space planning solutions for small apartments using AI</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/ia-optimisation-planification-espace-petits-appartements</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-space-planning-optimization-small-apartments"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/ia-optimisation-planification-espace-petits-appartements"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-space-planning-optimization-small-apartments"/>
+    <image:image>
+      <image:loc>https://styly.io/small-apartment-space-planning-modern.webp</image:loc>
+      <image:title>Exploiter l'IA pour Optimiser la Planification d'Espace dans les Petits Appartements</image:title>
+      <image:caption>Solutions intelligentes de planification d'espace pour petits appartements utilisant l'IA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
     <loc>https://styly.io/terms</loc>
-    <lastmod>2024-08-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/conditions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/terms"/>
   </url>
 
   <url>
     <loc>https://styly.io/privacy</loc>
-    <lastmod>2024-08-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/privacy"/>
   </url>
-</urlset> 
+
+  <url>
+    <loc>https://styly.io/fr/conditions</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/conditions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/terms"/>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/confidentialite</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/privacy"/>
+  </url>
+</urlset>

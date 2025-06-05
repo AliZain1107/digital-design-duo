@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
 
 const Hero: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   
   // Structured data specifically for the hero section 
   const heroStructuredData = {
@@ -95,12 +95,18 @@ const Hero: React.FC = () => {
 
           {/* Award badge - Using the aiinterior.png image with optimizations */}
           <div className="mb-7 sm:mb-8 md:mb-10 flex justify-center transform hover:scale-110 transition-transform duration-500">
-            <img 
-              src="/aiinterior.png" 
-              alt="STYLY awarded #1 AI Interior Design App of 2024 - Top-rated virtual staging solution for real estate and interior design professionals"
-              title="STYLY - #1 AI Interior Design App of 2024"
+            <img
+              src="/aiinterior.png"
+              alt={language === "fr"
+                ? "STYLY récompensé #1 Application Design Intérieur IA 2024 - Logiciel design intérieur gratuit et planificateur chambre IA pour professionnels immobilier"
+                : "STYLY awarded #1 AI Interior Design App 2024 - Free interior design software and AI room planner for real estate professionals"
+              }
+              title={language === "fr"
+                ? "STYLY - #1 Application Design Intérieur IA 2024"
+                : "STYLY - #1 AI Interior Design App of 2024"
+              }
               className="h-20 xs:h-24 md:h-28 w-auto drop-shadow-lg"
-              width="180" 
+              width="180"
               height="128"
               loading="eager"
               decoding="async"

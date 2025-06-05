@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# General Preferences
+- User prefers to maintain existing code structure and styling throughout the application, making only specific requested changes without modifying other components or sections.
+- User prefers to push changes to new branches rather than directly to main branch.
+- User wants debug information panels removed from production components.
+- User prefers to break down large tasks like blog migration into smaller, manageable parts rather than doing everything at once.
+- User prefers a systematic step-by-step approach for blog translation tasks and wants to continue with overall relocation of all remaining blog posts.
+
+# Project Specific
+- User wants to migrate all blog posts from https://www.styly.io/blog to the current React codebase website, creating bilingual (English/French) versions of all remaining blog posts.
+- Footer elements should be linked to app.styly.io
+- When French language is selected, the 'Commencer avec Styly.io' button should link to the French version of https://app.styly.io/ instead of the default English version.
+- The Terms/Conditions page should use specific legal content including company details (ODK, 14 Rue Jean Jaurès, 92800, France), hosting info (AWS/Hostinger), and detailed terms covering free trial, paid plans, no-refund policy, and French law jurisdiction.
+- User prefers French naming conventions for routes (e.g., /confidentialite, /conditions) and wants legal pages to follow the same component structure and styling as Terms.tsx for consistency.
+- User prefers French URLs for blog posts.
+- Blog post migration should follow established patterns: create component in src/blogPages/, extract all content including images to public folder, add French translations to i18n.ts, update App.tsx routing, maintain consistent Tailwind styling and SEO optimization.
+- User prefers to migrate blog posts from external sites to the React codebase, maintaining all redirects and links, following the established pattern of creating bilingual components with French URLs.
+- Cookie consent popups should appear after users scroll down on the page rather than immediately on page load.
+- Landing page should display maximum 4 blog posts, showing only the latest added ones.
+- User prefers minimal horizontal spacing between blog posts on the landing page for a more compact layout.
+- User prefers smaller photos/images on blog pages for better layout and user experience.
+- User prefers blog images to be smaller with 4 images displayed on one line for better layout density.
+- User prefers blog images to display 4 per line when browser zoom is at 90% for optimal layout density.
+- User wants video guide pages to follow the structure and pattern of https://www.styly.io/video when creating new video guide pages.
+- User prefers to remove both video guide and blog links from the header/navbar navigation.
+- User prefers to include social media links at the end of each blog post following the established pattern used in existing posts.
+- User prefers to include keywords when migrating blog posts for SEO optimization purposes.
+- User prefers to migrate blog posts systematically 2 by 2 to ensure everything aligns properly during the migration process.
+- User requires careful attention to French translation quality, especially for blog post titles, to ensure they are properly translated and not just literal conversions.
+
+# Blog SEO Enhancements
+- When creating blog articles, automatically add internal links to related blog posts, 1-2 external references from trusted sources (Elle Décoration, ArchDaily, Houzz, AD Magazine), and CTAs when detecting keywords related to interior design AI, renovation, decoration, specific rooms, or AI tools.
+- For blog SEO enhancements, use these trusted reference sites for external links: Elle Décoration, Architectural Digest, Maison & Travaux, Côté Maison, Houzz, Marie Claire Maison, ArchDaily, Dezeen, Le Moniteur, and Domus - apply the same SEO enhancement structure (internal links, external references, CTAs) to all blog posts.
+- For multilingual SEO, implement distinct URLs for each language (/en/blog/... and /fr/blog/...), add proper hreflang tags, ensure server-side rendering of language-specific pages, and implement the addAlternateLanguageLink function.
+- For SEO optimization, use alt text with relevant keywords for both French and English versions when implementing images on blog pages.
+- User wants to incorporate French keywords in blog content: application d'aménagement intérieur gratuit, logiciel design interieur gratuit, deco interieur logiciel, renover, decorateur d'interieur, decoratrice interieur, renovation maison, construction maison, renover une maison, rénovations, renovation, dessin facile, facile dessin, room planner, meuble house, decoration maison, home stager, ia design intérieur gratuit, amenagement chambre, ia aménagement intérieur gratuit, ia decoration interieur gratuit, ia décoration gratuit, home staging, amenagement exterieur, ia home staging gratuit, home staging ia, simulateur deco interieur a partir d'une photo, ia architecte d'intérieur, simulateur déco avec photo perso gratuit, home staging virtuel, idée couleur chambre, ia architecture gratuit, design interieur, chatgpt architect, ai maison, design maison ia, ai agencement interieur, interior ai, ia déco intérieur, interieur ai, décoration intérieure, ia maison, ia room, ai room planner, logiciel decoration interieur.
+- When creating English blog posts, incorporate these SEO keywords: free home design ai, home design ai free, free ai interior design, free ai interior design app, free ai interior design generator, ai room design ai home design, room designer, room designer free, live home 3d, remodeled ai, interior ai, ai generated interior design, how to virtually stage a home, ai room design free, ai interior design free, ai room decorator, free ai interior design, free ai room design, ai room planner, best interior design ai, free ai home design, ai room design, ai interior design, ai interior design free, interior ai, ai for interior design, best ai home design, free ai room planner, free interior design app, free interior design software, interior design software.

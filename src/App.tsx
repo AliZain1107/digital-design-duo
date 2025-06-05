@@ -13,6 +13,8 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import VideoGuide from "./pages/VideoGuide";
 import CookieBanner from "./components/layout/CookieBanner";
+import EnglishRedirect from "./components/EnglishRedirect";
+import EnglishBlogRedirect from "./components/EnglishBlogRedirect";
 
 import '@fontsource/baloo-2/600.css';
 import '@fontsource/inter/400.css';
@@ -32,28 +34,30 @@ const App = () => (
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/en" element={<Index />} />
               <Route path="/fr" element={<Index />} />
               <Route path="/pricing" element={<NotFound />} />
 
-              {/* Language-specific blog routes */}
-              <Route path="/en/blog" element={<Blog />} />
-              <Route path="/en/blog/:slug" element={<BlogPostPage />} />
+              {/* English blog routes - redirect to external blog */}
+              <Route path="/en/blog" element={<EnglishBlogRedirect />} />
+              <Route path="/en/blog/:slug" element={<EnglishBlogRedirect />} />
+
+              {/* Other English routes - redirect to external site */}
+              <Route path="/en" element={<EnglishRedirect />} />
+              <Route path="/en/*" element={<EnglishRedirect />} />
+
+              {/* French blog routes */}
               <Route path="/fr/blog" element={<Blog />} />
               <Route path="/fr/blog/:slug" element={<BlogPostPage />} />
 
-              {/* Legacy blog routes for backward compatibility */}
+              {/* Legacy blog routes for backward compatibility (French) */}
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPostPage />} />
 
-              {/* Language-specific legal pages */}
-              <Route path="/en/terms" element={<Terms />} />
-              <Route path="/en/privacy" element={<Privacy />} />
+              {/* French legal pages */}
               <Route path="/fr/conditions" element={<Terms />} />
               <Route path="/fr/confidentialite" element={<Privacy />} />
 
-              {/* Language-specific video guide pages */}
-              <Route path="/en/video" element={<VideoGuide />} />
+              {/* French video guide pages */}
               <Route path="/fr/video" element={<VideoGuide />} />
 
               {/* Legacy legal routes for backward compatibility */}

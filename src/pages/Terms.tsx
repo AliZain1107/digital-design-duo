@@ -15,13 +15,21 @@ const Terms: React.FC = () => {
     if (location.pathname.startsWith("/fr/conditions") || location.pathname.startsWith("/fr") || location.pathname === "/conditions") {
       pathLang = "fr";
     } else if (location.pathname.startsWith("/en/terms") || location.pathname.startsWith("/en")) {
-      pathLang = "en";
+      // Redirect English terms routes to external site
+      console.log("English terms route detected, redirecting to external site");
+      window.location.href = "https://www.styly.io/terms";
+      return;
     } else {
-      // Default based on route
-      pathLang = location.pathname === "/conditions" ? "fr" : "en";
+      // Default to French for legacy routes
+      pathLang = "fr";
     }
     setLanguage(pathLang);
   }, [location.pathname, setLanguage]);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const seoMeta = {
     en: {

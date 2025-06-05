@@ -14,13 +14,21 @@ const VideoGuide = () => {
     if (location.pathname.startsWith("/fr/video") || location.pathname.startsWith("/fr")) {
       pathLang = "fr";
     } else if (location.pathname.startsWith("/en/video") || location.pathname.startsWith("/en")) {
-      pathLang = "en";
+      // Redirect English video routes to external site
+      console.log("English video route detected, redirecting to external site");
+      window.location.href = "https://www.styly.io/video";
+      return;
     } else {
       // Default to French for legacy /video routes
       pathLang = "fr";
     }
     setLanguage(pathLang);
   }, [location.pathname, setLanguage]);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Video data
   const videos = [

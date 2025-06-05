@@ -16,18 +16,38 @@ const BlogPostPage: React.FC = () => {
     if (location.pathname.startsWith("/fr/blog") || location.pathname.startsWith("/fr")) {
       pathLang = "fr";
     } else if (location.pathname.startsWith("/en/blog") || location.pathname.startsWith("/en")) {
-      pathLang = "en";
+      // Redirect English blog post routes to external site
+      console.log("English blog post route detected, redirecting to external site");
+      window.location.href = `https://www.styly.io/blog/${slug}`;
+      return;
     } else {
       // For legacy /blog routes, detect language from slug
       const foundPost = blogPosts.find((post) => post.slug === slug || post.slugFr === slug);
       if (foundPost && foundPost.slugFr === slug) {
         pathLang = "fr";
       } else {
-        pathLang = "en";
+        // If it's an English slug, redirect to external site
+        console.log("English blog post slug detected, redirecting to external site");
+        window.location.href = `https://www.styly.io/blog/${slug}`;
+        return;
       }
     }
     setLanguage(pathLang);
   }, [location.pathname, slug, setLanguage]);
+
+  // Additional effect to handle language changes via language switcher
+  useEffect(() => {
+    // If language is switched to English while on blog post page, redirect to external blog
+    if (language === "en") {
+      console.log("Language switched to English on blog post page, redirecting to external blog");
+      window.location.href = `https://www.styly.io/blog/${slug}`;
+    }
+  }, [language, slug]);
+
+  // Scroll to top when component mounts or slug changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   // Find the blog post by slug (check both English and French slugs)
   const post = blogPosts.find((post) =>
@@ -69,6 +89,78 @@ const BlogPostPage: React.FC = () => {
     }
     if (post.slug === "6-viral-ai-room-design-prompts-create-dream-bedroom-styly") {
       return t.viralAIRoomDesignPromptsTitle;
+    }
+    if (post.slug === "impact-ai-role-interior-designer") {
+      return t.impactAIInteriorDesignerTitle;
+    }
+    if (post.slug === "intersection-ai-virtual-reality-design") {
+      return t.aiVirtualRealityDesignTitle;
+    }
+    if (post.slug === "ai-accessible-design-inclusive-spaces") {
+      return t.aiAccessibleDesignTitle;
+    }
+    if (post.slug === "role-data-ai-powered-design") {
+      return t.dataAIPoweredDesignTitle;
+    }
+    if (post.slug === "modern-family-design-ai-functional-homes") {
+      return t.modernFamilyDesignTitle;
+    }
+    if (post.slug === "sustainable-design-ai-eco-friendly-spaces") {
+      return t.sustainableDesignAITitle;
+    }
+    if (post.slug === "ai-space-planning-optimization-small-apartments") {
+      return t.aiSpacePlanningSmallApartmentsTitle;
+    }
+    if (post.slug === "creating-biophilic-interior-designs-styly-ai") {
+      return t.biophilicDesignAITitle;
+    }
+    if (post.slug === "science-color-design-ai-perfect-palette") {
+      return t.scienceColorDesignTitle;
+    }
+    if (post.slug === "reducing-carbon-footprints-sustainable-landscapes-ai") {
+      return t.sustainableLandscapesAITitle;
+    }
+    if (post.slug === "ai-landscape-design-outdoor-spaces-styly") {
+      return t.aiLandscapeDesignTitle;
+    }
+    if (post.slug === "cultural-interior-design-ai-sensitive-spaces") {
+      return t.culturalDesignAITitle;
+    }
+    if (post.slug === "texture-importance-interior-design-styly") {
+      return t.textureImportanceDesignTitle;
+    }
+    if (post.slug === "top-5-challenges-interior-design-ai-solutions") {
+      return t.top5ChallengesInteriorDesignTitle;
+    }
+    if (post.slug === "ai-future-commercial-interior-design") {
+      return t.commercialInteriorDesignAITitle;
+    }
+    if (post.slug === "creating-outdoor-spaces-ai-design-guide") {
+      return t.creatingOutdoorSpacesAITitle;
+    }
+    if (post.slug === "cost-effectiveness-ai-design-styly-savings") {
+      return t.costEffectivenessAIDesignTitle;
+    }
+    if (post.slug === "transforming-small-living-spaces-design-solutions") {
+      return t.transformingSmallLivingSpacesTitle;
+    }
+    if (post.slug === "ai-driven-customization-future-interior-design") {
+      return t.aiDrivenCustomizationFutureTitle;
+    }
+    if (post.slug === "residential-interior-design-guide-planning-spaces") {
+      return t.residentialInteriorDesignGuideTitle;
+    }
+    if (post.slug === "futuristic-interior-design-styles-styly-ai") {
+      return t.futuristicInteriorDesignStylesTitle;
+    }
+    if (post.slug === "room-planner-ai-sarah-johnson-styly-evaluations") {
+      return t.roomPlannerAISarahJohnsonEvaluationsTitle;
+    }
+    if (post.slug === "innovative-interior-stair-railing-ideas-styly-ai") {
+      return t.innovativeStairRailingIdeasTitle;
+    }
+    if (post.slug === "design-living-room-like-pro-styly") {
+      return t.designLivingRoomLikeProTitle;
     }
     // For other blog posts, use the original title
     return post.title;

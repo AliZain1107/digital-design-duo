@@ -10,13 +10,13 @@ const CulturalDesignAI: React.FC = () => {
       title: "Interior Designing for Different Cultures: Leveraging AI for Culturally Sensitive Spaces",
       description: "Learn how AI helps create culturally sensitive interior designs. Discover STYLY.io's AI tools for designing spaces that respect diverse cultural traditions.",
       keywords: "cultural interior design, AI cultural design, multicultural spaces, culturally sensitive design, global design AI, STYLY.io cultural",
-      ogImage: "/cultural-design-ai-hero.webp"
+      ogImage: "/cultural-design-multicultural-interior.webp"
     },
     fr: {
       title: "Design d'Intérieur pour Différentes Cultures : Exploiter l'IA pour des Espaces Culturellement Sensibles",
       description: "Apprenez comment l'IA aide à créer des designs d'intérieur culturellement sensibles. Découvrez les outils IA de STYLY.io pour des espaces respectueux.",
       keywords: "design intérieur culturel, design culturel IA, espaces multiculturels, design culturellement sensible, design global IA, culturel STYLY.io",
-      ogImage: "/cultural-design-ai-hero.webp"
+      ogImage: "/cultural-design-multicultural-interior.webp"
     }
   };
 
@@ -194,7 +194,7 @@ const CulturalDesignAI: React.FC = () => {
                     {" "}pour intégrer éléments naturels et culturels
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-indigo-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Recherche Culturelle :</strong> Selon{" "}
@@ -365,7 +365,7 @@ const CulturalDesignAI: React.FC = () => {
                     {" "}to integrate natural and cultural elements
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-indigo-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Cultural Research:</strong> According to{" "}

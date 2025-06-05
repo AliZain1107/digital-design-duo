@@ -10,13 +10,13 @@ const TextureImportanceDesign: React.FC = () => {
       title: "The Importance of Texture in Interior Design: How Styly Can Help",
       description: "Discover how texture transforms interior spaces and how STYLY.io's AI tools help you integrate textures perfectly for stunning room designs.",
       keywords: "texture interior design, AI texture design, interior textures, design texture AI, room texture planning, STYLY.io texture",
-      ogImage: "/texture-importance-design-hero.webp"
+      ogImage: "/texture-materials-interior-design-wood.webp"
     },
     fr: {
       title: "L'Importance de la Texture en Design d'Intérieur : Comment Styly Peut Aider",
       description: "Découvrez comment la texture transforme les espaces intérieurs et comment les outils IA de STYLY.io vous aident à intégrer parfaitement les textures.",
       keywords: "texture design intérieur, design texture IA, textures intérieures, texture IA design, planification texture pièce, texture STYLY.io",
-      ogImage: "/texture-importance-design-hero.webp"
+      ogImage: "/texture-materials-interior-design-wood.webp"
     }
   };
 
@@ -206,7 +206,7 @@ const TextureImportanceDesign: React.FC = () => {
                     {" "}pour maximiser l'impact visuel
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-rose-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Conseil Texture :</strong> Selon{" "}
@@ -389,7 +389,7 @@ const TextureImportanceDesign: React.FC = () => {
                     {" "}to maximize visual impact
                   </li>
                 </ul>
-                
+
                 <div className="mt-4 p-4 bg-rose-50 rounded-lg">
                   <p className="text-sm text-gray-600">
                     💡 <strong>Texture Tip:</strong> According to{" "}
