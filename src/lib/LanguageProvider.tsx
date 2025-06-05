@@ -7,10 +7,18 @@ export const useLanguage = () => useContext(LanguageContext);
 
 // Create a provider component
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Try to get the stored language preference or default to 'en'
+  // Try to get the stored language preference or default to 'fr' (French only app now)
   const [language, setLanguageState] = useState<Language>(() => {
     const storedLanguage = localStorage.getItem('language');
-    return (storedLanguage === 'en' || storedLanguage === 'fr') ? storedLanguage as Language : 'en';
+
+    // If stored language is English, redirect to external site
+    if (storedLanguage === 'en') {
+      console.log("[LanguageProvider] Stored language is English, redirecting to external site");
+      window.location.href = "https://www.styly.io";
+      return 'fr'; // This won't be reached but needed for type safety
+    }
+
+    return (storedLanguage === 'fr') ? storedLanguage as Language : 'fr';
   });
 
   // const navigate = useNavigate();
@@ -20,7 +28,14 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   // Function to update the language
   const setLanguage = (lang: Language) => {
-    // Force a re-render by setting state
+    // Redirect to external website for English
+    if (lang === "en") {
+      console.log("[LanguageProvider] Redirecting to external English site: https://www.styly.io");
+      window.location.href = "https://www.styly.io";
+      return;
+    }
+
+    // Force a re-render by setting state for French
     setLanguageState(lang);
     // const newPath = lang === 'en' ? '/en' : '/fr';
     // navigate(newPath, { replace: true }); // replace: true avoids pushing to history

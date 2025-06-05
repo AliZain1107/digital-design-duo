@@ -16,14 +16,20 @@ const BlogPostPage: React.FC = () => {
     if (location.pathname.startsWith("/fr/blog") || location.pathname.startsWith("/fr")) {
       pathLang = "fr";
     } else if (location.pathname.startsWith("/en/blog") || location.pathname.startsWith("/en")) {
-      pathLang = "en";
+      // Redirect English blog post routes to external site
+      console.log("English blog post route detected, redirecting to external site");
+      window.location.href = `https://www.styly.io/blog/${slug}`;
+      return;
     } else {
       // For legacy /blog routes, detect language from slug
       const foundPost = blogPosts.find((post) => post.slug === slug || post.slugFr === slug);
       if (foundPost && foundPost.slugFr === slug) {
         pathLang = "fr";
       } else {
-        pathLang = "en";
+        // If it's an English slug, redirect to external site
+        console.log("English blog post slug detected, redirecting to external site");
+        window.location.href = `https://www.styly.io/blog/${slug}`;
+        return;
       }
     }
     setLanguage(pathLang);

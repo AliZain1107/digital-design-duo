@@ -28,8 +28,13 @@ const Index: React.FC = () => {
     let pathLang: Language;
     if (location.pathname === "/" || location.pathname === "") {
       pathLang = "fr";
+    } else if (location.pathname.startsWith("/en")) {
+      // Redirect English URLs to external site
+      console.log("English URL detected, redirecting to external site: https://www.styly.io");
+      window.location.href = "https://www.styly.io";
+      return;
     } else {
-      pathLang = location.pathname.startsWith("/fr") ? "fr" : "en";
+      pathLang = location.pathname.startsWith("/fr") ? "fr" : "fr"; // Default to French
     }
     setLanguage(pathLang);
 

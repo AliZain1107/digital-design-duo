@@ -30,9 +30,18 @@ const Navbar: React.FC = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  // Enhanced language switcher with debug
+  // Enhanced language switcher with redirect for English
   const handleLanguageChange = (lang: "en" | "fr") => {
     console.log("Language switch requested to:", lang);
+
+    if (lang === "en") {
+      // Redirect to external website for English
+      console.log("Redirecting to external English site: https://www.styly.io");
+      window.location.href = "https://www.styly.io";
+      return;
+    }
+
+    // For French, use the current React application
     setLanguage(lang);
   };
 

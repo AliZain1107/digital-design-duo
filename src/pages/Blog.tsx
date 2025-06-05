@@ -15,7 +15,10 @@ const Blog = () => {
     if (location.pathname.startsWith("/fr/blog") || location.pathname.startsWith("/fr")) {
       pathLang = "fr";
     } else if (location.pathname.startsWith("/en/blog") || location.pathname.startsWith("/en")) {
-      pathLang = "en";
+      // Redirect English blog routes to external site
+      console.log("English blog route detected, redirecting to external site");
+      window.location.href = "https://www.styly.io/blog";
+      return;
     } else {
       // Default to French for legacy /blog routes
       pathLang = "fr";

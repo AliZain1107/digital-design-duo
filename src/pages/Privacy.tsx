@@ -15,10 +15,13 @@ const Privacy: React.FC = () => {
     if (location.pathname.startsWith("/fr/confidentialite") || location.pathname.startsWith("/fr") || location.pathname === "/confidentialite") {
       pathLang = "fr";
     } else if (location.pathname.startsWith("/en/privacy") || location.pathname.startsWith("/en")) {
-      pathLang = "en";
+      // Redirect English privacy routes to external site
+      console.log("English privacy route detected, redirecting to external site");
+      window.location.href = "https://www.styly.io/privacy";
+      return;
     } else {
-      // Default based on route
-      pathLang = location.pathname === "/confidentialite" ? "fr" : "en";
+      // Default to French for legacy routes
+      pathLang = "fr";
     }
     setLanguage(pathLang);
   }, [location.pathname, setLanguage]);
