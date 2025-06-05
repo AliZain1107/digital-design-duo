@@ -123,7 +123,10 @@ const DesignWithAI: React.FC = () => {
                   <div className="aspect-[4/3] w-full">
                     <img
                       src={segment.image}
-                      alt={segment.title}
+                      alt={language === "fr"
+                        ? `${segment.title} - Logiciel design intérieur gratuit et planificateur chambre IA pour professionnels`
+                        : segment.title
+                      }
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                       loading="eager"
                     />

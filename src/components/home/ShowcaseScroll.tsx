@@ -44,7 +44,10 @@ const ShowcaseScroll: React.FC = () => {
           <div key={`top-${index}`} className="h-auto w-[300px] sm:w-[350px] md:w-[500px] flex-shrink-0 mx-2">
             <img
               src={src}
-              alt={`Interior Design Showcase ${index + 1}`}
+              alt={language === "fr"
+                ? `Vitrine Design Intérieur IA ${index + 1} - Planificateur chambre IA et logiciel design intérieur gratuit`
+                : `Interior Design Showcase ${index + 1}`
+              }
               className="h-full w-full object-cover rounded-xl shadow-md"
             />
           </div>
@@ -57,7 +60,10 @@ const ShowcaseScroll: React.FC = () => {
           <div key={`bottom-${index}`} className="h-auto w-[300px] sm:w-[350px] md:w-[500px] flex-shrink-0 mx-2">
             <img
             src={src}
-              alt={`Interior Design Showcase ${index + 1 + topRowImages.length}`}
+              alt={language === "fr"
+                ? `Galerie Design Chambre IA ${index + 1 + topRowImages.length} - Générateur design intérieur IA et home staging virtuel`
+                : `Interior Design Showcase ${index + 1 + topRowImages.length}`
+              }
               className="h-full w-full object-cover rounded-xl shadow-md"
           />
           </div>

@@ -1759,34 +1759,34 @@ export const translations: Record<Language, Translations> = {
     prompt: "Entrez vos préférences de design ici...",
 
     // Hero section
-    welcomeToFuture: "Bienvenue dans le Futur du Design",
+    welcomeToFuture: "Bienvenue dans le Futur du Design Intérieur IA",
     mostUsedAITool: "#1 le plus utilisé",
-    aiDesignTool: "Outil de design IA",
+    aiDesignTool: "Outil de design intérieur IA gratuit",
     for: "pour",
     modernSpaces: "espaces modernes",
     redesignEmptyRooms:
-      "Rénovez des pièces vides en intérieurs stylés et prêts pour le marché —",
-    forRealEstate: "pour l'immobilier, la rénovation et le commerce de détail.",
+      "Transformez des pièces vides en intérieurs stylés avec notre planificateur chambre IA —",
+    forRealEstate: "pour l'immobilier, la rénovation et le home staging virtuel.",
     noToolsNoDownloads:
-      "Pas d'outils, pas de téléchargements. Juste des résultats",
-    uploadPhoto: "Télécharger une Photo pour Commencer",
+      "Pas d'outils, pas de téléchargements. Juste des résultats avec notre logiciel design intérieur gratuit",
+    uploadPhoto: "Télécharger une Photo pour Commencer le Design Chambre IA",
     supporting: "Au service de",
     realEstatePros:
-      "plus de 20 000 professionnels de l'immobilier, designers et propriétaires",
+      "plus de 20 000 professionnels de l'immobilier, designers d'intérieur et propriétaires utilisant notre outil design intérieur",
 
     // Unlock potential section
-    designExcellence: "Excellence en Design",
-    unlockThePotential: "LIBÉREZ LE POTENTIEL",
-    aiDrawsInspiration: "Notre IA s'inspire d'architectes légendaires tels que",
+    designExcellence: "Excellence en Design Intérieur IA",
+    unlockThePotential: "LIBÉREZ LE POTENTIEL DU DESIGN INTÉRIEUR IA GRATUIT",
+    aiDrawsInspiration: "Notre logiciel design intérieur gratuit s'inspire d'architectes légendaires tels que",
     legendaryArchitects:
       "Le Corbusier, Zaha Hadid, Frank Gehry, Frank Lloyd Wright, et Gaudi",
     experienceAdvancedAI:
-      "Découvrez comment notre technologie d'IA avancée transforme vos concepts de design en une réalité époustouflante.",
-    explore: "Explorer",
+      "Découvrez comment notre planificateur chambre IA et générateur design intérieur IA transforment vos concepts en réalité époustouflante.",
+    explore: "Explorer le Design Chambre IA",
 
     // Architecture Revolution
-    architectureRevolution: "RÉVOLUTION ARCHITECTURALE",
-    homeDesignByAI: "Design de maison, de pièce et d'intérieur par IA.",
+    architectureRevolution: "RÉVOLUTION DU DESIGN INTÉRIEUR IA",
+    homeDesignByAI: "Design de maison, planificateur chambre IA et décoration intérieure par IA gratuite.",
 
     // ModernSpaces
     redesignRooms:
@@ -1797,22 +1797,22 @@ export const translations: Record<Language, Translations> = {
       "Pas d'outils, pas de téléchargements. Juste des résultats.",
 
     // HowItWorks
-    simpleProcess: "Processus Simple",
-    howItWorks: "Comment Ça Marche",
+    simpleProcess: "Processus Simple avec IA Design Intérieur",
+    howItWorks: "Comment Fonctionne Notre Logiciel Design Intérieur Gratuit",
     transformSpace:
-      "Transformez votre espace en trois étapes simples avec notre plateforme de design propulsée par l'IA",
+      "Transformez votre espace en trois étapes simples avec notre planificateur chambre IA et générateur design intérieur IA",
     upload: "Télécharger",
     uploadDescription:
-      "Téléchargez simplement votre image ou esquisse de l'espace que vous souhaitez redessiner.",
+      "Téléchargez simplement votre image ou esquisse de l'espace que vous souhaitez transformer avec notre outil design intérieur.",
     personalize: "Personnaliser",
     personalizeDescription:
-      "Choisissez vos préférences, de la sélection de mobilier au style, pour créer votre espace idéal par design de pièce IA.",
+      "Choisissez vos préférences, de la sélection de mobilier au style, pour créer votre espace idéal avec notre design chambre IA.",
     furnitureSelection: "mobilier",
     enjoy: "Profiter",
     enjoyDescription:
-      "Détendez-vous et profitez du résultat final par IA pour le design d'intérieur.",
+      "Détendez-vous et profitez du résultat final avec notre ia design intérieur gratuit et home staging virtuel.",
     aiForInteriorDesign: "IA pour le design d'intérieur",
-    getStartedFree: "Commencer Gratuitement",
+    getStartedFree: "Commencer Gratuitement avec Design Intérieur IA",
     noCreditCard: "Pas de Carte de Crédit Requise, Pas d'Engagements",
 
     // Testimonials
@@ -1828,33 +1828,33 @@ export const translations: Record<Language, Translations> = {
     faqQuestions: [
       {
         question:
-          "Qu'est-ce qui rend Styly AI unique dans le monde du design d'intérieur?",
+          "Qu'est-ce qui rend notre logiciel design intérieur gratuit unique dans le monde du design d'intérieur IA?",
         answer:
-          "Styly AI se distingue en combinant l'intelligence artificielle de pointe avec les principes d'architectes légendaires comme Le Corbusier et Zaha Hadid. Notre plateforme ne nécessite aucun téléchargement ou outil spécial, rendant le design d'intérieur professionnel accessible à tous, des professionnels de l'immobilier aux propriétaires.",
+          "Notre planificateur chambre IA se distingue en combinant l'intelligence artificielle de pointe avec les principes d'architectes légendaires comme Le Corbusier et Zaha Hadid. Notre outil design intérieur ne nécessite aucun téléchargement ou outil spécial, rendant le design intérieur IA gratuit accessible à tous, des professionnels de l'immobilier aux propriétaires utilisant notre générateur design intérieur IA.",
       },
       {
         question:
-          "Est-ce que tout le monde peut utiliser Styly AI, ou est-il conçu spécifiquement pour les professionnels?",
+          "Est-ce que tout le monde peut utiliser notre design chambre IA, ou est-il conçu spécifiquement pour les professionnels?",
         answer:
-          "Styly AI est conçu pour tout le monde! Bien qu'il soit assez puissant pour les professionnels de l'immobilier et les designers d'intérieur, il est également assez intuitif pour les propriétaires et les passionnés de design sans expérience préalable. Notre processus simple en trois étapes le rend accessible aux utilisateurs de tous niveaux.",
+          "Notre logiciel design intérieur gratuit est conçu pour tout le monde! Bien qu'il soit assez puissant pour les professionnels de l'immobilier et les designers d'intérieur, il est également assez intuitif pour les propriétaires et les passionnés de décoration intérieure sans expérience préalable. Notre planificateur chambre IA avec processus simple en trois étapes le rend accessible aux utilisateurs de tous niveaux.",
       },
       {
         question:
-          "Comment Styly AI aide-t-il les utilisateurs à visualiser leurs idées de design?",
+          "Comment notre outil design intérieur aide-t-il les utilisateurs à visualiser leurs idées de design chambre IA?",
         answer:
-          "Il suffit de télécharger une photo de votre espace vide, de sélectionner vos préférences et votre style de design, et notre IA le transformera en un intérieur conçu professionnellement. Vous pouvez expérimenter différents styles, arrangements de meubles et schémas de couleurs jusqu'à ce que vous trouviez le look parfait pour votre espace.",
+          "Il suffit de télécharger une photo de votre espace vide, de sélectionner vos préférences et votre style de design, et notre générateur design intérieur IA le transformera en un intérieur conçu professionnellement avec home staging virtuel. Vous pouvez expérimenter différents styles, arrangements de meubles et schémas de couleurs jusqu'à ce que vous trouviez le look parfait pour votre espace avec notre ia design intérieur gratuit.",
       },
       {
         question:
-          "Styly AI offre-t-il une variété de styles de design parmi lesquels choisir?",
+          "Notre planificateur chambre IA offre-t-il une variété de styles de design intérieur parmi lesquels choisir?",
         answer:
-          "Absolument! Styly AI offre une large gamme de styles de design, du minimaliste moderne au traditionnel classique, industriel, scandinave, mid-century moderne, et bien d'autres. Vous pouvez également personnaliser les éléments de chaque style pour créer un look unique qui correspond parfaitement à votre vision.",
+          "Absolument! Notre logiciel design intérieur gratuit offre une large gamme de styles de décoration intérieure, du minimaliste moderne au traditionnel classique, industriel, scandinave, mid-century moderne, et bien d'autres. Vous pouvez également personnaliser les éléments de chaque style avec notre générateur design intérieur IA pour créer un look unique qui correspond parfaitement à votre vision de design chambre IA.",
       },
       {
         question:
-          "Quel type de support Styly AI fournit-il à ses utilisateurs?",
+          "Quel type de support notre outil design intérieur fournit-il à ses utilisateurs?",
         answer:
-          "Nous offrons un support complet comprenant des tutoriels vidéo, une base de connaissances détaillée et un service client réactif. Notre équipe est disponible pour vous aider avec toutes les questions ou défis que vous pourriez rencontrer lors de l'utilisation de notre plateforme. De plus, notre blog présente régulièrement des conseils de design et de l'inspiration.",
+          "Nous offrons un support complet comprenant des tutoriels vidéo, une base de connaissances détaillée et un service client réactif pour notre ia design intérieur gratuit. Notre équipe est disponible pour vous aider avec toutes les questions ou défis que vous pourriez rencontrer lors de l'utilisation de notre planificateur chambre IA et home staging virtuel. De plus, notre blog présente régulièrement des conseils de décoration intérieure et de l'inspiration.",
       },
     ],
 
@@ -1866,9 +1866,9 @@ export const translations: Record<Language, Translations> = {
     supportedBy: "Soutenu par",
 
     // MarketSegmentCarousel
-    tailoredSolutionsForEveryNeed: "Solutions Adaptées à Chaque Besoin",
+    tailoredSolutionsForEveryNeed: "Solutions de Design Intérieur IA Adaptées à Chaque Besoin",
     aiDesignToolServesDiverseMarkets:
-      "Notre outil de design IA sert divers segments de marché avec des fonctionnalités spécialisées",
+      "Notre logiciel design intérieur gratuit et planificateur chambre IA servent divers segments de marché avec des fonctionnalités spécialisées",
     realEstateProfessionals: "PROFESSIONNELS DE L'IMMOBILIER",
     homeownersRenters: "PROPRIÉTAIRES & LOCATAIRES",
     startupsTechCreators: "STARTUPS & CRÉATEURS TECH",
@@ -1889,7 +1889,7 @@ export const translations: Record<Language, Translations> = {
     footerPrivacy: "Confidentialité",
     footerCopyright: "© 2024 STYLY. Tous droits réservés.",
     footerSlogan:
-      "La révolution architecturale : redéfinir le design d'intérieur avec l'IA.",
+      "La révolution du design intérieur IA : redéfinir la décoration intérieure avec notre logiciel design intérieur gratuit.",
     footerLogin: "Se connecter",
     footerSignup: "S'inscrire",
     footerCopyrightYear: "Copyright 2025 STYLY",
@@ -2026,9 +2026,9 @@ export const translations: Record<Language, Translations> = {
     statsArticles: "Articles de recherche",
 
     // Blog section
-    blogTrends: "Nouvelles tendances",
+    blogTrends: "Nouvelles Tendances Design Intérieur IA",
     blogDescription:
-      "Les dernières actualités du secteur, interviews, technologies et ressources.",
+      "Les dernières actualités du secteur, interviews, technologies et ressources sur le logiciel design intérieur gratuit et planificateur chambre IA.",
     realEstateLandscape:
       "Le paysage immobilier a fondamentalement changé depuis 2023",
     generationalTrendsReport: "Rapport sur les tendances générationnelles",
