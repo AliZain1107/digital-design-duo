@@ -14,6 +14,7 @@ import Privacy from "./pages/Privacy";
 import VideoGuide from "./pages/VideoGuide";
 import CookieBanner from "./components/layout/CookieBanner";
 import EnglishRedirect from "./components/EnglishRedirect";
+import EnglishBlogRedirect from "./components/EnglishBlogRedirect";
 
 import '@fontsource/baloo-2/600.css';
 import '@fontsource/inter/400.css';
@@ -37,8 +38,8 @@ const App = () => (
               <Route path="/pricing" element={<NotFound />} />
 
               {/* English blog routes - redirect to external blog */}
-              <Route path="/en/blog" element={<Blog />} />
-              <Route path="/en/blog/:slug" element={<BlogPostPage />} />
+              <Route path="/en/blog" element={<EnglishBlogRedirect />} />
+              <Route path="/en/blog/:slug" element={<EnglishBlogRedirect />} />
 
               {/* Other English routes - redirect to external site */}
               <Route path="/en" element={<EnglishRedirect />} />
