@@ -96,6 +96,7 @@ export interface Translations {
 
   // VideoSection
   seeItInAction: string;
+  videoDescription: string;
   watchDemo: string;
 
   // SupportedBy
@@ -926,6 +927,7 @@ export const translations: Record<Language, Translations> = {
 
     // VideoSection
     seeItInAction: "See it in action",
+    videoDescription: "See how our AI platform transforms interior design with just a few clicks",
     watchDemo: "Watch the demo",
 
     // SupportedBy
@@ -1860,6 +1862,7 @@ export const translations: Record<Language, Translations> = {
 
     // VideoSection
     seeItInAction: "Voir en action",
+    videoDescription: "Découvrez comment notre plateforme IA transforme le design intérieur en quelques clics",
     watchDemo: "Regarder la démo",
 
     // SupportedBy

@@ -12,7 +12,7 @@ const VideoSection: React.FC = () => {
             <span className="block transform -skew-y-1">{t.seeItInAction}</span>
           </h2>
           <p className="text-xl md:text-2xl text-purple-700 max-w-3xl mx-auto font-light">
-            See how our AI platform transforms interior design with just a few clicks
+            {t.videoDescription}
           </p>
         </div>
         
