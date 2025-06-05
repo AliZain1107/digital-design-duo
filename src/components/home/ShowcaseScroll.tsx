@@ -46,7 +46,7 @@ const ShowcaseScroll: React.FC = () => {
               src={src}
               alt={language === "fr"
                 ? `Vitrine Design Intérieur IA ${index + 1} - Planificateur chambre IA et logiciel design intérieur gratuit`
-                : `Interior Design Showcase ${index + 1}`
+                : `AI Interior Design Showcase ${index + 1} - AI room planner and free interior design software`
               }
               className="h-full w-full object-cover rounded-xl shadow-md"
             />
@@ -62,7 +62,7 @@ const ShowcaseScroll: React.FC = () => {
             src={src}
               alt={language === "fr"
                 ? `Galerie Design Chambre IA ${index + 1 + topRowImages.length} - Générateur design intérieur IA et home staging virtuel`
-                : `Interior Design Showcase ${index + 1 + topRowImages.length}`
+                : `AI Room Design Gallery ${index + 1 + topRowImages.length} - Interior design AI generator and virtual staging`
               }
               className="h-full w-full object-cover rounded-xl shadow-md"
           />

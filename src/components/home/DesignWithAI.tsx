@@ -125,7 +125,7 @@ const DesignWithAI: React.FC = () => {
                       src={segment.image}
                       alt={language === "fr"
                         ? `${segment.title} - Logiciel design intérieur gratuit et planificateur chambre IA pour professionnels`
-                        : segment.title
+                        : `${segment.title} - Free interior design software and AI room planner for professionals`
                       }
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                       loading="eager"

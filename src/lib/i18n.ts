@@ -831,33 +831,33 @@ export const translations: Record<Language, Translations> = {
     facebook: "Facebook",
 
     // Hero section
-    welcomeToFuture: "Welcome to the Future of Design",
+    welcomeToFuture: "Welcome to the Future of AI Interior Design",
     mostUsedAITool: "#1 most used",
-    aiDesignTool: "AI design tool",
+    aiDesignTool: "Free AI interior design app",
     for: "for",
     modernSpaces: "modern spaces",
     redesignEmptyRooms:
-      "Redesign empty rooms into styled, market-ready interior —",
-    forRealEstate: "for real estate, renovation, and retail.",
-    noToolsNoDownloads: "No tools, no downloads. Just results",
-    uploadPhoto: "Upload a Photo to Start",
+      "Transform empty rooms into styled interiors with our AI room planner —",
+    forRealEstate: "for real estate, virtual staging, and home design AI.",
+    noToolsNoDownloads: "No tools, no downloads. Just results with our free interior design software",
+    uploadPhoto: "Upload a Photo to Start AI Room Design",
     supporting: "Supporting",
-    realEstatePros: "20,000+ real estate pros, designers & homeowners",
+    realEstatePros: "20,000+ real estate professionals, interior designers & homeowners using our AI interior design tool",
 
     // Unlock potential section
-    designExcellence: "Design Excellence",
-    unlockThePotential: "UNLOCK THE POTENTIAL",
+    designExcellence: "AI Interior Design Excellence",
+    unlockThePotential: "UNLOCK THE POTENTIAL OF FREE AI INTERIOR DESIGN",
     aiDrawsInspiration:
-      "Our AI draws inspiration from legendary architects such as",
+      "Our free interior design software draws inspiration from legendary architects such as",
     legendaryArchitects:
       "Le Corbusier, Zaha Hadid, Frank Gehry, Frank Lloyd Wright, and Gaudi",
     experienceAdvancedAI:
-      "Experience how our advanced AI technology transforms your design concepts into stunning reality.",
-    explore: "Explore",
+      "Experience how our AI room planner and interior design AI transforms your design concepts into stunning reality.",
+    explore: "Explore AI Room Design",
 
     // Architecture Revolution
-    architectureRevolution: "ARCHITECTURE REVOLUTION",
-    homeDesignByAI: "Home design, Room design and Interior design by AI.",
+    architectureRevolution: "AI INTERIOR DESIGN REVOLUTION",
+    homeDesignByAI: "Home design AI, AI room planner and free AI interior design generator.",
 
     // ModernSpaces
     redesignRooms: "Redesign empty rooms into styled, market-ready interior —",
@@ -865,22 +865,22 @@ export const translations: Record<Language, Translations> = {
     noToolsJustResults: "No tools, no downloads. Just results.",
 
     // HowItWorks
-    simpleProcess: "Simple Process",
-    howItWorks: "How It Works",
+    simpleProcess: "Simple Process with AI Interior Design",
+    howItWorks: "How Our Free Interior Design Software Works",
     transformSpace:
-      "Transform your space in three simple steps with our AI-powered design platform",
+      "Transform your space in three simple steps with our AI room planner and interior design AI generator",
     upload: "Upload",
     uploadDescription:
-      "Simply upload your image or sketch of the space you want to redesign.",
+      "Simply upload your image or sketch of the space you want to transform with our AI interior design tool.",
     personalize: "Personalize",
     personalizeDescription:
-      "Choose your preferences, from furniture selection to style, to create your ideal space by AI room design.",
+      "Choose your preferences, from furniture selection to style, to create your ideal space with our AI room design.",
     furnitureSelection: "furniture",
     enjoy: "Enjoy",
     enjoyDescription:
-      "Sit back and enjoy the end result by AI for interior design.",
+      "Sit back and enjoy the end result with our free AI interior design and virtual staging.",
     aiForInteriorDesign: "AI for interior design",
-    getStartedFree: "Get Started for Free",
+    getStartedFree: "Get Started Free with AI Interior Design",
     noCreditCard: "No Credit Card Required, No Commitments",
 
     // Testimonials
@@ -895,32 +895,32 @@ export const translations: Record<Language, Translations> = {
       "Everything you need to know about the product and billing.",
     faqQuestions: [
       {
-        question: "What makes Styly AI unique in the world of interior design?",
+        question: "What makes our free AI interior design app unique in the world of interior design?",
         answer:
-          "Styly AI stands out by combining cutting-edge artificial intelligence with principles from legendary architects like Le Corbusier and Zaha Hadid. Our platform requires no downloads or special tools, making professional interior design accessible to everyone from real estate professionals to homeowners.",
+          "Our AI room planner stands out by combining cutting-edge artificial intelligence with principles from legendary architects like Le Corbusier and Zaha Hadid. Our free interior design software requires no downloads or special tools, making professional AI interior design accessible to everyone from real estate professionals to homeowners using our interior design AI generator.",
       },
       {
         question:
-          "Can anyone use Styly AI, or is it designed specifically for professionals?",
+          "Can anyone use our AI room design tool, or is it designed specifically for professionals?",
         answer:
-          "Styly AI is designed for everyone! While it's powerful enough for real estate professionals and interior designers, it's also intuitive enough for homeowners and design enthusiasts with no prior experience. Our simple three-step process makes it accessible to users of all skill levels.",
+          "Our free interior design software is designed for everyone! While it's powerful enough for real estate professionals and interior designers, it's also intuitive enough for homeowners and design enthusiasts with no prior experience. Our AI room planner with simple three-step process makes it accessible to users of all skill levels.",
       },
       {
         question:
-          "How does Styly AI assist users in visualizing their design ideas?",
+          "How does our AI interior design tool assist users in visualizing their design ideas?",
         answer:
-          "Simply upload a photo of your empty space, select your design preferences and style, and our AI will transform it into a professionally designed interior. You can experiment with different styles, furniture arrangements, and color schemes until you find the perfect look for your space.",
+          "Simply upload a photo of your empty space, select your design preferences and style, and our interior design AI will transform it into a professionally designed interior with virtual staging. You can experiment with different styles, furniture arrangements, and color schemes until you find the perfect look for your space with our free AI interior design.",
       },
       {
         question:
-          "Does Styly AI offer a variety of design styles to choose from?",
+          "Does our AI room planner offer a variety of interior design styles to choose from?",
         answer:
-          "Absolutely! Styly AI offers a wide range of design styles from modern minimalist to classic traditional, industrial, Scandinavian, mid-century modern, and many more. You can also customize elements within each style to create a unique look that perfectly matches your vision.",
+          "Absolutely! Our free interior design software offers a wide range of design styles from modern minimalist to classic traditional, industrial, Scandinavian, mid-century modern, and many more. You can also customize elements within each style with our interior design AI generator to create a unique look that perfectly matches your AI room design vision.",
       },
       {
-        question: "What kind of support does Styly AI provide to its users?",
+        question: "What kind of support does our AI interior design tool provide to its users?",
         answer:
-          "We offer comprehensive support including video tutorials, a detailed knowledge base, and responsive customer service. Our team is available to help with any questions or challenges you might encounter while using our platform. Plus, our blog regularly features design tips and inspiration.",
+          "We offer comprehensive support including video tutorials, a detailed knowledge base, and responsive customer service for our free AI interior design. Our team is available to help with any questions or challenges you might encounter while using our AI room planner and virtual staging. Plus, our blog regularly features interior design tips and inspiration.",
       },
     ],
 
@@ -932,9 +932,9 @@ export const translations: Record<Language, Translations> = {
     supportedBy: "Supported by",
 
     // MarketSegmentCarousel
-    tailoredSolutionsForEveryNeed: "Tailored Solutions For Every Need",
+    tailoredSolutionsForEveryNeed: "Tailored AI Interior Design Solutions For Every Need",
     aiDesignToolServesDiverseMarkets:
-      "Our AI design tool serves diverse market segments with specialized features",
+      "Our free interior design software and AI room planner serve diverse market segments with specialized features",
     realEstateProfessionals: "REAL ESTATE PROFESSIONALS",
     homeownersRenters: "HOMEOWNERS & RENTERS",
     startupsTechCreators: "STARTUPS & TECH-SAVVY CREATORS",
@@ -955,7 +955,7 @@ export const translations: Record<Language, Translations> = {
     footerPrivacy: "Privacy",
     footerCopyright: "© 2024 STYLY. All rights reserved.",
     footerSlogan:
-      "The architecture revolution: redefining interior design with AI.",
+      "The AI interior design revolution: redefining home design with our free interior design software.",
     footerLogin: "Log In",
     footerSignup: "Sign Up",
     footerCopyrightYear: "Copyright 2025 STYLY",
@@ -1092,9 +1092,9 @@ export const translations: Record<Language, Translations> = {
     statsArticles: "Research articles",
 
     // Blog section
-    blogTrends: "New trends",
+    blogTrends: "New AI Interior Design Trends",
     blogDescription:
-      "The latest industry news, interviews, technologies, and resources.",
+      "The latest industry news, interviews, technologies, and resources on free interior design software and AI room planner.",
     realEstateLandscape:
       "The real estate landscape has fundamentally transformed since 2023",
     generationalTrendsReport: "Generational Trends Report",

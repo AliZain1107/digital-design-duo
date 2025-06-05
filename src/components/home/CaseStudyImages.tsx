@@ -19,7 +19,7 @@ const CaseStudyImages: React.FC = () => {
               src={src}
               alt={language === "fr"
                 ? `Étude de cas ${idx + 1} - Design chambre IA et générateur design intérieur IA avec home staging virtuel`
-                : `Case Study ${idx + 1}`
+                : `Case Study ${idx + 1} - AI room design and interior design AI generator with virtual staging`
               }
               className="w-full h-full object-cover"
             />

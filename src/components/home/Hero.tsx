@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
               src="/aiinterior.png"
               alt={language === "fr"
                 ? "STYLY récompensé #1 Application Design Intérieur IA 2024 - Logiciel design intérieur gratuit et planificateur chambre IA pour professionnels immobilier"
-                : "STYLY awarded #1 AI Interior Design App of 2024 - Top-rated virtual staging solution for real estate and interior design professionals"
+                : "STYLY awarded #1 AI Interior Design App 2024 - Free interior design software and AI room planner for real estate professionals"
               }
               title={language === "fr"
                 ? "STYLY - #1 Application Design Intérieur IA 2024"
