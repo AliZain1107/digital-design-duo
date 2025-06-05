@@ -44,6 +44,11 @@ const Index: React.FC = () => {
     }
   }, [location.pathname, navigate]);
 
+  // Scroll to top when component mounts or language changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [language]);
+
   // useEffect(() => {
   //   setLanguage("en");
   // }, [])

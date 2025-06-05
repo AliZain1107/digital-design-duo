@@ -25,6 +25,11 @@ const VideoGuide = () => {
     setLanguage(pathLang);
   }, [location.pathname, setLanguage]);
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Video data
   const videos = [
     {

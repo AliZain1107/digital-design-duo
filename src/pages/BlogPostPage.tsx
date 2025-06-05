@@ -44,6 +44,11 @@ const BlogPostPage: React.FC = () => {
     }
   }, [language, slug]);
 
+  // Scroll to top when component mounts or slug changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
   // Find the blog post by slug (check both English and French slugs)
   const post = blogPosts.find((post) =>
     post.slug === slug || post.slugFr === slug
