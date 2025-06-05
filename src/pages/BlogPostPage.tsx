@@ -35,6 +35,15 @@ const BlogPostPage: React.FC = () => {
     setLanguage(pathLang);
   }, [location.pathname, slug, setLanguage]);
 
+  // Additional effect to handle language changes via language switcher
+  useEffect(() => {
+    // If language is switched to English while on blog post page, redirect to external blog
+    if (language === "en") {
+      console.log("Language switched to English on blog post page, redirecting to external blog");
+      window.location.href = `https://www.styly.io/blog/${slug}`;
+    }
+  }, [language, slug]);
+
   // Find the blog post by slug (check both English and French slugs)
   const post = blogPosts.find((post) =>
     post.slug === slug || post.slugFr === slug

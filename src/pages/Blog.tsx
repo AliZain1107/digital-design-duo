@@ -26,6 +26,15 @@ const Blog = () => {
     setLanguage(pathLang);
   }, [location.pathname, setLanguage]);
 
+  // Additional effect to handle language changes via language switcher
+  useEffect(() => {
+    // If language is switched to English while on blog page, redirect to external blog
+    if (language === "en") {
+      console.log("Language switched to English on blog page, redirecting to external blog");
+      window.location.href = "https://www.styly.io/blog";
+    }
+  }, [language]);
+
   // SEO metadata based on language
   const seoMeta = {
     en: {
