@@ -34,10 +34,6 @@ import InnovativeStairRailingIdeas from "@/blogPages/InnovativeStairRailingIdeas
 import DesignLivingRoomLikePro from "@/blogPages/DesignLivingRoomLikePro";
 import AIAssistantInteriorDesignPrompts from "@/blogPages/AIAssistantInteriorDesignPrompts";
 import GenerativeAIRevolutionizingDesign from "@/blogPages/GenerativeAIRevolutionizingDesign";
-import AIImageGenerationAdobeFirefly from "@/blogPages/AIImageGenerationAdobeFirefly";
-import FiveAIPoweredInteriorDesignSoftware from "@/blogPages/FiveAIPoweredInteriorDesignSoftware";
-import TenPerfectInteriorDesignStyles from "@/blogPages/TenPerfectInteriorDesignStyles";
-import InteriorAIInterviewSophiaRenard from "@/blogPages/InteriorAIInterviewSophiaRenard";
 
 export interface BlogPost {
   id: number;
@@ -380,41 +376,5 @@ export const blogPosts: BlogPost[] = [
     slug: "ai-assistant-interior-design-chatgpt-prompts",
     slugFr: "assistant-ia-design-interieur-prompts-chatgpt",
     Component: AIAssistantInteriorDesignPrompts,
-  },
-  {
-    id: 37,
-    title: "5 AI-powered Interior Design Software Solutions in 2024",
-    date: "Jun 23, 2024",
-    image: "/ai-room-decorator.webp",
-    slug: "5-ai-powered-interior-design-software-solutions-2024",
-    slugFr: "5-solutions-logiciels-design-interieur-ia-2024",
-    Component: FiveAIPoweredInteriorDesignSoftware,
-  },
-  {
-    id: 38,
-    title: "AI Image Generation: Interior Design by Adobe Firefly",
-    date: "Apr 22, 2024",
-    image: "/ai-room-design-free.webp",
-    slug: "ai-image-generation-interior-design-adobe-firefly",
-    slugFr: "generation-images-ia-design-interieur-adobe-firefly",
-    Component: AIImageGenerationAdobeFirefly,
-  },
-  {
-    id: 39,
-    title: "10 Perfect Interior Design Style: Timeless Elegance and Modern Flair",
-    date: "Jun 24, 2024",
-    image: "/interior-design-styles-collection.webp",
-    slug: "10-perfect-interior-design-style-timeless-elegance-modern-flair",
-    slugFr: "10-styles-design-interieur-parfaits-elegance-intemporelle-moderne",
-    Component: TenPerfectInteriorDesignStyles,
-  },
-  {
-    id: 40,
-    title: "Interior AI and Interior Design: An Interview with Visionary Architect, Sophia Renard",
-    date: "Apr 8, 2024",
-    image: "/ai-interior-design-technology.webp",
-    slug: "interior-ai-design-interview-visionary-architect-sophia-renard",
-    slugFr: "ia-design-interieur-interview-architecte-visionnaire-sophia-renard",
-    Component: InteriorAIInterviewSophiaRenard,
   },
 ];
