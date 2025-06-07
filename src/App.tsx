@@ -12,6 +12,8 @@ import BlogPostPage from "./pages/BlogPostPage";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import VideoGuide from "./pages/VideoGuide";
+import Collaborators from "./pages/Collaborators";
+import ServicesAPI from "./pages/ServicesAPI";
 import CookieBanner from "./components/layout/CookieBanner";
 import EnglishRedirect from "./components/EnglishRedirect";
 import EnglishBlogRedirect from "./components/EnglishBlogRedirect";
@@ -60,11 +62,20 @@ const App = () => (
               {/* French video guide pages */}
               <Route path="/fr/video" element={<VideoGuide />} />
 
+              {/* French collaborators pages */}
+              <Route path="/fr/collaborateurs" element={<Collaborators />} />
+
+              {/* French services API pages */}
+              <Route path="/fr/services-api" element={<ServicesAPI />} />
+
               {/* Legacy legal routes for backward compatibility */}
               <Route path="/conditions" element={<Terms />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/confidentialite" element={<Privacy />} />
               <Route path="/video" element={<VideoGuide />} />
+              <Route path="/collaborateurs" element={<Collaborators />} />
+              <Route path="/services-api" element={<ServicesAPI />} />
+              <Route path="/services-api-fr" element={<ServicesAPI />} />
 
               <Route path="/signin" element={<NotFound />} />
               <Route path="/login" element={<NotFound />} />
