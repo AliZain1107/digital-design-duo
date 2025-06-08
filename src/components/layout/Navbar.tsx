@@ -46,8 +46,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="bg-white relative flex min-h-[100px] w-full items-center overflow-hidden justify-between px-5 sm:px-10 lg:px-20 py-[11px] max-md:max-w-full border-b border-gray-800 z-20">
-      <div className="self-stretch z-10 flex min-w-60 min-h-[79px] items-center flex-1 shrink basis-[0%] my-auto max-md:max-w-full">
+    <header className="bg-white relative flex min-h-[70px] w-full items-center overflow-hidden justify-between px-5 sm:px-10 lg:px-20 py-2 max-md:max-w-full border-b border-gray-800 z-20">
+      <div className="self-stretch z-10 flex min-w-60 min-h-[50px] items-center flex-1 shrink basis-[0%] my-auto max-md:max-w-full">
         <Link
           to="/"
           className="transition-transform duration-300 hover:scale-105"
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
           <img
             src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
             alt="STYLY Logo"
-            className="aspect-[2.28] object-contain w-[132px] self-stretch my-auto"
+            className="aspect-[2.28] object-contain w-[120px] self-stretch my-auto"
           />
         </Link>
       </div>
@@ -229,7 +229,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute z-0 flex min-h-[100px] w-[2117px] inset-0 max-md:max-w-full" />
+      <div className="absolute z-0 flex min-h-[70px] w-[2117px] inset-0 max-md:max-w-full" />
     </header>
   );
 };

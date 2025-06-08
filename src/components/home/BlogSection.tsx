@@ -114,7 +114,7 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   return (
     <Link
       to={getBlogUrl()}
-      className="bg-white shadow-md rounded-[20px] w-[400px] overflow-hidden flex flex-col max-md:w-full max-md:max-w-full"
+      className="bg-white shadow-md rounded-[20px] w-[431px] overflow-hidden flex flex-col max-md:max-w-full"
     >
       {/* Fixed-height image container with padding */}
       <div className="h-[220px] w-full bg-white flex items-center justify-center p-4">
@@ -157,8 +157,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts }) => {
   const displayedBlogPosts = maxPosts ? sortedBlogPosts.slice(0, maxPosts) : sortedBlogPosts;
 
   return (
-    <section className="bg-white w-full py-16 px-4 sm:px-6 md:px-8" key={`blog-section-${language}`}>
-      <div className="w-full max-w-7xl mx-auto">
+    <section className="bg-white w-full py-20 px-4 sm:px-6 md:px-8" key={`blog-section-${language}`}>
+      <div className="w-full max-w-[1800px] mx-auto">
         <div className="text-black font-semibold px-8 max-md:max-w-full max-md:px-5">
           <div className="flex w-full flex-col items-center max-md:max-w-full">
             <div className="flex w-[768px] max-w-full flex-col items-center">
@@ -176,8 +176,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts }) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center mt-6 py-8">
-          <div className="flex justify-center w-full items-stretch gap-4 flex-wrap max-md:max-w-full">
+        <div className="flex items-center overflow-hidden justify-center mt-[9px] py-10">
+          <div className="self-stretch flex justify-between min-w-60 min-h-[488px] w-full items-stretch px-6 gap-6 flex-wrap flex-1 shrink basis-[0%] my-auto max-md:max-w-full">
             {displayedBlogPosts.map((post) => (
               <BlogPostCard key={post.id} post={post} />
             ))}

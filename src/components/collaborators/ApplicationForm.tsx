@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { X, Award, CheckCircle, AlertCircle } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
-import { GoogleSheetsService } from "@/services/googleSheets";
 
 interface ApplicationFormProps {
   isOpen: boolean;
@@ -87,7 +86,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ isOpen, onClose }) =>
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+    
     if (!validateForm()) {
       return;
     }
@@ -95,20 +94,14 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ isOpen, onClose }) =>
     setFormState('submitting');
 
     try {
-      // Submit to Google Sheets
-      const success = await GoogleSheetsService.submitApplication({
-        fullName: formData.fullName,
-        email: formData.email,
-        portfolioLink: formData.portfolioLink,
-        specialization: formData.specialization,
-      });
-
-      if (success) {
-        console.log('Application submitted successfully to Google Sheets');
-        setFormState('success');
-      } else {
-        throw new Error('Failed to submit to Google Sheets');
-      }
+      // Simulate API call - replace with actual endpoint
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      // For now, we'll simulate a successful submission
+      // In a real implementation, you would send the data to your backend
+      console.log('Form submitted:', formData);
+      
+      setFormState('success');
     } catch (error) {
       console.error('Form submission error:', error);
       setFormState('error');
