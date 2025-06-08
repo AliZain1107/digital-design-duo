@@ -70,39 +70,57 @@ const Navbar: React.FC = () => {
       </button>
 
       {/* Desktop Navigation */}
-      <nav className="self-stretch z-10 hidden md:flex min-w-60 min-h-11 items-center gap-4 justify-center my-auto">
-        <div className="flex items-center justify-start md:justify-end flex-wrap gap-3 mb-8 md:mb-0 w-full md:flex-1">
-          <a
-            href="https://app.styly.io/pricing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg max-md:px-5 border border-[rgba(89,50,134,1)] transition-all duration-200 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
-            aria-label="Go to Pricing"
-          >
-            <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
-            <div className="self-center z-10 w-full">
-              <div className="w-full">{t.pricing}</div>
-            </div>
-          </a>
-        </div>
+      <nav className="self-stretch z-10 hidden md:flex min-w-60 min-h-11 items-center gap-3 justify-center my-auto">
+        <a
+          href="https://app.styly.io/pricing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-200 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
+          aria-label="Go to Pricing"
+        >
+          <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
+          <div className="self-center z-10 w-full">
+            <div className="w-full">{t.pricing}</div>
+          </div>
+        </a>
 
-        <div className="flex items-center justify-start md:justify-end flex-wrap gap-3 mb-8 md:mb-0 w-full md:flex-1">
-          <a
-            href="https://app.styly.io"
-            className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg max-md:px-5 border border-[rgba(89,50,134,1)] transition-all duration-300 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
-          >
-            <div className="bg-[rgba(250,111,64,1)] absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
-            <div className="self-center z-10 w-full">
-              <div className="w-full">
-                <span className="text-white whitespace-nowrap inline-block">
-                  {t.signIn}
-                </span>
-              </div>
+        <Link
+          to={language === "fr" ? "/fr/collaborateurs" : "/collaborateurs"}
+          className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-200 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
+          aria-label="Go to Styly Pro"
+        >
+          <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
+          <div className="self-center z-10 w-full">
+            <div className="w-full">{language === "fr" ? "Styly Pro" : "Styly Pro"}</div>
+          </div>
+        </Link>
+
+        <Link
+          to={language === "fr" ? "/fr/services-api" : "/services-api"}
+          className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-200 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
+          aria-label="Go to Services API"
+        >
+          <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
+          <div className="self-center z-10 w-full">
+            <div className="w-full">{t.servicesAPI}</div>
+          </div>
+        </Link>
+
+        <a
+          href="https://app.styly.io"
+          className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-300 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
+        >
+          <div className="bg-[rgba(250,111,64,1)] absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
+          <div className="self-center z-10 w-full">
+            <div className="w-full">
+              <span className="text-white whitespace-nowrap inline-block">
+                {t.signIn}
+              </span>
             </div>
-          </a>
-        </div>
-        <div className="self-stretch my-auto">
-          <DropdownMenu>
+          </div>
+        </a>
+
+        <DropdownMenu>
             <DropdownMenuTrigger className="bg-white flex items-center gap-[5px] overflow-hidden justify-center pt-1 pb-[5px] rounded-md px-2 transition-all duration-300 hover:bg-gray-50 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-200">
               <div className="self-stretch text-[15px] text-[rgba(89,50,134,1)] font-medium whitespace-nowrap tracking-[-0.15px] leading-[30px] w-[51px] my-auto">
                 <div className="w-full pb-px">
@@ -127,8 +145,7 @@ const Navbar: React.FC = () => {
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
+        </DropdownMenu>
       </nav>
 
       {/* Mobile Menu */}
@@ -167,6 +184,22 @@ const Navbar: React.FC = () => {
           >
             {t.pricing}
           </a>
+
+          <Link
+            to={language === "fr" ? "/fr/collaborateurs" : "/collaborateurs"}
+            className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            {language === "fr" ? "Styly Pro" : "Styly Pro"}
+          </Link>
+
+          <Link
+            to={language === "fr" ? "/fr/services-api" : "/services-api"}
+            className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            {t.servicesAPI}
+          </Link>
 
           <Link
             to="/signin"

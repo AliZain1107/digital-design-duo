@@ -63,8 +63,8 @@ const Hero: React.FC = () => {
           <div className="w-full font-baloo text-5xl font-bold max-w-[1200px] mx-auto mb-7 sm:mb-8 md:mb-10">
             <h1 className="sr-only">STYLY - #1 most used AI design tool for modern spaces</h1>
             
-            <div className="flex flex-col items-center justify-center font-extrabold tracking-tight leading-[0.9] font-baloo  font-medium	">
-              <h2 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-1 xs:mb-2 w-full ">
+            <div className="flex flex-col items-center justify-center font-extrabold tracking-tight leading-[0.9] font-baloo font-medium">
+              <h2 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-1 xs:mb-2 w-full">
                 {t.mostUsedAITool}
               </h2>
               
@@ -83,12 +83,12 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Description - Optimized text size and line breaks for different screens */}
-          <div className="w-full max-w-4xl text-center text-[rgba(44,30,73,1)] mb-7 sm:mb-8 md:mb-10 leading-snug tracking-wide font-montagu"  itemProp="description">
-            <p className="text-base xs:text-lg sm:text-xl font-light leading-tight  ">
+          <div className="w-full max-w-4xl text-center text-[rgba(44,30,73,1)] mb-7 sm:mb-8 md:mb-10 leading-snug tracking-wide font-montagu" itemProp="description">
+            <p className="text-base xs:text-lg sm:text-xl font-light leading-tight">
               {t.redesignEmptyRooms}
               <br className="hidden sm:block" />
               {t.forRealEstate}
-              <span className="font-extrabold "> {t.noToolsNoDownloads}</span>.
+              <span className="font-extrabold"> {t.noToolsNoDownloads}</span>.
             </p>
           </div>
           
@@ -127,7 +127,7 @@ const Hero: React.FC = () => {
           </a>
 
           {/* Supporting text */}
-          <p className="text-gray-900 font-semibold text-xs xs:text-sm md:text-lg lg:text-xl text-[#A5A5A5] ">
+          <p className="text-gray-900 font-semibold text-xs xs:text-sm md:text-lg lg:text-xl text-[#A5A5A5]">
             {t.supporting} <span itemProp="userInteractionCount">{t.realEstatePros}</span>
           </p>
         </div>

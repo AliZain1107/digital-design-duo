@@ -4,7 +4,6 @@ import { useLanguage } from "@/lib/i18n";
 
 const HowItWorks: React.FC = () => {
   const { t, language } = useLanguage();
-  
   // Debug output to verify language and translations
   console.log("Current language in HowItWorks:", language);
   console.log("HowItWorks translations:", {
@@ -12,7 +11,6 @@ const HowItWorks: React.FC = () => {
     howItWorks: t.howItWorks,
     transformSpace: t.transformSpace
   });
-  
   return (
     <section className="bg-white w-full flex flex-col items-center justify-center py-28 px-4 sm:px-6 md:px-10" key={`how-it-works-${language}`}>
       <div className="w-full max-w-6xl mx-auto">
@@ -31,7 +29,6 @@ const HowItWorks: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-20 relative">
           {/* Connecting line (visible on md screens and up) */}
           <div className="hidden md:block absolute top-12 left-[25%] right-[25%] h-0.5 bg-gradient-to-r from-pink-100 via-purple-100 to-pink-100"></div>
-          
           {/* Step 1: Upload */}
           <div className="flex flex-col items-center text-center group relative">
             <div className="w-24 h-24 rounded-full bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center mb-6 shadow-md transition-all duration-300 group-hover:shadow-lg overflow-hidden border border-purple-100 relative z-10">

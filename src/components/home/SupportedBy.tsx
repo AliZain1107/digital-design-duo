@@ -64,7 +64,6 @@ const SupportedBy: React.FC = () => {
         </h2>
       </div>
 
-      
       {/* Container with gradients for fade effect */}
       <div className="relative max-w-full mx-auto overflow-hidden">
         {/* Left fade gradient */}

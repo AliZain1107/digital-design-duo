@@ -326,7 +326,7 @@ const Index: React.FC = () => {
   const canonicalUrl = currentUrl;
 
   return (
-    <div className="bg-white flex flex-col w-full min-h-screen  " key={`index-${language}`}>
+    <div className="bg-white flex flex-col w-full min-h-screen" key={`index-${language}`}>
       <SEO
         title={seoMeta.title}
         description={seoMeta.description}

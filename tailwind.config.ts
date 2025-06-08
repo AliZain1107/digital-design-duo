@@ -70,11 +70,18 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
         },
-        fontFamily: {
-          baloo: ['"Baloo 2"', 'cursive'],
-          inter: ['"Inter"', 'sans-serif'],
-          montagu: ["'Montagu Slab'", "serif"],
-        },
+        // Styly brand colors
+        styly: {
+          purple: '#4120A9',
+          orange: '#FA6F40',
+          lavender: '#D6D8FF',
+        }
+      },
+      fontFamily: {
+        baloo: ['"Baloo 2"', 'cursive'],
+        inter: ['"Inter"', 'sans-serif'],
+        montagu: ["'Montagu Slab'", "serif"],
+        poppins: ['Poppins', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

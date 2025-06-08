@@ -11,7 +11,6 @@ const useCountUp = (end: number, duration: number = 2000) => {
 
     const startTime = Date.now();
     const endValue = end;
-    
     const animate = () => {
       const currentTime = Date.now();
       const progress = Math.min((currentTime - startTime) / duration, 1);
