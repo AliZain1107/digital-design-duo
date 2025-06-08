@@ -14,10 +14,10 @@ const HowItWorks: React.FC = () => {
   });
   
   return (
-    <section className="bg-white w-full flex flex-col items-center justify-center py-28 px-4 sm:px-6 md:px-10" key={`how-it-works-${language}`}>
+    <section className="bg-white w-full flex flex-col items-center justify-center py-16 sm:py-20 px-4 sm:px-6 md:px-10" key={`how-it-works-${language}`}>
       <div className="w-full max-w-6xl mx-auto">
         {/* Section header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <span className="inline-block text-sm uppercase tracking-wider font-semibold text-orange-500 mb-3">{t.simpleProcess}</span>
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6">
             {t.howItWorks.split(' ')[0]} <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-800">{t.howItWorks.split(' ').slice(1).join(' ')}</span>
@@ -28,7 +28,7 @@ const HowItWorks: React.FC = () => {
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-20 relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-16 relative">
           {/* Connecting line (visible on md screens and up) */}
           <div className="hidden md:block absolute top-12 left-[25%] right-[25%] h-0.5 bg-gradient-to-r from-pink-100 via-purple-100 to-pink-100"></div>
           
@@ -93,7 +93,7 @@ const HowItWorks: React.FC = () => {
         <div className="text-center mt-12 px-4 py-8 rounded-2xl bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-100">
           <a
             href="https://app.styly.io"
-            className="inline-block text-lg md:text-xl bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold px-10 py-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-1"
+            className="inline-block text-base md:text-lg bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold px-8 py-3.5 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5"
           >
             {t.getStartedFree}
           </a>

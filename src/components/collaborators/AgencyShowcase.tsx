@@ -114,16 +114,16 @@ const AgencyShowcase: React.FC = () => {
           </p>
         </div>
 
-        {/* Premium Agency Cards Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6 mb-16">
+        {/* Smaller, More Responsive Agency Cards Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 mb-12">
           {agencies.map((agency, index) => (
             <div
               key={agency.id}
-              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/50 hover:border-purple-200/50 hover:-translate-y-3"
+              className="group relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden border border-white/50 hover:border-purple-200/50 hover:-translate-y-2"
               style={{ animationDelay: `${index * 50}ms` }}
             >
-              {/* Premium Image Container */}
-              <div className="relative aspect-[4/3] overflow-hidden">
+              {/* Smaller Image Container */}
+              <div className="relative aspect-[3/4] overflow-hidden">
                 <img
                   src={agency.image}
                   alt={`${agency.name} - ${agency.specialty}`}
@@ -132,51 +132,51 @@ const AgencyShowcase: React.FC = () => {
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
 
-                {/* Floating Verification Badge */}
+                {/* Smaller Verification Badge */}
                 {agency.verified && (
-                  <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm rounded-full p-2 shadow-lg">
-                    <Award className="w-4 h-4 text-purple-600" />
+                  <div className="absolute top-2 right-2 bg-white/95 backdrop-blur-sm rounded-full p-1 shadow-md">
+                    <Award className="w-3 h-3 text-purple-600" />
                   </div>
                 )}
 
-                {/* Country Flag Placeholder */}
-                <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-sm rounded-lg px-2 py-1">
+                {/* Smaller Country Flag */}
+                <div className="absolute top-2 left-2 bg-white/95 backdrop-blur-sm rounded-md px-1 py-0.5">
                   <span className="text-xs font-semibold text-gray-700">
                     {agency.location.split(', ')[1]}
                   </span>
                 </div>
               </div>
 
-              {/* Premium Content */}
-              <div className="p-4">
-                <h3 className="font-bold text-sm text-gray-900 mb-2 group-hover:text-purple-700 transition-colors duration-300 leading-tight">
+              {/* Compact Content */}
+              <div className="p-2 sm:p-3">
+                <h3 className="font-bold text-xs sm:text-sm text-gray-900 mb-1 group-hover:text-purple-700 transition-colors duration-300 leading-tight line-clamp-2">
                   {agency.name}
                 </h3>
 
-                <div className="flex items-center text-gray-600 text-xs mb-2">
-                  <MapPin className="w-3 h-3 mr-1 text-purple-500" />
-                  <span>{agency.location}</span>
+                <div className="flex items-center text-gray-600 text-xs mb-1">
+                  <MapPin className="w-2 h-2 mr-1 text-purple-500" />
+                  <span className="truncate">{agency.location}</span>
                 </div>
 
-                <p className="text-xs text-purple-600 font-medium mb-3 bg-purple-50 rounded-full px-2 py-1 inline-block">
+                <p className="text-xs text-purple-600 font-medium mb-2 bg-purple-50 rounded-full px-1 py-0.5 inline-block truncate max-w-full">
                   {agency.specialty}
                 </p>
 
-                {/* Premium Stats */}
+                {/* Compact Stats */}
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center bg-blue-50 rounded-full px-2 py-1">
-                    <Eye className="w-3 h-3 text-blue-600 mr-1" />
+                  <div className="flex items-center bg-blue-50 rounded-full px-1 py-0.5">
+                    <Eye className="w-2 h-2 text-blue-600 mr-1" />
                     <span className="text-xs font-semibold text-blue-700">{agency.views}</span>
                   </div>
-                  <div className="flex items-center bg-red-50 rounded-full px-2 py-1">
-                    <Heart className="w-3 h-3 text-red-500 mr-1" />
+                  <div className="flex items-center bg-red-50 rounded-full px-1 py-0.5">
+                    <Heart className="w-2 h-2 text-red-500 mr-1" />
                     <span className="text-xs font-semibold text-red-600">{agency.likes}</span>
                   </div>
                 </div>
               </div>
 
               {/* Subtle Glow Effect */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-400/0 via-purple-400/5 to-indigo-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-400/0 via-purple-400/5 to-indigo-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
             </div>
           ))}
         </div>

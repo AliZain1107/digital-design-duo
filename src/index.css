@@ -108,7 +108,7 @@
 
 @layer components {
   .container-section {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16;
   }
 
   .styled-stat {
@@ -132,7 +132,7 @@
   }
 
   .cta-button {
-    @apply bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-full
+    @apply bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-xl
     transition-all duration-200 inline-flex items-center justify-center;
   }
 

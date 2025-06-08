@@ -39,16 +39,16 @@ const ShowcaseScroll: React.FC = () => {
   return (
     <div className="w-screen -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-10 overflow-hidden">
       {/* Top row - scrolls from right to left */}
-      <div className="flex animate-marquee-left mb-6">
+      <div className="flex animate-marquee-left mb-4">
         {topRowImages.map((src, index) => (
-          <div key={`top-${index}`} className="h-auto w-[300px] sm:w-[350px] md:w-[500px] flex-shrink-0 mx-2">
+          <div key={`top-${index}`} className="h-auto w-[200px] sm:w-[240px] md:w-[280px] lg:w-[320px] xl:w-[360px] flex-shrink-0 mx-1 sm:mx-2">
             <img
               src={src}
               alt={language === "fr"
                 ? `Vitrine Design Intérieur IA ${index + 1} - Planificateur chambre IA et logiciel design intérieur gratuit`
                 : `AI Interior Design Showcase ${index + 1} - AI room planner and free interior design software`
               }
-              className="h-full w-full object-cover rounded-xl shadow-md"
+              className="h-full w-full object-cover rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
             />
           </div>
         ))}
@@ -57,14 +57,14 @@ const ShowcaseScroll: React.FC = () => {
       {/* Bottom row - scrolls from left to right */}
       <div className="flex animate-marquee-right">
         {bottomRowImages.map((src, index) => (
-          <div key={`bottom-${index}`} className="h-auto w-[300px] sm:w-[350px] md:w-[500px] flex-shrink-0 mx-2">
+          <div key={`bottom-${index}`} className="h-auto w-[200px] sm:w-[240px] md:w-[280px] lg:w-[320px] xl:w-[360px] flex-shrink-0 mx-1 sm:mx-2">
             <img
             src={src}
               alt={language === "fr"
                 ? `Galerie Design Chambre IA ${index + 1 + topRowImages.length} - Générateur design intérieur IA et home staging virtuel`
                 : `AI Room Design Gallery ${index + 1 + topRowImages.length} - Interior design AI generator and virtual staging`
               }
-              className="h-full w-full object-cover rounded-xl shadow-md"
+              className="h-full w-full object-cover rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
           />
           </div>
         ))}

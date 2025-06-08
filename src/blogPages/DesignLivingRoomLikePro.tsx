@@ -66,16 +66,16 @@ const DesignLivingRoomLikePro: React.FC = () => {
               Chez Styly, nous croyons que comprendre vos goûts est la clé d'un beau salon. Nos outils alimentés par l'IA analysent vos préférences et suggèrent des idées de salon qui s'alignent avec votre vision. Que vous aimiez le minimalisme moderne ou le traditionalisme confortable, Styly adapte ses recommandations à votre style. Dites adieu aux designs standardisés et bonjour à un espace qui vous ressemble vraiment.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
                 src="/design-living-room-like-pro-styly.webp"
                 alt="Design salon professionnel Styly"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
                 src="/living-room-design-ideas-ai.webp"
                 alt="Idées design salon IA"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
             </div>
 
@@ -95,16 +95,16 @@ const DesignLivingRoomLikePro: React.FC = () => {
               Styly ouvre la porte à un monde d'idées d'intérieur maison, organisées par des designers de premier plan et alimentées par des algorithmes avancés. Notre base de données étendue présente une large gamme de styles de design intérieur, du chic contemporain au charme rustique.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
                 src="/home-interior-ideas-styly.webp"
                 alt="Idées intérieur maison Styly"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
                 src="/interior-design-styles-collection.webp"
                 alt="Collection styles design intérieur"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
             </div>
 
@@ -252,16 +252,16 @@ const DesignLivingRoomLikePro: React.FC = () => {
               At Styly, we believe that understanding your taste is the key to a beautiful living room. Our AI-powered tools analyze your preferences and suggest living room ideas that align with your vision. Whether you love modern minimalism or cozy traditionalism, Styly tailors its recommendations to fit your style. Say goodbye to cookie-cutter designs and hello to a space that feels uniquely yours.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
                 src="/design-living-room-like-pro-styly.webp"
                 alt="Design Living Room Like Pro Styly"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
                 src="/living-room-design-ideas-ai.webp"
                 alt="Living Room Design Ideas AI"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
             </div>
 
@@ -281,16 +281,16 @@ const DesignLivingRoomLikePro: React.FC = () => {
               Styly opens the door to a world of home interior ideas, curated by top designers and powered by advanced algorithms. Our extensive database features a wide range of interior design styles, from contemporary chic to rustic charm.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
                 src="/home-interior-ideas-styly.webp"
                 alt="Home Interior Ideas Styly"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
                 src="/interior-design-styles-collection.webp"
                 alt="Interior Design Styles Collection"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
             </div>
 

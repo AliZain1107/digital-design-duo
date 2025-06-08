@@ -71,7 +71,7 @@ const Stats: React.FC = () => {
   }, []);
 
   return (
-    <section ref={ref} className="bg-[rgba(242,242,242,1)] flex w-full flex-col overflow-hidden items-center justify-center py-24 max-md:max-w-full">
+    <section ref={ref} className="bg-[rgba(242,242,242,1)] flex w-full flex-col overflow-hidden items-center justify-center py-16 sm:py-20 max-md:max-w-full">
       <div className="w-full max-w-7xl px-2 sm:px-6 md:px-12">
         <div className="text-4xl text-[rgba(89,50,134,1)] font-extralight text-center tracking-[-0.72px] leading-none px-4 md:px-8">
           <div className="flex flex-col items-center">

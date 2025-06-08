@@ -114,23 +114,23 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   return (
     <Link
       to={getBlogUrl()}
-      className="bg-white shadow-md rounded-[20px] w-[431px] overflow-hidden flex flex-col max-md:max-w-full"
+      className="bg-white shadow-sm rounded-[16px] w-full max-w-[380px] overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-300"
     >
-      {/* Fixed-height image container with padding */}
-      <div className="h-[220px] w-full bg-white flex items-center justify-center p-4">
+      {/* Smaller, responsive image container */}
+      <div className="h-[160px] sm:h-[180px] w-full bg-white flex items-center justify-center p-3">
         <img
           src={post.image}
           alt={getTranslatedTitle()}
-          className="w-full h-[200px] object-fit rounded-[10px] max-md:max-w-full"
+          className="w-full h-[140px] sm:h-[160px] object-cover rounded-[8px]"
           />
       </div>
 
       {/* Text content */}
-      <div className="flex flex-col px-4 py-3">
-        <h3 className="text-[21px] font-bold text-[#333] leading-[1.4]">
+      <div className="flex flex-col px-3 py-3">
+        <h3 className="text-[18px] sm:text-[20px] font-bold text-[#333] leading-[1.4] line-clamp-2">
           {getTranslatedTitle()}
         </h3>
-        <p className="text-[11px] text-[#999] tracking-wide mt-2">{post.date}</p>
+        <p className="text-[10px] sm:text-[11px] text-[#999] tracking-wide mt-2">{post.date}</p>
       </div>
     </Link>
   );
@@ -157,7 +157,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts }) => {
   const displayedBlogPosts = maxPosts ? sortedBlogPosts.slice(0, maxPosts) : sortedBlogPosts;
 
   return (
-    <section className="bg-white w-full py-20 px-4 sm:px-6 md:px-8" key={`blog-section-${language}`}>
+    <section className="bg-white w-full py-16 sm:py-20 px-4 sm:px-6 md:px-8" key={`blog-section-${language}`}>
       <div className="w-full max-w-[1800px] mx-auto">
         <div className="text-black font-semibold px-8 max-md:max-w-full max-md:px-5">
           <div className="flex w-full flex-col items-center max-md:max-w-full">
@@ -176,8 +176,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts }) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center overflow-hidden justify-center mt-[9px] py-10">
-          <div className="self-stretch flex justify-between min-w-60 min-h-[488px] w-full items-stretch px-6 gap-6 flex-wrap flex-1 shrink basis-[0%] my-auto max-md:max-w-full">
+        <div className="flex items-center justify-center mt-[9px] py-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6 w-full max-w-6xl px-4">
             {displayedBlogPosts.map((post) => (
               <BlogPostCard key={post.id} post={post} />
             ))}
