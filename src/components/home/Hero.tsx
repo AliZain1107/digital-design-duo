@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
         itemScope
         itemType="https://schema.org/WebPageElement"
       >
-        <div className="w-full max-w-7xl mx-auto flex flex-col items-center text-center px-4 h-full justify-center"
+        <div className="w-full max-w-7xl mx-auto flex flex-col items-center text-center px-4 h-full justify-center">
           {/* Premium Welcome banner */}
           <div
             className="px-4 sm:px-6 py-2 sm:py-3 rounded-full text-white font-semibold text-sm sm:text-base md:text-lg shadow-xl mb-4 sm:mb-6 transform hover:scale-105 transition-all duration-500 cursor-pointer select-none"
@@ -83,12 +83,12 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Description - Optimized for viewport */}
-          <div className="w-full max-w-4xl text-center text-[rgba(44,30,73,1)] mb-3 sm:mb-4 leading-snug tracking-wide font-montagu"  itemProp="description">
-            <p className="text-sm xs:text-base sm:text-lg font-light leading-tight  ">
+          <div className="w-full max-w-4xl text-center text-[rgba(44,30,73,1)] mb-3 sm:mb-4 leading-snug tracking-wide font-montagu" itemProp="description">
+            <p className="text-sm xs:text-base sm:text-lg font-light leading-tight">
               {t.redesignEmptyRooms}
               <br className="hidden sm:block" />
               {t.forRealEstate}
-              <span className="font-extrabold "> {t.noToolsNoDownloads}</span>.
+              <span className="font-extrabold"> {t.noToolsNoDownloads}</span>.
             </p>
           </div>
           
@@ -127,7 +127,7 @@ const Hero: React.FC = () => {
           </a>
 
           {/* Supporting text */}
-          <p className="text-gray-900 font-semibold text-xs xs:text-sm sm:text-base text-[#A5A5A5] ">
+          <p className="text-gray-900 font-semibold text-xs xs:text-sm sm:text-base text-[#A5A5A5]">
             {t.supporting} <span itemProp="userInteractionCount">{t.realEstatePros}</span>
           </p>
         </div>
