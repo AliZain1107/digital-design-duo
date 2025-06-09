@@ -797,6 +797,101 @@ export interface Translations {
   discoverHowToUseAITools: string;
   readyToTransformSpaces: string;
   getStartedWithFreeAITools: string;
+
+  // Services API Page
+  servicesAPI: string;
+  stylyAIAPISuite: string;
+  mostAdvancedVisualIntelligencePlatform: string;
+  developerAPIs: string;
+  requestAccess: string;
+  exploreAPIDocs: string;
+  whyChooseOurAPIs: string;
+  lightningFast: string;
+  scalable: string;
+  productionReady: string;
+  global: string;
+  millionsOfRequests: string;
+  uptimeNineNineNine: string;
+  worldwideCDN: string;
+  ourCoreAPIs: string;
+  fivePowerfulAPIs: string;
+  aiFloorGenerationAPI: string;
+  generateRealisticFloorDesigns: string;
+  aiWallGenerationAPI: string;
+  createSophisticatedWallDesigns: string;
+  aiMoodboardGeneratorAPI: string;
+  createCohesiveMoodboards: string;
+  aiRealEstateEnhancementAPI: string;
+  transformRealEstatePhotos: string;
+  aiProductVisualizationAPI: string;
+  integrateProductsIntoEnvironments: string;
+  realisticMaterials: string;
+  customizableStyles: string;
+  highResolution: string;
+  easyIntegration: string;
+  variedTextures: string;
+  customColors: string;
+  realisticLighting: string;
+  instantRendering: string;
+  harmoniousPalettes: string;
+  cohesiveStyles: string;
+  multipleExports: string;
+  advancedCustomization: string;
+  virtualHomeStaging: string;
+  photoEnhancement: string;
+  multipleStyles: string;
+  immediateROI: string;
+  realisticPlacement: string;
+  adaptiveLighting: string;
+  automaticContext: string;
+  ecommerceReady: string;
+  simpleIntegration: string;
+  startUsingAPIsWithCode: string;
+  apiExample: string;
+  generateAIFloorDesign: string;
+  generatedDesignURL: string;
+  whoItsBuiltFor: string;
+  designPlatforms: string;
+  integrateAIIntoDesignTools: string;
+  realEstate: string;
+  enhanceListingsWithVirtualStaging: string;
+  ecommerce: string;
+  visualizeProductsInRealEnvironments: string;
+  mobileApps: string;
+  addAICapabilitiesToApps: string;
+  whyTeamsChooseStylyAPIs: string;
+  cuttingEdgeAI: string;
+  aiModelsTrainedOnMillions: string;
+  fastDeployment: string;
+  integrationUnder30Minutes: string;
+  expertSupport: string;
+  dedicatedTeamForIntegration: string;
+  whatYouCanBuildWithIt: string;
+  interiorDesignPlatform: string;
+  createCompletePlatformWithGeneration: string;
+  automaticDesignGeneration: string;
+  customMoodboards: string;
+  realTime3DVisualization: string;
+  ecommerceApplication: string;
+  integrateProductsToIncreaseConversions: string;
+  contextualProductVisualization: string;
+  automaticRecommendations: string;
+  increasedConversions: string;
+  readyToGetStarted: string;
+  joinHundredsOfDevelopers: string;
+  requestAPIAccess: string;
+  bookTechnicalDemo: string;
+  fullName: string;
+  workEmail: string;
+  company: string;
+  useCase: string;
+  selectYourUseCase: string;
+  designPlatform: string;
+  mobileApp: string;
+  other: string;
+  sendRequest: string;
+  yourName: string;
+  yourCompanyName: string;
 }
 // Define translations for English and French
 export const translations: Record<Language, Translations> = {
@@ -838,10 +933,10 @@ export const translations: Record<Language, Translations> = {
     for: "for",
     modernSpaces: "modern spaces",
     redesignEmptyRooms:
-      "Transform empty rooms into styled interiors with our AI room planner —",
+      "Transform empty spaces into styled interiors —",
     forRealEstate: "for real estate, virtual staging, and home design AI.",
-    noToolsNoDownloads: "No tools, no downloads. Just results with our free interior design software",
-    uploadPhoto: "Upload a Photo to Start AI Room Design",
+    noToolsNoDownloads: "No tools, no downloads. Just results.",
+    uploadPhoto: "Upload a Photo to Start",
     supporting: "Supporting",
     realEstatePros: "20,000+ real estate professionals, interior designers & homeowners using our AI interior design tool",
 
@@ -1501,10 +1596,10 @@ export const translations: Record<Language, Translations> = {
     nextArticle:
       "How to Build Your Own House with AI Tools Including Porch Design",
     readMore: "Read More",
-    introductionText1:
+    expertTipsIntroductionText1:
       "Transforming your home interiors doesn’t have to break the bank. With the advent of advanced tools like",
     stylyAI: "Styly’s free AI room design",
-    introductionText2:
+    expertTipsIntroductionText2:
       "solutions, you can achieve stunning results on a budget. Here are 10 expert tips to help you save big on your home interiors while using the latest AI-powered tools.",
 
     // Tips
@@ -1731,6 +1826,273 @@ export const translations: Record<Language, Translations> = {
     readyToTransformSpaces: "Ready to transform your spaces?",
     getStartedWithFreeAITools: "Get started now with our free AI tools",
 
+    // Services API Page
+    servicesAPI: "Services & API",
+    stylyAIAPISuite: "Styly AI API Suite",
+    mostAdvancedVisualIntelligencePlatform: "The Most Advanced Visual Intelligence Platform for Design, Retail & Real Estate",
+    developerAPIs: "Developer APIs",
+    requestAccess: "Request Access",
+    exploreAPIDocs: "Explore API Docs",
+    whyChooseOurAPIs: "Why Choose Our APIs",
+    lightningFast: "Lightning-Fast",
+    scalable: "Scalable",
+    productionReady: "Production-Ready",
+    global: "Global",
+    millionsOfRequests: "Millions of requests",
+    uptimeNineNineNine: "99.9% uptime",
+    worldwideCDN: "Worldwide CDN",
+    ourCoreAPIs: "Our Core APIs",
+    fivePowerfulAPIs: "5 powerful APIs to transform your platform with artificial intelligence",
+    aiFloorGenerationAPI: "AI Floor Generation API",
+    generateRealisticFloorDesigns: "Generate realistic and customized floor designs in seconds",
+    aiWallGenerationAPI: "AI Wall Generation API",
+    createSophisticatedWallDesigns: "Create sophisticated wall designs with textures and colors",
+    aiMoodboardGeneratorAPI: "AI Moodboard Generator API",
+    createCohesiveMoodboards: "Create cohesive and inspiring moodboards automatically",
+    aiRealEstateEnhancementAPI: "AI Real Estate Enhancement API",
+    transformRealEstatePhotos: "Transform real estate photos with virtual home staging",
+    aiProductVisualizationAPI: "AI Product Visualization API",
+    integrateProductsIntoEnvironments: "Integrate products into realistic environments",
+    realisticMaterials: "Realistic materials",
+    customizableStyles: "Customizable styles",
+    highResolution: "High resolution",
+    easyIntegration: "Easy integration",
+    variedTextures: "Varied textures",
+    customColors: "Custom colors",
+    realisticLighting: "Realistic lighting",
+    instantRendering: "Instant rendering",
+    harmoniousPalettes: "Harmonious palettes",
+    cohesiveStyles: "Cohesive styles",
+    multipleExports: "Multiple exports",
+    advancedCustomization: "Advanced customization",
+    virtualHomeStaging: "Virtual home staging",
+    photoEnhancement: "Photo enhancement",
+    multipleStyles: "Multiple styles",
+    immediateROI: "Immediate ROI",
+    realisticPlacement: "Realistic placement",
+    adaptiveLighting: "Adaptive lighting",
+    automaticContext: "Automatic context",
+    ecommerceReady: "E-commerce ready",
+    simpleIntegration: "Simple Integration",
+    startUsingAPIsWithCode: "Start using our APIs with just a few lines of code",
+    apiExample: "API Example",
+    generateAIFloorDesign: "Generate AI floor design",
+    generatedDesignURL: "Generated design URL",
+    whoItsBuiltFor: "Who It's Built For",
+    designPlatforms: "Design Platforms",
+    integrateAIIntoDesignTools: "Integrate AI into your existing design tools",
+    realEstate: "Real Estate",
+    enhanceListingsWithVirtualStaging: "Enhance your listings with virtual home staging",
+    ecommerce: "E-commerce",
+    visualizeProductsInRealEnvironments: "Visualize your products in real environments",
+    mobileApps: "Mobile Apps",
+    addAICapabilitiesToApps: "Add AI capabilities to your mobile apps",
+    whyTeamsChooseStylyAPIs: "Why Teams Choose Styly APIs",
+    cuttingEdgeAI: "Cutting-Edge AI",
+    aiModelsTrainedOnMillions: "AI models trained on millions of design images",
+    fastDeployment: "Fast Deployment",
+    integrationUnder30Minutes: "Integration in under 30 minutes with our SDK",
+    expertSupport: "Expert Support",
+    dedicatedTeamForIntegration: "Dedicated team for your integration and optimization",
+    whatYouCanBuildWithIt: "What You Can Build With It",
+    interiorDesignPlatform: "Interior Design Platform",
+    createCompletePlatformWithGeneration: "Create a complete platform with automatic design generation, moodboards and 3D visualizations.",
+    automaticDesignGeneration: "Automatic design generation",
+    customMoodboards: "Custom moodboards",
+    realTime3DVisualization: "Real-time 3D visualization",
+    ecommerceApplication: "E-commerce Application",
+    integrateProductsToIncreaseConversions: "Integrate your products into realistic environments to increase conversions.",
+    contextualProductVisualization: "Contextual product visualization",
+    automaticRecommendations: "Automatic recommendations",
+    increasedConversions: "Increased conversions",
+    readyToGetStarted: "Ready to Get Started?",
+    joinHundredsOfDevelopers: "Join hundreds of developers already using our APIs to build the future of design.",
+    requestAPIAccess: "Request API Access",
+    bookTechnicalDemo: "Book a Technical Demo",
+    fullName: "Full Name",
+    workEmail: "Work Email",
+    company: "Company",
+    useCase: "Use Case",
+    selectYourUseCase: "Select your use case",
+    designPlatform: "Design Platform",
+    mobileApp: "Mobile App",
+    other: "Other",
+    sendRequest: "Send Request",
+    yourName: "Your name",
+    yourCompanyName: "Your company name",
+
+    // Collaborators Page
+    collaborators: "Collaborators",
+    becomeCollaborator: "Bring Vision to Life.",
+    joinOurNetwork: "Help 20,000+ Creators Turn Ideas Into Spaces.",
+    collaboratorHeroDescription: "Thousands of AI-generated concepts are born every week on Styly — bold interiors, experimental architecture, immersive spaces. Now, they need the creative minds to shape them into reality.",
+    becomeDesignPartner: "Become a Design Partner",
+    freeAndQuick: "It's free, and takes just 2 minutes.",
+
+    // Problem Section
+    theProblem: "The Problem",
+    problemDescription: "Most design professionals waste hours chasing cold leads.",
+    deadEndDMs: "Dead-end DMs and ghosting",
+    deadEndDMsDescription: "Potential clients who never follow through, wasting your valuable time and energy.",
+    budgetlessCollectors: "Budgetless \"idea collectors\"",
+    budgetlessCollectorsDescription: "People who are just browsing with no real intent to hire a professional.",
+    endlessPitching: "Endless pitching for tiny results",
+    endlessPitchingDescription: "Creating detailed proposals that go nowhere, draining your resources.",
+    stylyUsersReady: "Styly users already know what they want",
+    stylyUsersDescription: "They've designed their space. They're ready to start. And they need someone they can trust.",
+
+    // Opportunity Section
+    collaboratorsStylyAdvantage: "The Styly Advantage",
+    stylyAdvantageDescription: "Be featured as a Verified Styly Partner and access pre-qualified clients.",
+    getDiscoveredBy: "Get discovered by clients who:",
+    haveAIDesigns: "Have AI-generated design previews",
+    haveAIDesignsDescription: "Skip the guesswork — clients already know their style",
+    knowStyleSpace: "Know their style and space",
+    knowStyleSpaceDescription: "They've already made key decisions, saving you time",
+    activelyLooking: "Are actively looking for a professional",
+    activelyLookingDescription: "No more tire kickers — only serious clients",
+    curatedMatchmaking: "curated client matchmaking",
+    notJustLeadGeneration: "This is not just lead generation. It's",
+
+    // Benefits Section
+    whatYoullGet: "What You'll Get",
+    highIntentClients: "High-intent clients",
+    highIntentClientsDescription: "Pre-qualified by design activity, ready to move forward with their projects.",
+    aiEducatedHomeowners: "Access to AI-educated homeowners",
+    aiEducatedHomeownersDescription: "Connect with clients who understand design concepts through Styly's AI.",
+    globalVisibility: "Global visibility",
+    globalVisibilityDescription: "Get featured on Styly.io and Lovable.com to reach more potential clients.",
+    officialBadge: "Official \"Styly Certified\" Pro badge",
+    officialBadgeDescription: "Differentiate yourself with official recognition that builds trust.",
+    directContact: "Direct contact",
+    directContactDescription: "Connect with clients via email or site chat without platform interference.",
+    noCommissions: "No commissions",
+    noCommissionsDescription: "No platform lock-in. You keep 100% of your deals.",
+
+    // Comparison Chart Section
+    paymentBenefits: "PAYMENT BENEFITS",
+    comparisonChart: "COMPARISON CHART",
+    traditionalAgencies: "TRADITIONAL AGENCIES",
+    withoutAI: "(WITHOUT AI)",
+    vs: "VS",
+    styly: "STYLY",
+    leadCost: "LEAD COST",
+    monthlyLeadVolume: "MONTHLY LEAD VOLUME",
+    aiCompetency: "AI COMPETENCY",
+    marketPosition: "MARKET POSITION",
+    serviceEvolution: "SERVICE EVOLUTION",
+    designPreferenceUnderstanding: "DESIGN PREFERENCE UNDERSTANDING",
+    monthlyTraffic: "MONTHLY TRAFFIC",
+    globalReach: "GLOBAL REACH",
+    portfolioViewsOnline: "PORTFOLIO VIEWS ONLINE",
+    clientBase: "CLIENT BASE",
+    futureReadiness: "FUTURE READINESS",
+    joinStylyTransform: "Join Styly today and transform your business with AI-powered advantages",
+    becomeCertifiedPro: "Become a Certified Pro",
+
+    // Premium Placement Section
+    premiumPlacement: "Premium Placement = Premium Clients",
+    stylyHighlightPros: "Styly will highlight top Certified Pros throughout:",
+    aiProjectExports: "AI project exports with professional recommendations",
+    stylyNewsletters: "Styly newsletters & email campaigns to thousands of users",
+    proPartnerDirectory: "The Pro Partner Directory on Lovable.com",
+    goToNameWhen: "You'll also be the go-to name when:",
+    couplesDisagree: "Couples disagree on renovation styles and need professional mediation",
+    realtorsWantStaging: "Realtors want staging without breaking budgets",
+    homeownersNeedProfessional: "Homeowners need a professional to finalize the vision they created using Styly",
+
+    // Application CTA Section
+    readyToBeRecommended: "Ready to Be Recommended by Styly?",
+    inviteOnlyExperience: "This is an invite-only experience. Limited to top professionals per city.",
+    applyNow: "Apply Now",
+    questionsReachUs: "Questions? Reach us directly at",
+    orDMUs: "or DM us",
+
+    // Social Proof Section
+    joinGrowingNetwork: "Join a Growing Network of Forward-Thinking Designers",
+    architectTokyo: "Architect, Tokyo",
+    interiorDesignerCapeTown: "Interior Designer, Cape Town",
+    freelancerLisbon: "Freelancer, Lisbon",
+    socialProofDescription: "From boutique studios to solo creators — Styly partners are everywhere ideas are evolving.",
+
+    // Discovery Card Section
+    yourOwnDiscoveryCard: "Your Own Discovery Card on Styly",
+    discoveryCardDescription: "Users exploring ideas can find and connect with you through your dedicated profile.",
+    calmMinimalistSpaces: "Calm minimalist spaces with edge",
+
+    // Why Join Section
+    whyJoinStyly: "Designed for Creatives Ready to Do Meaningful Work",
+    clientsWithVision: "Clients With Vision",
+    clientsWithVisionDescription: "Work with people who've already imagined something — and need you to bring it to life.",
+    designOnYourTerms: "Design on Your Terms",
+    designOnYourTermsDescription: "Choose who you work with, how you collaborate, and where you work from.",
+    builtInExposure: "Built-In Exposure",
+    builtInExposureDescription: "Get seen by over 20K monthly users exploring creative ideas.",
+    realCreativityAI: "Real Creativity, Enhanced by AI",
+    realCreativityAIDescription: "Partner with clients using AI not to replace you — but to spark new conversations.",
+    forStudiosAndSolo: "For Studios & Solo Creators",
+    forStudiosAndSoloDescription: "Whether you're freelance or full-service — Styly helps people find your unique voice.",
+    // How It Works Section
+    collaboratorsHowItWorks: "How to Join in 3 Simple Steps",
+    stepOne: "Apply",
+    stepOneDescription: "Share your name, email, and a bit about your work.",
+    stepTwo: "Get Listed",
+    stepTwoDescription: "Once approved, your profile appears on Styly's discovery page.",
+    stepThree: "Start Collaborating",
+    stepThreeDescription: "Get contacted by people who are inspired by what you do.",
+
+    // Who We're Looking For Section
+    whoWereLookingFor: "Creatives Who Think Spatially and Dream Boldly",
+    interiorDesigners: "Interior Designers",
+    architects: "Architects",
+    conceptualCreatives: "Conceptual Creatives",
+    spatialArtists: "Spatial Artists",
+    setDesigners: "Set Designers",
+    anyoneExploringSpace: "Anyone exploring space, texture, form, or experience",
+    quoteBlock: "If you've ever wanted to turn someone's wild concept into a real-world masterpiece — this is for you.",
+
+    // Final CTA Section
+    readyToJoin: "Ready to Join?",
+    readyToJoinDescription: "Start collaborating with visionary creators today.",
+    collaboratorsApplyNow: "Apply Now",
+    learnMore: "Learn More",
+    getStarted: "Get Started",
+
+    // Application Form
+    applicationForm: "Application Form",
+    quickApplication: "Quick & Easy Application",
+    applyToJoinNetwork: "Apply to Join Our Network",
+    fillOutForm: "Fill out the form below to start your application process",
+    quickFormDescription: "Join our exclusive network in just 2 minutes. Only 4 fields required.",
+    fullName: "Full Name",
+    fullNamePlaceholder: "Enter your full name",
+    emailAddress: "Email Address",
+    emailPlaceholder: "Enter your email address",
+    location: "Location",
+    locationPlaceholder: "City, Country",
+    portfolioLink: "Portfolio Link",
+    portfolioPlaceholder: "https://your-portfolio.com",
+    specialization: "Specialization",
+    selectSpecialization: "Select your specialization",
+    interiorDesign: "Interior Design",
+    architecture: "Architecture",
+    other: "Other",
+    submitApplication: "Submit Application",
+    submitting: "Submitting...",
+    collaboratorsClose: "Close",
+    cancel: "Cancel",
+
+    // Form Validation
+    fieldRequired: "This field is required",
+    invalidEmail: "Please enter a valid email address",
+    invalidUrl: "Please enter a valid URL",
+
+    // Form Success/Error States
+    applicationSubmitted: "Application Submitted Successfully!",
+    applicationSuccess: "Thank you for your application. We'll review it and get back to you within 2-3 business days.",
+    applicationError: "Something went wrong. Please try again later.",
+    tryAgain: "Try Again",
+
   },
   fr: {
     // Add missing properties with placeholder translations
@@ -1767,11 +2129,11 @@ export const translations: Record<Language, Translations> = {
     for: "pour",
     modernSpaces: "espaces modernes",
     redesignEmptyRooms:
-      "Transformez des pièces vides en intérieurs stylés avec notre planificateur chambre IA —",
+      "Transformez des espaces vides en intérieurs stylés —",
     forRealEstate: "pour l'immobilier, la rénovation et le home staging virtuel.",
     noToolsNoDownloads:
-      "Pas d'outils, pas de téléchargements. Juste des résultats avec notre logiciel design intérieur gratuit",
-    uploadPhoto: "Télécharger une Photo pour Commencer le Design Chambre IA",
+      "Pas d'outils, pas de téléchargements. Juste des résultats.",
+    uploadPhoto: "Télécharger une Photo pour Commencer",
     supporting: "Au service de",
     realEstatePros:
       "plus de 20 000 professionnels de l'immobilier, designers d'intérieur et propriétaires utilisant notre outil design intérieur",
@@ -2413,8 +2775,8 @@ export const translations: Record<Language, Translations> = {
     caseStudiesAndExamples: "Études de cas et exemples concrets",
     caseStudyIntro:
       "Qu'est-ce qui rend un espace célèbre sur Instagram ? Voici quelques exemples marquants d'intérieurs qui ont cassé l'algorithme :",
-    economicEfficiency: "Efficacité économique",
-    economicEfficiencyText:
+    viralEconomicEfficiency: "Efficacité économique",
+    viralEconomicEfficiencyText:
       "Un petit appartement qui déborde de confort, avec une jungle de plantes suspendues, des meubles vintage et des tons doux. Astuce pro ? Utilisez des pots contrastants pour vos plantes !",
     geometricDreamBedroom: "Chambre de rêve géométrique",
     geometricDreamBedroomText:
@@ -2473,10 +2835,10 @@ export const translations: Record<Language, Translations> = {
     prevArticle: "Article précédent",
     nextArticle: "Article suivant",
 
-    introductionText1:
+    expertTipsIntroductionText1:
       "Transformer l'intérieur de votre maison ne doit pas coûter une fortune. Avec l'avènement des outils avancés comme",
-    stylyAI: "les outils gratuits de conception de chambres alimentés par l'IA de Styly",
-    introductionText2:
+    expertTipsStylyAI: "les outils gratuits de conception de chambres alimentés par l'IA de Styly",
+    expertTipsIntroductionText2:
       ", vous pouvez obtenir des résultats étonnants avec un budget limité. Voici 10 conseils d'experts pour vous aider à économiser gros sur l'intérieur de votre maison tout en utilisant les derniers outils alimentés par l'IA.",
 
     // Tips
@@ -2703,6 +3065,273 @@ export const translations: Record<Language, Translations> = {
     discoverHowToUseAITools: "Découvrez comment utiliser nos outils IA pour transformer vos espaces intérieurs",
     readyToTransformSpaces: "Prêt à transformer vos espaces ?",
     getStartedWithFreeAITools: "Commencez dès maintenant avec nos outils IA gratuits",
+
+    // Services API Page
+    servicesAPI: "Services et API",
+    stylyAIAPISuite: "Suite API IA Styly",
+    mostAdvancedVisualIntelligencePlatform: "La Plateforme d'Intelligence Visuelle la Plus Avancée pour le Design, le Retail et l'Immobilier",
+    developerAPIs: "API Développeurs",
+    requestAccess: "Demander l'Accès",
+    exploreAPIDocs: "Explorer la Documentation",
+    whyChooseOurAPIs: "Pourquoi Choisir Nos APIs",
+    lightningFast: "Ultra-Rapide",
+    scalable: "Évolutif",
+    productionReady: "Prêt Production",
+    global: "Global",
+    millionsOfRequests: "Millions de requêtes",
+    uptimeNineNineNine: "99.9% uptime",
+    worldwideCDN: "CDN mondial",
+    ourCoreAPIs: "Nos APIs Principales",
+    fivePowerfulAPIs: "5 APIs puissantes pour transformer votre plateforme avec l'intelligence artificielle",
+    aiFloorGenerationAPI: "API Génération de Sols IA",
+    generateRealisticFloorDesigns: "Générez des designs de sols réalistes et personnalisés en quelques secondes",
+    aiWallGenerationAPI: "API Génération de Murs IA",
+    createSophisticatedWallDesigns: "Créez des designs de murs sophistiqués avec textures et couleurs",
+    aiMoodboardGeneratorAPI: "API Générateur de Moodboard IA",
+    createCohesiveMoodboards: "Créez des moodboards cohérents et inspirants automatiquement",
+    aiRealEstateEnhancementAPI: "API Amélioration Immobilière IA",
+    transformRealEstatePhotos: "Transformez les photos immobilières avec le home staging virtuel",
+    aiProductVisualizationAPI: "API Visualisation Produit IA",
+    integrateProductsIntoEnvironments: "Intégrez des produits dans des environnements réalistes",
+    realisticMaterials: "Matériaux réalistes",
+    customizableStyles: "Styles personnalisables",
+    highResolution: "Haute résolution",
+    easyIntegration: "Intégration facile",
+    variedTextures: "Textures variées",
+    customColors: "Couleurs personnalisées",
+    realisticLighting: "Éclairage réaliste",
+    instantRendering: "Rendu instantané",
+    harmoniousPalettes: "Palettes harmonieuses",
+    cohesiveStyles: "Styles cohérents",
+    multipleExports: "Export multiple",
+    advancedCustomization: "Personnalisation avancée",
+    virtualHomeStaging: "Home staging virtuel",
+    photoEnhancement: "Amélioration photos",
+    multipleStyles: "Styles multiples",
+    immediateROI: "ROI immédiat",
+    realisticPlacement: "Placement réaliste",
+    adaptiveLighting: "Éclairage adaptatif",
+    automaticContext: "Contexte automatique",
+    ecommerceReady: "E-commerce ready",
+    simpleIntegration: "Intégration Simple",
+    startUsingAPIsWithCode: "Commencez à utiliser nos APIs en quelques lignes de code",
+    apiExample: "Exemple d'API",
+    generateAIFloorDesign: "Générer un design de sol IA",
+    generatedDesignURL: "URL du design généré",
+    whoItsBuiltFor: "Pour Qui C'est Conçu",
+    designPlatforms: "Plateformes Design",
+    integrateAIIntoDesignTools: "Intégrez l'IA dans vos outils de design existants",
+    realEstate: "Immobilier",
+    enhanceListingsWithVirtualStaging: "Améliorez vos listings avec le home staging virtuel",
+    ecommerce: "E-commerce",
+    visualizeProductsInRealEnvironments: "Visualisez vos produits dans des environnements réels",
+    mobileApps: "Applications Mobiles",
+    addAICapabilitiesToApps: "Ajoutez des fonctionnalités IA à vos apps",
+    whyTeamsChooseStylyAPIs: "Pourquoi les Équipes Choisissent Styly APIs",
+    cuttingEdgeAI: "IA de Pointe",
+    aiModelsTrainedOnMillions: "Modèles d'IA entraînés sur millions d'images de design",
+    fastDeployment: "Déploiement Rapide",
+    integrationUnder30Minutes: "Intégration en moins de 30 minutes avec notre SDK",
+    expertSupport: "Support Expert",
+    dedicatedTeamForIntegration: "Équipe dédiée pour votre intégration et optimisation",
+    whatYouCanBuildWithIt: "Ce Que Vous Pouvez Construire",
+    interiorDesignPlatform: "Plateforme de Design Intérieur",
+    createCompletePlatformWithGeneration: "Créez une plateforme complète avec génération automatique de designs, moodboards et visualisations 3D.",
+    automaticDesignGeneration: "Génération automatique de designs",
+    customMoodboards: "Moodboards personnalisés",
+    realTime3DVisualization: "Visualisation 3D en temps réel",
+    ecommerceApplication: "Application E-commerce",
+    integrateProductsToIncreaseConversions: "Intégrez vos produits dans des environnements réalistes pour augmenter les conversions.",
+    contextualProductVisualization: "Visualisation produit contextuelle",
+    automaticRecommendations: "Recommandations automatiques",
+    increasedConversions: "Augmentation des conversions",
+    readyToGetStarted: "Prêt à Commencer ?",
+    joinHundredsOfDevelopers: "Rejoignez des centaines de développeurs qui utilisent déjà nos APIs pour créer l'avenir du design.",
+    requestAPIAccess: "Demander l'Accès API",
+    bookTechnicalDemo: "Réserver une Démo Technique",
+    fullName: "Nom complet",
+    workEmail: "Email professionnel",
+    company: "Entreprise",
+    useCase: "Cas d'usage",
+    selectYourUseCase: "Sélectionnez votre cas d'usage",
+    designPlatform: "Plateforme de design",
+    mobileApp: "Application mobile",
+    other: "Autre",
+    sendRequest: "Envoyer la Demande",
+    yourName: "Votre nom",
+    yourCompanyName: "Nom de votre entreprise",
+
+    // Collaborators Page
+    collaborators: "Collaborateurs",
+    becomeCollaborator: "Donnez Vie à la Vision.",
+    joinOurNetwork: "Aidez 20 000+ Créateurs à Transformer les Idées en Espaces.",
+    collaboratorHeroDescription: "Des milliers de concepts générés par IA naissent chaque semaine sur Styly — intérieurs audacieux, architecture expérimentale, espaces immersifs. Maintenant, ils ont besoin d'esprits créatifs pour les façonner en réalité.",
+    becomeDesignPartner: "Devenir Partenaire Design",
+    freeAndQuick: "C'est gratuit et ne prend que 2 minutes.",
+
+    // Problem Section
+    theProblem: "Le Problème",
+    problemDescription: "La plupart des professionnels du design perdent des heures à poursuivre des prospects froids.",
+    deadEndDMs: "Messages privés sans suite et ghosting",
+    deadEndDMsDescription: "Des clients potentiels qui ne donnent jamais suite, gaspillant votre temps et votre énergie précieux.",
+    budgetlessCollectors: "\"Collectionneurs d'idées\" sans budget",
+    budgetlessCollectorsDescription: "Des personnes qui ne font que naviguer sans véritable intention d'embaucher un professionnel.",
+    endlessPitching: "Présentation sans fin pour de maigres résultats",
+    endlessPitchingDescription: "Créer des propositions détaillées qui ne mènent nulle part, épuisant vos ressources.",
+    stylyUsersReady: "Les utilisateurs Styly savent déjà ce qu'ils veulent",
+    stylyUsersDescription: "Ils ont conçu leur espace. Ils sont prêts à commencer. Et ils ont besoin de quelqu'un en qui ils peuvent avoir confiance.",
+
+    // Opportunity Section
+    collaboratorsStylyAdvantage: "L'Avantage Styly",
+    stylyAdvantageDescription: "Soyez mis en avant en tant que Partenaire Styly Vérifié et accédez à des clients pré-qualifiés.",
+    getDiscoveredBy: "Soyez découvert par des clients qui :",
+    haveAIDesigns: "Ont des aperçus de design générés par IA",
+    haveAIDesignsDescription: "Évitez les devinettes — les clients connaissent déjà leur style",
+    knowStyleSpace: "Connaissent leur style et leur espace",
+    knowStyleSpaceDescription: "Ils ont déjà pris des décisions clés, vous faisant gagner du temps",
+    activelyLooking: "Recherchent activement un professionnel",
+    activelyLookingDescription: "Fini les curieux — seulement des clients sérieux",
+    curatedMatchmaking: "mise en relation client personnalisée",
+    notJustLeadGeneration: "Ce n'est pas seulement de la génération de prospects. C'est de la",
+
+    // Benefits Section
+    whatYoullGet: "Ce Que Vous Obtiendrez",
+    highIntentClients: "Clients à forte intention",
+    highIntentClientsDescription: "Pré-qualifiés par l'activité de design, prêts à avancer avec leurs projets.",
+    aiEducatedHomeowners: "Accès aux propriétaires éduqués par l'IA",
+    aiEducatedHomeownersDescription: "Connectez-vous avec des clients qui comprennent les concepts de design grâce à l'IA de Styly.",
+    globalVisibility: "Visibilité mondiale",
+    globalVisibilityDescription: "Soyez mis en avant sur Styly.io et Lovable.com pour atteindre plus de clients potentiels.",
+    officialBadge: "Badge officiel \"Styly Certified\" Pro",
+    officialBadgeDescription: "Différenciez-vous avec une reconnaissance officielle qui inspire confiance.",
+    directContact: "Contact direct",
+    directContactDescription: "Connectez-vous avec les clients par email ou chat sans interférence de plateforme.",
+    noCommissions: "Aucune commission",
+    noCommissionsDescription: "Aucun verrouillage de plateforme. Vous gardez 100% de vos contrats.",
+
+    // Comparison Chart Section
+    paymentBenefits: "AVANTAGES FINANCIERS",
+    comparisonChart: "TABLEAU COMPARATIF",
+    traditionalAgencies: "AGENCES TRADITIONNELLES",
+    withoutAI: "(SANS IA)",
+    vs: "VS",
+    styly: "STYLY",
+    leadCost: "COÛT PAR PROSPECT",
+    monthlyLeadVolume: "VOLUME MENSUEL DE PROSPECTS",
+    aiCompetency: "COMPÉTENCE IA",
+    marketPosition: "POSITION MARCHÉ",
+    serviceEvolution: "ÉVOLUTION DU SERVICE",
+    designPreferenceUnderstanding: "COMPRÉHENSION DES PRÉFÉRENCES DE DESIGN",
+    monthlyTraffic: "TRAFIC MENSUEL",
+    globalReach: "PORTÉE MONDIALE",
+    portfolioViewsOnline: "VUES PORTFOLIO EN LIGNE",
+    clientBase: "BASE CLIENT",
+    futureReadiness: "PRÉPARATION FUTURE",
+    joinStylyTransform: "Rejoignez Styly aujourd'hui et transformez votre entreprise avec les avantages de l'IA",
+    becomeCertifiedPro: "Devenir un Pro Certifié",
+
+    // Premium Placement Section
+    premiumPlacement: "Placement Premium = Clients Premium",
+    stylyHighlightPros: "Styly mettra en avant les Pros Certifiés dans :",
+    aiProjectExports: "Exports de projets IA avec recommandations professionnelles",
+    stylyNewsletters: "Newsletters Styly et campagnes email vers des milliers d'utilisateurs",
+    proPartnerDirectory: "L'Annuaire des Partenaires Pro sur Lovable.com",
+    goToNameWhen: "Vous serez aussi la référence quand :",
+    couplesDisagree: "Les couples ne sont pas d'accord sur les styles de rénovation et ont besoin d'une médiation professionnelle",
+    realtorsWantStaging: "Les agents immobiliers veulent du home staging sans exploser les budgets",
+    homeownersNeedProfessional: "Les propriétaires ont besoin d'un professionnel pour finaliser la vision qu'ils ont créée avec Styly",
+
+    // Application CTA Section
+    readyToBeRecommended: "Prêt à Être Recommandé par Styly ?",
+    inviteOnlyExperience: "C'est une expérience sur invitation uniquement. Limité aux meilleurs professionnels par ville.",
+    applyNow: "Postuler Maintenant",
+    questionsReachUs: "Des questions ? Contactez-nous directement à",
+    orDMUs: "ou envoyez-nous un DM",
+
+    // Social Proof Section
+    joinGrowingNetwork: "Rejoignez un Réseau Croissant de Designers Avant-gardistes",
+    architectTokyo: "Architecte, Tokyo",
+    interiorDesignerCapeTown: "Designer d'Intérieur, Le Cap",
+    freelancerLisbon: "Freelance, Lisbonne",
+    socialProofDescription: "Des studios boutiques aux créateurs solo — les partenaires Styly sont partout où les idées évoluent.",
+
+    // Discovery Card Section
+    yourOwnDiscoveryCard: "Votre Propre Carte de Découverte sur Styly",
+    discoveryCardDescription: "Les utilisateurs explorant des idées peuvent vous trouver et se connecter avec vous grâce à votre profil dédié.",
+    calmMinimalistSpaces: "Espaces minimalistes calmes avec du caractère",
+
+    // Why Join Section
+    whyJoinStyly: "Conçu pour les Créatifs Prêts à Faire un Travail Significatif",
+    clientsWithVision: "Clients avec Vision",
+    clientsWithVisionDescription: "Travaillez avec des personnes qui ont déjà imaginé quelque chose — et ont besoin de vous pour le concrétiser.",
+    designOnYourTerms: "Design selon Vos Conditions",
+    designOnYourTermsDescription: "Choisissez avec qui vous travaillez, comment vous collaborez, et d'où vous travaillez.",
+    builtInExposure: "Exposition Intégrée",
+    builtInExposureDescription: "Soyez vu par plus de 20K utilisateurs mensuels explorant des idées créatives.",
+    realCreativityAI: "Vraie Créativité, Améliorée par l'IA",
+    realCreativityAIDescription: "Partenariat avec des clients utilisant l'IA non pour vous remplacer — mais pour susciter de nouvelles conversations.",
+    forStudiosAndSolo: "Pour Studios et Créateurs Solo",
+    forStudiosAndSoloDescription: "Que vous soyez freelance ou service complet — Styly aide les gens à trouver votre voix unique.",
+    // How It Works Section
+    collaboratorsHowItWorks: "Comment Rejoindre en 3 Étapes Simples",
+    stepOne: "Postuler",
+    stepOneDescription: "Partagez votre nom, email, et un peu sur votre travail.",
+    stepTwo: "Être Listé",
+    stepTwoDescription: "Une fois approuvé, votre profil apparaît sur la page de découverte de Styly.",
+    stepThree: "Commencer à Collaborer",
+    stepThreeDescription: "Soyez contacté par des personnes inspirées par ce que vous faites.",
+
+    // Who We're Looking For Section
+    whoWereLookingFor: "Créatifs qui Pensent Spatialement et Rêvent Audacieusement",
+    interiorDesigners: "Designers d'Intérieur",
+    architects: "Architectes",
+    conceptualCreatives: "Créatifs Conceptuels",
+    spatialArtists: "Artistes Spatiaux",
+    setDesigners: "Designers de Décors",
+    anyoneExploringSpace: "Quiconque explore l'espace, la texture, la forme ou l'expérience",
+    quoteBlock: "Si vous avez toujours voulu transformer le concept fou de quelqu'un en chef-d'œuvre du monde réel — c'est pour vous.",
+
+    // Final CTA Section
+    readyToJoin: "Prêt à Rejoindre ?",
+    readyToJoinDescription: "Commencez à collaborer avec des créateurs visionnaires dès aujourd'hui.",
+    collaboratorsApplyNow: "Postuler Maintenant",
+    learnMore: "En Savoir Plus",
+    getStarted: "Commencer",
+
+    // Application Form
+    applicationForm: "Formulaire de Candidature",
+    quickApplication: "Candidature Rapide & Facile",
+    applyToJoinNetwork: "Postuler pour Rejoindre Notre Réseau",
+    fillOutForm: "Remplissez le formulaire ci-dessous pour commencer votre processus de candidature",
+    quickFormDescription: "Rejoignez notre réseau exclusif en seulement 2 minutes. Seulement 4 champs requis.",
+    fullName: "Nom Complet",
+    fullNamePlaceholder: "Entrez votre nom complet",
+    emailAddress: "Adresse Email",
+    emailPlaceholder: "Entrez votre adresse email",
+    location: "Localisation",
+    locationPlaceholder: "Ville, Pays",
+    portfolioLink: "Lien Portfolio",
+    portfolioPlaceholder: "https://votre-portfolio.com",
+    specialization: "Spécialisation",
+    selectSpecialization: "Sélectionnez votre spécialisation",
+    interiorDesign: "Design d'Intérieur",
+    architecture: "Architecture",
+    other: "Autre",
+    submitApplication: "Soumettre la Candidature",
+    submitting: "Envoi en cours...",
+    collaboratorsClose: "Fermer",
+    cancel: "Annuler",
+
+    // Form Validation
+    fieldRequired: "Ce champ est requis",
+    invalidEmail: "Veuillez entrer une adresse email valide",
+    invalidUrl: "Veuillez entrer une URL valide",
+
+    // Form Success/Error States
+    applicationSubmitted: "Candidature Soumise avec Succès !",
+    applicationSuccess: "Merci pour votre candidature. Nous l'examinerons et vous recontacterons dans 2-3 jours ouvrables.",
+    applicationError: "Quelque chose s'est mal passé. Veuillez réessayer plus tard.",
+    tryAgain: "Réessayer",
 
   },
 };
