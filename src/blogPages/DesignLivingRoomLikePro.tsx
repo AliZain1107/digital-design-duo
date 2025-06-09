@@ -68,13 +68,13 @@ const DesignLivingRoomLikePro: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
-                src="/design-living-room-like-pro-styly.webp"
-                alt="Design salon professionnel Styly"
+                src="/mini_magick20250608-11056-2qt7xn.jpg"
+                alt="Design salon professionnel Styly - Aménagement moderne avec IA"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
-                src="/living-room-design-ideas-ai.webp"
-                alt="Idées design salon IA"
+                src="/mini_magick20250608-11056-51krvz.jpg"
+                alt="Idées design salon IA - Décoration intérieure moderne"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
             </div>
@@ -97,13 +97,13 @@ const DesignLivingRoomLikePro: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
-                src="/home-interior-ideas-styly.webp"
-                alt="Idées intérieur maison Styly"
+                src="/mini_magick20250608-11056-hjqk6b.jpg"
+                alt="Idées intérieur maison Styly - Design moderne avec IA"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
-                src="/interior-design-styles-collection.webp"
-                alt="Collection styles design intérieur"
+                src="/mini_magick20250608-11056-iz7vmy.jpg"
+                alt="Collection styles design intérieur - Aménagement contemporain"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
             </div>
@@ -254,13 +254,13 @@ const DesignLivingRoomLikePro: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
-                src="/design-living-room-like-pro-styly.webp"
-                alt="Design Living Room Like Pro Styly"
+                src="/mini_magick20250608-11056-2qt7xn.jpg"
+                alt="Design Living Room Like Pro Styly - Modern AI-powered layout"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
-                src="/living-room-design-ideas-ai.webp"
-                alt="Living Room Design Ideas AI"
+                src="/mini_magick20250608-11056-51krvz.jpg"
+                alt="Living Room Design Ideas AI - Contemporary interior design"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
             </div>
@@ -283,13 +283,13 @@ const DesignLivingRoomLikePro: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
-                src="/home-interior-ideas-styly.webp"
-                alt="Home Interior Ideas Styly"
+                src="/mini_magick20250608-11056-hjqk6b.jpg"
+                alt="Home Interior Ideas Styly - Modern AI design concepts"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
-                src="/interior-design-styles-collection.webp"
-                alt="Interior Design Styles Collection"
+                src="/mini_magick20250608-11056-iz7vmy.jpg"
+                alt="Interior Design Styles Collection - Contemporary layouts"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
             </div>

@@ -10,7 +10,7 @@ const AiBedroomDesign: React.FC = () => {
       <div className="max-w-3xl space-y-6 text-gray-800 text-sm">
         {/* Table of Contents */}
         <div>
-          <h2 className="text-lg font-semibold">{t.tableOfContents}</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{t.tableOfContents}</h2>
           <ul className="list-disc pl-5 space-y-1">
             <li>{t.introduction}</li>
             <li>{t.aiInBedroomDesign}</li>
@@ -23,13 +23,13 @@ const AiBedroomDesign: React.FC = () => {
 
         {/* Introduction */}
         <section>
-          <h2 className="text-lg font-semibold">{t.introduction}</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{t.introduction}</h2>
           <p>{t.introductionText}</p>
         </section>
 
         {/* AI in Bedroom Design */}
         <section>
-          <h2 className="text-lg font-semibold">{t.aiInBedroomDesign}</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{t.aiInBedroomDesign}</h2>
           <p>{t.aiInBedroomDesignText}</p>
           <p className="text-blue-600 mt-2">
             <a
@@ -53,7 +53,7 @@ const AiBedroomDesign: React.FC = () => {
 
         {/* Styly.io: Your AI-Powered Bedroom Design Companion */}
         <section>
-          <h2 className="text-lg font-semibold">{t.stylyioOverview}</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{t.stylyioOverview}</h2>
           <p>{t.stylyioOverviewText}</p>
           <div className="bg-purple-50 p-4 rounded-lg mt-3">
             <p className="text-purple-700 font-medium">
@@ -71,8 +71,8 @@ const AiBedroomDesign: React.FC = () => {
 
         {/* Image */}
         <img
-          src="https://framerusercontent.com/images/VdJeNlAZKmKbGqtOEU5p1QGZs.jpg"
-          alt="ai bedroom sample"
+          src="/mini_magick20250608-11056-k6lwqq.jpg"
+          alt="AI bedroom design sample - Modern bedroom with AI-powered layout"
           className="w-full h-64 rounded-lg object-cover"
         />
 
@@ -182,8 +182,8 @@ const AiBedroomDesign: React.FC = () => {
         </section>
 
         <img
-          src="https://framerusercontent.com/images/QHngMSH11seHyWEaHUx8lIoGQA.png"
-          alt="footer banner"
+          src="/mini_magick20250608-11056-ljawia.jpg"
+          alt="AI bedroom design showcase - Stunning bedroom transformations"
           className="w-full h-64 max-w-3xl object-cover rounded-lg"
         />
 

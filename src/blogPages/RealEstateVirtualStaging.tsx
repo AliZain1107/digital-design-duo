@@ -53,9 +53,9 @@ const RealEstateVirtualStaging: React.FC = () => {
           {t.buyersBeginSearch}
         </p>
 
-        <h3 className="text-[12px] text-gray-600">
+        <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">
           {t.virtualStagingRevolution}
-        </h3>
+        </h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>{t.propertiesWithAIStaging}</li>
           <li>{t.virtuallyStagedSellFaster}</li>
@@ -87,6 +87,20 @@ const RealEstateVirtualStaging: React.FC = () => {
           </a>
         </p>
 
+        <p className="text-blue-600 mt-2">
+          <a
+            href="https://en.wikipedia.org/wiki/Virtual_home_staging"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            {language === "fr"
+              ? "En savoir plus sur le home staging virtuel sur Wikipedia"
+              : "Learn more about virtual home staging on Wikipedia"
+            }
+          </a>
+        </p>
+
         <p className="mt-2">
           <Link
             to="/blog/free-ai-interior-design-software"
@@ -96,9 +110,9 @@ const RealEstateVirtualStaging: React.FC = () => {
           </Link>
         </p>
 
-        <h3 className="text-[12px] text-gray-600 font-semibold">
+        <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">
           {t.whyAIStagingIndustryStandard}
-        </h3>
+        </h2>
         <ol className="list-decimal pl-6 space-y-3">
           <li>
             <strong>{t.economicEfficiency}</strong>: {t.economicEfficiencyDescription}
@@ -131,13 +145,13 @@ const RealEstateVirtualStaging: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col gap-6 text-gray-600 text-base leading-relaxed p-5">
-        <h2 className="text-xl font-medium text-gray-700">
+        <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">
           {t.realWorldSuccessStories}
         </h2>
 
         {/* Case Study 1 */}
         <div>
-          <h3 className="text-sm font-semibold">
+          <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
             {t.caseStudy1Title}
           </h3>
           <ul className="list-disc list-inside pl-4 mt-2 space-y-1">
@@ -150,7 +164,7 @@ const RealEstateVirtualStaging: React.FC = () => {
 
         {/* Case Study 2 */}
         <div>
-          <h3 className="text-sm font-semibold">
+          <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
             {t.caseStudy2Title}
           </h3>
           <ul className="list-disc list-inside pl-4 mt-2 space-y-1">

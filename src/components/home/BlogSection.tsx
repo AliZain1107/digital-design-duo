@@ -93,6 +93,36 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
     if (post.slug === "transforming-small-living-spaces-design-solutions") {
       return t.transformingSmallLivingSpacesTitle;
     }
+    if (post.slug === "designing-future-workspace-ai-powered-office-interiors") {
+      return t.futureWorkspaceAIOfficeInteriorsTitle;
+    }
+    if (post.slug === "futuristic-interior-design-styles-styly-ai") {
+      return t.futuristicInteriorDesignStylesTitle;
+    }
+    if (post.slug === "room-planner-ai-sarah-johnson-styly-evaluations") {
+      return t.roomPlannerAISarahJohnsonEvaluationsTitle;
+    }
+    if (post.slug === "designing-ai-interior-staging-aws-styly") {
+      return t.newBlog2Title;
+    }
+    if (post.slug === "ai-driven-customization-future-interior-design") {
+      return t.aiDrivenCustomizationFutureTitle;
+    }
+    if (post.slug === "residential-interior-design-guide-planning-spaces") {
+      return t.residentialInteriorDesignGuideTitle;
+    }
+    if (post.slug === "innovative-interior-stair-railing-ideas-styly-ai") {
+      return t.innovativeStairRailingIdeasTitle;
+    }
+    if (post.slug === "design-living-room-like-pro-styly") {
+      return t.designLivingRoomLikeProTitle;
+    }
+    if (post.slug === "how-generative-ai-revolutionizing-interior-design") {
+      return t.generativeAIRevolutionizingDesignTitle;
+    }
+    if (post.slug === "ai-assistant-interior-design-chatgpt-prompts") {
+      return t.aiAssistantInteriorDesignPromptsTitle;
+    }
     // For other blog posts, use the original title
     return post.title;
   };

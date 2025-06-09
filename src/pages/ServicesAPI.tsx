@@ -473,97 +473,38 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
             </p>
           </div>
 
-          {/* Platform Logos Grid - Compact Premium Layout */}
+          {/* Platform Compatibility Text */}
           <div className="mb-14">
-            {/* Row 1 - Main Platforms */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 items-center justify-items-center mb-8">
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/shopify.svg"
-                  alt="Shopify"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/woocommerce.svg"
-                  alt="WooCommerce"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/magento.svg"
-                  alt="Magento"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/bigcommerce-1.svg"
-                  alt="BigCommerce"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/wix-1.svg"
-                  alt="Wix"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/squarespace-1.svg"
-                  alt="Squarespace"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-            </div>
-
-            {/* Row 2 - Additional Platforms */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 items-center justify-items-center">
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/prestashop.svg"
-                  alt="PrestaShop"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/opencart.svg"
-                  alt="OpenCart"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg"
-                  alt="WordPress"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/volusion.svg"
-                  alt="Volusion"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/weebly-1.svg"
-                  alt="Weebly"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <div className="text-center">
-                  <div className="text-lg font-bold text-gray-400 mb-0.5">+</div>
-                  <span className="text-gray-500 font-medium text-xs">
-                    {language === "fr" ? "Plus" : "More"}
-                  </span>
+            <div className="text-center bg-gradient-to-r from-purple-50 to-orange-50 rounded-2xl p-8 border border-purple-100">
+              <div className="max-w-4xl mx-auto">
+                <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+                  {language === "fr" ? "Compatible avec toutes les principales plateformes" : "Compatible with all major platforms"}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600">
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">Shopify</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">WooCommerce</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">Magento</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">WordPress</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">BigCommerce</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">Wix</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">Squarespace</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium text-purple-600">+ {language === "fr" ? "Plus" : "More"}</span>
+                  </div>
                 </div>
               </div>
             </div>
