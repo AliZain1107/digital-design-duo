@@ -178,7 +178,7 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-20 px-4 sm:px-6 md:px-8 bg-gray-50" key={`testimonials-${language}`}>
+    <section className="w-full py-16 sm:py-20 px-4 sm:px-6 md:px-8 bg-gray-50" key={`testimonials-${language}`}>
       <div className="max-w-[1800px] mx-auto">
         {/* Social Testimonials */}
         <div className="mb-20">

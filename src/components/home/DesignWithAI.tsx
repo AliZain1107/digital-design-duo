@@ -86,14 +86,14 @@ const DesignWithAI: React.FC = () => {
   const visibleSegments = marketSegments.slice(activePage * 4, (activePage * 4) + 4);
 
   return (
-    <section className="bg-white w-full py-28 px-4 sm:px-6 md:px-8 overflow-hidden">
+    <section className="bg-white w-full py-16 sm:py-20 px-4 sm:px-6 md:px-8 overflow-hidden">
       <div className="w-full max-w-[1800px] mx-auto relative">
         {/* Background elements */}
         <div className="absolute -top-10 -right-10 w-64 h-64 bg-purple-50 rounded-full opacity-50 blur-3xl -z-10"></div>
         <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-orange-50 rounded-full opacity-50 blur-3xl -z-10"></div>
         
         {/* Heading section with refined styling */}
-        <div className="flex flex-col items-center justify-center mb-16">
+        <div className="flex flex-col items-center justify-center mb-12">
           <div className="inline-block mb-3">
             <span className="text-sm uppercase tracking-widest font-semibold text-purple-600 bg-purple-50 px-4 py-1 rounded-full">{t.designExcellence}</span>
           </div>
@@ -114,11 +114,11 @@ const DesignWithAI: React.FC = () => {
           </p>
         </div>
 
-        {/* Market segments carousel - 2x2 layout with larger images */}
-        <div className="relative max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 transition-opacity duration-500">
+        {/* Market segments carousel - 2x2 layout with smaller images */}
+        <div className="relative max-w-4xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 transition-opacity duration-500">
             {visibleSegments.map((segment, index) => (
-              <div key={`${activePage}-${index}`} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 transform hover:translate-y-[-5px]">
+              <div key={`${activePage}-${index}`} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 transform hover:translate-y-[-2px]">
                 <Link to={segment.link} className="block">
                   <div className="aspect-[4/3] w-full">
                     <img
@@ -131,8 +131,8 @@ const DesignWithAI: React.FC = () => {
                       loading="eager"
                     />
                   </div>
-                  <div className="py-6 px-4 text-center">
-                    <h3 className="font-semibold text-gray-800 text-lg md:text-xl">{segment.title}</h3>
+                  <div className="py-3 px-3 text-center">
+                    <h3 className="font-semibold text-gray-800 text-sm md:text-base">{segment.title}</h3>
                   </div>
                 </Link>
               </div>
@@ -155,22 +155,22 @@ const DesignWithAI: React.FC = () => {
             </div>
           )}
 
-          {/* Arrow navigation - moved further out for larger images */}
+          {/* Arrow navigation - positioned closer for smaller images */}
           <button
             onClick={() => handleManualChange((activePage - 1 + totalPages) % totalPages)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-md transition-all"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md transition-all"
             aria-label="Previous slide"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           <button
             onClick={() => handleManualChange((activePage + 1) % totalPages)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-md transition-all"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md transition-all"
             aria-label="Next slide"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>

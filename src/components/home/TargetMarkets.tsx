@@ -118,21 +118,21 @@ const TargetMarkets: React.FC = () => {
           </p>
         </div>
 
-        {/* Two-column layout with larger images that automatically rotates */}
-        <div 
+        {/* Two-column layout with smaller, more responsive images */}
+        <div
           ref={slideRef}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 md:gap-10 transition-opacity duration-300 ease-in-out"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6 transition-opacity duration-300 ease-in-out max-w-4xl mx-auto"
         >
           {currentSegments().map((segment, index) => (
-            <Link 
+            <Link
               key={`segment-${startIndex + index}`}
               to={segment.link}
-              className="block group overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 h-full bg-white"
+              className="block group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 h-full bg-white"
             >
               <div className="relative h-full flex flex-col">
-                {/* Premium high-quality image with consistent dimensions */}
-                <div className="aspect-[16/9] w-full overflow-hidden">
-                  <img 
+                {/* Smaller, more responsive image */}
+                <div className="aspect-[4/3] w-full overflow-hidden">
+                  <img
                     src={segment.image}
                     alt={segment.title}
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -143,10 +143,10 @@ const TargetMarkets: React.FC = () => {
                     }}
                   />
                 </div>
-                
-                {/* Bigger header text at bottom */}
-                <div className="py-5 px-4 bg-white">
-                  <h3 className="text-center font-bold text-xl md:text-2xl text-gray-800 tracking-wide">
+
+                {/* Smaller header text */}
+                <div className="py-3 px-3 bg-white">
+                  <h3 className="text-center font-semibold text-base md:text-lg text-gray-800 tracking-wide">
                     {segment.title}
                   </h3>
                 </div>

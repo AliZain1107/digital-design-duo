@@ -75,7 +75,7 @@ const TipsToSaveBig2025: React.FC = () => {
             },
           ].map((tip, i) => (
             <div key={i}>
-              <h3 className="font-semibold text-base">{i + 1}. {tip.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">{i + 1}. {tip.title}</h3>
               <p>{tip.content}</p>
               {i === 1 && ( // After "Optimize Room Layout with AI"
                 <div className="bg-purple-50 p-4 rounded-lg mt-3">
@@ -118,18 +118,18 @@ const TipsToSaveBig2025: React.FC = () => {
         </div>
 
         <img
-          src="https://framerusercontent.com/images/qwNLVoWFq8EGoCFXGZ2jVmDfcJo.webp"
-          alt="AI Home Design Trends"
+          src="/mini_magick20250608-11806-37r89z.jpg"
+          alt="AI Home Design Trends - Modern interior design with artificial intelligence"
           className="w-full h-[500px] rounded-xl object-cover"
         />
 
         <img
-          src="https://framerusercontent.com/images/JlnrrzUwSWVZYpELxVUSK4pac.webp"
-          alt="AI Room Planner Tool"
+          src="/mini_magick20250608-11806-5s6kvf.jpg"
+          alt="AI Room Planner Tool - Smart interior design solutions"
           className="w-full h-[500px] rounded-xl object-cover"
         />
 
-        <h2 className="text-lg font-semibold">{t.whyChooseStyly}</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{t.whyChooseStyly}</h2>
         <p>{t.stylyDescription}</p>
         <ul className="list-disc pl-5">
           <li>{t.visualizeDesigns}</li>

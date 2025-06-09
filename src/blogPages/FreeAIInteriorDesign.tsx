@@ -61,7 +61,7 @@ const FreeAIInteriorDesign: React.FC = () => {
           {/* Hero Image */}
           <div className="w-full">
             <img
-              src="/free-ai-interior-design-hero.webp"
+              src="/ai-interior-design-free-tools.webp"
               alt={t.freeAIDesignTitle}
               className="w-full h-auto rounded-lg shadow-md"
             />

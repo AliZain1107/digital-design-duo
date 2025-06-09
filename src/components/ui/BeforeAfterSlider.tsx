@@ -83,7 +83,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
   return (
     <div
       ref={containerRef}
-      className="relative w-full aspect-[1.2] max-w-3xl mx-auto rounded-3xl overflow-hidden select-none bg-gray-200 cursor-ew-resize"
+      className="relative w-full aspect-[1.2] max-w-2xl mx-auto rounded-2xl overflow-hidden select-none bg-gray-200 cursor-ew-resize"
       style={{ touchAction: "none" }}
       onMouseDown={handleSliderClick}
       onTouchStart={handleSliderClick}

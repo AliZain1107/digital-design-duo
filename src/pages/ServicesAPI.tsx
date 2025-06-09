@@ -245,62 +245,85 @@ const ServicesAPI: React.FC = () => {
         </div>
       </section>
 
-      {/* API Services Section */}
-      <section className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+      {/* Premium API Services Section */}
+      <section className="relative py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(120,119,198,0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(168,85,247,0.08),transparent_50%)]"></div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-purple-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight">
               {language === "fr" ? "Nos APIs Principales" : "Our Core APIs"}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {language === "fr" 
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              {language === "fr"
                 ? "5 APIs puissantes pour transformer votre plateforme avec l'intelligence artificielle"
                 : "5 powerful APIs to transform your platform with artificial intelligence"
               }
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {apiServices.map((service) => (
-              <div key={service.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
-                {/* Professional Image */}
-                <div className="aspect-[16/10] overflow-hidden bg-gray-50 relative">
+          {/* Premium Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {apiServices.map((service, index) => (
+              <div
+                key={service.id}
+                className="group relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/50 hover:border-purple-200/50 hover:-translate-y-2"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {/* Premium Image Container */}
+                <div className="relative aspect-[16/10] overflow-hidden">
                   <img
                     src={service.image}
                     alt={`${service.name} - Professional demonstration`}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
-                    <code className="text-xs text-gray-800 font-mono">{service.endpoint}</code>
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+
+                  {/* Floating Badge */}
+                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+                    <span className="text-xs font-semibold text-purple-600 uppercase tracking-wide">
+                      {language === "fr" ? "API" : "API"}
+                    </span>
+                  </div>
+
+                  {/* Endpoint Badge */}
+                  <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm rounded-xl px-3 py-2">
+                    <code className="text-xs text-white font-mono">{service.endpoint}</code>
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="p-6">
-                  <h3 className="font-semibold text-xl mb-3 text-gray-900">{service.name}</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{service.description}</p>
+                {/* Premium Content */}
+                <div className="p-8">
+                  <h3 className="font-bold text-xl mb-4 text-gray-900 group-hover:text-purple-700 transition-colors duration-300">
+                    {service.name}
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+                    {service.description}
+                  </p>
 
-                  {/* Features */}
-                  <div className="space-y-2">
-                    <h4 className="font-medium text-sm text-gray-800 mb-2">
-                      {language === "fr" ? "Fonctionnalités clés :" : "Key Features:"}
-                    </h4>
-                    <ul className="space-y-2">
-                      {service.features.map((feature, index) => (
-                        <li key={index} className="flex items-center text-sm text-gray-600">
-                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
+                  {/* Premium Features List */}
+                  <div className="space-y-3 mb-6">
+                    {service.features.slice(0, 3).map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-center text-sm text-gray-600">
+                        <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                          <CheckCircle className="w-3 h-3 text-white" />
+                        </div>
+                        {feature}
+                      </div>
+                    ))}
                   </div>
 
-                  {/* CTA Button */}
-                  <button className="w-full mt-4 bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 text-sm">
-                    {language === "fr" ? "En savoir plus" : "Learn More"}
+                  {/* Premium CTA Button */}
+                  <button className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-sm">
+                    {language === "fr" ? "Explorer l'API" : "Explore API"}
                   </button>
                 </div>
+
+                {/* Subtle Glow Effect */}
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-400/0 via-purple-400/5 to-indigo-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               </div>
             ))}
           </div>
@@ -450,97 +473,38 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
             </p>
           </div>
 
-          {/* Platform Logos Grid - Compact Premium Layout */}
+          {/* Platform Compatibility Text */}
           <div className="mb-14">
-            {/* Row 1 - Main Platforms */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 items-center justify-items-center mb-8">
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/shopify.svg"
-                  alt="Shopify"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/woocommerce.svg"
-                  alt="WooCommerce"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/magento.svg"
-                  alt="Magento"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/bigcommerce-1.svg"
-                  alt="BigCommerce"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/wix-1.svg"
-                  alt="Wix"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/squarespace-1.svg"
-                  alt="Squarespace"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-            </div>
-
-            {/* Row 2 - Additional Platforms */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 items-center justify-items-center">
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/prestashop.svg"
-                  alt="PrestaShop"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/opencart.svg"
-                  alt="OpenCart"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg"
-                  alt="WordPress"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/volusion.svg"
-                  alt="Volusion"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <img
-                  src="https://cdn.worldvectorlogo.com/logos/weebly-1.svg"
-                  alt="Weebly"
-                  className="h-8 w-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-              <div className="flex items-center justify-center h-16 w-28 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md hover:bg-white hover:border-purple-200/50 hover:-translate-y-1 transition-all duration-300 p-4 group">
-                <div className="text-center">
-                  <div className="text-lg font-bold text-gray-400 mb-0.5">+</div>
-                  <span className="text-gray-500 font-medium text-xs">
-                    {language === "fr" ? "Plus" : "More"}
-                  </span>
+            <div className="text-center bg-gradient-to-r from-purple-50 to-orange-50 rounded-2xl p-8 border border-purple-100">
+              <div className="max-w-4xl mx-auto">
+                <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+                  {language === "fr" ? "Compatible avec toutes les principales plateformes" : "Compatible with all major platforms"}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600">
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">Shopify</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">WooCommerce</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">Magento</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">WordPress</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">BigCommerce</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">Wix</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium">Squarespace</span>
+                  </div>
+                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
+                    <span className="font-medium text-purple-600">+ {language === "fr" ? "Plus" : "More"}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -608,8 +572,68 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
         </div>
       </section>
 
+      {/* API Advantages Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              {language === "fr"
+                ? "Pourquoi Choisir Nos APIs ?"
+                : "Why Choose Our APIs?"
+              }
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {/* Advantage Card 1 */}
+            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl">
+              <div className="text-4xl md:text-6xl font-bold mb-4">99.9%</div>
+              <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                {language === "fr"
+                  ? "de disponibilité garantie avec notre infrastructure cloud robuste et redondante"
+                  : "uptime guaranteed with our robust and redundant cloud infrastructure"
+                }
+              </p>
+            </div>
+
+            {/* Advantage Card 2 */}
+            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl">
+              <div className="text-4xl md:text-6xl font-bold mb-4">&lt;2s</div>
+              <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                {language === "fr"
+                  ? "temps de réponse moyen pour la génération de designs IA haute qualité"
+                  : "average response time for high-quality AI design generation"
+                }
+              </p>
+            </div>
+
+            {/* Advantage Card 3 */}
+            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl">
+              <div className="text-4xl md:text-6xl font-bold mb-4">50+</div>
+              <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                {language === "fr"
+                  ? "styles de design et configurations personnalisables pour tous vos besoins"
+                  : "design styles and customizable configurations for all your needs"
+                }
+              </p>
+            </div>
+
+            {/* Advantage Card 4 */}
+            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl">
+              <div className="text-4xl md:text-6xl font-bold mb-4">24/7</div>
+              <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                {language === "fr"
+                  ? "support technique expert disponible pour vous accompagner dans votre intégration"
+                  : "expert technical support available to assist with your integration"
+                }
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Use Cases Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -618,7 +642,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <h3 className="font-semibold text-xl mb-4">
                 {language === "fr" ? "Plateforme de Design Intérieur" : "Interior Design Platform"}
               </h3>
@@ -644,7 +668,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <h3 className="font-semibold text-xl mb-4">
                 {language === "fr" ? "Application E-commerce" : "E-commerce Application"}
               </h3>
@@ -673,28 +697,39 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="bg-purple-600 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            {language === "fr" ? "Prêt à Commencer ?" : "Ready to Get Started?"}
-          </h2>
-          <p className="text-xl text-purple-100 max-w-3xl mx-auto mb-8">
-            {language === "fr"
-              ? "Rejoignez des centaines de développeurs qui utilisent déjà nos APIs pour créer l'avenir du design."
-              : "Join hundreds of developers already using our APIs to build the future of design."
-            }
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              className="bg-white text-purple-600 hover:bg-gray-100 font-medium px-8 py-3 rounded-full transition-all duration-200 inline-flex items-center justify-center text-lg"
-              onClick={() => setIsContactFormOpen(true)}
-            >
-              {language === "fr" ? "Demander l'Accès API" : "Request API Access"} <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-medium px-8 py-3 rounded-full transition-all duration-200 text-lg">
-              {language === "fr" ? "Réserver une Démo Technique" : "Book a Technical Demo"} <MessageSquare className="ml-2 h-5 w-5" />
-            </button>
+      {/* Premium CTA Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative bg-gradient-to-br from-orange-500 via-red-500 to-orange-600 rounded-3xl p-12 md:p-16 overflow-hidden shadow-2xl">
+            {/* Decorative Background Pattern */}
+            <div className="absolute inset-0 opacity-10">
+              <svg className="absolute bottom-0 right-0 w-full h-full" viewBox="0 0 400 400" fill="none">
+                <path d="M0 400C100 350 200 300 300 250C350 225 375 200 400 175V400H0Z" fill="white"/>
+                <path d="M0 380C80 340 160 300 240 260C290 235 315 210 340 185C360 165 380 145 400 125V400H0Z" fill="white" fillOpacity="0.5"/>
+              </svg>
+            </div>
+
+            {/* Content */}
+            <div className="relative z-10 text-center max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                {language === "fr"
+                  ? "Prêt à élever votre entreprise avec des solutions IA sur mesure ?"
+                  : "Ready to elevate your business with tailored AI solutions?"
+                }
+              </h2>
+              <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed max-w-3xl mx-auto">
+                {language === "fr"
+                  ? "Nous offrons des solutions personnalisées pour améliorer l'engagement, augmenter les conversions et stimuler le succès. Cliquez sur le bouton \"Nous Contacter\" ci-dessous pour vous connecter avec notre équipe et découvrir comment nous pouvons soutenir vos besoins uniques !"
+                  : "We offer personalized solutions to enhance engagement, boost conversions, and drive success. Click the \"Contact Us\" button below to connect with our team and discover how we can support your unique needs!"
+                }
+              </p>
+              <button
+                onClick={() => setIsContactFormOpen(true)}
+                className="bg-white text-orange-600 hover:bg-gray-50 font-semibold px-10 py-4 rounded-2xl transition-all duration-300 inline-flex items-center justify-center text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
+              >
+                {language === "fr" ? "Nous Contacter" : "Contact Us"}
+              </button>
+            </div>
           </div>
         </div>
       </section>

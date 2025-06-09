@@ -10,13 +10,13 @@ const ArchitectureRevolution: React.FC = () => {
   const homeDesignByAIText = t.homeDesignByAI || "Default Home Design by AI Text";
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-100 w-full py-28 overflow-hidden">
+    <section className="bg-gradient-to-b from-white to-gray-100 w-full py-16 sm:py-20 overflow-hidden">
       <div className="w-full relative">
         <div className="absolute top-0 right-0 w-64 h-64 bg-purple-100 rounded-full -z-10 blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-orange-100 rounded-full -z-10 blur-3xl opacity-50 transform -translate-x-1/2 translate-y-1/2"></div>
 
         <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
-          <div className="text-center mb-16 border-y-2 border-[#34495e] py-8 max-w-5xl mx-auto">
+          <div className="text-center mb-12 border-y-2 border-[#34495e] py-6 max-w-5xl mx-auto">
             {/* Decorative Top Icon */}
             <div className="text-[#593286] text-4xl mb-4">✧</div>
 

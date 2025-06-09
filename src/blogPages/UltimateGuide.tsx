@@ -8,13 +8,13 @@ const BuildHouseAI: React.FC = () => {
   return (
     <div className="flex flex-col items-center px-4 py-10 space-y-10">
       <div className="max-w-4xl text-sm text-gray-800 space-y-6">
-        <h2 className="text-xl font-semibold">{t.marketOverview}</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{t.marketOverview}</h2>
         <ul className="list-disc pl-5">
           <li>{t.keyEvaluationCriteria}</li>
           {/* Add other content with translations */}
         </ul>
 
-        <h3 className="text-lg font-bold">{t.marketLeaders}</h3>
+        <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">{t.marketLeaders}</h3>
         <ol className="list-decimal pl-5">
           <li>Foyr - Known for commercial applications</li>
           <li>Palette - Focuses on color harmony</li>

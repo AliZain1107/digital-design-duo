@@ -11,10 +11,10 @@ const CaseStudyImages: React.FC = () => {
   const { language } = useLanguage();
 
   return (
-    <section className="w-full flex flex-col items-center py-12">
-      <div className="flex flex-row flex-wrap justify-center gap-8 w-full max-w-6xl">
+    <section className="w-full flex flex-col items-center py-8 sm:py-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full max-w-5xl px-4">
         {images.map((src, idx) => (
-          <div key={idx} className="rounded-2xl overflow-hidden shadow bg-white flex items-center justify-center w-[350px] h-[260px]">
+          <div key={idx} className="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 bg-white flex items-center justify-center aspect-[4/3]">
             <img
               src={src}
               alt={language === "fr"

@@ -64,27 +64,27 @@ const FeatureTargetMarkets: React.FC = () => {
           </span>
         </h2>
 
-        {/* Full width market segments with minimal overlay */}
-        <div className="w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Smaller, more responsive market segments */}
+        <div className="w-full max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
             {marketSegments.map((segment) => (
-              <Link 
+              <Link
                 key={segment.id}
                 to={segment.link}
-                className="group relative block overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:scale-[1.02] hover:shadow-xl"
+                className="group relative block overflow-hidden rounded-lg shadow-md transform transition-all duration-500 hover:scale-[1.02] hover:shadow-lg"
               >
-                {/* Large image with adjusted aspect ratio */}
-                <div className="aspect-[4/3]">
-                  <img 
-                    src={segment.image} 
+                {/* Smaller image with consistent aspect ratio */}
+                <div className="aspect-[3/4]">
+                  <img
+                    src={segment.image}
                     alt={segment.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
-                
-                {/* Minimal label that appears on hover */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-purple-900/50 backdrop-blur-sm transform transition-transform duration-500 py-4">
-                  <h3 className="text-center text-white font-bold text-lg md:text-xl px-4">{segment.title}</h3>
+
+                {/* Smaller label overlay */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-purple-900/50 backdrop-blur-sm transform transition-transform duration-500 py-2 sm:py-3">
+                  <h3 className="text-center text-white font-semibold text-xs sm:text-sm md:text-base px-2">{segment.title}</h3>
                 </div>
               </Link>
             ))}

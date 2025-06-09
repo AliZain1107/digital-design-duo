@@ -52,8 +52,8 @@ const SupportedBy: React.FC = () => {
   ];
 
   return (
-    <section 
-      className="py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 max-w-full overflow-hidden"
+    <section
+      className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-12 max-w-full overflow-hidden"
       key={`supported-by-${language}`}
     >
       <div className="container mx-auto text-center mb-8 md:mb-12">

@@ -78,6 +78,19 @@ const ModernFamilyDesign: React.FC = () => {
                 <li><strong>Flexibilité :</strong> Dispositions facilement reconfigurables selon les besoins</li>
               </ul>
 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                <img
+                  src="/mini_magick20250608-11056-ddfvth.jpg"
+                  alt="Espaces familiaux modernes - Design fonctionnel avec IA"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
+                />
+                <img
+                  src="/mini_magick20250608-11056-exfils.jpg"
+                  alt="Aménagement famille moderne - Solutions design intelligentes"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
+                />
+              </div>
+
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-6">
                 Comment l'IA Transforme le Design Familial
               </h2>
@@ -232,6 +245,19 @@ const ModernFamilyDesign: React.FC = () => {
                 <li><strong>Safety Zones:</strong> Child-friendly designs without compromising style</li>
                 <li><strong>Flexibility:</strong> Layouts that can be easily reconfigured as needs change</li>
               </ul>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                <img
+                  src="/mini_magick20250608-11056-ddfvth.jpg"
+                  alt="Modern family spaces - Functional AI-powered design"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
+                />
+                <img
+                  src="/mini_magick20250608-11056-exfils.jpg"
+                  alt="Modern family layout - Smart design solutions"
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
+                />
+              </div>
 
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-6">
                 How AI Transforms Family Design

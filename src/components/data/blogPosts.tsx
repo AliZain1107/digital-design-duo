@@ -34,6 +34,8 @@ import InnovativeStairRailingIdeas from "@/blogPages/InnovativeStairRailingIdeas
 import DesignLivingRoomLikePro from "@/blogPages/DesignLivingRoomLikePro";
 import AIAssistantInteriorDesignPrompts from "@/blogPages/AIAssistantInteriorDesignPrompts";
 import GenerativeAIRevolutionizingDesign from "@/blogPages/GenerativeAIRevolutionizingDesign";
+import FutureWorkspaceAIOfficeInteriors from "@/blogPages/FutureWorkspaceAIOfficeInteriors";
+import NewBlog2 from "@/blogPages/NewBlog2";
 
 export interface BlogPost {
   id: number;
@@ -47,7 +49,25 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 0,
+    title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io",
+    date: "Jun 15, 2025",
+    image: "/data-analytics-interior-design-dashboard.webp",
+    slug: "designing-ai-interior-staging-aws-styly",
+    slugFr: "concevoir-mise-en-scene-interieure-ia-aws-styly",
+    Component: NewBlog2,
+  },
+  {
     id: 1,
+    title: "Designing the Future Workspace: AI-Powered Office Interiors with Styly",
+    date: "Jun 8, 2025",
+    image: "/mini_magick20250608-11056-w1ke6k.jpg",
+    slug: "designing-future-workspace-ai-powered-office-interiors",
+    slugFr: "concevoir-espace-travail-futur-interieurs-bureau-ia",
+    Component: FutureWorkspaceAIOfficeInteriors,
+  },
+  {
+    id: 2,
     title: "The Impact of AI on the Role of the Interior Designer: A Collaborative Future",
     date: "Nov 23, 2024",
     image: "/impact-ai-interior-designer-hero.webp",
@@ -56,7 +76,7 @@ export const blogPosts: BlogPost[] = [
     Component: ImpactAIInteriorDesigner,
   },
   {
-    id: 2,
+    id: 3,
     title: "The Intersection of AI and Virtual Reality in Design: What the Future Holds",
     date: "Nov 16, 2024",
     image: "/ai-virtual-reality-design-hero.webp",
@@ -65,7 +85,7 @@ export const blogPosts: BlogPost[] = [
     Component: AIVirtualRealityDesign,
   },
   {
-    id: 3,
+    id: 4,
     title: "AI in Accessible Design: Creating Inclusive Spaces with Styly",
     date: "Nov 12, 2024",
     image: "/accessible-design-modern-wheelchair-interior.webp",
@@ -74,7 +94,7 @@ export const blogPosts: BlogPost[] = [
     Component: AIAccessibleDesign,
   },
   {
-    id: 4,
+    id: 5,
     title: "The Role of Data in AI-Powered Design: How Insights Drive Better Aesthetics",
     date: "Nov 7, 2024",
     image: "/data-analytics-interior-design-dashboard.webp",
@@ -83,16 +103,16 @@ export const blogPosts: BlogPost[] = [
     Component: DataAIPoweredDesign,
   },
   {
-    id: 5,
+    id: 6,
     title: "Designing for the Modern Family: Using AI to Create Functional and Stylish Homes",
     date: "Nov 3, 2024",
-    image: "/modern-family-home-functional-stylish.webp",
+    image: "/mini_magick20250608-11056-ddfvth.jpg",
     slug: "modern-family-design-ai-functional-homes",
     slugFr: "design-famille-moderne-ia-maisons-fonctionnelles",
     Component: ModernFamilyDesign,
   },
   {
-    id: 6,
+    id: 7,
     title: "Designing for Sustainability: Using AI to Create Eco-Friendly Spaces",
     date: "Oct 30, 2024",
     image: "/sustainable-eco-friendly-interior-design.webp",
@@ -167,7 +187,7 @@ export const blogPosts: BlogPost[] = [
     id: 14,
     title: "6 Viral AI Room Design Prompts: Create Your Dream Bedroom with STYLY.io",
     date: "Dec 15, 2024",
-    image: "/viral-ai-room-design-prompts-hero.webp",
+    image: "/mini_magick20250608-11056-k6lwqq.jpg",
     slug: "6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
     slugFr: "6-prompts-viraux-design-chambre-ia-styly",
     Component: ViralAIRoomDesignPrompts,
@@ -300,7 +320,7 @@ export const blogPosts: BlogPost[] = [
     id: 28,
     title: "Transforming Small Living Spaces: Interior Design Solutions for Compact Homes",
     date: "Aug 3, 2024",
-    image: "/transforming-small-living-spaces-compact.webp",
+    image: "/mini_magick20250608-11435-4rql35.jpg",
     slug: "transforming-small-living-spaces-design-solutions",
     slugFr: "transformer-petits-espaces-vie-solutions-design",
     Component: TransformingSmallLivingSpaces,
@@ -336,7 +356,7 @@ export const blogPosts: BlogPost[] = [
     id: 32,
     title: "The Good, The Bad, and The Room Planner AI: Sarah Johnson's Honest Styly.io Evaluations",
     date: "Jul 25, 2024",
-    image: "/room-planner-ai-sarah-johnson-evaluations.webp",
+    image: "/mini_magick20250608-11056-rtsk42.jpg",
     slug: "room-planner-ai-sarah-johnson-styly-evaluations",
     slugFr: "planificateur-chambre-ia-evaluations-sarah-johnson-styly",
     Component: RoomPlannerAISarahJohnsonEvaluations,
@@ -354,7 +374,7 @@ export const blogPosts: BlogPost[] = [
     id: 34,
     title: "Design Your Living Room Like a Pro with Styly",
     date: "Jul 19, 2024",
-    image: "/design-living-room-like-pro-styly.webp",
+    image: "/mini_magick20250608-11056-2qt7xn.jpg",
     slug: "design-living-room-like-pro-styly",
     slugFr: "concevoir-salon-comme-professionnel-styly",
     Component: DesignLivingRoomLikePro,

@@ -16,7 +16,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center px-10 py-20 max-md:max-w-full max-md:px-5">
+    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center px-10 py-16 sm:py-20 max-md:max-w-full max-md:px-5">
       <div className="flex w-[1629px] max-w-full flex-col overflow-hidden items-center justify-center">
         <div className="flex w-full flex-col overflow-hidden items-center text-base font-normal leading-[1.2] px-20 max-md:px-5">
           <div className="flex w-[446px] max-w-full flex-col items-center">

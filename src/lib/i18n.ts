@@ -38,6 +38,10 @@ export interface Translations {
   roomPlannerAISarahJohnsonEvaluationsTitle: string;
   innovativeStairRailingIdeasTitle: string;
   designLivingRoomLikeProTitle: string;
+  futureWorkspaceAIOfficeInteriorsTitle: string;
+  newBlog2Title: string;
+  generativeAIRevolutionizingDesignTitle: string;
+  aiAssistantInteriorDesignPromptsTitle: string;
 
   // Hero section
   welcomeToFuture: string;
@@ -1350,6 +1354,10 @@ export const translations: Record<Language, Translations> = {
     roomPlannerAISarahJohnsonEvaluationsTitle: "The Good, The Bad, and The Room Planner AI: Sarah Johnson's Honest Styly.io Evaluations",
     innovativeStairRailingIdeasTitle: "Innovative Interior Stair Railing Ideas: Custom Designs Powered by Styly AI",
     designLivingRoomLikeProTitle: "Design Your Living Room Like a Pro with Styly",
+    futureWorkspaceAIOfficeInteriorsTitle: "Designing the Future Workspace: AI-Powered Office Interiors with Styly",
+    newBlog2Title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io",
+    generativeAIRevolutionizingDesignTitle: "How Generative AI is Revolutionizing Interior Design?",
+    aiAssistantInteriorDesignPromptsTitle: "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral",
 
     // New Keys for Market Leaders
     foyr: "Foyr",
@@ -2112,7 +2120,7 @@ export const translations: Record<Language, Translations> = {
     instagram: "Instagram",
     facebook: "Facebook",
     // Navbar
-    pricing: "Tarification",
+    pricing: "Tarifs",
     blog: "Blog",
     signIn: "Connexion",
     expertDesignTipsText:
@@ -2247,7 +2255,7 @@ export const translations: Record<Language, Translations> = {
     footerCompany: "Entreprise",
     footerAbout: "À propos",
     footerFeatures: "Fonctionnalités",
-    footerPricing: "Tarification",
+    footerPricing: "Tarifs",
     footerContact: "Contact",
     footerLegal: "Légal",
     footerTerms: "Conditions",
@@ -2564,6 +2572,10 @@ export const translations: Record<Language, Translations> = {
     roomPlannerAISarahJohnsonEvaluationsTitle: "Le Bon, le Mauvais et le Planificateur IA : Évaluations Honnêtes de Sarah Johnson sur Styly.io",
     innovativeStairRailingIdeasTitle: "Idées Innovantes de Rampes d'Escalier Intérieur : Designs Personnalisés par l'IA Styly",
     designLivingRoomLikeProTitle: "Concevoir Votre Salon Comme un Professionnel avec Styly",
+    futureWorkspaceAIOfficeInteriorsTitle: "Concevoir l'Espace de Travail du Futur : Intérieurs de Bureau Alimentés par l'IA avec Styly",
+    newBlog2Title: "Concevoir une mise en scène intérieure par IA sur AWS : les coulisses de Styly.io",
+    generativeAIRevolutionizingDesignTitle: "Comment l'IA Générative Révolutionne le Design d'Intérieur ?",
+    aiAssistantInteriorDesignPromptsTitle: "Assistant IA en Design d'Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral",
 
     marketOverview: "Aperçu du marché",
     keyEvaluationCriteria: "Critères d'évaluation clés",

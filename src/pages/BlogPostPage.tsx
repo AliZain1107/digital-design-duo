@@ -162,6 +162,21 @@ const BlogPostPage: React.FC = () => {
     if (post.slug === "design-living-room-like-pro-styly") {
       return t.designLivingRoomLikeProTitle;
     }
+    if (post.slug === "designing-future-workspace-ai-powered-office-interiors") {
+      return t.futureWorkspaceAIOfficeInteriorsTitle;
+    }
+    if (post.slug === "futuristic-interior-design-styles-styly-ai") {
+      return t.futuristicInteriorDesignStylesTitle;
+    }
+    if (post.slug === "room-planner-ai-sarah-johnson-styly-evaluations") {
+      return t.roomPlannerAISarahJohnsonEvaluationsTitle;
+    }
+    if (post.slug === "transforming-small-living-spaces-design-solutions") {
+      return t.transformingSmallLivingSpacesTitle;
+    }
+    if (post.slug === "designing-ai-interior-staging-aws-styly") {
+      return t.newBlog2Title;
+    }
     // For other blog posts, use the original title
     return post.title;
   };
@@ -203,11 +218,7 @@ const BlogPostPage: React.FC = () => {
         <p className="text-xl text-center text-gray-800 mb-5">
           {post.date}
         </p>
-        <img
-          src={post.image}
-          alt={post.title}
-          className="w-full h-[350px] rounded-3xl mb-4 block rounded-inherit object-center object-cover p-4"
-        />
+
         <post.Component />
       </div>
     </div>
