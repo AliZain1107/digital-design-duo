@@ -34,14 +34,7 @@ const Navbar: React.FC = () => {
   const handleLanguageChange = (lang: "en" | "fr") => {
     console.log("Language switch requested to:", lang);
 
-    if (lang === "en") {
-      // Redirect to external website for English
-      console.log("Redirecting to external English site: https://www.styly.io");
-      window.location.href = "https://www.styly.io";
-      return;
-    }
-
-    // For French, use the current React application
+    // For both languages, use the current React application
     setLanguage(lang);
   };
 
