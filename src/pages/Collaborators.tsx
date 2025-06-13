@@ -38,18 +38,9 @@ const Collaborators: React.FC = () => {
 
   // Handle language routing
   useEffect(() => {
-    let pathLang: Language;
-    if (location.pathname === "/collaborateurs" || location.pathname === "/fr/collaborateurs") {
-      pathLang = "fr";
-    } else if (location.pathname.startsWith("/en")) {
-      // Redirect English URLs to external site
-      window.location.href = "https://www.styly.io";
-      return;
-    } else {
-      pathLang = "fr"; // Default to French
-    }
-    setLanguage(pathLang);
-  }, [location.pathname, setLanguage]);
+    // No need to set language based on URL - it's handled by the LanguageProvider
+    // The language state is managed globally and will update the content automatically
+  }, []);
 
   // SEO metadata
   const seoMeta = {

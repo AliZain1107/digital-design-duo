@@ -37,20 +37,11 @@ const ServicesAPI: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Handle language routing
+  // Handle language routing - now uses current language state for seamless switching
   useEffect(() => {
-    let pathLang: Language;
-    if (location.pathname === "/services-api-fr" || location.pathname === "/fr/services-api") {
-      pathLang = "fr";
-    } else if (location.pathname.startsWith("/en")) {
-      // Redirect English URLs to external site
-      window.location.href = "https://www.styly.io";
-      return;
-    } else {
-      pathLang = "fr"; // Default to French
-    }
-    setLanguage(pathLang);
-  }, [location.pathname, setLanguage]);
+    // No need to set language based on URL - it's handled by the LanguageProvider
+    // The language state is managed globally and will update the content automatically
+  }, []);
 
   // SEO metadata
   const seoMeta = {

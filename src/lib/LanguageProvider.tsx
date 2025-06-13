@@ -7,12 +7,12 @@ export const useLanguage = () => useContext(LanguageContext);
 
 // Create a provider component
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Try to get the stored language preference or default to 'fr' (French only app now)
+  // Try to get the stored language preference or default to 'en' (English)
   const [language, setLanguageState] = useState<Language>(() => {
     const storedLanguage = localStorage.getItem('language');
 
-    // Default to French if no stored language or if stored language is English
-    return (storedLanguage === 'fr') ? storedLanguage as Language : 'fr';
+    // Default to English if no stored language or if stored language is French
+    return (storedLanguage === 'en') ? storedLanguage as Language : 'en';
   });
 
   // const navigate = useNavigate();

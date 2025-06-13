@@ -43,9 +43,9 @@ const App = () => (
               <Route path="/en/blog" element={<EnglishBlogRedirect />} />
               <Route path="/en/blog/:slug" element={<EnglishBlogRedirect />} />
 
-              {/* Other English routes - redirect to external site */}
-              <Route path="/en" element={<EnglishRedirect />} />
-              <Route path="/en/*" element={<EnglishRedirect />} />
+              {/* English routes - now stay on site instead of redirecting */}
+              <Route path="/en" element={<Index />} />
+              <Route path="/en/*" element={<Index />} />
 
               {/* French blog routes */}
               <Route path="/fr/blog" element={<Blog />} />
@@ -65,8 +65,14 @@ const App = () => (
               {/* French collaborators pages */}
               <Route path="/fr/collaborateurs" element={<Collaborators />} />
 
+              {/* English collaborators pages */}
+              <Route path="/en/collaborateurs" element={<Collaborators />} />
+
               {/* French services API pages */}
               <Route path="/fr/services-api" element={<ServicesAPI />} />
+
+              {/* English services API pages */}
+              <Route path="/en/services-api" element={<ServicesAPI />} />
 
               {/* Legacy legal routes for backward compatibility */}
               <Route path="/conditions" element={<Terms />} />

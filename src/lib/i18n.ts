@@ -1314,7 +1314,7 @@ export const translations: Record<Language, Translations> = {
     deliverConsistentPresentation:
       "Deliver consistent, professional presentation",
     realEstateVirtualStaging:
-      "Gen Z’s Ultimate Guide to Instagram-Worthy Interiors",
+      "Gen Z's Ultimate Guide to Instagram-Worthy Interiors",
     howRealEstateAgentsBoostSales:
       "How Real Estate Agents Are Boosting Sales with AI-Powered Virtual Staging: The 2025 Market Reality",
     genZUltimateGuideToInteriors:
@@ -1428,7 +1428,7 @@ export const translations: Record<Language, Translations> = {
 
     // Introduction
     introductionText:
-      "Bedrooms are our sanctuaries. According to the National Sleep Foundation, we spend about one-third of our lives there. It’s vital to create a space that fosters both comfort and style. AI tools like Styly.io are changing the game in bedroom design.",
+      "Bedrooms are our sanctuaries. According to the National Sleep Foundation, we spend about one-third of our lives there. It's vital to create a space that fosters both comfort and style. AI tools like Styly.io are changing the game in bedroom design.",
 
     // AI in Bedroom Design
     aiInBedroomDesignText:
@@ -1492,26 +1492,26 @@ export const translations: Record<Language, Translations> = {
     creatingTrendySpaces:
       "Creating Trendy Spaces: The Gen Z Guide to Instagram-Worthy Interiors",
     introductionText1:
-      "If there’s one generation redefining self-expression through personal spaces, it’s Gen Z. Armed with a camera phone, sharp aesthetic preferences, and a wide social media audience, this generation knows how to create and showcase enviable Instagram-worthy interiors.",
+      "If there's one generation redefining self-expression through personal spaces, it's Gen Z. Armed with a camera phone, sharp aesthetic preferences, and a wide social media audience, this generation knows how to create and showcase enviable Instagram-worthy interiors.",
     introductionText2:
-      "But how do you design a space that’s trendy, personal, AND ready for the camera? This guide has you covered. Whether you’re creating an unforgettable feed or just want to spruce up your space, we’ll help you craft the perfect Instagram-worthy interior.",
+      "But how do you design a space that's trendy, personal, AND ready for the camera? This guide has you covered. Whether you're creating an unforgettable feed or just want to spruce up your space, we'll help you craft the perfect Instagram-worthy interior.",
     understandingAestheticPreferences:
-      "Understanding Gen Z’s Aesthetic Preferences",
+      "Understanding Gen Z's Aesthetic Preferences",
     aestheticPreferencesText:
-      "Gen Z isn’t satisfied with cookie-cutter designs. They’re blending bold aesthetics, nostalgic touches, and functionality to make their spaces truly unique.",
+      "Gen Z isn't satisfied with cookie-cutter designs. They're blending bold aesthetics, nostalgic touches, and functionality to make their spaces truly unique.",
     colorPalettes: "Color Palettes",
     colorPalettesText:
       "Gen Z gravitates toward vibrant color combinations. Think sage green, lavender, muted pinks, and splashes of bold yellows or blues. Their preference? Personalizing spaces with colors that reflect individuality while keeping a cozy vibe.",
     eclecticFurnitureAndDecor: "Eclectic Furniture and Decor",
     eclecticFurnitureAndDecorText:
-      "Instead of mainstream furniture collections, Gen Z hunts for unique vintage finds, second-hand treasures, and quirky accent pieces. It’s style-meets-sustainability on a budget.",
+      "Instead of mainstream furniture collections, Gen Z hunts for unique vintage finds, second-hand treasures, and quirky accent pieces. It's style-meets-sustainability on a budget.",
     minimalistMeetsMaximalist: "Minimalist Meets Maximalist",
     minimalistMeetsMaximalistText:
       "Gen Z decorates on one extreme or the other. Some lean into minimalist Nordic styles with clean lines and whites, while others go full maximalist with layered textures, bold patterns, and curated clutter that feels intentional.",
     keyElementsOfInstagramWorthyInterior:
       "Key Elements of an Instagram-Worthy Interior",
     instagramWorthyDefinition:
-      "What defines “Instagram-worthy”? It’s all about creating that wow factor. These elements can make any room pop both in real life and on camera:",
+      "What defines \"Instagram-worthy\"? It's all about creating that wow factor. These elements can make any room pop both in real life and on camera:",
     naturalLighting: "Natural Lighting",
     naturalLightingText:
       "Lighting can make or break your photos. Large windows, sheer curtains, and strategically placed mirrors maximize the natural light. Think soft and diffused, not harsh.",
@@ -1520,7 +1520,7 @@ export const translations: Record<Language, Translations> = {
       "From funky wallpaper to a gallery of art, accent walls are a striking focal point. Popular choices include geometric murals, DIY photo walls, and plant-covered walls.",
     statementPieces: "Statement Pieces",
     statementPiecesText:
-      "Maybe it’s a retro velvet couch or a neon sign above the bed. Statement pieces anchor the room’s aesthetics and create visual interest.",
+      "Maybe it's a retro velvet couch or a neon sign above the bed. Statement pieces anchor the room's aesthetics and create visual interest.",
     greeneryAndPlants: "Greenery and Plants",
     greeneryAndPlantsText:
       "Every Instagram-worthy room has some green. From lush monstera leaves to hanging ivy, plants bring vibrancy and life to a space.",
@@ -1529,20 +1529,20 @@ export const translations: Record<Language, Translations> = {
       "Think soft rugs, chunky blankets, fluffy pillows, and textured wallpapers. Layering textures adds depth, making the room feel both visually dynamic and cozy.",
     declutteredVisuals: "Decluttered Visuals",
     declutteredVisualsText:
-      "While Gen Z embraces curated chaos, clutter that’s well-organized is key. Decorative baskets, minimalist shelves, and hidden storage keep the scene crisp and clean for the camera.",
+      "While Gen Z embraces curated chaos, clutter that's well-organized is key. Decorative baskets, minimalist shelves, and hidden storage keep the scene crisp and clean for the camera.",
     incorporatingSustainabilityAndTechnology:
       "Incorporating Sustainability and Technology",
     sustainabilityTechText:
-      "Gen Z doesn’t just care about aesthetics—they care about the planet and staying connected. Here’s how they integrate sustainability and smart tech into their designs:",
+      "Gen Z doesn't just care about aesthetics—they care about the planet and staying connected. Here's how they integrate sustainability and smart tech into their designs:",
     sustainableMaterials: "Sustainable Materials",
     sustainableMaterialsText:
       "Eco-conscious design is non-negotiable for this generation. Think recycled wood furniture, bamboo decor, and upcycled pieces from thrift stores. They prioritize ethical choices over fast furniture trends.",
     smartHomeTechnology: "Smart Home Technology",
     smartHomeTechnologyText:
-      "Integrating tech like voice-controlled lights, smart speakers, and app-enabled air purifiers is common. Tools like home decor AI free platforms, like Styly’s AI room planner, make designing a breeze.",
+      "Integrating tech like voice-controlled lights, smart speakers, and app-enabled air purifiers is common. Tools like home decor AI free platforms, like Styly's AI room planner, make designing a breeze.",
     multiFunctionalFurniture: "Multi-functional Furniture",
     multiFunctionalFurnitureText:
-      "Small spaces are optimized with dual-purpose furniture—think storage ottomans, foldable desks, and Murphy beds. It’s trendy AND practical.",
+      "Small spaces are optimized with dual-purpose furniture—think storage ottomans, foldable desks, and Murphy beds. It's trendy AND practical.",
     caseStudiesAndExamples: "Case Studies and Real-Life Examples",
     caseStudyIntro:
       "What makes a space Insta-famous? Here are some standout examples of interiors that broke the algorithm:",
@@ -1550,19 +1550,19 @@ export const translations: Record<Language, Translations> = {
       "A small apartment oozing coziness with a jungle of hanging plants, vintage furniture, and muted tones. Pro Tip? Use contrasting pots for your plants!",
     geometricDreamBedroom: "Geometric Dream Bedroom",
     geometricDreamBedroomText:
-      "Featuring pastel-colored geometric wall designs paired with minimal shelves, this room exemplifies Gen Z’s blend of minimalist decor with bold personal statements.",
+      "Featuring pastel-colored geometric wall designs paired with minimal shelves, this room exemplifies Gen Z's blend of minimalist decor with bold personal statements.",
     cafeInspiredKitchenNook: "Café-Inspired Kitchen Nook",
     cafeInspiredKitchenNookText:
       "A kitchen with industrial bar stools, subway tiles, and niche coffee setups has been a hit, with some posts getting hundreds of thousands of likes.",
     bohoOutdoorBalcony: "Boho Outdoor Balcony",
     bohoOutdoorBalconyText:
-      "Think rattan chairs, fairy lights, and layered outdoor rugs. It’s cozy, budget-friendly, and becomes an instant nighttime photo favorite.",
+      "Think rattan chairs, fairy lights, and layered outdoor rugs. It's cozy, budget-friendly, and becomes an instant nighttime photo favorite.",
     diyInstagramWorthyMakeovers: "Tips for DIY Instagram-Worthy Makeovers",
     diyTipsIntro:
       "Want to recreate one of these stunning spaces? With a little creativity and effort, you can. Here are some affordable DIY tips:",
     startWithMoodBoard: "Start with a Mood Board",
     startWithMoodBoardText:
-      "Use an AI room decorator like Styly’s AI room design free tool. Upload images of your space, try different layouts, and find inspiration that suits your vibe.",
+      "Use an AI room decorator like Styly's AI room design free tool. Upload images of your space, try different layouts, and find inspiration that suits your vibe.",
     maximizeWhatYouHave: "Maximize What You Have",
     maximizeWhatYouHaveText:
       "Rearrange existing furniture to see your room in a new light. Sometimes shifting a couch or bed to another spot can transform the room.",
@@ -1581,32 +1581,32 @@ export const translations: Record<Language, Translations> = {
     socialMediaShapingDesignTrends:
       "The Role of Social Media in Shaping Design Trends",
     socialMediaShapingDesignTrendsText:
-      "Social media isn’t just about showcasing—it’s shaping what’s trendy. Here’s how Instagram plays a vital role:",
+      "Social media isn't just about showcasing—it's shaping what's trendy. Here's how Instagram plays a vital role:",
     crowdsourcingCreativity: "Crowdsourcing Creativity",
     crowdsourcingCreativityText:
       "Through hashtags like #RoomGoals or #AestheticInteriors, people can easily draw inspiration. Trends spread fast because of this visibility.",
     massAppealToNicheInterests: "Mass Appeal to Niche Interests",
     massAppealToNicheInterestsText:
-      "Platforms give rise to niche aesthetics such as “cottage core” or “dark academia,” helping like-minded groups build communities.",
+      "Platforms give rise to niche aesthetics such as \"cottage core\" or \"dark academia,\" helping like-minded groups build communities.",
     interactiveShopping: "Interactive Shopping",
     interactiveShoppingText:
       "Social media integrations now allow users to shop directly from inspirational posts. Just tap, and add to cart.",
     empoweringNewCreators: "Empowering New Creators",
     empoweringNewCreatorsText:
-      "Interior enthusiasts and influencers are not just reshaping design but careers. With thousands of followers, they’re dictating the future of interiors.",
+      "Interior enthusiasts and influencers are not just reshaping design but careers. With thousands of followers, they're dictating the future of interiors.",
     shareYourBestSpace: "Share Your Best Space",
     shareYourBestSpaceText:
-      "Creating Instagram-worthy interiors involves creativity, tech-savvy tools, and an eye for detail. But most importantly, it’s about YOU.",
+      "Creating Instagram-worthy interiors involves creativity, tech-savvy tools, and an eye for detail. But most importantly, it's about YOU.",
     shareYourBestSpaceInstagram:
-      "What’s your favorite tip? Share your Insta-worthy spaces with us @Stylyio, and don’t forget to try our AI room planner to design your next masterpiece.",
+      "What's your favorite tip? Share your Insta-worthy spaces with us @Stylyio, and don't forget to try our AI room planner to design your next masterpiece.",
     prevArticle:
       "How Real Estate Agents Are Boosting Sales with AI-Powered Virtual Staging: The 2025 Market Reality",
     nextArticle:
       "How to Build Your Own House with AI Tools Including Porch Design",
     readMore: "Read More",
     expertTipsIntroductionText1:
-      "Transforming your home interiors doesn’t have to break the bank. With the advent of advanced tools like",
-    stylyAI: "Styly’s free AI room design",
+      "Transforming your home interiors doesn't have to break the bank. With the advent of advanced tools like",
+    stylyAI: "Styly's free AI room design",
     expertTipsIntroductionText2:
       "solutions, you can achieve stunning results on a budget. Here are 10 expert tips to help you save big on your home interiors while using the latest AI-powered tools.",
 
@@ -1619,7 +1619,7 @@ export const translations: Record<Language, Translations> = {
       "Leverage an AI room decorator to experiment with layouts. Tools like Styly can provide multiple design options to utilize space efficiently.",
     upcycleFurniture: "Upcycle Furniture",
     upcycleFurnitureContent:
-      "Give your furniture a fresh look by upcycling. Pair this with Styly’s AI room design features to visualize revamped pieces in your interiors.",
+      "Give your furniture a fresh look by upcycling. Pair this with Styly's AI room design features to visualize revamped pieces in your interiors.",
     focusOnDIYProjects: "Focus on DIY Projects",
     focusOnDIYProjectsContent:
       "Add a personal touch with DIY decor. Use free AI room design tools to guide your projects and align them with your design theme.",
@@ -1631,13 +1631,13 @@ export const translations: Record<Language, Translations> = {
       "Focus your budget on impactful items like lighting. AI design tools help identify high-value, budget-friendly options.",
     experimentWithColorsVirtually: "Experiment with Colors Virtually",
     experimentWithColorsVirtuallyContent:
-      "Before buying, test color palettes using Styly’s free AI tools. Save money by getting it right on the first try.",
+      "Before buying, test color palettes using Styly's free AI tools. Save money by getting it right on the first try.",
     investInMultiFunctionalFurniture: "Invest in Multi-Functional Furniture",
     investInMultiFunctionalFurnitureContent:
       "Opt for items like sofa beds or ottomans with storage. Visualize them with AI tools to ensure the best fit.",
     useAIForAccessoryPlacement: "Use AI for Accessory Placement",
     useAIForAccessoryPlacementContent:
-      "Styly’s AI can recommend where to place accessories for a polished look without overbuying.",
+      "Styly's AI can recommend where to place accessories for a polished look without overbuying.",
     stayUpdatedWithTrends: "Stay Updated with Trends",
     stayUpdatedWithTrendsContent:
       "AI platforms offer trend insights. Use them to incorporate stylish updates without a complete redo.",
@@ -1645,7 +1645,7 @@ export const translations: Record<Language, Translations> = {
     // Why Choose Styly
     whyChooseStyly: "Why Choose Styly for Your Home Interiors?",
     stylyDescription:
-      "Styly’s free AI interior design tools make it easy to create personalized, budget-friendly interiors. Whether redecorating a room or your whole home, Styly empowers you to:",
+      "Styly's free AI interior design tools make it easy to create personalized, budget-friendly interiors. Whether redecorating a room or your whole home, Styly empowers you to:",
     visualizeDesigns: "Visualize designs instantly",
     experimentWithLayouts: "Experiment with layouts and styles",
     saveMoney: "Save money by avoiding costly mistakes",
@@ -1835,7 +1835,7 @@ export const translations: Record<Language, Translations> = {
     getStartedWithFreeAITools: "Get started now with our free AI tools",
 
     // Services API Page
-    servicesAPI: "Services & API",
+    servicesAPI: "API",
     stylyAIAPISuite: "Styly AI API Suite",
     mostAdvancedVisualIntelligencePlatform: "The Most Advanced Visual Intelligence Platform for Design, Retail & Real Estate",
     developerAPIs: "Developer APIs",
@@ -2727,7 +2727,7 @@ export const translations: Record<Language, Translations> = {
     introductionText2:
       "Mais comment concevoir un espace qui soit tendance, personnel ET prêt pour la caméra ? Ce guide est fait pour vous. Que vous créiez un feed inoubliable ou que vous souhaitiez simplement améliorer votre espace, nous vous aiderons à créer l'intérieur parfait pour Instagram.",
 
-    // Understanding Gen Z’s Aesthetic Preferences
+    // Understanding Gen Z's Aesthetic Preferences
     understandingAestheticPreferences:
       "Comprendre les préférences esthétiques de la génération Z",
     aestheticPreferencesText:
@@ -2748,7 +2748,7 @@ export const translations: Record<Language, Translations> = {
     keyElementsOfInstagramWorthyInterior:
       "Éléments clés d'un intérieur digne d'Instagram",
     instagramWorthyDefinition:
-      "Qu'est-ce qui définit un intérieur digne d'Instagram ? Tout est dans la création de cet effet waouh. Ces éléments peuvent rendre n'importe quelle pièce attrayante, en vrai comme sur caméra :",
+      "What defines \"Instagram-worthy\"? It's all about creating that wow factor. These elements can make any room pop both in real life and on camera:",
     naturalLighting: "Lumière naturelle",
     naturalLightingText:
       "L'éclairage peut faire ou défaire vos photos. De grandes fenêtres, des rideaux transparents et des miroirs stratégiquement placés maximisent la lumière naturelle. L'idée est de choisir une lumière douce et diffuse, non agressive.",
@@ -2832,7 +2832,7 @@ export const translations: Record<Language, Translations> = {
       "Grâce à des hashtags comme #RoomGoals ou #AestheticInteriors, les gens peuvent facilement s'inspirer. Les tendances se propagent rapidement grâce à cette visibilité.",
     massAppealToNicheInterests: "Appel massif aux intérêts de niche",
     massAppealToNicheInterestsText:
-      "Les plateformes permettent à des esthétiques de niche telles que le “cottage core” ou le “dark academia” de se développer, permettant à des groupes partageant les mêmes idées de créer des communautés.",
+      "Platforms give rise to niche aesthetics such as \"cottage core\" or \"dark academia,\" helping like-minded groups build communities.",
     interactiveShopping: "Shopping interactif",
     interactiveShoppingText:
       "Les intégrations sociales permettent désormais aux utilisateurs d'acheter directement à partir des publications inspirantes. Il suffit de cliquer et d'ajouter au panier.",
@@ -3079,7 +3079,7 @@ export const translations: Record<Language, Translations> = {
     getStartedWithFreeAITools: "Commencez dès maintenant avec nos outils IA gratuits",
 
     // Services API Page
-    servicesAPI: "Services et API",
+    servicesAPI: "API",
     stylyAIAPISuite: "Suite API IA Styly",
     mostAdvancedVisualIntelligencePlatform: "La Plateforme d'Intelligence Visuelle la Plus Avancée pour le Design, le Retail et l'Immobilier",
     developerAPIs: "API Développeurs",

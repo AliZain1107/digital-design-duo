@@ -24,25 +24,11 @@ const Index: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  // Remove URL-based language routing - use global language state instead
   useEffect(() => {
-    let pathLang: Language;
-    if (location.pathname === "/" || location.pathname === "") {
-      pathLang = "fr";
-    } else if (location.pathname.startsWith("/en")) {
-      // Redirect English URLs to external site
-      console.log("English URL detected, redirecting to external site: https://www.styly.io");
-      window.location.href = "https://www.styly.io";
-      return;
-    } else {
-      pathLang = location.pathname.startsWith("/fr") ? "fr" : "fr"; // Default to French
-    }
-    setLanguage(pathLang);
-
-    if (location.pathname !== `/${pathLang}` && location.pathname !== "/") {
-      const newPath = location.pathname.replace(/^\/(en|fr)/, `/${pathLang}`);
-      navigate(newPath, { replace: true });
-    }
-  }, [location.pathname, navigate]);
+    // No need to set language based on URL - it's handled by the LanguageProvider
+    // The language state is managed globally and will update the content automatically
+  }, []);
 
   // Scroll to top when component mounts or language changes
   useEffect(() => {
