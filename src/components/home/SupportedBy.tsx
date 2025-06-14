@@ -1,5 +1,12 @@
 import React from "react";
 import { useLanguage } from "@/lib/i18n";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 const SupportedBy: React.FC = () => {
   const { t, language } = useLanguage();
@@ -51,6 +58,16 @@ const SupportedBy: React.FC = () => {
     },
   ];
 
+  // Embla carousel options for infinite loop and auto-scroll
+  const [emblaApi, setEmblaApi] = React.useState<any>(null);
+  React.useEffect(() => {
+    if (!emblaApi) return;
+    let autoScroll = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 3000);
+    return () => clearInterval(autoScroll);
+  }, [emblaApi]);
+
   return (
     <section
       className="py-2 sm:py-3 md:py-4 lg:py-6 px-4 sm:px-6 md:px-8 lg:px-12 max-w-full overflow-hidden"
@@ -64,46 +81,37 @@ const SupportedBy: React.FC = () => {
         </h2>
       </div>
 
-      
-      {/* Container with gradients for fade effect */}
-      <div className="relative max-w-full mx-auto overflow-hidden py-2 sm:py-3 md:py-4 lg:py-6">
+      <div className="relative max-w-7xl mx-auto overflow-visible py-6 sm:py-8 md:py-10 lg:py-14 min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center">
         {/* Left fade gradient */}
-        <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
-        
-        {/* Main logos container */}
-        <div className="flex overflow-hidden">
-          <div className="flex space-x-24 animate-marquee hover:pause-animation">
+        <div className="absolute top-0 left-0 w-32 sm:w-48 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        {/* Carousel */}
+        <Carousel
+          opts={{ loop: true, align: "start" }}
+          setApi={setEmblaApi}
+          className="w-full"
+        >
+          <CarouselContent className="gap-12 md:gap-20 lg:gap-32 px-4">
             {partnerLogos.map((logo, index) => (
-              <div
-                key={`logo-1-${index}`}
-                className="w-48 sm:w-56 md:w-64 lg:w-72 flex-shrink-0 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity duration-300"
+              <CarouselItem
+                key={logo.name}
+                className="basis-1/2 sm:basis-1/3 md:basis-1/4 flex items-center justify-center"
               >
-                <img
-                  src={logo.src}
-                  alt={logo.description}
-                  className="h-24 sm:h-32 md:h-40 lg:h-48"
-                />
-              </div>
+                <div className="w-48 sm:w-60 md:w-72 lg:w-80 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src={logo.src}
+                    alt={logo.description}
+                    className="h-24 sm:h-32 md:h-40 lg:h-48 object-contain"
+                    draggable={false}
+                  />
+                </div>
+              </CarouselItem>
             ))}
-          </div>
-          {/* Duplicate set for seamless looping */}
-          <div className="flex space-x-24 animate-marquee hover:pause-animation">
-            {partnerLogos.map((logo, index) => (
-              <div
-                key={`logo-2-${index}`}
-                className="w-48 sm:w-56 md:w-64 lg:w-72 flex-shrink-0 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity duration-300"
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.description}
-                  className="h-24 sm:h-32 md:h-40 lg:h-48"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
         {/* Right fade gradient */}
-        <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10"></div>
+        <div className="absolute top-0 right-0 w-32 sm:w-48 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
       </div>
     </section>
   );
