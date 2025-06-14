@@ -325,11 +325,15 @@ const Index: React.FC = () => {
       <div className="flex w-full flex-col">
         <Navbar />
         <Hero />
-        <SupportedBy />
         <VideoSection />
+        <div className="mt-12 md:mt-20 lg:mt-24">
+          <SupportedBy />
+        </div>
+        <div className="mt-12 md:mt-16 lg:mt-20">
+          <ArchitectureRevolution />
+        </div>
         <HowItWorks />
         <DesignWithAI />
-        <ArchitectureRevolution />
         <Stats />
         <Testimonials />
         <BlogSection maxPosts={4} />

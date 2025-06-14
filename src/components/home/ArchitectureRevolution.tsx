@@ -3,39 +3,16 @@ import ShowcaseScroll from "./ShowcaseScroll";
 import { useLanguage } from "@/lib/i18n";
 
 const ArchitectureRevolution: React.FC = () => {
-  const { t } = useLanguage();
-
-  // Ensure translation exists or fallback
-  const architectureRevolutionText = t.architectureRevolution || "Default Architecture Revolution Text";
-  const homeDesignByAIText = t.homeDesignByAI || "Default Home Design by AI Text";
-
   return (
-    <section className="bg-gradient-to-b from-white to-gray-100 w-full py-16 sm:py-20 overflow-hidden">
-      <div className="w-full relative">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-purple-100 rounded-full -z-10 blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-orange-100 rounded-full -z-10 blur-3xl opacity-50 transform -translate-x-1/2 translate-y-1/2"></div>
-
-        <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
-          <div className="text-center mb-12 border-y-2 border-[#34495e] py-6 max-w-5xl mx-auto">
-            {/* Decorative Top Icon */}
-            <div className="text-[#593286] text-4xl mb-4">✧</div>
-
-            {/* Main Heading */}
-            <h2 className="relative font-['Nunito']">
-              <span className="inline-block font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#593286] to-[#FA6F40] text-2xl tracking-tight leading-tight uppercase drop-shadow-md">
-                {architectureRevolutionText}
-              </span>
-              <span className="inline-block mt-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#593286] to-[#FA6F40] text-2xl tracking-tight leading-tight uppercase drop-shadow-md">
-                {homeDesignByAIText}
-              </span>
-            </h2>
-
-            {/* Decorative Bottom Icon */}
-            <div className="text-[#593286] text-4xl mt-4">✧</div>
-          </div>
+    <section className="w-full py-6 sm:py-8 overflow-hidden">
+      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
+        <div className="container mx-auto text-center mb-4 md:mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-1">
+            <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
+              Every Space Has a Story
+            </span>
+          </h2>
         </div>
-
-        {/* Showcase Scroll Component */}
         <div className="w-full transform hover:scale-[1.01] transition-transform duration-1000">
           <ShowcaseScroll />
         </div>

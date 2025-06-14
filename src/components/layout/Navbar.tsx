@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white relative flex min-h-[90px] w-full items-center overflow-hidden justify-between px-3 sm:px-5 md:px-8 lg:px-12 xl:px-20 py-4 border-b border-gray-800 z-20">
+    <header className="bg-white relative flex min-h-[90px] w-full items-center overflow-hidden justify-between px-3 sm:px-5 md:px-8 lg:px-12 xl:px-20 py-4 z-20">
       {/* Logo - Larger responsive sizing */}
       <div className="flex items-center flex-shrink-0">
         <Link
@@ -113,9 +113,11 @@ const Navbar: React.FC = () => {
         {/* Sign In Button */}
         <a
           href="https://app.styly.io"
-          className="relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-orange-500 text-white font-medium text-sm lg:text-base transition-all duration-200 hover:bg-orange-600 hover:scale-105 border border-transparent whitespace-nowrap"
+          className="group relative inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 text-base font-semibold text-white transition-all duration-300 ease-out rounded-xl shadow-lg hover:shadow-orange-500/30 transform hover:scale-105 hover:-translate-y-0.5 bg-gradient-to-r from-orange-500 to-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300 z-10"
+          aria-label="Sign In to STYLY AI"
         >
-          {t.signIn}
+          <span className="relative z-10 tracking-wide">{t.signIn}</span>
+          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </a>
 
         {/* Language Dropdown */}
@@ -123,12 +125,12 @@ const Navbar: React.FC = () => {
           <span className="absolute inset-0 rounded-md p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
           <DropdownMenu>
             <DropdownMenuTrigger
-              className="relative bg-white flex items-center gap-2 lg:gap-3 justify-center py-3 px-3 lg:px-4 rounded-md transition-all duration-200 hover:bg-purple-50 hover:scale-105 z-10 border border-transparent data-[state=open]:border-purple-500"
+              className="relative bg-white flex items-center gap-1 justify-center py-2 px-2 rounded-md transition-all duration-200 hover:bg-purple-50 hover:scale-105 z-10 border border-transparent data-[state=open]:border-purple-500 min-w-[36px]"
             >
-              <span className="text-sm lg:text-base text-purple-700 font-medium whitespace-nowrap">
-                {language === "en" ? "English" : "Français"}
+              <span className="text-lg">
+                {language === "en" ? "🇬🇧" : "🇫🇷"}
               </span>
-              <ChevronDown className="h-4 w-4 lg:h-5 lg:w-5 text-purple-700" />
+              <ChevronDown className="h-4 w-4 text-purple-700" />
             </DropdownMenuTrigger>
             <DropdownMenuContent
               align="end"
@@ -137,11 +139,12 @@ const Navbar: React.FC = () => {
               {languages.map((lang) => (
                 <DropdownMenuItem
                   key={lang.code}
-                  className={`cursor-pointer hover:bg-purple-50 focus:bg-purple-50 px-3 py-2 text-sm ${
+                  className={`cursor-pointer hover:bg-purple-50 focus:bg-purple-50 px-3 py-2 text-sm flex items-center gap-2 ${
                     language === lang.code ? "bg-purple-50 font-medium" : ""
                   }`}
                   onClick={() => handleLanguageChange(lang.code as "en" | "fr")}
                 >
+                  <span className="text-lg">{lang.code === "en" ? "🇬🇧" : "🇫🇷"}</span>
                   {lang.name}
                 </DropdownMenuItem>
               ))}
