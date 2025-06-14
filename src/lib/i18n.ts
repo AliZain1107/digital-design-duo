@@ -931,7 +931,7 @@ export const translations: Record<Language, Translations> = {
     facebook: "Facebook",
 
     // Hero section
-    welcomeToFuture: "Welcome to the Future of AI Interior Design",
+    welcomeToFuture: "Welcome to the Future of Interior Design",
     mostUsedAITool: "#1 most used",
     aiDesignTool: "Free AI interior design app",
     for: "for",
@@ -2131,7 +2131,7 @@ export const translations: Record<Language, Translations> = {
     prompt: "Entrez vos préférences de design ici...",
 
     // Hero section
-    welcomeToFuture: "Bienvenue dans le Futur du Design Intérieur IA",
+    welcomeToFuture: "Bienvenue dans le Futur du Design Intérieur",
     mostUsedAITool: "#1 le plus utilisé",
     aiDesignTool: "Outil de design intérieur IA gratuit",
     for: "pour",

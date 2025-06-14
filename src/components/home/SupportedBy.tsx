@@ -53,12 +53,12 @@ const SupportedBy: React.FC = () => {
 
   return (
     <section
-      className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-12 max-w-full overflow-hidden"
+      className="py-2 sm:py-3 md:py-4 lg:py-6 px-4 sm:px-6 md:px-8 lg:px-12 max-w-full overflow-hidden"
       key={`supported-by-${language}`}
     >
-      <div className="container mx-auto text-center mb-8 md:mb-12">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-2">
-          <span className="bg-gradient-to-r from-[#593286] to-[#FA6F40] bg-clip-text text-transparent">
+      <div className="container mx-auto text-center mb-4 md:mb-6">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-1">
+          <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
             {t.supportedBy}
           </span>
         </h2>
@@ -66,46 +66,44 @@ const SupportedBy: React.FC = () => {
 
       
       {/* Container with gradients for fade effect */}
-      <div className="relative max-w-full mx-auto overflow-hidden">
+      <div className="relative max-w-full mx-auto overflow-hidden py-2 sm:py-3 md:py-4 lg:py-6">
         {/* Left fade gradient */}
-        <div className="absolute top-0 left-0 w-24 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
+        <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
         
         {/* Main logos container */}
         <div className="flex overflow-hidden">
-          <div className="flex space-x-16 animate-marquee hover:pause-animation">
+          <div className="flex space-x-24 animate-marquee hover:pause-animation">
             {partnerLogos.map((logo, index) => (
               <div
                 key={`logo-1-${index}`}
-                className="w-32 sm:w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="w-48 sm:w-56 md:w-64 lg:w-72 flex-shrink-0 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity duration-300"
               >
                 <img
                   src={logo.src}
                   alt={logo.description}
-                  className="h-16 sm:h-20 md:h-24"
+                  className="h-24 sm:h-32 md:h-40 lg:h-48"
                 />
               </div>
             ))}
           </div>
-          
           {/* Duplicate set for seamless looping */}
-          <div className="flex space-x-16 animate-marquee hover:pause-animation">
+          <div className="flex space-x-24 animate-marquee hover:pause-animation">
             {partnerLogos.map((logo, index) => (
               <div
                 key={`logo-2-${index}`}
-                className="w-32 sm:w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="w-48 sm:w-56 md:w-64 lg:w-72 flex-shrink-0 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity duration-300"
               >
                 <img
                   src={logo.src}
                   alt={logo.description}
-                  className="h-16 sm:h-20 md:h-24"
+                  className="h-24 sm:h-32 md:h-40 lg:h-48"
                 />
               </div>
             ))}
           </div>
         </div>
-        
         {/* Right fade gradient */}
-        <div className="absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-white to-transparent z-10"></div>
+        <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10"></div>
       </div>
     </section>
   );
