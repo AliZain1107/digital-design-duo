@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import {
   DropdownMenu,
@@ -12,6 +12,8 @@ import { useLanguage } from "@/lib/i18n";
 const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   // Debug log for current language
   console.log("Current language in Navbar:", language);
@@ -30,24 +32,23 @@ const Navbar: React.FC = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  // Enhanced language switcher with redirect for English
+  // Enhanced language switcher with seamless language change
   const handleLanguageChange = (lang: "en" | "fr") => {
     console.log("Language switch requested to:", lang);
 
-    if (lang === "en") {
-      // Redirect to external website for English
-      console.log("Redirecting to external English site: https://www.styly.io");
-      window.location.href = "https://www.styly.io";
-      return;
-    }
-
-    // For French, use the current React application
+    // For both languages, use the current React application
     setLanguage(lang);
+    
+    // No navigation - just change the language state for seamless experience
   };
 
+  // Helper to check if a route is active
+  const isActive = (path: string) => location.pathname === path;
+
   return (
-    <header className="bg-white relative flex min-h-[70px] w-full items-center overflow-hidden justify-between px-5 sm:px-10 lg:px-20 py-2 max-md:max-w-full border-b border-gray-800 z-20">
-      <div className="self-stretch z-10 flex min-w-60 min-h-[50px] items-center flex-1 shrink basis-[0%] my-auto max-md:max-w-full">
+    <header className="bg-white relative flex min-h-[90px] w-full items-center overflow-hidden justify-between px-3 sm:px-5 md:px-8 lg:px-12 xl:px-20 py-4 z-20">
+      {/* Logo - Larger responsive sizing */}
+      <div className="flex items-center flex-shrink-0">
         <Link
           to="/"
           className="transition-transform duration-300 hover:scale-105"
@@ -55,102 +56,106 @@ const Navbar: React.FC = () => {
           <img
             src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
             alt="STYLY Logo"
-            className="aspect-[2.28] object-contain w-[120px] self-stretch my-auto"
+            className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain"
           />
         </Link>
       </div>
 
       {/* Mobile menu button */}
       <button
-        className="z-20 md:hidden flex items-center text-purple-700 hover:text-purple-900 transition-all"
+        className="z-20 md:hidden flex items-center text-purple-700 hover:text-purple-900 transition-all p-2"
         onClick={toggleMobileMenu}
         aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
       >
         {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
-      {/* Desktop Navigation */}
-      <nav className="self-stretch z-10 hidden md:flex min-w-60 min-h-11 items-center gap-3 justify-center my-auto">
-        <a
-          href="https://app.styly.io/pricing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-200 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
-          aria-label="Go to Pricing"
-        >
-          <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
-          <div className="self-center z-10 w-full">
-            <div className="w-full">{t.pricing}</div>
-          </div>
-        </a>
+      {/* Desktop Navigation - Grouped with better spacing */}
+      <nav className="hidden md:flex items-center gap-3 lg:gap-4 xl:gap-5 flex-shrink-0">
+        {/* Pricing Button */}
+        <div className="relative group">
+          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          <a
+            href="https://app.styly.io/pricing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-medium text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10"
+            aria-label="Go to Pricing"
+          >
+            {t.pricing}
+          </a>
+        </div>
 
-        <Link
-          to={language === "fr" ? "/fr/collaborateurs" : "/collaborateurs"}
-          className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-200 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
-          aria-label="Go to Styly Pro"
-        >
-          <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
-          <div className="self-center z-10 w-full">
-            <div className="w-full">{language === "fr" ? "Styly Pro" : "Styly Pro"}</div>
-          </div>
-        </Link>
+        {/* Styly Pro Button */}
+        <div className="relative group">
+          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          <Link
+            to="/collaborateurs"
+            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-medium text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border ${isActive("/collaborateurs") ? "border-purple-500" : "border-transparent"}`}
+            aria-label="Go to Styly Pro"
+          >
+            {language === "fr" ? "Styly Pro" : "Styly Pro"}
+          </Link>
+        </div>
 
-        <Link
-          to={language === "fr" ? "/fr/services-api" : "/services-api"}
-          className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-200 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
-          aria-label="Go to Services API"
-        >
-          <div className="bg-white absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
-          <div className="self-center z-10 w-full">
-            <div className="w-full">{t.servicesAPI}</div>
-          </div>
-        </Link>
+        {/* Services API Button */}
+        <div className="relative group">
+          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          <Link
+            to="/services-api"
+            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-medium text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border ${isActive("/services-api") ? "border-purple-500" : "border-transparent"}`}
+            aria-label="Go to API"
+          >
+            {t.servicesAPI}
+          </Link>
+        </div>
 
+        {/* Sign In Button */}
         <a
           href="https://app.styly.io"
-          className="relative flex overflow-hidden font-medium text-[rgba(89,50,134,1)] justify-center py-2 px-5 rounded-lg border border-[rgba(89,50,134,1)] transition-all duration-300 focus:out-of-range focus:ring-2 hover:bg-purple-50 hover:scale-105"
+          className="group relative inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 text-base font-semibold text-white transition-all duration-300 ease-out rounded-xl shadow-lg hover:shadow-orange-500/30 transform hover:scale-105 hover:-translate-y-0.5 bg-gradient-to-r from-orange-500 to-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300 z-10"
+          aria-label="Sign In to STYLY AI"
         >
-          <div className="bg-[rgba(250,111,64,1)] absolute z-0 flex min-h-11 w-full rounded-lg inset-0" />
-          <div className="self-center z-10 w-full">
-            <div className="w-full">
-              <span className="text-white whitespace-nowrap inline-block">
-                {t.signIn}
-              </span>
-            </div>
-          </div>
+          <span className="relative z-10 tracking-wide">{t.signIn}</span>
+          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </a>
 
-        <DropdownMenu>
-            <DropdownMenuTrigger className="bg-white flex items-center gap-[5px] overflow-hidden justify-center pt-1 pb-[5px] rounded-md px-2 transition-all duration-300 hover:bg-gray-50 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-200">
-              <div className="self-stretch text-[15px] text-[rgba(89,50,134,1)] font-medium whitespace-nowrap tracking-[-0.15px] leading-[30px] w-[51px] my-auto">
-                <div className="w-full pb-px">
-                  {language === "en" ? "English" : "Français"}
-                </div>
-              </div>
-              <ChevronDown className="h-3.5 w-3.5 text-[rgba(89,50,134,1)]" />
+        {/* Language Dropdown */}
+        <div className="relative group">
+          <span className="absolute inset-0 rounded-md p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          <DropdownMenu>
+            <DropdownMenuTrigger
+              className="relative bg-white flex items-center gap-1 justify-center py-2 px-2 rounded-md transition-all duration-200 hover:bg-purple-50 hover:scale-105 z-10 border border-transparent data-[state=open]:border-purple-500 min-w-[36px]"
+            >
+              <span className="text-lg">
+                {language === "en" ? "🇬🇧" : "🇫🇷"}
+              </span>
+              <ChevronDown className="h-4 w-4 text-purple-700" />
             </DropdownMenuTrigger>
             <DropdownMenuContent
               align="end"
-              className="bg-white border border-gray-200 shadow-lg z-50"
+              className="bg-white border border-gray-200 shadow-lg z-50 min-w-[120px]"
             >
               {languages.map((lang) => (
                 <DropdownMenuItem
                   key={lang.code}
-                  className={`cursor-pointer hover:bg-purple-50 focus:bg-purple-50 ${
+                  className={`cursor-pointer hover:bg-purple-50 focus:bg-purple-50 px-3 py-2 text-sm flex items-center gap-2 ${
                     language === lang.code ? "bg-purple-50 font-medium" : ""
                   }`}
                   onClick={() => handleLanguageChange(lang.code as "en" | "fr")}
                 >
+                  <span className="text-lg">{lang.code === "en" ? "🇬🇧" : "🇫🇷"}</span>
                   {lang.name}
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
-        </DropdownMenu>
+          </DropdownMenu>
+        </div>
       </nav>
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-white z-50 flex flex-col p-5 transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-white z-50 flex flex-col p-4 sm:p-5 transition-transform duration-300 ease-in-out ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
@@ -163,11 +168,11 @@ const Navbar: React.FC = () => {
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY Logo"
-              className="aspect-[2.28] object-contain w-[132px]"
+              className="h-12 w-auto object-contain"
             />
           </Link>
           <button
-            className="text-purple-700 hover:text-purple-900 transition-all"
+            className="text-purple-700 hover:text-purple-900 transition-all p-2"
             onClick={toggleMobileMenu}
             aria-label="Close menu"
           >
@@ -186,7 +191,7 @@ const Navbar: React.FC = () => {
           </a>
 
           <Link
-            to={language === "fr" ? "/fr/collaborateurs" : "/collaborateurs"}
+            to="/collaborateurs"
             className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
             onClick={() => setMobileMenuOpen(false)}
           >
@@ -194,7 +199,7 @@ const Navbar: React.FC = () => {
           </Link>
 
           <Link
-            to={language === "fr" ? "/fr/services-api" : "/services-api"}
+            to="/services-api"
             className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
             onClick={() => setMobileMenuOpen(false)}
           >
@@ -214,7 +219,7 @@ const Navbar: React.FC = () => {
               {languages.map((lang) => (
                 <button
                   key={lang.code}
-                  className={`py-2 px-4 rounded-md transition-all ${
+                  className={`py-2 px-4 rounded-md transition-all text-sm ${
                     language === lang.code
                       ? "bg-purple-600 text-white"
                       : "bg-gray-100 text-gray-800 hover:bg-gray-200"
@@ -228,8 +233,6 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <div className="absolute z-0 flex min-h-[70px] w-[2117px] inset-0 max-md:max-w-full" />
     </header>
   );
 };
