@@ -180,6 +180,9 @@ const BlogPostPage: React.FC = () => {
     if (post.slug === "styly-viva-technology-future-ai-design") {
       return t.stylyVivaTechPartnershipTitle;
     }
+    if (post.slug === "can-chatgpt-design-your-home-ai-interior-design") {
+      return t.chatGPTInteriorDesignTitle;
+    }
     // For other blog posts, use the original title
     return post.title;
   };
