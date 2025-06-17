@@ -36,6 +36,8 @@ import AIAssistantInteriorDesignPrompts from "@/blogPages/AIAssistantInteriorDes
 import GenerativeAIRevolutionizingDesign from "@/blogPages/GenerativeAIRevolutionizingDesign";
 import FutureWorkspaceAIOfficeInteriors from "@/blogPages/FutureWorkspaceAIOfficeInteriors";
 import NewBlog2 from "@/blogPages/NewBlog2";
+import StylyVivaTechPartnership from "@/blogPages/StylyVivaTechPartnership";
+import ChatGPTInteriorDesign from "@/blogPages/ChatGPTInteriorDesign";
 
 export interface BlogPost {
   id: number;
@@ -50,6 +52,24 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 0,
+    title: "Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design",
+    date: "Jun 17, 2025",
+    image: "/ai-interior-design-technology.webp",
+    slug: "can-chatgpt-design-your-home-ai-interior-design",
+    slugFr: "chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur",
+    Component: ChatGPTInteriorDesign,
+  },
+  {
+    id: 1,
+    title: "How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design",
+    date: "Jun 16, 2025",
+    image: "/ai-interior-design-technology.webp",
+    slug: "styly-viva-technology-future-ai-design",
+    slugFr: "styly-viva-technology-avenir-design-ia",
+    Component: StylyVivaTechPartnership,
+  },
+  {
+    id: 1,
     title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io",
     date: "Jun 15, 2025",
     image: "/data-analytics-interior-design-dashboard.webp",

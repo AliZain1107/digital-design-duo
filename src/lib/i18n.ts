@@ -42,6 +42,8 @@ export interface Translations {
   newBlog2Title: string;
   generativeAIRevolutionizingDesignTitle: string;
   aiAssistantInteriorDesignPromptsTitle: string;
+  stylyVivaTechPartnershipTitle: string;
+  chatGPTInteriorDesignTitle: string;
 
   // Hero section
   welcomeToFuture: string;
@@ -1358,6 +1360,8 @@ export const translations: Record<Language, Translations> = {
     newBlog2Title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io",
     generativeAIRevolutionizingDesignTitle: "How Generative AI is Revolutionizing Interior Design?",
     aiAssistantInteriorDesignPromptsTitle: "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral",
+    stylyVivaTechPartnershipTitle: "How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design",
+    chatGPTInteriorDesignTitle: "Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design",
 
     // New Keys for Market Leaders
     foyr: "Foyr",
@@ -2576,6 +2580,8 @@ export const translations: Record<Language, Translations> = {
     newBlog2Title: "Concevoir une mise en scène intérieure par IA sur AWS : les coulisses de Styly.io",
     generativeAIRevolutionizingDesignTitle: "Comment l'IA Générative Révolutionne le Design d'Intérieur ?",
     aiAssistantInteriorDesignPromptsTitle: "Assistant IA en Design d'Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral",
+    stylyVivaTechPartnershipTitle: "Comment Styly.io et Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA",
+    chatGPTInteriorDesignTitle: "ChatGPT Peut-il Concevoir Votre Maison ? Explorer le Rôle de l'IA dans le Design d'Intérieur",
 
     marketOverview: "Aperçu du marché",
     keyEvaluationCriteria: "Critères d'évaluation clés",
