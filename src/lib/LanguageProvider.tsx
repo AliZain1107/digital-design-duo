@@ -19,6 +19,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   // Debug log for initial language
   console.log("[LanguageProvider] Initial language:", language);
+  console.log("[LanguageProvider] Stored language:", localStorage.getItem('language'));
 
   // Function to update the language
   const setLanguage = (lang: Language) => {
