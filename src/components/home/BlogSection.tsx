@@ -123,6 +123,9 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
     if (post.slug === "ai-assistant-interior-design-chatgpt-prompts") {
       return t.aiAssistantInteriorDesignPromptsTitle;
     }
+    if (post.slug === "styly-viva-technology-future-ai-design") {
+      return t.stylyVivaTechPartnershipTitle;
+    }
     // For other blog posts, use the original title
     return post.title;
   };
