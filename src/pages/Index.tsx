@@ -18,7 +18,7 @@ import { useContext, useState } from "react";
 
 const Index: React.FC = () => {
   const { language, setLanguage } = useContext(LanguageContext);
-  const stateLang: Language = language ?? "en";
+  const stateLang: Language = language ?? "fr";
   // Get current language to force re-render when it changes
   // const [currentLang, setCurrentLang] = useState<Language>(stateLang);
   const location = useLocation();
