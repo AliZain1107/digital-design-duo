@@ -122,6 +122,13 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
+
+        {/* Trademark Notice */}
+        <div className="w-full mt-8 pt-4 border-t border-gray-200">
+          <div className="text-xs text-gray-500 font-light text-center md:text-left">
+            {t.footerTrademark}
+          </div>
+        </div>
       </div>
 
       {/* Cookie Settings Popup */}
