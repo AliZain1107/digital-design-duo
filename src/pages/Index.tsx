@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
+import WhoIsFor from "@/components/home/WhoIsFor";
 import SupportedBy from "@/components/home/SupportedBy";
 import HowItWorks from "@/components/home/HowItWorks";
 import ArchitectureRevolution from "@/components/home/ArchitectureRevolution";
@@ -325,6 +326,7 @@ const Index: React.FC = () => {
       <div className="flex w-full flex-col">
         <Navbar />
         <Hero />
+        <WhoIsFor />
         <VideoSection />
         <div className="mt-12 md:mt-20 lg:mt-24">
           <SupportedBy />

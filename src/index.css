@@ -183,4 +183,18 @@
     background-image: linear-gradient(90deg, #a78bfa, #7c3aed, #6d28d9);
     opacity: 0.85;
   }
+
+  /* Background shimmer animation for hero section */
+  @keyframes shimmer-bg {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-shimmer-bg {
+    animation: shimmer-bg 6s linear infinite;
+  }
 }

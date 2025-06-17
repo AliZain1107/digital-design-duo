@@ -46,32 +46,34 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white relative flex min-h-[90px] w-full items-center overflow-hidden justify-between px-3 sm:px-5 md:px-8 lg:px-12 xl:px-20 py-4 z-20">
-      {/* Logo - Larger responsive sizing */}
-      <div className="flex items-center flex-shrink-0">
-        <Link
-          to="/"
-          className="transition-transform duration-300 hover:scale-105"
+    <header className="bg-white sticky top-0 w-full py-4 z-50 shadow-2xl">
+      <div className="max-w-screen-xl mx-auto flex min-h-[90px] w-full items-center justify-between px-6 sm:px-10 md:px-14 lg:px-20 xl:px-28">
+        {/* Logo - Larger responsive sizing */}
+        <div className="flex items-center flex-shrink-0 h-full">
+          <Link
+            to="/"
+            className="transition-transform duration-300 hover:scale-105 flex items-center h-full"
+          >
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
+              alt="STYLY Logo"
+              className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain align-middle -mt-3"
+            />
+          </Link>
+        </div>
+
+        {/* Mobile menu button */}
+        <button
+          className="z-20 md:hidden flex items-center text-purple-700 hover:text-purple-900 transition-all p-2"
+          onClick={toggleMobileMenu}
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
-            alt="STYLY Logo"
-            className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain"
-          />
-        </Link>
-      </div>
+          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
 
-      {/* Mobile menu button */}
-      <button
-        className="z-20 md:hidden flex items-center text-purple-700 hover:text-purple-900 transition-all p-2"
-        onClick={toggleMobileMenu}
-        aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-      >
-        {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
-
-      {/* Desktop Navigation - Grouped with better spacing */}
-      <nav className="hidden md:flex items-center gap-3 lg:gap-4 xl:gap-5 flex-shrink-0">
+        {/* Desktop Navigation - Grouped with better spacing */}
+        <nav className="hidden md:flex items-center gap-3 lg:gap-4 xl:gap-5 flex-shrink-0 h-full">
+          {/* Their existing buttons go here - don't touch the button classes! */}
         {/* Pricing Button */}
         <div className="relative group">
           <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
@@ -79,7 +81,7 @@ const Navbar: React.FC = () => {
             href="https://app.styly.io/pricing"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-medium text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10"
+            className="relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10 font-baloo"
             aria-label="Go to Pricing"
           >
             {t.pricing}
@@ -91,7 +93,7 @@ const Navbar: React.FC = () => {
           <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
           <Link
             to="/collaborateurs"
-            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-medium text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border ${isActive("/collaborateurs") ? "border-purple-500" : "border-transparent"}`}
+            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/collaborateurs") ? "border-purple-500" : "border-transparent"}`}
             aria-label="Go to Styly Pro"
           >
             {language === "fr" ? "Styly Pro" : "Styly Pro"}
@@ -103,7 +105,7 @@ const Navbar: React.FC = () => {
           <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
           <Link
             to="/services-api"
-            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-medium text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border ${isActive("/services-api") ? "border-purple-500" : "border-transparent"}`}
+            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/services-api") ? "border-purple-500" : "border-transparent"}`}
             aria-label="Go to API"
           >
             {t.servicesAPI}
@@ -111,14 +113,17 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Sign In Button */}
-        <a
-          href="https://app.styly.io"
-          className="group relative inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 text-base font-semibold text-white transition-all duration-300 ease-out rounded-xl shadow-lg hover:shadow-orange-500/30 transform hover:scale-105 hover:-translate-y-0.5 bg-gradient-to-r from-orange-500 to-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300 z-10"
-          aria-label="Sign In to STYLY AI"
-        >
-          <span className="relative z-10 tracking-wide">{t.signIn}</span>
-          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        </a>
+        <div className="relative group">
+          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-orange-200 via-orange-300 to-orange-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          <a
+            href="https://app.styly.io"
+            className="group relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-sm lg:text-base transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-orange-500/30 border border-transparent whitespace-nowrap z-10 font-baloo"
+            aria-label="Sign In to STYLY AI"
+          >
+            <span className="relative z-10 tracking-wide">{t.signIn}</span>
+            <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+        </div>
 
         {/* Language Dropdown */}
         <div className="relative group">
@@ -151,7 +156,8 @@ const Navbar: React.FC = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-      </nav>
+        </nav>
+      </div>
 
       {/* Mobile Menu */}
       <div
@@ -184,7 +190,7 @@ const Navbar: React.FC = () => {
             href="https://app.styly.io/pricing"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
+            className="text-purple-700 font-bold py-3 border-b border-gray-100 hover:text-purple-900 transition-all font-baloo"
             onClick={() => setMobileMenuOpen(false)}
           >
             {t.pricing}
@@ -192,7 +198,7 @@ const Navbar: React.FC = () => {
 
           <Link
             to="/collaborateurs"
-            className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
+            className="text-purple-700 font-bold py-3 border-b border-gray-100 hover:text-purple-900 transition-all font-baloo"
             onClick={() => setMobileMenuOpen(false)}
           >
             {language === "fr" ? "Styly Pro" : "Styly Pro"}
@@ -200,7 +206,7 @@ const Navbar: React.FC = () => {
 
           <Link
             to="/services-api"
-            className="text-purple-700 font-medium py-3 border-b border-gray-100 hover:text-purple-900 transition-all"
+            className="text-purple-700 font-bold py-3 border-b border-gray-100 hover:text-purple-900 transition-all font-baloo"
             onClick={() => setMobileMenuOpen(false)}
           >
             {t.servicesAPI}
@@ -208,7 +214,7 @@ const Navbar: React.FC = () => {
 
           <Link
             to="/signin"
-            className="bg-orange-500 text-white font-medium py-3 rounded-lg text-center hover:bg-orange-600 transition-all mt-2"
+            className="bg-orange-500 text-white font-bold py-3 rounded-lg text-center hover:bg-orange-600 transition-all mt-2 font-baloo"
             onClick={() => setMobileMenuOpen(false)}
           >
             {t.signIn}

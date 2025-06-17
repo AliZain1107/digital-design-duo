@@ -70,18 +70,19 @@ const SupportedBy: React.FC = () => {
 
   return (
     <section
-      className="py-2 sm:py-3 md:py-4 lg:py-6 px-4 sm:px-6 md:px-8 lg:px-12 max-w-full overflow-hidden"
+      className="-mt-16 pb-2 sm:pb-3 md:pb-4 lg:pb-6 px-4 sm:px-6 md:px-8 lg:px-12 max-w-full overflow-hidden"
       key={`supported-by-${language}`}
     >
-      <div className="container mx-auto text-center mb-4 md:mb-6">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-1">
-          <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
-            {t.supportedBy}
+      <div className="container mx-auto text-center mb-0">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-1 font-baloo text-gray-900 relative">
+          <span className="relative inline-block">
+            <span className="relative z-10">{t.supportedBy}</span>
+            <div className="absolute -bottom-1 left-0 w-full h-3 bg-gradient-to-r from-purple-200 to-orange-200 opacity-30 rounded-sm"></div>
           </span>
         </h2>
       </div>
 
-      <div className="relative max-w-7xl mx-auto overflow-visible py-6 sm:py-8 md:py-10 lg:py-14 min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center">
+      <div className="relative max-w-7xl mx-auto overflow-visible py-6 sm:py-8 md:py-10 lg:py-14 min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center -mt-12">
         {/* Left fade gradient */}
         <div className="absolute top-0 left-0 w-32 sm:w-48 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         {/* Carousel */}
