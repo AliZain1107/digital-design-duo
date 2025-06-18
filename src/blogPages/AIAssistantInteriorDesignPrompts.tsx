@@ -202,13 +202,13 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
                   <span className="text-sm text-gray-600 block ml-4">Outils IA gratuits pour transformer vos espaces</span>
                 </li>
                 <li>
-                  <a href="/fr/blog/impact-ia-role-designer-interieur" className="text-blue-600 hover:underline font-medium">
+                  <a href="/blog/impact-ia-role-designer-interieur" className="text-blue-600 hover:underline font-medium">
                     → L'Impact de l'IA sur le Rôle du Designer d'Intérieur
                   </a>
                   <span className="text-sm text-gray-600 block ml-4">Comment l'IA transforme la profession de designer</span>
                 </li>
                 <li>
-                  <a href="/fr/blog/guide-ultime-outils-design-interieur-ia-2025" className="text-blue-600 hover:underline font-medium">
+                  <a href="/blog/guide-ultime-outils-design-interieur-ia-2025" className="text-blue-600 hover:underline font-medium">
                     → Guide Ultime des Outils de Design Intérieur IA 2025
                   </a>
                   <span className="text-sm text-gray-600 block ml-4">Comparaison complète des meilleurs outils IA</span>
