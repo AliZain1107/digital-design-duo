@@ -15,9 +15,9 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/"/>
     <image:image>
       <image:loc>https://www.styly.fr/aiinterior.png</image:loc>
       <image:title>STYLY - Plateforme de Design d'Intérieur Alimentée par l'IA</image:title>
@@ -32,9 +32,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/upload"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/upload"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/upload"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/upload"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/upload"/>
   </url>
 
   <url>
@@ -43,9 +43,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/pricing"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/pricing"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/pricing"/>
   </url>
 
   <url>
@@ -54,9 +54,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/get-started"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/get-started"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/get-started"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/get-started"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/get-started"/>
   </url>
 
   <url>
@@ -65,9 +65,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/styly-pro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/styly-pro"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/styly-pro"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/styly-pro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/styly-pro"/>
   </url>
 
   <url>
@@ -76,9 +76,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/services-api"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/services-api"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/services-api"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/services-api"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/services-api"/>
   </url>
 
   <!-- French Blog Index -->
@@ -88,9 +88,9 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog"/>
   </url>
 
   <!-- French Blog Posts - Latest First -->
@@ -101,9 +101,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
       <image:title>ChatGPT Peut-il Concevoir Votre Maison ? Explorer le Rôle de l'IA dans le Design d'Intérieur</image:title>
@@ -118,9 +118,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/styly-viva-technology-future-ai-design"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/styly-viva-technology-future-ai-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
       <image:title>Comment Styly.io et Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA</image:title>
@@ -135,9 +135,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/designing-ai-interior-staging-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/designing-ai-interior-staging-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly"/>
     <image:image>
       <image:loc>https://www.styly.fr/data-analytics-interior-design-dashboard.webp</image:loc>
       <image:title>Concevoir la Mise en Scène Intérieure IA sur AWS : Dans les Coulisses de Styly.io</image:title>
@@ -152,9 +152,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-room-decorator.webp</image:loc>
       <image:title>Comment l'IA Générative Révolutionne le Design d'Intérieur</image:title>
@@ -169,9 +169,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
       <image:title>Assistant IA en Design Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral</image:title>
@@ -186,9 +186,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/2025-interior-design-trends"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/2025-interior-design-trends"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/tendances-design-interieur-2025"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/2025-interior-design-trends"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/2025-interior-design-trends"/>
     <image:image>
       <image:loc>https://www.styly.fr/2025-interior-design-trends-hero.webp</image:loc>
       <image:title>Tendances Design d'Intérieur 2025 : Ce qui est Tendance</image:title>
@@ -203,9 +203,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/free-ai-interior-design-software"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/free-ai-interior-design-software"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/logiciel-gratuit-design-interieur-ia"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/free-ai-interior-design-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/free-ai-interior-design-software"/>
     <image:image>
       <image:loc>https://www.styly.fr/free-ai-interior-design-hero.webp</image:loc>
       <image:title>Logiciel Gratuit de Design d'Intérieur IA - Transformez Votre Espace</image:title>
@@ -220,9 +220,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly"/>
     <image:image>
       <image:loc>https://www.styly.fr/viral-ai-room-design-prompts-hero.webp</image:loc>
       <image:title>6 Prompts Viraux de Design de Chambre IA</image:title>
@@ -237,9 +237,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/10-expert-tips-save-big-home-interiors-2025"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/10-expert-tips-save-big-home-interiors-2025"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/10-expert-tips-save-big-home-interiors-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/10-expert-tips-save-big-home-interiors-2025"/>
     <image:image>
       <image:loc>https://www.styly.fr/expert-tips-save-big-home-interiors-hero.webp</image:loc>
       <image:title>10 Conseils d'Experts pour Économiser sur la Décoration Intérieure en 2025</image:title>
@@ -254,9 +254,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/impact-ai-role-interior-designer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/impact-ai-role-interior-designer"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/impact-ia-role-designer-interieur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/impact-ai-role-interior-designer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/impact-ai-role-interior-designer"/>
     <image:image>
       <image:loc>https://www.styly.fr/impact-ai-interior-designer-hero.webp</image:loc>
       <image:title>L'Impact de l'IA sur le Rôle du Designer d'Intérieur</image:title>
@@ -271,9 +271,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/intersection-ai-virtual-reality-design"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/intersection-ai-virtual-reality-design"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/intersection-ia-realite-virtuelle-design"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/intersection-ai-virtual-reality-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/intersection-ai-virtual-reality-design"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-virtual-reality-design-hero.webp</image:loc>
       <image:title>L'Intersection de l'IA et de la Réalité Virtuelle en Design</image:title>
@@ -288,9 +288,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/ai-accessible-design-inclusive-spaces"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/ai-accessible-design-inclusive-spaces"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces"/>
     <image:image>
       <image:loc>https://www.styly.fr/accessible-design-modern-wheelchair-interior.webp</image:loc>
       <image:title>L'IA dans le Design Accessible : Créer des Espaces Inclusifs</image:title>
@@ -305,9 +305,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/role-data-ai-powered-design"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/role-data-ai-powered-design"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/role-donnees-design-alimente-ia"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/role-data-ai-powered-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/role-data-ai-powered-design"/>
     <image:image>
       <image:loc>https://www.styly.fr/data-analytics-interior-design-dashboard.webp</image:loc>
       <image:title>Le Rôle des Données dans le Design Alimenté par l'IA</image:title>
@@ -322,9 +322,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/modern-family-design-ai-functional-homes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/modern-family-design-ai-functional-homes"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/design-famille-moderne-ia-maisons-fonctionnelles"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/modern-family-design-ai-functional-homes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/modern-family-design-ai-functional-homes"/>
     <image:image>
       <image:loc>https://www.styly.fr/modern-family-home-functional-stylish.webp</image:loc>
       <image:title>Design pour la Famille Moderne : Utiliser l'IA pour Créer des Maisons Fonctionnelles</image:title>
@@ -339,9 +339,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/sustainable-design-ai-eco-friendly-spaces"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/sustainable-design-ai-eco-friendly-spaces"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/design-durabilite-ia-espaces-eco-responsables"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/sustainable-design-ai-eco-friendly-spaces"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/sustainable-design-ai-eco-friendly-spaces"/>
     <image:image>
       <image:loc>https://www.styly.fr/sustainable-eco-friendly-interior-design.webp</image:loc>
       <image:title>Design pour la Durabilité : Utiliser l'IA pour Créer des Espaces Éco-Responsables</image:title>
@@ -356,9 +356,9 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/terms"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/conditions"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/terms"/>
   </url>
 
   <url>
@@ -367,8 +367,8 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/privacy"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/confidentialite"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/privacy"/>
   </url>
 </urlset>
