@@ -3,7 +3,6 @@ User-agent: *
 Allow: /
 
 # Sitemap locations
-Sitemap: https://styly.io/sitemap.xml
 Sitemap: https://www.styly.fr/sitemap.xml
 
 # Crawl delay to be nice to servers

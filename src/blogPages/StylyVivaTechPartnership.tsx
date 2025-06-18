@@ -28,12 +28,12 @@ const StylyVivaTechPartnership: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoData.fr : seoData.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/styly-viva-technology-avenir-design-ia"
-    : "https://styly.io/en/blog/styly-viva-technology-future-ai-design";
+    ? "https://www.styly.fr/fr/blog/styly-viva-technology-avenir-design-ia"
+    : "https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/styly-viva-technology-future-ai-design",
-    fr: "https://styly.io/fr/blog/styly-viva-technology-avenir-design-ia"
+    en: "https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design",
+    fr: "https://www.styly.fr/fr/blog/styly-viva-technology-avenir-design-ia"
   };
 
   return (

@@ -8,26 +8,26 @@ const AIAccessibleDesign: React.FC = () => {
   const seoData = {
     en: {
       title: "AI in Accessible Design: Creating Inclusive Spaces with Styly",
-      description: "Discover how AI is revolutionizing accessible design, creating inclusive spaces for everyone. Learn about STYLY.io's AI tools for accessibility-focused interior design.",
-      keywords: "AI accessible design, inclusive interior design, accessibility AI tools, universal design, barrier-free design, STYLY.io accessibility",
+      description: "Discover how AI is revolutionizing accessible design, creating inclusive spaces for everyone. Learn about STYLY.fr's AI tools for accessibility-focused interior design.",
+      keywords: "AI accessible design, inclusive interior design, accessibility AI tools, universal design, barrier-free design, STYLY.fr accessibility",
       ogImage: "/accessible-design-modern-wheelchair-interior.webp"
     },
     fr: {
       title: "L'IA dans le Design Accessible : Créer des Espaces Inclusifs avec Styly",
-      description: "Découvrez comment l'IA révolutionne le design accessible, créant des espaces inclusifs pour tous. Apprenez sur les outils IA de STYLY.io pour l'accessibilité.",
-      keywords: "design accessible IA, design intérieur inclusif, outils IA accessibilité, design universel, design sans barrières, accessibilité STYLY.io",
+      description: "Découvrez comment l'IA révolutionne le design accessible, créant des espaces inclusifs pour tous. Apprenez sur les outils IA de STYLY.fr pour l'accessibilité.",
+      keywords: "design accessible IA, design intérieur inclusif, outils IA accessibilité, design universel, design sans barrières, accessibilité STYLY.fr",
       ogImage: "/accessible-design-modern-wheelchair-interior.webp"
     }
   };
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/ia-design-accessible-espaces-inclusifs"
-    : "https://styly.io/en/blog/ai-accessible-design-inclusive-spaces";
+    ? "https://www.styly.fr/fr/blog/ia-design-accessible-espaces-inclusifs"
+    : "https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/ai-accessible-design-inclusive-spaces",
-    fr: "https://styly.io/fr/blog/ia-design-accessible-espaces-inclusifs"
+    en: "https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces",
+    fr: "https://www.styly.fr/fr/blog/ia-design-accessible-espaces-inclusifs"
   };
 
   return (
@@ -45,7 +45,7 @@ const AIAccessibleDesign: React.FC = () => {
         <link rel="alternate" hrefLang="en" href={alternateUrls.en} />
         <link rel="alternate" hrefLang="fr" href={alternateUrls.fr} />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Styly.io" />
+        <meta name="author" content="Styly.fr" />
         <meta property="article:published_time" content="2024-11-12" />
         <meta property="article:section" content="Accessible Design" />
         <meta property="article:tag" content="AI Accessible Design" />
@@ -56,7 +56,7 @@ const AIAccessibleDesign: React.FC = () => {
           {language === "fr" ? (
             <>
               <p className="text-lg text-gray-700 mb-6">
-                L'accessibilité dans le design n'est plus un luxe - c'est une nécessité. Avec l'avènement de l'intelligence artificielle, créer des espaces inclusifs qui répondent aux besoins de tous les utilisateurs, indépendamment de leurs capacités physiques ou cognitives, est devenu plus réalisable que jamais. STYLY.io est à l'avant-garde de cette révolution, utilisant l'IA pour démocratiser le{" "}
+                L'accessibilité dans le design n'est plus un luxe - c'est une nécessité. Avec l'avènement de l'intelligence artificielle, créer des espaces inclusifs qui répondent aux besoins de tous les utilisateurs, indépendamment de leurs capacités physiques ou cognitives, est devenu plus réalisable que jamais. STYLY.fr est à l'avant-garde de cette révolution, utilisant l'IA pour démocratiser le{" "}
                 <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:text-blue-800 font-medium">
                   design d'intérieur accessible
                 </a>
@@ -79,7 +79,7 @@ const AIAccessibleDesign: React.FC = () => {
               </ul>
 
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-6">
-                Comment STYLY.io Révolutionne le Design Accessible
+                Comment STYLY.fr Révolutionne le Design Accessible
               </h2>
 
               <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-4">
@@ -91,7 +91,7 @@ const AIAccessibleDesign: React.FC = () => {
                 <a href="/fr/blog/huit-designs-chambres-ia-epoustouflants" className="text-blue-600 hover:text-blue-800 font-medium">
                   planification de pièce IA
                 </a>
-                {" "}de STYLY.io analysent automatiquement les dimensions et suggèrent des dispositions qui maximisent l'accessibilité. Cela inclut :
+                {" "}de STYLY.fr analysent automatiquement les dimensions et suggèrent des dispositions qui maximisent l'accessibilité. Cela inclut :
               </p>
 
               <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
@@ -106,7 +106,7 @@ const AIAccessibleDesign: React.FC = () => {
               </h3>
 
               <p className="text-gray-700 mb-6">
-                L'IA de STYLY.io recommande des matériaux et couleurs qui améliorent l'expérience sensorielle, en tenant compte des besoins de personnes avec des déficiences visuelles, auditives ou tactiles.
+                L'IA de STYLY.fr recommande des matériaux et couleurs qui améliorent l'expérience sensorielle, en tenant compte des besoins de personnes avec des déficiences visuelles, auditives ou tactiles.
               </p>
 
               <div className="mt-8 bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg text-center">
@@ -114,10 +114,10 @@ const AIAccessibleDesign: React.FC = () => {
                   ♿ Créez des Espaces Inclusifs Aujourd'hui
                 </h3>
                 <p className="text-gray-700 mb-6">
-                  Découvrez comment STYLY.io peut vous aider à concevoir des espaces accessibles et inclusifs pour tous.
+                  Découvrez comment STYLY.fr peut vous aider à concevoir des espaces accessibles et inclusifs pour tous.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.STYLY.fr"
                   className="inline-block bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Commencer Gratuitement
@@ -194,19 +194,19 @@ const AIAccessibleDesign: React.FC = () => {
               </h2>
 
               <p className="text-gray-700 mb-6">
-                L'IA transforme le design accessible en le rendant plus précis, efficace et abordable. STYLY.io mène cette révolution en offrant des outils qui permettent à chacun de créer des espaces véritablement inclusifs. L'avenir du design est accessible, et il commence aujourd'hui.
+                L'IA transforme le design accessible en le rendant plus précis, efficace et abordable. STYLY.fr mène cette révolution en offrant des outils qui permettent à chacun de créer des espaces véritablement inclusifs. L'avenir du design est accessible, et il commence aujourd'hui.
               </p>
 
               <div className="mt-8 text-center">
                 <p className="text-lg text-gray-700 mb-4">
-                  Rejoignez le mouvement du design inclusif avec STYLY.io et créez des espaces qui accueillent tout le monde.
+                  Rejoignez le mouvement du design inclusif avec STYLY.fr et créez des espaces qui accueillent tout le monde.
                 </p>
               </div>
             </>
           ) : (
             <>
               <p className="text-lg text-gray-700 mb-6">
-                Accessibility in design is no longer a luxury—it's a necessity. With the advent of artificial intelligence, creating inclusive spaces that cater to all users, regardless of their physical or cognitive abilities, has become more achievable than ever. STYLY.io is at the forefront of this revolution, using AI to democratize{" "}
+                Accessibility in design is no longer a luxury—it's a necessity. With the advent of artificial intelligence, creating inclusive spaces that cater to all users, regardless of their physical or cognitive abilities, has become more achievable than ever. STYLY.fr is at the forefront of this revolution, using AI to democratize{" "}
                 <a href="/en/blog/free-ai-interior-design-software" className="text-blue-600 hover:text-blue-800 font-medium">
                   accessible interior design
                 </a>
@@ -229,7 +229,7 @@ const AIAccessibleDesign: React.FC = () => {
               </ul>
 
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-6">
-                How STYLY.io Revolutionizes Accessible Design
+                How STYLY.fr Revolutionizes Accessible Design
               </h2>
 
               <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-4">
@@ -237,7 +237,7 @@ const AIAccessibleDesign: React.FC = () => {
               </h3>
 
               <p className="text-gray-700 mb-6">
-                STYLY.io's{" "}
+                STYLY.fr's{" "}
                 <a href="/en/blog/AI-Bedroom" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planning
                 </a>
@@ -256,7 +256,7 @@ const AIAccessibleDesign: React.FC = () => {
               </h3>
 
               <p className="text-gray-700 mb-6">
-                STYLY.io's AI recommends materials and colors that enhance sensory experience, considering the needs of people with visual, auditory, or tactile impairments.
+                STYLY.fr's AI recommends materials and colors that enhance sensory experience, considering the needs of people with visual, auditory, or tactile impairments.
               </p>
 
               <div className="mt-8 bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg text-center">
@@ -264,10 +264,10 @@ const AIAccessibleDesign: React.FC = () => {
                   ♿ Create Inclusive Spaces Today
                 </h3>
                 <p className="text-gray-700 mb-6">
-                  Discover how STYLY.io can help you design accessible and inclusive spaces for everyone.
+                  Discover how STYLY.fr can help you design accessible and inclusive spaces for everyone.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.STYLY.fr"
                   className="inline-block bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Start Free
@@ -344,12 +344,12 @@ const AIAccessibleDesign: React.FC = () => {
               </h2>
 
               <p className="text-gray-700 mb-6">
-                AI is transforming accessible design by making it more precise, efficient, and affordable. STYLY.io leads this revolution by offering tools that enable everyone to create truly inclusive spaces. The future of design is accessible, and it starts today.
+                AI is transforming accessible design by making it more precise, efficient, and affordable. STYLY.fr leads this revolution by offering tools that enable everyone to create truly inclusive spaces. The future of design is accessible, and it starts today.
               </p>
 
               <div className="mt-8 text-center">
                 <p className="text-lg text-gray-700 mb-4">
-                  Join the inclusive design movement with STYLY.io and create spaces that welcome everyone.
+                  Join the inclusive design movement with STYLY.fr and create spaces that welcome everyone.
                 </p>
               </div>
             </>
@@ -361,3 +361,4 @@ const AIAccessibleDesign: React.FC = () => {
 };
 
 export default AIAccessibleDesign;
+

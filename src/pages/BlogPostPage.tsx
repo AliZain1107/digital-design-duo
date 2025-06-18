@@ -192,12 +192,12 @@ const BlogPostPage: React.FC = () => {
   const alternateSlug = language === "fr" ? post.slug : post.slugFr;
 
   const currentUrl = language === "fr"
-    ? `https://styly.io/fr/blog/${currentSlug}`
-    : `https://styly.io/en/blog/${currentSlug}`;
+    ? `https://www.styly.fr/fr/blog/${currentSlug}`
+    : `https://www.styly.fr/en/blog/${currentSlug}`;
 
   const alternateUrls = {
-    en: `https://styly.io/en/blog/${post.slug}`,
-    fr: post.slugFr ? `https://styly.io/fr/blog/${post.slugFr}` : undefined
+    en: `https://www.styly.fr/en/blog/${post.slug}`,
+    fr: post.slugFr ? `https://www.styly.fr/fr/blog/${post.slugFr}` : undefined
   };
 
   // Basic SEO metadata (individual blog posts may override this with their own Helmet)

@@ -18,7 +18,7 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
       <link
         rel="alternate"
         hrefLang={alternateLang}
-        href={`https://styly.io/${alternateLang}/blog/${alternateSlug}`}
+        href={`https://www.styly.fr/${alternateLang}/blog/${alternateSlug}`}
       />
     );
   };
@@ -28,8 +28,8 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
       <Helmet>
         <title>
           {language === "fr" 
-            ? "Assistant IA en Design Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral | Styly.io"
-            : "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral | Styly.io"
+            ? "Assistant IA en Design Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral | Styly.fr"
+            : "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral | Styly.fr"
           }
         </title>
         <meta

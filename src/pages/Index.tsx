@@ -16,6 +16,7 @@ import VideoSection from "@/components/home/VideoSection";
 import DesignWithAI from "@/components/home/DesignWithAI";
 import { useLanguage, LanguageContext, Language } from "@/lib/i18n";
 import { useContext, useState } from "react";
+import { SITE_CONFIG } from "@/lib/config";
 
 const Index: React.FC = () => {
   const { language, setLanguage } = useContext(LanguageContext);
@@ -62,24 +63,24 @@ const Index: React.FC = () => {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://styly.io/en#webpage",
-        "url": "https://styly.io/en",
+        "@id": "https://www.styly.fr/en#webpage",
+        "url": "https://www.styly.fr/en",
         "name": "AI Room Design & Interior Design Tool with Free Credits | Styly",
         "description": "Styly is an AI-powered virtual staging platform serving B2B and B2C markets. Instantly transforms empty interior spaces into realistic, beautifully furnished visuals. Upload a photo or use WhatsApp to create stunning designs with no technical expertise.",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://styly.io/#website",
-          "name": "Styly.io",
-          "url": "https://styly.io",
+          "@id": "https://www.styly.fr/#website",
+          "name": "Styly.fr",
+          "url": "https://www.styly.fr",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://styly.io/search?q={search_term_string}",
+            "target": "https://www.styly.fr/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "@id": "https://styly.io/#primaryimage",
+          "@id": "https://www.styly.fr/#primaryimage",
           "url": "https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2",
           "width": 1200,
           "height": 630
@@ -91,7 +92,7 @@ const Index: React.FC = () => {
               "@type": "ListItem",
               "position": 1,
               "item": {
-                "@id": "https://styly.io/en",
+                "@id": "https://www.styly.fr/en",
                 "name": "Home"
               }
             }
@@ -100,7 +101,7 @@ const Index: React.FC = () => {
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "https://styly.io/#softwareapplication",
+        "@id": "https://www.styly.fr/#softwareapplication",
         "name": "STYLY",
         "applicationCategory": "DesignApplication",
         "operatingSystem": "Web, iOS, Android, WhatsApp",
@@ -120,12 +121,12 @@ const Index: React.FC = () => {
       },
       {
         "@type": "Organization",
-        "@id": "https://styly.io/#organization",
+        "@id": "https://www.styly.fr/#organization",
         "name": "STYLY",
-        "url": "https://styly.io",
+        "url": "https://www.styly.fr",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://styly.io/logo.png",
+          "url": "https://www.styly.fr/logo.png",
           "width": 200,
           "height": 60
         },
@@ -138,7 +139,7 @@ const Index: React.FC = () => {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://styly.io/#faqpage",
+        "@id": "https://www.styly.fr/#faqpage",
         "mainEntity": [
           {
             "@type": "Question",
@@ -183,24 +184,24 @@ const Index: React.FC = () => {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://styly.io/fr#webpage",
-        "url": "https://styly.io/fr",
+        "@id": "https://www.styly.fr/fr#webpage",
+        "url": "https://www.styly.fr/fr",
         "name": "Design de Chambre IA & Outil de Design Intérieur avec Crédits Gratuits | Styly",
         "description": "Styly est une plateforme de home staging virtuel alimentée par l'IA, au service des marchés B2B et B2C. Elle transforme instantanément les espaces intérieurs vides en visuels réalistes et magnifiquement meublés. Téléchargez une photo ou utilisez WhatsApp pour créer des designs époustouflants sans expertise technique.",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://styly.io/#website",
-          "name": "Styly.io",
-          "url": "https://styly.io",
+          "@id": "https://www.styly.fr/#website",
+          "name": "Styly.fr",
+          "url": "https://www.styly.fr",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://styly.io/fr/search?q={search_term_string}",
+            "target": "https://www.styly.fr/fr/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "@id": "https://styly.io/#primaryimage",
+          "@id": "https://www.styly.fr/#primaryimage",
           "url": "https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2",
           "width": 1200,
           "height": 630
@@ -212,7 +213,7 @@ const Index: React.FC = () => {
               "@type": "ListItem",
               "position": 1,
               "item": {
-                "@id": "https://styly.io/fr",
+                "@id": "https://www.styly.fr/fr",
                 "name": "Accueil"
               }
             }
@@ -221,7 +222,7 @@ const Index: React.FC = () => {
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "https://styly.io/#softwareapplication",
+        "@id": "https://www.styly.fr/#softwareapplication",
         "name": "STYLY",
         "applicationCategory": "ApplicationDeDesign",
         "operatingSystem": "Web, iOS, Android, WhatsApp",
@@ -241,12 +242,12 @@ const Index: React.FC = () => {
       },
       {
         "@type": "Organization",
-        "@id": "https://styly.io/#organization",
+        "@id": "https://www.styly.fr/#organization",
         "name": "STYLY",
-        "url": "https://styly.io",
+        "url": "https://www.styly.fr",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://styly.io/logo.png",
+          "url": "https://www.styly.fr/logo.png",
           "width": 200,
           "height": 60
         },
@@ -259,7 +260,7 @@ const Index: React.FC = () => {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://styly.io/#faqpage",
+        "@id": "https://www.styly.fr/#faqpage",
         "mainEntity": [
           {
             "@type": "Question",
@@ -303,11 +304,8 @@ const Index: React.FC = () => {
   const seoStructuredData = language === "fr" || location.pathname.startsWith("/fr") ? structuredDataFr : structuredData;
 
   // Generate language-specific URLs for hreflang and self-canonical
-  const currentUrl = language === "fr" ? "https://styly.io/fr" : "https://styly.io/en";
-  const alternateUrls = {
-    en: "https://styly.io/en",
-    fr: "https://styly.io/fr"
-  };
+  const currentUrl = language === "fr" ? SITE_CONFIG.getPageUrl("", "fr") : SITE_CONFIG.getPageUrl("", "en");
+  const alternateUrls = SITE_CONFIG.getAlternateUrls("");
 
   // Self-canonical URL (points to current page)
   const canonicalUrl = currentUrl;

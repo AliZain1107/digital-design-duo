@@ -28,12 +28,12 @@ const NewBlog2: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoData.fr : seoData.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"
-    : "https://styly.io/en/blog/designing-ai-interior-staging-aws-styly";
+    ? "https://www.styly.fr/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"
+    : "https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/designing-ai-interior-staging-aws-styly",
-    fr: "https://styly.io/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"
+    en: "https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly",
+    fr: "https://www.styly.fr/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"
   };
 
   return (

@@ -1,6 +1,6 @@
 /* TEAM */
 Name: STYLY Team
-Site: https://styly.io
+Site: https://www.styly.fr
 Twitter: @StylyDesign
 Location: Global
 
