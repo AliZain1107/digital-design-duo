@@ -55,11 +55,11 @@ const Blog = () => {
   };
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
-  const currentUrl = language === "fr" ? "https://styly.io/fr/blog" : "https://styly.io/en/blog";
+  const currentUrl = language === "fr" ? "https://www.styly.fr/blog" : "https://www.styly.fr/en/blog";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog",
-    fr: "https://styly.io/fr/blog"
+    en: "https://www.styly.fr/en/blog",
+    fr: "https://www.styly.fr/blog"
   };
 
   return (

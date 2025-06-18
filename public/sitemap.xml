@@ -168,7 +168,7 @@
     <priority>0.8</priority>
     <mobile:mobile/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog"/>
   </url>
 
@@ -179,48 +179,113 @@
     <priority>0.8</priority>
     <mobile:mobile/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog"/>
-  </url>
-
-  <url>
-    <loc>https://www.styly.fr/fr/blog</loc>
-    <lastmod>2025-06-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog"/>
   </url>
 
   <!-- Blog Posts - Latest First -->
-  <!-- Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design -->
+  <!-- Real Estate Virtual Staging 2025 -->
   <url>
-    <loc>https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design</loc>
-    <lastmod>2025-06-17</lastmod>
+    <loc>https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-staging-virtuel-ia-2025</loc>
+    <lastmod>2025-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
-    <image:image>
-      <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
-      <image:title>Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design</image:title>
-      <image:caption>Discover how ChatGPT and AI tools revolutionize interior design with smart, budget-friendly solutions</image:caption>
-    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/how-real-estate-agents-are-boosting-sales-with-ai-powered-virtual-staging-the-2025-market-reality"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-staging-virtuel-ia-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-staging-virtuel-ia-2025"/>
   </url>
 
   <url>
-    <loc>https://www.styly.fr/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur</loc>
+    <loc>https://www.styly.fr/en/blog/how-real-estate-agents-are-boosting-sales-with-ai-powered-virtual-staging-the-2025-market-reality</loc>
+    <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/how-real-estate-agents-are-boosting-sales-with-ai-powered-virtual-staging-the-2025-market-reality"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-staging-virtuel-ia-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-staging-virtuel-ia-2025"/>
+  </url>
+
+  <!-- Gen Z Instagram Interior Guide -->
+  <url>
+    <loc>https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram</loc>
+    <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/gen-z-s-ultimate-guide-to-instagram-worthy-interiors"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram"/>
+  </url>
+
+  <url>
+    <loc>https://www.styly.fr/en/blog/gen-z-s-ultimate-guide-to-instagram-worthy-interiors</loc>
+    <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/gen-z-s-ultimate-guide-to-instagram-worthy-interiors"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram"/>
+  </url>
+
+  <!-- Build House with AI Tools -->
+  <url>
+    <loc>https://www.styly.fr/blog/comment-construire-maison-outils-ia-design-porche</loc>
+    <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/how-to-build-your-own-house-with-ai-tools-including-porch-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/comment-construire-maison-outils-ia-design-porche"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/comment-construire-maison-outils-ia-design-porche"/>
+  </url>
+
+  <url>
+    <loc>https://www.styly.fr/en/blog/how-to-build-your-own-house-with-ai-tools-including-porch-design</loc>
+    <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/how-to-build-your-own-house-with-ai-tools-including-porch-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/comment-construire-maison-outils-ia-design-porche"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/comment-construire-maison-outils-ia-design-porche"/>
+  </url>
+
+  <!-- Ultimate Guide AI Interior Design Tools 2025 -->
+  <url>
+    <loc>https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025</loc>
+    <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/the-ultimate-guide-to-ai-interior-design-tools-in-2025"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025"/>
+  </url>
+
+  <url>
+    <loc>https://www.styly.fr/en/blog/the-ultimate-guide-to-ai-interior-design-tools-in-2025</loc>
+    <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/the-ultimate-guide-to-ai-interior-design-tools-in-2025"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025"/>
+  </url>
+
+  <!-- Can ChatGPT Design Your Home? -->
+  <url>
+    <loc>https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur</loc>
     <lastmod>2025-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
       <image:title>ChatGPT Peut-il Concevoir Votre Maison ? Explorer le Rôle de l'IA dans le Design d'Intérieur</image:title>
@@ -228,32 +293,32 @@
     </image:image>
   </url>
 
-  <!-- How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design -->
   <url>
-    <loc>https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design</loc>
-    <lastmod>2025-06-16</lastmod>
+    <loc>https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/styly-viva-technology-avenir-design-ia"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
-      <image:title>How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design</image:title>
-      <image:caption>Discover Styly.io's partnership with VivaTech 2025 and the future of AI interior design innovation</image:caption>
+      <image:title>Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design</image:title>
+      <image:caption>Discover how ChatGPT and AI tools revolutionize interior design with smart, budget-friendly solutions</image:caption>
     </image:image>
   </url>
 
+  <!-- How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design -->
   <url>
-    <loc>https://www.styly.fr/fr/blog/styly-viva-technology-avenir-design-ia</loc>
+    <loc>https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia</loc>
     <lastmod>2025-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/styly-viva-technology-avenir-design-ia"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
       <image:title>Comment Styly.io et Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA</image:title>
@@ -261,32 +326,32 @@
     </image:image>
   </url>
 
-  <!-- Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io -->
   <url>
-    <loc>https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly</loc>
-    <lastmod>2025-06-15</lastmod>
+    <loc>https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design</loc>
+    <lastmod>2025-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia"/>
     <image:image>
-      <image:loc>https://www.styly.fr/data-analytics-interior-design-dashboard.webp</image:loc>
-      <image:title>Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io</image:title>
-      <image:caption>Behind the scenes look at how Styly.io builds AI interior staging on AWS infrastructure</image:caption>
+      <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
+      <image:title>How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design</image:title>
+      <image:caption>Discover Styly.io's partnership with VivaTech 2025 and the future of AI interior design innovation</image:caption>
     </image:image>
   </url>
 
+  <!-- Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io -->
   <url>
-    <loc>https://www.styly.fr/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly</loc>
+    <loc>https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly</loc>
     <lastmod>2025-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"/>
     <image:image>
       <image:loc>https://www.styly.fr/data-analytics-interior-design-dashboard.webp</image:loc>
       <image:title>Concevoir la Mise en Scène Intérieure IA sur AWS : Dans les Coulisses de Styly.io</image:title>
@@ -294,32 +359,32 @@
     </image:image>
   </url>
 
-  <!-- How Generative AI is Revolutionizing Interior Design -->
   <url>
-    <loc>https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design</loc>
-    <lastmod>2024-06-23</lastmod>
+    <loc>https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
     <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"/>
     <image:image>
-      <image:loc>https://www.styly.fr/ai-room-decorator.webp</image:loc>
-      <image:title>How Generative AI is Revolutionizing Interior Design</image:title>
-      <image:caption>Discover how generative AI transforms interior design with revolutionary tools</image:caption>
+      <image:loc>https://www.styly.fr/data-analytics-interior-design-dashboard.webp</image:loc>
+      <image:title>Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io</image:title>
+      <image:caption>Behind the scenes look at how Styly.io builds AI interior staging on AWS infrastructure</image:caption>
     </image:image>
   </url>
 
+  <!-- How Generative AI is Revolutionizing Interior Design -->
   <url>
-    <loc>https://www.styly.fr/fr/blog/comment-ia-generative-revolutionne-design-interieur</loc>
+    <loc>https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-room-decorator.webp</image:loc>
       <image:title>Comment l'IA Générative Révolutionne le Design Intérieur</image:title>
@@ -327,7 +392,39 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur"/>
+    <image:image>
+      <image:loc>https://www.styly.fr/ai-room-decorator.webp</image:loc>
+      <image:title>How Generative AI is Revolutionizing Interior Design</image:title>
+      <image:caption>Discover how generative AI transforms interior design with revolutionary tools</image:caption>
+    </image:image>
+  </url>
+
   <!-- AI Assistant in Interior Design - Best Prompts -->
+  <url>
+    <loc>https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
+    <image:image>
+      <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
+      <image:title>Assistant IA en Design Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral</image:title>
+      <image:caption>Meilleurs prompts pour utiliser les assistants IA dans les projets de design intérieur</image:caption>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts</loc>
     <lastmod>2024-05-12</lastmod>
@@ -335,28 +432,12 @@
     <priority>0.7</priority>
     <mobile:mobile/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
     <image:image>
       <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
       <image:title>AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral</image:title>
       <image:caption>Best prompts for using AI assistants in interior design projects</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.styly.fr/fr/blog/assistant-ia-design-interieur-prompts-chatgpt</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <mobile:mobile/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.styly.fr/fr/blog/assistant-ia-design-interieur-prompts-chatgpt"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts"/>
-    <image:image>
-      <image:loc>https://www.styly.fr/ai-interior-design-technology.webp</image:loc>
-      <image:title>Assistant IA en Design Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral</image:title>
-      <image:caption>Meilleurs prompts pour utiliser les assistants IA dans les projets de design intérieur</image:caption>
     </image:image>
   </url>
 

@@ -24,9 +24,9 @@ interface SEOProps {
  * Implements comprehensive meta tags, structured data, and Open Graph protocol
  */
 const SEO: React.FC<SEOProps> = ({
-  title = "STYLY - AI-Powered Interior & Exterior Design Platform",
-  description = "STYLY is an AI-powered interior and exterior design platform that transforms empty spaces into beautifully furnished, realistic visuals. Upload a photo or describe your desired space without complex prompting or technical expertise. Ideal for real estate, renovations, and retail.",
-  keywords = "AI interior design, AI exterior design, virtual staging, real estate visualization, AI home design, interior design app, styly, styly.fr, renovation planning, AI-powered design, property marketing, interior design tool, real estate marketing, B2B design solutions, B2C design solutions",
+  title = "STYLY - AI-Powered Interior & Exterior Design Platform | Free Credits",
+  description = "Transform empty spaces into stunning, photo-realistic interiors with STYLY. AI-powered design for real estate, renovation, and retail. No technical skills needed. Get free credits to start designing today.",
+  keywords = "AI interior design, AI exterior design, virtual staging, real estate visualization, AI home design, interior design app, styly, styly.fr, renovation planning, AI-powered design, property marketing, interior design tool, real estate marketing, B2B design solutions, B2C design solutions, free AI design, free interior design credits",
   ogImage = "https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2",
   ogUrl = SITE_CONFIG.baseUrl,
   structuredData,

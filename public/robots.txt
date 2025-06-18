@@ -2,8 +2,22 @@
 User-agent: *
 Allow: /
 
-# Sitemap locations
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Allow important directories
+Allow: /blog/
+Allow: /en/blog/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Sitemap locations for www.styly.fr
 Sitemap: https://www.styly.fr/sitemap.xml
+Sitemap: https://www.styly.fr/sitemap-fr.xml
 
 # Crawl delay to be nice to servers
-Crawl-delay: 10
+Crawl-delay: 1
