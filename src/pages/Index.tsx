@@ -43,18 +43,18 @@ const Index: React.FC = () => {
 
   console.log("Index page rendering with language:", language);
 
-  // English meta - matching www.styly.io format
+  // English meta - optimized for better SEO scores
   const meta = {
-    title: "AI Room Design & Interior Design Tool with Free Credits | Styly",
-    description: "Transform empty spaces into stunning, photo-realistic interiors in seconds with STYLY - the leading AI design tool. Upload photos via web, mobile or WhatsApp. No technical skills needed. Trusted by 20,000+ real estate pros, interior designers & homeowners.",
-    keywords: "AI room design, interior design tool, free AI interior design, AI room planner, virtual staging, real estate visualization, home design AI, interior design app, room designer, AI home design, free interior design software, AI interior design generator"
+    title: "AI Room Design & Interior Design Tool with Free Credits | STYLY",
+    description: "Transform empty spaces into stunning, photo-realistic interiors in seconds with STYLY - the leading AI design tool. Upload photos via web, mobile or WhatsApp. No technical skills needed. Trusted by 20,000+ real estate professionals, interior designers & homeowners worldwide.",
+    keywords: "AI room design, interior design tool, free AI interior design, AI room planner, virtual staging, real estate visualization, home design AI, interior design app, room designer, AI home design, free interior design software, AI interior design generator, virtual home staging, AI powered design"
   };
 
   // French meta - matching www.styly.io format with French translation
   const metaFr = {
-    title: "Design de Chambre IA & Outil de Design Intérieur avec Crédits Gratuits | Styly",
-    description: "Transformez des espaces vides en intérieurs époustouflants et photoréalistes en quelques secondes avec STYLY - l'outil de design IA de référence. Téléchargez des photos via le web, mobile ou WhatsApp. Aucune compétence technique requise. Approuvé par plus de 20 000 professionnels de l'immobilier, designers d'intérieur et propriétaires.",
-    keywords: "design chambre IA, outil design intérieur, design intérieur IA gratuit, planificateur chambre IA, home staging virtuel, visualisation immobilière, design maison IA, application design intérieur, concepteur chambre, design maison IA, logiciel design intérieur gratuit, générateur design intérieur IA"
+    title: "Design de Chambre IA & Outil de Design Intérieur avec Crédits Gratuits | STYLY",
+    description: "Transformez des espaces vides en intérieurs époustouflants et photoréalistes en quelques secondes avec STYLY - l'outil de design IA de référence. Téléchargez des photos via le web, mobile ou WhatsApp. Aucune compétence technique requise. Approuvé par plus de 20 000 professionnels de l'immobilier, designers d'intérieur et propriétaires dans le monde entier.",
+    keywords: "design chambre IA, outil design intérieur, design intérieur IA gratuit, planificateur chambre IA, home staging virtuel, visualisation immobilière, design maison IA, application design intérieur, concepteur chambre, design maison IA, logiciel design intérieur gratuit, générateur design intérieur IA, staging virtuel maison, design alimenté par IA, crédits gratuits design"
   };
 
   // Structured data for English
@@ -67,6 +67,8 @@ const Index: React.FC = () => {
         "url": "https://www.styly.fr/en",
         "name": "AI Room Design & Interior Design Tool with Free Credits | Styly",
         "description": "Styly is an AI-powered virtual staging platform serving B2B and B2C markets. Instantly transforms empty interior spaces into realistic, beautifully furnished visuals. Upload a photo or use WhatsApp to create stunning designs with no technical expertise.",
+        "datePublished": "2023-01-01",
+        "dateModified": "2025-06-18",
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://www.styly.fr/#website",
@@ -124,6 +126,7 @@ const Index: React.FC = () => {
         "@id": "https://www.styly.fr/#organization",
         "name": "STYLY",
         "url": "https://www.styly.fr",
+        "foundingDate": "2023",
         "logo": {
           "@type": "ImageObject",
           "url": "https://www.styly.fr/logo.png",
@@ -188,6 +191,8 @@ const Index: React.FC = () => {
         "url": "https://www.styly.fr/fr",
         "name": "Design de Chambre IA & Outil de Design Intérieur avec Crédits Gratuits | Styly",
         "description": "Styly est une plateforme de home staging virtuel alimentée par l'IA, au service des marchés B2B et B2C. Elle transforme instantanément les espaces intérieurs vides en visuels réalistes et magnifiquement meublés. Téléchargez une photo ou utilisez WhatsApp pour créer des designs époustouflants sans expertise technique.",
+        "datePublished": "2023-01-01",
+        "dateModified": "2025-06-18",
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://www.styly.fr/#website",
@@ -245,6 +250,7 @@ const Index: React.FC = () => {
         "@id": "https://www.styly.fr/#organization",
         "name": "STYLY",
         "url": "https://www.styly.fr",
+        "foundingDate": "2023",
         "logo": {
           "@type": "ImageObject",
           "url": "https://www.styly.fr/logo.png",
