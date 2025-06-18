@@ -144,7 +144,11 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   // Generate language-specific URL
   const getBlogUrl = () => {
     const slug = getSlug();
-    return `/${language}/blog/${slug}`;
+    if (language === "fr") {
+      return `/blog/${slug}`;
+    } else {
+      return `/en/blog/${slug}`;
+    }
   };
 
   return (

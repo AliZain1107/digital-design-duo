@@ -29,9 +29,18 @@ export const SITE_CONFIG = {
   getAlternateUrls: (path: string = '') => {
     const cleanPath = path.startsWith('/') ? path.slice(1) : path;
     return {
-      en: `${SITE_CONFIG.baseUrl}${cleanPath ? `/${cleanPath}` : ''}`,
-      fr: `${SITE_CONFIG.baseUrl}/fr${cleanPath ? `/${cleanPath}` : ''}`
+      en: `${SITE_CONFIG.baseUrl}/en${cleanPath ? `/${cleanPath}` : ''}`,
+      fr: `${SITE_CONFIG.baseUrl}${cleanPath ? `/${cleanPath}` : ''}`
     };
+  },
+
+  // Generate blog URLs with proper language structure
+  getBlogUrl: (slug: string, language: string = 'fr') => {
+    if (language === 'fr') {
+      return `${SITE_CONFIG.baseUrl}/blog/${slug}`;
+    } else {
+      return `${SITE_CONFIG.baseUrl}/en/blog/${slug}`;
+    }
   }
 };
 

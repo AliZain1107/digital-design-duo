@@ -22,12 +22,12 @@ const AIAccessibleDesign: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://www.styly.fr/fr/blog/ia-design-accessible-espaces-inclusifs"
+    ? "https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs"
     : "https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces";
 
   const alternateUrls = {
     en: "https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces",
-    fr: "https://www.styly.fr/fr/blog/ia-design-accessible-espaces-inclusifs"
+    fr: "https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs"
   };
 
   return (
@@ -57,7 +57,7 @@ const AIAccessibleDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 L'accessibilité dans le design n'est plus un luxe - c'est une nécessité. Avec l'avènement de l'intelligence artificielle, créer des espaces inclusifs qui répondent aux besoins de tous les utilisateurs, indépendamment de leurs capacités physiques ou cognitives, est devenu plus réalisable que jamais. STYLY.fr est à l'avant-garde de cette révolution, utilisant l'IA pour démocratiser le{" "}
-                <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:text-blue-800 font-medium">
                   design d'intérieur accessible
                 </a>
                 {" "}et créer des environnements véritablement inclusifs.
@@ -88,7 +88,7 @@ const AIAccessibleDesign: React.FC = () => {
 
               <p className="text-gray-700 mb-6">
                 Les outils de{" "}
-                <a href="/fr/blog/huit-designs-chambres-ia-epoustouflants" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="/blog/huit-designs-chambres-ia-epoustouflants" className="text-blue-600 hover:text-blue-800 font-medium">
                   planification de pièce IA
                 </a>
                 {" "}de STYLY.fr analysent automatiquement les dimensions et suggèrent des dispositions qui maximisent l'accessibilité. Cela inclut :
@@ -123,7 +123,7 @@ const AIAccessibleDesign: React.FC = () => {
                   Commencer Gratuitement
                 </a>
                 <a
-                  href="/fr/blog/tendances-design-interieur-2025"
+                  href="/blog/tendances-design-interieur-2025"
                   className="inline-block bg-white text-green-600 px-8 py-3 rounded-lg font-semibold border-2 border-green-600 hover:bg-green-50 transition-all duration-300"
                 >
                   Voir les Tendances Inclusives
@@ -159,19 +159,19 @@ const AIAccessibleDesign: React.FC = () => {
                 </h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>
-                    <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:text-blue-800 font-medium">
+                    <a href="/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:text-blue-800 font-medium">
                       → Logiciel Gratuit de Design d'Intérieur IA
                     </a>
                     {" "}pour commencer votre projet accessible
                   </li>
                   <li>
-                    <a href="/fr/blog/6-prompts-viraux-design-chambre-ia-styly" className="text-blue-600 hover:text-blue-800 font-medium">
+                    <a href="/blog/6-prompts-viraux-design-chambre-ia-styly" className="text-blue-600 hover:text-blue-800 font-medium">
                       → Prompts de Design Inclusif
                     </a>
                     {" "}pour l'inspiration
                   </li>
                   <li>
-                    <a href="/fr/blog/tendances-design-interieur-2025" className="text-blue-600 hover:text-blue-800 font-medium">
+                    <a href="/blog/tendances-design-interieur-2025" className="text-blue-600 hover:text-blue-800 font-medium">
                       → Tendances Design Inclusif 2025
                     </a>
                     {" "}pour rester à jour

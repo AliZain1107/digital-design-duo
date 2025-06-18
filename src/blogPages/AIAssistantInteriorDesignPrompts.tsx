@@ -18,7 +18,7 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
       <link
         rel="alternate"
         hrefLang={alternateLang}
-        href={`https://www.styly.fr/${alternateLang}/blog/${alternateSlug}`}
+        href={alternateLang === 'fr' ? `https://www.styly.fr/blog/${alternateSlug}` : `https://www.styly.fr/en/blog/${alternateSlug}`}
       />
     );
   };
@@ -184,19 +184,19 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li>
-                  <a href="/fr/blog/comment-ia-generative-revolutionne-design-interieur" className="text-blue-600 hover:underline font-medium">
+                  <a href="/blog/comment-ia-generative-revolutionne-design-interieur" className="text-blue-600 hover:underline font-medium">
                     → Comment l'IA Générative Révolutionne le Design Intérieur
                   </a>
                   <span className="text-sm text-gray-600 block ml-4">Découvrez les technologies IA qui transforment le design</span>
                 </li>
                 <li>
-                  <a href="/fr/blog/6-prompts-viraux-design-chambre-ia-styly" className="text-blue-600 hover:underline font-medium">
+                  <a href="/blog/6-prompts-viraux-design-chambre-ia-styly" className="text-blue-600 hover:underline font-medium">
                     → 6 Prompts Viraux de Design de Chambre IA
                   </a>
                   <span className="text-sm text-gray-600 block ml-4">Exemples pratiques de prompts pour créer des chambres époustouflantes</span>
                 </li>
                 <li>
-                  <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:underline font-medium">
+                  <a href="/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:underline font-medium">
                     → Logiciel Gratuit de Design Intérieur IA
                   </a>
                   <span className="text-sm text-gray-600 block ml-4">Outils IA gratuits pour transformer vos espaces</span>
