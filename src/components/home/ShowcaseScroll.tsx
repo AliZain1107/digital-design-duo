@@ -1,19 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useLanguage } from "@/lib/i18n";
 
 const ShowcaseScroll: React.FC = () => {
   // Add language debugging
   const { language, t } = useLanguage();
   console.log("Current language in ShowcaseScroll:", language);
-  
-  // First row of images - from revolution folder
-  const topRowImages = [
-    "/revolution/1.png",
-    "/revolution/3.png",
-    "/revolution/5.png",
-    "/revolution/7.png",
-    "/revolution/9.png",
-    // Duplicate for continuous scroll effect
+
+  const topRowRef = useRef<HTMLDivElement>(null);
+  const bottomRowRef = useRef<HTMLDivElement>(null);
+
+  // Base images
+  const topRowBase = [
     "/revolution/1.png",
     "/revolution/3.png",
     "/revolution/5.png",
@@ -21,32 +18,74 @@ const ShowcaseScroll: React.FC = () => {
     "/revolution/9.png",
   ];
 
-  // Second row of images - from revolution folder
-  const bottomRowImages = [
-    "/revolution/12.png",
-    "/revolution/13.png",
-    "/revolution/15.png",
-    "/revolution/18.png",
-    "/revolution/9.png",
-    // Duplicate for continuous scroll effect
+  const bottomRowBase = [
     "/revolution/12.png",
     "/revolution/13.png",
     "/revolution/15.png",
     "/revolution/18.png",
     "/revolution/9.png",
   ];
+
+  // Create enough duplicates to ensure seamless infinite scroll
+  const createInfiniteArray = (baseArray: string[], copies: number = 6) => {
+    const result = [];
+    for (let i = 0; i < copies; i++) {
+      result.push(...baseArray);
+    }
+    return result;
+  };
+
+  const topRowImages = createInfiniteArray(topRowBase);
+  const bottomRowImages = createInfiniteArray(bottomRowBase);
+
+  useEffect(() => {
+    let animationId: number;
+    let startTime: number;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+
+      const elapsed = currentTime - startTime;
+      const speed = 0.05; // pixels per millisecond (1/10th of original speed)
+
+      if (topRowRef.current) {
+        const translateX = -(elapsed * speed) % (topRowRef.current.scrollWidth / 6);
+        topRowRef.current.style.transform = `translateX(${translateX}px)`;
+      }
+
+      if (bottomRowRef.current) {
+        const maxTranslate = bottomRowRef.current.scrollWidth / 6;
+        const translateX = -maxTranslate + ((elapsed * speed) % maxTranslate);
+        bottomRowRef.current.style.transform = `translateX(${translateX}px)`;
+      }
+
+      animationId = requestAnimationFrame(animate);
+    };
+
+    animationId = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+      }
+    };
+  }, []);
 
   return (
-    <div className="w-screen -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-10 overflow-hidden">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden">
       {/* Top row - scrolls from right to left */}
-      <div className="flex animate-marquee-left mb-4">
+      <div
+        ref={topRowRef}
+        className="flex mb-4"
+        style={{ width: '600%', willChange: 'transform' }}
+      >
         {topRowImages.map((src, index) => (
           <div key={`top-${index}`} className="h-auto w-[200px] sm:w-[240px] md:w-[280px] lg:w-[320px] xl:w-[360px] flex-shrink-0 mx-1 sm:mx-2">
             <img
               src={src}
               alt={language === "fr"
-                ? `Vitrine Design Intérieur IA ${index + 1} - Planificateur chambre IA et logiciel design intérieur gratuit`
-                : `AI Interior Design Showcase ${index + 1} - AI room planner and free interior design software`
+                ? `Vitrine Design Intérieur IA ${(index % 5) + 1} - Planificateur chambre IA et logiciel design intérieur gratuit`
+                : `AI Interior Design Showcase ${(index % 5) + 1} - AI room planner and free interior design software`
               }
               className="h-full w-full object-cover rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
             />
@@ -55,17 +94,21 @@ const ShowcaseScroll: React.FC = () => {
       </div>
 
       {/* Bottom row - scrolls from left to right */}
-      <div className="flex animate-marquee-right">
+      <div
+        ref={bottomRowRef}
+        className="flex"
+        style={{ width: '600%', willChange: 'transform' }}
+      >
         {bottomRowImages.map((src, index) => (
           <div key={`bottom-${index}`} className="h-auto w-[200px] sm:w-[240px] md:w-[280px] lg:w-[320px] xl:w-[360px] flex-shrink-0 mx-1 sm:mx-2">
             <img
-            src={src}
+              src={src}
               alt={language === "fr"
-                ? `Galerie Design Chambre IA ${index + 1 + topRowImages.length} - Générateur design intérieur IA et home staging virtuel`
-                : `AI Room Design Gallery ${index + 1 + topRowImages.length} - Interior design AI generator and virtual staging`
+                ? `Galerie Design Chambre IA ${(index % 5) + 6} - Générateur design intérieur IA et home staging virtuel`
+                : `AI Room Design Gallery ${(index % 5) + 6} - Interior design AI generator and virtual staging`
               }
               className="h-full w-full object-cover rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-          />
+            />
           </div>
         ))}
       </div>

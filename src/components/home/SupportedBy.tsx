@@ -75,10 +75,10 @@ const SupportedBy: React.FC = () => {
     >
       <div className="container mx-auto text-center mb-0">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-1 font-baloo text-gray-900 relative">
-          <span className="relative inline-block">
-            <span className="relative z-10">{t.supportedBy}</span>
-            <div className="absolute -bottom-1 left-0 w-full h-3 bg-gradient-to-r from-purple-200 to-orange-200 opacity-30 rounded-sm"></div>
+          <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
+            Supported
           </span>
+          {' '}By
         </h2>
       </div>
 

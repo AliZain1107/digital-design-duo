@@ -5,6 +5,7 @@ import { useLanguage } from "@/lib/i18n";
 const ArchitectureRevolution: React.FC = () => {
   return (
     <section className="w-full -mt-28 pb-6 sm:pb-8 overflow-hidden">
+      {/* Title with proper padding */}
       <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
         <div className="container mx-auto text-center mb-4 md:mb-6">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-1 font-baloo relative">
@@ -20,9 +21,11 @@ const ArchitectureRevolution: React.FC = () => {
             </span>
           </h2>
         </div>
-        <div className="w-full transform hover:scale-[1.01] transition-transform duration-1000">
-          <ShowcaseScroll />
-        </div>
+      </div>
+
+      {/* Slideshow with proper centering */}
+      <div className="w-full transform hover:scale-[1.01] transition-transform duration-1000">
+        <ShowcaseScroll />
       </div>
     </section>
   );

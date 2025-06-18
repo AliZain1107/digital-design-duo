@@ -140,13 +140,15 @@ const Hero: React.FC = () => {
             >
               {language === 'fr' ? (
                 <>
-                  {"#1 outil IA le plus utilisé\npour le design d'intérieur\n"}
-                  <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">espaces modernes</span>
+                  {"Design, "}
+                  <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">sans limites</span>
+                  {"."}
                 </>
               ) : (
                 <>
-                  {"#1 most used\nAI design tool for\n"}
-                  <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">modern spaces</span>
+                  {"Design, "}
+                  <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">without limits</span>
+                  {"."}
                 </>
               )}
             </h1>
@@ -248,8 +250,7 @@ const Hero: React.FC = () => {
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none z-20"></div>
       </section>
 
-      {/* Section separator line */}
-      <div className="w-full border-t border-black"></div>
+
     </>
   );
 };
