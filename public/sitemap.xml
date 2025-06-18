@@ -11,7 +11,7 @@
   <!-- Main Pages -->
   <url>
     <loc>https://styly.io/</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <mobile:mobile/>
@@ -27,7 +27,7 @@
 
   <url>
     <loc>https://styly.io/en</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <mobile:mobile/>
@@ -38,7 +38,7 @@
 
   <url>
     <loc>https://styly.io/fr</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <mobile:mobile/>
@@ -92,10 +92,78 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/video-guide"/>
   </url>
 
+  <!-- Styly Pro / Collaborators Page -->
+  <url>
+    <loc>https://styly.io/styly-pro</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/styly-pro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/styly-pro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/styly-pro"/>
+  </url>
+
+  <url>
+    <loc>https://styly.io/en/styly-pro</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/styly-pro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/styly-pro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/styly-pro"/>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/styly-pro</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/styly-pro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/styly-pro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/styly-pro"/>
+  </url>
+
+  <!-- Services API Page -->
+  <url>
+    <loc>https://styly.io/services-api</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/services-api"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/services-api"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/services-api"/>
+  </url>
+
+  <url>
+    <loc>https://styly.io/en/services-api</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/services-api"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/services-api"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/services-api"/>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/services-api</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/services-api"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/services-api"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/services-api"/>
+  </url>
+
   <!-- Blog Index Pages -->
   <url>
     <loc>https://styly.io/blog</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
@@ -106,7 +174,7 @@
 
   <url>
     <loc>https://styly.io/en/blog</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
@@ -117,7 +185,7 @@
 
   <url>
     <loc>https://styly.io/fr/blog</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile/>
@@ -127,6 +195,105 @@
   </url>
 
   <!-- Blog Posts - Latest First -->
+  <!-- Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design -->
+  <url>
+    <loc>https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-technology.webp</image:loc>
+      <image:title>Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design</image:title>
+      <image:caption>Discover how ChatGPT and AI tools revolutionize interior design with smart, budget-friendly solutions</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-technology.webp</image:loc>
+      <image:title>ChatGPT Peut-il Concevoir Votre Maison ? Explorer le Rôle de l'IA dans le Design d'Intérieur</image:title>
+      <image:caption>Découvrez comment ChatGPT et les outils IA révolutionnent le design intérieur avec des solutions intelligentes et économiques</image:caption>
+    </image:image>
+  </url>
+
+  <!-- How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design -->
+  <url>
+    <loc>https://styly.io/en/blog/styly-viva-technology-future-ai-design</loc>
+    <lastmod>2025-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/styly-viva-technology-future-ai-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/styly-viva-technology-avenir-design-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/styly-viva-technology-future-ai-design"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-technology.webp</image:loc>
+      <image:title>How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design</image:title>
+      <image:caption>Discover Styly.io's partnership with VivaTech 2025 and the future of AI interior design innovation</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/styly-viva-technology-avenir-design-ia</loc>
+    <lastmod>2025-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/styly-viva-technology-future-ai-design"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/styly-viva-technology-avenir-design-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/styly-viva-technology-future-ai-design"/>
+    <image:image>
+      <image:loc>https://styly.io/ai-interior-design-technology.webp</image:loc>
+      <image:title>Comment Styly.io et Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA</image:title>
+      <image:caption>Découvrez le partenariat de Styly.io avec VivaTech 2025 et l'avenir de l'innovation en design intérieur IA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io -->
+  <url>
+    <loc>https://styly.io/en/blog/designing-ai-interior-staging-aws-styly</loc>
+    <lastmod>2025-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/designing-ai-interior-staging-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/designing-ai-interior-staging-aws-styly"/>
+    <image:image>
+      <image:loc>https://styly.io/data-analytics-interior-design-dashboard.webp</image:loc>
+      <image:title>Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io</image:title>
+      <image:caption>Behind the scenes look at how Styly.io builds AI interior staging on AWS infrastructure</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://styly.io/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly</loc>
+    <lastmod>2025-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://styly.io/en/blog/designing-ai-interior-staging-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://styly.io/fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://styly.io/en/blog/designing-ai-interior-staging-aws-styly"/>
+    <image:image>
+      <image:loc>https://styly.io/data-analytics-interior-design-dashboard.webp</image:loc>
+      <image:title>Concevoir la Mise en Scène Intérieure IA sur AWS : Dans les Coulisses de Styly.io</image:title>
+      <image:caption>Regard dans les coulisses de la construction de la mise en scène intérieure IA de Styly.io sur l'infrastructure AWS</image:caption>
+    </image:image>
+  </url>
+
   <!-- How Generative AI is Revolutionizing Interior Design -->
   <url>
     <loc>https://styly.io/en/blog/how-generative-ai-revolutionizing-interior-design</loc>
