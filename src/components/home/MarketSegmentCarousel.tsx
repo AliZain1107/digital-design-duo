@@ -89,7 +89,7 @@ const MarketSegmentCarousel: React.FC = () => {
   useEffect(() => {
     const timer = setInterval(goToNext, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [goToNext]);
 
   return (
     <section className="bg-white py-16 md:py-24">

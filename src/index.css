@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+@font-face {
+  font-family: 'Davetica';
+  src: url('/fonts/Davetica-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -99,6 +106,7 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+    font-family: 'Baloo 2', 'Baloo', sans-serif !important;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -174,6 +182,63 @@
     animation: gradient-x 3s ease-in-out infinite;
   }
 
+  /* Slideshow edge blending */
+  .slideshow-container {
+    mask: linear-gradient(
+      to right,
+      transparent 0%,
+      white 6%,
+      white 94%,
+      transparent 100%
+    );
+    -webkit-mask: linear-gradient(
+      to right,
+      transparent 0%,
+      white 6%,
+      white 94%,
+      transparent 100%
+    );
+  }
+
+  /* Responsive mask adjustments */
+  @media (max-width: 640px) {
+    .slideshow-container {
+      mask: linear-gradient(
+        to right,
+        transparent 0%,
+        white 8%,
+        white 92%,
+        transparent 100%
+      );
+      -webkit-mask: linear-gradient(
+        to right,
+        transparent 0%,
+        white 8%,
+        white 92%,
+        transparent 100%
+      );
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .slideshow-container {
+      mask: linear-gradient(
+        to right,
+        transparent 0%,
+        white 5%,
+        white 95%,
+        transparent 100%
+      );
+      -webkit-mask: linear-gradient(
+        to right,
+        transparent 0%,
+        white 5%,
+        white 95%,
+        transparent 100%
+      );
+    }
+  }
+
   .group:hover .animate-gradient-x {
     animation-duration: 1s;
     background-position: 100% 50%;
@@ -196,5 +261,26 @@
 
   .animate-shimmer-bg {
     animation: shimmer-bg 6s linear infinite;
+  }
+
+  .font-davetica-wide {
+    font-family: 'Davetica', sans-serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+@layer utilities {
+  @keyframes cta-pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.06);
+      opacity: 0.92;
+    }
+  }
+  .animate-cta-pulse {
+    animation: cta-pulse 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   }
 }

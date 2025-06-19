@@ -16,16 +16,18 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center px-10 py-16 sm:py-20 max-md:max-w-full max-md:px-5">
+    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center px-10 pb-0 pt-16 sm:pt-20 max-md:max-w-full max-md:px-5">
       <div className="flex w-[1629px] max-w-full flex-col overflow-hidden items-center justify-center">
         <div className="flex w-full flex-col overflow-hidden items-center text-base font-normal leading-[1.2] px-20 max-md:px-5">
           <div className="flex w-[446px] max-w-full flex-col items-center">
-            <h2 className="w-[120px] max-w-full text-[50px] text-[rgba(51,51,51,1)] font-extrabold whitespace-nowrap text-center tracking-[-2.6px] max-md:text-[40px]">
-              <div className="w-full pb-px max-md:text-[40px]">{t.faqs}</div>
+            <h2 className="text-4xl font-semibold mb-4 font-baloo text-gray-900 text-center">
+              <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
+                {t.faqs}
+              </span>
             </h2>
-            <div className="self-stretch text-black mt-[9px] max-md:max-w-full">
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-baloo text-center mb-16">
               {t.faqDescription}
-            </div>
+            </p>
           </div>
         </div>
         <div className="flex w-full items-center justify-center mt-2.5">

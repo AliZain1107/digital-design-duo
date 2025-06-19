@@ -896,6 +896,10 @@ export interface Translations {
   sendRequest: string;
   yourName: string;
   yourCompanyName: string;
+  startFreeTrial: string;
+  contactUs: string;
+  seeItForYourself: string;
+  culminationQuantitativeResearch: string;
 }
 // Define translations for English and French
 export const translations: Record<Language, Translations> = {
@@ -1193,7 +1197,7 @@ export const translations: Record<Language, Translations> = {
     statsArticles: "Research articles",
 
     // Blog section
-    blogTrends: "New AI Interior Design Trends",
+    blogTrends: "Blogs",
     blogDescription:
       "The latest industry news, interviews, technologies, and resources on free interior design software and AI room planner.",
     realEstateLandscape:
@@ -1928,6 +1932,10 @@ export const translations: Record<Language, Translations> = {
     sendRequest: "Send Request",
     yourName: "Your name",
     yourCompanyName: "Your company name",
+    startFreeTrial: "Start Free Trial",
+    contactUs: "Contact Us",
+    seeItForYourself: "See it for yourself",
+    culminationQuantitativeResearch: "The culmination of quantitative research",
 
     // Collaborators Page
     collaborators: "Collaborators",
@@ -3172,6 +3180,10 @@ export const translations: Record<Language, Translations> = {
     sendRequest: "Envoyer la Demande",
     yourName: "Votre nom",
     yourCompanyName: "Nom de votre entreprise",
+    startFreeTrial: "Commencer l'essai gratuit",
+    contactUs: "Contactez-nous",
+    seeItForYourself: "Voyez par vous-même",
+    culminationQuantitativeResearch: "L'aboutissement de la recherche quantitative",
 
     // Collaborators Page
     collaborators: "Collaborateurs",

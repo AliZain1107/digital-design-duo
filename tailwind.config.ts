@@ -82,6 +82,7 @@ export default {
         inter: ['"Inter"', 'sans-serif'],
         montagu: ["'Montagu Slab'", "serif"],
         poppins: ['Poppins', 'sans-serif'],
+        davetica: ['Davetica', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -124,5 +125,6 @@ export default {
       }
     }
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;

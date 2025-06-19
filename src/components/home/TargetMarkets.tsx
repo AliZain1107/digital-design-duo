@@ -98,7 +98,7 @@ const TargetMarkets: React.FC = () => {
     }, 5000);
 
     return () => clearInterval(timer);
-  }, [startIndex, marketSegments.length, isTransitioning]);
+  }, [startIndex, marketSegments.length, isTransitioning, changeSlide]);
 
   return (
     <section className="w-full py-24 bg-gradient-to-b from-white to-gray-50">

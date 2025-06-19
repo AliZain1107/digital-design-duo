@@ -51,7 +51,7 @@ const typewriterWordsFR = [
 ];
 
 const Hero: React.FC = () => {
-  const { language } = useLanguage ? useLanguage() : { language: 'en' };
+  const { language, t } = useLanguage();
   const typewriterWords = language === 'fr' ? typewriterWordsFR : typewriterWordsEN;
   // Improved typewriter animation state
   const [currentWord, setCurrentWord] = useState(0);
@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
       setCurrentWord((prev) => (prev + 1) % typewriterWords.length);
     }
     return () => clearTimeout(timeout);
-  }, [displayed, isDeleting, currentWord]);
+  }, [displayed, isDeleting, currentWord, typewriterWords, typingSpeed]);
 
   // Structured data specifically for the hero section 
   const heroStructuredData = {
@@ -198,12 +198,14 @@ const Hero: React.FC = () => {
               <a
                 href="https://app.styly.io"
                 className="group relative flex items-center justify-center px-7 sm:px-8 py-3 sm:py-4 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-lg transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-orange-500/30 border border-transparent whitespace-nowrap z-10 font-baloo"
-                aria-label="Start Free Trial with STYLY AI"
+                aria-label={t.startFreeTrial}
                 itemProp="potentialAction"
                 itemScope
                 itemType="https://schema.org/Action"
               >
-                <span className="relative z-10 tracking-wide" itemProp="name">Get Started</span>
+                <span className="relative z-10 tracking-wide" itemProp="name">
+                  {t.startFreeTrial}
+                </span>
                 <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </div>
@@ -214,7 +216,7 @@ const Hero: React.FC = () => {
               <a
                 href="/contact"
                 className="relative flex items-center justify-center px-7 sm:px-8 py-3 sm:py-4 rounded-lg bg-white text-purple-700 font-bold text-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10 font-baloo"
-                aria-label="Contact Us"
+                aria-label={t.contactUs}
               >
                 <span
                   className="relative group-hover:bg-gradient-to-r group-hover:from-purple-700 group-hover:via-purple-500 group-hover:to-purple-700 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300"
@@ -226,10 +228,10 @@ const Hero: React.FC = () => {
                     e.currentTarget.style.animation = 'shimmer-text 3.5s linear infinite';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.animation = 'none';
+                    e.currentTarget.style.animation = 'shimmer-text-fade-out 0.3s ease-out forwards';
                   }}
                 >
-                  Contact Us
+                  {t.contactUs}
                 </span>
               </a>
               <style>{`
@@ -239,6 +241,22 @@ const Hero: React.FC = () => {
                   }
                   100% {
                     background-position: 300% 0;
+                  }
+                }
+                @keyframes shimmer-text-fade-out {
+                  0% {
+                    background-position: 300% 0;
+                    background-image: linear-gradient(90deg, #7c3aed, #a855f7, #7c3aed);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                  }
+                  100% {
+                    background-position: 300% 0;
+                    background-image: none;
+                    -webkit-background-clip: unset;
+                    background-clip: unset;
+                    color: #7c3aed;
                   }
                 }
               `}</style>

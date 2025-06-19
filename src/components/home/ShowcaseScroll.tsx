@@ -72,7 +72,7 @@ const ShowcaseScroll: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden relative slideshow-container">
       {/* Top row - scrolls from right to left */}
       <div
         ref={topRowRef}
@@ -112,6 +112,10 @@ const ShowcaseScroll: React.FC = () => {
           </div>
         ))}
       </div>
+
+      {/* White edge blend overlays */}
+      <div className="absolute top-0 bottom-0 left-0 w-10 sm:w-12 md:w-16 lg:w-20 xl:w-24 bg-gradient-to-r from-white to-transparent pointer-events-none z-10" />
+      <div className="absolute top-0 bottom-0 right-0 w-10 sm:w-12 md:w-16 lg:w-20 xl:w-24 bg-gradient-to-l from-white to-transparent pointer-events-none z-10" />
     </div>
   );
 };

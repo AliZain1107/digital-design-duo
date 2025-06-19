@@ -68,6 +68,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
   };
 
   React.useEffect(() => {
+    if (!dragging.current) return;
     window.addEventListener("mousemove", handleMove);
     window.addEventListener("mouseup", stopDrag);
     window.addEventListener("touchmove", handleMove);
@@ -78,7 +79,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
       window.removeEventListener("touchmove", handleMove);
       window.removeEventListener("touchend", stopDrag);
     };
-  }, []);
+  }, [dragging.current, handleMove]);
 
   return (
     <div
@@ -124,8 +125,10 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
         tabIndex={0}
         aria-label="Drag to compare before and after"
       >
-        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white/80 border border-gray-300 shadow-lg">
-          <span className="text-2xl text-gray-700">↔️</span>
+        <div className="flex items-center justify-center w-8 h-8 rounded-full bg-white/90 border border-gray-200 shadow-md">
+          <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18m-4-4l4 4m0 0l-4 4" />
+          </svg>
         </div>
       </button>
       {/* Labels */}
