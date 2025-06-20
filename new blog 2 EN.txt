@@ -1,4 +1,3 @@
-🇬🇧 Final English Blog – With AWS Vision & Startup Support
 Title: Architecting AI‑Driven Virtual Staging on AWS: Behind the Scenes at Styly.io
 
 SEO Keywords:
