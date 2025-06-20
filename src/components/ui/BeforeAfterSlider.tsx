@@ -16,6 +16,16 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
   const [position, setPosition] = useState(50); // percent
   const containerRef = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
+  const inactivityTimer = useRef<NodeJS.Timeout | null>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Helper to reset inactivity timer
+  const resetInactivityTimer = React.useCallback(() => {
+    if (inactivityTimer.current) clearTimeout(inactivityTimer.current);
+    inactivityTimer.current = setTimeout(() => {
+      setPosition(50);
+    }, 5000);
+  }, []);
 
   // Move handle to a specific clientX position
   const moveTo = (clientX: number) => {
@@ -24,6 +34,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
     let x = clientX - rect.left;
     x = Math.max(0, Math.min(x, rect.width));
     setPosition((x / rect.width) * 100);
+    resetInactivityTimer();
   };
 
   // Mouse/touch down on handle or anywhere on slider
@@ -35,11 +46,13 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
     } else if ("clientX" in e) {
       moveTo(e.clientX);
     }
+    resetInactivityTimer();
   };
   // Mouse/touch up
   const stopDrag = () => {
     dragging.current = false;
     document.body.style.userSelect = "";
+    resetInactivityTimer();
   };
   // Mouse/touch move
   const handleMove = (e: MouseEvent | TouchEvent) => {
@@ -49,6 +62,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
     } else if (e instanceof MouseEvent) {
       moveTo(e.clientX);
     }
+    resetInactivityTimer();
   };
   // Click/tap anywhere on slider
   const handleSliderClick = (e: React.MouseEvent | React.TouchEvent) => {
@@ -57,6 +71,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
     } else if ("clientX" in e) {
       moveTo(e.clientX);
     }
+    resetInactivityTimer();
   };
   // Keyboard accessibility
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -65,7 +80,20 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
     } else if (e.key === "ArrowRight") {
       setPosition((p) => Math.min(100, p + 2));
     }
+    resetInactivityTimer();
   };
+
+  // Inactivity timer: reset to center if not hovered for 5s
+  React.useEffect(() => {
+    if (!isHovered && !dragging.current) {
+      resetInactivityTimer();
+    } else if (isHovered && inactivityTimer.current) {
+      clearTimeout(inactivityTimer.current);
+    }
+    return () => {
+      if (inactivityTimer.current) clearTimeout(inactivityTimer.current);
+    };
+  }, [isHovered, resetInactivityTimer]);
 
   React.useEffect(() => {
     if (!dragging.current) return;
@@ -88,6 +116,9 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
       style={{ touchAction: "none" }}
       onMouseDown={handleSliderClick}
       onTouchStart={handleSliderClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onTouchEnd={() => setIsHovered(false)}
     >
       {/* Before image */}
       <img

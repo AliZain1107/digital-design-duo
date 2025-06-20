@@ -1190,7 +1190,7 @@ export const translations: Record<Language, Translations> = {
     // Stats section
     statsHeading1: "STYLY: Not chance, but the culmination of",
     statsHeading2: "rigorous quantitative research.",
-    statsHours: "hours of development",
+    statsHours: "Hours of development",
     statsDesigners: "Top Designers approved",
     statsCompanies: "Companies trusted",
     statsArticles: "Research articles",
@@ -2399,7 +2399,7 @@ export const translations: Record<Language, Translations> = {
     // Stats section
     statsHeading1: "STYLY : Pas le hasard, mais l'aboutissement d'une",
     statsHeading2: "recherche quantitative rigoureuse.",
-    statsHours: "heures de développement",
+    statsHours: "Heures de développement",
     statsDesigners: "Top Designers approuvés",
     statsCompanies: "Entreprises de confiance",
     statsArticles: "Articles de recherche",
