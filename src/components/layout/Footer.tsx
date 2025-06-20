@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <div className="w-full max-w-[1884px]">
         <div className="flex w-full flex-col md:flex-row text-base">
           {/* Logo and Info (left) */}
-          <div className="flex flex-col text-[rgba(89,50,134,1)] font-normal w-full md:w-80 mb-8 md:mb-0">
+          <div className="flex items-start md:items-center text-[rgba(89,50,134,1)] font-normal w-full md:w-80 mb-8 md:mb-0">
             <Link to="/" className="transition-transform duration-300 hover:scale-105">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/c0c4240138138be279efc42010c10acdb8bedd5d?placeholderIfAbsent=true"

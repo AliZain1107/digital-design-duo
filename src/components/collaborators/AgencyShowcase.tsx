@@ -2,6 +2,27 @@ import React from "react";
 import { useLanguage } from "@/lib/i18n";
 import { MapPin, Eye, Heart, Award } from "lucide-react";
 
+const countryTranslations: Record<string, { en: string; fr: string }> = {
+  "Japan": { en: "Japan", fr: "Japon" },
+  "USA": { en: "USA", fr: "États-Unis" },
+  "UK": { en: "UK", fr: "Royaume-Uni" },
+  "France": { en: "France", fr: "France" },
+  "Sweden": { en: "Sweden", fr: "Suède" },
+  "Germany": { en: "Germany", fr: "Allemagne" },
+  "Australia": { en: "Australia", fr: "Australie" },
+};
+
+const specialtyTranslations: Record<string, { en: string; fr: string }> = {
+  "Minimalist Design": { en: "Minimalist Design", fr: "Design minimaliste" },
+  "Commercial Spaces": { en: "Commercial Spaces", fr: "Espaces commerciaux" },
+  "Creative Interiors": { en: "Creative Interiors", fr: "Intérieurs créatifs" },
+  "Luxury Residential": { en: "Luxury Residential", fr: "Résidentiel de luxe" },
+  "Scandinavian Style": { en: "Scandinavian Style", fr: "Style scandinave" },
+  "Modern Architecture": { en: "Modern Architecture", fr: "Architecture moderne" },
+  "Coastal Design": { en: "Coastal Design", fr: "Design côtier" },
+  "Zen & Wellness": { en: "Zen & Wellness", fr: "Zen & bien-être" },
+};
+
 const AgencyShowcase: React.FC = () => {
   const { language, t } = useLanguage();
 
@@ -138,7 +159,11 @@ const AgencyShowcase: React.FC = () => {
                 {/* Smaller Country Flag */}
                 <div className="absolute top-2 left-2 bg-white/95 backdrop-blur-sm rounded-md px-1 py-0.5">
                   <span className="text-xs font-semibold text-gray-700">
-                    {agency.location.split(', ')[1]}
+                    {(() => {
+                      const [city, country] = agency.location.split(', ');
+                      const countryLabel = countryTranslations[country]?.[language] || country;
+                      return `${city}, ${countryLabel}`;
+                    })()}
                   </span>
                 </div>
               </div>
@@ -151,11 +176,19 @@ const AgencyShowcase: React.FC = () => {
 
                 <div className="flex items-center text-gray-600 text-xs mb-1 font-baloo">
                   <MapPin className="w-2 h-2 mr-1 text-purple-500" />
-                  <span className="truncate">{agency.location}</span>
+                  <span className="truncate">
+                    {(() => {
+                      const [city, country] = agency.location.split(', ');
+                      const countryLabel = countryTranslations[country]?.[language] || country;
+                      return `${city}, ${countryLabel}`;
+                    })()}
+                  </span>
                 </div>
 
                 <p className="text-xs text-purple-600 font-medium mb-2 bg-purple-50 rounded-full px-1 py-0.5 inline-block truncate max-w-full font-baloo">
-                  {agency.specialty}
+                  {specialtyTranslations[agency.specialty]
+                    ? specialtyTranslations[agency.specialty][language]
+                    : agency.specialty}
                 </p>
 
                 {/* Compact Stats */}

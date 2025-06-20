@@ -1059,8 +1059,7 @@ export const translations: Record<Language, Translations> = {
     footerTerms: "Terms",
     footerPrivacy: "Privacy",
     footerCopyright: "© 2024 STYLY. All rights reserved.",
-    footerSlogan:
-      "The AI interior design revolution: redefining home design with our free interior design software.",
+    footerSlogan: "making premium design accessible, sustainable, and enjoyable for everyone.",
     footerLogin: "Log In",
     footerSignup: "Sign Up",
     footerCopyrightYear: "Copyright 2025 STYLY",
@@ -2269,8 +2268,7 @@ export const translations: Record<Language, Translations> = {
     footerTerms: "Conditions",
     footerPrivacy: "Confidentialité",
     footerCopyright: "© 2024 STYLY. Tous droits réservés.",
-    footerSlogan:
-      "La révolution du design intérieur IA : redéfinir la décoration intérieure avec notre logiciel design intérieur gratuit.",
+    footerSlogan: "making premium design accessible, sustainable, and enjoyable for everyone.",
     footerLogin: "Se connecter",
     footerSignup: "S'inscrire",
     footerCopyrightYear: "Copyright 2025 STYLY",
