@@ -38,6 +38,7 @@ import FutureWorkspaceAIOfficeInteriors from "@/blogPages/FutureWorkspaceAIOffic
 import NewBlog2 from "@/blogPages/NewBlog2";
 import StylyVivaTechPartnership from "@/blogPages/StylyVivaTechPartnership";
 import ChatGPTInteriorDesign from "@/blogPages/ChatGPTInteriorDesign";
+import UnlockingPowerAIInteriorDesign from "@/blogPages/UnlockingPowerAIInteriorDesign";
 
 export interface BlogPost {
   id: number;
@@ -52,6 +53,15 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 0,
+    title: "Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations",
+    date: "Jun 21, 2025",
+    image: "/ai-virtual-reality-design-hero.webp",
+    slug: "unlocking-power-ai-interior-design-latest-innovations",
+    slugFr: "debloquer-puissance-ia-design-interieur-innovations",
+    Component: UnlockingPowerAIInteriorDesign,
+  },
+  {
+    id: 1,
     title: "Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design",
     date: "Jun 17, 2025",
     image: "/ai-interior-design-technology.webp",
@@ -60,7 +70,7 @@ export const blogPosts: BlogPost[] = [
     Component: ChatGPTInteriorDesign,
   },
   {
-    id: 1,
+    id: 2,
     title: "How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design",
     date: "Jun 16, 2025",
     image: "/ai-interior-design-technology.webp",
@@ -69,7 +79,7 @@ export const blogPosts: BlogPost[] = [
     Component: StylyVivaTechPartnership,
   },
   {
-    id: 1,
+    id: 3,
     title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io",
     date: "Jun 15, 2025",
     image: "/data-analytics-interior-design-dashboard.webp",
@@ -78,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     Component: NewBlog2,
   },
   {
-    id: 1,
+    id: 4,
     title: "Designing the Future Workspace: AI-Powered Office Interiors with Styly",
     date: "Jun 8, 2025",
     image: "/mini_magick20250608-11056-w1ke6k.jpg",
@@ -87,7 +97,7 @@ export const blogPosts: BlogPost[] = [
     Component: FutureWorkspaceAIOfficeInteriors,
   },
   {
-    id: 2,
+    id: 5,
     title: "The Impact of AI on the Role of the Interior Designer: A Collaborative Future",
     date: "Nov 23, 2024",
     image: "/impact-ai-interior-designer-hero.webp",
@@ -96,7 +106,7 @@ export const blogPosts: BlogPost[] = [
     Component: ImpactAIInteriorDesigner,
   },
   {
-    id: 3,
+    id: 6,
     title: "The Intersection of AI and Virtual Reality in Design: What the Future Holds",
     date: "Nov 16, 2024",
     image: "/ai-virtual-reality-design-hero.webp",
@@ -105,7 +115,7 @@ export const blogPosts: BlogPost[] = [
     Component: AIVirtualRealityDesign,
   },
   {
-    id: 4,
+    id: 7,
     title: "AI in Accessible Design: Creating Inclusive Spaces with Styly",
     date: "Nov 12, 2024",
     image: "/accessible-design-modern-wheelchair-interior.webp",
@@ -114,7 +124,7 @@ export const blogPosts: BlogPost[] = [
     Component: AIAccessibleDesign,
   },
   {
-    id: 5,
+    id: 8,
     title: "The Role of Data in AI-Powered Design: How Insights Drive Better Aesthetics",
     date: "Nov 7, 2024",
     image: "/data-analytics-interior-design-dashboard.webp",
@@ -123,7 +133,7 @@ export const blogPosts: BlogPost[] = [
     Component: DataAIPoweredDesign,
   },
   {
-    id: 6,
+    id: 9,
     title: "Designing for the Modern Family: Using AI to Create Functional and Stylish Homes",
     date: "Nov 3, 2024",
     image: "/mini_magick20250608-11056-ddfvth.jpg",
@@ -132,7 +142,7 @@ export const blogPosts: BlogPost[] = [
     Component: ModernFamilyDesign,
   },
   {
-    id: 7,
+    id: 10,
     title: "Designing for Sustainability: Using AI to Create Eco-Friendly Spaces",
     date: "Oct 30, 2024",
     image: "/sustainable-eco-friendly-interior-design.webp",
@@ -141,7 +151,7 @@ export const blogPosts: BlogPost[] = [
     Component: SustainableDesignAI,
   },
   {
-    id: 7,
+    id: 11,
     title: "Leveraging AI to Optimize Space Planning in Small Apartments",
     date: "Oct 6, 2024",
     image: "/small-apartment-space-planning-modern.webp",
@@ -150,7 +160,7 @@ export const blogPosts: BlogPost[] = [
     Component: AISpacePlanningSmallApartments,
   },
   {
-    id: 8,
+    id: 12,
     title: "Creating Biophilic Interior Designs with Styly AI",
     date: "Oct 2, 2024",
     image: "/biophilic-design-plants-natural-interior.webp",
@@ -159,7 +169,7 @@ export const blogPosts: BlogPost[] = [
     Component: BiophilicDesignAI,
   },
   {
-    id: 9,
+    id: 13,
     title: "The Science of Color in Design: How AI Helps You Choose the Perfect Palette",
     date: "Oct 19, 2024",
     image: "/color-theory-palette-interior-design.webp",
@@ -168,7 +178,7 @@ export const blogPosts: BlogPost[] = [
     Component: ScienceColorDesign,
   },
   {
-    id: 10,
+    id: 14,
     title: "Reducing Carbon Footprints: Sustainable Landscapes with Styly AI",
     date: "Oct 12, 2024",
     image: "/sustainable-landscape-garden-eco-design.webp",
@@ -177,7 +187,7 @@ export const blogPosts: BlogPost[] = [
     Component: SustainableLandscapesAI,
   },
   {
-    id: 11,
+    id: 15,
     title: "AI in Landscape Design: Creating Beautiful Outdoor Spaces with Styly",
     date: "Sep 27, 2024",
     image: "/landscape-design-outdoor-garden-modern.webp",
@@ -186,7 +196,7 @@ export const blogPosts: BlogPost[] = [
     Component: AILandscapeDesign,
   },
   {
-    id: 12,
+    id: 16,
     title: "Interior Designing for Different Cultures: Leveraging AI for Culturally Sensitive Spaces",
     date: "Sep 21, 2024",
     image: "/cultural-design-multicultural-interior.webp",
@@ -195,7 +205,7 @@ export const blogPosts: BlogPost[] = [
     Component: CulturalDesignAI,
   },
   {
-    id: 13,
+    id: 17,
     title: "The Importance of Texture in Interior Design: How Styly Can Help",
     date: "Sep 19, 2024",
     image: "/texture-materials-interior-design-wood.webp",
@@ -204,7 +214,7 @@ export const blogPosts: BlogPost[] = [
     Component: TextureImportanceDesign,
   },
   {
-    id: 14,
+    id: 18,
     title: "6 Viral AI Room Design Prompts: Create Your Dream Bedroom with STYLY.io",
     date: "Dec 15, 2024",
     image: "/mini_magick20250608-11056-k6lwqq.jpg",
@@ -213,7 +223,7 @@ export const blogPosts: BlogPost[] = [
     Component: ViralAIRoomDesignPrompts,
   },
   {
-    id: 15,
+    id: 19,
     title: "2025 Interior Design Trends: What's In and What's Out",
     date: "Dec 7, 2024",
     image: "/2025-interior-design-trends-hero.webp",
@@ -222,7 +232,7 @@ export const blogPosts: BlogPost[] = [
     Component: InteriorDesignTrends2025,
   },
   {
-    id: 16,
+    id: 20,
     title: "Free AI Interior Design Software - Transform Your Space",
     date: "Dec 1, 2024",
     image: "/free-ai-interior-design-hero.webp",
@@ -231,7 +241,7 @@ export const blogPosts: BlogPost[] = [
     Component: FreeAIInteriorDesign,
   },
   {
-    id: 17,
+    id: 21,
     title: "Revolutionizing Architecture, Engineering, and Construction with AI",
     date: "Apr 25, 2025",
     image: "/revolutionizing-architecture-hero.png",
@@ -240,7 +250,7 @@ export const blogPosts: BlogPost[] = [
     Component: RevolutionizingArchitecture,
   },
   {
-    id: 18,
+    id: 22,
     title:
       "How Real Estate Agents Are Boosting Sales with AI-Powered Virtual Staging: The 2025 Market Reality",
     date: "Apr 14, 2025",
@@ -251,7 +261,7 @@ export const blogPosts: BlogPost[] = [
     Component: RealEstateVirtualStaging,
   },
   {
-    id: 19,
+    id: 23,
     title: "Gen Z's Ultimate Guide to Instagram-Worthy Interiors",
     date: "Jan 21, 2025",
     image:
@@ -261,7 +271,7 @@ export const blogPosts: BlogPost[] = [
     Component: GenZInteriors,
   },
   {
-    id: 20,
+    id: 24,
     title: "How to Build Your Own House with AI Tools Including Porch Design",
     date: "Jan 11, 2025",
     image:
@@ -271,7 +281,7 @@ export const blogPosts: BlogPost[] = [
     Component: BuildHouse,
   },
   {
-    id: 21,
+    id: 25,
     title: "The Ultimate Guide to AI Interior Design Tools in 2025: A Comprehensive Comparison",
     date: "Dec 30, 2024",
     image:
@@ -281,7 +291,7 @@ export const blogPosts: BlogPost[] = [
     Component: UltimateGuide,
   },
   {
-    id: 22,
+    id: 26,
     title: "Eight Stunning AI-Generated Bedroom Designs: Transform Your Space with Styly.io",
     date: "Dec 24, 2024",
     image:
@@ -291,7 +301,7 @@ export const blogPosts: BlogPost[] = [
     Component: AIBedroom,
   },
   {
-    id: 23,
+    id: 27,
     title: "10 Expert Tips to Save Big on Home Interiors in 2025",
     date: "Dec 22, 2024",
     image:
@@ -301,7 +311,7 @@ export const blogPosts: BlogPost[] = [
     Component: AIInterior,
   },
   {
-    id: 24,
+    id: 28,
     title: "Top 5 Challenges in Interior Design and How AI Can Solve Them",
     date: "Sep 13, 2024",
     image: "/top-5-challenges-interior-design-ai.webp",
@@ -310,7 +320,7 @@ export const blogPosts: BlogPost[] = [
     Component: Top5ChallengesInteriorDesign,
   },
   {
-    id: 25,
+    id: 29,
     title: "How AI is Shaping the Future of Commercial Interior Design",
     date: "Sep 5, 2024",
     image: "/commercial-interior-design-ai-future.webp",
@@ -319,7 +329,7 @@ export const blogPosts: BlogPost[] = [
     Component: CommercialInteriorDesignAI,
   },
   {
-    id: 26,
+    id: 30,
     title: "Creating Outdoor Spaces with AI: A Guide to Designing Stunning Exteriors",
     date: "Aug 30, 2024",
     image: "/creating-outdoor-spaces-ai-design.webp",
@@ -328,7 +338,7 @@ export const blogPosts: BlogPost[] = [
     Component: CreatingOutdoorSpacesAI,
   },
   {
-    id: 27,
+    id: 31,
     title: "The Cost-Effectiveness of AI in Design: How Styly Saves You Money",
     date: "Aug 26, 2024",
     image: "/cost-effectiveness-ai-design-savings.webp",
@@ -337,7 +347,7 @@ export const blogPosts: BlogPost[] = [
     Component: CostEffectivenessAIDesign,
   },
   {
-    id: 28,
+    id: 32,
     title: "Transforming Small Living Spaces: Interior Design Solutions for Compact Homes",
     date: "Aug 3, 2024",
     image: "/mini_magick20250608-11435-4rql35.jpg",
@@ -346,7 +356,7 @@ export const blogPosts: BlogPost[] = [
     Component: TransformingSmallLivingSpaces,
   },
   {
-    id: 29,
+    id: 33,
     title: "Why AI-Driven Customization is the Future of Interior Design",
     date: "Aug 20, 2024",
     image: "/ai-driven-customization-future-interior-design.webp",
@@ -355,7 +365,7 @@ export const blogPosts: BlogPost[] = [
     Component: AIDrivenCustomizationFuture,
   },
   {
-    id: 30,
+    id: 34,
     title: "Residential Interior Design: A Guide to Planning Spaces with Styly",
     date: "Aug 14, 2024",
     image: "/residential-interior-design-guide-planning.webp",
@@ -364,7 +374,7 @@ export const blogPosts: BlogPost[] = [
     Component: ResidentialInteriorDesignGuide,
   },
   {
-    id: 31,
+    id: 35,
     title: "Futuristic Interior Design Styles: How Styly AI Shapes Tomorrow's Homes Today",
     date: "Jul 27, 2024",
     image: "/futuristic-interior-design-styles-styly-ai.webp",
@@ -373,7 +383,7 @@ export const blogPosts: BlogPost[] = [
     Component: FuturisticInteriorDesignStyles,
   },
   {
-    id: 32,
+    id: 36,
     title: "The Good, The Bad, and The Room Planner AI: Sarah Johnson's Honest Styly.io Evaluations",
     date: "Jul 25, 2024",
     image: "/mini_magick20250608-11056-rtsk42.jpg",
@@ -382,7 +392,7 @@ export const blogPosts: BlogPost[] = [
     Component: RoomPlannerAISarahJohnsonEvaluations,
   },
   {
-    id: 33,
+    id: 37,
     title: "Innovative Interior Stair Railing Ideas: Custom Designs Powered by Styly AI",
     date: "Jul 22, 2024",
     image: "/innovative-stair-railing-ideas-styly-ai.webp",
@@ -391,7 +401,7 @@ export const blogPosts: BlogPost[] = [
     Component: InnovativeStairRailingIdeas,
   },
   {
-    id: 34,
+    id: 38,
     title: "Design Your Living Room Like a Pro with Styly",
     date: "Jul 19, 2024",
     image: "/mini_magick20250608-11056-2qt7xn.jpg",
@@ -400,7 +410,7 @@ export const blogPosts: BlogPost[] = [
     Component: DesignLivingRoomLikePro,
   },
   {
-    id: 35,
+    id: 39,
     title: "How Generative AI is Revolutionizing Interior Design?",
     date: "Jun 23, 2024",
     image: "/ai-room-decorator.webp",
@@ -409,7 +419,7 @@ export const blogPosts: BlogPost[] = [
     Component: GenerativeAIRevolutionizingDesign,
   },
   {
-    id: 36,
+    id: 40,
     title: "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral",
     date: "May 12, 2024",
     image: "/ai-interior-design-technology.webp",

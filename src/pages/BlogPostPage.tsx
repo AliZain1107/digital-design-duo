@@ -183,6 +183,9 @@ const BlogPostPage: React.FC = () => {
     if (post.slug === "can-chatgpt-design-your-home-ai-interior-design") {
       return t.chatGPTInteriorDesignTitle;
     }
+    if (post.slug === "unlocking-power-ai-interior-design-latest-innovations") {
+      return t.unlockingPowerAIInteriorDesignTitle;
+    }
     // For other blog posts, use the original title
     return post.title;
   };
