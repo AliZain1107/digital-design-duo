@@ -40,7 +40,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ isOpen, onClose }) =>
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   
   // URL validation regex
-  const urlRegex = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/;
+  const urlRegex = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)$/;
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
@@ -56,8 +56,6 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ isOpen, onClose }) =>
     } else if (!emailRegex.test(formData.email)) {
       newErrors.email = t.invalidEmail;
     }
-
-
 
     // Portfolio Link validation
     if (!formData.portfolioLink.trim()) {

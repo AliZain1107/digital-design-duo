@@ -8,3 +8,7 @@
 .hover\:pause-animation:hover {
   animation-play-state: paused;
 } 
+
+* {
+  font-family: 'Baloo 2', 'Baloo', sans-serif !important;
+} 

@@ -197,26 +197,20 @@ const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts }) => {
   const displayedBlogPosts = maxPosts ? sortedBlogPosts.slice(0, maxPosts) : sortedBlogPosts;
 
   return (
-    <section className="bg-white w-full py-16 sm:py-20 px-4 sm:px-6 md:px-8" key={`blog-section-${language}`}>
-      <div className="w-full max-w-[1800px] mx-auto">
-        <div className="text-black font-semibold px-8 max-md:max-w-full max-md:px-5">
-          <div className="flex w-full flex-col items-center max-md:max-w-full">
-            <div className="flex w-[768px] max-w-full flex-col items-center">
-              <div className="w-[34px] text-base text-[rgba(250,111,64,1)] whitespace-nowrap pb-px">
-                {t.blog}
-              </div>
-              <h2 className="w-full text-4xl text-center tracking-[-0.72px] leading-none mt-[19px]">
-                <div className="w-full pb-px max-md:max-w-full">{t.blogTrends}</div>
-              </h2>
-              <div className="w-full text-xl font-normal text-center mt-[19px]">
-                <div className="w-full pb-px max-md:max-w-full">
-                  {t.blogDescription}
-                </div>
-              </div>
-            </div>
-          </div>
+    <section className="relative pt-0 pb-0 bg-white overflow-hidden -mt-2" key={`blog-section-${language}`}> 
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Premium Header - match AgencyShowcase */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 mb-4 text-center font-baloo">
+            <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
+              {t.blogTrends}
+            </span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-baloo">
+            {t.blogDescription}
+          </p>
         </div>
-        <div className="flex items-center justify-center mt-[9px] py-8">
+        <div className="flex items-center justify-center mt-0 mb-0">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6 w-full max-w-6xl px-4">
             {displayedBlogPosts.map((post) => (
               <BlogPostCard key={post.id} post={post} />

@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
+import type { EmblaCarouselType } from 'embla-carousel';
 
 const SupportedBy: React.FC = () => {
   const { t, language } = useLanguage();
@@ -59,10 +60,10 @@ const SupportedBy: React.FC = () => {
   ];
 
   // Embla carousel options for infinite loop and auto-scroll
-  const [emblaApi, setEmblaApi] = React.useState<any>(null);
+  const [emblaApi, setEmblaApi] = React.useState<EmblaCarouselType | null>(null);
   React.useEffect(() => {
     if (!emblaApi) return;
-    let autoScroll = setInterval(() => {
+    const autoScroll = setInterval(() => {
       emblaApi.scrollNext();
     }, 3000);
     return () => clearInterval(autoScroll);
@@ -74,15 +75,14 @@ const SupportedBy: React.FC = () => {
       key={`supported-by-${language}`}
     >
       <div className="container mx-auto text-center mb-0">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-1 font-baloo text-gray-900 relative">
+        <h2 className="text-4xl font-semibold mb-1 font-baloo text-gray-900 relative">
           <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
-            Supported
+            {t.supportedBy}
           </span>
-          {' '}By
         </h2>
       </div>
 
-      <div className="relative max-w-7xl mx-auto overflow-visible py-6 sm:py-8 md:py-10 lg:py-14 min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center -mt-12">
+      <div className="relative max-w-7xl mx-auto overflow-visible py-6 sm:py-8 md:py-10 lg:py-14 min-h-[160px] sm:min-h-[200px] md:min-h-[260px] lg:min-h-[320px] flex items-center -mt-8">
         {/* Left fade gradient */}
         <div className="absolute top-0 left-0 w-32 sm:w-48 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         {/* Carousel */}

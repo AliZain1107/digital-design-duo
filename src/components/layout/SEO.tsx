@@ -7,7 +7,7 @@ interface SEOProps {
   keywords?: string;
   ogImage?: string;
   ogUrl?: string;
-  structuredData?: any;
+  structuredData?: Record<string, unknown>;
   datePublished?: string;
   dateModified?: string;
   category?: string;

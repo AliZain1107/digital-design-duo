@@ -2,6 +2,27 @@ import React from "react";
 import { useLanguage } from "@/lib/i18n";
 import { MapPin, Eye, Heart, Award } from "lucide-react";
 
+const countryTranslations: Record<string, { en: string; fr: string }> = {
+  "Japan": { en: "Japan", fr: "Japon" },
+  "USA": { en: "USA", fr: "États-Unis" },
+  "UK": { en: "UK", fr: "Royaume-Uni" },
+  "France": { en: "France", fr: "France" },
+  "Sweden": { en: "Sweden", fr: "Suède" },
+  "Germany": { en: "Germany", fr: "Allemagne" },
+  "Australia": { en: "Australia", fr: "Australie" },
+};
+
+const specialtyTranslations: Record<string, { en: string; fr: string }> = {
+  "Minimalist Design": { en: "Minimalist Design", fr: "Design minimaliste" },
+  "Commercial Spaces": { en: "Commercial Spaces", fr: "Espaces commerciaux" },
+  "Creative Interiors": { en: "Creative Interiors", fr: "Intérieurs créatifs" },
+  "Luxury Residential": { en: "Luxury Residential", fr: "Résidentiel de luxe" },
+  "Scandinavian Style": { en: "Scandinavian Style", fr: "Style scandinave" },
+  "Modern Architecture": { en: "Modern Architecture", fr: "Architecture moderne" },
+  "Coastal Design": { en: "Coastal Design", fr: "Design côtier" },
+  "Zen & Wellness": { en: "Zen & Wellness", fr: "Zen & bien-être" },
+};
+
 const AgencyShowcase: React.FC = () => {
   const { language, t } = useLanguage();
 
@@ -89,37 +110,31 @@ const AgencyShowcase: React.FC = () => {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-slate-50 via-white to-purple-50/30 overflow-hidden">
+    <section className="relative py-20 bg-white overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.05),transparent_50%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(168,85,247,0.06),transparent_50%)]"></div>
+      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.05),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(168,85,247,0.06),transparent_50%)]"></div> */}
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Premium Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-purple-100/60 backdrop-blur-sm rounded-full px-6 py-3 mb-6">
-            <Award className="w-5 h-5 text-purple-600 mr-2" />
-            <span className="text-purple-800 font-semibold text-sm uppercase tracking-wide">
-              {language === "fr" ? "Réseau Elite" : "Elite Network"}
-            </span>
-          </div>
-          <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-purple-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight">
+          <h2 className="text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 mb-4 text-center font-baloo">
             {language === "fr" ? "Nos Partenaires Certifiés" : "Our Certified Partners"}
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-baloo">
             {language === "fr"
-              ? "Rejoignez un réseau d'élite de designers et architectes qui transforment l'avenir du design avec l'IA"
-              : "Join an elite network of designers and architects transforming the future of design with AI"
+              ? "Rejoignez un réseau d'élite de designers et architectes qui transforment l'avenir du design avec l'IA."
+              : "Join an elite network of designers and architects transforming the future of design with AI."
             }
           </p>
         </div>
 
         {/* Smaller, More Responsive Agency Cards Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-3 sm:gap-4 mb-12">
           {agencies.map((agency, index) => (
             <div
               key={agency.id}
-              className="group relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden border border-white/50 hover:border-purple-200/50 hover:-translate-y-2"
+              className="group relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden border border-white/50 hover:border-purple-200/50 hover:-translate-y-2 font-baloo"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               {/* Smaller Image Container */}
@@ -142,33 +157,45 @@ const AgencyShowcase: React.FC = () => {
                 {/* Smaller Country Flag */}
                 <div className="absolute top-2 left-2 bg-white/95 backdrop-blur-sm rounded-md px-1 py-0.5">
                   <span className="text-xs font-semibold text-gray-700">
-                    {agency.location.split(', ')[1]}
+                    {(() => {
+                      const [city, country] = agency.location.split(', ');
+                      const countryLabel = countryTranslations[country]?.[language] || country;
+                      return `${city}, ${countryLabel}`;
+                    })()}
                   </span>
                 </div>
               </div>
 
               {/* Compact Content */}
               <div className="p-2 sm:p-3">
-                <h3 className="font-bold text-xs sm:text-sm text-gray-900 mb-1 group-hover:text-purple-700 transition-colors duration-300 leading-tight line-clamp-2">
+                <h3 className="font-bold text-xs sm:text-sm text-gray-900 mb-1 group-hover:text-purple-700 transition-colors duration-300 leading-tight line-clamp-2 font-baloo">
                   {agency.name}
                 </h3>
 
-                <div className="flex items-center text-gray-600 text-xs mb-1">
+                <div className="flex items-center text-gray-600 text-xs mb-1 font-baloo">
                   <MapPin className="w-2 h-2 mr-1 text-purple-500" />
-                  <span className="truncate">{agency.location}</span>
+                  <span className="truncate">
+                    {(() => {
+                      const [city, country] = agency.location.split(', ');
+                      const countryLabel = countryTranslations[country]?.[language] || country;
+                      return `${city}, ${countryLabel}`;
+                    })()}
+                  </span>
                 </div>
 
-                <p className="text-xs text-purple-600 font-medium mb-2 bg-purple-50 rounded-full px-1 py-0.5 inline-block truncate max-w-full">
-                  {agency.specialty}
+                <p className="text-xs text-purple-600 font-medium mb-2 bg-purple-50 rounded-full px-1 py-0.5 inline-block truncate max-w-full font-baloo">
+                  {specialtyTranslations[agency.specialty]
+                    ? specialtyTranslations[agency.specialty][language]
+                    : agency.specialty}
                 </p>
 
                 {/* Compact Stats */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center bg-blue-50 rounded-full px-1 py-0.5">
+                <div className="flex items-center justify-between font-baloo">
+                  <div className="flex items-center bg-blue-50 rounded-full px-1 py-0.5 font-baloo">
                     <Eye className="w-2 h-2 text-blue-600 mr-1" />
                     <span className="text-xs font-semibold text-blue-700">{agency.views}</span>
                   </div>
-                  <div className="flex items-center bg-red-50 rounded-full px-1 py-0.5">
+                  <div className="flex items-center bg-red-50 rounded-full px-1 py-0.5 font-baloo">
                     <Heart className="w-2 h-2 text-red-500 mr-1" />
                     <span className="text-xs font-semibold text-red-600">{agency.likes}</span>
                   </div>
@@ -179,28 +206,6 @@ const AgencyShowcase: React.FC = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-400/0 via-purple-400/5 to-indigo-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
             </div>
           ))}
-        </div>
-
-        {/* Premium Call to Action */}
-        <div className="text-center">
-          <div className="max-w-2xl mx-auto bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-white/50">
-            <div className="inline-flex items-center bg-gradient-to-r from-purple-100 to-indigo-100 rounded-full px-6 py-3 mb-6">
-              <Award className="w-5 h-5 text-purple-600 mr-2" />
-              <span className="text-purple-800 font-semibold">
-                {language === "fr" ? "Certification Styly Gratuite" : "Free Styly Certification"}
-              </span>
-            </div>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              {language === "fr"
-                ? "Rejoignez ces professionnels d'élite et développez votre activité avec l'IA"
-                : "Join these elite professionals and grow your business with AI"
-              }
-            </p>
-            <div className="inline-flex items-center text-sm text-purple-600 font-medium">
-              <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-              {language === "fr" ? "Applications ouvertes" : "Applications open"}
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -61,8 +61,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
     // Add additional check for nested translation objects
     englishKeys.forEach(key => {
-      const enValue = (translations.en as any)[key];
-      const frValue = (translations.fr as any)[key];
+      const enValue = (translations.en as unknown)[key];
+      const frValue = (translations.fr as unknown)[key];
 
       if (typeof enValue === 'object' && enValue !== null && !Array.isArray(enValue)) {
         console.log(`[LanguageProvider] Checking nested object: ${key}`);

@@ -899,6 +899,183 @@ export interface Translations {
   sendRequest: string;
   yourName: string;
   yourCompanyName: string;
+  startFreeTrial: string;
+  contactUs: string;
+  seeItForYourself: string;
+  culminationQuantitativeResearch: string;
+
+  // Collaborators Page
+  collaborators: string;
+  becomeCollaborator: string;
+  joinOurNetwork: string;
+  collaboratorHeroDescription: string;
+  becomeDesignPartner: string;
+  freeAndQuick: string;
+
+  // Problem Section
+  theProblem: string;
+  problemDescription: string;
+  deadEndDMs: string;
+  deadEndDMsDescription: string;
+  budgetlessCollectors: string;
+  budgetlessCollectorsDescription: string;
+  endlessPitching: string;
+  endlessPitchingDescription: string;
+  stylyUsersReady: string;
+  stylyUsersDescription: string;
+
+  // Opportunity Section
+  collaboratorsStylyAdvantage: string;
+  stylyAdvantageDescription: string;
+  getDiscoveredBy: string;
+  haveAIDesigns: string;
+  haveAIDesignsDescription: string;
+  knowStyleSpace: string;
+  knowStyleSpaceDescription: string;
+  activelyLooking: string;
+  activelyLookingDescription: string;
+  curatedMatchmaking: string;
+  notJustLeadGeneration: string;
+
+  // Benefits Section
+  whatYoullGet: string;
+  highIntentClients: string;
+  highIntentClientsDescription: string;
+  aiEducatedHomeowners: string;
+  aiEducatedHomeownersDescription: string;
+  globalVisibility: string;
+  globalVisibilityDescription: string;
+  officialBadge: string;
+  officialBadgeDescription: string;
+  directContact: string;
+  directContactDescription: string;
+  noCommissions: string;
+  noCommissionsDescription: string;
+
+  // Comparison Chart Section
+  paymentBenefits: string;
+  comparisonChart: string;
+  traditionalAgencies: string;
+  withoutAI: string;
+  vs: string;
+  styly: string;
+  leadCost: string;
+  monthlyLeadVolume: string;
+  aiCompetency: string;
+  marketPosition: string;
+  serviceEvolution: string;
+  designPreferenceUnderstanding: string;
+  monthlyTraffic: string;
+  globalReach: string;
+  portfolioViewsOnline: string;
+  clientBase: string;
+  futureReadiness: string;
+  joinStylyTransform: string;
+  becomeCertifiedPro: string;
+
+  // Premium Placement Section
+  premiumPlacement: string;
+  stylyHighlightPros: string;
+  aiProjectExports: string;
+  stylyNewsletters: string;
+  proPartnerDirectory: string;
+  goToNameWhen: string;
+  couplesDisagree: string;
+  realtorsWantStaging: string;
+  homeownersNeedProfessional: string;
+
+  // Application CTA Section
+  readyToBeRecommended: string;
+  inviteOnlyExperience: string;
+  applyNow: string;
+  questionsReachUs: string;
+  orDMUs: string;
+
+  // Social Proof Section
+  joinGrowingNetwork: string;
+  architectTokyo: string;
+  interiorDesignerCapeTown: string;
+  freelancerLisbon: string;
+  socialProofDescription: string;
+
+  // Discovery Card Section
+  yourOwnDiscoveryCard: string;
+  discoveryCardDescription: string;
+  calmMinimalistSpaces: string;
+
+  // Why Join Section
+  whyJoinStyly: string;
+  clientsWithVision: string;
+  clientsWithVisionDescription: string;
+  designOnYourTerms: string;
+  designOnYourTermsDescription: string;
+  builtInExposure: string;
+  builtInExposureDescription: string;
+  realCreativityAI: string;
+  realCreativityAIDescription: string;
+  forStudiosAndSolo: string;
+  forStudiosAndSoloDescription: string;
+  // How It Works Section
+  collaboratorsHowItWorks: string;
+  stepOne: string;
+  stepOneDescription: string;
+  stepTwo: string;
+  stepTwoDescription: string;
+  stepThree: string;
+  stepThreeDescription: string;
+
+  // Who We're Looking For Section
+  whoWereLookingFor: string;
+  interiorDesigners: string;
+  architects: string;
+  conceptualCreatives: string;
+  spatialArtists: string;
+  setDesigners: string;
+  anyoneExploringSpace: string;
+  quoteBlock: string;
+
+  // Final CTA Section
+  readyToJoin: string;
+  readyToJoinDescription: string;
+  collaboratorsApplyNow: string;
+  learnMore: string;
+  getStarted: string;
+
+  // Application Form
+  applicationForm: string;
+  quickApplication: string;
+  applyToJoinNetwork: string;
+  fillOutForm: string;
+  quickFormDescription: string;
+  fullName: string;
+  fullNamePlaceholder: string;
+  emailAddress: string;
+  emailPlaceholder: string;
+  location: string;
+  locationPlaceholder: string;
+  portfolioLink: string;
+  portfolioPlaceholder: string;
+  specialization: string;
+  selectSpecialization: string;
+  interiorDesign: string;
+  architecture: string;
+  other: string;
+  submitApplication: string;
+  submitting: string;
+  collaboratorsClose: string;
+  cancel: string;
+
+  // Form Validation
+  fieldRequired: string;
+  invalidEmail: string;
+  invalidUrl: string;
+
+  // Form Success/Error States
+  applicationSubmitted: string;
+  applicationSuccess: string;
+  applicationError: string;
+  tryAgain: string;
+
 }
 // Define translations for English and French
 export const translations: Record<Language, Translations> = {
@@ -989,7 +1166,7 @@ export const translations: Record<Language, Translations> = {
     // Testimonials
     dontTakeOurWord: "Don't just take our word for it",
     hearFromCustomers:
-      "Hear from some of our amazing customers who used our product",
+      "Hear from some of our amazing customers who used our product.",
 
     // FAQ
     howItWorksFAQ: "How it works",
@@ -1058,8 +1235,7 @@ export const translations: Record<Language, Translations> = {
     footerTerms: "Terms",
     footerPrivacy: "Privacy",
     footerCopyright: "© 2024 STYLY. All rights reserved.",
-    footerSlogan:
-      "The AI interior design revolution: redefining home design with our free interior design software.",
+    footerSlogan: "making premium design accessible, sustainable, and enjoyable for everyone.",
     footerLogin: "Log In",
     footerSignup: "Sign Up",
     footerCopyrightYear: "Copyright 2025 STYLY",
@@ -1190,13 +1366,13 @@ export const translations: Record<Language, Translations> = {
     // Stats section
     statsHeading1: "STYLY: Not chance, but the culmination of",
     statsHeading2: "rigorous quantitative research.",
-    statsHours: "hours of development",
+    statsHours: "Hours of development",
     statsDesigners: "Top Designers approved",
     statsCompanies: "Companies trusted",
     statsArticles: "Research articles",
 
     // Blog section
-    blogTrends: "New AI Interior Design Trends",
+    blogTrends: "Blogs",
     blogDescription:
       "The latest industry news, interviews, technologies, and resources on free interior design software and AI room planner.",
     realEstateLandscape:
@@ -1934,12 +2110,16 @@ export const translations: Record<Language, Translations> = {
     sendRequest: "Send Request",
     yourName: "Your name",
     yourCompanyName: "Your company name",
+    startFreeTrial: "Start Free Trial",
+    contactUs: "Contact Us",
+    seeItForYourself: "See it for yourself",
+    culminationQuantitativeResearch: "The culmination of quantitative research",
 
     // Collaborators Page
     collaborators: "Collaborators",
     becomeCollaborator: "Bring Vision to Life.",
     joinOurNetwork: "Help 20,000+ Creators Turn Ideas Into Spaces.",
-    collaboratorHeroDescription: "Thousands of AI-generated concepts are born every week on Styly — bold interiors, experimental architecture, immersive spaces. Now, they need the creative minds to shape them into reality.",
+    collaboratorHeroDescription: "Every week, thousands of new AI concepts are created on Styly. Join the creative minds turning them into reality.",
     becomeDesignPartner: "Become a Design Partner",
     freeAndQuick: "It's free, and takes just 2 minutes.",
 
@@ -1960,11 +2140,11 @@ export const translations: Record<Language, Translations> = {
     stylyAdvantageDescription: "Be featured as a Verified Styly Partner and access pre-qualified clients.",
     getDiscoveredBy: "Get discovered by clients who:",
     haveAIDesigns: "Have AI-generated design previews",
-    haveAIDesignsDescription: "Skip the guesswork — clients already know their style",
+    haveAIDesignsDescription: "Skip the guesswork. Clients already know their style.",
     knowStyleSpace: "Know their style and space",
-    knowStyleSpaceDescription: "They've already made key decisions, saving you time",
+    knowStyleSpaceDescription: "They've already made key decisions, saving you time.",
     activelyLooking: "Are actively looking for a professional",
-    activelyLookingDescription: "No more tire kickers — only serious clients",
+    activelyLookingDescription: "No more tire kickers. Only serious clients.",
     curatedMatchmaking: "curated client matchmaking",
     notJustLeadGeneration: "This is not just lead generation. It's",
 
@@ -1984,23 +2164,23 @@ export const translations: Record<Language, Translations> = {
     noCommissionsDescription: "No platform lock-in. You keep 100% of your deals.",
 
     // Comparison Chart Section
-    paymentBenefits: "PAYMENT BENEFITS",
-    comparisonChart: "COMPARISON CHART",
-    traditionalAgencies: "TRADITIONAL AGENCIES",
-    withoutAI: "(WITHOUT AI)",
-    vs: "VS",
-    styly: "STYLY",
-    leadCost: "LEAD COST",
-    monthlyLeadVolume: "MONTHLY LEAD VOLUME",
-    aiCompetency: "AI COMPETENCY",
-    marketPosition: "MARKET POSITION",
-    serviceEvolution: "SERVICE EVOLUTION",
-    designPreferenceUnderstanding: "DESIGN PREFERENCE UNDERSTANDING",
-    monthlyTraffic: "MONTHLY TRAFFIC",
-    globalReach: "GLOBAL REACH",
-    portfolioViewsOnline: "PORTFOLIO VIEWS ONLINE",
-    clientBase: "CLIENT BASE",
-    futureReadiness: "FUTURE READINESS",
+    paymentBenefits: "Benefits",
+    comparisonChart: "Comparison chart",
+    traditionalAgencies: "Traditional agencies",
+    withoutAI: "(without AI)",
+    vs: "Vs",
+    styly: "Styly",
+    leadCost: "Lead cost",
+    monthlyLeadVolume: "Monthly lead volume",
+    aiCompetency: "Ai competency",
+    marketPosition: "Market position",
+    serviceEvolution: "Service evolution",
+    designPreferenceUnderstanding: "Design preference understanding",
+    monthlyTraffic: "Monthly traffic",
+    globalReach: "Global reach",
+    portfolioViewsOnline: "Portfolio views online",
+    clientBase: "Client base",
+    futureReadiness: "Future readiness",
     joinStylyTransform: "Join Styly today and transform your business with AI-powered advantages",
     becomeCertifiedPro: "Become a Certified Pro",
 
@@ -2127,7 +2307,7 @@ export const translations: Record<Language, Translations> = {
     facebook: "Facebook",
     // Navbar
     pricing: "Tarifs",
-    blog: "Blog",
+    blog: "Blogue",
     signIn: "Connexion",
     expertDesignTipsText:
       "Conseils de design d'experts pour améliorer vos intérieurs.",
@@ -2267,14 +2447,13 @@ export const translations: Record<Language, Translations> = {
     footerTerms: "Conditions",
     footerPrivacy: "Confidentialité",
     footerCopyright: "© 2024 STYLY. Tous droits réservés.",
-    footerSlogan:
-      "La révolution du design intérieur IA : redéfinir la décoration intérieure avec notre logiciel design intérieur gratuit.",
+    footerSlogan: "rendre le design haut de gamme accessible, durable et agréable pour tous.",
     footerLogin: "Se connecter",
     footerSignup: "S'inscrire",
     footerCopyrightYear: "Copyright 2025 STYLY",
     footerVideoGuide: "Guide Vidéo",
     footerCookieSettings: "Paramètres des cookies",
-    footerBlog: "Blog",
+    footerBlog: "Blogue",
 
     // Cookie Settings popup
     cookieSettingsTitle: "Paramètres des cookies",
@@ -2399,13 +2578,13 @@ export const translations: Record<Language, Translations> = {
     // Stats section
     statsHeading1: "STYLY : Pas le hasard, mais l'aboutissement d'une",
     statsHeading2: "recherche quantitative rigoureuse.",
-    statsHours: "heures de développement",
+    statsHours: "Heures de développement",
     statsDesigners: "Top Designers approuvés",
     statsCompanies: "Entreprises de confiance",
     statsArticles: "Articles de recherche",
 
     // Blog section
-    blogTrends: "Nouvelles Tendances Design Intérieur IA",
+    blogTrends: "Blogue",
     blogDescription:
       "Les dernières actualités du secteur, interviews, technologies et ressources sur le logiciel design intérieur gratuit et planificateur chambre IA.",
     realEstateLandscape:
@@ -3181,12 +3360,16 @@ export const translations: Record<Language, Translations> = {
     sendRequest: "Envoyer la Demande",
     yourName: "Votre nom",
     yourCompanyName: "Nom de votre entreprise",
+    startFreeTrial: "Commencer l'essai gratuit",
+    contactUs: "Contactez-nous",
+    seeItForYourself: "Voyez par vous-même",
+    culminationQuantitativeResearch: "L'aboutissement de la recherche quantitative",
 
     // Collaborators Page
     collaborators: "Collaborateurs",
     becomeCollaborator: "Donnez Vie à la Vision.",
     joinOurNetwork: "Aidez 20 000+ Créateurs à Transformer les Idées en Espaces.",
-    collaboratorHeroDescription: "Des milliers de concepts générés par IA naissent chaque semaine sur Styly — intérieurs audacieux, architecture expérimentale, espaces immersifs. Maintenant, ils ont besoin d'esprits créatifs pour les façonner en réalité.",
+    collaboratorHeroDescription: "Chaque semaine, des milliers de concepts IA voient le jour sur Styly. Rejoignez les créatifs qui les rendent réels.",
     becomeDesignPartner: "Devenir Partenaire Design",
     freeAndQuick: "C'est gratuit et ne prend que 2 minutes.",
 
@@ -3231,7 +3414,7 @@ export const translations: Record<Language, Translations> = {
     noCommissionsDescription: "Aucun verrouillage de plateforme. Vous gardez 100% de vos contrats.",
 
     // Comparison Chart Section
-    paymentBenefits: "AVANTAGES FINANCIERS",
+    paymentBenefits: "Avantages",
     comparisonChart: "TABLEAU COMPARATIF",
     traditionalAgencies: "AGENCES TRADITIONNELLES",
     withoutAI: "(SANS IA)",
