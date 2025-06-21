@@ -116,7 +116,9 @@ const Navbar: React.FC = () => {
         <div className="relative group">
           <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-orange-200 via-orange-300 to-orange-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
           <a
-            href="https://app.styly.io"
+            href="https://app.styly.io/signin"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-sm lg:text-base transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-orange-500/30 border border-transparent whitespace-nowrap z-10 font-baloo"
             aria-label="Sign In to STYLY AI"
           >
@@ -212,13 +214,15 @@ const Navbar: React.FC = () => {
             {t.servicesAPI}
           </Link>
 
-          <Link
-            to="/signin"
+          <a
+            href="https://app.styly.io/signin"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-orange-500 text-white font-bold py-3 rounded-lg text-center hover:bg-orange-600 transition-all mt-2 font-baloo"
             onClick={() => setMobileMenuOpen(false)}
           >
             {t.signIn}
-          </Link>
+          </a>
           <div className="mt-4 pt-4 border-t border-gray-100">
             <div className="text-gray-600 text-sm mb-2">Select Language:</div>
             <div className="flex gap-2">
