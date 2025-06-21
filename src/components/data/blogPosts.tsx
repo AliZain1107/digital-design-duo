@@ -386,7 +386,7 @@ export const blogPosts: BlogPost[] = [
     id: 36,
     title: "The Good, The Bad, and The Room Planner AI: Sarah Johnson's Honest Styly.io Evaluations",
     date: "Jul 25, 2024",
-    image: "/mini_magick20250608-11056-rtsk42.jpg",
+    image: "/room-planner-ai-sarah-johnson-evaluations.webp",
     slug: "room-planner-ai-sarah-johnson-styly-evaluations",
     slugFr: "planificateur-chambre-ia-evaluations-sarah-johnson-styly",
     Component: RoomPlannerAISarahJohnsonEvaluations,

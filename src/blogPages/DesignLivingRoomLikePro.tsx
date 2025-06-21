@@ -97,12 +97,12 @@ const DesignLivingRoomLikePro: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
-                src="/mini_magick20250608-11056-hjqk6b.jpg"
+                src="/living-room-design-ideas-ai.webp"
                 alt="Idées intérieur maison Styly - Design moderne avec IA"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
-                src="/mini_magick20250608-11056-iz7vmy.jpg"
+                src="/ai-home-design-trends-budget.webp"
                 alt="Collection styles design intérieur - Aménagement contemporain"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
@@ -283,12 +283,12 @@ const DesignLivingRoomLikePro: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
-                src="/mini_magick20250608-11056-hjqk6b.jpg"
+                src="/living-room-design-ideas-ai.webp"
                 alt="Home Interior Ideas Styly - Modern AI design concepts"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
-                src="/mini_magick20250608-11056-iz7vmy.jpg"
+                src="/ai-home-design-trends-budget.webp"
                 alt="Interior Design Styles Collection - Contemporary layouts"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />

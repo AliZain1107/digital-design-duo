@@ -113,12 +113,12 @@ const RoomPlannerAISarahJohnsonEvaluations: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
               <img
-                src="/mini_magick20250608-11056-rtsk42.jpg"
+                src="/ai-room-designer-before-after.webp"
                 alt="Avant-après designer chambre IA - Transformation spectaculaire"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src="/mini_magick20250608-11056-s7k6sm.jpg"
+                src="/ai-redecorate-feature-results.webp"
                 alt="Résultats fonctionnalité redécoration IA - Design moderne"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
