@@ -165,7 +165,7 @@ const Hero: React.FC = () => {
             <p className="text-base sm:text-lg md:text-xl font-bold leading-snug text-gray-600 tracking-wide animate-fade-in font-baloo">
               {language === 'fr'
                 ? "Téléchargez une photo et voyez votre espace vide devenir une pièce meublée et réaliste, propulsée par l'IA. Aucun outil. Aucun téléchargement. Juste des résultats."
-                : "Upload a photo and see your empty space become a beautifully furnished, realistic room—powered by AI. No tools. No downloads. Just results."}
+                : "Upload a photo and see your empty space become a beautifully furnished, realistic room. No tools. No downloads. Just results."}
             </p>
           </div>
           {/* Hero video with fade-in animation and custom controls on hover */}

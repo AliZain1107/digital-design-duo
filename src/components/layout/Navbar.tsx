@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
           <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
           <Link
             to="/collaborateurs"
-            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/collaborateurs") ? "border-purple-500" : "border-transparent"}`}
+            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/collaborateurs") ? "border-purple-500 animate-border-glow" : "border-transparent"}`}
             aria-label="Go to Styly Pro"
           >
             {language === "fr" ? "Styly Pro" : "Styly Pro"}
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
           <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
           <Link
             to="/services-api"
-            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/services-api") ? "border-purple-500" : "border-transparent"}`}
+            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/services-api") ? "border-purple-500 animate-border-glow" : "border-transparent"}`}
             aria-label="Go to API"
           >
             {t.servicesAPI}
@@ -130,7 +130,7 @@ const Navbar: React.FC = () => {
           <span className="absolute inset-0 rounded-md p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
           <DropdownMenu>
             <DropdownMenuTrigger
-              className="relative bg-white flex items-center gap-1 justify-center py-2 px-2 rounded-md transition-colors duration-200 hover:bg-purple-50 hover:scale-105 z-10 border border-transparent focus:border-transparent active:border-transparent outline-none data-[state=open]:border-purple-500 min-w-[36px]"
+              className="relative bg-white flex items-center gap-1 justify-center py-2 px-2 rounded-md transition-colors duration-200 hover:bg-purple-50 hover:scale-105 z-10 border border-transparent focus:border-transparent active:border-transparent outline-none data-[state=open]:border-purple-500 data-[state=open]:animate-border-glow min-w-[36px]"
             >
               <span className="text-lg">
                 {language === "en" ? "🇬🇧" : "🇫🇷"}

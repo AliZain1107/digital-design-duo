@@ -26,6 +26,7 @@ import {
   Phone,
   ExternalLink
 } from "lucide-react";
+import { useCountUp } from "../components/home/Stats";
 
 const ServicesAPI: React.FC = () => {
   const { language, setLanguage, t } = useContext(LanguageContext);
@@ -68,7 +69,7 @@ const ServicesAPI: React.FC = () => {
   const apiServices = [
     {
       id: 1,
-      name: language === "fr" ? "API Génération de Sols IA" : "AI Floor Generation API",
+      name: language === "fr" ? "API Génération de Sols" : "Floor Generation API",
       description: language === "fr"
         ? "Générez des designs de sols réalistes et personnalisés en quelques secondes"
         : "Generate realistic and customized floor designs in seconds",
@@ -80,7 +81,7 @@ const ServicesAPI: React.FC = () => {
     },
     {
       id: 2,
-      name: language === "fr" ? "API Génération de Murs IA" : "AI Wall Generation API",
+      name: language === "fr" ? "API Génération de Murs" : "Wall Generation API",
       description: language === "fr"
         ? "Créez des designs de murs sophistiqués avec textures et couleurs"
         : "Create sophisticated wall designs with textures and colors",
@@ -92,7 +93,7 @@ const ServicesAPI: React.FC = () => {
     },
     {
       id: 3,
-      name: language === "fr" ? "API Générateur de Moodboard IA" : "AI Moodboard Generator API",
+      name: language === "fr" ? "API Générateur de Moodboard" : "Moodboard Generator API",
       description: language === "fr"
         ? "Créez des moodboards cohérents et inspirants automatiquement"
         : "Create cohesive and inspiring moodboards automatically",
@@ -104,7 +105,7 @@ const ServicesAPI: React.FC = () => {
     },
     {
       id: 4,
-      name: language === "fr" ? "API Amélioration Immobilière IA" : "AI Real Estate Enhancement API",
+      name: language === "fr" ? "API Amélioration Immobilière" : "Real Estate Enhancement API",
       description: language === "fr"
         ? "Transformez les photos immobilières avec le home staging virtuel"
         : "Transform real estate photos with virtual home staging",
@@ -116,7 +117,7 @@ const ServicesAPI: React.FC = () => {
     },
     {
       id: 5,
-      name: language === "fr" ? "API Visualisation Produit IA" : "AI Product Visualization API",
+      name: language === "fr" ? "API Visualisation Produit" : "Product Visualization API",
       description: language === "fr"
         ? "Intégrez des produits dans des environnements réalistes"
         : "Integrate products into realistic environments",
@@ -127,6 +128,83 @@ const ServicesAPI: React.FC = () => {
         : ["Realistic placement", "Adaptive lighting", "Automatic context", "E-commerce ready"]
     }
   ];
+
+  // Animated counters for API Advantages section
+  const uptimeCounter = useCountUp(99.9, 2000);
+  const responseTimeCounter = useCountUp(2, 2000);
+  const stylesCounter = useCountUp(50, 2000);
+  const supportCounter = useCountUp(24, 2000);
+  const apiAdvantageCounters = [uptimeCounter, responseTimeCounter, stylesCounter, supportCounter];
+  const apiAdvantageNumbers = [99.9, 2, 50, 24];
+
+  // Ref for API Advantages section
+  const apiAdvantagesRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            uptimeCounter.setIsIntersecting(true);
+            responseTimeCounter.setIsIntersecting(true);
+            stylesCounter.setIsIntersecting(true);
+            supportCounter.setIsIntersecting(true);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    const refCurrent = apiAdvantagesRef.current;
+    if (refCurrent) {
+      observer.observe(refCurrent);
+    }
+    return () => {
+      if (refCurrent) {
+        observer.unobserve(refCurrent);
+      }
+    };
+  }, [uptimeCounter, responseTimeCounter, stylesCounter, supportCounter]);
+
+  // Typewriter animation for code example
+  const codeString = `// ${language === "fr" ? "Générer un design de sol IA" : "Generate AI floor design"}
+const response = await fetch('https://api.styly.io/v1/floor-generation', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    style: 'modern',
+    material: 'hardwood',
+    room_type: 'living_room',
+    dimensions: { width: 400, height: 300 }
+  })
+});
+
+const result = await response.json();
+console.log(result.design_url); // ${language === "fr" ? "URL du design généré" : "Generated design URL"}`;
+  const nextLine = language === "fr"
+    ? "// Essayez-le maintenant sur votre plateforme."
+    : "// Try it now on your platform.";
+  const [typed, setTyped] = React.useState("");
+  const [showNext, setShowNext] = React.useState(false);
+  React.useEffect(() => {
+    let i = 0;
+    let timeout: NodeJS.Timeout;
+    function type() {
+      if (i <= codeString.length) {
+        setTyped(codeString.slice(0, i));
+        i++;
+        timeout = setTimeout(type, 7); // really fast
+      } else {
+        setShowNext(true);
+      }
+    }
+    setTyped("");
+    setShowNext(false);
+    type();
+    return () => clearTimeout(timeout);
+  }, [language, codeString]);
 
   return (
     <div className="bg-white flex flex-col w-full min-h-screen" key={`services-api-${language}`}>
@@ -142,115 +220,145 @@ const ServicesAPI: React.FC = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-purple-100/30 to-white py-20">
+      <section className="bg-white py-24 relative overflow-hidden">
+        {/* Animated shimmer background (copied from homepage) */}
+        <div className="absolute inset-0 overflow-hidden" style={{ opacity: 0.13 }}>
+          <div
+            className="absolute inset-0 w-full h-full animate-shimmer-bg"
+            style={{
+              background: 'linear-gradient(90deg, transparent 0%, rgba(147, 51, 234, 0.2) 20%, rgba(249, 115, 22, 0.3) 50%, rgba(147, 51, 234, 0.2) 80%, transparent 100%)',
+              width: '200%',
+              height: '100%',
+              filter: 'blur(1px)'
+            }}
+          ></div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="flex flex-col items-center text-center">
-            <div className="inline-flex items-center bg-purple-100 rounded-full px-6 py-2 mb-6">
-              <Code className="w-5 h-5 text-purple-600 mr-2" />
-              <span className="text-purple-800 font-medium">
-                {language === "fr" ? "API Développeurs" : "Developer APIs"}
-              </span>
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
-              {language === "fr" ? "Suite API IA Styly" : "Styly AI API Suite"}
+              {language === "fr" ? "Suite d'APIs" : "API Suite"}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mb-8 animate-fade-in">
+            <p className="text-base sm:text-lg md:text-xl font-bold leading-snug text-gray-600 tracking-wide max-w-4xl mx-auto mb-8 animate-fade-in">
               {language === "fr" 
-                ? "La Plateforme d'Intelligence Visuelle la Plus Avancée pour le Design, le Retail et l'Immobilier"
-                : "The Most Advanced Visual Intelligence Platform for Design, Retail & Real Estate"
+                ? "La Plateforme d'Intelligence Visuelle la Plus Avancée pour le Design, le Retail et l'Immobilier."
+                : "The Most Advanced Visual Intelligence Platform for Design, Retail & Real Estate."
               }
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
-              <button
-                className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-8 py-3 rounded-full transition-all duration-200 inline-flex items-center justify-center text-lg"
-                onClick={() => setIsContactFormOpen(true)}
-              >
-                {language === "fr" ? "Demander l'Accès" : "Request Access"} <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-              <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-medium px-8 py-3 rounded-full transition-all duration-200 text-lg">
-                {language === "fr" ? "Explorer la Documentation" : "Explore API Docs"} <ExternalLink className="ml-2 h-5 w-5" />
-              </button>
+              <div className="relative group">
+                <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+                <button
+                  className="relative flex items-center justify-center py-4 px-8 rounded-lg bg-gradient-to-r from-purple-600 to-purple-700 text-white font-bold text-lg transition-all duration-200 hover:scale-105 hover:-translate-y-1 shadow-lg border border-transparent whitespace-nowrap z-10 font-baloo overflow-hidden"
+                  style={{minWidth: '200px'}} // scale for hero
+                  onClick={() => setIsContactFormOpen(true)}
+                >
+                  <span className="relative flex items-center z-10">
+                    {language === "fr" ? "Demander l'Accès" : "Request Access"}
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </span>
+                  <span className="absolute inset-0 rounded-lg pointer-events-none" style={{boxShadow: '0 0 0 2px rgba(168,85,247,0.3), 0 0 16px 4px rgba(168,85,247,0.15)'}} />
+                </button>
+              </div>
+              <div className="relative group">
+                <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+                <button
+                  className="relative flex items-center justify-center py-4 px-8 rounded-lg bg-white text-purple-700 font-bold text-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10 font-baloo"
+                  style={{minWidth: '200px'}} // scale for hero
+                >
+                  <span className="flex items-center">
+                    {language === "fr" ? "Explorer la Documentation" : "Explore API Docs"}
+                    <ExternalLink className="ml-2 h-5 w-5" />
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        {/* Seamless blend to white at bottom (matches homepage) */}
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none z-20"></div>
       </section>
 
-      {/* Value Proposition Section */}
-      <section className="bg-white py-16">
+      {/* API Advantages Section (moved up) */}
+      <section ref={apiAdvantagesRef} className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {language === "fr" ? "Pourquoi Choisir Nos APIs" : "Why Choose Our APIs"}
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              {language === "fr"
+                ? "Pourquoi Choisir Nos APIs ?"
+                : "Why Choose Our APIs?"
+              }
             </h2>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-8 h-8 text-green-600" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {/* Advantage Card 1 */}
+            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="text-4xl md:text-6xl font-bold mb-4">
+                {Number(uptimeCounter.count).toFixed(1)}
+                <span className="align-super text-2xl md:text-3xl">%</span>
               </div>
-              <h3 className="font-semibold text-lg mb-2">
-                {language === "fr" ? "Ultra-Rapide" : "Lightning-Fast"}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                {language === "fr" ? "~1.2 secondes" : "~1.2 seconds"}
+              <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                {language === "fr"
+                  ? "De disponibilité garantie avec notre infrastructure cloud robuste et redondante"
+                  : "Uptime guaranteed with our robust and redundant cloud infrastructure"
+                }
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Database className="w-8 h-8 text-blue-600" />
+            {/* Advantage Card 2 */}
+            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="text-4xl md:text-6xl font-bold mb-4">
+                &lt;{Number(responseTimeCounter.count)}
+                <span className="align-super text-2xl md:text-3xl">s</span>
               </div>
-              <h3 className="font-semibold text-lg mb-2">
-                {language === "fr" ? "Évolutif" : "Scalable"}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                {language === "fr" ? "Millions de requêtes" : "Millions of requests"}
+              <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                {language === "fr"
+                  ? "Temps de réponse moyen pour la génération de designs IA haute qualité"
+                  : "Average response time for high-quality AI design generation"
+                }
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-purple-600" />
+            {/* Advantage Card 3 */}
+            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="text-4xl md:text-6xl font-bold mb-4">
+                {Number(stylesCounter.count)}+
               </div>
-              <h3 className="font-semibold text-lg mb-2">
-                {language === "fr" ? "Prêt Production" : "Production-Ready"}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                {language === "fr" ? "99.9% uptime" : "99.9% uptime"}
+              <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                {language === "fr"
+                  ? "Styles de design et configurations personnalisables pour tous vos besoins"
+                  : "Design styles and customizable configurations for all your needs"
+                }
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Globe className="w-8 h-8 text-orange-600" />
+            {/* Advantage Card 4 */}
+            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="text-4xl md:text-6xl font-bold mb-4">
+                {Number(supportCounter.count)}/7
               </div>
-              <h3 className="font-semibold text-lg mb-2">
-                {language === "fr" ? "Global" : "Global"}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                {language === "fr" ? "CDN mondial" : "Worldwide CDN"}
+              <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                {language === "fr"
+                  ? "Support technique expert disponible pour vous accompagner dans votre intégration"
+                  : "Expert technical support available to assist with your integration"
+                }
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Premium API Services Section */}
-      <section className="relative py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50 overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(120,119,198,0.1),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(168,85,247,0.08),transparent_50%)]"></div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-purple-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight">
+      {/* Core APIs Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               {language === "fr" ? "Nos APIs Principales" : "Our Core APIs"}
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl font-bold leading-snug text-gray-600 tracking-wide max-w-4xl mx-auto mb-8">
               {language === "fr"
                 ? "5 APIs puissantes pour transformer votre plateforme avec l'intelligence artificielle"
-                : "5 powerful APIs to transform your platform with artificial intelligence"
+                : "Add next-gen AI design tools to your website or app."
               }
             </p>
           </div>
@@ -322,16 +430,16 @@ const ServicesAPI: React.FC = () => {
       </section>
 
       {/* Code Example Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               {language === "fr" ? "Intégration Simple" : "Simple Integration"}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl font-bold leading-snug text-gray-600 tracking-wide max-w-4xl mx-auto mb-8">
               {language === "fr"
-                ? "Commencez à utiliser nos APIs en quelques lignes de code"
-                : "Start using our APIs with just a few lines of code"
+                ? "Commencez à utiliser nos APIs en quelques lignes de code."
+                : "Start using our APIs with just a few lines of code."
               }
             </p>
           </div>
@@ -348,43 +456,87 @@ const ServicesAPI: React.FC = () => {
                   {language === "fr" ? "Exemple d'API" : "API Example"}
                 </span>
               </div>
-              <pre className="text-green-400 text-sm leading-relaxed">
-{`// ${language === "fr" ? "Générer un design de sol IA" : "Generate AI floor design"}
-const response = await fetch('https://api.styly.io/v1/floor-generation', {
-  method: 'POST',
-  headers: {
-    'Authorization': 'Bearer YOUR_API_KEY',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    style: 'modern',
-    material: 'hardwood',
-    room_type: 'living_room',
-    dimensions: { width: 400, height: 300 }
-  })
-});
-
-const result = await response.json();
-console.log(result.design_url); // ${language === "fr" ? "URL du design généré" : "Generated design URL"}`}
+              <pre className="text-green-400 text-sm leading-relaxed min-h-[320px]">
+                {typed}
+                {showNext && (
+                  <>
+                    {"\n"}
+                    <span className="text-orange-400">{nextLine}</span>
+                    <span className="inline-block w-2 h-5 align-middle bg-orange-400 animate-pulse ml-1" style={{borderRadius:2}}></span>
+                  </>
+                )}
               </pre>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Target Audience Section */}
-      <section className="bg-purple-50 py-16">
+      {/* Platform Compatibility Section */}
+      <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight">
+              {language === "fr" ? "Fonctionne parfaitement avec votre plateforme" : "Works seamlessly with your platform"}
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl font-bold leading-snug text-gray-600 tracking-wide max-w-4xl mx-auto mb-8">
+              {language === "fr"
+                ? "Compatible avec les principales plateformes e-commerce comme Shopify, WooCommerce, Magento, WordPress, Wix, et plus — aucun développement personnalisé nécessaire."
+                : "Seamlessly integrates with all major e-commerce and website platforms."
+              }
+            </p>
+          </div>
+
+          {/* Platform Compatibility Text */}
+          <div className="mb-8">
+            <div className="text-center rounded-2xl p-8 border border-purple-100 animate-gradient-x bg-[length:200%_200%] bg-gradient-to-r from-purple-50 via-orange-100 to-orange-50" style={{animation: 'gradient-x 6s ease-in-out infinite'}}>
+              <div className="max-w-4xl mx-auto">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600">
+                  {[
+                    "Shopify",
+                    "WooCommerce",
+                    "Magento",
+                    "WordPress",
+                    "BigCommerce",
+                    "Wix",
+                    "Squarespace",
+                    language === "fr" ? "+ Plus" : "+ More"
+                  ].map((platform, idx) => (
+                    <div
+                      key={platform}
+                      className={`flex items-center justify-center p-3 bg-white rounded-lg shadow-sm transition-all duration-200 hover:scale-105 hover:shadow-lg ${idx === 7 ? 'text-purple-600 font-medium' : 'font-medium'}`}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      <span>{platform}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <style>{`
+            @keyframes gradient-x {
+              0%, 100% { background-position: 0% 50%; }
+              50% { background-position: 100% 50%; }
+            }
+          `}</style>
+        </div>
+      </section>
+
+      {/* Target Audience Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               {language === "fr" ? "Pour Qui C'est Conçu" : "Who It's Built For"}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Monitor className="w-8 h-8 text-purple-600" />
+              {/* Animated Illustration Box */}
+              <div className="w-24 h-20 mx-auto mb-4 rounded-xl overflow-hidden shadow-md border border-purple-100 bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center relative animate-float">
+                <Monitor className="w-10 h-10 text-purple-600 animate-bounce-slow" />
               </div>
               <h3 className="font-semibold text-lg mb-3">
                 {language === "fr" ? "Plateformes Design" : "Design Platforms"}
@@ -398,8 +550,9 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
             </div>
 
             <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building className="w-8 h-8 text-blue-600" />
+              {/* Animated Illustration Box */}
+              <div className="w-24 h-20 mx-auto mb-4 rounded-xl overflow-hidden shadow-md border border-blue-100 bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center relative animate-float">
+                <Building className="w-10 h-10 text-blue-600 animate-bounce-slow" />
               </div>
               <h3 className="font-semibold text-lg mb-3">
                 {language === "fr" ? "Immobilier" : "Real Estate"}
@@ -413,8 +566,9 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
             </div>
 
             <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <ShoppingCart className="w-8 h-8 text-green-600" />
+              {/* Animated Illustration Box */}
+              <div className="w-24 h-20 mx-auto mb-4 rounded-xl overflow-hidden shadow-md border border-green-100 bg-gradient-to-br from-green-50 to-lime-50 flex items-center justify-center relative animate-float">
+                <ShoppingCart className="w-10 h-10 text-green-600 animate-bounce-slow" />
               </div>
               <h3 className="font-semibold text-lg mb-3">
                 {language === "fr" ? "E-commerce" : "E-commerce"}
@@ -428,8 +582,9 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
             </div>
 
             <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Smartphone className="w-8 h-8 text-orange-600" />
+              {/* Animated Illustration Box */}
+              <div className="w-24 h-20 mx-auto mb-4 rounded-xl overflow-hidden shadow-md border border-orange-100 bg-gradient-to-br from-orange-50 to-yellow-50 flex items-center justify-center relative animate-float">
+                <Smartphone className="w-10 h-10 text-orange-600 animate-bounce-slow" />
               </div>
               <h3 className="font-semibold text-lg mb-3">
                 {language === "fr" ? "Applications Mobiles" : "Mobile Apps"}
@@ -445,189 +600,11 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
         </div>
       </section>
 
-      {/* Platform Compatibility Section */}
-      <section className="relative bg-gradient-to-br from-slate-50 via-white to-purple-50/30 py-20 overflow-hidden">
-        {/* Subtle background pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.03),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(168,85,247,0.04),transparent_50%)]"></div>
-
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight">
-              {language === "fr" ? "Fonctionne parfaitement avec votre plateforme" : "Works seamlessly with your platform"}
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
-              {language === "fr"
-                ? "Compatible avec les principales plateformes e-commerce comme Shopify, WooCommerce, Magento, WordPress, Wix, et plus — aucun développement personnalisé nécessaire."
-                : "Compatible with leading e-commerce platforms like Shopify, WooCommerce, Magento, WordPress, Wix, and more — no custom development needed."
-              }
-            </p>
-          </div>
-
-          {/* Platform Compatibility Text */}
-          <div className="mb-14">
-            <div className="text-center bg-gradient-to-r from-purple-50 to-orange-50 rounded-2xl p-8 border border-purple-100">
-              <div className="max-w-4xl mx-auto">
-                <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-                  {language === "fr" ? "Compatible avec toutes les principales plateformes" : "Compatible with all major platforms"}
-                </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600">
-                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
-                    <span className="font-medium">Shopify</span>
-                  </div>
-                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
-                    <span className="font-medium">WooCommerce</span>
-                  </div>
-                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
-                    <span className="font-medium">Magento</span>
-                  </div>
-                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
-                    <span className="font-medium">WordPress</span>
-                  </div>
-                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
-                    <span className="font-medium">BigCommerce</span>
-                  </div>
-                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
-                    <span className="font-medium">Wix</span>
-                  </div>
-                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
-                    <span className="font-medium">Squarespace</span>
-                  </div>
-                  <div className="flex items-center justify-center p-3 bg-white rounded-lg shadow-sm">
-                    <span className="font-medium text-purple-600">+ {language === "fr" ? "Plus" : "More"}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {language === "fr" ? "Pourquoi les Équipes Choisissent Styly APIs" : "Why Teams Choose Styly APIs"}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Cpu className="w-8 h-8 text-purple-600" />
-              </div>
-              <h3 className="font-semibold text-lg mb-3">
-                {language === "fr" ? "IA de Pointe" : "Cutting-Edge AI"}
-              </h3>
-              <p className="text-gray-600">
-                {language === "fr"
-                  ? "Modèles d'IA entraînés sur millions d'images de design"
-                  : "AI models trained on millions of design images"
-                }
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="font-semibold text-lg mb-3">
-                {language === "fr" ? "Déploiement Rapide" : "Fast Deployment"}
-              </h3>
-              <p className="text-gray-600">
-                {language === "fr"
-                  ? "Intégration en moins de 30 minutes avec notre SDK"
-                  : "Integration in under 30 minutes with our SDK"
-                }
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="font-semibold text-lg mb-3">
-                {language === "fr" ? "Support Expert" : "Expert Support"}
-              </h3>
-              <p className="text-gray-600">
-                {language === "fr"
-                  ? "Équipe dédiée pour votre intégration et optimisation"
-                  : "Dedicated team for your integration and optimization"
-                }
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* API Advantages Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              {language === "fr"
-                ? "Pourquoi Choisir Nos APIs ?"
-                : "Why Choose Our APIs?"
-              }
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            {/* Advantage Card 1 */}
-            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl">
-              <div className="text-4xl md:text-6xl font-bold mb-4">99.9%</div>
-              <p className="text-lg md:text-xl leading-relaxed opacity-95">
-                {language === "fr"
-                  ? "de disponibilité garantie avec notre infrastructure cloud robuste et redondante"
-                  : "uptime guaranteed with our robust and redundant cloud infrastructure"
-                }
-              </p>
-            </div>
-
-            {/* Advantage Card 2 */}
-            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl">
-              <div className="text-4xl md:text-6xl font-bold mb-4">&lt;2s</div>
-              <p className="text-lg md:text-xl leading-relaxed opacity-95">
-                {language === "fr"
-                  ? "temps de réponse moyen pour la génération de designs IA haute qualité"
-                  : "average response time for high-quality AI design generation"
-                }
-              </p>
-            </div>
-
-            {/* Advantage Card 3 */}
-            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl">
-              <div className="text-4xl md:text-6xl font-bold mb-4">50+</div>
-              <p className="text-lg md:text-xl leading-relaxed opacity-95">
-                {language === "fr"
-                  ? "styles de design et configurations personnalisables pour tous vos besoins"
-                  : "design styles and customizable configurations for all your needs"
-                }
-              </p>
-            </div>
-
-            {/* Advantage Card 4 */}
-            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 md:p-10 text-white shadow-xl">
-              <div className="text-4xl md:text-6xl font-bold mb-4">24/7</div>
-              <p className="text-lg md:text-xl leading-relaxed opacity-95">
-                {language === "fr"
-                  ? "support technique expert disponible pour vous accompagner dans votre intégration"
-                  : "expert technical support available to assist with your integration"
-                }
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Use Cases Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               {language === "fr" ? "Ce Que Vous Pouvez Construire" : "What You Can Build With It"}
             </h2>
           </div>
@@ -689,7 +666,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
       </section>
 
       {/* Premium CTA Section */}
-      <section className="py-20">
+      <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative bg-gradient-to-br from-orange-500 via-red-500 to-orange-600 rounded-3xl p-12 md:p-16 overflow-hidden shadow-2xl">
             {/* Decorative Background Pattern */}
@@ -702,7 +679,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
 
             {/* Content */}
             <div className="relative z-10 text-center max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 {language === "fr"
                   ? "Prêt à élever votre entreprise avec des solutions IA sur mesure ?"
                   : "Ready to elevate your business with tailored AI solutions?"
@@ -716,7 +693,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
               </p>
               <button
                 onClick={() => setIsContactFormOpen(true)}
-                className="bg-white text-orange-600 hover:bg-gray-50 font-semibold px-10 py-4 rounded-2xl transition-all duration-300 inline-flex items-center justify-center text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
+                className="inline-block bg-white text-orange-600 font-bold text-lg md:text-xl px-10 py-4 rounded-full shadow-lg hover:bg-purple-600 hover:text-white transition-all duration-200 font-baloo z-10 animate-cta-pulse"
               >
                 {language === "fr" ? "Nous Contacter" : "Contact Us"}
               </button>
@@ -806,6 +783,19 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
       )}
 
       <Footer />
+
+      <style>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-8px); }
+        }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        @keyframes bounce-slow {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-4px); }
+        }
+        .animate-bounce-slow { animation: bounce-slow 2.5s infinite; }
+      `}</style>
     </div>
   );
 };

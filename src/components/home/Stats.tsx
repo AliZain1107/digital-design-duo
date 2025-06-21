@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 
-const useCountUp = (end: number, duration: number = 2000) => {
+export const useCountUp = (end: number, duration: number = 2000) => {
   const [count, setCount] = useState(0);
   const countRef = useRef(count);
   const [isIntersecting, setIsIntersecting] = useState(false);

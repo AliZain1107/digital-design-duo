@@ -280,20 +280,16 @@ const Testimonials: React.FC = () => {
     if (currentPage === 0 || animating) return;
     setDirection(-1);
     setAnimating(true);
-    timeoutRef.current = setTimeout(() => {
-      setCurrentPage((prev) => prev - 1);
-      setAnimating(false);
-    }, 100);
+    setCurrentPage((prev) => prev - 1);
+    setTimeout(() => setAnimating(false), 500); // match transition duration for smoothness
   };
 
   const goToNext = () => {
     if (currentPage === testimonials.length - 1 || animating) return;
     setDirection(1);
     setAnimating(true);
-    timeoutRef.current = setTimeout(() => {
-      setCurrentPage((prev) => prev + 1);
-      setAnimating(false);
-    }, 100);
+    setCurrentPage((prev) => prev + 1);
+    setTimeout(() => setAnimating(false), 500); // match transition duration for smoothness
   };
 
   const getCurrentTestimonials = () => {

@@ -990,7 +990,7 @@ export const translations: Record<Language, Translations> = {
     // Testimonials
     dontTakeOurWord: "Don't just take our word for it",
     hearFromCustomers:
-      "Hear from some of our amazing customers who used our product",
+      "Hear from some of our amazing customers who used our product.",
 
     // FAQ
     howItWorksFAQ: "How it works",
