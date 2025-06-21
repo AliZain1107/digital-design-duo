@@ -6,11 +6,11 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
   const { language, t } = useLanguage();
 
   const addAlternateLanguageLink = () => {
-    const currentSlug = language === "fr" 
-      ? "debloquer-puissance-ia-design-interieur-innovations" 
-      : "unlocking-power-ai-interior-design-latest-innovations";
-    const alternateSlug = language === "fr" 
-      ? "unlocking-power-ai-interior-design-latest-innovations" 
+    const currentSlug = language === "fr"
+      ? "debloquer-puissance-ia-design-interieur-innovations"
+      : "unlocking-the-power-of-ai-for-interior-design-your-guide-to-the-latest-innovations";
+    const alternateSlug = language === "fr"
+      ? "unlocking-the-power-of-ai-for-interior-design-your-guide-to-the-latest-innovations"
       : "debloquer-puissance-ia-design-interieur-innovations";
     const alternateLang = language === "fr" ? "en" : "fr";
     

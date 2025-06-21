@@ -56,7 +56,7 @@ export const blogPosts: BlogPost[] = [
     title: "Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations",
     date: "Jun 21, 2025",
     image: "/ai-virtual-reality-design-hero.webp",
-    slug: "unlocking-power-ai-interior-design-latest-innovations",
+    slug: "unlocking-the-power-of-ai-for-interior-design-your-guide-to-the-latest-innovations",
     slugFr: "debloquer-puissance-ia-design-interieur-innovations",
     Component: UnlockingPowerAIInteriorDesign,
   },
