@@ -166,7 +166,7 @@ const FuturisticInteriorDesignStyles: React.FC = () => {
                 Découvrez comment Styly IA peut vous aider à créer des espaces futuristes dès aujourd'hui avec nos outils de design avancés.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -333,7 +333,7 @@ const FuturisticInteriorDesignStyles: React.FC = () => {
                 Discover how Styly AI can help you create futuristic spaces today with our advanced design tools.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

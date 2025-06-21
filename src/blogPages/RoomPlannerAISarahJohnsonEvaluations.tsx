@@ -201,7 +201,7 @@ const RoomPlannerAISarahJohnsonEvaluations: React.FC = () => {
                 Pourquoi ne pas l'essayer ? Vous pourriez être surpris de ce que vous pouvez créer avec ce planificateur de chambre IA.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -387,7 +387,7 @@ const RoomPlannerAISarahJohnsonEvaluations: React.FC = () => {
                 Why not give it a try? You might be surprised at what you can create with this AI room planner.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

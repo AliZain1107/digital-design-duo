@@ -50,7 +50,7 @@ const BuildHouseAI: React.FC = () => {
         <div className="bg-purple-50 p-4 rounded-lg mt-3">
           <p className="text-purple-700 font-medium">
             <a
-              href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
@@ -117,7 +117,7 @@ const BuildHouseAI: React.FC = () => {
         <div className="bg-orange-50 p-4 rounded-lg mt-4">
           <p className="text-orange-700 font-medium">
             <a
-              href={language === "fr" ? "https://app.styly.io/?lang=fr" : "https://app.styly.io"}
+              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"

@@ -57,7 +57,7 @@ const SustainableDesignAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 À une époque où la conscience environnementale façonne nos choix quotidiens, le design d'intérieur durable n'est plus une tendance - c'est une nécessité. STYLY.io révolutionne l'approche du design éco-responsable en intégrant l'intelligence artificielle pour créer des espaces beaux, fonctionnels et respectueux de l'environnement. Notre{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}aide les utilisateurs à faire des choix de design conscients qui bénéficient à la fois à leur maison et à la planète.
@@ -118,7 +118,7 @@ const SustainableDesignAI: React.FC = () => {
                   Découvrez comment STYLY.io peut vous aider à concevoir des intérieurs beaux et durables pour un avenir plus vert.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Commencer le Design Durable
@@ -231,7 +231,7 @@ const SustainableDesignAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 In an era where environmental consciousness shapes our daily choices, sustainable interior design is no longer a trend—it's a necessity. STYLY.io is revolutionizing the approach to eco-friendly design by integrating artificial intelligence to create spaces that are beautiful, functional, and environmentally responsible. Our{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}helps users make conscious design choices that benefit both their homes and the planet.
@@ -292,7 +292,7 @@ const SustainableDesignAI: React.FC = () => {
                   Discover how STYLY.io can help you design beautiful, sustainable interiors for a greener future.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Start Sustainable Design

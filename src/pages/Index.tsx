@@ -362,7 +362,9 @@ const Index: React.FC = () => {
               }
             </p>
             <a
-              href="/signup"
+              href="https://app.styly.io/signin"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-white text-[#593286] font-bold text-lg md:text-xl px-10 py-4 rounded-full shadow-lg hover:bg-[#FA6F40] hover:text-white transition-all duration-200 font-baloo z-10 animate-cta-pulse"
             >
               {language === "fr"

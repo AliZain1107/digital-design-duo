@@ -185,7 +185,7 @@ const DesignLivingRoomLikePro: React.FC = () => {
                 Visitez Styly aujourd'hui et commencez votre voyage vers une maison conçue professionnellement. Avec Styly, concevoir votre salon comme un pro n'a jamais été aussi facile.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -371,7 +371,7 @@ const DesignLivingRoomLikePro: React.FC = () => {
                 Visit Styly today and start your journey to a professionally designed home. With Styly, designing your living room like a pro has never been easier.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

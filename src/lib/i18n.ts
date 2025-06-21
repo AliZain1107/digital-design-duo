@@ -44,6 +44,7 @@ export interface Translations {
   aiAssistantInteriorDesignPromptsTitle: string;
   stylyVivaTechPartnershipTitle: string;
   chatGPTInteriorDesignTitle: string;
+  unlockingPowerAIInteriorDesignTitle: string;
   footerTrademark: string;
 
   // Hero section
@@ -1539,6 +1540,7 @@ export const translations: Record<Language, Translations> = {
     aiAssistantInteriorDesignPromptsTitle: "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral",
     stylyVivaTechPartnershipTitle: "How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design",
     chatGPTInteriorDesignTitle: "Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design",
+    unlockingPowerAIInteriorDesignTitle: "Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations",
     footerTrademark: "styly.io® and styly® are registered trademarks of styly.io, Inc. All rights reserved.",
 
     // New Keys for Market Leaders
@@ -2763,6 +2765,7 @@ export const translations: Record<Language, Translations> = {
     aiAssistantInteriorDesignPromptsTitle: "Assistant IA en Design d'Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral",
     stylyVivaTechPartnershipTitle: "Comment Styly.io et Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA",
     chatGPTInteriorDesignTitle: "ChatGPT Peut-il Concevoir Votre Maison ? Explorer le Rôle de l'IA dans le Design d'Intérieur",
+    unlockingPowerAIInteriorDesignTitle: "Débloquer la Puissance de l'IA pour le Design Intérieur : Guide des Dernières Innovations",
     footerTrademark: "styly.io® et styly® sont des marques déposées de styly.io, Inc. Tous droits réservés.",
 
     marketOverview: "Aperçu du marché",

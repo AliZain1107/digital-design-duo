@@ -57,7 +57,7 @@ const BiophilicDesignAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Le design biophilique devient une tendance de plus en plus populaire dans les intérieurs domestiques. Cette philosophie de design se concentre sur l'intégration d'éléments naturels dans l'environnement de vie pour améliorer le bien-être et créer des espaces qui se sentent harmonieux et connectés à la nature. Avec l'IA de STYLY.io, créer des designs d'intérieur biophiliques est plus facile que jamais, vous permettant de mélanger harmonieusement la nature dans vos espaces de vie et d'explorer des façons innovantes de transformer votre maison. Notre{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}rend l'intégration de la nature accessible à tous.
@@ -136,7 +136,7 @@ const BiophilicDesignAI: React.FC = () => {
                   Transformez votre maison en un sanctuaire naturel avec les outils IA biophiliques de STYLY.io.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Commencer le Design Biophilique
@@ -238,7 +238,7 @@ const BiophilicDesignAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Biophilic design is becoming an increasingly popular trend in home interiors. This design philosophy focuses on incorporating natural elements into the living environment to enhance well-being and create spaces that feel harmonious and connected to nature. With STYLY.io AI, creating biophilic interior designs is easier than ever, allowing you to seamlessly blend nature into your living spaces and explore innovative ways to transform your home. Our{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}makes integrating nature accessible to everyone.
@@ -317,7 +317,7 @@ const BiophilicDesignAI: React.FC = () => {
                   Transform your home into a natural sanctuary with STYLY.io's biophilic AI tools.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Start Biophilic Design

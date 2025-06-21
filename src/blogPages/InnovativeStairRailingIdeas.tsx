@@ -186,7 +186,7 @@ const InnovativeStairRailingIdeas: React.FC = () => {
                 Explorez les possibilités avec Styly IA et élevez le design de votre maison avec des rampes d'escalier innovantes.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -373,7 +373,7 @@ const InnovativeStairRailingIdeas: React.FC = () => {
                 Explore the possibilities with Styly AI and elevate your home's design with innovative stair railings.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

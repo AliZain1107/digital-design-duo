@@ -137,7 +137,7 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
                     Experience the future of interior design with Styly.io's AI-powered tools. Create stunning, personalized spaces that reflect your unique style and needs.
                   </p>
                   <a 
-                    href="https://app.styly.io" 
+                    href="https://app.styly.io/signin" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -260,7 +260,7 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
                     Découvrez l'avenir du design intérieur avec les outils alimentés par l'IA de Styly.io. Créez des espaces magnifiques et personnalisés qui reflètent votre style et vos besoins uniques.
                   </p>
                   <a 
-                    href="https://app.styly.io" 
+                    href="https://app.styly.io/signin" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"

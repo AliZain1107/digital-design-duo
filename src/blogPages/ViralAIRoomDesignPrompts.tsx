@@ -60,7 +60,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Vous voulez transformer votre chambre en un espace magnifique sans engager un décorateur coûteux ? Vous avez de la chance ! Après avoir testé des centaines de prompts de{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   design de chambre IA
                 </a>
                 , je partage les plus efficaces qui génèrent constamment des résultats époustouflants avec STYLY.io. Ces prompts sont devenus viraux sur les réseaux sociaux pour une bonne raison - ils fonctionnent vraiment !
@@ -95,7 +95,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
                   Prêt à créer la chambre de vos rêves ? Utilisez ces prompts viraux avec STYLY.io et obtenez des résultats professionnels en quelques minutes.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Essayer Gratuitement
@@ -153,7 +153,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Want to transform your bedroom into a stunning space without hiring an expensive designer? You're in luck! After testing hundreds of{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room design
                 </a>
                 {" "}prompts, I'm sharing the most successful ones that consistently generate jaw-dropping results with STYLY.io. These prompts have gone viral on social media for good reason - they actually work! For more inspiration, check out our{" "}
@@ -444,7 +444,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
                   </li>
                 </ul>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105"
                 >
                   {language === "fr" ? "Commencer avec STYLY.io" : "Start with STYLY.io"}

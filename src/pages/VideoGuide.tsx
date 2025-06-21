@@ -178,7 +178,7 @@ const VideoGuide = () => {
             }
           </p>
           <a
-            href="https://app.styly.io/"
+            href="https://app.styly.io/signin"
             className="inline-flex items-center px-6 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300"
           >
             {language === "fr" ? "Commencer Gratuitement" : "Get Started Free"}

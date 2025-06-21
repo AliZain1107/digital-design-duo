@@ -57,7 +57,7 @@ const DataAIPoweredDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Dans le monde du design en constante évolution d'aujourd'hui, l'IA révolutionne la façon dont nous créons et expérimentons les espaces intérieurs. Chez STYLY.io, nous exploitons la puissance des données et de l'IA pour aider les utilisateurs à créer sans effort de beaux intérieurs fonctionnels. Nos outils de{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}et de design de maison IA rassemblent des insights puissants qui améliorent l'esthétique, simplifient les décisions et personnalisent l'expérience de design.
@@ -115,7 +115,7 @@ const DataAIPoweredDesign: React.FC = () => {
                   Explorez comment les insights basés sur les données transforment votre processus de design avec STYLY.io.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Commencer avec l'IA
@@ -209,7 +209,7 @@ const DataAIPoweredDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 In today's fast-evolving design world, AI is revolutionizing the way we create and experience interior spaces. At STYLY.io, we harness the power of data and AI to help users effortlessly craft beautiful, functional interiors. Our{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}and AI home design tools bring together powerful insights that enhance aesthetics, simplify decisions, and personalize the design experience.
@@ -267,7 +267,7 @@ const DataAIPoweredDesign: React.FC = () => {
                   Explore how data-driven insights transform your design process with STYLY.io.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Start with AI
