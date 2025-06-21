@@ -10,30 +10,18 @@ const Blog = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Detect language from URL path
+    // Detect language from URL path, but do not redirect for English
     let pathLang: Language;
     if (location.pathname.startsWith("/fr/blog") || location.pathname.startsWith("/fr")) {
       pathLang = "fr";
     } else if (location.pathname.startsWith("/en/blog") || location.pathname.startsWith("/en")) {
-      // Redirect English blog routes to external site
-      console.log("English blog route detected, redirecting to external site");
-      window.location.href = "https://www.styly.io/blog";
-      return;
+      pathLang = "en";
     } else {
       // Default to French for legacy /blog routes
       pathLang = "fr";
     }
     setLanguage(pathLang);
   }, [location.pathname, setLanguage]);
-
-  // Additional effect to handle language changes via language switcher
-  useEffect(() => {
-    // If language is switched to English while on blog page, redirect to external blog
-    if (language === "en") {
-      console.log("Language switched to English on blog page, redirecting to external blog");
-      window.location.href = "https://www.styly.io/blog";
-    }
-  }, [language]);
 
   // Scroll to top when component mounts
   useEffect(() => {

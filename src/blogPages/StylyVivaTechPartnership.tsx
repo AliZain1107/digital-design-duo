@@ -13,13 +13,13 @@ const StylyVivaTechPartnership: React.FC = () => {
 
   const seoData = {
     en: {
-      title: "How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design | Styly.io",
+      title: "How Styly & Viva Technology Are Shaping the Future of AI-Powered Design | Styly.io",
       description: "Discover how Styly.io's partnership with Viva Technology 2025 is revolutionizing AI interior design. Learn about our zero-friction platform, instant staging, and global expansion plans.",
       keywords: "AI interior design, AI room planner, virtual staging AI, free AI interior design, home design ai free, ai room design, ai for interior design, VivaTech, Viva Technology, startup showcase",
       ogImage: "/ai-interior-design-technology.webp"
     },
     fr: {
-      title: "Comment Styly.io et Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA | Styly.io",
+      title: "Comment Styly & Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA | Styly.io",
       description: "Découvrez comment le partenariat de Styly.io avec Viva Technology 2025 révolutionne le design intérieur IA. Plateforme sans friction, staging instantané et plans d'expansion mondiale.",
       keywords: "application d'aménagement intérieur gratuit, logiciel design interieur gratuit, ia design intérieur gratuit, simulateur deco interieur a partir d'une photo, home staging virtuel, logiciel decoration interieur, amenagement chambre, décoration intérieure, ia maison, ia room, interieur ai, home staging ia, VivaTech, Viva Technology, startup",
       ogImage: "/ai-interior-design-technology.webp"
@@ -39,7 +39,12 @@ const StylyVivaTechPartnership: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>{currentMeta.title}</title>
+        <title>
+          {language === "fr"
+            ? "Comment Styly & Viva Technology façonnent l'avenir du design assisté par IA"
+            : "How Styly & Viva Technology Are Shaping the Future of AI-Powered Design"
+          }
+        </title>
         <meta name="description" content={currentMeta.description} />
         <meta name="keywords" content={currentMeta.keywords} />
         <link rel="canonical" href={canonicalUrl} />
@@ -63,32 +68,34 @@ const StylyVivaTechPartnership: React.FC = () => {
         {language === "fr" ? (
           <>
             <article className="prose prose-lg max-w-none">
-
+              <h1 className="text-3xl font-bold text-gray-800 mb-6">
+                Comment <span className="font-davetica-wide">STYLY</span> & Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA
+              </h1>
               {/* TL;DR Section for GEO optimization */}
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-8">
                 <h2 className="text-lg font-semibold text-yellow-800 mb-2">
                   📋 TL;DR - Résumé Exécutif
                 </h2>
                 <p className="text-yellow-700">
-                  <strong>Styly.io rejoint VivaTech 2025</strong> pour révolutionner le design intérieur avec l'IA. Notre plateforme transforme les photos de pièces en designs professionnels en moins de 10 secondes, sans installation. Objectifs 2025 : expansion Paris-Berlin-NYC, bibliothèques de styles et API entreprise.
+                  <strong><span className="font-davetica-wide">STYLY</span> rejoint VivaTech 2025</strong> pour révolutionner le design intérieur. Notre plateforme transforme les photos de pièces en designs professionnels en moins de 10 secondes, sans installation. Objectifs 2025 : expansion Paris-Berlin-NYC, bibliothèques de styles et API entreprise.
                 </p>
               </div>
 
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
                 <h2 className="text-lg font-semibold text-blue-800 mb-2">
-                  🧠 Le Partenariat Styly.io × Viva Technology
+                  🧠 Le Partenariat <span className="font-davetica-wide">STYLY</span> × Viva Technology
                 </h2>
                 <p className="text-blue-700">
-                  Nous sommes ravis de rejoindre l'écosystème partenaires de VivaTech 2025, avec pour mission de réinventer le design d'intérieur grâce à la mise en scène par IA—accessible, instantanée, sans compétence requise.
+                  Nous sommes ravis de rejoindre l'écosystème partenaires de VivaTech 2025, avec pour mission de réinventer le design d'intérieur grâce à la mise en scène numérique—accessible, instantanée, sans compétence requise.
                 </p>
               </div>
 
               <p className="text-lg text-gray-700 mb-6">
-                Styly.io transforme chaque photo de pièce vide en un visuel aménagé époustouflant, en quelques secondes seulement. Aucune installation, aucun abonnement nécessaire.
+                <span className="font-davetica-wide">STYLY</span> transforme chaque photo de pièce vide en un visuel aménagé époustouflant, en quelques secondes seulement. Aucune installation, aucun abonnement nécessaire.
               </p>
 
               <p className="text-gray-700 mb-6">
-                Notre partenariat avec <a href="https://vivatechnology.com/partners/styly" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">VivaTech</a> marque une étape importante dans notre mission de démocratiser le <strong>design intérieur IA</strong>.
+                Notre partenariat avec <a href="https://vivatechnology.com/partners/styly" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">VivaTech</a> marque une étape importante dans notre mission de démocratiser le <strong>design intérieur numérique</strong>.
               </p>
 
               {/* Table of Contents for better structure */}
@@ -96,7 +103,7 @@ const StylyVivaTechPartnership: React.FC = () => {
                 <h3 className="text-lg font-semibold text-gray-800 mb-4">📚 Table des Matières</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• <a href="#pourquoi-vivatech" className="text-blue-600 hover:underline">Pourquoi VivaTech ?</a></li>
-                  <li>• <a href="#styly-avantages" className="text-blue-600 hover:underline">En quoi Styly.io se distingue</a></li>
+                  <li>• <a href="#styly-avantages" className="text-blue-600 hover:underline">En quoi <span className="font-davetica-wide">STYLY</span> se distingue</a></li>
                   <li>• <a href="#objectifs-2025" className="text-blue-600 hover:underline">Et maintenant avec VivaTech</a></li>
                   <li>• <a href="#faq" className="text-blue-600 hover:underline">Questions Fréquentes</a></li>
                 </ul>
@@ -122,18 +129,18 @@ const StylyVivaTechPartnership: React.FC = () => {
               </div>
 
               <h2 id="styly-avantages" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-                ⛳ En quoi Styly.io se distingue
+                ⛳ En quoi <span className="font-davetica-wide">STYLY</span> se distingue
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                 <img
                   src="/ai-interior-design-technology.webp"
-                  alt="Partenariat VivaTech Styly.io - Innovation design IA"
+                  alt="Partenariat VivaTech Styly.io - Innovation design numérique"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
                 <img
                   src="/ai-room-design-free.webp"
-                  alt="Showcase design intérieur IA - Transformation instantanée"
+                  alt="Showcase design intérieur - Transformation instantanée"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
               </div>
@@ -184,7 +191,7 @@ const StylyVivaTechPartnership: React.FC = () => {
               </h2>
 
               <p className="text-gray-700 mb-6">
-                Venez découvrir Styly.io en action au stand VivaTech. Professionnels ou passionnés, donnez vie à vos espaces.
+                Venez découvrir <span className="font-davetica-wide">STYLY</span> en action au stand VivaTech. Professionnels ou passionnés, donnez vie à vos espaces.
               </p>
 
               <p className="text-gray-700 mb-6">
@@ -192,7 +199,7 @@ const StylyVivaTechPartnership: React.FC = () => {
               </p>
 
               <p className="text-gray-700 mb-6">
-                #IA #DesignIntérieur #VivaTech #StylyAI #VirtualStaging #PropTech
+                #DesignIntérieur #VivaTech #Styly #VirtualStaging #PropTech
               </p>
 
               {/* FAQ Section for GEO optimization */}
@@ -201,104 +208,77 @@ const StylyVivaTechPartnership: React.FC = () => {
 
                 <div className="space-y-6">
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Q: Qu'est-ce que Styly.io exactement ?</h4>
-                    <p className="text-gray-700">R: Styly.io est une plateforme d'IA qui transforme les photos de pièces vides en designs d'intérieur professionnels en moins de 10 secondes, sans installation ni abonnement requis.</p>
+                    <h4 className="font-semibold text-gray-800 mb-2">Q: Qu'est-ce que <span className="font-davetica-wide">STYLY</span> exactement ?</h4>
+                    <p className="text-gray-700">R: <span className="font-davetica-wide">STYLY</span> est une plateforme qui transforme les photos de pièces vides en designs d'intérieur professionnels en moins de 10 secondes, sans installation ni abonnement requis.</p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Q: Pourquoi Styly.io a-t-elle choisi VivaTech comme partenaire ?</h4>
+                    <h4 className="font-semibold text-gray-800 mb-2">Q: Pourquoi <span className="font-davetica-wide">STYLY</span> a-t-elle choisi VivaTech comme partenaire ?</h4>
                     <p className="text-gray-700">R: VivaTech est le plus grand événement tech européen avec 150 000+ participants. Cette plateforme nous permet d'atteindre investisseurs, entreprises et médias internationaux pour accélérer notre croissance.</p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Q: Quels sont les avantages de l'IA pour le design intérieur ?</h4>
-                    <p className="text-gray-700">R: L'IA démocratise le design en le rendant accessible, instantané et abordable. Elle permet de visualiser des centaines d'options de design sans compétences techniques.</p>
+                    <h4 className="font-semibold text-gray-800 mb-2">Q: Quels sont les avantages du numérique pour le design intérieur ?</h4>
+                    <p className="text-gray-700">R: Le numérique démocratise le design en le rendant accessible, instantané et abordable. Il permet de visualiser des centaines d'options de design sans compétences techniques.</p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Q: Quels sont les objectifs de Styly.io pour 2025 ?</h4>
+                    <h4 className="font-semibold text-gray-800 mb-2">Q: Quels sont les objectifs de <span className="font-davetica-wide">STYLY</span> pour 2025 ?</h4>
                     <p className="text-gray-700">R: Expansion à Paris, Berlin et NYC, lancement de bibliothèques de styles thématiques, intégrations e-commerce/immobilier, et API entreprise pour partenaires.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
+                <h3 className="text-lg font-semibold text-orange-800 mb-2">
+                  🎯 Prêt à Transformer Votre Intérieur ?
+                </h3>
+                <p className="text-orange-700 mb-4">
+                  Découvrez la puissance de <span className="font-davetica-wide">STYLY</span>, l'outil qui révolutionne le design intérieur. Créez des espaces extraordinaires en quelques clics !
+                </p>
                 <a
                   href="https://app.styly.io/signin?lang=fr"
-                  className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"
                 >
-                  Essayer Styly Gratuitement
+                  <span className="relative z-10">Essayer <span className="font-davetica-wide">STYLY</span> Gratuitement</span>
+                  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
-              </div>
-
-              <p className="text-gray-700 mb-6 mt-8">
-                Découvrez aussi nos guides sur <Link to="/fr/blog/agents-immobiliers-home-staging-virtuel-ia" className="text-blue-600 hover:underline">le home staging virtuel pour agents immobiliers</Link> et <Link to="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:underline">notre logiciel gratuit de design intérieur IA</Link> pour maximiser votre <strong>amenagement chambre</strong> et projets de <strong>ia maison</strong>.
-              </p>
-
-              <div className="border-t border-gray-200 pt-8 mt-8">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">
-                  Suivez Styly.io pour plus d'innovations en design IA :
-                </h3>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://www.instagram.com/stylyio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Instagram: stylyio
-                  </a>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61558770901420"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Facebook: Styly AI
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/stylyai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    LinkedIn: Styly AI
-                  </a>
-                </div>
               </div>
             </article>
           </>
         ) : (
           <>
             <article className="prose prose-lg max-w-none">
-
+              <h1 className="text-3xl font-bold text-gray-800 mb-6">
+                How <span className="font-davetica-wide">STYLY</span> & Viva Technology Are Shaping the Future of AI-Powered Design
+              </h1>
               {/* TL;DR Section for GEO optimization */}
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-8">
                 <h2 className="text-lg font-semibold text-yellow-800 mb-2">
                   📋 TL;DR - Executive Summary
                 </h2>
                 <p className="text-yellow-700">
-                  <strong>Styly.io joins VivaTech 2025</strong> to revolutionize interior design with AI. Our platform transforms room photos into professional designs in under 10 seconds, no installation required. 2025 goals: Paris-Berlin-NYC expansion, style libraries, and enterprise API.
+                  <strong><span className="font-davetica-wide">STYLY</span> joins VivaTech 2025</strong> to revolutionize interior design. Our platform transforms room photos into professional designs in under 10 seconds, no installation required. 2025 goals: Paris-Berlin-NYC expansion, style libraries, and enterprise API.
                 </p>
               </div>
 
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
                 <h2 className="text-lg font-semibold text-blue-800 mb-2">
-                  🧠 The Styly.io × Viva Technology Partnership
+                  🧠 The <span className="font-davetica-wide">STYLY</span> × Viva Technology Partnership
                 </h2>
                 <p className="text-blue-700">
-                  We are thrilled to join the Viva Technology 2025 partner ecosystem, showcasing how Styly.io is redefining interior design with accessible, screen-to-space AI staging.
+                  We are thrilled to join the Viva Technology 2025 partner ecosystem, showcasing how <span className="font-davetica-wide">STYLY</span> is redefining interior design with accessible, screen-to-space digital staging.
                 </p>
               </div>
 
               <p className="text-lg text-gray-700 mb-6">
-                As a startup that believes creative design should be for everyone, Styly.io uses <strong>proprietary generative AI</strong> to convert everyday room photos into stunning, staged visuals in seconds—no downloads, no subscriptions.
+                As a startup that believes creative design should be for everyone, <span className="font-davetica-wide">STYLY</span> uses proprietary technology to convert everyday room photos into stunning, staged visuals in seconds—no downloads, no subscriptions.
               </p>
 
               <p className="text-gray-700 mb-6">
-                Our partnership with <a href="https://vivatechnology.com/partners/styly" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">VivaTech</a> marks an important milestone in our mission to democratize <strong>AI interior design</strong>.
+                Our partnership with <a href="https://vivatechnology.com/partners/styly" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">VivaTech</a> marks an important milestone in our mission to democratize <strong>digital interior design</strong>.
               </p>
 
               {/* Table of Contents for better structure */}
@@ -306,7 +286,7 @@ const StylyVivaTechPartnership: React.FC = () => {
                 <h3 className="text-lg font-semibold text-gray-800 mb-4">📚 Table of Contents</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• <a href="#why-vivatech" className="text-blue-600 hover:underline">Why VivaTech Was Our Natural Choice</a></li>
-                  <li>• <a href="#styly-strengths" className="text-blue-600 hover:underline">Core Strengths of Styly.io</a></li>
+                  <li>• <a href="#styly-strengths" className="text-blue-600 hover:underline">Core Strengths of <span className="font-davetica-wide">STYLY</span></a></li>
                   <li>• <a href="#goals-2025" className="text-blue-600 hover:underline">What's Next with VivaTech & Beyond</a></li>
                   <li>• <a href="#faq-en" className="text-blue-600 hover:underline">Frequently Asked Questions</a></li>
                 </ul>
@@ -332,22 +312,22 @@ const StylyVivaTechPartnership: React.FC = () => {
               </div>
 
               <h2 id="styly-strengths" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-                ⛳ Core Strengths of Styly.io
+                ⛳ Core Strengths of <span className="font-davetica-wide">STYLY</span>
               </h2>
 
               <p className="text-gray-700 mb-6">
-                Our <strong>free AI interior design</strong> platform stands out with several key advantages that revolutionize the user experience:
+                Our <strong>free digital interior design</strong> platform stands out with several key advantages that revolutionize the user experience:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                 <img
                   src="/ai-interior-design-technology.webp"
-                  alt="VivaTech Styly.io partnership - AI design innovation"
+                  alt="VivaTech Styly.io partnership - Digital design innovation"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
                 <img
                   src="/ai-room-design-free.webp"
-                  alt="AI interior design showcase - Instant transformation"
+                  alt="Digital interior design showcase - Instant transformation"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
               </div>
@@ -364,7 +344,7 @@ const StylyVivaTechPartnership: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                According to <a href="https://www.architecturaldigest.com/story/ai-interior-design-trends-2025" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Architectural Digest</a>, our <strong>virtual staging AI</strong> approach perfectly meets market expectations for accessible interior design solutions.
+                According to <a href="https://www.architecturaldigest.com/story/ai-interior-design-trends-2025" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Architectural Digest</a>, our <strong>virtual staging</strong> approach perfectly meets market expectations for accessible interior design solutions.
               </p>
 
               <h2 id="goals-2025" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
@@ -372,7 +352,7 @@ const StylyVivaTechPartnership: React.FC = () => {
               </h2>
 
               <p className="text-gray-700 mb-6">
-                With VivaTech's support, Styly.io is scaling fast with our <strong>free AI interior design</strong> platform:
+                With VivaTech's support, <span className="font-davetica-wide">STYLY</span> is scaling fast with our <strong>free digital interior design</strong> platform:
               </p>
 
               <div className="bg-blue-50 p-6 rounded-lg mb-6">
@@ -386,7 +366,7 @@ const StylyVivaTechPartnership: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                Research from <a href="https://www.houzz.com/magazine/artificial-intelligence-interior-design" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Houzz</a> confirms that our <strong>AI room planner</strong> meets the growing market demand for intelligent design solutions.
+                Research from <a href="https://www.houzz.com/magazine/artificial-intelligence-interior-design" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Houzz</a> confirms that our <strong>digital room planner</strong> meets the growing market demand for intelligent design solutions.
               </p>
 
               <div className="bg-purple-50 border-l-4 border-purple-500 p-6 my-8">
@@ -400,7 +380,7 @@ const StylyVivaTechPartnership: React.FC = () => {
               </h2>
 
               <p className="text-gray-700 mb-6">
-                Explore our showcase at VivaTech to see live AI room staging in action. Whether you're a design pro or a homeowner with a vision, Styly.io is your canvas.
+                Explore our showcase at VivaTech to see live digital room staging in action. Whether you're a design pro or a homeowner with a vision, <span className="font-davetica-wide">STYLY</span> is your canvas.
               </p>
 
               {/* FAQ Section for GEO optimization */}
@@ -409,72 +389,43 @@ const StylyVivaTechPartnership: React.FC = () => {
 
                 <div className="space-y-6">
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Q: What exactly is Styly.io?</h4>
-                    <p className="text-gray-700">A: Styly.io is an AI platform that transforms empty room photos into professional interior designs in under 10 seconds, with no installation or subscription required.</p>
+                    <h4 className="font-semibold text-gray-800 mb-2">Q: What exactly is <span className="font-davetica-wide">STYLY</span>?</h4>
+                    <p className="text-gray-700">A: <span className="font-davetica-wide">STYLY</span> is a platform that transforms empty room photos into professional interior designs in under 10 seconds, with no installation or subscription required.</p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Q: Why did Styly.io choose VivaTech as a partner?</h4>
+                    <h4 className="font-semibold text-gray-800 mb-2">Q: Why did <span className="font-davetica-wide">STYLY</span> choose VivaTech as a partner?</h4>
                     <p className="text-gray-700">A: VivaTech is Europe's largest tech event with 150,000+ participants. This platform allows us to reach investors, enterprises, and international media to accelerate our growth.</p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Q: What are the benefits of AI for interior design?</h4>
-                    <p className="text-gray-700">A: AI democratizes design by making it accessible, instant, and affordable. It allows visualization of hundreds of design options without technical skills.</p>
+                    <h4 className="font-semibold text-gray-800 mb-2">Q: What are the benefits of digital for interior design?</h4>
+                    <p className="text-gray-700">A: Digital democratizes design by making it accessible, instant, and affordable. It allows visualization of hundreds of design options without technical skills.</p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Q: What are Styly.io's goals for 2025?</h4>
+                    <h4 className="font-semibold text-gray-800 mb-2">Q: What are <span className="font-davetica-wide">STYLY</span>'s goals for 2025?</h4>
                     <p className="text-gray-700">A: Expansion to Paris, Berlin, and NYC, launch of thematic style libraries, e-commerce/real estate integrations, and enterprise API for partners.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
+                <h3 className="text-lg font-semibold text-orange-800 mb-2">
+                  🎯 Ready to Transform Your Interior?
+                </h3>
+                <p className="text-orange-700 mb-4">
+                  Discover the power of <span className="font-davetica-wide">STYLY</span>, the tool that transforms interior design. Create extraordinary spaces with just a few clicks!
+                </p>
                 <a
                   href="https://app.styly.io/signin"
-                  className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"
                 >
-                  Try Styly Free
+                  <span className="relative z-10">Try <span className="font-davetica-wide">STYLY</span> for Free</span>
+                  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
-              </div>
-
-              <p className="text-gray-700 mb-6 mt-8">
-                Also explore our guides on <Link to="/en/blog/real-estate-agents-ai-virtual-staging" className="text-blue-600 hover:underline">virtual staging for real estate agents</Link> and <Link to="/en/blog/free-ai-interior-design-software" className="text-blue-600 hover:underline">our free AI interior design software</Link> for comprehensive <strong>AI room design</strong> solutions.
-              </p>
-
-              <div className="border-t border-gray-200 pt-8 mt-8">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">
-                  Follow Styly.io for more AI design innovations:
-                </h3>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://www.instagram.com/stylyio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Instagram: stylyio
-                  </a>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61558770901420"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Facebook: Styly AI
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/stylyai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    LinkedIn: Styly AI
-                  </a>
-                </div>
               </div>
             </article>
           </>

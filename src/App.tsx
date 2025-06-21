@@ -39,13 +39,8 @@ const App = () => (
               <Route path="/fr" element={<Index />} />
               <Route path="/pricing" element={<NotFound />} />
 
-              {/* English blog routes - redirect to external blog */}
-              <Route path="/en/blog" element={<EnglishBlogRedirect />} />
-              <Route path="/en/blog/:slug" element={<EnglishBlogRedirect />} />
-
               {/* English routes - now stay on site instead of redirecting */}
               <Route path="/en" element={<Index />} />
-              <Route path="/en/*" element={<Index />} />
 
               {/* French blog routes */}
               <Route path="/fr/blog" element={<Blog />} />
@@ -89,6 +84,14 @@ const App = () => (
               <Route path="/social/:platform" element={<NotFound />} />
               <Route path="/video-guide" element={<VideoGuide />} />
               <Route path="/get-started" element={<Index />} />
+
+              {/* English blog routes */}
+              <Route path="/en/blog/:slug" element={<BlogPostPage />} />
+              <Route path="/en/blog" element={<Blog />} />
+
+              {/* English home route */}
+              <Route path="/en" element={<Index />} />
+
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -54,19 +54,18 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {language === "fr" ? (
           <article className="prose prose-lg max-w-none">
+            <h1 className="text-3xl font-bold text-gray-800 mb-6">
+              Débloquer la Puissance de l'IA pour le Design Intérieur : Guide des Dernières Innovations
+            </h1>
             {/* TL;DR Section for SEO optimization */}
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-8">
               <h2 className="text-lg font-semibold text-yellow-800 mb-2">
                 📋 TL;DR - Résumé Exécutif
               </h2>
               <p className="text-yellow-700">
-                <strong>L'IA révolutionne le design intérieur</strong> avec des outils comme ChatGPT, DALL-E et Midjourney. Combinés avec Styly (IA visuelle gratuite), ces innovations transforment la création d'espaces, de la planification à la visualisation 3D.
+                <strong>Des outils innovants transforment le design intérieur</strong> : ChatGPT, DALL-E, Midjourney et <span className="font-davetica-wide">STYLY</span> (gratuit) facilitent la création d'espaces, de la planification à la visualisation 3D.
               </p>
             </div>
-
-            <h1 className="text-3xl font-bold text-gray-800 mb-6">
-              Débloquer la Puissance de l'IA pour le Design Intérieur : Guide des Dernières Innovations
-            </h1>
 
             {/* Table of Contents */}
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -82,15 +81,15 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
             </div>
 
             <p className="text-lg text-gray-700 mb-6">
-              L'intelligence artificielle révolutionne le design intérieur avec des innovations comme ChatGPT, DALL-E et Midjourney. Découvrez comment ces outils transforment la création d'espaces et explorez les possibilités infinies qu'offre l'IA pour votre décoration intérieure.
+              De nouveaux outils numériques comme ChatGPT, DALL-E et Midjourney transforment la façon de concevoir et décorer les espaces. Découvrez comment ces solutions facilitent la création et multiplient les possibilités pour votre intérieur.
             </p>
 
             <h2 id="marche-ia-design" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              📈 Le Marché Explosif de l'IA en Design Intérieur
+              📈 Un Marché en Pleine Expansion
             </h2>
 
             <p className="text-gray-700 mb-6">
-              Le marché du <strong>design intérieur IA</strong> connaît une croissance phénoménale. Les professionnels français adoptent massivement ces nouvelles technologies pour transformer leurs pratiques.
+              Le secteur du design intérieur connaît une croissance phénoménale grâce à l'adoption massive de nouvelles technologies par les professionnels.
             </p>
 
             {/* Citation-ready stat */}
@@ -102,20 +101,20 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
             </div>
 
             <h2 id="outils-ia-populaires" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              🛠️ Les Outils IA Révolutionnaires pour le Design
+              🛠️ Outils Numériques Révolutionnaires pour le Design
             </h2>
 
             <p className="text-gray-700 mb-6">
-              OpenAI, leader mondial de l'intelligence artificielle, a développé une suite d'outils révolutionnaires qui transforment le <strong>design intérieur IA</strong>. Voici les innovations qui changent la donne :
+              OpenAI et d'autres acteurs majeurs proposent des outils qui changent la donne pour les créateurs d'espaces. Voici quelques innovations clés :
             </p>
 
             <div className="bg-green-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-800 mb-3">🎯 Outils IA Incontournables :</h4>
               <ul className="space-y-2 text-gray-700">
-                <li>• <strong>ChatGPT</strong> : Assistant IA pour conseils déco, palettes couleurs et aménagement d'espace</li>
+                <li>• <strong>ChatGPT</strong> : Conseils déco, palettes couleurs et aménagement d'espace</li>
                 <li>• <strong>DALL-E</strong> : Génération d'images photoréalistes à partir de descriptions textuelles</li>
                 <li>• <strong>Midjourney</strong> : Création de visuels conceptuels et planches d'ambiance</li>
-                <li>• <strong>Styly</strong> : Plateforme gratuite de <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">design intérieur IA</a> avec rendu 3D</li>
+                <li>• <strong><span className="font-davetica-wide">STYLY</span></strong> : Plateforme gratuite de <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">design intérieur</a> avec rendu 3D</li>
               </ul>
             </div>
 
@@ -133,11 +132,11 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
             </div>
 
             <h2 id="revolution-processus" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              🚀 Comment l'IA Révolutionne le Design Intérieur
+              🚀 Comment les Nouveaux Outils Changent le Design Intérieur
             </h2>
 
             <p className="text-gray-700 mb-6">
-              L'intelligence artificielle transforme radicalement les méthodes traditionnelles de <strong>décoration intérieure</strong>. Les designers français adoptent ces innovations pour offrir des services plus performants et créatifs.
+              Les méthodes traditionnelles de décoration évoluent rapidement. Les designers adoptent ces innovations pour offrir des services plus performants et créatifs.
             </p>
 
             <div className="bg-blue-50 p-6 rounded-lg mb-6">
@@ -145,29 +144,29 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="font-medium text-gray-800">1. Génération Automatique de Concepts</h5>
-                  <p className="text-gray-700">L'IA crée instantanément des planches d'ambiance, palettes couleurs et sélections matériaux personnalisées selon vos goûts.</p>
+                  <p className="text-gray-700">Des solutions numériques créent instantanément des planches d'ambiance, palettes couleurs et sélections matériaux personnalisées selon vos goûts.</p>
                 </div>
                 <div>
                   <h5 className="font-medium text-gray-800">2. Rendus 3D Photoréalistes</h5>
-                  <p className="text-gray-700">Visualisez votre projet avant travaux grâce aux algorithmes de génération d'images ultra-réalistes.</p>
+                  <p className="text-gray-700">Visualisez votre projet avant travaux grâce à des algorithmes de génération d'images ultra-réalistes.</p>
                 </div>
                 <div>
                   <h5 className="font-medium text-gray-800">3. Optimisation d'Espace Intelligente</h5>
-                  <p className="text-gray-700">L'IA analyse dimensions, circulation et ergonomie pour proposer l'aménagement optimal.</p>
+                  <p className="text-gray-700">Les outils modernes analysent dimensions, circulation et ergonomie pour proposer l'aménagement optimal.</p>
                 </div>
               </div>
             </div>
 
             <p className="text-gray-700 mb-6">
-              Selon <a href="https://www.elle.fr/Deco/Tendances/Intelligence-artificielle-decoration-interieur" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Elle Décoration</a>, l'IA représente "la plus grande révolution du design intérieur depuis l'invention de la CAO".
+              Selon <a href="https://www.elle.fr/Deco/Tendances/Intelligence-artificielle-decoration-interieur" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Elle Décoration</a>, ces technologies représentent "la plus grande révolution du design intérieur depuis l'invention de la CAO".
             </p>
 
             <h2 id="exemples-concrets" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              💡 Exemples Concrets d'Utilisation de l'IA
+              💡 Exemples Concrets d'Utilisation
             </h2>
 
             <p className="text-gray-700 mb-6">
-              Découvrez comment les professionnels français utilisent concrètement l'IA pour transformer leurs projets de <strong>rénovation intérieure</strong> et <strong>décoration</strong>.
+              Découvrez comment les professionnels français utilisent concrètement ces outils pour transformer leurs projets de rénovation et de décoration.
             </p>
 
             <div className="bg-purple-50 p-6 rounded-lg mb-6">
@@ -175,7 +174,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="font-medium text-gray-800">Architecte d'Intérieur Parisienne</h5>
-                  <p className="text-gray-700">"J'utilise Styly pour générer 5-6 propositions d'aménagement en 2 minutes. Mes clients visualisent instantanément les possibilités." - Marie Dubois, Paris</p>
+                  <p className="text-gray-700">"J'utilise <span className="font-davetica-wide">STYLY</span> pour générer 5-6 propositions d'aménagement en 2 minutes. Mes clients visualisent instantanément les possibilités." - Marie Dubois, Paris</p>
                 </div>
                 <div>
                   <h5 className="font-medium text-gray-800">Designer Freelance Lyon</h5>
@@ -183,80 +182,80 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 </div>
                 <div>
                   <h5 className="font-medium text-gray-800">Particulier Rénovation</h5>
-                  <p className="text-gray-700">"Avec Styly, j'ai redesigné mon salon en 30 minutes. L'IA a proposé des solutions auxquelles je n'avais pas pensé." - Sophie L., Marseille</p>
+                  <p className="text-gray-700">"Avec <span className="font-davetica-wide">STYLY</span>, j'ai redesigné mon salon en 30 minutes. L'IA a proposé des solutions auxquelles je n'avais pas pensé." - Sophie L., Marseille</p>
                 </div>
               </div>
             </div>
 
             <h2 id="avenir-ia-design" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              🔮 L'Avenir de l'IA dans le Design Intérieur
+              🔮 L'Avenir du Design Intérieur
             </h2>
 
             <p className="text-gray-700 mb-6">
-              Les innovations à venir promettent de révolutionner encore davantage le secteur du <strong>design intérieur IA</strong>. Voici les tendances émergentes qui façonneront l'avenir :
+              Les innovations à venir promettent de révolutionner encore davantage le secteur. Voici les tendances émergentes qui façonneront l'avenir :
             </p>
 
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-800 mb-3">🚀 Innovations 2025-2030 :</h4>
               <ul className="space-y-2 text-gray-700">
-                <li>• <strong>Réalité Augmentée IA</strong> : Visualisation en temps réel des modifications dans votre espace</li>
-                <li>• <strong>Assistants Virtuels 3D</strong> : Conseillers IA personnalisés pour chaque projet</li>
+                <li>• <strong>Réalité Augmentée</strong> : Visualisation en temps réel des modifications dans votre espace</li>
+                <li>• <strong>Assistants Virtuels 3D</strong> : Conseillers personnalisés pour chaque projet</li>
                 <li>• <strong>Design Durable Intelligent</strong> : Optimisation automatique de l'empreinte carbone</li>
-                <li>• <strong>Personnalisation Prédictive</strong> : L'IA anticipe vos goûts futurs</li>
+                <li>• <strong>Personnalisation Prédictive</strong> : Les outils anticipent vos goûts futurs</li>
               </ul>
             </div>
 
             <h2 id="faq-fr" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              ❓ Questions Fréquentes sur l'IA en Design Intérieur
+              ❓ Questions Fréquentes sur le Design Intérieur Numérique
             </h2>
 
             <div className="space-y-4 mb-8">
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">L'IA peut-elle remplacer un architecte d'intérieur ?</h4>
-                <p className="text-gray-700">Non, l'IA est un outil d'assistance. Elle augmente la créativité humaine mais ne remplace pas l'expertise, l'empathie et la vision artistique d'un professionnel.</p>
+                <h4 className="font-semibold text-gray-800 mb-2">Les outils numériques peuvent-ils remplacer un architecte d'intérieur ?</h4>
+                <p className="text-gray-700">Non, ces solutions sont des outils d'assistance. Elles augmentent la créativité humaine mais ne remplacent pas l'expertise, l'empathie et la vision artistique d'un professionnel.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Styly est-il vraiment gratuit ?</h4>
-                <p className="text-gray-700">Oui ! Styly propose une version gratuite complète avec génération d'images IA, rendus 3D et suggestions d'aménagement. Des options premium sont disponibles pour les professionnels.</p>
+                <h4 className="font-semibold text-gray-800 mb-2">Is <span className="font-davetica-wide">STYLY</span> really free?</h4>
+                <p className="text-gray-700">Yes! <span className="font-davetica-wide">STYLY</span> offers a complete free version with image generation, 3D renderings, and layout suggestions. Premium options are available for professionals.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Quelle est la précision des rendus IA ?</h4>
-                <p className="text-gray-700">Les outils modernes comme Styly atteignent 95% de précision visuelle. Les rendus sont suffisamment réalistes pour prendre des décisions d'aménagement fiables.</p>
+                <h4 className="font-semibold text-gray-800 mb-2">Quelle est la précision des rendus ?</h4>
+                <p className="text-gray-700">Modern tools like <span className="font-davetica-wide">STYLY</span> achieve 95% visual accuracy. Renderings are realistic enough to make reliable layout decisions.</p>
               </div>
             </div>
 
-            <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
-              <h3 className="text-lg font-semibold text-green-800 mb-2">
-                🎯 Prêt à Transformer Votre Intérieur avec l'IA ?
+            <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
+              <h3 className="text-lg font-semibold text-orange-800 mb-2">
+                🎯 Prêt à Transformer Votre Intérieur ?
               </h3>
-              <p className="text-green-700 mb-4">
-                Découvrez la puissance de Styly, l'outil IA français qui révolutionne le design intérieur. Créez des espaces extraordinaires en quelques clics !
+              <p className="text-orange-700 mb-4">
+                Discover the power of <span className="font-davetica-wide">STYLY</span>, the tool that transforms interior design. Create extraordinary spaces with just a few clicks!
               </p>
               <a
-                href="https://app.styly.io/signin?lang=fr"
+                href="https://app.styly.io/signin"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"
               >
-                Essayer Styly Gratuitement →
+                <span className="relative z-10">Try <span className="font-davetica-wide">STYLY</span> for Free</span>
+                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </div>
           </article>
         ) : (
           <article className="prose prose-lg max-w-none">
+            <h1 className="text-3xl font-bold text-gray-800 mb-6">
+              Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations
+            </h1>
             {/* TL;DR Section for SEO optimization */}
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-8">
               <h2 className="text-lg font-semibold text-yellow-800 mb-2">
                 📋 TL;DR - Executive Summary
               </h2>
               <p className="text-yellow-700">
-                <strong>AI is revolutionizing interior design</strong> with tools like ChatGPT, DALL-E, and Midjourney. Combined with Styly (free visual AI), these innovations transform space creation from planning to 3D visualization.
+                <strong>Innovative tools are transforming interior design</strong>—ChatGPT, DALL-E, Midjourney, and <span className="font-davetica-wide">STYLY</span> (free) make it easy to plan and visualize spaces from start to finish.
               </p>
             </div>
-
-            <h1 className="text-3xl font-bold text-gray-800 mb-6">
-              Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations
-            </h1>
 
             {/* Table of Contents */}
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -272,15 +271,15 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
             </div>
 
             <p className="text-lg text-gray-700 mb-6">
-              Artificial intelligence is revolutionizing interior design with innovations like ChatGPT, DALL-E, and Midjourney. Discover how these tools transform space creation and explore the infinite possibilities AI offers for your interior decoration.
+              New digital tools like ChatGPT, DALL-E, and Midjourney are changing how we design and decorate spaces. Discover how these solutions make creation easier and open up new possibilities for your home.
             </p>
 
             <h2 id="ai-design-market" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              📈 The Explosive AI Interior Design Market
+              📈 A Booming Market
             </h2>
 
             <p className="text-gray-700 mb-6">
-              The <strong>AI interior design</strong> market is experiencing phenomenal growth. Professionals worldwide are massively adopting these new technologies to transform their practices.
+              The interior design sector is experiencing phenomenal growth as professionals embrace new technologies to transform their work.
             </p>
 
             {/* Citation-ready stat */}
@@ -292,20 +291,20 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
             </div>
 
             <h2 id="popular-ai-tools" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              🛠️ Revolutionary AI Tools for Design
+              🛠️ Game-Changing Digital Tools for Design
             </h2>
 
             <p className="text-gray-700 mb-6">
-              OpenAI, the global leader in artificial intelligence, has developed a suite of revolutionary tools that transform <strong>AI interior design</strong>. Here are the game-changing innovations:
+              OpenAI and other major players are offering tools that are changing the game for space creators. Here are some key innovations:
             </p>
 
             <div className="bg-green-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-800 mb-3">🎯 Essential AI Tools:</h4>
               <ul className="space-y-2 text-gray-700">
-                <li>• <strong>ChatGPT</strong>: AI assistant for decor advice, color palettes, and space planning</li>
+                <li>• <strong>ChatGPT</strong>: Advice on decor, color palettes, and space planning</li>
                 <li>• <strong>DALL-E</strong>: Photorealistic image generation from text descriptions</li>
-                <li>• <strong>Midjourney</strong>: Creation of conceptual visuals and mood boards</li>
-                <li>• <strong>Styly</strong>: Free <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AI interior design</a> platform with 3D rendering</li>
+                <li>• <strong>Midjourney</strong>: Concept visuals and mood boards</li>
+                <li>• <strong><span className="font-davetica-wide">STYLY</span></strong>: Free <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">interior design</a> platform with 3D rendering</li>
               </ul>
             </div>
 
@@ -323,11 +322,11 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
             </div>
 
             <h2 id="process-revolution" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              🚀 How AI is Revolutionizing Interior Design
+              🚀 How New Tools Are Changing Interior Design
             </h2>
 
             <p className="text-gray-700 mb-6">
-              Artificial intelligence is radically transforming traditional <strong>interior decoration</strong> methods. Designers worldwide are adopting these innovations to offer more efficient and creative services.
+              Traditional decorating methods are evolving quickly. Designers are adopting these innovations to offer more creative and effective services.
             </p>
 
             <div className="bg-blue-50 p-6 rounded-lg mb-6">
@@ -335,7 +334,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="font-medium text-gray-800">1. Automatic Concept Generation</h5>
-                  <p className="text-gray-700">AI instantly creates mood boards, color palettes, and personalized material selections based on your preferences.</p>
+                  <p className="text-gray-700">Digital solutions instantly create mood boards, color palettes, and personalized material selections based on your preferences.</p>
                 </div>
                 <div>
                   <h5 className="font-medium text-gray-800">2. Photorealistic 3D Renderings</h5>
@@ -343,21 +342,21 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 </div>
                 <div>
                   <h5 className="font-medium text-gray-800">3. Intelligent Space Optimization</h5>
-                  <p className="text-gray-700">AI analyzes dimensions, circulation, and ergonomics to propose optimal layouts.</p>
+                  <p className="text-gray-700">Modern tools analyze dimensions, flow, and ergonomics to suggest the best layouts.</p>
                 </div>
               </div>
             </div>
 
             <p className="text-gray-700 mb-6">
-              According to <a href="https://www.architecturaldigest.com/story/artificial-intelligence-interior-design" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Architectural Digest</a>, AI represents "the biggest revolution in interior design since the invention of CAD".
+              According to <a href="https://www.architecturaldigest.com/story/artificial-intelligence-interior-design" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Architectural Digest</a>, these technologies represent "the biggest revolution in interior design since the invention of CAD".
             </p>
 
             <h2 id="real-examples" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              💡 Real-World AI Usage Examples
+              💡 Real-World Examples
             </h2>
 
             <p className="text-gray-700 mb-6">
-              Discover how professionals worldwide are concretely using AI to transform their <strong>interior renovation</strong> and <strong>decoration</strong> projects.
+              See how professionals are using these tools to transform renovation and decorating projects.
             </p>
 
             <div className="bg-purple-50 p-6 rounded-lg mb-6">
@@ -365,7 +364,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="font-medium text-gray-800">NYC Interior Architect</h5>
-                  <p className="text-gray-700">"I use Styly to generate 5-6 layout proposals in 2 minutes. My clients instantly visualize the possibilities." - Sarah Johnson, NYC</p>
+                  <p className="text-gray-700">"I use <span className="font-davetica-wide">STYLY</span> to generate 5-6 layout proposals in 2 minutes. My clients instantly visualize the possibilities." - Sarah Johnson, NYC</p>
                 </div>
                 <div>
                   <h5 className="font-medium text-gray-800">Freelance Designer London</h5>
@@ -373,99 +372,67 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 </div>
                 <div>
                   <h5 className="font-medium text-gray-800">Homeowner Renovation</h5>
-                  <p className="text-gray-700">"With Styly, I redesigned my living room in 30 minutes. AI proposed solutions I hadn't thought of." - Emily R., Toronto</p>
+                  <p className="text-gray-700">"With <span className="font-davetica-wide">STYLY</span>, I redesigned my living room in 30 minutes. AI proposed solutions I hadn't thought of." - Emily R., Toronto</p>
                 </div>
               </div>
             </div>
 
             <h2 id="future-ai-design" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              🔮 The Future of AI in Interior Design
+              🔮 The Future of Interior Design
             </h2>
 
             <p className="text-gray-700 mb-6">
-              Upcoming innovations promise to further revolutionize the <strong>AI interior design</strong> sector. Here are the emerging trends that will shape the future:
+              Upcoming innovations promise to further transform the sector. Here are the emerging trends that will shape the future:
             </p>
 
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-6">
               <h4 className="font-semibold text-gray-800 mb-3">🚀 2025-2030 Innovations:</h4>
               <ul className="space-y-2 text-gray-700">
-                <li>• <strong>AI Augmented Reality</strong>: Real-time visualization of modifications in your space</li>
-                <li>• <strong>3D Virtual Assistants</strong>: Personalized AI advisors for each project</li>
+                <li>• <strong>Augmented Reality</strong>: Real-time visualization of changes in your space</li>
+                <li>• <strong>3D Virtual Assistants</strong>: Personalized advisors for each project</li>
                 <li>• <strong>Intelligent Sustainable Design</strong>: Automatic carbon footprint optimization</li>
-                <li>• <strong>Predictive Personalization</strong>: AI anticipates your future preferences</li>
+                <li>• <strong>Predictive Personalization</strong>: Tools anticipate your future preferences</li>
               </ul>
             </div>
 
             <h2 id="faq-en" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              ❓ Frequently Asked Questions about AI in Interior Design
+              ❓ Frequently Asked Questions about Digital Interior Design
             </h2>
 
             <div className="space-y-4 mb-8">
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Can AI replace an interior designer?</h4>
-                <p className="text-gray-700">No, AI is an assistance tool. It enhances human creativity but doesn't replace the expertise, empathy, and artistic vision of a professional.</p>
+                <h4 className="font-semibold text-gray-800 mb-2">Can digital tools replace an interior designer?</h4>
+                <p className="text-gray-700">No, these solutions are assistance tools. They enhance human creativity but don't replace the expertise, empathy, and artistic vision of a professional.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Is Styly really free?</h4>
-                <p className="text-gray-700">Yes! Styly offers a complete free version with AI image generation, 3D renderings, and layout suggestions. Premium options are available for professionals.</p>
+                <h4 className="font-semibold text-gray-800 mb-2">Is <span className="font-davetica-wide">STYLY</span> really free?</h4>
+                <p className="text-gray-700">Yes! <span className="font-davetica-wide">STYLY</span> offers a complete free version with image generation, 3D renderings, and layout suggestions. Premium options are available for professionals.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">How accurate are AI renderings?</h4>
-                <p className="text-gray-700">Modern tools like Styly achieve 95% visual accuracy. Renderings are realistic enough to make reliable layout decisions.</p>
+                <h4 className="font-semibold text-gray-800 mb-2">How accurate are the renderings?</h4>
+                <p className="text-gray-700">Modern tools like <span className="font-davetica-wide">STYLY</span> achieve 95% visual accuracy. Renderings are realistic enough to make reliable layout decisions.</p>
               </div>
             </div>
 
-            <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
-              <h3 className="text-lg font-semibold text-green-800 mb-2">
-                🎯 Ready to Transform Your Interior with AI?
+            <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
+              <h3 className="text-lg font-semibold text-orange-800 mb-2">
+                🎯 Ready to Transform Your Interior?
               </h3>
-              <p className="text-green-700 mb-4">
-                Discover the power of Styly, the AI tool that revolutionizes interior design. Create extraordinary spaces with just a few clicks!
+              <p className="text-orange-700 mb-4">
+                Discover the power of <span className="font-davetica-wide">STYLY</span>, the tool that transforms interior design. Create extraordinary spaces with just a few clicks!
               </p>
               <a
                 href="https://app.styly.io/signin"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"
               >
-                Try Styly for Free →
+                <span className="relative z-10">Try <span className="font-davetica-wide">STYLY</span> for Free</span>
+                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </div>
           </article>
         )}
-
-        {/* Social Media Links */}
-        <div className="border-t pt-6 mt-8">
-          <p className="text-gray-600 mb-4">
-            {language === "fr" ? "Suivez-nous ici !" : "Follow us here!"}
-          </p>
-          <div className="flex space-x-4">
-            <a 
-              href="https://www.facebook.com/profile.php?id=61558770901420" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800"
-            >
-              Facebook
-            </a>
-            <a 
-              href="https://www.instagram.com/stylyio/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-pink-600 hover:text-pink-800"
-            >
-              Instagram
-            </a>
-            <a 
-              href="https://www.linkedin.com/company/stylyai" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-700 hover:text-blue-900"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </div>
       </div>
     </>
   );
