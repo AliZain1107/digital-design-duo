@@ -220,7 +220,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-white py-24 relative overflow-hidden">
+      <section className="bg-white py-20 relative overflow-hidden">
         {/* Animated shimmer background (copied from homepage) */}
         <div className="absolute inset-0 overflow-hidden" style={{ opacity: 0.13 }}>
           <div
@@ -233,7 +233,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
             }}
           ></div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
               {language === "fr" ? "Suite d'APIs" : "API Suite"}

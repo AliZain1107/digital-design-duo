@@ -366,7 +366,7 @@ const Testimonials: React.FC = () => {
                 );
               })}
             </div>
-            <div className="flex justify-center items-center gap-4">
+            <div className="flex justify-center items-center gap-4 mb-10">
               <button
                 onClick={goToPrev}
                 aria-label="Previous testimonial"
@@ -386,9 +386,6 @@ const Testimonials: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="-mt-4">
-        <AgencyShowcase />
       </div>
       <div className="-mt-16">
         {/* CTA Banner Section (insert your CTA component here) */}

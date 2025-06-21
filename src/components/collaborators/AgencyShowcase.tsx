@@ -119,14 +119,12 @@ const AgencyShowcase: React.FC = () => {
         {/* Premium Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 mb-4 text-center font-baloo">
-            <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
-              {language === "fr" ? "Nos Partenaires Certifiés" : "Our Certified Partners"}
-            </span>
+            {language === "fr" ? "Nos Partenaires Certifiés" : "Our Certified Partners"}
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-baloo">
             {language === "fr"
-              ? "Rejoignez un réseau d'élite de designers et architectes qui transforment l'avenir du design avec l'IA"
-              : "Join an elite network of designers and architects transforming the future of design with AI"
+              ? "Rejoignez un réseau d'élite de designers et architectes qui transforment l'avenir du design avec l'IA."
+              : "Join an elite network of designers and architects transforming the future of design with AI."
             }
           </p>
         </div>
