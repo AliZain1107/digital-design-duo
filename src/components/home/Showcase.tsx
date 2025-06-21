@@ -7,10 +7,10 @@ const Showcase: React.FC = () => {
       <div className="self-center z-0 flex w-full max-w-4xl flex-col items-stretch justify-center">
         <div className="w-full overflow-hidden rounded-2xl">
           <BeforeAfterSlider
-            beforeImage="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/9a7ab7a2366f484ec9d66769ac382a7635a3a895?placeholderIfAbsent=true"
-            afterImage="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/9a7ab7a2366f484ec9d66769ac382a7635a3a895?placeholderIfAbsent=true"
-            altBefore="Before"
-            altAfter="After"
+            beforeImage="/mini_magick20250608-11056-hjqk6b.jpg"
+            afterImage="/mini_magick20250608-11056-iz7vmy.jpg"
+            altBefore="Before - Empty room"
+            altAfter="After - Styled with AI"
           />
         </div>
       </div>
