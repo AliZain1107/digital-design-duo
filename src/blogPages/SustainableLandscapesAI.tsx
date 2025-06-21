@@ -57,7 +57,7 @@ const SustainableLandscapesAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Dans un monde de plus en plus conscient de l'impact environnemental, réduire notre empreinte carbone est devenu une priorité. L'aménagement paysager durable offre une opportunité unique de contribuer positivement à l'environnement tout en créant de beaux espaces extérieurs. Avec l'aide de l'intelligence artificielle, comme les outils offerts par STYLY.io, concevoir des paysages éco-responsables est devenu plus accessible et efficace que jamais. Notre{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}s'étend maintenant aux solutions paysagères durables.
@@ -128,7 +128,7 @@ const SustainableLandscapesAI: React.FC = () => {
                   Découvrez comment STYLY.io peut vous aider à concevoir des espaces extérieurs qui réduisent activement votre empreinte carbone.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Commencer Durable
@@ -250,7 +250,7 @@ const SustainableLandscapesAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 In an increasingly environmentally conscious world, reducing our carbon footprint has become a priority. Sustainable landscaping offers a unique opportunity to contribute positively to the environment while creating beautiful outdoor spaces. With the help of artificial intelligence, like the tools offered by STYLY.io, designing eco-friendly landscapes has become more accessible and efficient than ever. Our{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}now extends to sustainable landscape solutions.
@@ -321,7 +321,7 @@ const SustainableLandscapesAI: React.FC = () => {
                   Discover how STYLY.io can help you design outdoor spaces that actively reduce your carbon footprint.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Start Sustainable

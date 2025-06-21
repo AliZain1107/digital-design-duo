@@ -172,7 +172,7 @@ const AIDrivenCustomizationFuture: React.FC = () => {
                 Découvrez comment Styly peut révolutionner votre approche du design intérieur avec nos outils IA gratuits et intuitifs.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -345,7 +345,7 @@ const AIDrivenCustomizationFuture: React.FC = () => {
                 Discover how Styly can revolutionize your approach to interior design with our free and intuitive AI tools.
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

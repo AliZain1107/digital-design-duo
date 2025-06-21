@@ -57,7 +57,7 @@ const CommercialInteriorDesignAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Le design d'intérieur commercial évolue rapidement, et l'intelligence artificielle est à l'avant-garde de cette transformation. Des espaces de bureau aux environnements de vente au détail, l'IA révolutionne la façon dont nous concevons, planifions et exécutons les projets de design commercial. STYLY.io mène cette révolution avec des outils IA avancés qui permettent aux designers, architectes et propriétaires d'entreprises de créer des espaces commerciaux exceptionnels. Notre{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}s'adapte parfaitement aux besoins commerciaux.
@@ -126,7 +126,7 @@ const CommercialInteriorDesignAI: React.FC = () => {
                   Découvrez comment STYLY.io transforme les espaces commerciaux avec des solutions IA innovantes.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-cyan-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Commencer Projet Commercial
@@ -272,7 +272,7 @@ const CommercialInteriorDesignAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Commercial interior design is rapidly evolving, and artificial intelligence is at the forefront of this transformation. From office spaces to retail environments, AI is revolutionizing how we design, plan, and execute commercial design projects. STYLY.io is leading this revolution with advanced AI tools that enable designers, architects, and business owners to create exceptional commercial spaces. Our{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}adapts perfectly to commercial needs.
@@ -341,7 +341,7 @@ const CommercialInteriorDesignAI: React.FC = () => {
                   Discover how STYLY.io transforms commercial spaces with innovative AI solutions.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-cyan-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Start Commercial Project

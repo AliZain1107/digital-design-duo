@@ -57,7 +57,7 @@ const ScienceColorDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 La couleur joue un rôle puissant dans le design d'intérieur et d'extérieur. Le bon schéma de couleurs peut transformer un espace, créer l'ambiance désirée et même influencer nos émotions. Mais choisir la palette parfaite peut être difficile, surtout avec une multitude d'options. C'est là que la technologie IA, comme les outils offerts par STYLY.io, intervient pour rendre le processus sans effort, précis et créatif. Notre{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}révolutionne la sélection des couleurs.
@@ -113,7 +113,7 @@ const ScienceColorDesign: React.FC = () => {
                   Explorez comment l'IA de STYLY.io peut transformer votre approche de la sélection des couleurs.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Créer Ma Palette
@@ -215,7 +215,7 @@ const ScienceColorDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Color plays a powerful role in interior and exterior design. The right color scheme can transform a space, creating the desired mood and even influencing how we feel. But choosing the perfect palette can be challenging, especially when you have a multitude of options. This is where AI technology, like the tools offered by STYLY.io, steps in to make the process effortless, accurate, and creative. Our{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}revolutionizes color selection.
@@ -271,7 +271,7 @@ const ScienceColorDesign: React.FC = () => {
                   Explore how STYLY.io's AI can transform your approach to color selection.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Create My Palette

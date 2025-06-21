@@ -67,7 +67,7 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
                     Join the AI revolution in interior design with Styly.io's advanced tools and create stunning spaces that exceed your imagination.
                   </p>
                   <a 
-                    href="https://app.styly.io" 
+                    href="https://app.styly.io/signin" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -126,7 +126,7 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
                     Rejoignez la révolution IA dans le design intérieur avec les outils avancés de Styly.io et créez des espaces magnifiques qui dépassent votre imagination.
                   </p>
                   <a 
-                    href="https://app.styly.io" 
+                    href="https://app.styly.io/signin" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"

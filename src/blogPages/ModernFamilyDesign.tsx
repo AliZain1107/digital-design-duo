@@ -57,7 +57,7 @@ const ModernFamilyDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Les familles modernes ont des besoins uniques qui nécessitent des solutions de design réfléchies. Avec l'évolution des modes de vie, du travail à domicile aux espaces multifonctionnels, créer des maisons qui équilibrent style et fonctionnalité est devenu plus important que jamais. STYLY.io révolutionne la façon dont les familles abordent le design d'intérieur avec des outils IA qui comprennent et s'adaptent aux besoins familiaux modernes. Notre{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}aide les familles à créer des espaces qui grandissent avec elles.
@@ -131,7 +131,7 @@ const ModernFamilyDesign: React.FC = () => {
                   Découvrez comment STYLY.io peut transformer votre maison en un espace fonctionnel et élégant pour toute la famille.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Commencer Gratuitement
@@ -225,7 +225,7 @@ const ModernFamilyDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Modern families have unique needs that require thoughtful design solutions. With evolving lifestyles, from remote work to multi-functional spaces, creating homes that balance style and functionality has become more important than ever. STYLY.io is revolutionizing how families approach interior design with AI tools that understand and adapt to modern family needs. Our{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}helps families create spaces that grow with them.
@@ -299,7 +299,7 @@ const ModernFamilyDesign: React.FC = () => {
                   Discover how STYLY.io can transform your house into a functional and stylish space for the whole family.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Start Free

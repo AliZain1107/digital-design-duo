@@ -57,7 +57,7 @@ const AIVirtualRealityDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Ces dernières années, l'industrie du design a été témoin d'une transformation révolutionnaire alimentée par deux technologies puissantes : l'Intelligence Artificielle (IA) et la Réalité Virtuelle (VR). Ensemble, elles révolutionnent la façon dont nous conceptualisons, planifions et exécutons les designs d'intérieur et de pièces. Ce blog explore comment ces technologies se croisent et ce que l'avenir réserve à l'industrie du design, en particulier avec des outils comme le{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   Planificateur de Pièce IA de STYLY.io
                 </a>
                 {" "}et la plateforme de Design d'Intérieur IA.
@@ -209,7 +209,7 @@ const AIVirtualRealityDesign: React.FC = () => {
                   Découvrez comment l'IA et la VR transforment le design d'intérieur avec STYLY.io.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Essayer STYLY.io Maintenant
@@ -228,7 +228,7 @@ const AIVirtualRealityDesign: React.FC = () => {
 
               <p className="text-gray-700 mb-6">
                 L'intersection de l'IA et de la Réalité Virtuelle redéfinit le paysage du design, le rendant plus innovant, accessible et efficace. STYLY.io est fier de mener cette évolution, offrant des outils comme le{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   Design de Pièce IA
                 </a>
                 {" "}et le Design d'Intérieur IA pour aider les utilisateurs à transformer leurs rêves de design en réalité.
@@ -244,7 +244,7 @@ const AIVirtualRealityDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 In recent years, the design industry has witnessed a groundbreaking transformation fueled by two powerful technologies: Artificial Intelligence (AI) and Virtual Reality (VR). Together, they are revolutionizing how we conceptualize, plan, and execute interior and room designs. This blog explores how these technologies intersect and what the future holds for the design industry, especially with tools like{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   STYLY.io's AI Room Planner
                 </a>
                 {" "}and AI Interior Design platform.
@@ -396,7 +396,7 @@ const AIVirtualRealityDesign: React.FC = () => {
                   Discover how AI and VR are transforming interior design with STYLY.io.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Try STYLY.io Now
@@ -415,7 +415,7 @@ const AIVirtualRealityDesign: React.FC = () => {
 
               <p className="text-gray-700 mb-6">
                 The intersection of AI and Virtual Reality is redefining the design landscape, making it more innovative, accessible, and efficient. STYLY.io is proud to lead this evolution, offering tools like{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI Room Design
                 </a>
                 {" "}and AI Interior Design to help users transform their design dreams into reality.

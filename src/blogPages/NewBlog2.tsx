@@ -181,7 +181,7 @@ const NewBlog2: React.FC = () => {
 
               <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
                 <a
-                  href="https://app.styly.io/?lang=fr"
+                  href="https://app.styly.io/signin?lang=fr"
                   className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -348,7 +348,7 @@ const NewBlog2: React.FC = () => {
 
               <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
                 <a
-                  href="https://app.styly.io/"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"

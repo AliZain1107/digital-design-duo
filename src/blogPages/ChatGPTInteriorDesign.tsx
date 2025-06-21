@@ -183,7 +183,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                Cependant, pour une expérience <strong>ia design intérieur gratuit</strong> avec des sorties visuelles, des plateformes comme <a href="https://app.styly.io/?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Styly</a> offrent un staging virtuel, en faisant un complément parfait à l'assistance textuelle de ChatGPT.
+                Cependant, pour une expérience <strong>ia design intérieur gratuit</strong> avec des sorties visuelles, des plateformes comme <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Styly</a> offrent un staging virtuel, en faisant un complément parfait à l'assistance textuelle de ChatGPT.
               </p>
 
               <h2 id="limitations-ia" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
@@ -219,7 +219,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-gray-800">1. STYLY</h4>
-                    <p className="text-gray-700">Un outil basé sur l'IA pour la planification immersive de pièces. <a href="https://app.styly.io/?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Essayer gratuitement</a></p>
+                    <p className="text-gray-700">Un outil basé sur l'IA pour la planification immersive de pièces. <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Essayer gratuitement</a></p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">2. Houzz AI</h4>
@@ -271,7 +271,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                Avez-vous déjà expérimenté l'IA pour le design d'intérieur ? Connectez-vous avec <a href="https://app.styly.io/?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Styly</a> et transformez vos intérieurs avec la puissance de l'intelligence artificielle.
+                Avez-vous déjà expérimenté l'IA pour le design d'intérieur ? Connectez-vous avec <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Styly</a> et transformez vos intérieurs avec la puissance de l'intelligence artificielle.
               </p>
 
               <p className="text-gray-700 mb-6">
@@ -466,7 +466,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                However, for a <strong>free AI home design</strong> experience with visual outputs, platforms like <a href="https://app.styly.io/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Styly</a> offer virtual staging, making them a perfect complement to ChatGPT's text-based assistance.
+                However, for a <strong>free AI home design</strong> experience with visual outputs, platforms like <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Styly</a> offer virtual staging, making them a perfect complement to ChatGPT's text-based assistance.
               </p>
 
               <h2 id="ai-limitations" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
@@ -502,7 +502,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-gray-800">1. STYLY</h4>
-                    <p className="text-gray-700">An AI-based tool for immersive room planning. <a href="https://app.styly.io/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Try for free</a></p>
+                    <p className="text-gray-700">An AI-based tool for immersive room planning. <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Try for free</a></p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">2. Houzz AI</h4>
@@ -554,7 +554,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                Have you ever experienced AI for interior design? Connect with <a href="https://app.styly.io/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Styly</a> and transform your interiors with the power of artificial intelligence.
+                Have you ever experienced AI for interior design? Connect with <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Styly</a> and transform your interiors with the power of artificial intelligence.
               </p>
 
               <p className="text-gray-700 mb-6">

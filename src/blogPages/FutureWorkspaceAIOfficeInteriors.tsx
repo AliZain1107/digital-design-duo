@@ -140,7 +140,7 @@ const FutureWorkspaceAIOfficeInteriors: React.FC = () => {
                   Découvrez comment Styly peut révolutionner votre bureau avec des solutions de design alimentées par l'IA.
                 </p>
                 <a
-                  href="https://app.styly.io/"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -346,7 +346,7 @@ const FutureWorkspaceAIOfficeInteriors: React.FC = () => {
                   Discover how Styly can revolutionize your office with AI-powered design solutions.
                 </p>
                 <a
-                  href="https://app.styly.io/"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"

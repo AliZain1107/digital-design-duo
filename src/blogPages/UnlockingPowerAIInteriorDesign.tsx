@@ -115,7 +115,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 <li>• <strong>ChatGPT</strong> : Assistant IA pour conseils déco, palettes couleurs et aménagement d'espace</li>
                 <li>• <strong>DALL-E</strong> : Génération d'images photoréalistes à partir de descriptions textuelles</li>
                 <li>• <strong>Midjourney</strong> : Création de visuels conceptuels et planches d'ambiance</li>
-                <li>• <strong>Styly</strong> : Plateforme gratuite de <a href="https://app.styly.io/?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">design intérieur IA</a> avec rendu 3D</li>
+                <li>• <strong>Styly</strong> : Plateforme gratuite de <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">design intérieur IA</a> avec rendu 3D</li>
               </ul>
             </div>
 
@@ -232,9 +232,9 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               <p className="text-green-700 mb-4">
                 Découvrez la puissance de Styly, l'outil IA français qui révolutionne le design intérieur. Créez des espaces extraordinaires en quelques clics !
               </p>
-              <a 
-                href="https://app.styly.io/?lang=fr" 
-                target="_blank" 
+              <a
+                href="https://app.styly.io/signin?lang=fr"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
               >
@@ -305,7 +305,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 <li>• <strong>ChatGPT</strong>: AI assistant for decor advice, color palettes, and space planning</li>
                 <li>• <strong>DALL-E</strong>: Photorealistic image generation from text descriptions</li>
                 <li>• <strong>Midjourney</strong>: Creation of conceptual visuals and mood boards</li>
-                <li>• <strong>Styly</strong>: Free <a href="https://app.styly.io/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AI interior design</a> platform with 3D rendering</li>
+                <li>• <strong>Styly</strong>: Free <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AI interior design</a> platform with 3D rendering</li>
               </ul>
             </div>
 
@@ -423,7 +423,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 Discover the power of Styly, the AI tool that revolutionizes interior design. Create extraordinary spaces with just a few clicks!
               </p>
               <a
-                href="https://app.styly.io/"
+                href="https://app.styly.io/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"

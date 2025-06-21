@@ -57,7 +57,7 @@ const AILandscapeDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Quand nous pensons au design, nos esprits gravitent souvent vers les intérieurs—salons, cuisines et chambres. Mais qu'en est-il de la beauté juste au-delà des murs de votre maison ? Les espaces extérieurs jouent un rôle crucial dans l'esthétique globale de toute résidence, et le design paysager est là où la créativité rencontre la nature. Avec les avancées en intelligence artificielle (IA), concevoir ces espaces est devenu plus simple, plus intelligent et plus inspirant. Chez STYLY.io, nous transformons la façon dont les gens abordent le design paysager avec nos outils alimentés par l'IA, vous aidant à créer des jardins et espaces extérieurs époustouflants qui reflètent votre style unique. Notre{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}s'étend maintenant aux espaces extérieurs.
@@ -99,7 +99,7 @@ const AILandscapeDesign: React.FC = () => {
                   Découvrez comment STYLY.io peut créer des jardins et espaces extérieurs magnifiques avec l'IA.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Concevoir Mon Jardin
@@ -225,7 +225,7 @@ const AILandscapeDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 When we think of design, our minds often gravitate toward interiors—living rooms, kitchens, and bedrooms. But what about the beauty just beyond the walls of your home? Outdoor spaces play a crucial role in the overall aesthetic of any residence, and landscape design is where creativity meets nature. With advancements in artificial intelligence (AI), designing these spaces has become simpler, smarter, and more inspiring. At STYLY.io, we're transforming the way people approach landscape design with our AI-powered tools, helping you craft stunning gardens and outdoor areas that reflect your unique style. Our{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}now extends to outdoor spaces.
@@ -267,7 +267,7 @@ const AILandscapeDesign: React.FC = () => {
                   Discover how STYLY.io can create beautiful gardens and outdoor spaces with AI.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Design My Garden

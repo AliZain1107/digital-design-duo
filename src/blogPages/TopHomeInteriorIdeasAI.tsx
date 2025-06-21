@@ -67,7 +67,7 @@ const TopHomeInteriorIdeasAI: React.FC = () => {
                     Discover endless interior design possibilities with Styly.io's AI-powered tools and create the home of your dreams.
                   </p>
                   <a 
-                    href="https://app.styly.io" 
+                    href="https://app.styly.io/signin" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -126,7 +126,7 @@ const TopHomeInteriorIdeasAI: React.FC = () => {
                     Découvrez des possibilités infinies de design intérieur avec les outils alimentés par l'IA de Styly.io et créez la maison de vos rêves.
                   </p>
                   <a 
-                    href="https://app.styly.io" 
+                    href="https://app.styly.io/signin" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"

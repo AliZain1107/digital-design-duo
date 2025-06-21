@@ -57,7 +57,7 @@ const Top5ChallengesInteriorDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Le design d'intérieur est un processus créatif qui apporte beauté, fonctionnalité et harmonie dans les maisons. Cependant, ce processus s'accompagne souvent de défis, de la planification d'espace à la recherche des bons éléments décoratifs. Dans le monde rapide d'aujourd'hui, de nombreux propriétaires et designers se tournent vers l'IA pour des solutions qui rendent le design d'intérieur plus facile et accessible. Notre{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}résout ces défis majeurs.
@@ -120,7 +120,7 @@ const Top5ChallengesInteriorDesign: React.FC = () => {
                   Découvrez comment STYLY.io transforme les défis de design en solutions intelligentes avec l'IA.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Commencer Maintenant
@@ -272,7 +272,7 @@ const Top5ChallengesInteriorDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Interior design is a creative process that brings beauty, functionality, and harmony into homes. However, this process often comes with challenges, from space planning to finding the right décor elements. In today's fast-paced world, many homeowners and designers are turning to AI for solutions that make interior design easier and more accessible. Our{" "}
-                <a href="https://app.styly.io" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}solves these major challenges.
@@ -335,7 +335,7 @@ const Top5ChallengesInteriorDesign: React.FC = () => {
                   Discover how STYLY.io transforms design challenges into smart solutions with AI.
                 </p>
                 <a
-                  href="https://app.styly.io"
+                  href="https://app.styly.io/signin"
                   className="inline-block bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Start Now
