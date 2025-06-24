@@ -163,7 +163,7 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
       <div className="h-[160px] sm:h-[180px] w-full bg-white flex items-center justify-center p-3">
         <img
           src={post.image}
-          alt={getTranslatedTitle()}
+          alt={language === 'fr' && post.titleFr ? post.titleFr : getTranslatedTitle()}
           className="w-full h-[140px] sm:h-[160px] object-cover rounded-[8px]"
           />
       </div>
@@ -171,7 +171,16 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
       {/* Text content */}
       <div className="flex flex-col px-3 py-3">
         <h3 className="text-[18px] sm:text-[20px] font-bold text-[#333] leading-[1.4] line-clamp-2">
-          {getTranslatedTitle()}
+          {(() => {
+            const title = language === 'fr' && post.titleFr ? post.titleFr : getTranslatedTitle();
+            // Replace 'Styly' or 'Styly.io' (case-insensitive) with STYLY in Davetica font
+            const parts = title.split(/(Styly\.io|Styly|styly\.io|styly)/gi);
+            return parts.map((part, i) =>
+              /^(Styly\.io|Styly)$/i.test(part)
+                ? <span key={i} className="font-davetica-wide">STYLY</span>
+                : part
+            );
+          })()}
         </h3>
         <p className="text-[10px] sm:text-[11px] text-[#999] tracking-wide mt-2">{post.date}</p>
       </div>

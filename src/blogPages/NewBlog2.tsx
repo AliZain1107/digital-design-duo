@@ -63,18 +63,20 @@ const NewBlog2: React.FC = () => {
         {language === "fr" ? (
           <>
             <article className="prose prose-lg max-w-none">
-
+              <h1 className="text-3xl font-bold text-gray-800 mb-6">
+                Concevoir la Mise en Scène Intérieure IA sur AWS : Dans les Coulisses de <span className="font-davetica-wide">STYLY</span>
+              </h1>
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
                 <h2 className="text-lg font-semibold text-blue-800 mb-2">
-                  🧠 L'IA au service de l'aménagement intérieur
+                  🧠 L'innovation au service de l'aménagement intérieur
                 </h2>
                 <p className="text-blue-700">
-                  Chez Styly.io, notre ambition est de démocratiser le design intérieur et extérieur grâce à l'intelligence artificielle. Découvrez l'architecture AWS qui rend tout cela possible.
+                  Chez <span className="font-davetica-wide">STYLY</span>, notre ambition est de démocratiser le design intérieur et extérieur grâce à la technologie. Découvrez l'architecture AWS qui rend tout cela possible.
                 </p>
               </div>
 
               <p className="text-lg text-gray-700 mb-6">
-                Chez Styly.io, notre ambition est de démocratiser le <strong>design intérieur et extérieur</strong> grâce à l'intelligence artificielle. Notre <strong>application d'aménagement intérieur gratuit</strong> permet à chacun de transformer n'importe quelle pièce à partir d'une photo ou d'une description. Qu'il s'agisse de refaire les sols, les murs, les meubles ou simplement de s'inspirer — tout se fait en quelques secondes, sans aucune compétence en design.
+                Chez <span className="font-davetica-wide">STYLY</span>, notre ambition est de démocratiser le <strong>design intérieur et extérieur</strong> grâce à des outils numériques avancés. Notre <strong>application d'aménagement intérieur gratuit</strong> permet à chacun de transformer n'importe quelle pièce à partir d'une photo ou d'une description. Qu'il s'agisse de refaire les sols, les murs, les meubles ou simplement de s'inspirer — tout se fait en quelques secondes, sans aucune compétence en design.
               </p>
 
               <p className="text-gray-700 mb-6">
@@ -82,15 +84,15 @@ const NewBlog2: React.FC = () => {
               </p>
 
               <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-                ☁️ Pourquoi AWS alimente l'infrastructure de Styly
+                ☁️ Pourquoi AWS alimente l'infrastructure de <span className="font-davetica-wide">STYLY</span>
               </h2>
 
               <p className="text-gray-700 mb-6">
-                Nous avons choisi Amazon Web Services pour sa capacité à nous offrir une infrastructure évolutive, performante, et surtout, taillée pour les besoins de l'IA. Notre <strong>logiciel design interieur gratuit</strong> nécessite une puissance de calcul considérable pour générer des rendus photoréalistes en temps réel.
+                Nous avons choisi Amazon Web Services pour sa capacité à nous offrir une infrastructure évolutive, performante, et surtout, taillée pour les besoins du calcul intensif. Notre <strong>logiciel design interieur gratuit</strong> nécessite une puissance de calcul considérable pour générer des rendus photoréalistes en temps réel.
               </p>
 
               <p className="text-gray-700 mb-6">
-                Styly.io, reconnu dans le <a href="https://aws.amazon.com/startups/showcase/startup-details/ab2d93c7-3220-4c19-8e35-5ea6059a4909" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">showcase startup AWS</a>, exploite pleinement l'écosystème Amazon pour offrir une expérience utilisateur exceptionnelle.
+                <span className="font-davetica-wide">STYLY</span>, featured in the <a href="https://aws.amazon.com/startups/showcase/startup-details/ab2d93c7-3220-4c19-8e35-5ea6059a4909" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AWS startup showcase</a>, fully leverages the Amazon ecosystem to deliver an exceptional user experience.
               </p>
 
               <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
@@ -101,7 +103,7 @@ const NewBlog2: React.FC = () => {
                 <ul className="space-y-3 text-gray-700">
                   <li><strong>API Gateway :</strong> sécurisation des requêtes utilisateurs</li>
                   <li><strong>Lambda :</strong> traitement des images avant/après génération</li>
-                  <li><strong>SageMaker :</strong> exécution des modèles IA de mise en scène</li>
+                  <li><strong>SageMaker :</strong> exécution des modèles de mise en scène</li>
                   <li><strong>EC2 GPU :</strong> rendu haute qualité pour certains cas</li>
                   <li><strong>S3 :</strong> stockage sécurisé et crypté des fichiers</li>
                   <li><strong>CloudFront :</strong> distribution rapide des résultats dans le monde entier</li>
@@ -115,12 +117,12 @@ const NewBlog2: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                 <img
                   src="/revolutionizing-architecture-hero.png"
-                  alt="Diagramme architecture AWS Styly.io - Infrastructure cloud IA"
+                  alt="Diagramme architecture AWS Styly.io - Infrastructure cloud"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
                 <img
                   src="/revolutionizing-architecture-design.jpg"
-                  alt="AWS SageMaker traitement IA - Génération design intérieur"
+                  alt="AWS SageMaker traitement - Génération design intérieur"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
               </div>
@@ -134,7 +136,7 @@ const NewBlog2: React.FC = () => {
               </p>
 
               <p className="text-gray-700 mb-6">
-                Selon <a href="https://www.architecturaldigest.com/story/ai-interior-design-security" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Architectural Digest</a>, la sécurité des données devient cruciale dans les applications de <strong>décoration intérieure</strong> alimentées par l'IA.
+                Selon <a href="https://www.architecturaldigest.com/story/ai-interior-design-security" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Architectural Digest</a>, la sécurité des données devient cruciale dans les applications de <strong>décoration intérieure</strong> alimentées par le numérique.
               </p>
 
               <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
@@ -146,17 +148,17 @@ const NewBlog2: React.FC = () => {
               </p>
 
               <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-                🌍 La suite pour Styly.io
+                🌍 La suite pour <span className="font-davetica-wide">STYLY</span>
               </h2>
 
               <p className="text-gray-700 mb-6">
-                D'ici 2025, nos objectifs pour notre <strong>ia design intérieur gratuit</strong> incluent l'IA embarquée sur mobile sans serveur, des modèles de styles régionaux (Zen japonais, scandinave, classique français), l'intégration e-commerce directe dans les designs, et des outils de collaboration en temps réel pour agences et clients.
+                D'ici 2025, nos objectifs pour notre <strong>plateforme de design intérieur gratuit</strong> incluent des outils embarqués sur mobile sans serveur, des modèles de styles régionaux (Zen japonais, scandinave, classique français), l'intégration e-commerce directe dans les designs, et des outils de collaboration en temps réel pour agences et clients.
               </p>
 
               <div className="bg-gray-50 p-6 rounded-lg mb-6">
                 <h4 className="font-semibold text-gray-800 mb-3">Nos objectifs 2025 :</h4>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• L'IA embarquée sur mobile, sans serveur</li>
+                  <li>• Outils embarqués sur mobile, sans serveur</li>
                   <li>• Des modèles de styles régionaux (Zen japonais, scandinave, classique français)</li>
                   <li>• L'intégration e-commerce directe dans les designs</li>
                   <li>• Des outils de collaboration en temps réel pour agences et clients</li>
@@ -172,76 +174,49 @@ const NewBlog2: React.FC = () => {
               </h2>
 
               <p className="text-gray-700 mb-6">
-                Styly.io n'est pas simplement un <strong>simulateur déco gratuit</strong>. C'est une solution de <strong>mise en scène intelligente</strong>, accessible, rapide, et soutenue par les technologies d'Amazon Web Services. Avec notre Programme Partenaires Fondateurs, nous invitons décorateurs, agences et marques à co-construire l'avenir du design intelligent avec nous.
+                <span className="font-davetica-wide">STYLY</span> n'est pas simplement un <strong>simulateur déco gratuit</strong>. C'est une solution de <strong>mise en scène intelligente</strong>, accessible, rapide, et soutenue par les technologies d'Amazon Web Services. Avec notre Programme Partenaires Fondateurs, nous invitons décorateurs, agences et marques à co-construire l'avenir du design intelligent avec nous.
               </p>
 
               <p className="text-gray-700 mb-6">
-                Rejoignez la révolution. Essayez Styly gratuitement.
+                Rejoignez la révolution. Essayez <span className="font-davetica-wide">STYLY</span> gratuitement.
               </p>
 
-              <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
+                <h3 className="text-lg font-semibold text-orange-800 mb-2">
+                  🎯 Prêt à Transformer Votre Intérieur ?
+                </h3>
+                <p className="text-orange-700 mb-4">
+                  Découvrez la puissance de <span className="font-davetica-wide">STYLY</span>, l'outil qui révolutionne le design intérieur. Créez des espaces extraordinaires en quelques clics !
+                </p>
                 <a
                   href="https://app.styly.io/signin?lang=fr"
-                  className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"
                 >
-                  Essayer Styly Gratuitement
+                  <span className="relative z-10">Essayer <span className="font-davetica-wide">STYLY</span> Gratuitement</span>
+                  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
-              </div>
-
-              <p className="text-gray-700 mb-6 mt-8">
-                Découvrez aussi nos guides sur <Link to="/fr/blog/agents-immobiliers-home-staging-virtuel-ia" className="text-blue-600 hover:underline">le home staging virtuel pour agents immobiliers</Link> et <Link to="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:underline">notre logiciel gratuit de design intérieur IA</Link> pour maximiser votre <strong>amenagement chambre</strong> et projets de <strong>ia maison</strong>.
-              </p>
-
-              <div className="border-t border-gray-200 pt-8 mt-8">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">
-                  Suivez Styly.io pour plus d'innovations en design IA :
-                </h3>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://www.instagram.com/stylyio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Instagram: stylyio
-                  </a>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61558770901420"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Facebook: Styly AI
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/stylyai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    LinkedIn: Styly AI
-                  </a>
-                </div>
               </div>
             </article>
           </>
         ) : (
           <>
             <article className="prose prose-lg max-w-none">
-
+              <h1 className="text-3xl font-bold text-gray-800 mb-6">
+                Designing AI Interior Staging on AWS: Behind the Scenes at <span className="font-davetica-wide">STYLY</span>
+              </h1>
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
                 <h2 className="text-lg font-semibold text-blue-800 mb-2">
-                  🧠 AI-Powered Interior Design
+                  🧠 Innovation-Powered Interior Design
                 </h2>
                 <p className="text-blue-700">
-                  At Styly.io, our mission is to democratize interior and exterior design through artificial intelligence. Discover the AWS architecture that makes it all possible.
+                  At <span className="font-davetica-wide">STYLY</span>, our mission is to democratize interior and exterior design through technology. Discover the AWS architecture that makes it all possible.
                 </p>
               </div>
 
               <p className="text-lg text-gray-700 mb-6">
-                At Styly.io, our mission is to democratize <strong>interior and exterior design</strong> through artificial intelligence. Our free platform allows anyone to transform any room from a photo or description. Whether it's redoing floors, walls, furniture, or simply getting inspired — everything happens in seconds, without any design skills required.
+                At <span className="font-davetica-wide">STYLY</span>, our mission is to democratize <strong>interior and exterior design</strong> through advanced digital tools. Our free platform allows anyone to transform any room from a photo or description. Whether it's redoing floors, walls, furniture, or simply getting inspired — everything happens in seconds, without any design skills required.
               </p>
 
               <p className="text-gray-700 mb-6">
@@ -249,15 +224,15 @@ const NewBlog2: React.FC = () => {
               </p>
 
               <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-                ☁️ Why AWS Powers Styly's Infrastructure
+                ☁️ Why AWS Powers <span className="font-davetica-wide">STYLY</span>'s Infrastructure
               </h2>
 
               <p className="text-gray-700 mb-6">
-                We chose Amazon Web Services for its ability to provide us with scalable, high-performance infrastructure, specifically tailored for AI needs. Our free interior design software requires considerable computing power to generate photorealistic renders in real-time.
+                We chose Amazon Web Services for its ability to provide us with scalable, high-performance infrastructure, specifically tailored for intensive computing needs. Our free interior design software requires considerable computing power to generate photorealistic renders in real-time.
               </p>
 
               <p className="text-gray-700 mb-6">
-                Styly.io, featured in the <a href="https://aws.amazon.com/startups/showcase/startup-details/ab2d93c7-3220-4c19-8e35-5ea6059a4909" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AWS startup showcase</a>, fully leverages the Amazon ecosystem to deliver an exceptional user experience.
+                <span className="font-davetica-wide">STYLY</span>, featured in the <a href="https://aws.amazon.com/startups/showcase/startup-details/ab2d93c7-3220-4c19-8e35-5ea6059a4909" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AWS startup showcase</a>, fully leverages the Amazon ecosystem to deliver an exceptional user experience.
               </p>
 
               <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
@@ -268,7 +243,7 @@ const NewBlog2: React.FC = () => {
                 <ul className="space-y-3 text-gray-700">
                   <li><strong>API Gateway:</strong> securing user requests</li>
                   <li><strong>Lambda:</strong> image processing before/after generation</li>
-                  <li><strong>SageMaker:</strong> executing AI staging models</li>
+                  <li><strong>SageMaker:</strong> executing staging models</li>
                   <li><strong>EC2 GPU:</strong> high-quality rendering for specific cases</li>
                   <li><strong>S3:</strong> secure and encrypted file storage</li>
                   <li><strong>CloudFront:</strong> fast global distribution of results</li>
@@ -276,18 +251,18 @@ const NewBlog2: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                Thanks to this architecture, we provide photorealistic renders in less than 10 seconds for our AI interior design simulator.
+                Thanks to this architecture, we provide photorealistic renders in less than 10 seconds for our digital interior design simulator.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                 <img
                   src="/revolutionizing-architecture-hero.png"
-                  alt="AWS Styly.io architecture diagram - Cloud AI infrastructure"
+                  alt="AWS Styly.io architecture diagram - Cloud infrastructure"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
                 <img
                   src="/revolutionizing-architecture-design.jpg"
-                  alt="AWS SageMaker AI processing - Interior design generation"
+                  alt="AWS SageMaker processing - Interior design generation"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
               </div>
@@ -301,7 +276,7 @@ const NewBlog2: React.FC = () => {
               </p>
 
               <p className="text-gray-700 mb-6">
-                According to <a href="https://www.architecturaldigest.com/story/ai-interior-design-security" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Architectural Digest</a>, data security becomes crucial in AI-powered interior design applications.
+                According to <a href="https://www.architecturaldigest.com/story/ai-interior-design-security" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Architectural Digest</a>, data security becomes crucial in digital-powered interior design applications.
               </p>
 
               <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
@@ -313,17 +288,17 @@ const NewBlog2: React.FC = () => {
               </p>
 
               <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-                🌍 What's Next for Styly.io
+                🌍 What's Next for <span className="font-davetica-wide">STYLY</span>
               </h2>
 
               <p className="text-gray-700 mb-6">
-                By 2025, our goals for our free AI interior design platform include embedded mobile AI without servers, regional style models (Japanese Zen, Scandinavian, French classic), direct e-commerce integration in designs, and real-time collaboration tools for agencies and clients.
+                By 2025, our goals for our free digital interior design platform include embedded mobile tools without servers, regional style models (Japanese Zen, Scandinavian, French classic), direct e-commerce integration in designs, and real-time collaboration tools for agencies and clients.
               </p>
 
               <div className="bg-gray-50 p-6 rounded-lg mb-6">
                 <h4 className="font-semibold text-gray-800 mb-3">Our 2025 Goals:</h4>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• Embedded mobile AI, serverless</li>
+                  <li>• Embedded mobile tools, serverless</li>
                   <li>• Regional style models (Japanese Zen, Scandinavian, French classic)</li>
                   <li>• Direct e-commerce integration in designs</li>
                   <li>• Real-time collaboration tools for agencies and clients</li>
@@ -339,58 +314,29 @@ const NewBlog2: React.FC = () => {
               </h2>
 
               <p className="text-gray-700 mb-6">
-                Styly.io isn't just a free design simulator. It's an intelligent staging solution, accessible, fast, and powered by Amazon Web Services technologies. With our Founding Partners Program, we invite decorators, agencies, and brands to co-build the future of intelligent design with us.
+                <span className="font-davetica-wide">STYLY</span> isn't just a free design simulator. It's an intelligent staging solution, accessible, fast, and powered by Amazon Web Services technologies. With our Founding Partners Program, we invite decorators, agencies, and brands to co-build the future of intelligent design with us.
               </p>
 
               <p className="text-gray-700 mb-6">
-                Join the revolution. Try Styly for free.
+                Join the revolution. Try <span className="font-davetica-wide">STYLY</span> for free.
               </p>
 
-              <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
+                <h3 className="text-lg font-semibold text-orange-800 mb-2">
+                  🎯 Ready to Transform Your Interior?
+                </h3>
+                <p className="text-orange-700 mb-4">
+                  Discover the power of <span className="font-davetica-wide">STYLY</span>, the tool that transforms interior design. Create extraordinary spaces with just a few clicks!
+                </p>
                 <a
                   href="https://app.styly.io/signin"
-                  className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"
                 >
-                  Try Styly Free
+                  <span className="relative z-10">Try <span className="font-davetica-wide">STYLY</span> for Free</span>
+                  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
-              </div>
-
-              <p className="text-gray-700 mb-6 mt-8">
-                Also explore our guides on <Link to="/en/blog/real-estate-agents-ai-virtual-staging" className="text-blue-600 hover:underline">virtual staging for real estate agents</Link> and <Link to="/en/blog/free-ai-interior-design-software" className="text-blue-600 hover:underline">our free AI interior design software</Link> for comprehensive design solutions.
-              </p>
-
-              <div className="border-t border-gray-200 pt-8 mt-8">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">
-                  Follow Styly.io for more AI design innovations:
-                </h3>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://www.instagram.com/stylyio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Instagram: stylyio
-                  </a>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61558770901420"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Facebook: Styly AI
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/stylyai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    LinkedIn: Styly AI
-                  </a>
-                </div>
               </div>
             </article>
           </>
