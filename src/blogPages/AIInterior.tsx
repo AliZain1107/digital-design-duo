@@ -118,13 +118,13 @@ const TipsToSaveBig2025: React.FC = () => {
         </div>
 
         <img
-          src="/mini_magick20250608-11806-37r89z.jpg"
+          src="/ai-home-design-trends-budget.webp"
           alt="AI Home Design Trends - Modern interior design with artificial intelligence"
           className="w-full h-[500px] rounded-xl object-cover"
         />
 
         <img
-          src="/mini_magick20250608-11806-5s6kvf.jpg"
+          src="/ai-room-planner-tool-budget.webp"
           alt="AI Room Planner Tool - Smart interior design solutions"
           className="w-full h-[500px] rounded-xl object-cover"
         />

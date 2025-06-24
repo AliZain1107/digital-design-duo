@@ -159,10 +159,10 @@ const HowItWorks: React.FC = () => {
             {/* Before/After Slider */}
             <div className="w-full max-w-2xl mb-6 rounded-2xl overflow-hidden shadow-lg border border-purple-100 bg-white">
               <BeforeAfterSlider
-                beforeImage="/mini_magick20250608-11056-rtsk42.jpg"
-                afterImage="/mini_magick20250608-11056-s7k6sm.jpg"
-                altBefore={language === 'fr' ? 'Avant - Salon traditionnel' : 'Before - Traditional living room'}
-                altAfter={language === 'fr' ? 'Après - Design moderne avec IA' : 'After - Modern AI-powered design'}
+                beforeImage="/Before.png"
+                afterImage="/After.jpg"
+                altBefore={language === 'fr' ? 'Avant' : 'Before'}
+                altAfter={language === 'fr' ? 'Après' : 'After'}
               />
             </div>
           </div>
