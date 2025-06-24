@@ -1,10 +1,15 @@
-import React from "react";
-import { useLanguage } from "@/lib/i18n"; // Import the useLanguage hook
+import React, { useEffect } from "react";
+import { useLanguage } from "@/lib/i18n";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const RealEstateVirtualStaging: React.FC = () => {
-  const { t, language } = useLanguage(); // Get the translation function from context
+  const { t, language } = useLanguage();
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const seoMeta = {
     en: {

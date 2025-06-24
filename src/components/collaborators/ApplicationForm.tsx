@@ -97,11 +97,10 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ isOpen, onClose }) =>
       
       // For now, we'll simulate a successful submission
       // In a real implementation, you would send the data to your backend
-      console.log('Form submitted:', formData);
       
       setFormState('success');
     } catch (error) {
-      console.error('Form submission error:', error);
+
       setFormState('error');
     }
   };

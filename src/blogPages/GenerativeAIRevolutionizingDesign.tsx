@@ -5,23 +5,7 @@ import { useLanguage } from "@/lib/i18n";
 const GenerativeAIRevolutionizingDesign: React.FC = () => {
   const { language, t } = useLanguage();
 
-  const addAlternateLanguageLink = () => {
-    const currentSlug = language === "fr" 
-      ? "comment-ia-generative-revolutionne-design-interieur" 
-      : "how-generative-ai-revolutionizing-interior-design";
-    const alternateSlug = language === "fr" 
-      ? "how-generative-ai-revolutionizing-interior-design" 
-      : "comment-ia-generative-revolutionne-design-interieur";
-    const alternateLang = language === "fr" ? "en" : "fr";
-    
-    return (
-      <link
-        rel="alternate"
-        hrefLang={alternateLang}
-        href={`https://styly.io/${alternateLang}/blog/${alternateSlug}`}
-      />
-    );
-  };
+
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
@@ -48,7 +32,9 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
               : "generative AI interior design, AI design revolution, AI decoration tools, AI room planner, future interior design, free AI interior design, interior design software"
           }
         />
-        {addAlternateLanguageLink()}
+        <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design" />
+        <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />
       </Helmet>
 
       <article className="prose prose-lg max-w-none">
@@ -154,7 +140,7 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
                 Intéressé par l'exploration de la pointe de l'IA dans le design intérieur ? Utilisez l'IA pour réimaginer votre processus de design avec des algorithmes IA avancés. Découvrez les images IA pour voir comment les algorithmes IA avancés transforment votre processus de design.
               </p>
               <p className="text-center">
-                <a href="https://styly.io" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.styly.io/signin" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors" target="_blank" rel="noopener noreferrer">
                   Essayez Styly.io Gratuitement
                 </a>
               </p>
@@ -335,7 +321,7 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
                 Interested in exploring the cutting-edge of AI in interior design? Use AI to reimagine your design process with advanced AI algorithms. Check out the AI images to see how advanced AI algorithms transform your design process.
               </p>
               <p className="text-center">
-                <a href="https://styly.io" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.styly.io/signin" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors" target="_blank" rel="noopener noreferrer">
                   Try Styly.io for Free
                 </a>
               </p>

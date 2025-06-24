@@ -6,13 +6,7 @@ import BeforeAfterSlider from "@/components/ui/BeforeAfterSlider";
 const HowItWorks: React.FC = () => {
   const { t, language } = useLanguage();
   
-  // Debug output to verify language and translations
-  console.log("Current language in HowItWorks:", language);
-  console.log("HowItWorks translations:", {
-    simpleProcess: t.simpleProcess,
-    howItWorks: t.howItWorks,
-    transformSpace: t.transformSpace
-  });
+
   
   return (
     <section className="bg-white w-full flex flex-col items-center justify-center pt-6 sm:pt-8 md:pt-12 pb-8 sm:pb-12 md:pb-16 px-4 sm:px-6 md:px-10" key={`how-it-works-${language}`}>

@@ -132,6 +132,28 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
     if (post.slug === "unlocking-power-ai-interior-design-latest-innovations") {
       return t.unlockingPowerAIInteriorDesignTitle;
     }
+    // New migrated blog posts
+    if (post.slug === "the-science-of-color-in-design-how-ai-helps-you-choose-the-perfect-palette") {
+      return language === "fr" ? "La Science de la Couleur en Design : Comment l'IA Vous Aide à Choisir la Palette Parfaite" : "The Science of Color in Design: How AI Helps You Choose the Perfect Palette";
+    }
+    if (post.slug === "leveraging-ai-to-optimize-space-planning-in-small-apartments") {
+      return language === "fr" ? "Exploiter l'IA pour Optimiser la Planification d'Espace dans les Petits Appartements" : "Leveraging AI to Optimize Space Planning in Small Apartments";
+    }
+    if (post.slug === "need-luxury-bathroom-on-budget-here-is-how") {
+      return language === "fr" ? "Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !" : "Need Luxury Bathroom on a Budget? Here's How!";
+    }
+    if (post.slug === "how-ai-powered-image-generation-can-inspire-your-interior-design-in-2024") {
+      return language === "fr" ? "Comment la Génération d'Images IA Peut Inspirer Votre Design Intérieur en 2024" : "How AI-Powered Image Generation Can Inspire Your Interior Design in 2024";
+    }
+    if (post.slug === "how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design") {
+      return language === "fr" ? "Comment DALL-E, Midjourney et Styly AI Révolutionnent le Design d'Intérieur" : "How DALL-E, Midjourney, and Styly AI are Revolutionizing Interior Design";
+    }
+    if (post.slug === "unlock-the-power-of-photoshop-generative-ai-for-effortless-interior-design") {
+      return language === "fr" ? "Débloquer la Puissance de l'IA Générative Photoshop pour le Design d'Intérieur Sans Effort" : "Unlock the Power of Photoshop's Generative AI for Effortless Interior Design";
+    }
+    if (post.slug === "ai-technology-to-elevate-your-real-estate-strategy") {
+      return language === "fr" ? "Technologie IA pour Élever Votre Stratégie Immobilière" : "AI Technology to Elevate Your Real Estate Strategy";
+    }
     // For other blog posts, use the original title
     return post.title;
   };
