@@ -43,6 +43,7 @@ import UnlockingPowerAIInteriorDesign from "@/blogPages/UnlockingPowerAIInterior
 export interface BlogPost {
   id: number;
   title: string;
+  titleFr?: string;
   date: string;
   image: string;
   slug: string;
@@ -54,6 +55,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 0,
     title: "Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations",
+    titleFr: "Débloquer la puissance de l'IA pour le design d'intérieur : votre guide des dernières innovations",
     date: "Jun 21, 2025",
     image: "/ai-virtual-reality-design-hero.webp",
     slug: "unlocking-the-power-of-ai-for-interior-design-your-guide-to-the-latest-innovations",
@@ -71,7 +73,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 2,
-    title: "How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design",
+    title: "How Styly & Viva Technology Are Shaping the Future of AI-Powered Design",
+    titleFr: "Comment Styly & Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA",
     date: "Jun 16, 2025",
     image: "/ai-interior-design-technology.webp",
     slug: "styly-viva-technology-future-ai-design",
@@ -80,7 +83,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 3,
-    title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io",
+    title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly",
+    titleFr: "Concevoir la Mise en Scène Intérieure IA sur AWS : Dans les Coulisses de Styly",
     date: "Jun 15, 2025",
     image: "/data-analytics-interior-design-dashboard.webp",
     slug: "designing-ai-interior-staging-aws-styly",

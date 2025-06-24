@@ -18,7 +18,7 @@ const testimonialsEn: Testimonial[] = [
     country: "United States",
     countryFlag: "🇺🇸",
     text: "Our small team has big dreams, and this platform made them real. We turn wild ideas into beautiful spaces, impressing clients and making every project a joy to deliver.",
-    profileImage: "/profile pictures/1.jpg"
+    profileImage: "/1.jpg"
   },
   {
     name: "Modern Studio Agency",
@@ -26,7 +26,7 @@ const testimonialsEn: Testimonial[] = [
     country: "Germany",
     countryFlag: "🇩🇪",
     text: "Efficiency is my top priority, and this tool is my secret weapon. Presentations are smooth, clients are impressed, and our success rate has never been higher. It's a game changer.",
-    profileImage: "/profile pictures/2.jpg"
+    profileImage: "/2.jpg"
   },
   {
     name: "Hans Müller",
@@ -34,7 +34,7 @@ const testimonialsEn: Testimonial[] = [
     country: "Switzerland",
     countryFlag: "🇨🇭",
     text: "As an architect, I'm detail-oriented. This platform blends form and function perfectly, making every project feel like a creative partnership. It's intuitive and inspiring to use.",
-    profileImage: "/profile pictures/3.jpg"
+    profileImage: "/3.jpg"
   },
   {
     name: "Jean-Pierre Dubois",
@@ -42,7 +42,7 @@ const testimonialsEn: Testimonial[] = [
     country: "France",
     countryFlag: "🇫🇷",
     text: "After years in design, I thought I'd seen it all. But this tool adds a special touch to my work. Clients notice the difference, and I feel more creative than ever. Bravo!",
-    profileImage: "/profile pictures/4.jpg"
+    profileImage: "/4.jpg"
   },
   {
     name: "Olivia Thompson Ray",
@@ -50,7 +50,7 @@ const testimonialsEn: Testimonial[] = [
     country: "United Kingdom",
     countryFlag: "🇬🇧",
     text: "Mixing old and new is my passion, and this platform gets it. My living room is now a conversation starter, and friends keep asking for my design secrets. It's truly unique.",
-    profileImage: "/profile pictures/5.jpg"
+    profileImage: "/5.jpg"
   },
   {
     name: "Sofia Rossi",
@@ -58,7 +58,7 @@ const testimonialsEn: Testimonial[] = [
     country: "Italy",
     countryFlag: "🇮🇹",
     text: "I'm not a professional designer, but this platform made me feel like one. The suggestions felt personal, and now my home reflects my style. Even my nonna is impressed!",
-    profileImage: "/profile pictures/6.jpg"
+    profileImage: "/6.jpg"
   },
   {
     name: "Carlos Mendez",
@@ -66,7 +66,7 @@ const testimonialsEn: Testimonial[] = [
     country: "Mexico",
     countryFlag: "🇲🇽",
     text: "As a real estate agent, I need to impress buyers fast. This tool lets me show a vision for any property in minutes. My sales have jumped, and clients trust my advice.",
-    profileImage: "/profile pictures/7.jpg"
+    profileImage: "/7.jpg"
   },
   {
     name: "Priya Sharma",
@@ -74,7 +74,7 @@ const testimonialsEn: Testimonial[] = [
     country: "India",
     countryFlag: "🇮",
     text: "I blog about small spaces, and this platform is my secret for creative makeovers. My readers love the before-and-afters, and I enjoy experimenting with new ideas easily.",
-    profileImage: "/profile pictures/8.jpg"
+    profileImage: "/8.jpg"
   },
   {
     name: "Tom Becker",
@@ -82,7 +82,7 @@ const testimonialsEn: Testimonial[] = [
     country: "Australia",
     countryFlag: "🇦🇺",
     text: "Managing renovations means time is money. This software helps me plan layouts and show clients options quickly. Projects stay on track, and my customers are always happy.",
-    profileImage: "/profile pictures/9.jpg"
+    profileImage: "/9.jpg"
   },
   {
     name: "Maya Lee",
@@ -90,7 +90,7 @@ const testimonialsEn: Testimonial[] = [
     country: "Singapore",
     countryFlag: "🇸🇬",
     text: "I love bold colors and design, but was always hesitant to try new things. Now I can preview my ideas before committing. My apartment finally feels like me, and I get compliments.",
-    profileImage: "/profile pictures/10.jpg"
+    profileImage: "/10.jpg"
   },
   {
     name: "Samir El Amrani",
@@ -98,7 +98,7 @@ const testimonialsEn: Testimonial[] = [
     country: "Morocco",
     countryFlag: "🇲🇦",
     text: "Designing restaurants means every project needs a unique vibe. This platform lets me test lighting and layouts until it feels right. Clients are thrilled, and so am I.",
-    profileImage: "/profile pictures/11.jpg"
+    profileImage: "/11.jpg"
   },
   {
     name: "Emily Johnson",
@@ -106,7 +106,7 @@ const testimonialsEn: Testimonial[] = [
     country: "Canada",
     countryFlag: "🇨🇦",
     text: "Buying my first house was overwhelming, but the step-by-step suggestions made it fun. Now my place feels cozy and totally my style. I recommend it to all new homeowners.",
-    profileImage: "/profile pictures/12.jpg"
+    profileImage: "/12.jpg"
   }
 ];
 
@@ -117,7 +117,7 @@ const testimonialsFr: Testimonial[] = [
     country: "États-Unis",
     countryFlag: "🇺🇸",
     text: "Notre petite équipe a de grandes ambitions, et cette plateforme les a rendues possibles. Nous transformons des idées folles en espaces uniques, nos clients sont ravis à chaque projet.",
-    profileImage: "/profile pictures/1.jpg"
+    profileImage: "/1.jpg"
   },
   {
     name: "Modern Studio Agency",
@@ -125,7 +125,7 @@ const testimonialsFr: Testimonial[] = [
     country: "Allemagne",
     countryFlag: "🇩🇪",
     text: "L'efficacité est essentielle pour moi, et cet outil est mon atout secret. Les présentations sont fluides, les clients impressionnés, et notre taux de réussite a explosé.",
-    profileImage: "/profile pictures/2.jpg"
+    profileImage: "/2.jpg"
   },
   {
     name: "Hans Müller",
@@ -133,7 +133,7 @@ const testimonialsFr: Testimonial[] = [
     country: "Suisse",
     countryFlag: "🇨🇭",
     text: "Architecte exigeant, j'ai trouvé ici un allié. La plateforme marie esthétique et utilité, chaque projet devient un vrai dialogue créatif. C'est intuitif et inspirant.",
-    profileImage: "/profile pictures/3.jpg"
+    profileImage: "/3.jpg"
   },
   {
     name: "Jean-Pierre Dubois",
@@ -141,7 +141,7 @@ const testimonialsFr: Testimonial[] = [
     country: "France",
     countryFlag: "🇫🇷",
     text: "Après des années dans le design, je pensais avoir tout vu. Mais cet outil apporte une touche unique à mon travail. Les clients le remarquent, et je me sens plus créatif.",
-    profileImage: "/profile pictures/4.jpg"
+    profileImage: "/4.jpg"
   },
   {
     name: "Olivia Thompson Ray",
@@ -149,15 +149,15 @@ const testimonialsFr: Testimonial[] = [
     country: "Royaume-Uni",
     countryFlag: "🇬🇧",
     text: "J'adore mélanger l'ancien et le moderne, et cette plateforme a tout compris. Mon salon est devenu un sujet de conversation, mes amis veulent tous connaître mon secret déco.",
-    profileImage: "/profile pictures/5.jpg"
+    profileImage: "/5.jpg"
   },
   {
     name: "Sofia Rossi",
     username: "@sofiarossi",
     country: "Italie",
-    countryFlag: "🇮🇹",
+    countryFlag: "🇮��",
     text: "Je ne suis pas décoratrice, mais cette plateforme m'a donné confiance. Les suggestions étaient adaptées, et maintenant mon intérieur me ressemble. Même ma nonna est conquise !",
-    profileImage: "/profile pictures/6.jpg"
+    profileImage: "/6.jpg"
   },
   {
     name: "Carlos Mendez",
@@ -165,7 +165,7 @@ const testimonialsFr: Testimonial[] = [
     country: "Mexique",
     countryFlag: "🇲🇽",
     text: "Agent immobilier, je dois séduire vite. Cet outil me permet de montrer une vision pour chaque bien en quelques minutes. Mes ventes ont grimpé, mes clients me font confiance.",
-    profileImage: "/profile pictures/7.jpg"
+    profileImage: "/7.jpg"
   },
   {
     name: "Priya Sharma",
@@ -173,7 +173,7 @@ const testimonialsFr: Testimonial[] = [
     country: "Inde",
     countryFlag: "🇮",
     text: "Je blogue sur les petits espaces, et cette plateforme est mon secret pour des relookings créatifs. Mes lecteurs adorent les avant/après, et j'expérimente facilement.",
-    profileImage: "/profile pictures/8.jpg"
+    profileImage: "/8.jpg"
   },
   {
     name: "Tom Becker",
@@ -181,7 +181,7 @@ const testimonialsFr: Testimonial[] = [
     country: "Australie",
     countryFlag: "🇦🇺",
     text: "Gérer des rénovations, c'est optimiser le temps. Ce logiciel m'aide à planifier et à présenter des options rapidement. Les projets avancent, et mes clients sont satisfaits.",
-    profileImage: "/profile pictures/9.jpg"
+    profileImage: "/9.jpg"
   },
   {
     name: "Maya Lee",
@@ -189,15 +189,15 @@ const testimonialsFr: Testimonial[] = [
     country: "Singapour",
     countryFlag: "🇸🇬",
     text: "J'aime les couleurs vives et le design audacieux, mais j'hésitais à oser. Maintenant, je peux visualiser mes idées avant de me lancer. Mon appartement me ressemble enfin.",
-    profileImage: "/profile pictures/10.jpg"
+    profileImage: "/10.jpg"
   },
   {
     name: "Samir El Amrani",
     username: "@samircreates",
     country: "Maroc",
-    countryFlag: "🇲🇦",
+    countryFlag: "🇲��",
     text: "Concevoir des restaurants, c'est créer une ambiance unique à chaque fois. Cette plateforme me permet de tester jusqu'à ce que tout soit parfait. Les clients sont ravis.",
-    profileImage: "/profile pictures/11.jpg"
+    profileImage: "/11.jpg"
   },
   {
     name: "Emily Johnson",
@@ -205,7 +205,7 @@ const testimonialsFr: Testimonial[] = [
     country: "Canada",
     countryFlag: "🇨🇦",
     text: "Acheter ma première maison était stressant, mais les suggestions étape par étape ont tout simplifié. Mon chez-moi est chaleureux et à mon image. Je recommande à tous.",
-    profileImage: "/profile pictures/12.jpg"
+    profileImage: "/12.jpg"
   }
 ];
 

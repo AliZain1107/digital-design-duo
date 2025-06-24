@@ -946,7 +946,7 @@ export interface Translations {
   aiEducatedHomeownersDescription: string;
   globalVisibility: string;
   globalVisibilityDescription: string;
-  officialBadge: string;
+  officialBadge: "Official \"STYLY Certified\" Pro badge",
   officialBadgeDescription: string;
   directContact: string;
   directContactDescription: string;
@@ -1535,10 +1535,10 @@ export const translations: Record<Language, Translations> = {
     innovativeStairRailingIdeasTitle: "Innovative Interior Stair Railing Ideas: Custom Designs Powered by Styly AI",
     designLivingRoomLikeProTitle: "Design Your Living Room Like a Pro with Styly",
     futureWorkspaceAIOfficeInteriorsTitle: "Designing the Future Workspace: AI-Powered Office Interiors with Styly",
-    newBlog2Title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly.io",
+    newBlog2Title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly",
     generativeAIRevolutionizingDesignTitle: "How Generative AI is Revolutionizing Interior Design?",
     aiAssistantInteriorDesignPromptsTitle: "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral",
-    stylyVivaTechPartnershipTitle: "How Styly.io & Viva Technology Are Shaping the Future of AI-Powered Design",
+    stylyVivaTechPartnershipTitle: "How Styly & Viva Technology Are Shaping the Future of AI-Powered Design",
     chatGPTInteriorDesignTitle: "Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design",
     unlockingPowerAIInteriorDesignTitle: "Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations",
     footerTrademark: "styly.io® and styly® are registered trademarks of styly.io, Inc. All rights reserved.",
@@ -2158,7 +2158,7 @@ export const translations: Record<Language, Translations> = {
     aiEducatedHomeownersDescription: "Connect with clients who understand design concepts through Styly's AI.",
     globalVisibility: "Global visibility",
     globalVisibilityDescription: "Get featured on Styly.io and Lovable.com to reach more potential clients.",
-    officialBadge: "Official \"Styly Certified\" Pro badge",
+    officialBadge: "Official \"STYLY Certified\" Pro badge",
     officialBadgeDescription: "Differentiate yourself with official recognition that builds trust.",
     directContact: "Direct contact",
     directContactDescription: "Connect with clients via email or site chat without platform interference.",
@@ -2760,12 +2760,12 @@ export const translations: Record<Language, Translations> = {
     innovativeStairRailingIdeasTitle: "Idées Innovantes de Rampes d'Escalier Intérieur : Designs Personnalisés par l'IA Styly",
     designLivingRoomLikeProTitle: "Concevoir Votre Salon Comme un Professionnel avec Styly",
     futureWorkspaceAIOfficeInteriorsTitle: "Concevoir l'Espace de Travail du Futur : Intérieurs de Bureau Alimentés par l'IA avec Styly",
-    newBlog2Title: "Concevoir une mise en scène intérieure par IA sur AWS : les coulisses de Styly.io",
-    generativeAIRevolutionizingDesignTitle: "Comment l'IA Générative Révolutionne le Design d'Intérieur ?",
-    aiAssistantInteriorDesignPromptsTitle: "Assistant IA en Design d'Intérieur - Meilleurs Prompts pour ChatGPT, Gemini, Mistral",
-    stylyVivaTechPartnershipTitle: "Comment Styly.io et Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA",
-    chatGPTInteriorDesignTitle: "ChatGPT Peut-il Concevoir Votre Maison ? Explorer le Rôle de l'IA dans le Design d'Intérieur",
-    unlockingPowerAIInteriorDesignTitle: "Débloquer la Puissance de l'IA pour le Design Intérieur : Guide des Dernières Innovations",
+    newBlog2Title: "Concevoir la Mise en Scène Intérieure IA sur AWS : Dans les Coulisses de Styly",
+    generativeAIRevolutionizingDesignTitle: "How Generative AI is Revolutionizing Interior Design?",
+    aiAssistantInteriorDesignPromptsTitle: "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral",
+    stylyVivaTechPartnershipTitle: "How Styly & Viva Technology Are Shaping the Future of AI-Powered Design",
+    chatGPTInteriorDesignTitle: "Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design",
+    unlockingPowerAIInteriorDesignTitle: "Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations",
     footerTrademark: "styly.io® et styly® sont des marques déposées de styly.io, Inc. Tous droits réservés.",
 
     marketOverview: "Aperçu du marché",

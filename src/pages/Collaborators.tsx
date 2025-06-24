@@ -279,7 +279,9 @@ const Collaborators: React.FC = () => {
               <div className="w-16 h-16 bg-purple-600/10 rounded-full flex items-center justify-center mb-6">
                 <BadgeCheck className="h-8 w-8 text-purple-600" />
               </div>
-              <h3 className="font-semibold text-xl mb-3 transition-colors duration-300 group-hover:text-purple-700">{t.officialBadge}</h3>
+              <h3 className="font-semibold text-xl mb-3 transition-colors duration-300 group-hover:text-purple-700">
+                Official <span className="font-davetica-wide">STYLY</span> Certified Pro badge
+              </h3>
               <p className="text-gray-600">
                 {t.officialBadgeDescription}
               </p>

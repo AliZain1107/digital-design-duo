@@ -46,18 +46,20 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white sticky top-0 w-full py-4 z-50 shadow-2xl">
-      <div className="max-w-screen-xl mx-auto flex min-h-[90px] w-full items-center justify-between px-6 sm:px-10 md:px-14 lg:px-20 xl:px-28">
-        {/* Logo - Larger responsive sizing */}
+    <header className="bg-white sticky top-0 w-full py-3 z-50 shadow-2xl">
+      <div className="max-w-screen-xl mx-auto flex min-h-[72px] w-full items-center justify-between px-6 sm:px-8 md:px-12 lg:px-18 xl:px-24">
+        {/* Logo - Centered responsive sizing */}
         <div className="flex items-center flex-shrink-0 h-full">
           <Link
             to="/"
             className="transition-transform duration-300 hover:scale-105 flex items-center h-full"
+            style={{height: '100%'}}
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY Logo"
-              className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain align-middle -mt-3"
+              className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain align-middle"
+              style={{display: 'block', margin: '0'}}
             />
           </Link>
         </div>
@@ -170,13 +172,15 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center mb-8">
           <Link
             to="/"
-            className="transition-transform hover:scale-105"
+            className="transition-transform hover:scale-105 flex items-center h-full"
+            style={{height: '100%'}}
             onClick={() => setMobileMenuOpen(false)}
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY Logo"
-              className="h-12 w-auto object-contain"
+              className="h-10 w-auto object-contain"
+              style={{display: 'block', margin: '0'}}
             />
           </Link>
           <button

@@ -47,13 +47,13 @@ const ServicesAPI: React.FC = () => {
   // SEO metadata
   const seoMeta = {
     en: {
-      title: "Styly AI API Suite - Advanced Visual Intelligence Platform | AI Interior Design API",
-      description: "Integrate Styly's powerful AI APIs into your platform. Lightning-fast AI floor generation, wall design, moodboards, real estate enhancement, and product visualization APIs for developers.",
+      title: "STYLY API Suite - Advanced Visual Intelligence Platform | AI Interior Design API",
+      description: "Integrate STYLY's powerful AI APIs into your platform. Lightning-fast AI floor generation, wall design, moodboards, real estate enhancement, and product visualization APIs for developers.",
       keywords: "AI interior design API, visual intelligence API, AI floor generation API, AI wall design API, AI moodboard API, real estate enhancement API, product visualization API, interior design software API, AI home staging API, room design API, free AI interior design API, ai interior design free, interior ai, ai room design"
     },
     fr: {
-      title: "Suite API IA Styly - Plateforme d'Intelligence Visuelle Avancée | API Design Intérieur IA",
-      description: "Intégrez les puissantes API IA de Styly dans votre plateforme. API ultra-rapides pour génération de sols IA, design de murs, moodboards, amélioration immobilière et visualisation produits.",
+      title: "Suite d'APIs STYLY - Plateforme d'Intelligence Visuelle Avancée | API Design Intérieur IA",
+      description: "Intégrez les puissantes APIs IA de STYLY dans votre plateforme. APIs ultra-rapides pour génération de sols IA, design de murs, moodboards, amélioration immobilière et visualisation produits.",
       keywords: "API design intérieur IA, API intelligence visuelle, API génération sol IA, API design mur IA, API moodboard IA, API amélioration immobilière, API visualisation produit, API logiciel design intérieur, API home staging IA, API design chambre, API design intérieur gratuit, ia design intérieur gratuit, ia décoration intérieur gratuit, ia aménagement intérieur gratuit"
     }
   };
@@ -236,7 +236,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
-              {language === "fr" ? "Suite d'APIs" : "API Suite"}
+              <span className="font-davetica-wide">STYLY</span> API Suite
             </h1>
             <p className="text-base sm:text-lg md:text-xl font-bold leading-snug text-gray-600 tracking-wide max-w-4xl mx-auto mb-8 animate-fade-in">
               {language === "fr" 
