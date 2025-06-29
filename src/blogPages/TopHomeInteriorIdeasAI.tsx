@@ -30,7 +30,7 @@ const TopHomeInteriorIdeasAI: React.FC = () => {
                   <span>AI Home Design & Interior Ideas</span>
                 </div>
                 <img
-                  src="/top-home-interior-ideas-ai-hero.webp"
+                  src="/ai-home-decor-ideas-customization.webp"
                   alt="Top Home Interior Ideas Using AI"
                   className="w-full h-[400px] object-cover rounded-xl mb-6"
                 />
@@ -89,7 +89,7 @@ const TopHomeInteriorIdeasAI: React.FC = () => {
                   <span>Design Maison IA & Idées Intérieur</span>
                 </div>
                 <img
-                  src="/top-home-interior-ideas-ai-hero.webp"
+                  src="/ai-home-design-trends-budget.webp"
                   alt="Meilleures Idées d'Intérieur Maison avec l'IA"
                   className="w-full h-[400px] object-cover rounded-xl mb-6"
                 />

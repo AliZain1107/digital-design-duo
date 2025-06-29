@@ -120,12 +120,12 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
-                src="/ai-assistant-interior-design-prompts.webp"
+                src="/ai-virtual-reality-design-hero.webp"
                 alt="Assistant IA pour design intérieur - Prompts et conseils personnalisés pour aménagement d'espace"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
-                src="/data-analytics-interior-design-dashboard.webp"
+                src="/ai-interior-design-technology.webp"
                 alt="Tableau de bord analytique IA - Données et insights pour optimisation design intérieur"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
@@ -310,12 +310,12 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <img
-                src="/ai-assistant-interior-design-prompts.webp"
+                src="/generative-ai-interior-design-revolution.webp"
                 alt="AI assistant for interior design - Prompts and personalized advice for space planning"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />
               <img
-                src="/data-analytics-interior-design-dashboard.webp"
+                src="/augmented-reality-home-design.webp"
                 alt="AI analytics dashboard - Data and insights for interior design optimization"
                 className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
               />

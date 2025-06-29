@@ -195,7 +195,7 @@ const StylyVivaTechPartnership: React.FC = () => {
               </p>
 
               <p className="text-gray-700 mb-6">
-                🔗 <a href="https://www.styly.io" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.styly.io</a>
+                🔗 <a href="https://www.styly.fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.styly.fr</a>
               </p>
 
               <p className="text-gray-700 mb-6">

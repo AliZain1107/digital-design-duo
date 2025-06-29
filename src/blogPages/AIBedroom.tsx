@@ -71,7 +71,7 @@ const AiBedroomDesign: React.FC = () => {
 
         {/* Image */}
         <img
-          src="/mini_magick20250608-11056-k6lwqq.jpg"
+          src="/mini_magick20250608-11056-vbllb8.jpg"
           alt="AI bedroom design sample - Modern bedroom with AI-powered layout"
           className="w-full h-64 rounded-lg object-cover"
         />
@@ -182,7 +182,7 @@ const AiBedroomDesign: React.FC = () => {
         </section>
 
         <img
-          src="/mini_magick20250608-11056-ljawia.jpg"
+          src="/mini_magick20250608-11056-w1ke6k.jpg"
           alt="AI bedroom design showcase - Stunning bedroom transformations"
           className="w-full h-64 max-w-3xl object-cover rounded-lg"
         />

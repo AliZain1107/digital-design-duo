@@ -12,9 +12,7 @@ import type { EmblaCarouselType } from 'embla-carousel';
 const SupportedBy: React.FC = () => {
   const { t, language } = useLanguage();
   
-  // Debug output to verify language and translations
-  console.log("Current language in SupportedBy:", language);
-  console.log("SupportedBy translation:", t.supportedBy);
+
   
   const partnerLogos = [
     {

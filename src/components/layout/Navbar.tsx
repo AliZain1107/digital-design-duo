@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import {
   DropdownMenu,
@@ -13,7 +13,6 @@ const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
 
   // Debug log for current language
   console.log("Current language in Navbar:", language);
@@ -46,157 +45,140 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white sticky top-0 w-full py-3 z-50 shadow-2xl">
-      <div className="max-w-screen-xl mx-auto flex min-h-[72px] w-full items-center justify-between px-6 sm:px-8 md:px-12 lg:px-18 xl:px-24">
-        {/* Logo - Centered responsive sizing */}
-        <div className="flex items-center flex-shrink-0 h-full">
+    <header className="bg-white/98 backdrop-blur-md sticky top-0 w-full z-50 border-b border-gray-200/30">
+      <div className="max-w-6xl mx-auto flex h-16 w-full items-center justify-between px-6 lg:px-8">
+        {/* Logo - Premium clean */}
+        <div className="flex items-center">
           <Link
             to="/"
-            className="transition-transform duration-300 hover:scale-105 flex items-center h-full"
-            style={{height: '100%'}}
+            className="transition-opacity duration-200 hover:opacity-80"
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
-              alt="STYLY Logo"
-              className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain align-middle"
-              style={{display: 'block', margin: '0'}}
+              alt="STYLY"
+              className="h-8 w-auto"
             />
           </Link>
         </div>
 
         {/* Mobile menu button */}
         <button
-          className="z-20 md:hidden flex items-center text-purple-700 hover:text-purple-900 transition-all p-2"
+          className="md:hidden p-2 text-gray-400 hover:text-gray-600 transition-colors"
           onClick={toggleMobileMenu}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
 
-        {/* Desktop Navigation - Grouped with better spacing */}
-        <nav className="hidden md:flex items-center gap-3 lg:gap-4 xl:gap-5 flex-shrink-0 h-full">
-          {/* Their existing buttons go here - don't touch the button classes! */}
+        {/* Desktop Navigation - Premium spacing */}
+        <nav className="hidden md:flex items-center gap-8 flex-shrink-0">
         {/* Pricing Button */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
-          <a
-            href="https://app.styly.io/pricing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10 font-baloo"
-            aria-label="Go to Pricing"
-          >
-            {t.pricing}
-          </a>
-        </div>
+        <a
+          href="https://app.styly.io/pricing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-gray-900 font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight"
+          aria-label="Go to Pricing"
+        >
+          {t.pricing}
+        </a>
 
         {/* Styly Pro Button */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
-          <Link
-            to="/collaborateurs"
-            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/collaborateurs") ? "border-purple-500 animate-border-glow" : "border-transparent"}`}
-            aria-label="Go to Styly Pro"
-          >
-            {language === "fr" ? "Styly Pro" : "Styly Pro"}
-          </Link>
-        </div>
+        <Link
+          to="/collaborateurs"
+          className={`font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/collaborateurs") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
+          aria-label="Go to Styly Pro"
+        >
+          {language === "fr" ? "Styly Pro" : "Styly Pro"}
+        </Link>
 
         {/* Services API Button */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
-          <Link
-            to="/services-api"
-            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/services-api") ? "border-purple-500 animate-border-glow" : "border-transparent"}`}
-            aria-label="Go to API"
-          >
-            {t.servicesAPI}
-          </Link>
-        </div>
+        <Link
+          to="/services-api"
+          className={`font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/services-api") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
+          aria-label="Go to API"
+        >
+          {t.servicesAPI}
+        </Link>
 
-        {/* Sign In Button */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-orange-200 via-orange-300 to-orange-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
-          <a
-            href="https://app.styly.io/signin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-sm lg:text-base transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-orange-500/30 border border-transparent whitespace-nowrap z-10 font-baloo"
-            aria-label="Sign In to STYLY AI"
-          >
-            <span className="relative z-10 tracking-wide">{t.signIn}</span>
-            <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </a>
-        </div>
+          {/* Sign In Button */}
+          <div className="ml-4 lg:ml-6">
+            <a
+              href="https://app.styly.io/signin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center py-2 px-4 lg:px-5 bg-orange-500 text-white font-medium text-sm lg:text-base transition-colors duration-200 hover:bg-orange-600 rounded-md whitespace-nowrap tracking-wide"
+              aria-label="Sign In to STYLY AI"
+            >
+              {t.signIn}
+            </a>
+          </div>
 
-        {/* Language Dropdown */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-md p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
-          <DropdownMenu>
-            <DropdownMenuTrigger
-              className="relative bg-white flex items-center gap-1 justify-center py-2 px-2 rounded-md transition-colors duration-200 hover:bg-purple-50 hover:scale-105 z-10 border border-transparent focus:border-transparent active:border-transparent outline-none data-[state=open]:border-purple-500 data-[state=open]:animate-border-glow min-w-[36px]"
-            >
-              <span className="text-lg">
-                {language === "en" ? "🇬🇧" : "🇫🇷"}
-              </span>
-              <ChevronDown className="h-4 w-4 text-purple-700" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent
-              align="end"
-              className="bg-white border border-gray-200 shadow-lg z-50 min-w-[120px]"
-            >
-              {languages.map((lang) => (
-                <DropdownMenuItem
-                  key={lang.code}
-                  className={`cursor-pointer hover:bg-purple-50 focus:bg-purple-50 px-3 py-2 text-sm flex items-center gap-2 ${
-                    language === lang.code ? "bg-purple-50 font-medium" : ""
-                  }`}
-                  onClick={() => handleLanguageChange(lang.code as "en" | "fr")}
-                >
-                  <span className="text-lg">{lang.code === "en" ? "🇬🇧" : "🇫🇷"}</span>
-                  {lang.name}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
+          {/* Language Dropdown */}
+          <div className="ml-3 lg:ml-4">
+            <DropdownMenu>
+              <DropdownMenuTrigger
+                className="flex items-center gap-1 justify-center py-2 px-2 transition-colors duration-200 hover:bg-gray-50 rounded-md outline-none border-none min-w-[40px]"
+              >
+                <span className="text-sm">
+                  {language === "en" ? "🇬🇧" : "🇫🇷"}
+                </span>
+                <ChevronDown className="h-3 w-3 text-gray-400" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent
+                align="end"
+                className="bg-white border border-gray-100 shadow-sm rounded-md min-w-[120px] mt-1"
+              >
+                {languages.map((lang) => (
+                  <DropdownMenuItem
+                    key={lang.code}
+                    className={`cursor-pointer hover:bg-gray-50 focus:bg-gray-50 px-3 py-2 text-sm flex items-center gap-2 transition-colors duration-150 ${
+                      language === lang.code ? "bg-gray-50 font-medium" : ""
+                    }`}
+                    onClick={() => handleLanguageChange(lang.code as "en" | "fr")}
+                  >
+                    <span className="text-sm">{lang.code === "en" ? "🇬🇧" : "🇫🇷"}</span>
+                    <span className="tracking-wide">{lang.name}</span>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
         </nav>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-white z-50 flex flex-col p-4 sm:p-5 transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-white z-50 flex flex-col p-5 transition-transform duration-300 ease-in-out ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-8 pb-4 border-b border-gray-100">
           <Link
             to="/"
-            className="transition-transform hover:scale-105 flex items-center h-full"
-            style={{height: '100%'}}
+            className="transition-opacity duration-200 hover:opacity-80 flex items-center"
             onClick={() => setMobileMenuOpen(false)}
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY Logo"
-              className="h-10 w-auto object-contain"
-              style={{display: 'block', margin: '0'}}
+              className="h-8 w-auto object-contain"
             />
           </Link>
           <button
-            className="text-purple-700 hover:text-purple-900 transition-all p-2"
+            className="text-gray-600 hover:text-purple-700 transition-colors duration-200 p-1.5"
             onClick={toggleMobileMenu}
             aria-label="Close menu"
           >
-            <X size={24} />
+            <X size={20} />
           </button>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-0.5">
           <a
             href="https://app.styly.io/pricing"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-700 font-bold py-3 border-b border-gray-100 hover:text-purple-900 transition-all font-baloo"
+            className="text-gray-700 font-medium py-3 px-3 hover:text-purple-700 hover:bg-gray-50 transition-colors duration-200 rounded-md tracking-wide"
             onClick={() => setMobileMenuOpen(false)}
           >
             {t.pricing}
@@ -204,7 +186,7 @@ const Navbar: React.FC = () => {
 
           <Link
             to="/collaborateurs"
-            className="text-purple-700 font-bold py-3 border-b border-gray-100 hover:text-purple-900 transition-all font-baloo"
+            className="text-gray-700 font-medium py-3 px-3 hover:text-purple-700 hover:bg-gray-50 transition-colors duration-200 rounded-md tracking-wide"
             onClick={() => setMobileMenuOpen(false)}
           >
             {language === "fr" ? "Styly Pro" : "Styly Pro"}
@@ -212,28 +194,30 @@ const Navbar: React.FC = () => {
 
           <Link
             to="/services-api"
-            className="text-purple-700 font-bold py-3 border-b border-gray-100 hover:text-purple-900 transition-all font-baloo"
+            className="text-gray-700 font-medium py-3 px-3 hover:text-purple-700 hover:bg-gray-50 transition-colors duration-200 rounded-md tracking-wide"
             onClick={() => setMobileMenuOpen(false)}
           >
             {t.servicesAPI}
           </Link>
 
-          <a
-            href="https://app.styly.io/signin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-orange-500 text-white font-bold py-3 rounded-lg text-center hover:bg-orange-600 transition-all mt-2 font-baloo"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            {t.signIn}
-          </a>
-          <div className="mt-4 pt-4 border-t border-gray-100">
-            <div className="text-gray-600 text-sm mb-2">Select Language:</div>
+          <div className="mt-5 pt-3">
+            <a
+              href="https://app.styly.io/signin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-orange-500 text-white font-medium py-3 px-4 rounded-md text-center hover:bg-orange-600 transition-colors duration-200 block tracking-wide"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t.signIn}
+            </a>
+          </div>
+          <div className="mt-4 pt-3 border-t border-gray-100">
+            <div className="text-gray-600 text-sm mb-2 font-medium">Language:</div>
             <div className="flex gap-2">
               {languages.map((lang) => (
                 <button
                   key={lang.code}
-                  className={`py-2 px-4 rounded-md transition-all text-sm ${
+                  className={`py-2 px-3 rounded-md transition-colors text-sm ${
                     language === lang.code
                       ? "bg-purple-600 text-white"
                       : "bg-gray-100 text-gray-800 hover:bg-gray-200"
