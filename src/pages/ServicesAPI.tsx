@@ -248,9 +248,12 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
               <div className="relative group">
                 <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
                 <button
+                  type="button"
+                  data-tally-open="w2YLQj"
+                  data-tally-layout="modal"
+                  data-tally-emoji-animation="none"
                   className="relative flex items-center justify-center py-4 px-8 rounded-lg bg-gradient-to-r from-purple-600 to-purple-700 text-white font-bold text-lg transition-all duration-200 hover:scale-105 hover:-translate-y-1 shadow-lg border border-transparent whitespace-nowrap z-10 font-baloo overflow-hidden"
-                  style={{minWidth: '200px'}} // scale for hero
-                  onClick={() => setIsContactFormOpen(true)}
+                  style={{minWidth: '200px'}}
                 >
                   <span className="relative flex items-center z-10">
                     {language === "fr" ? "Demander l'Accès" : "Request Access"}
