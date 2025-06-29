@@ -45,39 +45,39 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white sticky top-0 w-full z-50 border-b border-gray-100">
-      <div className="max-w-screen-xl mx-auto flex min-h-[56px] w-full items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-        {/* Logo - Minimalist sizing */}
-        <div className="flex items-center flex-shrink-0">
+    <header className="bg-white/98 backdrop-blur-md sticky top-0 w-full z-50 border-b border-gray-200/30">
+      <div className="max-w-6xl mx-auto flex h-16 w-full items-center justify-between px-6 lg:px-8">
+        {/* Logo - Premium clean */}
+        <div className="flex items-center">
           <Link
             to="/"
-            className="transition-opacity duration-200 hover:opacity-80 flex items-center"
+            className="transition-opacity duration-200 hover:opacity-80"
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
-              alt="STYLY Logo"
-              className="h-8 sm:h-9 md:h-10 w-auto object-contain"
+              alt="STYLY"
+              className="h-8 w-auto"
             />
           </Link>
         </div>
 
         {/* Mobile menu button */}
         <button
-          className="z-20 md:hidden flex items-center text-gray-600 hover:text-purple-700 transition-colors duration-200 p-1.5"
+          className="md:hidden p-2 text-gray-400 hover:text-gray-600 transition-colors"
           onClick={toggleMobileMenu}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
           {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
 
-        {/* Desktop Navigation - Minimalist spacing */}
-        <nav className="hidden md:flex items-center gap-1 lg:gap-2 flex-shrink-0">
+        {/* Desktop Navigation - Premium spacing */}
+        <nav className="hidden md:flex items-center gap-8 flex-shrink-0">
         {/* Pricing Button */}
         <a
           href="https://app.styly.io/pricing"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center py-2 px-3 lg:px-4 text-gray-700 font-medium text-sm lg:text-base transition-colors duration-200 hover:text-purple-700 hover:bg-gray-50 rounded-md whitespace-nowrap tracking-wide"
+          className="text-gray-600 hover:text-gray-900 font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight"
           aria-label="Go to Pricing"
         >
           {t.pricing}
@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
         {/* Styly Pro Button */}
         <Link
           to="/collaborateurs"
-          className={`flex items-center justify-center py-2 px-3 lg:px-4 font-medium text-sm lg:text-base transition-colors duration-200 hover:bg-gray-50 rounded-md whitespace-nowrap tracking-wide ${isActive("/collaborateurs") ? "text-purple-700 bg-purple-50" : "text-gray-700 hover:text-purple-700"}`}
+          className={`font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/collaborateurs") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
           aria-label="Go to Styly Pro"
         >
           {language === "fr" ? "Styly Pro" : "Styly Pro"}
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
         {/* Services API Button */}
         <Link
           to="/services-api"
-          className={`flex items-center justify-center py-2 px-3 lg:px-4 font-medium text-sm lg:text-base transition-colors duration-200 hover:bg-gray-50 rounded-md whitespace-nowrap tracking-wide ${isActive("/services-api") ? "text-purple-700 bg-purple-50" : "text-gray-700 hover:text-purple-700"}`}
+          className={`font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/services-api") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
           aria-label="Go to API"
         >
           {t.servicesAPI}

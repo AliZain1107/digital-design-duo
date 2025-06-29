@@ -45,9 +45,11 @@ const FAQ: React.FC = () => {
                     {item.question}
                   </div>
                   {openItem === index && (
-                    <div className="w-full text-sm font-normal mt-3 text-[rgba(102,102,102,1)] max-md:max-w-full">
-                      {item.answer}
-                    </div>
+                    <div
+                      className="w-full text-sm font-normal mt-3 text-[rgba(102,102,102,1)] max-md:max-w-full"
+                      dangerouslySetInnerHTML={{ __html: item.answer }}
+                    />
+                  )}
                   )}
                 </div>
                 <button

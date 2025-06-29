@@ -147,11 +147,11 @@ export const blogPosts: BlogPost[] = [
   {
     id: 8,
     title: "10 Expert Tips to Save Big on Home Interiors in 2025",
-    titleFr: "10 Conseils d'Experts pour Économiser sur les Intérieurs de Maison en 2025",
+    titleFr: "10 Conseils d'Experts pour Économiser sur la Décoration Intérieure en 2025",
     date: "Dec 22, 2024",
     image: "/expert-tips-save-big-home-interiors-hero.webp",
-    slug: "10-expert-tips-to-save-big-on-home-interiors-in-2025",
-    slugFr: "10-conseils-experts-economiser-interieurs-maison-2025",
+    slug: "10-expert-tips-save-big-home-interiors-2025",
+    slugFr: "10-conseils-experts-economiser-decoration-interieure-2025",
     Component: ExpertTipsSaveBigHomeInteriors,
   },
   {
