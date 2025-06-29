@@ -46,42 +46,46 @@ const WhoIsFor: React.FC = () => {
                 href="https://app.styly.io/signin"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto bg-gradient-to-r from-[#593286] to-[#FA6F40] text-white font-semibold text-sm px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105 font-baloo"
+                className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-semibold text-sm px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105 font-baloo"
+                aria-label={language === "fr" ? "Commencer avec Styly AI" : "Get Started with Styly AI"}
               >
-                {language === "fr" ? "Essayer Gratuitement" : "Try Free Now"}
+                {language === "fr" ? "Commencer" : "Get Started"}
               </a>
             </div>
           ))}
         </div>
 
         {/* Central CTA Section */}
-        <div className="text-center mt-16">
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 font-baloo">
+        <div className="text-center mt-16 pt-12">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-baloo">
             {language === "fr"
-              ? "Prêt à transformer vos espaces ?"
+              ? "Prêt à Transformer Vos Espaces ?"
               : "Ready to Transform Your Spaces?"
             }
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto font-baloo">
             {language === "fr"
-              ? "Rejoignez des milliers d'utilisateurs qui créent des intérieurs époustouflants avec l'IA de Styly."
-              : "Join thousands of users creating stunning interiors with Styly's AI technology."
+              ? "Rejoignez des milliers d'utilisateurs qui révolutionnent déjà leur approche du design d'intérieur."
+              : "Join thousands of users who are already revolutionizing their approach to interior design."
             }
           </p>
-          <a
-            href="https://app.styly.io/signin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-lg px-10 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo animate-pulse"
-          >
-            {language === "fr"
-              ? "Commencer Maintenant - Gratuit"
-              : "Get Started Now - Free"
-            }
-          </a>
-          <div className="mt-3">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://app.styly.io/signin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo"
+              aria-label={language === "fr" ? "Commencer gratuitement avec Styly AI" : "Start free with Styly AI"}
+            >
+              {language === "fr"
+                ? "Commencer Gratuitement"
+                : "Start Creating Free"
+              }
+            </a>
+          </div>
+          <div className="mt-4">
             <span className="text-sm text-gray-500 font-baloo">
-              {language === "fr" ? "✓ Aucune carte bancaire requise" : "✓ No credit card required"}
+              {language === "fr" ? "✓ Aucune carte de crédit requise" : "✓ No credit card required"}
             </span>
           </div>
         </div>

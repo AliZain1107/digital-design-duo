@@ -8,7 +8,7 @@ interface FAQItem {
 }
 
 const FAQ: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [openItem, setOpenItem] = useState<number | null>(null);
 
   const toggleItem = (id: number) => {
@@ -90,6 +90,7 @@ const FAQ: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo"
+              aria-label={language === "fr" ? "Créer mon premier design avec Styly AI" : "Create my first design with Styly AI"}
             >
               {language === "fr"
                 ? "Créer Mon Premier Design"

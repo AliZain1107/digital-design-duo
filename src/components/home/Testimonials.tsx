@@ -404,6 +404,7 @@ const Testimonials: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-[#593286] font-bold text-xl px-12 py-5 rounded-full shadow-2xl hover:bg-orange-500 hover:text-white transition-all duration-300 hover:scale-105 font-baloo animate-bounce"
+                aria-label={language === "fr" ? "Commencer gratuitement avec Styly AI" : "Start creating free with Styly AI"}
               >
                 {language === "fr"
                   ? "Commencer Gratuitement"
@@ -413,6 +414,7 @@ const Testimonials: React.FC = () => {
               <a
                 href="/blog"
                 className="border-2 border-white text-white font-semibold text-lg px-8 py-4 rounded-full hover:bg-white hover:text-[#593286] transition-all duration-300 font-baloo"
+                aria-label={language === "fr" ? "Voir les inspirations de design" : "See design inspirations"}
               >
                 {language === "fr"
                   ? "Voir les Inspirations"
