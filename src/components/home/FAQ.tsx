@@ -50,7 +50,6 @@ const FAQ: React.FC = () => {
                       dangerouslySetInnerHTML={{ __html: item.answer }}
                     />
                   )}
-                  )}
                 </div>
                 <button
                   className="self-stretch flex min-h-[23px] flex-col items-stretch justify-center w-[22px] my-auto"
