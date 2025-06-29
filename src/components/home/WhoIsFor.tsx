@@ -41,9 +41,49 @@ const WhoIsFor: React.FC = () => {
             <div key={idx} className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               {card.icon}
               <h3 className="text-xl font-semibold mb-3 text-purple-800 font-baloo">{card.title.charAt(0).toUpperCase() + card.title.slice(1).toLowerCase()}</h3>
-              <p className="text-gray-600 text-base font-normal font-baloo">{card.desc}</p>
+              <p className="text-gray-600 text-base font-normal font-baloo mb-6">{card.desc}</p>
+              <a
+                href="https://app.styly.io/signin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto bg-gradient-to-r from-[#593286] to-[#FA6F40] text-white font-semibold text-sm px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105 font-baloo"
+              >
+                {language === "fr" ? "Essayer Gratuitement" : "Try Free Now"}
+              </a>
             </div>
           ))}
+        </div>
+
+        {/* Central CTA Section */}
+        <div className="text-center mt-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 font-baloo">
+            {language === "fr"
+              ? "Prêt à transformer vos espaces ?"
+              : "Ready to Transform Your Spaces?"
+            }
+          </h3>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto font-baloo">
+            {language === "fr"
+              ? "Rejoignez des milliers d'utilisateurs qui créent des intérieurs époustouflants avec l'IA de Styly."
+              : "Join thousands of users creating stunning interiors with Styly's AI technology."
+            }
+          </p>
+          <a
+            href="https://app.styly.io/signin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-lg px-10 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo animate-pulse"
+          >
+            {language === "fr"
+              ? "Commencer Maintenant - Gratuit"
+              : "Get Started Now - Free"
+            }
+          </a>
+          <div className="mt-3">
+            <span className="text-sm text-gray-500 font-baloo">
+              {language === "fr" ? "✓ Aucune carte bancaire requise" : "✓ No credit card required"}
+            </span>
+          </div>
         </div>
       </div>
     </section>

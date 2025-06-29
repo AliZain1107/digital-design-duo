@@ -70,6 +70,38 @@ const FAQ: React.FC = () => {
               </div>
             ))}
           </div>
+
+          {/* CTA Section after FAQ */}
+          <div className="text-center mt-16 pt-12 border-t border-gray-200">
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-baloo">
+              {language === "fr"
+                ? "Toutes vos questions ont une réponse ?"
+                : "Got All Your Questions Answered?"
+              }
+            </h3>
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto font-baloo">
+              {language === "fr"
+                ? "Il est temps de passer à l'action et de créer vos premiers designs époustouflants avec Styly AI."
+                : "It's time to take action and create your first stunning designs with Styly AI."
+              }
+            </p>
+            <a
+              href="https://app.styly.io/signin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo"
+            >
+              {language === "fr"
+                ? "Créer Mon Premier Design"
+                : "Create My First Design"
+              }
+            </a>
+            <div className="mt-4">
+              <span className="text-sm text-gray-500 font-baloo">
+                {language === "fr" ? "✓ Inscription gratuite en 30 secondes" : "✓ Free signup in 30 seconds"}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

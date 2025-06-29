@@ -162,6 +162,48 @@ const HowItWorks: React.FC = () => {
           </div>
         </div>
 
+        {/* CTA Section after How It Works */}
+        <div className="text-center mt-16 pt-12 border-t border-gray-200">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-baloo">
+            {language === "fr"
+              ? "Prêt à voir la magie opérer ?"
+              : "Ready to See the Magic Happen?"
+            }
+          </h3>
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-baloo">
+            {language === "fr"
+              ? "En seulement 3 étapes simples, transformez n'importe quel espace en un design professionnel époustouflant."
+              : "In just 3 simple steps, transform any space into a stunning professional design."
+            }
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://app.styly.io/signin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-lg px-10 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo"
+            >
+              {language === "fr"
+                ? "Essayer Maintenant"
+                : "Try It Now"
+              }
+            </a>
+            <a
+              href="/video-guide"
+              className="border-2 border-[#593286] text-[#593286] font-semibold text-lg px-8 py-4 rounded-full hover:bg-[#593286] hover:text-white transition-all duration-300 font-baloo"
+            >
+              {language === "fr"
+                ? "Voir la Démo"
+                : "Watch Demo"
+              }
+            </a>
+          </div>
+          <div className="mt-4">
+            <span className="text-sm text-gray-500 font-baloo">
+              {language === "fr" ? "✓ Gratuit • ✓ Aucune installation • ✓ Résultats instantanés" : "✓ Free • ✓ No Download • ✓ Instant Results"}
+            </span>
+          </div>
+        </div>
 
       </div>
     </section>

@@ -383,8 +383,50 @@ const Testimonials: React.FC = () => {
         </div>
       </div>
       <div className="-mt-16">
-        {/* CTA Banner Section (insert your CTA component here) */}
-        {/* <CTABanner /> */}
+        {/* CTA Banner Section */}
+        <div className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] py-16 px-4 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 font-baloo">
+              {language === "fr"
+                ? "Rejoignez des milliers de créateurs satisfaits"
+                : "Join Thousands of Happy Creators"
+              }
+            </h2>
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto font-baloo">
+              {language === "fr"
+                ? "Transformez vos idées en réalité avec l'IA la plus avancée du design d'intérieur."
+                : "Transform your ideas into reality with the most advanced interior design AI."
+              }
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="https://app.styly.io/signin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#593286] font-bold text-xl px-12 py-5 rounded-full shadow-2xl hover:bg-orange-500 hover:text-white transition-all duration-300 hover:scale-105 font-baloo animate-bounce"
+              >
+                {language === "fr"
+                  ? "Commencer Gratuitement"
+                  : "Start Creating Free"
+                }
+              </a>
+              <a
+                href="/blog"
+                className="border-2 border-white text-white font-semibold text-lg px-8 py-4 rounded-full hover:bg-white hover:text-[#593286] transition-all duration-300 font-baloo"
+              >
+                {language === "fr"
+                  ? "Voir les Inspirations"
+                  : "See Inspirations"
+                }
+              </a>
+            </div>
+            <div className="mt-6">
+              <span className="text-white/80 text-sm font-baloo">
+                {language === "fr" ? "✓ Gratuit à vie • ✓ Aucune limite • ✓ Support 24/7" : "✓ Free Forever • ✓ No Limits • ✓ 24/7 Support"}
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
