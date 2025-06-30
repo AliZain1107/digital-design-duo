@@ -1,8 +1,7 @@
 # Redirect URLs with trailing slashes to URLs without trailing slashes
-# This fixes 404 errors caused by external tools adding trailing slashes
+# This ensures consistent URL structure without trailing slashes
 # Force redirects with 301! to ensure they take precedence
 # IMPORTANT: Specific rules MUST come before general patterns
-# Updated to ensure no-slash → slash → 200 (one hop) as requested
 
 # French-specific redirects (remove trailing slashes)
 /blog/10-conseils-experts-economiser-decoration-interieure-2025/  /blog/10-conseils-experts-economiser-decoration-interieure-2025  301!
