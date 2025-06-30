@@ -5,6 +5,8 @@
 
 # French-specific redirects (remove trailing slashes)
 /blog/10-conseils-experts-economiser-decoration-interieure-2025/  /blog/10-conseils-experts-economiser-decoration-interieure-2025  301!
+/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur/  /blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur  301!
+/blog/concevoir-mise-en-scene-interieure-ia-aws-styly/  /blog/concevoir-mise-en-scene-interieure-ia-aws-styly  301!
 
 # Blog index redirects (French only)
 /blog/  /blog  301!
@@ -49,3 +51,6 @@
 
 # Catch-all for any other trailing slash URLs
 /*/  /:splat  301!
+
+# SPA fallback - MUST be last rule
+/*  /index.html  200
