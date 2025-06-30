@@ -15,10 +15,7 @@ const Terms: React.FC = () => {
     if (location.pathname.startsWith("/fr/conditions") || location.pathname.startsWith("/fr") || location.pathname === "/conditions") {
       pathLang = "fr";
     } else if (location.pathname.startsWith("/en/terms") || location.pathname.startsWith("/en")) {
-      // Redirect English terms routes to external site
-      console.log("English terms route detected, redirecting to external site");
-      window.location.href = "https://www.styly.io/terms";
-      return;
+      pathLang = "en";
     } else {
       // Default to French for legacy routes
       pathLang = "fr";
