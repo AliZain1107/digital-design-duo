@@ -41,97 +41,64 @@ const App = () => (
 
               {/* Pricing routes - redirect to external */}
               <Route path="/pricing" element={<Pricing />} />
-              <Route path="/pricing/" element={<Pricing />} />
               <Route path="/en/pricing" element={<Pricing />} />
-              <Route path="/en/pricing/" element={<Pricing />} />
               <Route path="/fr/pricing" element={<Pricing />} />
-              <Route path="/fr/pricing/" element={<Pricing />} />
 
               {/* English routes */}
               <Route path="/en" element={<Index />} />
-              <Route path="/en/" element={<Index />} />
 
               {/* Primary French blog routes (canonical URLs) */}
               <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPostPage />} />
-              <Route path="/blog/:slug/" element={<BlogPostPage />} />
 
               {/* English blog routes (disallowed in robots.txt but kept for completeness) */}
               <Route path="/en/blog" element={<Blog />} />
-              <Route path="/en/blog/" element={<Blog />} />
               <Route path="/en/blog/:slug" element={<BlogPostPage />} />
-              <Route path="/en/blog/:slug/" element={<BlogPostPage />} />
 
               {/* French legal pages */}
               <Route path="/fr/conditions" element={<Terms />} />
-              <Route path="/fr/conditions/" element={<Terms />} />
               <Route path="/fr/confidentialite" element={<Privacy />} />
-              <Route path="/fr/confidentialite/" element={<Privacy />} />
 
               {/* English legal pages */}
               <Route path="/en/terms" element={<Terms />} />
-              <Route path="/en/terms/" element={<Terms />} />
               <Route path="/en/privacy" element={<Privacy />} />
-              <Route path="/en/privacy/" element={<Privacy />} />
 
               {/* French video guide pages */}
               <Route path="/fr/video" element={<VideoGuide />} />
-              <Route path="/fr/video/" element={<VideoGuide />} />
 
               {/* French collaborators pages */}
               <Route path="/fr/collaborateurs" element={<Collaborators />} />
-              <Route path="/fr/collaborateurs/" element={<Collaborators />} />
 
               {/* English collaborators pages */}
               <Route path="/en/collaborateurs" element={<Collaborators />} />
-              <Route path="/en/collaborateurs/" element={<Collaborators />} />
               <Route path="/en/styly-pro" element={<Collaborators />} />
-              <Route path="/en/styly-pro/" element={<Collaborators />} />
 
               {/* French services API pages */}
               <Route path="/fr/services-api" element={<ServicesAPI />} />
-              <Route path="/fr/services-api/" element={<ServicesAPI />} />
 
               {/* English services API pages */}
               <Route path="/en/services-api" element={<ServicesAPI />} />
-              <Route path="/en/services-api/" element={<ServicesAPI />} />
 
               {/* Legacy routes for backward compatibility */}
               <Route path="/conditions" element={<Terms />} />
-              <Route path="/conditions/" element={<Terms />} />
               <Route path="/privacy" element={<Privacy />} />
-              <Route path="/privacy/" element={<Privacy />} />
               <Route path="/confidentialite" element={<Privacy />} />
-              <Route path="/confidentialite/" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
-              <Route path="/terms/" element={<Terms />} />
               <Route path="/video" element={<VideoGuide />} />
-              <Route path="/video/" element={<VideoGuide />} />
               <Route path="/collaborateurs" element={<Collaborators />} />
-              <Route path="/collaborateurs/" element={<Collaborators />} />
               <Route path="/styly-pro" element={<Collaborators />} />
-              <Route path="/styly-pro/" element={<Collaborators />} />
               <Route path="/services-api" element={<ServicesAPI />} />
-              <Route path="/services-api/" element={<ServicesAPI />} />
               <Route path="/services-api-fr" element={<ServicesAPI />} />
-              <Route path="/services-api-fr/" element={<ServicesAPI />} />
 
               {/* Upload routes */}
               <Route path="/upload" element={<Upload />} />
-              <Route path="/upload/" element={<Upload />} />
               <Route path="/en/upload" element={<Upload />} />
-              <Route path="/en/upload/" element={<Upload />} />
               <Route path="/fr/upload" element={<Upload />} />
-              <Route path="/fr/upload/" element={<Upload />} />
 
               {/* Get started routes */}
               <Route path="/get-started" element={<Index />} />
-              <Route path="/get-started/" element={<Index />} />
               <Route path="/en/get-started" element={<Index />} />
-              <Route path="/en/get-started/" element={<Index />} />
               <Route path="/fr/get-started" element={<Index />} />
-              <Route path="/fr/get-started/" element={<Index />} />
 
               {/* External service redirects */}
               <Route path="/signin" element={<NotFound />} />
