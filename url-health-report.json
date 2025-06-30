@@ -1,297 +1,299 @@
 {
-  "timestamp": "2025-06-30T09:57:05.790Z",
+  "timestamp": "2025-06-30T11:02:39.623Z",
   "totalUrls": 57,
   "successful": 1,
-  "failed": 56,
+  "trailingSlashRedirects": 0,
+  "totalWorking": 1,
+  "actualFailures": 56,
   "errors": [
     {
       "url": "https://www.styly.fr/en",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.771Z"
+      "timestamp": "2025-06-30T11:02:39.613Z"
     },
     {
       "url": "https://www.styly.fr/en/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.785Z"
+      "timestamp": "2025-06-30T11:02:39.615Z"
     },
     {
       "url": "https://www.styly.fr/upload",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.785Z"
+      "timestamp": "2025-06-30T11:02:39.616Z"
     },
     {
       "url": "https://www.styly.fr/upload/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.785Z"
+      "timestamp": "2025-06-30T11:02:39.616Z"
     },
     {
       "url": "https://www.styly.fr/pricing",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.785Z"
+      "timestamp": "2025-06-30T11:02:39.616Z"
     },
     {
       "url": "https://www.styly.fr/pricing/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.785Z"
+      "timestamp": "2025-06-30T11:02:39.616Z"
     },
     {
       "url": "https://www.styly.fr/get-started",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.617Z"
     },
     {
       "url": "https://www.styly.fr/get-started/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.617Z"
     },
     {
       "url": "https://www.styly.fr/styly-pro",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.617Z"
     },
     {
       "url": "https://www.styly.fr/styly-pro/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.617Z"
     },
     {
       "url": "https://www.styly.fr/services-api",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.617Z"
     },
     {
       "url": "https://www.styly.fr/services-api/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/blog",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/blog/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/en/blog",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/en/blog/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/conditions",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/conditions/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/confidentialite",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.786Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/confidentialite/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/privacy",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.618Z"
     },
     {
       "url": "https://www.styly.fr/privacy/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.619Z"
     },
     {
       "url": "https://www.styly.fr/terms",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.619Z"
     },
     {
       "url": "https://www.styly.fr/terms/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.619Z"
     },
     {
       "url": "https://www.styly.fr/en/terms",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.619Z"
     },
     {
       "url": "https://www.styly.fr/en/terms/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.619Z"
     },
     {
       "url": "https://www.styly.fr/en/privacy",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.619Z"
     },
     {
       "url": "https://www.styly.fr/en/privacy/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.619Z"
     },
     {
       "url": "https://www.styly.fr/video",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.619Z"
     },
     {
       "url": "https://www.styly.fr/video/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.620Z"
     },
     {
       "url": "https://www.styly.fr/collaborateurs",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.620Z"
     },
     {
       "url": "https://www.styly.fr/collaborateurs/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.620Z"
     },
     {
       "url": "https://www.styly.fr/en/collaborateurs",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.787Z"
+      "timestamp": "2025-06-30T11:02:39.620Z"
     },
     {
       "url": "https://www.styly.fr/en/collaborateurs/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.788Z"
+      "timestamp": "2025-06-30T11:02:39.620Z"
     },
     {
       "url": "https://www.styly.fr/en/styly-pro",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.788Z"
+      "timestamp": "2025-06-30T11:02:39.620Z"
     },
     {
       "url": "https://www.styly.fr/en/styly-pro/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.788Z"
+      "timestamp": "2025-06-30T11:02:39.620Z"
     },
     {
       "url": "https://www.styly.fr/en/services-api",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.788Z"
+      "timestamp": "2025-06-30T11:02:39.620Z"
     },
     {
       "url": "https://www.styly.fr/en/services-api/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.788Z"
+      "timestamp": "2025-06-30T11:02:39.620Z"
     },
     {
       "url": "https://www.styly.fr/en/upload",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.788Z"
+      "timestamp": "2025-06-30T11:02:39.621Z"
     },
     {
       "url": "https://www.styly.fr/en/upload/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.788Z"
+      "timestamp": "2025-06-30T11:02:39.621Z"
     },
     {
       "url": "https://www.styly.fr/en/pricing",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.788Z"
+      "timestamp": "2025-06-30T11:02:39.621Z"
     },
     {
       "url": "https://www.styly.fr/en/pricing/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.621Z"
     },
     {
       "url": "https://www.styly.fr/en/get-started",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.621Z"
     },
     {
       "url": "https://www.styly.fr/en/get-started/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.621Z"
     },
     {
       "url": "https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.621Z"
     },
     {
       "url": "https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.621Z"
     },
     {
       "url": "https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.622Z"
     },
     {
       "url": "https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.622Z"
     },
     {
       "url": "https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.622Z"
     },
     {
       "url": "https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.622Z"
     },
     {
       "url": "https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.789Z"
+      "timestamp": "2025-06-30T11:02:39.622Z"
     },
     {
       "url": "https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.790Z"
+      "timestamp": "2025-06-30T11:02:39.622Z"
     },
     {
       "url": "https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.790Z"
+      "timestamp": "2025-06-30T11:02:39.622Z"
     },
     {
       "url": "https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.790Z"
+      "timestamp": "2025-06-30T11:02:39.622Z"
     },
     {
       "url": "https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.790Z"
+      "timestamp": "2025-06-30T11:02:39.623Z"
     },
     {
       "url": "https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly/",
       "error": "HTTP 404",
-      "timestamp": "2025-06-30T09:57:05.790Z"
+      "timestamp": "2025-06-30T11:02:39.623Z"
     }
   ],
-  "executionTime": 2470,
+  "executionTime": 2199,
   "results": [
     {
       "url": "https://www.styly.fr",
       "status": "success",
       "statusCode": 200,
-      "responseTime": 309,
+      "responseTime": 286,
       "redirectChain": [
         {
           "statusCode": 200,
@@ -304,7 +306,7 @@
       "url": "https://www.styly.fr/en",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 220,
+      "responseTime": 209,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -321,7 +323,7 @@
       "url": "https://www.styly.fr/en/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 213,
+      "responseTime": 212,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -334,7 +336,7 @@
       "url": "https://www.styly.fr/upload",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 237,
+      "responseTime": 194,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -351,7 +353,7 @@
       "url": "https://www.styly.fr/upload/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 219,
+      "responseTime": 203,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -364,7 +366,7 @@
       "url": "https://www.styly.fr/pricing",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 218,
+      "responseTime": 197,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -381,7 +383,7 @@
       "url": "https://www.styly.fr/pricing/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 213,
+      "responseTime": 204,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -394,7 +396,7 @@
       "url": "https://www.styly.fr/get-started",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 229,
+      "responseTime": 212,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -411,7 +413,7 @@
       "url": "https://www.styly.fr/get-started/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 217,
+      "responseTime": 204,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -424,7 +426,7 @@
       "url": "https://www.styly.fr/styly-pro",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 210,
+      "responseTime": 219,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -441,7 +443,7 @@
       "url": "https://www.styly.fr/styly-pro/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 138,
+      "responseTime": 109,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -454,7 +456,7 @@
       "url": "https://www.styly.fr/services-api",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 117,
+      "responseTime": 122,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -471,7 +473,7 @@
       "url": "https://www.styly.fr/services-api/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 131,
+      "responseTime": 123,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -484,7 +486,7 @@
       "url": "https://www.styly.fr/blog",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 120,
+      "responseTime": 111,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -501,7 +503,7 @@
       "url": "https://www.styly.fr/blog/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 125,
+      "responseTime": 111,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -514,7 +516,7 @@
       "url": "https://www.styly.fr/en/blog",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 134,
+      "responseTime": 105,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -531,7 +533,7 @@
       "url": "https://www.styly.fr/en/blog/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 135,
+      "responseTime": 113,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -544,7 +546,7 @@
       "url": "https://www.styly.fr/conditions",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 139,
+      "responseTime": 100,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -561,7 +563,7 @@
       "url": "https://www.styly.fr/conditions/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 145,
+      "responseTime": 108,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -574,7 +576,7 @@
       "url": "https://www.styly.fr/confidentialite",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 114,
+      "responseTime": 91,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -591,7 +593,7 @@
       "url": "https://www.styly.fr/confidentialite/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 132,
+      "responseTime": 117,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -604,7 +606,7 @@
       "url": "https://www.styly.fr/privacy",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 154,
+      "responseTime": 118,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -621,7 +623,7 @@
       "url": "https://www.styly.fr/privacy/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 119,
+      "responseTime": 107,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -634,7 +636,7 @@
       "url": "https://www.styly.fr/terms",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 122,
+      "responseTime": 106,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -651,7 +653,7 @@
       "url": "https://www.styly.fr/terms/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 124,
+      "responseTime": 117,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -664,7 +666,7 @@
       "url": "https://www.styly.fr/en/terms",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 143,
+      "responseTime": 113,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -681,7 +683,7 @@
       "url": "https://www.styly.fr/en/terms/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 144,
+      "responseTime": 110,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -694,7 +696,7 @@
       "url": "https://www.styly.fr/en/privacy",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 114,
+      "responseTime": 100,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -711,7 +713,7 @@
       "url": "https://www.styly.fr/en/privacy/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 110,
+      "responseTime": 94,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -724,7 +726,7 @@
       "url": "https://www.styly.fr/video",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 140,
+      "responseTime": 105,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -741,7 +743,7 @@
       "url": "https://www.styly.fr/video/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 131,
+      "responseTime": 135,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -754,7 +756,7 @@
       "url": "https://www.styly.fr/collaborateurs",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 140,
+      "responseTime": 103,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -771,7 +773,7 @@
       "url": "https://www.styly.fr/collaborateurs/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 112,
+      "responseTime": 113,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -784,7 +786,7 @@
       "url": "https://www.styly.fr/en/collaborateurs",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 142,
+      "responseTime": 137,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -801,7 +803,7 @@
       "url": "https://www.styly.fr/en/collaborateurs/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 117,
+      "responseTime": 134,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -814,7 +816,7 @@
       "url": "https://www.styly.fr/en/styly-pro",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 138,
+      "responseTime": 107,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -831,7 +833,7 @@
       "url": "https://www.styly.fr/en/styly-pro/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 124,
+      "responseTime": 102,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -844,7 +846,7 @@
       "url": "https://www.styly.fr/en/services-api",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 126,
+      "responseTime": 111,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -861,7 +863,7 @@
       "url": "https://www.styly.fr/en/services-api/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 127,
+      "responseTime": 135,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -874,7 +876,7 @@
       "url": "https://www.styly.fr/en/upload",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 121,
+      "responseTime": 112,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -891,7 +893,7 @@
       "url": "https://www.styly.fr/en/upload/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 99,
+      "responseTime": 94,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -904,7 +906,7 @@
       "url": "https://www.styly.fr/en/pricing",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 114,
+      "responseTime": 101,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -921,7 +923,7 @@
       "url": "https://www.styly.fr/en/pricing/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 95,
+      "responseTime": 100,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -934,7 +936,7 @@
       "url": "https://www.styly.fr/en/get-started",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 98,
+      "responseTime": 94,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -951,7 +953,7 @@
       "url": "https://www.styly.fr/en/get-started/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 125,
+      "responseTime": 111,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -964,7 +966,7 @@
       "url": "https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 122,
+      "responseTime": 103,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -981,7 +983,7 @@
       "url": "https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 109,
+      "responseTime": 97,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -994,7 +996,7 @@
       "url": "https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 107,
+      "responseTime": 100,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -1011,7 +1013,7 @@
       "url": "https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 108,
+      "responseTime": 104,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -1024,7 +1026,7 @@
       "url": "https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 92,
+      "responseTime": 97,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -1041,7 +1043,7 @@
       "url": "https://www.styly.fr/blog/styly-viva-technology-avenir-design-ia/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 116,
+      "responseTime": 108,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -1054,7 +1056,7 @@
       "url": "https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 118,
+      "responseTime": 96,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -1071,7 +1073,7 @@
       "url": "https://www.styly.fr/en/blog/styly-viva-technology-future-ai-design/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 122,
+      "responseTime": 101,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -1084,7 +1086,7 @@
       "url": "https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 113,
+      "responseTime": 104,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -1101,7 +1103,7 @@
       "url": "https://www.styly.fr/blog/concevoir-mise-en-scene-interieure-ia-aws-styly/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 112,
+      "responseTime": 90,
       "redirectChain": [
         {
           "statusCode": 404,
@@ -1114,7 +1116,7 @@
       "url": "https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 110,
+      "responseTime": 91,
       "redirectChain": [
         {
           "statusCode": 301,
@@ -1131,7 +1133,7 @@
       "url": "https://www.styly.fr/en/blog/designing-ai-interior-staging-aws-styly/",
       "status": "error",
       "statusCode": 404,
-      "responseTime": 110,
+      "responseTime": 95,
       "redirectChain": [
         {
           "statusCode": 404,
