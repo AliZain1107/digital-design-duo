@@ -41,16 +41,7 @@ const WhoIsFor: React.FC = () => {
             <div key={idx} className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               {card.icon}
               <h3 className="text-xl font-semibold mb-3 text-purple-800 font-baloo">{card.title.charAt(0).toUpperCase() + card.title.slice(1).toLowerCase()}</h3>
-              <p className="text-gray-600 text-base font-normal font-baloo mb-6">{card.desc}</p>
-              <a
-                href="https://app.styly.io/signin"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-semibold text-sm px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105 font-baloo"
-                aria-label={language === "fr" ? "Commencer avec Styly AI" : "Get Started with Styly AI"}
-              >
-                {language === "fr" ? "Commencer" : "Get Started"}
-              </a>
+              <p className="text-gray-600 text-base font-normal font-baloo">{card.desc}</p>
             </div>
           ))}
         </div>

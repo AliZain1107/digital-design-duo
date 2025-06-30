@@ -181,7 +181,7 @@ const HowItWorks: React.FC = () => {
               href="https://app.styly.io/signin"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo"
+              className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo relative z-10"
               aria-label={language === "fr" ? "Essayer Styly AI maintenant" : "Try Styly AI now"}
             >
               {language === "fr"
@@ -191,7 +191,7 @@ const HowItWorks: React.FC = () => {
             </a>
             <a
               href="/blog"
-              className="border-2 border-[#593286] text-[#593286] font-semibold text-lg px-8 py-4 rounded-full hover:bg-[#593286] hover:text-white transition-all duration-300 font-baloo"
+              className="border-2 border-[#593286] text-[#593286] bg-white font-semibold text-lg px-8 py-4 rounded-full hover:bg-[#593286] hover:text-white transition-all duration-300 font-baloo relative z-10"
               aria-label={language === "fr" ? "Voir des exemples de designs" : "See design examples"}
             >
               {language === "fr"
