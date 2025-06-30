@@ -21,8 +21,8 @@ const RevolutionizingArchitecture: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/revolutionner-architecture-ingenierie-construction-ia"
-    : "https://styly.io/en/blog/revolutionizing-architecture-engineering-construction-ai";
+    ? "https://www.styly.fr/blog/revolutionner-architecture-ingenierie-construction-ia"
+    : "https://www.styly.fr/en/blog/revolutionizing-architecture-engineering-construction-ai";
 
   return (
     <>

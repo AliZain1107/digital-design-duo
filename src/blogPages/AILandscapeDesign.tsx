@@ -22,12 +22,12 @@ const AILandscapeDesign: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/ia-design-paysager-espaces-exterieurs-styly"
-    : "https://styly.io/en/blog/ai-landscape-design-outdoor-spaces-styly";
+    ? "https://www.styly.fr/fr/blog/ia-design-paysager-espaces-exterieurs-styly"
+    : "https://www.styly.fr/en/blog/ai-landscape-design-outdoor-spaces-styly";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/ai-landscape-design-outdoor-spaces-styly",
-    fr: "https://styly.io/fr/blog/ia-design-paysager-espaces-exterieurs-styly"
+    en: "https://www.styly.fr/en/blog/ai-landscape-design-outdoor-spaces-styly",
+    fr: "https://www.styly.fr/fr/blog/ia-design-paysager-espaces-exterieurs-styly"
   };
 
   return (

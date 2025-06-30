@@ -22,12 +22,12 @@ const ScienceColorDesign: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/science-couleur-design-ia-palette-parfaite"
-    : "https://styly.io/en/blog/science-color-design-ai-perfect-palette";
+    ? "https://www.styly.fr/fr/blog/science-couleur-design-ia-palette-parfaite"
+    : "https://www.styly.fr/en/blog/science-color-design-ai-perfect-palette";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/science-color-design-ai-perfect-palette",
-    fr: "https://styly.io/fr/blog/science-couleur-design-ia-palette-parfaite"
+    en: "https://www.styly.fr/en/blog/science-color-design-ai-perfect-palette",
+    fr: "https://www.styly.fr/fr/blog/science-couleur-design-ia-palette-parfaite"
   };
 
   return (

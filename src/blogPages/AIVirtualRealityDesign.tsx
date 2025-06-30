@@ -22,12 +22,12 @@ const AIVirtualRealityDesign: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/intersection-ia-realite-virtuelle-design"
-    : "https://styly.io/en/blog/intersection-ai-virtual-reality-design";
+    ? "https://www.styly.fr/fr/blog/intersection-ia-realite-virtuelle-design"
+    : "https://www.styly.fr/en/blog/intersection-ai-virtual-reality-design";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/intersection-ai-virtual-reality-design",
-    fr: "https://styly.io/fr/blog/intersection-ia-realite-virtuelle-design"
+    en: "https://www.styly.fr/en/blog/intersection-ai-virtual-reality-design",
+    fr: "https://www.styly.fr/fr/blog/intersection-ia-realite-virtuelle-design"
   };
 
   return (

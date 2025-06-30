@@ -23,8 +23,8 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/solutions-logicielles-design-interieur-ia-2024"
-    : "https://styly.io/en/blog/ai-design-software-solutions-2024";
+    ? "https://www.styly.fr/fr/blog/solutions-logicielles-design-interieur-ia-2024"
+    : "https://www.styly.fr/en/blog/ai-design-software-solutions-2024";
 
   return (
     <>

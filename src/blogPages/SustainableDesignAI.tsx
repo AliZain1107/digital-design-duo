@@ -22,12 +22,12 @@ const SustainableDesignAI: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/design-durabilite-ia-espaces-eco-responsables"
-    : "https://styly.io/en/blog/sustainable-design-ai-eco-friendly-spaces";
+    ? "https://www.styly.fr/fr/blog/design-durabilite-ia-espaces-eco-responsables"
+    : "https://www.styly.fr/en/blog/sustainable-design-ai-eco-friendly-spaces";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/sustainable-design-ai-eco-friendly-spaces",
-    fr: "https://styly.io/fr/blog/design-durabilite-ia-espaces-eco-responsables"
+    en: "https://www.styly.fr/en/blog/sustainable-design-ai-eco-friendly-spaces",
+    fr: "https://www.styly.fr/fr/blog/design-durabilite-ia-espaces-eco-responsables"
   };
 
   return (

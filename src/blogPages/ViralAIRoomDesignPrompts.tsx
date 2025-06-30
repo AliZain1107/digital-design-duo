@@ -22,12 +22,12 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/6-prompts-viraux-design-chambre-ia-styly"
-    : "https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly";
+    ? "https://www.styly.fr/fr/blog/6-prompts-viraux-design-chambre-ia-styly"
+    : "https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
-    fr: "https://styly.io/fr/blog/6-prompts-viraux-design-chambre-ia-styly"
+    en: "https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
+    fr: "https://www.styly.fr/fr/blog/6-prompts-viraux-design-chambre-ia-styly"
   };
 
   return (

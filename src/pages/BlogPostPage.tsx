@@ -50,14 +50,23 @@ const BlogPostPage: React.FC = () => {
     );
   }
 
-  // Always use /blog/:slug for both languages
+  // Generate proper language-specific URLs
   const currentSlug = post.slugFr && slug === post.slugFr ? post.slugFr : post.slug;
-  const currentUrl = `https://www.styly.fr/blog/${currentSlug}`;
-  const alternateUrls = undefined;
 
-  // Basic SEO metadata (individual blog posts may override this with their own Helmet)
-  const seoTitle = `${post.title} | Styly.io`;
-  const seoDescription = `${post.title} - Styly.io blog post.`;
+  // Create proper canonical URL based on language
+  const canonicalUrl = isEnglishRoute
+    ? `https://www.styly.fr/en/blog/${post.slug}`
+    : `https://www.styly.fr/blog/${post.slugFr || post.slug}`;
+
+  // Create proper alternate URLs for hreflang
+  const alternateUrls = {
+    en: `https://www.styly.fr/en/blog/${post.slug}`,
+    fr: `https://www.styly.fr/blog/${post.slugFr || post.slug}`
+  };
+
+  // Basic SEO metadata with correct domain
+  const seoTitle = `${post.title} | Styly.fr`;
+  const seoDescription = `${post.title} - Styly.fr blog post.`;
 
   return (
     <LanguageContext.Provider value={{
@@ -69,7 +78,7 @@ const BlogPostPage: React.FC = () => {
         <SEO
           title={seoTitle}
           description={seoDescription}
-          ogUrl={currentUrl}
+          ogUrl={canonicalUrl}
           language={language}
           alternateUrls={alternateUrls}
           ogImage={post.image}

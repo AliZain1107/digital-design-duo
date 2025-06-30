@@ -28,12 +28,12 @@ const ChatGPTInteriorDesign: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoData.fr : seoData.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"
-    : "https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design";
+    ? "https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"
+    : "https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design",
-    fr: "https://styly.io/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"
+    en: "https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design",
+    fr: "https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"
   };
 
   return (

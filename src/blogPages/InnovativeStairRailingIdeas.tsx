@@ -18,7 +18,7 @@ const InnovativeStairRailingIdeas: React.FC = () => {
       <link
         rel="alternate"
         hrefLang={alternateLang}
-        href={`https://styly.io/${alternateLang}/blog/${alternateSlug}`}
+        href={`https://www.styly.fr/${alternateLang}/blog/${alternateSlug}`}
       />
     );
   };

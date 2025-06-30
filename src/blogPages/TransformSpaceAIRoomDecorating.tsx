@@ -27,20 +27,20 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://styly.io/${language}/blog/${language === 'fr' ? 'transformer-espace-ia-revolutionner-decoration-chambre' : 'transform-space-ai-revolutionize-room-decorating'}`} />
-        <meta property="og:image" content="https://styly.io/transform-space-ai-room-decorating-hero.webp" />
+        <meta property="og:url" content={`https://www.styly.fr/${language}/blog/${language === 'fr' ? 'transformer-espace-ia-revolutionner-decoration-chambre' : 'transform-space-ai-revolutionize-room-decorating'}`} />
+        <meta property="og:image" content="https://www.styly.fr/transform-space-ai-room-decorating-hero.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seoTitle} />
         <meta name="twitter:description" content={seoDescription} />
-        <meta name="twitter:image" content="https://styly.io/transform-space-ai-room-decorating-hero.webp" />
-        <link rel="canonical" href={`https://styly.io/${language}/blog/${language === 'fr' ? 'transformer-espace-ia-revolutionner-decoration-chambre' : 'transform-space-ai-revolutionize-room-decorating'}`} />
+        <meta name="twitter:image" content="https://www.styly.fr/transform-space-ai-room-decorating-hero.webp" />
+        <link rel="canonical" href={`https://www.styly.fr/${language}/blog/${language === 'fr' ? 'transformer-espace-ia-revolutionner-decoration-chambre' : 'transform-space-ai-revolutionize-room-decorating'}`} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Styly.io" />
         <meta name="language" content={language} />
         {language === "fr" ? (
-          <link rel="alternate" hrefLang="en" href="https://styly.io/en/blog/transform-space-ai-revolutionize-room-decorating" />
+          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/transform-space-ai-revolutionize-room-decorating" />
         ) : (
-          <link rel="alternate" hrefLang="fr" href="https://styly.io/fr/blog/transformer-espace-ia-revolutionner-decoration-chambre" />
+          <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/fr/blog/transformer-espace-ia-revolutionner-decoration-chambre" />
         )}
       </Helmet>
 

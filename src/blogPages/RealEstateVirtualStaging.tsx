@@ -26,8 +26,8 @@ const RealEstateVirtualStaging: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/agents-immobiliers-home-staging-virtuel-ia"
-    : "https://styly.io/en/blog/real-estate-agents-ai-virtual-staging";
+    ? "https://www.styly.fr/fr/blog/agents-immobiliers-home-staging-virtuel-ia"
+    : "https://www.styly.fr/en/blog/real-estate-agents-ai-virtual-staging";
 
   return (
     <>

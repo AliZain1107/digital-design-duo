@@ -12,11 +12,11 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
           <title>Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment ! | Styly.io</title>
           <meta name="description" content="Créez une salle de bain luxueuse sans vous ruiner grâce à l'IA. Découvrez nos conseils d'experts et les outils Styly pour transformer votre salle de bain avec un budget limité." />
           <meta name="keywords" content="salle de bain luxe budget, rénovation salle de bain économique, IA design salle de bain, Styly.io, décoration salle de bain pas cher" />
-          <link rel="canonical" href="https://styly.io/fr/blog/salle-bain-luxe-budget-conseils-ia" />
+          <link rel="canonical" href="https://www.styly.fr/fr/blog/salle-bain-luxe-budget-conseils-ia" />
           <meta property="og:title" content="Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !" />
           <meta property="og:description" content="Transformez votre salle de bain en espace luxueux sans vous ruiner grâce à l'IA et nos conseils d'experts." />
           <meta property="og:image" content="/luxury-bathroom-budget-ai-hero.webp" />
-          <meta property="og:url" content="https://styly.io/fr/blog/salle-bain-luxe-budget-conseils-ia" />
+          <meta property="og:url" content="https://www.styly.fr/fr/blog/salle-bain-luxe-budget-conseils-ia" />
         </Helmet>
 
         <header className="mb-8">
@@ -161,11 +161,11 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
         <title>Need Luxury Bathroom on a Budget? Here's How! | Styly.io</title>
         <meta name="description" content="Create a luxury bathroom without breaking the bank using AI. Discover expert tips and Styly's tools to transform your bathroom on a budget." />
         <meta name="keywords" content="luxury bathroom budget, affordable bathroom renovation, AI bathroom design, Styly.io, budget bathroom makeover, cheap bathroom ideas" />
-        <link rel="canonical" href="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips" />
+        <link rel="canonical" href="https://www.styly.fr/en/blog/luxury-bathroom-budget-ai-design-tips" />
         <meta property="og:title" content="Need Luxury Bathroom on a Budget? Here's How!" />
         <meta property="og:description" content="Transform your bathroom into a luxury space without breaking the bank using AI and expert tips." />
         <meta property="og:image" content="/luxury-bathroom-budget-ai-hero.webp" />
-        <meta property="og:url" content="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips" />
+        <meta property="og:url" content="https://www.styly.fr/en/blog/luxury-bathroom-budget-ai-design-tips" />
       </Helmet>
 
       <header className="mb-8">

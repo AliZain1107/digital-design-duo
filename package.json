@@ -11,6 +11,7 @@
     "preview": "vite preview",
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "health-check": "node scripts/url-health-check.js",
+    "fix-canonical-urls": "node scripts/fix-canonical-urls.js",
     "prebuild": "npm run generate-sitemap"
   },
   "dependencies": {
