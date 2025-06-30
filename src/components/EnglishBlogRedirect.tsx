@@ -12,7 +12,7 @@ const EnglishBlogRedirect = () => {
       ? `https://www.styly.io/blog/${slug}`
       : 'https://www.styly.io/blog';
     
-    console.log("EnglishBlogRedirect: Redirecting to external blog:", targetUrl);
+
     
     // Force redirect to the external English blog
     window.location.href = targetUrl;

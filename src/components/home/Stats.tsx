@@ -103,6 +103,34 @@ const Stats: React.FC = () => {
                   </div>
                 ))}
               </div>
+
+              {/* CTA Section within Stats */}
+              <div className="text-center mt-12 pt-8 border-t border-white/20">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-baloo">
+                  {language === "fr"
+                    ? "Rejoignez Cette Communauté Grandissante"
+                    : "Join This Growing Community"
+                  }
+                </h3>
+                <p className="text-lg text-white/90 mb-6 max-w-xl mx-auto font-baloo">
+                  {language === "fr"
+                    ? "Faites partie des créateurs qui transforment l'industrie du design."
+                    : "Be part of the creators transforming the design industry."
+                  }
+                </p>
+                <a
+                  href="https://app.styly.io/signin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white text-[#593286] font-bold text-lg px-10 py-4 rounded-full shadow-xl hover:bg-orange-500 hover:text-white transition-all duration-300 hover:scale-105 font-baloo"
+                  aria-label={language === "fr" ? "Rejoindre la communauté Styly AI" : "Join the Styly AI community"}
+                >
+                  {language === "fr"
+                    ? "Rejoindre Maintenant"
+                    : "Join Now"
+                  }
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -2,18 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/lib/i18n";
 import BeforeAfterSlider from "@/components/ui/BeforeAfterSlider";
-import CTAButton from "@/components/ui/CTAButton";
 
 const HowItWorks: React.FC = () => {
   const { t, language } = useLanguage();
   
-  // Debug output to verify language and translations
-  console.log("Current language in HowItWorks:", language);
-  console.log("HowItWorks translations:", {
-    simpleProcess: t.simpleProcess,
-    howItWorks: t.howItWorks,
-    transformSpace: t.transformSpace
-  });
+
   
   return (
     <section className="bg-white w-full flex flex-col items-center justify-center pt-6 sm:pt-8 md:pt-12 pb-8 sm:pb-12 md:pb-16 px-4 sm:px-6 md:px-10" key={`how-it-works-${language}`}>
@@ -169,23 +162,49 @@ const HowItWorks: React.FC = () => {
           </div>
         </div>
 
-        {/* Subtle CTA after demonstration */}
-        <div className="text-center mt-16">
-          <p className="text-lg text-gray-600 mb-6 font-baloo">
-            {language === 'fr'
-              ? 'Prêt à transformer votre espace en quelques clics ?'
-              : 'Ready to transform your space in just a few clicks?'}
+        {/* CTA Section after How It Works */}
+        <div className="text-center mt-16 pt-12 border-t border-gray-200">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-baloo">
+            {language === "fr"
+              ? "Prêt à Essayer ?"
+              : "Ready to Try It?"
+            }
+          </h3>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto font-baloo">
+            {language === "fr"
+              ? "Découvrez la puissance de l'IA pour transformer vos espaces en quelques clics."
+              : "Experience the power of AI to transform your spaces in just a few clicks."
+            }
           </p>
-          <CTAButton
-            variant="primary"
-            size="lg"
-            ariaLabel={language === 'fr' ? 'Commencer avec STYLY' : 'Get Started with STYLY'}
-          >
-            {language === 'fr' ? 'Essayer maintenant' : 'Try It Now'}
-          </CTAButton>
-          <p className="mt-3 text-sm text-gray-500">
-            {language === 'fr' ? 'Aucune carte bancaire requise' : 'No credit card required'}
-          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://app.styly.io/signin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo relative z-10"
+              aria-label={language === "fr" ? "Essayer Styly AI maintenant" : "Try Styly AI now"}
+            >
+              {language === "fr"
+                ? "Essayer Maintenant"
+                : "Try It Now"
+              }
+            </a>
+            <a
+              href="/blog"
+              className="border-2 border-[#593286] text-[#593286] bg-white font-semibold text-lg px-8 py-4 rounded-full hover:bg-[#593286] hover:text-white transition-all duration-300 font-baloo relative z-10"
+              aria-label={language === "fr" ? "Voir des exemples de designs" : "See design examples"}
+            >
+              {language === "fr"
+                ? "Voir des Exemples"
+                : "Watch Demo"
+              }
+            </a>
+          </div>
+          <div className="mt-4">
+            <span className="text-sm text-gray-500 font-baloo">
+              {language === "fr" ? "✓ Gratuit • ✓ Aucun téléchargement • ✓ Résultats instantanés" : "✓ Free • ✓ No Download • ✓ Instant Results"}
+            </span>
+          </div>
         </div>
 
       </div>

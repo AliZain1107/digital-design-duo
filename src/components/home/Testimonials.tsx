@@ -269,12 +269,7 @@ const Testimonials: React.FC = () => {
   const [direction, setDirection] = useState(0); // -1 for left, 1 for right
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Debug output to verify language and translations
-  console.log("Current language in Testimonials:", language);
-  console.log("Testimonials translations:", {
-    dontTakeOurWord: t.dontTakeOurWord,
-    hearFromCustomers: t.hearFromCustomers
-  });
+
 
   const goToPrev = () => {
     if (currentPage === 0 || animating) return;
@@ -388,8 +383,7 @@ const Testimonials: React.FC = () => {
         </div>
       </div>
       <div className="-mt-16">
-        {/* CTA Banner Section (insert your CTA component here) */}
-        {/* <CTABanner /> */}
+        {/* CTA Banner Section removed */}
       </div>
     </section>
   );

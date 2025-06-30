@@ -14,7 +14,7 @@ This guide explains how to submit the updated sitemaps to Google Search Console 
 
 ### 2. **French Sitemap (www.styly.fr)**
 - **File**: `public/sitemap-fr.xml`
-- **URL**: `https://www.styly.fr/sitemap-fr.xml`
+- **URL**: `https://www.styly.fr/siteap-fr.xml`
 - **Purpose**: French-focused sitemap for French domain
 - **Content**: French pages and blog posts with proper hreflang tags
 

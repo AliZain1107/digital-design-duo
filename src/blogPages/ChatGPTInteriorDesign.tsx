@@ -151,12 +151,12 @@ const ChatGPTInteriorDesign: React.FC = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                 <img
-                  src="/ai-interior-design-technology.webp"
+                  src="/chatgpt-interior-design-assistant.webp"
                   alt="ChatGPT assistant design intérieur - Technologie numérique"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
                 <img
-                  src="/ai-room-design-free.webp"
+                  src="/ai-project-management-design.webp"
                   alt="Design chambre numérique gratuit - Transformation instantanée"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
@@ -418,12 +418,12 @@ const ChatGPTInteriorDesign: React.FC = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                 <img
-                  src="/ai-interior-design-technology.webp"
+                  src="/virtual-reality-interior-design.webp"
                   alt="ChatGPT interior design assistant - Digital technology"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
                 <img
-                  src="/ai-room-design-free.webp"
+                  src="/ai-room-planner-sketch-3d-transformation.webp"
                   alt="Free digital room design - Instant transformation"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />

@@ -1,0 +1,63 @@
+# Redirect URLs with trailing slashes to URLs without trailing slashes
+# This fixes 404 errors caused by external tools adding trailing slashes
+# Force redirects with 301! to ensure they take precedence
+# IMPORTANT: Specific rules MUST come before general patterns
+# Updated to ensure no-slash → slash → 200 (one hop) as requested
+
+# Specific problematic URLs from error reports (HIGHEST PRIORITY - MUST BE FIRST)
+/en/blog/ai-assistant-interior-design-chatgpt-prompts/  /en/blog/ai-assistant-interior-design-chatgpt-prompts  301!
+/en/blog/10-expert-tips-save-big-home-interiors-2025/  /en/blog/10-expert-tips-save-big-home-interiors-2025  301!
+/blog/10-conseils-experts-economiser-decoration-interieure-2025/  /blog/10-conseils-experts-economiser-decoration-interieure-2025  301!
+/en/blog/can-chatgpt-design-your-home-ai-interior-design/  /en/blog/can-chatgpt-design-your-home-ai-interior-design  301!
+
+# Blog index redirects (specific patterns)
+/blog/  /blog  301!
+/en/blog/  /en/blog  301!
+/fr/blog/  /fr/blog  301!
+
+# Blog post redirects - General patterns (AFTER specific rules)
+/blog/*/  /blog/:splat  301!
+/en/blog/*/  /en/blog/:splat  301!
+/fr/blog/*/  /fr/blog/:splat  301!
+
+# General page redirects
+/en/  /en  301!
+/fr/  /fr  301!
+
+# Legal pages redirects
+/conditions/  /conditions  301!
+/confidentialite/  /confidentialite  301!
+/privacy/  /privacy  301!
+/terms/  /terms  301!
+/en/terms/  /en/terms  301!
+/en/privacy/  /en/privacy  301!
+/fr/conditions/  /fr/conditions  301!
+/fr/confidentialite/  /fr/confidentialite  301!
+
+# Service pages redirects
+/services-api/  /services-api  301!
+/en/services-api/  /en/services-api  301!
+/fr/services-api/  /fr/services-api  301!
+/collaborateurs/  /collaborateurs  301!
+/en/collaborateurs/  /en/collaborateurs  301!
+/fr/collaborateurs/  /fr/collaborateurs  301!
+
+# Other pages redirects
+/upload/  /upload  301!
+/en/upload/  /en/upload  301!
+/fr/upload/  /fr/upload  301!
+/pricing/  /pricing  301!
+/en/pricing/  /en/pricing  301!
+/fr/pricing/  /fr/pricing  301!
+/styly-pro/  /styly-pro  301!
+/en/styly-pro/  /en/styly-pro  301!
+/fr/styly-pro/  /fr/styly-pro  301!
+/get-started/  /get-started  301!
+/en/get-started/  /en/get-started  301!
+/fr/get-started/  /fr/get-started  301!
+/video/  /video  301!
+/video-guide/  /video-guide  301!
+/fr/video/  /fr/video  301!
+
+# Catch-all for any other trailing slash URLs
+/*/  /:splat  301!
