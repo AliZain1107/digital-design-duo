@@ -14,6 +14,7 @@ import FAQ from "@/components/home/FAQ";
 import SEO from "@/components/layout/SEO";
 import VideoSection from "@/components/home/VideoSection";
 import DesignWithAI from "@/components/home/DesignWithAI";
+import StrategicCTA from "@/components/home/StrategicCTA";
 import { useLanguage, LanguageContext, Language } from "@/lib/i18n";
 import { useContext, useState } from "react";
 import { SITE_CONFIG } from "@/lib/config";
@@ -332,6 +333,16 @@ const Index: React.FC = () => {
         <Hero />
         <WhoIsFor />
         <VideoSection />
+
+        {/* Strategic CTA after value proposition */}
+        <StrategicCTA
+          variant="compact"
+          background="gradient"
+          title={language === "fr" ? "Transformez vos espaces dès maintenant" : "Transform Your Spaces Now"}
+          description={language === "fr" ? "Rejoignez des milliers de professionnels qui utilisent STYLY pour créer des designs époustouflants en quelques secondes." : "Join thousands of professionals using STYLY to create stunning designs in seconds."}
+          showSecondary={true}
+        />
+
         <div className="mt-12 md:mt-20 lg:mt-24">
           <SupportedBy />
         </div>
@@ -340,11 +351,40 @@ const Index: React.FC = () => {
         </div>
         <HowItWorks />
         <Stats />
+
+        {/* Strategic CTA after social proof (stats) */}
+        <StrategicCTA
+          variant="minimal"
+          background="white"
+        />
+
         <Testimonials />
+
+        {/* Strategic CTA after testimonials (social proof) */}
+        <StrategicCTA
+          variant="compact"
+          background="gray"
+          title={language === "fr" ? "Prêt à créer des designs comme nos clients ?" : "Ready to Create Designs Like Our Clients?"}
+          description={language === "fr" ? "Découvrez pourquoi plus de 20 000 professionnels font confiance à STYLY pour leurs projets de design." : "See why 20,000+ professionals trust STYLY for their design projects."}
+          primaryText={language === "fr" ? "Essayer STYLY gratuitement" : "Try STYLY Free"}
+        />
+
         <div className="mt-0">
           <BlogSection maxPosts={4} />
         </div>
         <FAQ />
+
+        {/* Strategic CTA before final gradient section */}
+        <StrategicCTA
+          variant="full"
+          background="white"
+          title={language === "fr" ? "Commencez votre transformation dès aujourd'hui" : "Start Your Transformation Today"}
+          description={language === "fr" ? "Rejoignez la révolution du design IA. Créez des espaces époustouflants en quelques clics avec STYLY." : "Join the AI design revolution. Create stunning spaces in just a few clicks with STYLY."}
+          primaryText={language === "fr" ? "Commencer maintenant" : "Start Now"}
+          secondaryText={language === "fr" ? "Voir comment ça marche" : "See How It Works"}
+          showSecondary={true}
+        />
+
         <div className="mt-12">
           <section className="relative w-full bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] py-12 px-4 sm:px-8 md:px-12 lg:px-[116px] flex flex-col items-start justify-center shadow-lg overflow-hidden">
             {/* Blur overlay for smoother gradient */}

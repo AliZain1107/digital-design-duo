@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import {
   DropdownMenu,
@@ -13,7 +13,6 @@ const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
 
   // Debug log for current language
   console.log("Current language in Navbar:", language);
@@ -46,201 +45,213 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white sticky top-0 w-full py-3 z-50 shadow-2xl">
-      <div className="max-w-screen-xl mx-auto flex min-h-[72px] w-full items-center justify-between px-6 sm:px-8 md:px-12 lg:px-18 xl:px-24">
-        {/* Logo - Centered responsive sizing */}
-        <div className="flex items-center flex-shrink-0 h-full">
+    <header className="bg-white/95 backdrop-blur-md sticky top-0 w-full z-50 border-b border-gray-100/50">
+      <div className="max-w-7xl mx-auto flex min-h-[80px] w-full items-center justify-between px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24">
+        {/* Logo - Premium spacing and sizing */}
+        <div className="flex items-center flex-shrink-0">
           <Link
             to="/"
-            className="transition-transform duration-300 hover:scale-105 flex items-center h-full"
-            style={{height: '100%'}}
+            className="group transition-all duration-300 ease-out hover:scale-[1.02] flex items-center"
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY Logo"
-              className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain align-middle"
-              style={{display: 'block', margin: '0'}}
+              className="h-8 sm:h-9 md:h-10 w-auto object-contain transition-all duration-300 group-hover:brightness-110"
             />
           </Link>
         </div>
 
-        {/* Mobile menu button */}
+        {/* Mobile menu button - STYLY brand colors */}
         <button
-          className="z-20 md:hidden flex items-center text-purple-700 hover:text-purple-900 transition-all p-2"
+          className="md:hidden p-3 rounded-xl bg-purple-50/80 hover:bg-purple-100/80 text-purple-700 hover:text-purple-900 transition-all duration-300 ease-out hover:scale-105 active:scale-95"
           onClick={toggleMobileMenu}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
 
-        {/* Desktop Navigation - Grouped with better spacing */}
-        <nav className="hidden md:flex items-center gap-3 lg:gap-4 xl:gap-5 flex-shrink-0 h-full">
-          {/* Their existing buttons go here - don't touch the button classes! */}
-        {/* Pricing Button */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+        {/* Desktop Navigation - Premium spacing and typography */}
+        <nav className="hidden md:flex items-center gap-2 lg:gap-3 xl:gap-4">
+          {/* Pricing Button - STYLY brand colors */}
           <a
             href="https://app.styly.io/pricing"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10 font-baloo"
+            className="group relative px-5 lg:px-6 py-2.5 lg:py-3 text-sm lg:text-base font-medium text-purple-700 hover:text-purple-900 transition-all duration-300 ease-out rounded-xl hover:bg-purple-50/80 active:scale-95 tracking-wide"
             aria-label="Go to Pricing"
           >
-            {t.pricing}
+            <span className="relative z-10">{t.pricing}</span>
+            <div className="absolute inset-0 rounded-xl bg-purple-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
-        </div>
 
-        {/* Styly Pro Button */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          {/* Styly Pro Button - STYLY brand colors */}
           <Link
             to="/collaborateurs"
-            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/collaborateurs") ? "border-purple-500 animate-border-glow" : "border-transparent"}`}
+            className={`group relative px-5 lg:px-6 py-2.5 lg:py-3 text-sm lg:text-base font-medium transition-all duration-300 ease-out rounded-xl active:scale-95 tracking-wide ${
+              isActive("/collaborateurs")
+                ? "text-purple-700 bg-purple-50/80 shadow-sm"
+                : "text-purple-700 hover:text-purple-900 hover:bg-purple-50/80"
+            }`}
             aria-label="Go to Styly Pro"
           >
-            {language === "fr" ? "Styly Pro" : "Styly Pro"}
+            <span className="relative z-10">{language === "fr" ? "Styly Pro" : "Styly Pro"}</span>
+            {!isActive("/collaborateurs") && (
+              <div className="absolute inset-0 rounded-xl bg-purple-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            )}
           </Link>
-        </div>
 
-        {/* Services API Button */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          {/* Services API Button - STYLY brand colors */}
           <Link
             to="/services-api"
-            className={`relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-white text-purple-700 font-bold text-sm lg:text-base transition-all duration-200 hover:bg-purple-50 hover:scale-105 whitespace-nowrap z-10 border font-baloo ${isActive("/services-api") ? "border-purple-500 animate-border-glow" : "border-transparent"}`}
+            className={`group relative px-5 lg:px-6 py-2.5 lg:py-3 text-sm lg:text-base font-medium transition-all duration-300 ease-out rounded-xl active:scale-95 tracking-wide ${
+              isActive("/services-api")
+                ? "text-purple-700 bg-purple-50/80 shadow-sm"
+                : "text-purple-700 hover:text-purple-900 hover:bg-purple-50/80"
+            }`}
             aria-label="Go to API"
           >
-            {t.servicesAPI}
+            <span className="relative z-10">{t.servicesAPI}</span>
+            {!isActive("/services-api") && (
+              <div className="absolute inset-0 rounded-xl bg-purple-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            )}
           </Link>
-        </div>
 
-        {/* Sign In Button */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-orange-200 via-orange-300 to-orange-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          {/* Sign In Button - STYLY orange brand color */}
           <a
             href="https://app.styly.io/signin"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative flex items-center justify-center py-3 px-4 lg:px-5 xl:px-6 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-sm lg:text-base transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-orange-500/30 border border-transparent whitespace-nowrap z-10 font-baloo"
+            className="group relative px-6 lg:px-8 py-2.5 lg:py-3 bg-orange-500 hover:bg-orange-600 text-white text-sm lg:text-base font-semibold transition-all duration-300 ease-out rounded-xl shadow-lg hover:shadow-xl hover:shadow-orange-500/25 active:scale-95 tracking-wide ml-2 lg:ml-4"
             aria-label="Sign In to STYLY AI"
           >
-            <span className="relative z-10 tracking-wide">{t.signIn}</span>
-            <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <span className="relative z-10">{t.signIn}</span>
+            <div className="absolute inset-0 rounded-xl bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
-        </div>
 
-        {/* Language Dropdown */}
-        <div className="relative group">
-          <span className="absolute inset-0 rounded-md p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          {/* Language Dropdown - STYLY brand colors */}
           <DropdownMenu>
-            <DropdownMenuTrigger
-              className="relative bg-white flex items-center gap-1 justify-center py-2 px-2 rounded-md transition-colors duration-200 hover:bg-purple-50 hover:scale-105 z-10 border border-transparent focus:border-transparent active:border-transparent outline-none data-[state=open]:border-purple-500 data-[state=open]:animate-border-glow min-w-[36px]"
-            >
+            <DropdownMenuTrigger className="group flex items-center gap-2 px-3 py-2.5 rounded-xl bg-purple-50/80 hover:bg-purple-100/80 transition-all duration-300 ease-out hover:scale-105 active:scale-95 outline-none focus:ring-2 focus:ring-purple-200 focus:ring-offset-2">
               <span className="text-lg">
                 {language === "en" ? "🇬🇧" : "🇫🇷"}
               </span>
-              <ChevronDown className="h-4 w-4 text-purple-700" />
+              <ChevronDown className="h-4 w-4 text-purple-600 group-hover:text-purple-800 transition-colors duration-300" />
             </DropdownMenuTrigger>
             <DropdownMenuContent
               align="end"
-              className="bg-white border border-gray-200 shadow-lg z-50 min-w-[120px]"
+              className="bg-white/95 backdrop-blur-md border border-purple-200/50 shadow-xl rounded-xl z-50 min-w-[140px] p-1"
             >
               {languages.map((lang) => (
                 <DropdownMenuItem
                   key={lang.code}
-                  className={`cursor-pointer hover:bg-purple-50 focus:bg-purple-50 px-3 py-2 text-sm flex items-center gap-2 ${
-                    language === lang.code ? "bg-purple-50 font-medium" : ""
+                  className={`cursor-pointer rounded-lg px-3 py-2.5 text-sm flex items-center gap-3 transition-all duration-200 ${
+                    language === lang.code
+                      ? "bg-purple-100/80 text-purple-900 font-medium"
+                      : "hover:bg-purple-50/80 text-purple-700 hover:text-purple-900"
                   }`}
                   onClick={() => handleLanguageChange(lang.code as "en" | "fr")}
                 >
-                  <span className="text-lg">{lang.code === "en" ? "🇬🇧" : "🇫🇷"}</span>
-                  {lang.name}
+                  <span className="text-base">{lang.code === "en" ? "🇬🇧" : "🇫🇷"}</span>
+                  <span className="font-medium">{lang.name}</span>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-        </div>
         </nav>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Premium overlay design */}
       <div
-        className={`fixed inset-0 bg-white z-50 flex flex-col p-4 sm:p-5 transition-transform duration-300 ease-in-out ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed inset-0 bg-white/95 backdrop-blur-md z-50 flex flex-col transition-all duration-500 ease-out ${
+          mobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         } md:hidden`}
       >
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center p-6 border-b border-purple-100/50">
           <Link
             to="/"
-            className="transition-transform hover:scale-105 flex items-center h-full"
-            style={{height: '100%'}}
+            className="group transition-all duration-300 ease-out hover:scale-105 flex items-center"
             onClick={() => setMobileMenuOpen(false)}
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY Logo"
-              className="h-10 w-auto object-contain"
-              style={{display: 'block', margin: '0'}}
+              className="h-8 w-auto object-contain transition-all duration-300 group-hover:brightness-110"
             />
           </Link>
           <button
-            className="text-purple-700 hover:text-purple-900 transition-all p-2"
+            className="p-3 rounded-xl bg-purple-50/80 hover:bg-purple-100/80 text-purple-700 hover:text-purple-900 transition-all duration-300 ease-out hover:scale-105 active:scale-95"
             onClick={toggleMobileMenu}
             aria-label="Close menu"
           >
-            <X size={24} />
+            <X size={20} />
           </button>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col p-6 space-y-2">
           <a
             href="https://app.styly.io/pricing"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-700 font-bold py-3 border-b border-gray-100 hover:text-purple-900 transition-all font-baloo"
+            className="group px-4 py-4 text-purple-700 hover:text-purple-900 font-medium text-lg transition-all duration-300 ease-out rounded-xl hover:bg-purple-50/80 active:scale-95"
             onClick={() => setMobileMenuOpen(false)}
           >
-            {t.pricing}
+            <span className="relative z-10">{t.pricing}</span>
+            <div className="absolute inset-0 rounded-xl bg-purple-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
 
           <Link
             to="/collaborateurs"
-            className="text-purple-700 font-bold py-3 border-b border-gray-100 hover:text-purple-900 transition-all font-baloo"
+            className={`group px-4 py-4 font-medium text-lg transition-all duration-300 ease-out rounded-xl active:scale-95 ${
+              isActive("/collaborateurs")
+                ? "text-purple-700 bg-purple-50/80"
+                : "text-purple-700 hover:text-purple-900 hover:bg-purple-50/80"
+            }`}
             onClick={() => setMobileMenuOpen(false)}
           >
-            {language === "fr" ? "Styly Pro" : "Styly Pro"}
+            <span className="relative z-10">{language === "fr" ? "Styly Pro" : "Styly Pro"}</span>
+            {!isActive("/collaborateurs") && (
+              <div className="absolute inset-0 rounded-xl bg-purple-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            )}
           </Link>
 
           <Link
             to="/services-api"
-            className="text-purple-700 font-bold py-3 border-b border-gray-100 hover:text-purple-900 transition-all font-baloo"
+            className={`group px-4 py-4 font-medium text-lg transition-all duration-300 ease-out rounded-xl active:scale-95 ${
+              isActive("/services-api")
+                ? "text-purple-700 bg-purple-50/80"
+                : "text-purple-700 hover:text-purple-900 hover:bg-purple-50/80"
+            }`}
             onClick={() => setMobileMenuOpen(false)}
           >
-            {t.servicesAPI}
+            <span className="relative z-10">{t.servicesAPI}</span>
+            {!isActive("/services-api") && (
+              <div className="absolute inset-0 rounded-xl bg-purple-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            )}
           </Link>
 
           <a
             href="https://app.styly.io/signin"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-orange-500 text-white font-bold py-3 rounded-lg text-center hover:bg-orange-600 transition-all mt-2 font-baloo"
+            className="group relative mt-4 px-6 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-lg text-center rounded-xl shadow-lg hover:shadow-xl hover:shadow-orange-500/25 transition-all duration-300 ease-out active:scale-95"
             onClick={() => setMobileMenuOpen(false)}
           >
-            {t.signIn}
+            <span className="relative z-10">{t.signIn}</span>
+            <div className="absolute inset-0 rounded-xl bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
-          <div className="mt-4 pt-4 border-t border-gray-100">
-            <div className="text-gray-600 text-sm mb-2">Select Language:</div>
-            <div className="flex gap-2">
+          <div className="mt-6 pt-6 border-t border-purple-100/50">
+            <div className="text-purple-600 text-sm font-medium mb-4 px-4">Select Language</div>
+            <div className="flex gap-3 px-4">
               {languages.map((lang) => (
                 <button
                   key={lang.code}
-                  className={`py-2 px-4 rounded-md transition-all text-sm ${
+                  className={`flex items-center gap-2 py-3 px-4 rounded-xl transition-all duration-300 ease-out text-sm font-medium active:scale-95 ${
                     language === lang.code
-                      ? "bg-purple-600 text-white"
-                      : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                      ? "bg-purple-600 text-white shadow-lg"
+                      : "bg-purple-100/80 text-purple-700 hover:bg-purple-200/80 hover:text-purple-900"
                   }`}
                   onClick={() => handleLanguageChange(lang.code as "en" | "fr")}
                 >
-                  {lang.name}
+                  <span className="text-base">{lang.code === "en" ? "🇬🇧" : "🇫🇷"}</span>
+                  <span>{lang.name}</span>
                 </button>
               ))}
             </div>

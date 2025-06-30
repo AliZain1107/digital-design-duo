@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/lib/i18n";
 import BeforeAfterSlider from "@/components/ui/BeforeAfterSlider";
+import CTAButton from "@/components/ui/CTAButton";
 
 const HowItWorks: React.FC = () => {
   const { t, language } = useLanguage();
@@ -168,6 +169,24 @@ const HowItWorks: React.FC = () => {
           </div>
         </div>
 
+        {/* Subtle CTA after demonstration */}
+        <div className="text-center mt-16">
+          <p className="text-lg text-gray-600 mb-6 font-baloo">
+            {language === 'fr'
+              ? 'Prêt à transformer votre espace en quelques clics ?'
+              : 'Ready to transform your space in just a few clicks?'}
+          </p>
+          <CTAButton
+            variant="primary"
+            size="lg"
+            ariaLabel={language === 'fr' ? 'Commencer avec STYLY' : 'Get Started with STYLY'}
+          >
+            {language === 'fr' ? 'Essayer maintenant' : 'Try It Now'}
+          </CTAButton>
+          <p className="mt-3 text-sm text-gray-500">
+            {language === 'fr' ? 'Aucune carte bancaire requise' : 'No credit card required'}
+          </p>
+        </div>
 
       </div>
     </section>
