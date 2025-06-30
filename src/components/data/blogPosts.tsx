@@ -186,7 +186,7 @@ export const blogPosts: BlogPost[] = [
     Component: AITechnologyRealEstateStrategy,
   },
   {
-    id: 8,
+    id: 50,
     title: "Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations",
     titleFr: "Débloquer la puissance de l'IA pour le design d'intérieur : votre guide des dernières innovations",
     date: "Jun 21, 2025",
@@ -196,7 +196,7 @@ export const blogPosts: BlogPost[] = [
     Component: UnlockingPowerAIInteriorDesign,
   },
   {
-    id: 9,
+    id: 51,
     title: "Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design",
     date: "Jun 17, 2025",
     image: "/ai-interior-design-technology.webp",
@@ -205,7 +205,7 @@ export const blogPosts: BlogPost[] = [
     Component: ChatGPTInteriorDesign,
   },
   {
-    id: 10,
+    id: 52,
     title: "How Styly & Viva Technology Are Shaping the Future of AI-Powered Design",
     titleFr: "Comment Styly & Viva Technology Façonnent l'Avenir du Design Alimenté par l'IA",
     date: "Jun 16, 2025",
@@ -215,7 +215,7 @@ export const blogPosts: BlogPost[] = [
     Component: StylyVivaTechPartnership,
   },
   {
-    id: 11,
+    id: 53,
     title: "Designing AI Interior Staging on AWS: Behind the Scenes at Styly",
     titleFr: "Concevoir la Mise en Scène Intérieure IA sur AWS : Dans les Coulisses de Styly",
     date: "Jun 15, 2025",
@@ -556,24 +556,5 @@ export const blogPosts: BlogPost[] = [
     slugFr: "design-famille-moderne-ia-maisons-fonctionnelles",
     Component: ModernFamilyDesign,
   },
-  {
-    id: 48,
-    title: "6 Viral AI Room Design Prompts to Create Your Dream Bedroom with Styly",
-    titleFr: "6 Prompts Viraux de Design de Chambre IA pour Créer Votre Chambre de Rêve avec Styly",
-    date: "May 1, 2024",
-    image: "/6-viral-ai-room-design-prompts.webp",
-    slug: "6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
-    slugFr: "6-prompts-viraux-design-chambre-ia-styly",
-    Component: ViralAIRoomDesignPrompts,
-  },
-  {
-    id: 49,
-    title: "AI for Accessible Design: Creating Inclusive Spaces",
-    titleFr: "IA pour le Design Accessible : Créer des Espaces Inclusifs",
-    date: "Apr 28, 2024",
-    image: "/ai-accessible-design-inclusive.webp",
-    slug: "ai-accessible-design-inclusive-spaces",
-    slugFr: "ia-design-accessible-espaces-inclusifs",
-    Component: AIAccessibleDesign,
-  },
+
 ];
