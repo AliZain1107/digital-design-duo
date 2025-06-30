@@ -50,10 +50,10 @@ const ExpertTipsSaveBigHomeInteriors: React.FC = () => {
           }
         />
         <meta property="og:image" content="https://www.styly.fr/expert-tips-save-big-home-interiors-hero.webp" />
-        <link rel="canonical" href={`https://www.styly.fr/blog/${language === "fr" ? "10-conseils-experts-economiser-interieurs-maison-2025" : "10-expert-tips-to-save-big-on-home-interiors-in-2025"}`} />
+        <link rel="canonical" href={`https://www.styly.fr/blog/${language === "fr" ? "10-conseils-experts-economiser-decoration-interieure-2025" : "10-expert-tips-to-save-big-on-home-interiors-in-2025"}`} />
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/10-expert-tips-to-save-big-on-home-interiors-in-2025" />
-        <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/10-conseils-experts-economiser-interieurs-maison-2025" />
-        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/10-conseils-experts-economiser-interieurs-maison-2025" />
+        <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />
       </Helmet>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
@@ -164,7 +164,7 @@ const ExpertTipsSaveBigHomeInteriors: React.FC = () => {
                 <div className="flex flex-wrap gap-4 justify-center">
                   <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.styly.fr/blog/10-conseils-experts-economiser-interieurs-maison-2025" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Partager sur Facebook</a>
                   <a href="https://twitter.com/intent/tweet?url=https://www.styly.fr/blog/10-conseils-experts-economiser-interieurs-maison-2025&text=10 Conseils d'Experts pour Économiser sur les Intérieurs de Maison en 2025" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600">Partager sur Twitter</a>
-                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.styly.fr/blog/10-conseils-experts-economiser-interieurs-maison-2025" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900">Partager sur LinkedIn</a>
+                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900">Partager sur LinkedIn</a>
                 </div>
               </div>
             </article>

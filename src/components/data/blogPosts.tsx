@@ -116,6 +116,16 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 5,
+    title: "10 Expert Tips to Save Big on Home Interiors in 2025",
+    titleFr: "10 Conseils d'Experts pour Économiser sur la Décoration Intérieure en 2025",
+    date: "Jun 24, 2025",
+    image: "/expert-tips-save-big-home-interiors-hero.webp",
+    slug: "10-expert-tips-to-save-big-on-home-interiors-in-2025",
+    slugFr: "10-conseils-experts-economiser-decoration-interieure-2025",
+    Component: ExpertTipsSaveBigHomeInteriors,
+  },
+  {
+    id: 6,
     title: "Gen Z's Ultimate Guide to Instagram-Worthy Interiors",
     titleFr: "Guide Ultime de la Génération Z pour des Intérieurs Dignes d'Instagram",
     date: "Jan 21, 2025",
@@ -125,7 +135,7 @@ export const blogPosts: BlogPost[] = [
     Component: GenZInstagramWorthyInteriors,
   },
   {
-    id: 6,
+    id: 7,
     title: "How to Build Your Own House with AI Tools Including Porch Design",
     titleFr: "Comment Construire Votre Propre Maison avec des Outils IA Incluant la Conception de Porche",
     date: "Jan 11, 2025",
@@ -135,7 +145,7 @@ export const blogPosts: BlogPost[] = [
     Component: BuildHouseAIToolsPorchDesign,
   },
   {
-    id: 7,
+    id: 8,
     title: "The Ultimate Guide to AI Interior Design Tools in 2025: A Comprehensive Comparison",
     titleFr: "Le Guide Ultime des Outils de Design Intérieur IA en 2025 : Une Comparaison Complète",
     date: "Dec 30, 2024",
@@ -144,16 +154,7 @@ export const blogPosts: BlogPost[] = [
     slugFr: "guide-ultime-outils-design-interieur-ia-2025-comparaison",
     Component: UltimateGuideAIInteriorDesignTools2025,
   },
-  {
-    id: 8,
-    title: "10 Expert Tips to Save Big on Home Interiors in 2025",
-    titleFr: "10 Conseils d'Experts pour Économiser sur la Décoration Intérieure en 2025",
-    date: "Dec 22, 2024",
-    image: "/expert-tips-save-big-home-interiors-hero.webp",
-    slug: "10-expert-tips-save-big-home-interiors-2025",
-    slugFr: "10-conseils-experts-economiser-decoration-interieure-2025",
-    Component: ExpertTipsSaveBigHomeInteriors,
-  },
+
   {
     id: 9,
     title: "How DALL-E, Midjourney, and Styly AI are Revolutionizing Interior Design",
