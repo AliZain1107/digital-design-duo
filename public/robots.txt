@@ -8,9 +8,11 @@ Disallow: /api/
 Disallow: /.env
 Disallow: /node_modules/
 
+# Disallow English routes (not actively used)
+Disallow: /en/
+
 # Allow important directories
 Allow: /blog/
-Allow: /en/blog/
 Allow: /images/
 Allow: /css/
 Allow: /js/

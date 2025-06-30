@@ -1,0 +1,52 @@
+# Canonical URL headers to prevent duplicate content issues
+/*
+  X-Robots-Tag: index, follow
+  
+# French pages canonical headers
+/
+  Link: <https://www.styly.fr/>; rel="canonical"
+  
+/blog
+  Link: <https://www.styly.fr/blog>; rel="canonical"
+  
+/blog/*
+  Link: <https://www.styly.fr/blog/:splat>; rel="canonical"
+  
+/upload
+  Link: <https://www.styly.fr/upload>; rel="canonical"
+  
+/pricing
+  Link: <https://www.styly.fr/pricing>; rel="canonical"
+  
+/services-api
+  Link: <https://www.styly.fr/services-api>; rel="canonical"
+  
+/collaborateurs
+  Link: <https://www.styly.fr/collaborateurs>; rel="canonical"
+  
+/video
+  Link: <https://www.styly.fr/video>; rel="canonical"
+  
+/conditions
+  Link: <https://www.styly.fr/conditions>; rel="canonical"
+  
+/confidentialite
+  Link: <https://www.styly.fr/confidentialite>; rel="canonical"
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+# Cache headers for static assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  
+/images/*
+  Cache-Control: public, max-age=31536000
+  
+# Sitemap headers
+/sitemap*.xml
+  Content-Type: application/xml
+  Cache-Control: public, max-age=3600
