@@ -1048,8 +1048,8 @@ export interface Translations {
   applyToJoinNetwork: string;
   fillOutForm: string;
   quickFormDescription: string;
-  fullName: string;
-  fullNamePlaceholder: string;
+  collaboratorFullName: string;
+  collaboratorFullNamePlaceholder: string;
   emailAddress: string;
   emailPlaceholder: string;
   location: string;
@@ -1060,7 +1060,7 @@ export interface Translations {
   selectSpecialization: string;
   interiorDesign: string;
   architecture: string;
-  other: string;
+  collaboratorOther: string;
   submitApplication: string;
   submitting: string;
   collaboratorsClose: string;
@@ -2260,8 +2260,8 @@ export const translations: Record<Language, Translations> = {
     applyToJoinNetwork: "Apply to Join Our Network",
     fillOutForm: "Fill out the form below to start your application process",
     quickFormDescription: "Join our exclusive network in just 2 minutes. Only 4 fields required.",
-    fullName: "Full Name",
-    fullNamePlaceholder: "Enter your full name",
+    collaboratorFullName: "Full Name",
+    collaboratorFullNamePlaceholder: "Enter your full name",
     emailAddress: "Email Address",
     emailPlaceholder: "Enter your email address",
     location: "Location",
@@ -2272,7 +2272,7 @@ export const translations: Record<Language, Translations> = {
     selectSpecialization: "Select your specialization",
     interiorDesign: "Interior Design",
     architecture: "Architecture",
-    other: "Other",
+    collaboratorOther: "Other",
     submitApplication: "Submit Application",
     submitting: "Submitting...",
     collaboratorsClose: "Close",
@@ -3511,8 +3511,8 @@ export const translations: Record<Language, Translations> = {
     applyToJoinNetwork: "Postuler pour Rejoindre Notre Réseau",
     fillOutForm: "Remplissez le formulaire ci-dessous pour commencer votre processus de candidature",
     quickFormDescription: "Rejoignez notre réseau exclusif en seulement 2 minutes. Seulement 4 champs requis.",
-    fullName: "Nom Complet",
-    fullNamePlaceholder: "Entrez votre nom complet",
+    collaboratorFullName: "Nom Complet",
+    collaboratorFullNamePlaceholder: "Entrez votre nom complet",
     emailAddress: "Adresse Email",
     emailPlaceholder: "Entrez votre adresse email",
     location: "Localisation",
@@ -3523,7 +3523,7 @@ export const translations: Record<Language, Translations> = {
     selectSpecialization: "Sélectionnez votre spécialisation",
     interiorDesign: "Design d'Intérieur",
     architecture: "Architecture",
-    other: "Autre",
+    collaboratorOther: "Autre",
     submitApplication: "Soumettre la Candidature",
     submitting: "Envoi en cours...",
     collaboratorsClose: "Fermer",
