@@ -46,8 +46,8 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="bg-white/98 backdrop-blur-md sticky top-0 w-full z-50 border-b border-gray-200/30">
-      <div className="max-w-6xl mx-auto flex h-16 w-full items-center justify-between px-6 lg:px-8">
-        {/* Logo - Premium clean */}
+      <div className="max-w-6xl mx-auto flex h-14 sm:h-16 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Logo - Mobile optimized */}
         <div className="flex items-center">
           <Link
             to="/"
@@ -56,18 +56,18 @@ const Navbar: React.FC = () => {
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY"
-              className="h-8 w-auto"
+              className="h-7 sm:h-8 w-auto"
             />
           </Link>
         </div>
 
-        {/* Mobile menu button */}
+        {/* Mobile menu button - Enhanced touch target */}
         <button
-          className="md:hidden p-2 text-gray-400 hover:text-gray-600 transition-colors"
+          className="md:hidden p-3 -mr-2 text-gray-500 hover:text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200 active:scale-95"
           onClick={toggleMobileMenu}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
-          {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
 
         {/* Desktop Navigation - Premium spacing */}
@@ -101,24 +101,24 @@ const Navbar: React.FC = () => {
           {t.servicesAPI}
         </Link>
 
-          {/* Sign In Button */}
+          {/* Sign In Button - Enhanced for mobile */}
           <div className="ml-4 lg:ml-6">
             <a
               href="https://app.styly.io/signin"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center py-2 px-4 lg:px-5 bg-orange-500 text-white font-medium text-sm lg:text-base transition-colors duration-200 hover:bg-orange-600 rounded-md whitespace-nowrap tracking-wide"
+              className="flex items-center justify-center py-2.5 px-4 lg:px-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold text-sm lg:text-base transition-all duration-200 hover:from-orange-600 hover:to-orange-700 hover:shadow-md rounded-lg whitespace-nowrap tracking-wide active:scale-95"
               aria-label="Sign In to STYLY AI"
             >
               {t.signIn}
             </a>
           </div>
 
-          {/* Language Dropdown */}
+          {/* Language Dropdown - Enhanced */}
           <div className="ml-3 lg:ml-4">
             <DropdownMenu>
               <DropdownMenuTrigger
-                className="flex items-center gap-1 justify-center py-2 px-2 transition-colors duration-200 hover:bg-gray-50 rounded-md outline-none border-none min-w-[40px]"
+                className="flex items-center gap-1 justify-center py-2.5 px-3 transition-all duration-200 hover:bg-gray-50 rounded-lg outline-none border-none min-w-[44px] active:scale-95"
               >
                 <span className="text-sm">
                   {language === "en" ? "🇬🇧" : "🇫🇷"}
@@ -127,12 +127,12 @@ const Navbar: React.FC = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent
                 align="end"
-                className="bg-white border border-gray-100 shadow-sm rounded-md min-w-[120px] mt-1"
+                className="bg-white border border-gray-100 shadow-lg rounded-xl min-w-[140px] mt-2 p-1"
               >
                 {languages.map((lang) => (
                   <DropdownMenuItem
                     key={lang.code}
-                    className={`cursor-pointer hover:bg-gray-50 focus:bg-gray-50 px-3 py-2 text-sm flex items-center gap-2 transition-colors duration-150 ${
+                    className={`cursor-pointer hover:bg-gray-50 focus:bg-gray-50 px-3 py-2.5 text-sm flex items-center gap-2 transition-colors duration-150 rounded-lg ${
                       language === lang.code ? "bg-gray-50 font-medium" : ""
                     }`}
                     onClick={() => handleLanguageChange(lang.code as "en" | "fr")}
@@ -147,13 +147,14 @@ const Navbar: React.FC = () => {
         </nav>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Improved Design */}
       <div
-        className={`fixed inset-0 bg-white z-50 flex flex-col p-5 transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-white z-50 flex flex-col transition-transform duration-300 ease-in-out ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
-        <div className="flex justify-between items-center mb-8 pb-4 border-b border-gray-100">
+        {/* Mobile Header */}
+        <div className="flex justify-between items-center h-14 px-4 border-b border-gray-100 bg-white">
           <Link
             to="/"
             className="transition-opacity duration-200 hover:opacity-80 flex items-center"
@@ -162,69 +163,77 @@ const Navbar: React.FC = () => {
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY Logo"
-              className="h-8 w-auto object-contain"
+              className="h-7 w-auto object-contain"
             />
           </Link>
           <button
-            className="text-gray-600 hover:text-purple-700 transition-colors duration-200 p-1.5"
+            className="p-3 -mr-2 text-gray-500 hover:text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200 active:scale-95"
             onClick={toggleMobileMenu}
             aria-label="Close menu"
           >
-            <X size={20} />
+            <X size={22} />
           </button>
         </div>
-        <div className="flex flex-col gap-0.5">
-          <a
-            href="https://app.styly.io/pricing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-700 font-medium py-3 px-3 hover:text-purple-700 hover:bg-gray-50 transition-colors duration-200 rounded-md tracking-wide"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            {t.pricing}
-          </a>
 
-          <Link
-            to="/collaborateurs"
-            className="text-gray-700 font-medium py-3 px-3 hover:text-purple-700 hover:bg-gray-50 transition-colors duration-200 rounded-md tracking-wide"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            {language === "fr" ? "Styly Pro" : "Styly Pro"}
-          </Link>
+        {/* Mobile Menu Content */}
+        <div className="flex-1 overflow-y-auto px-4 py-6">
+          {/* Navigation Links */}
+          <div className="space-y-1">
+            <a
+              href="https://app.styly.io/pricing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-gray-700 font-medium py-4 px-4 hover:text-purple-700 hover:bg-gray-50 transition-all duration-200 rounded-xl text-base active:scale-98 touch-manipulation"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t.pricing}
+            </a>
 
-          <Link
-            to="/services-api"
-            className="text-gray-700 font-medium py-3 px-3 hover:text-purple-700 hover:bg-gray-50 transition-colors duration-200 rounded-md tracking-wide"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            {t.servicesAPI}
-          </Link>
+            <Link
+              to="/collaborateurs"
+              className="flex items-center text-gray-700 font-medium py-4 px-4 hover:text-purple-700 hover:bg-gray-50 transition-all duration-200 rounded-xl text-base active:scale-98 touch-manipulation"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {language === "fr" ? "Styly Pro" : "Styly Pro"}
+            </Link>
 
-          <div className="mt-5 pt-3">
+            <Link
+              to="/services-api"
+              className="flex items-center text-gray-700 font-medium py-4 px-4 hover:text-purple-700 hover:bg-gray-50 transition-all duration-200 rounded-xl text-base active:scale-98 touch-manipulation"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t.servicesAPI}
+            </Link>
+          </div>
+
+          {/* CTA Button */}
+          <div className="mt-8">
             <a
               href="https://app.styly.io/signin"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-orange-500 text-white font-medium py-3 px-4 rounded-md text-center hover:bg-orange-600 transition-colors duration-200 block tracking-wide"
+              className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold py-4 px-6 rounded-xl text-center hover:from-orange-600 hover:to-orange-700 transition-all duration-200 block text-base shadow-lg active:scale-98 touch-manipulation"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.signIn}
             </a>
           </div>
-          <div className="mt-4 pt-3 border-t border-gray-100">
-            <div className="text-gray-600 text-sm mb-2 font-medium">Language:</div>
-            <div className="flex gap-2">
+
+          {/* Language Selector */}
+          <div className="mt-8 pt-6 border-t border-gray-100">
+            <div className="text-gray-600 text-sm mb-3 font-medium">Language</div>
+            <div className="grid grid-cols-2 gap-3">
               {languages.map((lang) => (
                 <button
                   key={lang.code}
-                  className={`py-2 px-3 rounded-md transition-colors text-sm ${
+                  className={`py-3 px-4 rounded-xl transition-all text-sm font-medium active:scale-98 touch-manipulation ${
                     language === lang.code
-                      ? "bg-purple-600 text-white"
+                      ? "bg-purple-600 text-white shadow-md"
                       : "bg-gray-100 text-gray-800 hover:bg-gray-200"
                   }`}
                   onClick={() => handleLanguageChange(lang.code as "en" | "fr")}
                 >
-                  {lang.name}
+                  {lang.code === "en" ? "🇬🇧 English" : "🇫🇷 Français"}
                 </button>
               ))}
             </div>
