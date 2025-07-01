@@ -17,31 +17,37 @@ All French URLs were returning **404 Not Found** errors when accessed directly:
 
 ## ✅ Solution Implemented
 
-### 1. **Updated `public/_redirects` (Netlify/Vercel)**
+### 1. **Updated `public/_redirects` (AWS Amplify/Netlify)**
 ```
 # CRITICAL: SPA ROUTING FALLBACK
 # This rule MUST be last - serves index.html for all routes that don't match static files
 /*    /index.html   200
 ```
 
-### 2. **Added `public/.htaccess` (Apache)**
+### 2. **Added `amplify.yml` (AWS Amplify)**
+```yaml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+        - npm run generate-sitemap
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+```
+
+### 3. **Added `public/.htaccess` (Apache)**
 ```apache
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^.*$ /index.html [L]
-```
-
-### 3. **Added `vercel.json` (Vercel)**
-```json
-{
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-}
 ```
 
 ## 🚀 How It Works
@@ -60,8 +66,8 @@ RewriteRule ^.*$ /index.html [L]
 ## 📊 Configuration Details
 
 ### **Hosting Platform Support:**
+- ✅ **AWS Amplify**: `_redirects` file + `amplify.yml`
 - ✅ **Netlify**: `_redirects` file
-- ✅ **Vercel**: `vercel.json` file  
 - ✅ **Apache**: `.htaccess` file
 - ✅ **Any static host**: Copy appropriate config
 
