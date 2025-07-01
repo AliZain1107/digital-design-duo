@@ -51,7 +51,55 @@
 # Catch-all for any other trailing slash URLs
 /*/  /:splat  301!
 
-# ===== CRITICAL: SPA ROUTING FALLBACK =====
-# This rule MUST be last - serves index.html for all routes that don't match static files
-# This fixes 404 errors for direct URL access to React Router routes
-/*    /index.html   200
+# ========================================
+# SPA ROUTING CONFIGURATION (CRITICAL!)
+# ========================================
+# This section is ESSENTIAL for React Router to work with direct URL access
+# Without this, all direct URL access will return 404 errors
+
+# Static files should be served directly (highest priority)
+/favicon.ico /favicon.ico 200
+/robots.txt /robots.txt 200
+/sitemap.xml /sitemap.xml 200
+/manifest.json /manifest.json 200
+/browserconfig.xml /browserconfig.xml 200
+/humans.txt /humans.txt 200
+/_headers /_headers 200
+
+# Asset directories and file extensions
+/assets/* /assets/:splat 200
+/images/* /images/:splat 200
+/fonts/* /fonts/:splat 200
+/Blogpages/* /Blogpages/:splat 200
+/companies\ logo/* /companies\ logo/:splat 200
+/lovable-uploads/* /lovable-uploads/:splat 200
+/revolution/* /revolution/:splat 200
+/testimonials/* /testimonials/:splat 200
+
+# Static file extensions
+/*.png /:splat.png 200
+/*.jpg /:splat.jpg 200
+/*.jpeg /:splat.jpeg 200
+/*.webp /:splat.webp 200
+/*.gif /:splat.gif 200
+/*.svg /:splat.svg 200
+/*.ico /:splat.ico 200
+/*.woff /:splat.woff 200
+/*.woff2 /:splat.woff2 200
+/*.otf /:splat.otf 200
+/*.ttf /:splat.ttf 200
+/*.css /:splat.css 200
+/*.js /:splat.js 200
+/*.json /:splat.json 200
+/*.xml /:splat.xml 200
+/*.txt /:splat.txt 200
+/*.csv /:splat.csv 200
+/*.mp4 /:splat.mp4 200
+/*.avif /:splat.avif 200
+
+# ========================================
+# CRITICAL: SPA FALLBACK RULE
+# ========================================
+# This MUST be the last rule - serves React app for all unmatched routes
+# This enables client-side routing for direct URL access
+/* /index.html 200

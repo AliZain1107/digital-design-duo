@@ -2,16 +2,21 @@
 
 ## 📋 Overview
 
-This guide explains how to submit the French-focused sitemap to Google Search Console for optimal indexing and SEO performance.
+This guide explains how to submit the updated sitemaps to Google Search Console for optimal indexing and SEO performance.
 
-## 🎯 Sitemap Created
+## 🎯 Sitemaps Created
 
-### **French-Focused Sitemap (www.styly.fr)**
+### 1. **Main Sitemap (styly.io)**
 - **File**: `public/sitemap.xml`
-- **URL**: `https://www.styly.fr/sitemap.xml`
-- **Purpose**: Primary French-focused sitemap for www.styly.fr domain
-- **Content**: French pages and blog posts only (no English URLs)
-- **Strategy**: Aligns with French-first approach and robots.txt disallow of `/en/` routes
+- **URL**: `https://styly.io/sitemap.xml`
+- **Purpose**: Primary sitemap for the main domain
+- **Content**: All pages, blog posts, and multilingual versions
+
+### 2. **French Sitemap (www.styly.fr)**
+- **File**: `public/sitemap-fr.xml`
+- **URL**: `https://www.styly.fr/siteap-fr.xml`
+- **Purpose**: French-focused sitemap for French domain
+- **Content**: French pages and blog posts with proper hreflang tags
 
 ## 🚀 Google Search Console Submission Steps
 
@@ -69,11 +74,12 @@ This guide explains how to submit the French-focused sitemap to Google Search Co
 
 ### Robots.txt Configuration:
 ```
-# French domain (www.styly.fr) - French-focused approach
+# Main domain (styly.io)
+Sitemap: https://styly.io/sitemap.xml
 Sitemap: https://www.styly.fr/sitemap.xml
 
-# Disallow English routes (not actively used)
-Disallow: /en/
+# French domain (www.styly.fr)
+Sitemap: https://www.styly.fr/sitemap-fr.xml
 ```
 
 ### Hreflang Implementation:

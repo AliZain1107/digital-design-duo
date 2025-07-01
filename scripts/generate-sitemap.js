@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * French-Focused Sitemap Generator for Styly.fr
- * Generates French-only sitemap aligned with French-first strategy
- * Excludes English URLs as they are not actively used and disallowed in robots.txt
+ * Bilingual Sitemap Generator for Styly.fr
+ * Generates accurate sitemaps with proper bilingual URL structure
  * Reads from actual blog posts data and ensures proper hreflang implementation
  */
 
@@ -18,68 +17,10 @@ const __dirname = path.dirname(__filename);
 const DOMAIN = 'https://www.styly.fr';
 const OUTPUT_DIR = path.join(__dirname, '../public');
 
-// Function to extract canonical URLs from CSV redirect file
-function getCanonicalUrlsFromCSV() {
-  try {
-    const csvPath = path.join(OUTPUT_DIR, 'canonical-redirects.csv');
-    if (!fs.existsSync(csvPath)) {
-      console.log('📚 Canonical redirects CSV file not found, using fallback blog posts data');
-      return getFallbackBlogPosts();
-    }
-
-    const csvContent = fs.readFileSync(csvPath, 'utf-8');
-    const lines = csvContent.split('\n').slice(1); // Skip header
-
-    const canonicalUrls = [];
-    const blogPosts = [];
-
-    lines.forEach(line => {
-      if (!line.trim()) return;
-
-      const columns = line.split(',');
-      const sourceUrl = columns[1];
-      const redirectUrl = columns[7];
-
-      // Skip English URLs (contain /en/)
-      if (sourceUrl && sourceUrl.includes('/en/')) return;
-
-      // Skip problematic redirects to styly.io
-      if (redirectUrl && redirectUrl.includes('styly.io')) return;
-
-      // Process French URLs
-      if (sourceUrl && sourceUrl.includes('www.styly.fr') && !sourceUrl.includes('/en/')) {
-        // Extract clean URL without trailing slash for processing
-        const cleanUrl = sourceUrl.replace(/\/$/, '');
-
-        // Extract blog posts
-        if (cleanUrl.includes('/blog/') && !cleanUrl.endsWith('/blog')) {
-          const slug = cleanUrl.split('/blog/')[1];
-          if (slug) {
-            blogPosts.push({
-              slug: slug,
-              slugFr: slug,
-              lastmod: new Date().toISOString().split('T')[0]
-            });
-          }
-        }
-
-        canonicalUrls.push(cleanUrl);
-      }
-    });
-
-    console.log(`📚 Extracted ${blogPosts.length} blog posts from canonical redirects CSV`);
-    console.log(`📊 Total canonical URLs found: ${canonicalUrls.length}`);
-
-    return blogPosts.length > 0 ? blogPosts : getFallbackBlogPosts();
-  } catch (error) {
-    console.log('📚 Error reading canonical redirects CSV, using fallback blog posts data:', error.message);
-    return getFallbackBlogPosts();
-  }
-}
-
-// Function to get blog posts - now uses CSV data first, fallback second
+// Function to get blog posts - using fallback for now to avoid parsing issues
 function getBlogPostsFromDataFile() {
-  return getCanonicalUrlsFromCSV();
+  console.log('📚 Using fallback blog posts data for sitemap generation');
+  return getFallbackBlogPosts();
 }
 
 // Convert date formats to ISO
@@ -200,72 +141,19 @@ function getFallbackBlogPosts() {
   ];
 }
 
-// Function to extract main pages from canonical redirects CSV file
-function getMainPagesFromCSV() {
-  try {
-    const csvPath = path.join(OUTPUT_DIR, 'canonical-redirects.csv');
-    if (!fs.existsSync(csvPath)) {
-      return getDefaultMainPages();
-    }
-
-    const csvContent = fs.readFileSync(csvPath, 'utf-8');
-    const lines = csvContent.split('\n').slice(1); // Skip header
-
-    const mainPages = [];
-
-    lines.forEach(line => {
-      if (!line.trim()) return;
-
-      const columns = line.split(',');
-      const sourceUrl = columns[1];
-
-      // Skip English URLs and problematic redirects
-      if (!sourceUrl || sourceUrl.includes('/en/') || sourceUrl.includes('styly.io')) return;
-
-      // Process French main pages (not blog posts)
-      if (sourceUrl.includes('www.styly.fr') && !sourceUrl.includes('/blog/')) {
-        const cleanUrl = sourceUrl.replace(/\/$/, '');
-        const path = cleanUrl.replace('https://www.styly.fr/', '');
-
-        if (path && path !== 'www.styly.fr' && !path.includes('http')) {
-          // Determine priority and changefreq based on page type
-          let priority = '0.7';
-          let changefreq = 'monthly';
-
-          if (path === 'upload') priority = '0.9';
-          else if (['pricing', 'get-started', 'styly-pro'].includes(path)) priority = '0.8';
-          else if (path === 'blog') { priority = '0.8'; changefreq = 'weekly'; }
-          else if (['conditions', 'confidentialite'].includes(path)) { priority = '0.5'; changefreq = 'yearly'; }
-          else if (path === 'video') priority = '0.6';
-
-          mainPages.push({ path, priority, changefreq });
-        }
-      }
-    });
-
-    console.log(`📊 Extracted ${mainPages.length} main pages from canonical redirects CSV`);
-    return mainPages.length > 0 ? mainPages : getDefaultMainPages();
-  } catch (error) {
-    console.log('📊 Error extracting main pages from canonical redirects CSV, using defaults:', error.message);
-    return getDefaultMainPages();
-  }
-}
-
-// Default main pages fallback
-function getDefaultMainPages() {
-  return [
-    { path: 'upload', priority: '0.9', changefreq: 'monthly' },
-    { path: 'pricing', priority: '0.8', changefreq: 'monthly' },
-    { path: 'get-started', priority: '0.8', changefreq: 'monthly' },
-    { path: 'styly-pro', priority: '0.8', changefreq: 'monthly' },
-    { path: 'services-api', priority: '0.7', changefreq: 'monthly' },
-    { path: 'blog', priority: '0.8', changefreq: 'weekly' },
-    { path: 'conditions', priority: '0.5', changefreq: 'yearly' },
-    { path: 'confidentialite', priority: '0.5', changefreq: 'yearly' },
-    { path: 'video', priority: '0.6', changefreq: 'monthly' },
-    { path: 'collaborateurs', priority: '0.7', changefreq: 'monthly' }
-  ];
-}
+// Main pages that exist (excluding root and 'en' as they're handled separately)
+const mainPages = [
+  { path: 'upload', priority: '0.9', changefreq: 'monthly' },
+  { path: 'pricing', priority: '0.8', changefreq: 'monthly' },
+  { path: 'get-started', priority: '0.8', changefreq: 'monthly' },
+  { path: 'styly-pro', priority: '0.8', changefreq: 'monthly' },
+  { path: 'services-api', priority: '0.7', changefreq: 'monthly' },
+  { path: 'blog', priority: '0.8', changefreq: 'weekly' },
+  { path: 'conditions', priority: '0.5', changefreq: 'yearly' },
+  { path: 'confidentialite', priority: '0.5', changefreq: 'yearly' },
+  { path: 'video', priority: '0.6', changefreq: 'monthly' },
+  { path: 'collaborateurs', priority: '0.7', changefreq: 'monthly' }
+];
 
 function generateSitemapXML(urls) {
   const header = `<?xml version="1.0" encoding="UTF-8"?>
@@ -315,16 +203,14 @@ function generateSitemapXML(urls) {
   return header + urlEntries + footer;
 }
 
-// Main sitemap generation function (French-focused with CSV canonical URLs)
 function generateMainSitemap() {
   const urls = [];
   const today = new Date().toISOString().split('T')[0];
 
-  // Get blog posts and main pages from CSV redirect file
+  // Get blog posts from actual data file
   const blogPosts = getBlogPostsFromDataFile();
-  const mainPages = getMainPagesFromCSV();
 
-  // Add root page (French only)
+  // Add root pages first
   urls.push({
     loc: `${DOMAIN}/`,
     lastmod: today,
@@ -332,26 +218,59 @@ function generateMainSitemap() {
     priority: '1.0',
     hreflang: [
       { lang: 'fr', href: `${DOMAIN}/` },
+      { lang: 'en', href: `${DOMAIN}/en` },
       { lang: 'x-default', href: `${DOMAIN}/` }
     ]
   });
 
-  // Add French main pages only (from CSV canonical URLs)
+  urls.push({
+    loc: `${DOMAIN}/en`,
+    lastmod: today,
+    changefreq: 'weekly',
+    priority: '1.0',
+    hreflang: [
+      { lang: 'fr', href: `${DOMAIN}/` },
+      { lang: 'en', href: `${DOMAIN}/en` },
+      { lang: 'x-default', href: `${DOMAIN}/` }
+    ]
+  });
+
+  // Add other pages
   mainPages.forEach(page => {
+    const basePath = page.path;
+    const frenchUrl = `${DOMAIN}/${basePath}`;
+    const englishUrl = `${DOMAIN}/en/${basePath}`;
+
+    // French version
     urls.push({
-      loc: `${DOMAIN}/${page.path}`,
+      loc: frenchUrl,
       lastmod: today,
       changefreq: page.changefreq,
       priority: page.priority,
       hreflang: [
-        { lang: 'fr', href: `${DOMAIN}/${page.path}` },
-        { lang: 'x-default', href: `${DOMAIN}/${page.path}` }
+        { lang: 'fr', href: frenchUrl },
+        { lang: 'en', href: englishUrl },
+        { lang: 'x-default', href: frenchUrl }
+      ]
+    });
+
+    // English version
+    urls.push({
+      loc: englishUrl,
+      lastmod: today,
+      changefreq: page.changefreq,
+      priority: page.priority,
+      hreflang: [
+        { lang: 'fr', href: frenchUrl },
+        { lang: 'en', href: englishUrl },
+        { lang: 'x-default', href: frenchUrl }
       ]
     });
   });
 
-  // Add French blog posts only (from CSV canonical URLs)
+  // Add blog posts with proper bilingual structure
   blogPosts.forEach(post => {
+    // French blog post (default language, no prefix)
     urls.push({
       loc: `${DOMAIN}/blog/${post.slugFr || post.slug}`,
       lastmod: post.lastmod,
@@ -359,6 +278,20 @@ function generateMainSitemap() {
       priority: '0.8',
       hreflang: [
         { lang: 'fr', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` },
+        { lang: 'en', href: `${DOMAIN}/en/blog/${post.slugEn}` },
+        { lang: 'x-default', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` }
+      ]
+    });
+
+    // English blog post (with /en/ prefix)
+    urls.push({
+      loc: `${DOMAIN}/en/blog/${post.slugEn}`,
+      lastmod: post.lastmod,
+      changefreq: 'monthly',
+      priority: '0.8',
+      hreflang: [
+        { lang: 'fr', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` },
+        { lang: 'en', href: `${DOMAIN}/en/blog/${post.slugEn}` },
         { lang: 'x-default', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` }
       ]
     });
@@ -367,15 +300,56 @@ function generateMainSitemap() {
   return generateSitemapXML(urls);
 }
 
+function generateFrenchSitemap() {
+  const urls = [];
+  const today = new Date().toISOString().split('T')[0];
 
+  // Get blog posts from actual data file
+  const blogPosts = getBlogPostsFromDataFile();
 
-// Generate French-focused sitemap
-console.log('Generating French-focused sitemap...');
+  // Add French main pages only
+  mainPages.forEach(page => {
+    urls.push({
+      loc: `${DOMAIN}/${page.path}`,
+      lastmod: today,
+      changefreq: page.changefreq,
+      priority: page.priority,
+      hreflang: [
+        { lang: 'fr', href: `${DOMAIN}/${page.path}` },
+        { lang: 'en', href: `${DOMAIN}/en/${page.path}` },
+        { lang: 'x-default', href: `${DOMAIN}/${page.path}` }
+      ]
+    });
+  });
 
-const sitemap = generateMainSitemap();
+  // Add French blog posts only
+  blogPosts.forEach(post => {
+    urls.push({
+      loc: `${DOMAIN}/blog/${post.slugFr || post.slug}`,
+      lastmod: post.lastmod,
+      changefreq: 'monthly',
+      priority: '0.8',
+      hreflang: [
+        { lang: 'fr', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` },
+        { lang: 'en', href: `${DOMAIN}/en/blog/${post.slugEn}` },
+        { lang: 'x-default', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` }
+      ]
+    });
+  });
 
-// Write sitemap file
-fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), sitemap);
+  return generateSitemapXML(urls);
+}
 
-console.log('✅ French-focused sitemap generated successfully!');
-console.log(`📁 Sitemap: ${path.join(OUTPUT_DIR, 'sitemap.xml')}`);
+// Generate sitemaps
+console.log('Generating sitemaps...');
+
+const mainSitemap = generateMainSitemap();
+const frenchSitemap = generateFrenchSitemap();
+
+// Write files
+fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), mainSitemap);
+fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap-fr.xml'), frenchSitemap);
+
+console.log('✅ Sitemaps generated successfully!');
+console.log(`📁 Main sitemap: ${path.join(OUTPUT_DIR, 'sitemap.xml')}`);
+console.log(`📁 French sitemap: ${path.join(OUTPUT_DIR, 'sitemap-fr.xml')}`);

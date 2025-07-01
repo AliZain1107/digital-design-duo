@@ -51,13 +51,19 @@ const App = () => (
               <Route path="/en" element={<Index />} />
               <Route path="/en/" element={<Index />} />
 
-              {/* Primary French blog routes (canonical URLs) */}
+              {/* French blog routes */}
+              <Route path="/fr/blog" element={<Blog />} />
+              <Route path="/fr/blog/" element={<Blog />} />
+              <Route path="/fr/blog/:slug" element={<BlogPostPage />} />
+              <Route path="/fr/blog/:slug/" element={<BlogPostPage />} />
+
+              {/* Legacy blog routes for backward compatibility (French) */}
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPostPage />} />
               <Route path="/blog/:slug/" element={<BlogPostPage />} />
 
-              {/* English blog routes (disallowed in robots.txt but kept for completeness) */}
+              {/* English blog routes */}
               <Route path="/en/blog" element={<Blog />} />
               <Route path="/en/blog/" element={<Blog />} />
               <Route path="/en/blog/:slug" element={<BlogPostPage />} />
