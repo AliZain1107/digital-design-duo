@@ -532,8 +532,8 @@ export const blogPosts: BlogPost[] = [
     titleFr: "Design Durable avec l'IA : Créer des Espaces Éco-Responsables",
     date: "May 8, 2024",
     image: "/sustainable-design-ai-eco-friendly.webp",
-    slug: "sustainable-design-ai-eco-friendly-spaces",
-    slugFr: "design-durabilite-ia-espaces-eco-responsables",
+    slug: "sustainable-design-ai-eco-friendly-spaces-2024",
+    slugFr: "design-durabilite-ia-espaces-eco-responsables-2024",
     Component: SustainableDesignAI,
   },
   {
@@ -542,8 +542,8 @@ export const blogPosts: BlogPost[] = [
     titleFr: "Le Rôle des Données dans le Design Alimenté par l'IA",
     date: "May 5, 2024",
     image: "/data-ai-powered-design.webp",
-    slug: "role-data-ai-powered-design",
-    slugFr: "role-donnees-design-alimente-ia",
+    slug: "role-data-ai-powered-design-2024",
+    slugFr: "role-donnees-design-alimente-ia-2024",
     Component: DataAIPoweredDesign,
   },
   {
@@ -562,8 +562,8 @@ export const blogPosts: BlogPost[] = [
     titleFr: "6 Prompts Viraux de Design de Chambre IA pour Créer Votre Chambre de Rêve avec Styly",
     date: "May 1, 2024",
     image: "/6-viral-ai-room-design-prompts.webp",
-    slug: "6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
-    slugFr: "6-prompts-viraux-design-chambre-ia-styly",
+    slug: "6-viral-ai-room-design-prompts-create-dream-bedroom-styly-2024",
+    slugFr: "6-prompts-viraux-design-chambre-ia-styly-2024",
     Component: ViralAIRoomDesignPrompts,
   },
   {
@@ -572,8 +572,8 @@ export const blogPosts: BlogPost[] = [
     titleFr: "IA pour le Design Accessible : Créer des Espaces Inclusifs",
     date: "Apr 28, 2024",
     image: "/ai-accessible-design-inclusive.webp",
-    slug: "ai-accessible-design-inclusive-spaces",
-    slugFr: "ia-design-accessible-espaces-inclusifs",
+    slug: "ai-accessible-design-inclusive-spaces-2024",
+    slugFr: "ia-design-accessible-espaces-inclusifs-2024",
     Component: AIAccessibleDesign,
   },
 ];
