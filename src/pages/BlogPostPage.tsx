@@ -25,15 +25,9 @@ const BlogPostPage: React.FC = () => {
   }, [slug]);
 
   // Find the blog post by slug for the correct language
-  // Try both French and English slugs to handle any routing issues
-  const post = blogPosts.find((post) => {
-    if (isEnglishRoute) {
-      return post.slug === slug;
-    } else {
-      // For French routes, try both slugFr and slug as fallback
-      return post.slugFr === slug || post.slug === slug;
-    }
-  });
+  const post = blogPosts.find((post) =>
+    (isEnglishRoute && post.slug === slug) || (!isEnglishRoute && post.slugFr === slug)
+  );
 
 
 
@@ -56,7 +50,8 @@ const BlogPostPage: React.FC = () => {
     );
   }
 
-
+  // Generate proper language-specific URLs
+  const currentSlug = post.slugFr && slug === post.slugFr ? post.slugFr : post.slug;
 
   // Create proper canonical URL based on language
   const canonicalUrl = isEnglishRoute

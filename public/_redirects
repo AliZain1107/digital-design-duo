@@ -1,13 +1,57 @@
-# Essential redirects for Styly.fr
-# 1. Remove trailing slashes for SEO consistency
-# 2. Redirect English traffic to external site
-# 3. Enable SPA routing for React
+# Redirect URLs with trailing slashes to URLs without trailing slashes
+# This fixes 404 errors caused by external tools adding trailing slashes
+# Force redirects with 301! to ensure they take precedence
+# IMPORTANT: Specific rules MUST come before general patterns
+# Updated to ensure no-slash → slash → 200 (one hop) as requested
+
+# French-specific redirects (remove trailing slashes)
+/blog/10-conseils-experts-economiser-decoration-interieure-2025/  /blog/10-conseils-experts-economiser-decoration-interieure-2025  301!
+
+# Blog index redirects (French only)
+/blog/  /blog  301!
+/fr/blog/  /fr/blog  301!
+
+# Blog post redirects - French patterns only
+/blog/*/  /blog/:splat  301!
+/fr/blog/*/  /fr/blog/:splat  301!
+
+# General page redirects (French only)
+/fr/  /fr  301!
 
 # English routes redirect to external site
 /en/*  https://www.styly.io/:splat  301!
 
-# Remove trailing slashes (SEO best practice)
+# Legal pages redirects (French only)
+/conditions/  /conditions  301!
+/confidentialite/  /confidentialite  301!
+/privacy/  /privacy  301!
+/terms/  /terms  301!
+/fr/conditions/  /fr/conditions  301!
+/fr/confidentialite/  /fr/confidentialite  301!
+
+# Service pages redirects (French only)
+/services-api/  /services-api  301!
+/fr/services-api/  /fr/services-api  301!
+/collaborateurs/  /collaborateurs  301!
+/fr/collaborateurs/  /fr/collaborateurs  301!
+
+# Other pages redirects (French only)
+/upload/  /upload  301!
+/fr/upload/  /fr/upload  301!
+/pricing/  /pricing  301!
+/fr/pricing/  /fr/pricing  301!
+/styly-pro/  /styly-pro  301!
+/fr/styly-pro/  /fr/styly-pro  301!
+/get-started/  /get-started  301!
+/fr/get-started/  /fr/get-started  301!
+/video/  /video  301!
+/video-guide/  /video-guide  301!
+/fr/video/  /fr/video  301!
+
+# Catch-all for any other trailing slash URLs
 /*/  /:splat  301!
 
-# SPA fallback - CRITICAL: Must be last rule
-/*  /index.html  200
+# ===== CRITICAL: SPA ROUTING FALLBACK =====
+# This rule MUST be last - serves index.html for all routes that don't match static files
+# This fixes 404 errors for direct URL access to React Router routes
+/*    /index.html   200
