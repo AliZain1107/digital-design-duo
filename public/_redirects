@@ -60,7 +60,7 @@
 # Static files should be served directly (highest priority)
 /favicon.ico /favicon.ico 200
 /robots.txt /robots.txt 200
-/sitemap.xml /sitemap.xml 200
+/sitemap-fr.xml /sitemap-fr.xml 200
 /manifest.json /manifest.json 200
 /browserconfig.xml /browserconfig.xml 200
 /humans.txt /humans.txt 200

@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 /**
- * Bilingual Sitemap Generator for Styly.fr
- * Generates accurate sitemaps with proper bilingual URL structure
- * Reads from actual blog posts data and ensures proper hreflang implementation
+ * French-Focused Sitemap Generator for Styly.fr
+ * Generates French-only sitemap with proper canonical URL structure
+ * Reads from actual blog posts data and focuses on French market
  */
 
 import fs from 'fs';
@@ -340,16 +340,13 @@ function generateFrenchSitemap() {
   return generateSitemapXML(urls);
 }
 
-// Generate sitemaps
-console.log('Generating sitemaps...');
+// Generate French-focused sitemap only
+console.log('Generating French-focused sitemap...');
 
-const mainSitemap = generateMainSitemap();
 const frenchSitemap = generateFrenchSitemap();
 
-// Write files
-fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), mainSitemap);
+// Write French sitemap only
 fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap-fr.xml'), frenchSitemap);
 
-console.log('✅ Sitemaps generated successfully!');
-console.log(`📁 Main sitemap: ${path.join(OUTPUT_DIR, 'sitemap.xml')}`);
+console.log('✅ French-focused sitemap generated successfully!');
 console.log(`📁 French sitemap: ${path.join(OUTPUT_DIR, 'sitemap-fr.xml')}`);
