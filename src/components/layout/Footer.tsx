@@ -4,7 +4,7 @@ import { useLanguage } from "@/lib/i18n";
 import CookieSettings from "./CookieSettings";
 
 const Footer: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [isCookieSettingsOpen, setIsCookieSettingsOpen] = useState(false);
 
   const handleCookieSettings = () => {
@@ -41,25 +41,25 @@ const Footer: React.FC = () => {
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-2 text-base text-black font-normal w-full md:w-auto text-center md:text-left max-w-full pb-2 md:pb-0">
             <span className="break-words whitespace-nowrap">{t.footerCopyrightYear}</span>
             <Link
-              to="/blog"
+              to={language === 'fr' ? '/fr/blog' : '/en/blog'}
               className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline whitespace-nowrap"
             >
               {t.footerBlog}
             </Link>
             <Link
-              to="/video-guide"
+              to={language === 'fr' ? '/fr/video' : '/en/video'}
               className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline whitespace-nowrap"
             >
               {t.footerVideoGuide}
             </Link>
             <Link
-              to="/conditions"
+              to={language === 'fr' ? '/fr/conditions' : '/en/terms'}
               className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline whitespace-nowrap"
             >
               {t.footerTerms}
             </Link>
             <Link
-              to="/confidentialite"
+              to={language === 'fr' ? '/fr/confidentialite' : '/en/privacy'}
               className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline whitespace-nowrap"
             >
               {t.footerPrivacy}

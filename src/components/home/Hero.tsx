@@ -165,7 +165,9 @@ const Hero: React.FC = () => {
             <p className="text-base sm:text-lg md:text-xl font-bold leading-snug text-gray-600 tracking-wide animate-fade-in font-baloo">
               {language === 'fr'
                 ? "Téléchargez une photo et voyez votre espace vide devenir une pièce meublée et réaliste, propulsée par l'IA. Aucun outil. Aucun téléchargement. Juste des résultats."
-                : "Upload a photo and see your empty space become a beautifully furnished, realistic room. No tools. No downloads. Just results."}
+                : <>
+                    Upload a photo and see your empty space become a beautifully furnished, realistic room. No tools. No downloads. Just <span className="font-davetica-wide bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">STYLY</span>.
+                  </>}
             </p>
           </div>
           {/* Hero video with fade-in animation and custom controls on hover */}
@@ -192,75 +194,24 @@ const Hero: React.FC = () => {
             </div>
           </div>
           {/* CTA Buttons - Premium design with animation */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 animate-fade-in" style={{ marginTop: '48px' }}>
-            <div className="relative group">
-              <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-orange-200 via-orange-300 to-orange-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
-              <a
-                href="https://app.styly.io"
-                className="group relative flex items-center justify-center px-7 sm:px-8 py-3 sm:py-4 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-lg transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-orange-500/30 border border-transparent whitespace-nowrap z-10 font-baloo"
-                aria-label={t.startFreeTrial}
-                itemProp="potentialAction"
-                itemScope
-                itemType="https://schema.org/Action"
-              >
-                <span className="relative z-10 tracking-wide" itemProp="name">
-                  {t.startFreeTrial}
-                </span>
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </a>
-            </div>
-
-            {/* Contact Us Button */}
-            <div className="relative group">
-              <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
+          <div className="flex flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 mt-10 animate-fade-in" style={{ marginTop: '48px' }}>
+            <a
+              href="https://app.styly.io/signin"
+              className="bg-gradient-to-r from-purple-600 to-purple-700 text-white font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg border border-transparent transition-all duration-200 hover:scale-105 hover:-translate-y-1 animate-cta-pulse group min-h-[44px] min-w-[44px]"
+              aria-label={language === "fr" ? "Essayer Styly AI maintenant" : "Start Free Trial"}
+            >
+              {language === "fr"
+                ? "Essayer Maintenant"
+                : <span className="transition-all duration-300 group-hover:drop-shadow-[0_0_12px_white]">Start Free Trial</span>
+              }
+            </a>
               <a
                 href="/contact"
-                className="relative flex items-center justify-center px-7 sm:px-8 py-3 sm:py-4 rounded-lg bg-white text-purple-700 font-bold text-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10 font-baloo"
-                aria-label={t.contactUs}
-              >
-                <span
-                  className="relative group-hover:bg-gradient-to-r group-hover:from-purple-700 group-hover:via-purple-500 group-hover:to-purple-700 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300"
-                  style={{
-                    backgroundSize: '300% 100%',
-                    animation: 'none'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.animation = 'shimmer-text 3.5s linear infinite';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.animation = 'shimmer-text-fade-out 0.3s ease-out forwards';
-                  }}
-                >
-                  {t.contactUs}
-                </span>
-              </a>
-              <style>{`
-                @keyframes shimmer-text {
-                  0% {
-                    background-position: -300% 0;
-                  }
-                  100% {
-                    background-position: 300% 0;
-                  }
-                }
-                @keyframes shimmer-text-fade-out {
-                  0% {
-                    background-position: 300% 0;
-                    background-image: linear-gradient(90deg, #7c3aed, #a855f7, #7c3aed);
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    color: transparent;
-                  }
-                  100% {
-                    background-position: 300% 0;
-                    background-image: none;
-                    -webkit-background-clip: unset;
-                    background-clip: unset;
-                    color: #7c3aed;
-                  }
-                }
-              `}</style>
-            </div>
+              className="border-2 border-purple-700 bg-white text-purple-700 font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 hover:-translate-y-1 font-baloo relative z-10 min-h-[44px] min-w-[44px] flex items-center justify-center"
+              aria-label={language === "fr" ? "Contactez-nous" : "Contact Us"}
+            >
+              {language === "fr" ? "Contactez-nous" : "Contact Us"} <span className="ml-2">&rarr;</span>
+            </a>
           </div>
 
         </div>
