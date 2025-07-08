@@ -46,7 +46,7 @@ const SustainableLandscapesAI: React.FC = () => {
         <link rel="alternate" hrefLang="fr" href={alternateUrls.fr} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Styly.io" />
-        <meta property="article:published_time" content="2024-10-12" />
+        <meta property="article:published_time" content="2024-10-25" />
         <meta property="article:section" content="Sustainable Landscaping" />
         <meta property="article:tag" content="Carbon Footprint" />
       </Helmet>

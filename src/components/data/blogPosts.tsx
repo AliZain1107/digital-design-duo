@@ -40,17 +40,39 @@ import StylyVivaTechPartnership from "@/blogPages/StylyVivaTechPartnership";
 import ChatGPTInteriorDesign from "@/blogPages/ChatGPTInteriorDesign";
 import UnlockingPowerAIInteriorDesign from "@/blogPages/UnlockingPowerAIInteriorDesign";
 import DALLEMidjourneyRevolutionizingDesign from "@/blogPages/DALLEMidjourneyRevolutionizingDesign";
+import RealEstateVisualizationAI from "@/blogPages/RealEstateVisualizationAI";
+import RevolutionReplacementAI from "@/blogPages/RevolutionReplacementAI";
+import LuxuryBathroomBudgetAI from "@/blogPages/LuxuryBathroomBudgetAI";
+import TopHomeInteriorIdeasAI from "@/blogPages/TopHomeInteriorIdeasAI";
+import TransformSpaceAIRoomDecorating from "@/blogPages/TransformSpaceAIRoomDecorating";
+
 import PhotoshopGenerativeAIInteriorDesign from "@/blogPages/PhotoshopGenerativeAIInteriorDesign";
 import AITechnologyRealEstateStrategy from "@/blogPages/AITechnologyRealEstateStrategy";
-import LuxuryBathroomBudgetAIDesign from "@/blogPages/LuxuryBathroomBudgetAIDesign";
+// import LuxuryBathroomBudgetAIDesign from "@/blogPages/LuxuryBathroomBudgetAIDesign";
 import AIPoweredImageGenerationInteriorDesign2024 from "@/blogPages/AIPoweredImageGenerationInteriorDesign2024";
-import LeveragingAIOptimizeSpacePlanningSmallApartments from "@/blogPages/LeveragingAIOptimizeSpacePlanningSmallApartments";
-import ScienceColorDesignAIChoosePerfectPalette from "@/blogPages/ScienceColorDesignAIChoosePerfectPalette";
-import RealEstateVirtualStagingMarketReality from "@/blogPages/RealEstateVirtualStagingMarketReality";
+
+
+// import RealEstateVirtualStagingMarketReality from "@/blogPages/RealEstateVirtualStagingMarketReality";
 import ExpertTipsSaveBigHomeInteriors from "@/blogPages/ExpertTipsSaveBigHomeInteriors";
-import GenZInstagramWorthyInteriors from "@/blogPages/GenZInstagramWorthyInteriors";
-import BuildHouseAIToolsPorchDesign from "@/blogPages/BuildHouseAIToolsPorchDesign";
+// import GenZInstagramWorthyInteriors from "@/blogPages/GenZInstagramWorthyInteriors";
+import BuildYourOwnHouseAI from "@/blogPages/BuildYourOwnHouseAI";
 import UltimateGuideAIInteriorDesignTools2025 from "@/blogPages/UltimateGuideAIInteriorDesignTools2025";
+import TenPerfectInteriorDesignStyles from "@/blogPages/TenPerfectInteriorDesignStyles";
+import AIDesignSoftwareSolutions2024 from "@/blogPages/AIDesignSoftwareSolutions2024";
+import StylyAIPoweredImageGeneration from "@/blogPages/StylyAIPoweredImageGeneration";
+import AIGeneratedDesignIdeasMidjourney from "@/blogPages/AIGeneratedDesignIdeasMidjourney";
+import AgeAIPoweredArchitecture from "@/blogPages/AgeAIPoweredArchitecture";
+import GenerativeAIFutureDesignArchitecture from "@/blogPages/GenerativeAIFutureDesignArchitecture";
+import ArtificialIntelligenceRevolutionizingInteriorDesign from "@/blogPages/ArtificialIntelligenceRevolutionizingInteriorDesign";
+import PowerAIStableDiffusionStyly from "@/blogPages/PowerAIStableDiffusionStyly";
+import FutureAIArchitectureEmbracingPossibilities from "@/blogPages/FutureAIArchitectureEmbracingPossibilities";
+import AheadOfTheCurveInteriorDesignTrends2024 from "@/blogPages/AheadOfTheCurveInteriorDesignTrends2024";
+import AIImageGenerationInteriorDesignAdobeFirefly from "@/blogPages/AIImageGenerationInteriorDesignAdobeFirefly";
+import ArchitectLeadersGenerativeAIDriveValue from "@/blogPages/ArchitectLeadersGenerativeAIDriveValue";
+import ComparisonBest2024GenerativeAIInteriorDesignTools from "@/blogPages/ComparisonBest2024GenerativeAIInteriorDesignTools";
+import InterviewItalianArchitectMaximizingTinySpaces from "@/blogPages/InterviewItalianArchitectMaximizingTinySpaces";
+import MuteIconsContextualDesignFutureArchitecture from "@/blogPages/MuteIconsContextualDesignFutureArchitecture";
+import InteriorAIInterviewSophiaRenard from "@/blogPages/InteriorAIInterviewSophiaRenard";
 
 export interface BlogPost {
   id: number;
@@ -64,92 +86,113 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+
   {
-    id: 0,
-    title: "The Science of Color in Design: How AI Helps You Choose the Perfect Palette",
-    titleFr: "La Science de la Couleur en Design : Comment l'IA Vous Aide à Choisir la Palette Parfaite",
-    date: "Jun 28, 2025",
-    image: "/Blogpages/mini_magick20250608-11056-cx50sk (1).jpg",
-    slug: "the-science-of-color-in-design-how-ai-helps-you-choose-the-perfect-palette",
-    slugFr: "science-couleur-design-comment-ia-aide-choisir-palette-parfaite",
-    Component: ScienceColorDesignAIChoosePerfectPalette,
-  },
-  {
-    id: 1,
-    title: "Leveraging AI to Optimize Space Planning in Small Apartments",
-    titleFr: "Exploiter l'IA pour Optimiser la Planification d'Espace dans les Petits Appartements",
-    date: "Jun 27, 2025",
-    image: "/Blogpages/mini_magick20250608-11056-2qt7xn.jpg",
-    slug: "leveraging-ai-to-optimize-space-planning-in-small-apartments",
-    slugFr: "exploiter-ia-optimiser-planification-espace-petits-appartements",
-    Component: LeveragingAIOptimizeSpacePlanningSmallApartments,
+    id: 73,
+    title: "Interior AI and Interior Design: An Interview with Visionary Architect, Sophia Renard",
+    titleFr: "IA Intérieure et Design Intérieur : Une Interview avec l'Architecte Visionnaire, Sophia Renard",
+    date: "Apr 8, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "interior-ai-and-interior-design-interview-with-visionary-architect-sophia-renard",
+    slugFr: "ia-interieure-design-interieur-interview-architecte-visionnaire-sophia-renard",
+    Component: InteriorAIInterviewSophiaRenard,
   },
   {
     id: 2,
     title: "How AI-Powered Image Generation Can Inspire Your Interior Design in 2024",
     titleFr: "Comment la Génération d'Images IA Peut Inspirer Votre Design Intérieur en 2024",
-    date: "Jun 26, 2025",
-    image: "/Blogpages/mini_magick20250608-11435-xqjldd.jpg",
+    date: "Jun 18, 2024",
+    image: "/ai-interior-design-technology.webp",
     slug: "how-ai-powered-image-generation-can-inspire-your-interior-design-in-2024",
     slugFr: "comment-generation-images-ia-peut-inspirer-design-interieur-2024",
     Component: AIPoweredImageGenerationInteriorDesign2024,
   },
   {
-    id: 3,
-    title: "Need Luxury Bathroom on a Budget? Here's How!",
-    titleFr: "Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !",
-    date: "Jun 25, 2025",
-    image: "/Blogpages/mini_magick20250608-11435-kitium.jpg",
-    slug: "need-luxury-bathroom-on-budget-here-is-how",
-    slugFr: "besoin-salle-bain-luxueuse-budget-voici-comment",
-    Component: LuxuryBathroomBudgetAIDesign,
+    id: 63,
+    title: "Generative AI: The Future of Interior Design and Architecture",
+    titleFr: "IA Générative : L'Avenir du Design Intérieur et de l'Architecture",
+    date: "Jun 18, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "generative-ai-the-future-of-interior-design-and-architecture",
+    slugFr: "ia-generative-avenir-design-interieur-architecture",
+    Component: GenerativeAIFutureDesignArchitecture,
   },
+  {
+    id: 64,
+    title: "How Artificial Intelligence is Revolutionizing Interior Design",
+    titleFr: "Comment l'Intelligence Artificielle Révolutionne le Design Intérieur",
+    date: "Jun 18, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "how-artificial-intelligence-is-revolutionizing-interior-design",
+    slugFr: "comment-intelligence-artificielle-revolutionne-design-interieur",
+    Component: ArtificialIntelligenceRevolutionizingInteriorDesign,
+  },
+  {
+    id: 65,
+    title: "The Power of AI: How Stable Diffusion and Styly Reshaping the Creativity",
+    titleFr: "Le Pouvoir de l'IA : Comment Stable Diffusion et Styly Transforment la Créativité",
+    date: "Jun 18, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "the-power-of-ai-how-stable-diffusion-and-styly-reshaping-creativity",
+    slugFr: "pouvoir-ia-stable-diffusion-styly-transforment-creativite",
+    Component: PowerAIStableDiffusionStyly,
+  },
+  // {
+  //   id: 3,
+  //   title: "Need Luxury Bathroom on a Budget? Here's How!",
+  //   titleFr: "Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !",
+  //   date: "Jun 25, 2025",
+  //   image: "/Blogpages/mini_magick20250608-11435-kitium.jpg",
+  //   slug: "need-luxury-bathroom-on-budget-here-is-how",
+  //   slugFr: "besoin-salle-bain-luxueuse-budget-voici-comment",
+  //   Component: LuxuryBathroomBudgetAIDesign,
+  // },
   {
     id: 4,
     title: "How Real Estate Agents Are Boosting Sales with AI-Powered Virtual Staging: The 2025 Market Reality",
     titleFr: "Comment les Agents Immobiliers Augmentent les Ventes avec la Mise en Scène Virtuelle IA : La Réalité du Marché 2025",
     date: "Apr 14, 2025",
-    image: "/7pXKKwoQmwCK8yXNxn8iydkfI.png",
+    image: "/ai-virtual-reality-design-hero.webp",
     slug: "how-real-estate-agents-are-boosting-sales-with-ai-powered-virtual-staging-the-2025-market-reality",
     slugFr: "comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025",
-    Component: RealEstateVirtualStagingMarketReality,
+    Component: RealEstateVirtualStaging,
   },
   {
-    id: 5,
+    id: 53,
     title: "10 Expert Tips to Save Big on Home Interiors in 2025",
     titleFr: "10 Conseils d'Experts pour Économiser sur la Décoration Intérieure en 2025",
-    date: "Jun 24, 2025",
-    image: "/expert-tips-save-big-home-interiors-hero.webp",
+    date: "Dec 22, 2024",
+    image: "/cost-effectiveness-ai-design-savings.webp",
     slug: "10-expert-tips-to-save-big-on-home-interiors-in-2025",
     slugFr: "10-conseils-experts-economiser-decoration-interieure-2025",
     Component: ExpertTipsSaveBigHomeInteriors,
   },
   {
-    id: 6,
+    id: 50,
     title: "Gen Z's Ultimate Guide to Instagram-Worthy Interiors",
     titleFr: "Guide Ultime de la Génération Z pour des Intérieurs Dignes d'Instagram",
     date: "Jan 21, 2025",
-    image: "/qnYlT0wFEUMW2fJMNr5YOVjpoM.png",
+    image: "/modern-family-home-functional-stylish.webp",
     slug: "gen-z-s-ultimate-guide-to-instagram-worthy-interiors",
     slugFr: "guide-ultime-generation-z-interieurs-dignes-instagram",
-    Component: GenZInstagramWorthyInteriors,
+    Component: GenZInteriors,
   },
   {
-    id: 7,
+    id: 51,
     title: "How to Build Your Own House with AI Tools Including Porch Design",
     titleFr: "Comment Construire Votre Propre Maison avec des Outils IA Incluant la Conception de Porche",
     date: "Jan 11, 2025",
     image: "/revolutionizing-architecture-design.jpg",
     slug: "how-to-build-your-own-house-with-ai-tools-including-porch-design",
     slugFr: "comment-construire-votre-maison-outils-ia-conception-porche",
-    Component: BuildHouseAIToolsPorchDesign,
+    Component: BuildYourOwnHouseAI,
   },
   {
-    id: 8,
+    id: 52,
     title: "The Ultimate Guide to AI Interior Design Tools in 2025: A Comprehensive Comparison",
     titleFr: "Le Guide Ultime des Outils de Design Intérieur IA en 2025 : Une Comparaison Complète",
     date: "Dec 30, 2024",
-    image: "/HTHsreSJo6OnIBmT0l515eu02c.png",
+    image: "/ai-interior-design-technology.webp",
     slug: "the-ultimate-guide-to-ai-interior-design-tools-in-2025",
     slugFr: "guide-ultime-outils-design-interieur-ia-2025-comparaison",
     Component: UltimateGuideAIInteriorDesignTools2025,
@@ -169,8 +212,8 @@ export const blogPosts: BlogPost[] = [
     id: 10,
     title: "Unlock the Power of Photoshop's Generative AI for Effortless Interior Design",
     titleFr: "Débloquer la Puissance de l'IA Générative Photoshop pour le Design d'Intérieur Sans Effort",
-    date: "Jun 23, 2025",
-    image: "/mini_magick20250608-11435-xbitbj.jpg",
+    date: "Jun 27, 2024",
+    image: "/ai-interior-design-technology.webp",
     slug: "unlock-the-power-of-photoshop-generative-ai-for-effortless-interior-design",
     slugFr: "debloquer-puissance-photoshop-ia-generative-design-interieur",
     Component: PhotoshopGenerativeAIInteriorDesign,
@@ -179,11 +222,41 @@ export const blogPosts: BlogPost[] = [
     id: 11,
     title: "AI Technology to Elevate Your Real Estate Strategy",
     titleFr: "Technologie IA pour Élever Votre Stratégie Immobilière",
-    date: "Jun 22, 2025",
-    image: "/mini_magick20250608-11435-vuggjo.jpg",
-    slug: "ai-technology-to-elevate-your-real-estate-strategy",
+    date: "Jun 25, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "ai-technology-to-elevate-your-real-estate-marketing-strategy",
     slugFr: "technologie-ia-pour-elever-strategie-immobiliere",
     Component: AITechnologyRealEstateStrategy,
+  },
+  {
+    id: 66,
+    title: "The Future of AI in Architecture: Embracing the Possibilities",
+    titleFr: "L'Avenir de l'IA en Architecture : Embrasser les Possibilités",
+    date: "Jun 17, 2024",
+    image: "/revolutionizing-architecture-hero.png",
+    slug: "the-future-of-ai-in-architecture-embracing-the-possibilities",
+    slugFr: "avenir-ia-architecture-embrasser-possibilites",
+    Component: FutureAIArchitectureEmbracingPossibilities,
+  },
+  {
+    id: 67,
+    title: "Ahead of the Curve: The Top Interior Design Trends for 2024",
+    titleFr: "En Avance sur la Courbe : Les Principales Tendances de Design Intérieur pour 2024",
+    date: "Jun 13, 2024",
+    image: "/interior-design-styles-collection.webp",
+    slug: "ahead-of-the-curve-the-top-interior-design-trends-for-2024",
+    slugFr: "en-avance-courbe-principales-tendances-design-interieur-2024",
+    Component: AheadOfTheCurveInteriorDesignTrends2024,
+  },
+  {
+    id: 68,
+    title: "Mute Icons, Contextual Design, and the Future of Architecture",
+    titleFr: "Icônes Muettes, Design Contextuel et l'Avenir de l'Architecture",
+    date: "Jun 12, 2024",
+    image: "/revolutionizing-architecture-hero.png",
+    slug: "mute-icons-contextual-design-and-the-future-of-architecture",
+    slugFr: "icones-muettes-design-contextuel-avenir-architecture",
+    Component: MuteIconsContextualDesignFutureArchitecture,
   },
   {
     id: 8,
@@ -292,8 +365,8 @@ export const blogPosts: BlogPost[] = [
     title: "Leveraging AI to Optimize Space Planning in Small Apartments",
     date: "Oct 6, 2024",
     image: "/small-apartment-space-planning-modern.webp",
-    slug: "ai-space-planning-optimization-small-apartments",
-    slugFr: "ia-optimisation-planification-espace-petits-appartements",
+    slug: "leveraging-ai-to-optimize-space-planning-in-small-apartments",
+    slugFr: "exploiter-ia-optimiser-planification-espace-petits-appartements",
     Component: AISpacePlanningSmallApartments,
   },
   {
@@ -317,7 +390,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 22,
     title: "Reducing Carbon Footprints: Sustainable Landscapes with Styly AI",
-    date: "Oct 12, 2024",
+    date: "Oct 25, 2024",
     image: "/sustainable-landscape-garden-eco-design.webp",
     slug: "reducing-carbon-footprints-sustainable-landscapes-ai",
     slugFr: "reduire-empreinte-carbone-paysages-durables-ia",
@@ -353,7 +426,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 26,
     title: "6 Viral AI Room Design Prompts: Create Your Dream Bedroom with STYLY.io",
-    date: "Dec 15, 2024",
+    date: "Nov 25, 2024",
     image: "/mini_magick20250608-11056-k6lwqq.jpg",
     slug: "6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
     slugFr: "6-prompts-viraux-design-chambre-ia-styly",
@@ -380,7 +453,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 29,
     title: "Revolutionizing Architecture, Engineering, and Construction with AI",
-    date: "Apr 25, 2025",
+    date: "Oct 3, 2024",
     image: "/revolutionizing-architecture-hero.png",
     slug: "revolutionizing-architecture-engineering-construction-ai",
     slugFr: "revolutionner-architecture-ingenierie-construction-ia",
@@ -392,8 +465,7 @@ export const blogPosts: BlogPost[] = [
     id: 30,
     title: "Eight Stunning AI-Generated Bedroom Designs: Transform Your Space with Styly.io",
     date: "Dec 24, 2024",
-    image:
-      "https://framerusercontent.com/images/O8b24XUqi0Mxi3hUVHn9WWEWI.png",
+    image: "/ai-interior-design-technology.webp",
     slug: "AI-Bedroom",
     slugFr: "huit-designs-chambres-ia-epoustouflants",
     Component: AIBedroom,
@@ -412,7 +484,7 @@ export const blogPosts: BlogPost[] = [
     id: 32,
     title: "How AI is Shaping the Future of Commercial Interior Design",
     date: "Sep 5, 2024",
-    image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&w=800&q=80",
+    image: "/ai-interior-design-technology.webp",
     slug: "ai-future-commercial-interior-design",
     slugFr: "ia-avenir-design-interieur-commercial",
     Component: CommercialInteriorDesignAI,
@@ -508,6 +580,16 @@ export const blogPosts: BlogPost[] = [
     Component: GenerativeAIRevolutionizingDesign,
   },
   {
+    id: 70,
+    title: "How can architect leaders use Generative AI to drive value?",
+    titleFr: "Comment les dirigeants architectes peuvent-ils utiliser l'IA générative pour créer de la valeur ?",
+    date: "May 26, 2024",
+    image: "/revolutionizing-architecture-hero.png",
+    slug: "how-can-architect-leaders-use-generative-ai-to-drive-value",
+    slugFr: "comment-dirigeants-architectes-peuvent-utiliser-ia-generative-creer-valeur",
+    Component: ArchitectLeadersGenerativeAIDriveValue,
+  },
+  {
     id: 43,
     title: "AI Assistant in Interior Design - Best Prompts for ChatGPT, Gemini, Mistral",
     date: "May 12, 2024",
@@ -517,63 +599,149 @@ export const blogPosts: BlogPost[] = [
     Component: AIAssistantInteriorDesignPrompts,
   },
   {
-    id: 44,
-    title: "The Intersection of AI and Virtual Reality in Design",
-    titleFr: "L'Intersection de l'IA et de la Réalité Virtuelle dans le Design",
-    date: "May 10, 2024",
-    image: "https://images.pexels.com/photos/4144656/pexels-photo-4144656.jpeg?auto=compress&w=800&q=80",
-    slug: "intersection-ai-virtual-reality-design",
-    slugFr: "intersection-ia-realite-virtuelle-design",
-    Component: AIVirtualRealityDesign,
+    id: 71,
+    title: "Comparison of Best 2024 Generative AI for Interior Design Tools-GEN AI",
+    titleFr: "Comparaison des Meilleurs Outils d'IA Générative 2024 pour le Design Intérieur-GEN AI",
+    date: "May 9, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "comparison-of-best-2024-generative-ia-interior-design-tools",
+    slugFr: "comparaison-meilleurs-outils-ia-generative-2024-design-interieur",
+    Component: ComparisonBest2024GenerativeAIInteriorDesignTools,
+  },
+
+
+
+
+
+
+  {
+    id: 72,
+    title: "AI Image Generation : Interior Design by Adobe Firefly",
+    titleFr: "Génération d'Images IA : Design Intérieur par Adobe Firefly",
+    date: "Apr 22, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "ai-image-generation-interior-design-by-adobe-firefly",
+    slugFr: "generation-images-ia-design-interieur-adobe-firefly",
+    Component: AIImageGenerationInteriorDesignAdobeFirefly,
   },
   {
-    id: 45,
-    title: "Sustainable Design with AI: Creating Eco-Friendly Spaces",
-    titleFr: "Design Durable avec l'IA : Créer des Espaces Éco-Responsables",
-    date: "May 8, 2024",
-    image: "https://images.pexels.com/photos/4572639/pexels-photo-4572639.jpeg?auto=compress&w=800&q=80",
-    slug: "sustainable-design-ai-eco-friendly-spaces",
-    slugFr: "design-durabilite-ia-espaces-eco-responsables",
-    Component: SustainableDesignAI,
+    id: 1001,
+    title: "Unlocking Creativity: Harnessing AI for Interior Design Innovation",
+    titleFr: "Débloquer la créativité : exploiter l'IA pour l'innovation en design d'intérieur",
+    date: "Apr 6, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "unlocking-creativity-harnessing-ai-for-interior-design-innovation",
+    slugFr: "debloquer-creativite-ia-innovation-design-interieur",
+         Component: UnlockingPowerAIInteriorDesign,
   },
   {
-    id: 46,
-    title: "The Role of Data in AI-Powered Design",
-    titleFr: "Le Rôle des Données dans le Design Alimenté par l'IA",
-    date: "May 5, 2024",
-    image: "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&w=800&q=80",
-    slug: "role-data-ai-powered-design",
-    slugFr: "role-donnees-design-alimente-ia",
-    Component: DataAIPoweredDesign,
+    id: 54,
+    title: "How Styly's AI is Transforming Real Estate Visualization?",
+    titleFr: "Comment l'IA de Styly Transforme la Visualisation Immobilière ?",
+    date: "Jul 17, 2024",
+    image: "/ai-virtual-reality-design-hero.webp",
+    slug: "how-styly-s-ai-is-transforming-real-estate-visualization",
+    slugFr: "comment-ia-styly-transforme-visualisation-immobiliere",
+    Component: RealEstateVisualizationAI,
   },
   {
-    id: 47,
-    title: "Modern Family Design: AI for Functional Homes",
-    titleFr: "Design de Famille Moderne : IA pour des Maisons Fonctionnelles",
-    date: "May 3, 2024",
-    image: "https://images.pexels.com/photos/7491423/pexels-photo-7491423.jpeg?auto=compress&w=800&q=80",
-    slug: "modern-family-design-ai-functional-homes",
-    slugFr: "design-famille-moderne-ia-maisons-fonctionnelles",
-    Component: ModernFamilyDesign,
+    id: 55,
+    title: "AI & Interior Design: Revolution or Replacement? Discover the Future of Home Improvement",
+    titleFr: "IA & Design d'Intérieur : Révolution ou Remplacement ? Découvrez l'Avenir de l'Amélioration de l'Habitat",
+    date: "Jul 14, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "ai-interior-design-revolution-or-replacement-discover-the-future-of-home-improvement",
+    slugFr: "ia-design-interieur-revolution-ou-remplacement",
+    Component: RevolutionReplacementAI,
   },
   {
-    id: 48,
-    title: "6 Viral AI Room Design Prompts to Create Your Dream Bedroom with Styly",
-    titleFr: "6 Prompts Viraux de Design de Chambre IA pour Créer Votre Chambre de Rêve avec Styly",
-    date: "May 1, 2024",
-    image: "https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&w=800&q=80",
-    slug: "6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
-    slugFr: "6-prompts-viraux-design-chambre-ia-styly",
-    Component: ViralAIRoomDesignPrompts,
+    id: 3,
+    title: "Need a Luxury Bathroom on a Budget? Here's How!",
+    titleFr: "Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !",
+    date: "Jul 13, 2024",
+    image: "/modern-family-home-functional-stylish.webp",
+    slug: "luxury-bathroom-on-a-budget-ai-design-tips",
+    slugFr: "salle-bain-luxe-budget-conseils-ia",
+    Component: LuxuryBathroomBudgetAI,
   },
   {
-    id: 49,
-    title: "AI for Accessible Design: Creating Inclusive Spaces",
-    titleFr: "IA pour le Design Accessible : Créer des Espaces Inclusifs",
-    date: "Apr 28, 2024",
-    image: "/ai-accessible-design-inclusive.webp",
-    slug: "ai-accessible-design-inclusive-spaces",
-    slugFr: "ia-design-accessible-espaces-inclusifs",
-    Component: AIAccessibleDesign,
+    id: 56,
+    title: "Discover Top Home Interior Ideas Using AI",
+    titleFr: "Découvrez les Meilleures Idées de Décoration Intérieure avec l'IA",
+    date: "Jul 7, 2024",
+    image: "/ai-home-decor-ideas-customization.webp",
+    slug: "top-home-interior-ideas-using-ai",
+    slugFr: "meilleures-idees-decoration-interieure-ia",
+    Component: TopHomeInteriorIdeasAI,
+  },
+  {
+    id: 57,
+    title: "Transform Your Space: How AI Can Revolutionize Room Decorating",
+    titleFr: "Transformez Votre Espace : Comment l'IA Révolutionne la Décoration de Pièce",
+    date: "Jul 3, 2024",
+    image: "/ai-room-decorator.webp",
+    slug: "transform-your-space-how-ai-can-revolutionize-room-decorating",
+    slugFr: "transformez-votre-espace-comment-ia-revolutionne-decoration-piece",
+    Component: TransformSpaceAIRoomDecorating,
+  },
+  {
+    id: 58,
+    title: "10 Perfect Interior Design Style: Timeless Elegance and Modern Flair",
+    titleFr: "10 Styles de Design Intérieur Parfaits : Élégance Intemporelle et Flair Moderne",
+    date: "Jun 24, 2024",
+    image: "/interior-design-styles-collection.webp",
+    slug: "10-perfect-interior-design-style-timeless-elegance-and-modern-flair",
+    slugFr: "10-styles-design-interieur-parfaits-elegance-intemporelle-flair-moderne",
+    Component: TenPerfectInteriorDesignStyles,
+  },
+  {
+    id: 59,
+    title: "5 AI-powered Interior Design Software Solutions in 2024",
+    titleFr: "5 Solutions Logicielles de Design d'Intérieur IA en 2024",
+    date: "Jun 23, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "5-ai-powered-interior-design-software-solutions-in-2024",
+    slugFr: "5-solutions-logicielles-design-interieur-ia-2024",
+    Component: AIDesignSoftwareSolutions2024,
+  },
+  {
+    id: 60,
+    title: "STYLY AI-Powered Image Generation: Text-to-Image Embedding",
+    titleFr: "Génération d'Images IA STYLY : Intégration Texte-Image",
+    date: "Jun 22, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "styly-ai-powered-image-generation-text-to-image-embedding",
+    slugFr: "generation-images-ia-styly-integration-texte-image",
+    Component: StylyAIPoweredImageGeneration,
+  },
+  {
+    id: 61,
+    title: "AI-Generated Design Ideas: Midjourney as a Powerful Tool for Interior Designers",
+    titleFr: "Idées de Design Générées par l'IA : Midjourney comme Outil Puissant pour les Designers d'Intérieur",
+    date: "Jun 21, 2024",
+    image: "/ai-interior-design-technology.webp",
+    slug: "ai-generated-design-ideas-midjourney-as-a-powerful-tool-for-interior-designers",
+    slugFr: "idees-design-generees-ia-midjourney-outil-puissant-designers-interieur",
+    Component: AIGeneratedDesignIdeasMidjourney,
+  },
+  {
+    id: 62,
+    title: "The Age of AI-Powered Architecture: Exploring the Possibilities and Challenges",
+    titleFr: "L'Ère de l'Architecture Alimentée par l'IA : Explorer les Possibilités et les Défis",
+    date: "Jun 19, 2024",
+    image: "/revolutionizing-architecture-hero.png",
+    slug: "the-age-of-ai-powered-architecture-exploring-the-possibilities-and-challenges-ahead",
+    slugFr: "ere-architecture-alimentee-ia-explorer-possibilites-defis",
+    Component: AgeAIPoweredArchitecture,
+  },
+  {
+    id: 69,
+    title: "Interview with Italian Architect: Maximizing Tiny Spaces",
+    titleFr: "Entretien avec un Architecte Italien : Maximiser les Petits Espaces",
+    date: "Jun 4, 2024",
+    image: "/small-apartment-space-planning-modern.webp",
+    slug: "intervew-with-italien-architect-maximizing-tiny-spaces",
+    slugFr: "entretien-avec-architecte-italien-maximiser-petits-espaces",
+    Component: InterviewItalianArchitectMaximizingTinySpaces,
   },
 ];

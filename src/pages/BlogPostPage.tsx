@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/layout/SEO";
@@ -9,33 +9,21 @@ import { LanguageContext, Language } from "@/lib/i18n";
 const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const location = useLocation();
+  const { language } = useContext(LanguageContext);
 
-  // Determine language from route
+  // Determine language from route for finding the correct post
   const isEnglishRoute = location.pathname.startsWith("/en/blog");
-  const language = isEnglishRoute ? "en" : "fr";
 
+  // Remove URL-based language routing - use global language state instead
   useEffect(() => {
-    // Detect language from URL path, but do not redirect for English
-    let pathLang: Language;
-    if (location.pathname.startsWith("/fr/blog") || location.pathname.startsWith("/fr")) {
-      pathLang = "fr";
-    } else if (location.pathname.startsWith("/en/blog") || location.pathname.startsWith("/en")) {
-      pathLang = "en";
-    } else {
-      // For legacy /blog routes, detect language from slug
-      const foundPost = blogPosts.find((post) => post.slug === slug || post.slugFr === slug);
-      if (foundPost && foundPost.slugFr === slug) {
-        pathLang = "fr";
-      } else {
-        pathLang = "en";
-      }
-    }
-  }, [location.pathname, slug]);
+    // No need to set language based on URL - it's handled by the LanguageProvider
+    // The language state is managed globally and will update the content automatically
+  }, []);
 
-  // Scroll to top when component mounts or slug changes
+  // Scroll to top when component mounts, slug changes, or language changes
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+  }, [slug, language]);
 
   // Find the blog post by slug for the correct language
   const post = blogPosts.find((post) =>

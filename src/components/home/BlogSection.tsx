@@ -24,9 +24,7 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
     if (post.slug === "gen-z-instagram-worthy-interiors") {
       return t.genZInstagramWorthyInteriorsTitle;
     }
-    if (post.slug === "build-house-ai-tools-porch-design") {
-      return t.buildHouseAIToolsPorchDesignTitle;
-    }
+
     if (post.slug === "ultimate-guide-AI") {
       return t.ultimateGuideAIInteriorDesignTitle;
     }

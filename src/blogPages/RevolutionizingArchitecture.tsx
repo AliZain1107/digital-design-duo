@@ -34,6 +34,7 @@ const RevolutionizingArchitecture: React.FC = () => {
         <meta property="og:description" content={currentMeta.description} />
         <meta property="og:image" content="/revolutionizing-architecture-hero.png" />
         <meta property="og:type" content="article" />
+        <meta property="article:published_time" content="2024-10-03" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={currentMeta.title} />
         <meta name="twitter:description" content={currentMeta.description} />

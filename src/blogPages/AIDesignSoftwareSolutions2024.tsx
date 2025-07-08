@@ -181,9 +181,9 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="mt-12 bg-gray-50 p-8 rounded-lg">
+                <div className="mt-12 bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-lg">
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    Conclusion
+                    Embark the Future
                   </h2>
                   <p className="text-gray-700 mb-4">
                     Each tool caters to different needs, from beginners to professionals. Choose based on your design needs and budget. As the world of interior design continues to evolve, the integration of generative AI is poised to become a game-changer for visionary designers.
@@ -191,13 +191,28 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                   <p className="text-gray-700 mb-6">
                     By embracing the power of platforms like Styly.io, architect leaders can streamline their creative workflows, deliver unparalleled personalization for clients, and push the boundaries of what's possible in the built environment. The future of interior design is here, and it's powered by the limitless potential of generative AI.
                   </p>
+                </div>
                   
-                  <div className="text-center">
+                <div className="mt-8 bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-lg text-white">
+                  <h2 className="text-2xl font-bold mb-4">
+                    Ready to Transform Your Space with AI?
+                  </h2>
+                  <p className="text-blue-100 mb-6">
+                    Join thousands of designers and homeowners who are already using Styly.io to create stunning, personalized spaces. Experience the power of AI-driven design today.
+                  </p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                       to="/"
-                      className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                      className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center"
                     >
-                      Try STYLY.io Today
+                      Start Designing for Free
+                    </Link>
+                    <Link
+                      to="/blog"
+                      className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
+                    >
+                      Explore More Articles
                     </Link>
                   </div>
                 </div>
@@ -346,20 +361,38 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="mt-12 bg-gray-50 p-8 rounded-lg">
+                <div className="mt-12 bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-lg">
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    Conclusion
+                    Embarquez vers l'Avenir
                   </h2>
                   <p className="text-gray-700 mb-4">
                     Chaque outil répond à différents besoins, des débutants aux professionnels. Choisissez en fonction de vos besoins de design et de votre budget. L'avenir du design d'intérieur est ici, et il est alimenté par le potentiel illimité de l'IA générative.
                   </p>
+                  <p className="text-gray-700 mb-6">
+                    En embrassant la puissance de plateformes comme Styly.io, les leaders architectes peuvent rationaliser leurs flux de travail créatifs, offrir une personnalisation inégalée pour les clients, et repousser les limites de ce qui est possible dans l'environnement bâti.
+                  </p>
+                </div>
                   
-                  <div className="text-center">
+                <div className="mt-8 bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-lg text-white">
+                  <h2 className="text-2xl font-bold mb-4">
+                    Prêt à Transformer Votre Espace avec l'IA ?
+                  </h2>
+                  <p className="text-blue-100 mb-6">
+                    Rejoignez des milliers de designers et propriétaires qui utilisent déjà Styly.io pour créer des espaces époustouflants et personnalisés. Découvrez la puissance du design piloté par l'IA dès aujourd'hui.
+                  </p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                       to="/"
-                      className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                      className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center"
                     >
-                      Essayer STYLY.io Aujourd'hui
+                      Commencer Gratuitement
+                    </Link>
+                    <Link
+                      to="/fr/blog"
+                      className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
+                    >
+                      Explorer Plus d'Articles
                     </Link>
                   </div>
                 </div>

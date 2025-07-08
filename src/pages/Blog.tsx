@@ -9,24 +9,16 @@ const Blog = () => {
   const { language, setLanguage } = useContext(LanguageContext);
   const location = useLocation();
 
+  // Remove URL-based language routing - use global language state instead
   useEffect(() => {
-    // Detect language from URL path, but do not redirect for English
-    let pathLang: Language;
-    if (location.pathname.startsWith("/fr/blog") || location.pathname.startsWith("/fr")) {
-      pathLang = "fr";
-    } else if (location.pathname.startsWith("/en/blog") || location.pathname.startsWith("/en")) {
-      pathLang = "en";
-    } else {
-      // Default to French for legacy /blog routes
-      pathLang = "fr";
-    }
-    setLanguage(pathLang);
-  }, [location.pathname, setLanguage]);
+    // No need to set language based on URL - it's handled by the LanguageProvider
+    // The language state is managed globally and will update the content automatically
+  }, []);
 
-  // Scroll to top when component mounts
+  // Scroll to top when component mounts or language changes
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [language]);
 
   // SEO metadata based on language
   const seoMeta = {

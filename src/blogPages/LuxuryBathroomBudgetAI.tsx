@@ -158,11 +158,11 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
   return (
     <article className="max-w-4xl mx-auto px-4 py-8">
       <Helmet>
-        <title>Need Luxury Bathroom on a Budget? Here's How! | Styly.io</title>
+        <title>Need a Luxury Bathroom on a Budget? Here's How! | Styly.io</title>
         <meta name="description" content="Create a luxury bathroom without breaking the bank using AI. Discover expert tips and Styly's tools to transform your bathroom on a budget." />
         <meta name="keywords" content="luxury bathroom budget, affordable bathroom renovation, AI bathroom design, Styly.io, budget bathroom makeover, cheap bathroom ideas" />
         <link rel="canonical" href="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips" />
-        <meta property="og:title" content="Need Luxury Bathroom on a Budget? Here's How!" />
+        <meta property="og:title" content="Need a Luxury Bathroom on a Budget? Here's How!" />
         <meta property="og:description" content="Transform your bathroom into a luxury space without breaking the bank using AI and expert tips." />
         <meta property="og:image" content="/luxury-bathroom-budget-ai-hero.webp" />
         <meta property="og:url" content="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips" />
@@ -170,7 +170,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
 
       <header className="mb-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Need Luxury Bathroom on a Budget? Here's How!
+          Need a Luxury Bathroom on a Budget? Here's How!
         </h1>
         <div className="flex items-center text-gray-600 mb-6">
           <time dateTime="2024-07-13">July 13, 2024</time>

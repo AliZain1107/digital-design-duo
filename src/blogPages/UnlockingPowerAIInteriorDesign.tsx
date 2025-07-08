@@ -54,9 +54,10 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {language === "fr" ? (
           <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold text-gray-800 mb-6">
+            <h1 className="text-3xl font-bold text-gray-800 mb-2">
               Débloquer la Puissance de l'IA pour le Design Intérieur : Guide des Dernières Innovations
             </h1>
+            <p className="text-gray-600 text-sm mb-6">Jun 21, 2025</p>
             {/* TL;DR Section for SEO optimization */}
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-8">
               <h2 className="text-lg font-semibold text-yellow-800 mb-2">
@@ -67,18 +68,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               </p>
             </div>
 
-            {/* Table of Contents */}
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">📚 Table des Matières</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li>• <a href="#marche-ia-design" className="text-blue-600 hover:underline">Le Marché de l'IA en Design</a></li>
-                <li>• <a href="#outils-ia-populaires" className="text-blue-600 hover:underline">Outils IA Populaires</a></li>
-                <li>• <a href="#revolution-processus" className="text-blue-600 hover:underline">Révolution du Processus</a></li>
-                <li>• <a href="#exemples-concrets" className="text-blue-600 hover:underline">Exemples Concrets</a></li>
-                <li>• <a href="#avenir-ia-design" className="text-blue-600 hover:underline">L'Avenir de l'IA</a></li>
-                <li>• <a href="#faq-fr" className="text-blue-600 hover:underline">Questions Fréquentes</a></li>
-              </ul>
-            </div>
+
 
             <p className="text-lg text-gray-700 mb-6">
               De nouveaux outils numériques comme ChatGPT, DALL-E et Midjourney transforment la façon de concevoir et décorer les espaces. Découvrez comment ces solutions facilitent la création et multiplient les possibilités pour votre intérieur.
@@ -205,24 +195,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               </ul>
             </div>
 
-            <h2 id="faq-fr" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              ❓ Questions Fréquentes sur le Design Intérieur Numérique
-            </h2>
 
-            <div className="space-y-4 mb-8">
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Les outils numériques peuvent-ils remplacer un architecte d'intérieur ?</h4>
-                <p className="text-gray-700">Non, ces solutions sont des outils d'assistance. Elles augmentent la créativité humaine mais ne remplacent pas l'expertise, l'empathie et la vision artistique d'un professionnel.</p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Is <span className="font-davetica-wide">STYLY</span> really free?</h4>
-                <p className="text-gray-700">Yes! <span className="font-davetica-wide">STYLY</span> offers a complete free version with image generation, 3D renderings, and layout suggestions. Premium options are available for professionals.</p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Quelle est la précision des rendus ?</h4>
-                <p className="text-gray-700">Modern tools like <span className="font-davetica-wide">STYLY</span> achieve 95% visual accuracy. Renderings are realistic enough to make reliable layout decisions.</p>
-              </div>
-            </div>
 
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
               <h3 className="text-lg font-semibold text-orange-800 mb-2">
@@ -244,9 +217,10 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
           </article>
         ) : (
           <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold text-gray-800 mb-6">
+            <h1 className="text-3xl font-bold text-gray-800 mb-2">
               Unlocking the Power of AI for Interior Design: Your Guide to the Latest Innovations
             </h1>
+            <p className="text-gray-600 text-sm mb-6">Jun 21, 2025</p>
             {/* TL;DR Section for SEO optimization */}
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-8">
               <h2 className="text-lg font-semibold text-yellow-800 mb-2">
@@ -257,18 +231,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               </p>
             </div>
 
-            {/* Table of Contents */}
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">📚 Table of Contents</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li>• <a href="#ai-design-market" className="text-blue-600 hover:underline">The AI Design Market</a></li>
-                <li>• <a href="#popular-ai-tools" className="text-blue-600 hover:underline">Popular AI Tools</a></li>
-                <li>• <a href="#process-revolution" className="text-blue-600 hover:underline">Process Revolution</a></li>
-                <li>• <a href="#real-examples" className="text-blue-600 hover:underline">Real Examples</a></li>
-                <li>• <a href="#future-ai-design" className="text-blue-600 hover:underline">The Future of AI</a></li>
-                <li>• <a href="#faq-en" className="text-blue-600 hover:underline">Frequently Asked Questions</a></li>
-              </ul>
-            </div>
+
 
             <p className="text-lg text-gray-700 mb-6">
               New digital tools like ChatGPT, DALL-E, and Midjourney are changing how we design and decorate spaces. Discover how these solutions make creation easier and open up new possibilities for your home.
@@ -395,24 +358,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               </ul>
             </div>
 
-            <h2 id="faq-en" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-              ❓ Frequently Asked Questions about Digital Interior Design
-            </h2>
 
-            <div className="space-y-4 mb-8">
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Can digital tools replace an interior designer?</h4>
-                <p className="text-gray-700">No, these solutions are assistance tools. They enhance human creativity but don't replace the expertise, empathy, and artistic vision of a professional.</p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Is <span className="font-davetica-wide">STYLY</span> really free?</h4>
-                <p className="text-gray-700">Yes! <span className="font-davetica-wide">STYLY</span> offers a complete free version with image generation, 3D renderings, and layout suggestions. Premium options are available for professionals.</p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">How accurate are the renderings?</h4>
-                <p className="text-gray-700">Modern tools like <span className="font-davetica-wide">STYLY</span> achieve 95% visual accuracy. Renderings are realistic enough to make reliable layout decisions.</p>
-              </div>
-            </div>
 
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
               <h3 className="text-lg font-semibold text-orange-800 mb-2">
