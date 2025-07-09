@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import ReactPlayer from 'react-player/youtube';
 import { useLanguage } from '@/lib/i18n';
+import StagingModal from '@/components/staging-modal';
 
 const typewriterWordsEN = [
   "Room Makeover in Seconds",
@@ -59,6 +60,7 @@ const Hero: React.FC = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(60);
   const [showControls, setShowControls] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
@@ -195,8 +197,8 @@ const Hero: React.FC = () => {
           </div>
           {/* CTA Buttons - Premium design with animation */}
           <div className="flex flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 mt-10 animate-fade-in" style={{ marginTop: '48px' }}>
-            <a
-              href="https://app.styly.io/signin"
+            <button
+              onClick={() => setIsModalOpen(true)}
               className="bg-gradient-to-r from-purple-600 to-purple-700 text-white font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg border border-transparent transition-all duration-200 hover:scale-105 hover:-translate-y-1 animate-cta-pulse group min-h-[44px] min-w-[44px]"
               aria-label={language === "fr" ? "Essayer Styly AI maintenant" : "Start Free Trial"}
             >
@@ -204,7 +206,7 @@ const Hero: React.FC = () => {
                 ? "Essayer Maintenant"
                 : <span className="transition-all duration-300 group-hover:drop-shadow-[0_0_12px_white]">Start Free Trial</span>
               }
-            </a>
+            </button>
               <a
                 href="/contact"
               className="border-2 border-purple-700 bg-white text-purple-700 font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 hover:-translate-y-1 font-baloo relative z-10 min-h-[44px] min-w-[44px] flex items-center justify-center"
@@ -219,6 +221,8 @@ const Hero: React.FC = () => {
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none z-20"></div>
       </section>
 
+      {/* Staging Modal */}
+      <StagingModal isOpen={isModalOpen} onOpenChange={setIsModalOpen} />
 
     </>
   );
