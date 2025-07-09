@@ -17,9 +17,9 @@ const FAQ: React.FC = () => {
 
   return (
     <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center px-10 pb-0 pt-16 sm:pt-20 max-md:max-w-full max-md:px-5">
-      <div className="flex w-[1629px] max-w-full flex-col overflow-hidden items-center justify-center">
-        <div className="flex w-full flex-col overflow-hidden items-center text-base font-normal leading-[1.2] px-20 max-md:px-5">
-          <div className="flex w-[446px] max-w-full flex-col items-center">
+      <div className="flex w-full max-w-7xl flex-col overflow-hidden items-center justify-center">
+        <div className="flex w-full flex-col overflow-hidden items-center text-base font-normal leading-[1.2] px-4 sm:px-8 md:px-20">
+          <div className="flex w-full max-w-md flex-col items-center">
             <h2 className="text-4xl font-semibold mb-4 font-baloo text-gray-900 text-center">
               <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
                 {t.faqs}

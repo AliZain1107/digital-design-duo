@@ -177,7 +177,7 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   return (
     <Link
       to={getBlogUrl()}
-      className="bg-white shadow-sm rounded-[16px] w-full max-w-[380px] overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-300"
+      className="bg-white shadow-sm rounded-[16px] w-full overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-300"
     >
       {/* Smaller, responsive image container */}
       <div className="h-[160px] sm:h-[180px] w-full bg-white flex items-center justify-center p-3">

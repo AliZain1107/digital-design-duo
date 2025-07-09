@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useLanguage } from "@/lib/i18n";
+import { Z_INDEX } from "@/lib/constants";
 
 const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -21,6 +22,26 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     console.log("Language changed to:", language);
   }, [language]);
+
+  // Body scroll lock when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    }
+
+    // Cleanup function
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    };
+  }, [mobileMenuOpen]);
 
   const languages = [
     { code: "en", name: "English" },
@@ -45,7 +66,8 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white/98 backdrop-blur-md sticky top-0 w-full z-50 border-b border-gray-200/30">
+    <>
+    <header className={`bg-white/98 backdrop-blur-md sticky top-0 w-full border-b border-gray-200/30`} style={{ zIndex: Z_INDEX.navbar }}>
       <div className="max-w-6xl mx-auto flex h-14 sm:h-16 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo - Mobile optimized */}
         <div className="flex items-center">
@@ -71,13 +93,13 @@ const Navbar: React.FC = () => {
         </button>
 
         {/* Desktop Navigation - Premium spacing */}
-        <nav className="hidden md:flex items-center gap-8 flex-shrink-0">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8 flex-shrink-0 h-full">
         {/* Pricing Button */}
         <a
           href="https://app.styly.io/pricing"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-600 hover:text-gray-900 font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight"
+          className="flex items-center h-full text-gray-600 hover:text-gray-900 font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight"
           aria-label="Go to Pricing"
         >
           {t.pricing}
@@ -86,7 +108,7 @@ const Navbar: React.FC = () => {
         {/* Styly Pro Button */}
         <Link
           to="/collaborateurs"
-          className={`font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/collaborateurs") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
+          className={`flex items-center h-full font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/collaborateurs") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
           aria-label="Go to Styly Pro"
         >
           {language === "fr" ? "Styly Pro" : "Styly Pro"}
@@ -95,14 +117,14 @@ const Navbar: React.FC = () => {
         {/* Services API Button */}
         <Link
           to="/services-api"
-          className={`font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/services-api") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
+          className={`flex items-center h-full font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/services-api") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
           aria-label="Go to API"
         >
           {t.servicesAPI}
         </Link>
 
           {/* Sign In Button - Enhanced for mobile */}
-          <div className="ml-4 lg:ml-6">
+          <div className="ml-6 lg:ml-8">
             <a
               href="https://app.styly.io/signin"
               target="_blank"
@@ -146,12 +168,14 @@ const Navbar: React.FC = () => {
           </div>
         </nav>
       </div>
+    </header>
 
-      {/* Mobile Menu - Improved Design */}
-      <div
-        className={`fixed inset-0 bg-white z-50 flex flex-col transition-transform duration-300 ease-in-out ${
+    {/* Mobile Menu - Improved Design */}
+    <div
+        className={`fixed inset-0 bg-white/95 backdrop-blur-sm flex flex-col transition-transform duration-300 ease-in-out ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
+        style={{ zIndex: Z_INDEX.mobileMenu }}
       >
         {/* Mobile Header */}
         <div className="flex justify-between items-center h-14 px-4 border-b border-gray-100 bg-white">
@@ -240,7 +264,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 

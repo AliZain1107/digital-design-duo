@@ -311,7 +311,7 @@ const Testimonials: React.FC = () => {
 
           <div className="bg-white p-6 md:p-8 lg:p-12 rounded-3xl flex flex-col items-center">
             {/* Deck of cards effect with smooth animation and more visible background cards */}
-            <div className="relative flex items-center justify-center w-full max-w-xl h-[420px] mb-8 overflow-visible">
+            <div className="relative flex items-center justify-center w-full max-w-xl h-[300px] sm:h-[360px] md:h-[420px] mb-8 overflow-visible">
               {[-2, -1, 0, 1, 2].map((offset) => {
                 const idx = currentPage + offset;
                 if (idx < 0 || idx >= testimonials.length) return null;
@@ -320,7 +320,7 @@ const Testimonials: React.FC = () => {
                   return (
                     <div
                       key={idx}
-                      className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[420px] bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center z-20 transition-all duration-500 ${animating ? (direction === 1 ? 'animate-slide-left' : 'animate-slide-right') : ''}`}
+                      className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[320px] md:w-[340px] h-[300px] sm:h-[360px] md:h-[420px] bg-white rounded-2xl shadow-lg p-6 sm:p-7 md:p-8 flex flex-col items-center text-center z-20 transition-all duration-500 ${animating ? (direction === 1 ? 'animate-slide-left' : 'animate-slide-right') : ''}`}
                       style={{ boxShadow: '0 8px 32px 0 rgba(80, 80, 120, 0.10)' }}
                     >
                       <img
@@ -345,7 +345,7 @@ const Testimonials: React.FC = () => {
                 return (
                   <div
                     key={idx}
-                    className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[420px] bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center z-${z} transition-all duration-500 ${blur}`}
+                    className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[320px] md:w-[340px] h-[300px] sm:h-[360px] md:h-[420px] bg-white rounded-2xl shadow-lg p-6 sm:p-7 md:p-8 flex flex-col items-center text-center z-${z} transition-all duration-500 ${blur}`}
                     style={{
                       transform: `translate(-50%, -50%) scale(${scale}) translateX(${translateX}px)`,
                       opacity,

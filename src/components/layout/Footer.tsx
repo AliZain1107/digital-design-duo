@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           {/* Slogan (right) */}
           <div className="flex-1 flex items-center md:justify-end w-full">
             <div className="w-full md:w-auto mt-1 md:mt-0">
-              <p className="leading-6 text-[rgba(89,50,134,1)] text-center md:text-right break-words truncate whitespace-nowrap overflow-hidden">
+              <p className="leading-6 text-[rgba(89,50,134,1)] text-center md:text-right">
                 {t.footerSlogan}
               </p>
             </div>
@@ -36,37 +36,37 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="relative border-t border-[rgba(250,111,64,1)] mt-4 sm:mt-6 pt-3 sm:pt-4 flex flex-col md:flex-row items-center md:items-end justify-between w-full gap-2 md:gap-0">
-          {/* Copyright and Links - always centered, wrap as a block if needed */}
-          <div className="flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-2 text-base text-black font-normal w-full md:w-auto text-center md:text-left max-w-full pb-2 md:pb-0">
-            <span className="break-words whitespace-nowrap">{t.footerCopyrightYear}</span>
+        <div className="relative border-t border-[rgba(250,111,64,1)] mt-4 sm:mt-6 pt-3 sm:pt-4">
+          {/* Copyright and Links */}
+          <div className="flex flex-wrap items-baseline justify-center sm:justify-start gap-x-4 gap-y-2 text-sm sm:text-base text-black font-normal">
+            <span className="inline-block">{t.footerCopyrightYear}</span>
             <Link
               to={language === 'fr' ? '/fr/blog' : '/en/blog'}
-              className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline whitespace-nowrap"
+              className="inline-block transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
             >
               {t.footerBlog}
             </Link>
             <Link
               to={language === 'fr' ? '/fr/video' : '/en/video'}
-              className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline whitespace-nowrap"
+              className="inline-block transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
             >
               {t.footerVideoGuide}
             </Link>
             <Link
               to={language === 'fr' ? '/fr/conditions' : '/en/terms'}
-              className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline whitespace-nowrap"
+              className="inline-block transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
             >
               {t.footerTerms}
             </Link>
             <Link
               to={language === 'fr' ? '/fr/confidentialite' : '/en/privacy'}
-              className="transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline whitespace-nowrap"
+              className="inline-block transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline"
             >
               {t.footerPrivacy}
             </Link>
             <button
               onClick={handleCookieSettings}
-              className="text-[rgba(51,51,51,1)] text-center transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline cursor-pointer whitespace-nowrap"
+              className="inline-block transition-all duration-300 hover:text-[rgba(250,111,64,1)] hover:font-medium hover:underline cursor-pointer bg-transparent border-none p-0 font-normal"
             >
               {t.footerCookieSettings}
             </button>

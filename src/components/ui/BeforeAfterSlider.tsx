@@ -39,6 +39,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
 
   // Mouse/touch down on handle or anywhere on slider
   const startDrag = (e: React.MouseEvent | React.TouchEvent) => {
+    e.preventDefault();
     dragging.current = true;
     document.body.style.userSelect = "none";
     if ("touches" in e && e.touches[0]) {
@@ -48,30 +49,19 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
     }
     resetInactivityTimer();
   };
-  // Mouse/touch up
-  const stopDrag = () => {
-    dragging.current = false;
-    document.body.style.userSelect = "";
-    resetInactivityTimer();
-  };
-  // Mouse/touch move
-  const handleMove = (e: MouseEvent | TouchEvent) => {
-    if (!dragging.current) return;
-    if (e instanceof TouchEvent && e.touches[0]) {
-      moveTo(e.touches[0].clientX);
-    } else if (e instanceof MouseEvent) {
-      moveTo(e.clientX);
-    }
-    resetInactivityTimer();
-  };
   // Click/tap anywhere on slider
   const handleSliderClick = (e: React.MouseEvent | React.TouchEvent) => {
-    if ("touches" in e && e.touches[0]) {
-      moveTo(e.touches[0].clientX);
-    } else if ("clientX" in e) {
-      moveTo(e.clientX);
+    // If clicking on the handle, startDrag will handle it
+    const target = e.target as HTMLElement;
+    if (!target.closest('button')) {
+      if ("touches" in e && e.touches[0]) {
+        moveTo(e.touches[0].clientX);
+      } else if ("clientX" in e) {
+        moveTo(e.clientX);
+      }
+      // Also start dragging when clicking on the slider area
+      startDrag(e);
     }
-    resetInactivityTimer();
   };
   // Keyboard accessibility
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -96,18 +86,38 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
   }, [isHovered, resetInactivityTimer]);
 
   React.useEffect(() => {
-    if (!dragging.current) return;
-    window.addEventListener("mousemove", handleMove);
-    window.addEventListener("mouseup", stopDrag);
-    window.addEventListener("touchmove", handleMove);
-    window.addEventListener("touchend", stopDrag);
-    return () => {
-      window.removeEventListener("mousemove", handleMove);
-      window.removeEventListener("mouseup", stopDrag);
-      window.removeEventListener("touchmove", handleMove);
-      window.removeEventListener("touchend", stopDrag);
+    const onMouseMove = (e: MouseEvent) => {
+      if (!dragging.current) return;
+      moveTo(e.clientX);
     };
-  }, [dragging.current, handleMove]);
+    
+    const onTouchMove = (e: TouchEvent) => {
+      if (!dragging.current) return;
+      // Prevent false touches and scrolling
+      e.preventDefault();
+      if (e.touches[0]) {
+        moveTo(e.touches[0].clientX);
+      }
+    };
+    
+    const onEnd = () => {
+      dragging.current = false;
+      document.body.style.userSelect = "";
+      resetInactivityTimer();
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mouseup", onEnd);
+    window.addEventListener("touchmove", onTouchMove, { passive: false });
+    window.addEventListener("touchend", onEnd);
+    
+    return () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("mouseup", onEnd);
+      window.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("touchend", onEnd);
+    };
+  }, [resetInactivityTimer]);
 
   return (
     <div
