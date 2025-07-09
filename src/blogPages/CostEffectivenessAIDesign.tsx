@@ -23,8 +23,8 @@ const CostEffectivenessAIDesign: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/rentabilite-ia-design-economies-styly"
-    : "https://styly.io/en/blog/cost-effectiveness-ai-design-styly-savings";
+    ? "https://www.styly.fr/fr/blog/rentabilite-ia-design-economies-styly"
+    : "https://www.styly.fr/en/blog/cost-effectiveness-ai-design-styly-savings";
 
   return (
     <>

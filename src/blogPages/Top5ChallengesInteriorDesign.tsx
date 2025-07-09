@@ -22,12 +22,12 @@ const Top5ChallengesInteriorDesign: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/top-5-defis-design-interieur-solutions-ia"
-    : "https://styly.io/en/blog/top-5-challenges-interior-design-ai-solutions";
+    ? "https://www.styly.fr/fr/blog/top-5-defis-design-interieur-solutions-ia"
+    : "https://www.styly.fr/en/blog/top-5-challenges-interior-design-ai-solutions";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/top-5-challenges-interior-design-ai-solutions",
-    fr: "https://styly.io/fr/blog/top-5-defis-design-interieur-solutions-ia"
+    en: "https://www.styly.fr/en/blog/top-5-challenges-interior-design-ai-solutions",
+    fr: "https://www.styly.fr/fr/blog/top-5-defis-design-interieur-solutions-ia"
   };
 
   return (

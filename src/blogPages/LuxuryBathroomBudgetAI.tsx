@@ -12,11 +12,11 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
           <title>Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment ! | Styly.io</title>
           <meta name="description" content="Créez une salle de bain luxueuse sans vous ruiner grâce à l'IA. Découvrez nos conseils d'experts et les outils Styly pour transformer votre salle de bain avec un budget limité." />
           <meta name="keywords" content="salle de bain luxe budget, rénovation salle de bain économique, IA design salle de bain, Styly.io, décoration salle de bain pas cher" />
-          <link rel="canonical" href="https://styly.io/fr/blog/salle-bain-luxe-budget-conseils-ia" />
+          <link rel="canonical" href="https://www.styly.fr/fr/blog/salle-bain-luxe-budget-conseils-ia" />
           <meta property="og:title" content="Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !" />
           <meta property="og:description" content="Transformez votre salle de bain en espace luxueux sans vous ruiner grâce à l'IA et nos conseils d'experts." />
           <meta property="og:image" content="/luxury-bathroom-budget-ai-hero.webp" />
-          <meta property="og:url" content="https://styly.io/fr/blog/salle-bain-luxe-budget-conseils-ia" />
+          <meta property="og:url" content="https://www.styly.fr/fr/blog/salle-bain-luxe-budget-conseils-ia" />
         </Helmet>
 
         <header className="mb-8">
@@ -49,7 +49,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
           
           <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Accessoires et Robinetterie</h3>
           <p>
-            Des accessoires et robinetterie de haute qualité peuvent élever l'apparence de votre salle de bain. Recherchez les soldes et remises sur les marques de luxe ou optez pour des répliques de haute qualité. En utilisant les <a href="https://styly.io" className="text-blue-600 hover:underline"><strong>outils de design de chambre IA</strong></a>, vous pouvez visualiser comment différents accessoires apparaîtront dans votre espace et vous assurer qu'ils correspondent à votre vision de design.
+            Des accessoires et robinetterie de haute qualité peuvent élever l'apparence de votre salle de bain. Recherchez les soldes et remises sur les marques de luxe ou optez pour des répliques de haute qualité. En utilisant les <a href="https://www.styly.fr" className="text-blue-600 hover:underline"><strong>outils de design de chambre IA</strong></a>, vous pouvez visualiser comment différents accessoires apparaîtront dans votre espace et vous assurer qu'ils correspondent à votre vision de design.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Carrelage et Revêtement de Sol</h3>
@@ -64,7 +64,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
 
           <div className="my-8">
             <img
-              src="/bathroom-ideas-budget-luxury.webp"
+              src="/mini_magick20250608-11056-2qt7xn.jpg"
               alt="Idées Salle de Bain Budget Luxe"
               className="w-full h-[300px] object-cover rounded-lg"
             />
@@ -92,7 +92,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
 
           <div className="my-8">
             <img
-              src="/low-budget-bathroom-renovate-ideas.webp"
+              src="/mini_magick20250608-11056-34szrr.jpg"
               alt="Idées Rénovation Salle de Bain Petit Budget"
               className="w-full h-[300px] object-cover rounded-lg"
             />
@@ -105,7 +105,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
 
           <ol className="list-decimal pl-6 mb-6 space-y-3">
             <li><strong>Choisissez votre Outil IA :</strong> Sélectionnez un outil IA qui correspond à vos besoins. Styly offre des outils d'<strong>IA d'intérieur domestique</strong> et de <strong>design de chambre IA</strong> conviviaux qui sont parfaits pour cette tâche.</li>
-            <li><strong>Saisissez vos Dimensions :</strong> Entrez les dimensions de votre salle de bain dans l'outil IA. Cela permettra au logiciel de créer des <a href="https://styly.io" className="text-blue-600 hover:underline"><strong>idées de salle de bain moderne IA</strong></a>.</li>
+            <li><strong>Saisissez vos Dimensions :</strong> Entrez les dimensions de votre salle de bain dans l'outil IA. Cela permettra au logiciel de créer des <a href="https://www.styly.fr" className="text-blue-600 hover:underline"><strong>idées de salle de bain moderne IA</strong></a>.</li>
             <li><strong>Expérimentez avec les Designs :</strong> Utilisez l'outil IA pour expérimenter avec différents aménagements, couleurs, matériaux et accessoires. N'ayez pas peur d'essayer des idées audacieuses – l'IA peut vous aider à les visualiser avant de prendre des engagements.</li>
             <li><strong>Obtenez des Commentaires :</strong> Partagez vos designs générés par l'IA avec des amis, la famille, ou même des designers professionnels pour obtenir des commentaires et affiner vos idées.</li>
             <li><strong>Implémentez votre Design :</strong> Une fois que vous êtes satisfait de votre design, commencez à l'implémenter étape par étape. L'outil IA peut guider où commencer et comment procéder.</li>
@@ -161,11 +161,11 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
         <title>Need a Luxury Bathroom on a Budget? Here's How! | Styly.io</title>
         <meta name="description" content="Create a luxury bathroom without breaking the bank using AI. Discover expert tips and Styly's tools to transform your bathroom on a budget." />
         <meta name="keywords" content="luxury bathroom budget, affordable bathroom renovation, AI bathroom design, Styly.io, budget bathroom makeover, cheap bathroom ideas" />
-        <link rel="canonical" href="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips" />
+        <link rel="canonical" href="https://www.styly.fr/en/blog/luxury-bathroom-budget-ai-design-tips" />
         <meta property="og:title" content="Need a Luxury Bathroom on a Budget? Here's How!" />
         <meta property="og:description" content="Transform your bathroom into a luxury space without breaking the bank using AI and expert tips." />
         <meta property="og:image" content="/luxury-bathroom-budget-ai-hero.webp" />
-        <meta property="og:url" content="https://styly.io/en/blog/luxury-bathroom-budget-ai-design-tips" />
+        <meta property="og:url" content="https://www.styly.fr/en/blog/luxury-bathroom-budget-ai-design-tips" />
       </Helmet>
 
       <header className="mb-8">
@@ -198,7 +198,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
         
         <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Fixtures and Fittings</h3>
         <p>
-          High-quality fixtures and fittings can elevate the look of your bathroom. Look for sales and discounts on luxury brands or opt for high-quality replicas. Using <a href="https://styly.io" className="text-blue-600 hover:underline"><strong>AI room design</strong></a> tools, you can visualize how different fixtures will look in your space and ensure they fit your design vision.
+          High-quality fixtures and fittings can elevate the look of your bathroom. Look for sales and discounts on luxury brands or opt for high-quality replicas. Using <a href="https://www.styly.io" className="text-blue-600 hover:underline"><strong>AI room design</strong></a> tools, you can visualize how different fixtures will look in your space and ensure they fit your design vision.
         </p>
 
         <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Tiles and Flooring</h3>
@@ -213,7 +213,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
 
         <div className="my-8">
           <img
-            src="/bathroom-ideas-budget-luxury.webp"
+            src="/mini_magick20250608-11056-51krvz.jpg"
             alt="Bathroom Ideas Budget Luxury"
             className="w-full h-[300px] object-cover rounded-lg"
           />
@@ -241,7 +241,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
 
         <div className="my-8">
           <img
-            src="/low-budget-bathroom-renovate-ideas.webp"
+            src="/mini_magick20250608-11056-exfils.jpg"
             alt="Low Budget Bathroom Renovate Ideas"
             className="w-full h-[300px] object-cover rounded-lg"
           />
@@ -254,7 +254,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
 
         <ol className="list-decimal pl-6 mb-6 space-y-3">
           <li><strong>Choose Your AI Tool:</strong> Select an AI tool that fits your needs. Styly offers user-friendly <strong>home interior AI</strong> and <strong>room design AI</strong> tools that are perfect for this task.</li>
-          <li><strong>Input Your Dimensions:</strong> Enter the dimensions of your bathroom into the AI tool. This will allow the software to create <a href="https://styly.io" className="text-blue-600 hover:underline"><strong>modern bathroom ideas AI</strong></a>.</li>
+          <li><strong>Input Your Dimensions:</strong> Enter the dimensions of your bathroom into the AI tool. This will allow the software to create <a href="https://www.styly.io" className="text-blue-600 hover:underline"><strong>modern bathroom ideas AI</strong></a>.</li>
           <li><strong>Experiment with Designs:</strong> Use the AI tool to experiment with different layouts, colors, materials, and fixtures. Don't be afraid to try out bold ideas – the AI can help you visualize them before making any commitments.</li>
           <li><strong>Get Feedback:</strong> Share your AI-generated designs with friends, family, or even professional designers to get feedback and refine your ideas.</li>
           <li><strong>Implement Your Design:</strong> Once you're satisfied with your design, start implementing it step-by-step. The AI tool can guide where to start and how to proceed.</li>

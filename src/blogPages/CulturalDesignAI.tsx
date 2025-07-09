@@ -22,12 +22,12 @@ const CulturalDesignAI: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/design-interieur-cultures-ia-espaces-sensibles"
-    : "https://styly.io/en/blog/cultural-interior-design-ai-sensitive-spaces";
+    ? "https://www.styly.fr/fr/blog/design-interieur-cultures-ia-espaces-sensibles"
+    : "https://www.styly.fr/en/blog/cultural-interior-design-ai-sensitive-spaces";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/cultural-interior-design-ai-sensitive-spaces",
-    fr: "https://styly.io/fr/blog/design-interieur-cultures-ia-espaces-sensibles"
+    en: "https://www.styly.fr/en/blog/cultural-interior-design-ai-sensitive-spaces",
+    fr: "https://www.styly.fr/fr/blog/design-interieur-cultures-ia-espaces-sensibles"
   };
 
   return (

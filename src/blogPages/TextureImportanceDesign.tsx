@@ -22,12 +22,12 @@ const TextureImportanceDesign: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/importance-texture-design-interieur-styly"
-    : "https://styly.io/en/blog/texture-importance-interior-design-styly";
+    ? "https://www.styly.fr/fr/blog/importance-texture-design-interieur-styly"
+    : "https://www.styly.fr/en/blog/texture-importance-interior-design-styly";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/texture-importance-interior-design-styly",
-    fr: "https://styly.io/fr/blog/importance-texture-design-interieur-styly"
+    en: "https://www.styly.fr/en/blog/texture-importance-interior-design-styly",
+    fr: "https://www.styly.fr/fr/blog/importance-texture-design-interieur-styly"
   };
 
   return (

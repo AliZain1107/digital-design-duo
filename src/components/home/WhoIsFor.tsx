@@ -45,6 +45,41 @@ const WhoIsFor: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Central CTA Section */}
+        <div className="text-center mt-16 pt-12">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-baloo">
+            {language === "fr"
+              ? "Prêt à Transformer Vos Espaces ?"
+              : "Ready to Transform Your Spaces?"
+            }
+          </h3>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto font-baloo">
+            {language === "fr"
+              ? "Rejoignez des milliers d'utilisateurs qui révolutionnent déjà leur approche du design d'intérieur."
+              : "Join thousands of users who are already revolutionizing their approach to interior design."
+            }
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://app.styly.io/signin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo"
+              aria-label={language === "fr" ? "Commencer gratuitement avec Styly AI" : "Start free with Styly AI"}
+            >
+              {language === "fr"
+                ? "Commencer Gratuitement"
+                : "Start Creating Free"
+              }
+            </a>
+          </div>
+          <div className="mt-4">
+            <span className="text-sm text-gray-500 font-baloo">
+              {language === "fr" ? "✓ Aucune carte de crédit requise" : "✓ No credit card required"}
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   );

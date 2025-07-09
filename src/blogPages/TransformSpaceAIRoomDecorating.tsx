@@ -27,20 +27,20 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://styly.io/${language}/blog/${language === 'fr' ? 'transformer-espace-ia-revolutionner-decoration-chambre' : 'transform-space-ai-revolutionize-room-decorating'}`} />
-        <meta property="og:image" content="https://styly.io/transform-space-ai-room-decorating-hero.webp" />
+        <meta property="og:url" content={`https://www.styly.fr/${language}/blog/${language === 'fr' ? 'transformer-espace-ia-revolutionner-decoration-chambre' : 'transform-space-ai-revolutionize-room-decorating'}`} />
+        <meta property="og:image" content="https://www.styly.fr/transform-space-ai-room-decorating-hero.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seoTitle} />
         <meta name="twitter:description" content={seoDescription} />
-        <meta name="twitter:image" content="https://styly.io/transform-space-ai-room-decorating-hero.webp" />
-        <link rel="canonical" href={`https://styly.io/${language}/blog/${language === 'fr' ? 'transformer-espace-ia-revolutionner-decoration-chambre' : 'transform-space-ai-revolutionize-room-decorating'}`} />
+        <meta name="twitter:image" content="https://www.styly.fr/transform-space-ai-room-decorating-hero.webp" />
+        <link rel="canonical" href={`https://www.styly.fr/${language}/blog/${language === 'fr' ? 'transformer-espace-ia-revolutionner-decoration-chambre' : 'transform-space-ai-revolutionize-room-decorating'}`} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Styly.io" />
         <meta name="language" content={language} />
         {language === "fr" ? (
-          <link rel="alternate" hrefLang="en" href="https://styly.io/en/blog/transform-space-ai-revolutionize-room-decorating" />
+          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/transform-space-ai-revolutionize-room-decorating" />
         ) : (
-          <link rel="alternate" hrefLang="fr" href="https://styly.io/fr/blog/transformer-espace-ia-revolutionner-decoration-chambre" />
+          <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/fr/blog/transformer-espace-ia-revolutionner-decoration-chambre" />
         )}
       </Helmet>
 
@@ -58,7 +58,7 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
                   <span>AI Room Design & Interior Innovation</span>
                 </div>
                 <img
-                  src="/transform-space-ai-room-decorating-hero.webp"
+                  src="/ai-room-planner-residential.webp"
                   alt="Transform Your Space with AI Room Decorating"
                   className="w-full h-[400px] object-cover rounded-xl mb-6"
                 />
@@ -100,7 +100,7 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
 
                 <div className="my-8">
                   <img
-                    src="/home-interior-ideas-ai-modern.webp"
+                    src="/home-interior-ideas-styly.webp"
                     alt="AI-Generated Home Interior Ideas"
                     className="w-full h-[300px] object-cover rounded-xl"
                   />
@@ -125,7 +125,7 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
 
                 <div className="my-8">
                   <img
-                    src="/modern-interior-design-ai-generated.webp"
+                    src="/living-room-design-ideas-ai.webp"
                     alt="Modern Interior Design with AI"
                     className="w-full h-[300px] object-cover rounded-xl"
                   />
@@ -181,7 +181,7 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
                   <span>Design IA & Innovation Intérieure</span>
                 </div>
                 <img
-                  src="/transform-space-ai-room-decorating-hero.webp"
+                  src="/space-planning-residential-design.webp"
                   alt="Transformez Votre Espace avec la Décoration IA"
                   className="w-full h-[400px] object-cover rounded-xl mb-6"
                 />
@@ -223,7 +223,7 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
 
                 <div className="my-8">
                   <img
-                    src="/home-interior-ideas-ai-modern.webp"
+                    src="/transforming-small-living-spaces-compact.webp"
                     alt="Idées d'Intérieur Maison Générées par IA"
                     className="w-full h-[300px] object-cover rounded-xl"
                   />
@@ -248,7 +248,7 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
 
                 <div className="my-8">
                   <img
-                    src="/modern-interior-design-ai-generated.webp"
+                    src="/modern-family-home-functional-stylish.webp"
                     alt="Design Intérieur Moderne avec IA"
                     className="w-full h-[300px] object-cover rounded-xl"
                   />

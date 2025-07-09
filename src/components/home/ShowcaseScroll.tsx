@@ -2,9 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useLanguage } from "@/lib/i18n";
 
 const ShowcaseScroll: React.FC = () => {
-  // Add language debugging
   const { language, t } = useLanguage();
-  console.log("Current language in ShowcaseScroll:", language);
 
   const topRowRef = useRef<HTMLDivElement>(null);
   const bottomRowRef = useRef<HTMLDivElement>(null);

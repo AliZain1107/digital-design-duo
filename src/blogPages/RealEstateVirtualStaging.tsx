@@ -1,10 +1,15 @@
-import React from "react";
-import { useLanguage } from "@/lib/i18n"; // Import the useLanguage hook
+import React, { useEffect } from "react";
+import { useLanguage } from "@/lib/i18n";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const RealEstateVirtualStaging: React.FC = () => {
-  const { t, language } = useLanguage(); // Get the translation function from context
+  const { t, language } = useLanguage();
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const seoMeta = {
     en: {
@@ -21,8 +26,8 @@ const RealEstateVirtualStaging: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/agents-immobiliers-home-staging-virtuel-ia"
-    : "https://styly.io/en/blog/real-estate-agents-ai-virtual-staging";
+    ? "https://www.styly.fr/fr/blog/agents-immobiliers-home-staging-virtuel-ia"
+    : "https://www.styly.fr/en/blog/real-estate-agents-ai-virtual-staging";
 
   return (
     <>

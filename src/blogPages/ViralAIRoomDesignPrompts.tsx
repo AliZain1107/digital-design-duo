@@ -22,12 +22,12 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/6-prompts-viraux-design-chambre-ia-styly"
-    : "https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly";
+    ? "https://www.styly.fr/fr/blog/6-prompts-viraux-design-chambre-ia-styly"
+    : "https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
-    fr: "https://styly.io/fr/blog/6-prompts-viraux-design-chambre-ia-styly"
+    en: "https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
+    fr: "https://www.styly.fr/fr/blog/6-prompts-viraux-design-chambre-ia-styly"
   };
 
   return (
@@ -182,7 +182,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
                     }
                   </p>
                   <img
-                    src="/mini_magick20250608-11056-k6lwqq.jpg"
+                    src="/viral-ai-prompts-luxury-hotel.jpg"
                     alt={language === "fr" ? "Design chambre IA style hôtel de luxe - STYLY.io prompt viral pour décoration intérieure moderne" : "AI bedroom design luxury hotel style - STYLY.io viral prompt for modern interior decoration"}
                     className="w-full h-32 object-cover rounded-lg"
                   />
@@ -197,7 +197,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
                     }
                   </p>
                   <img
-                    src="/mini_magick20250608-11056-ljawia.jpg"
+                    src="/viral-ai-prompts-japanese-minimalist.jpg"
                     alt={language === "fr" ? "Design chambre minimaliste japonaise IA - STYLY.io décoration zen moderne pour style intérieur épuré" : "Japanese minimalist bedroom AI design - STYLY.io zen modern decor for clean interior style"}
                     className="w-full h-32 object-cover rounded-lg"
                   />
@@ -212,7 +212,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
                     }
                   </p>
                   <img
-                    src="/mini_magick20250608-11435-kitium.jpg"
+                    src="/viral-ai-prompts-scandinavian-cozy.jpg"
                     alt={language === "fr" ? "Design chambre scandinave cosy IA - STYLY.io décoration hygge nordique pour style intérieur chaleureux" : "Scandinavian cozy bedroom AI design - STYLY.io Nordic hygge decor for warm interior style"}
                     className="w-full h-32 object-cover rounded-lg"
                   />
@@ -227,7 +227,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
                     }
                   </p>
                   <img
-                    src="/mini_magick20250608-11435-no5bhi.jpg"
+                    src="/viral-ai-prompts-dark-academia.jpg"
                     alt={language === "fr" ? "Chambre dark academia IA - Design gothique moderne STYLY.io pour décoration intellectuelle vintage" : "Dark academia bedroom AI design - STYLY.io gothic modern decor for intellectual vintage style"}
                     className="w-full h-32 object-cover rounded-lg"
                   />
@@ -242,7 +242,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
                     }
                   </p>
                   <img
-                    src="/mini_magick20250608-11435-4rql35.jpg"
+                    src="/viral-ai-prompts-coastal-grandmother.jpg"
                     alt={language === "fr" ? "Décoration chambre côtière grand-mère IA - STYLY.io style bord de mer chic pour intérieur nautique" : "Coastal grandmother bedroom AI design - STYLY.io seaside chic decor for nautical interior style"}
                     className="w-full h-32 object-cover rounded-lg"
                   />
@@ -257,7 +257,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
                     }
                   </p>
                   <img
-                    src="/mini_magick20250608-11435-rnqhqr.jpg"
+                    src="/viral-ai-prompts-biophilic-modern.jpg"
                     alt={language === "fr" ? "Design chambre biophilique moderne IA - STYLY.io décoration végétale naturelle pour bien-être intérieur" : "Biophilic modern bedroom AI design - STYLY.io natural plant decor for wellness interior style"}
                     className="w-full h-32 object-cover rounded-lg"
                   />

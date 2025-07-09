@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
@@ -13,18 +13,13 @@ import BlogSection from "@/components/home/BlogSection";
 import FAQ from "@/components/home/FAQ";
 import SEO from "@/components/layout/SEO";
 import VideoSection from "@/components/home/VideoSection";
-import DesignWithAI from "@/components/home/DesignWithAI";
-import { useLanguage, LanguageContext, Language } from "@/lib/i18n";
-import { useContext, useState } from "react";
+import { LanguageContext } from "@/lib/i18n";
+import { useContext } from "react";
 import { SITE_CONFIG } from "@/lib/config";
 
 const Index: React.FC = () => {
-  const { language, setLanguage } = useContext(LanguageContext);
-  const stateLang: Language = language ?? "fr";
-  // Get current language to force re-render when it changes
-  // const [currentLang, setCurrentLang] = useState<Language>(stateLang);
+  const { language } = useContext(LanguageContext);
   const location = useLocation();
-  const navigate = useNavigate();
 
   // Remove URL-based language routing - use global language state instead
   useEffect(() => {
@@ -332,6 +327,9 @@ const Index: React.FC = () => {
         <Hero />
         <WhoIsFor />
         <VideoSection />
+
+
+
         <div className="mt-12 md:mt-20 lg:mt-24">
           <SupportedBy />
         </div>
@@ -340,11 +338,20 @@ const Index: React.FC = () => {
         </div>
         <HowItWorks />
         <Stats />
+
+
+
         <Testimonials />
+
+
+
         <div className="mt-0">
           <BlogSection maxPosts={4} />
         </div>
         <FAQ />
+
+
+
         <div className="mt-12">
           <section className="relative w-full bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] py-12 px-4 sm:px-8 md:px-12 lg:px-[116px] flex flex-col items-start justify-center shadow-lg overflow-hidden">
             {/* Blur overlay for smoother gradient */}

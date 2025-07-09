@@ -22,12 +22,12 @@ const DataAIPoweredDesign: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/role-donnees-design-alimente-ia"
-    : "https://styly.io/en/blog/role-data-ai-powered-design";
+    ? "https://www.styly.fr/fr/blog/role-donnees-design-alimente-ia"
+    : "https://www.styly.fr/en/blog/role-data-ai-powered-design";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/role-data-ai-powered-design",
-    fr: "https://styly.io/fr/blog/role-donnees-design-alimente-ia"
+    en: "https://www.styly.fr/en/blog/role-data-ai-powered-design",
+    fr: "https://www.styly.fr/fr/blog/role-donnees-design-alimente-ia"
   };
 
   return (

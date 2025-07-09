@@ -8,15 +8,16 @@ Disallow: /api/
 Disallow: /.env
 Disallow: /node_modules/
 
+# Disallow English routes (not actively used)
+Disallow: /en/
+
 # Allow important directories
 Allow: /blog/
-Allow: /en/blog/
 Allow: /images/
 Allow: /css/
 Allow: /js/
 
-# Sitemap locations for www.styly.fr
-Sitemap: https://www.styly.fr/sitemap.xml
+# Sitemap location for www.styly.fr (French-focused)
 Sitemap: https://www.styly.fr/sitemap-fr.xml
 
 # Crawl delay to be nice to servers

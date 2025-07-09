@@ -23,8 +23,8 @@ const TransformingSmallLivingSpaces: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/transformer-petits-espaces-vie-solutions-design"
-    : "https://styly.io/en/blog/transforming-small-living-spaces-design-solutions";
+    ? "https://www.styly.fr/fr/blog/transformer-petits-espaces-vie-solutions-design"
+    : "https://www.styly.fr/en/blog/transforming-small-living-spaces-design-solutions";
 
   return (
     <>

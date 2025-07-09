@@ -7,8 +7,8 @@ const Showcase: React.FC = () => {
       <div className="self-center z-0 flex w-full max-w-4xl flex-col items-stretch justify-center">
         <div className="w-full overflow-hidden rounded-2xl">
           <BeforeAfterSlider
-            beforeImage="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/9a7ab7a2366f484ec9d66769ac382a7635a3a895?placeholderIfAbsent=true"
-            afterImage="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/9a7ab7a2366f484ec9d66769ac382a7635a3a895?placeholderIfAbsent=true"
+            beforeImage="/Before.png"
+            afterImage="/After.jpg"
             altBefore="Before"
             altAfter="After"
           />

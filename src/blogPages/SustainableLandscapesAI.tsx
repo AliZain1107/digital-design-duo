@@ -22,12 +22,12 @@ const SustainableLandscapesAI: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/reduire-empreinte-carbone-paysages-durables-ia"
-    : "https://styly.io/en/blog/reducing-carbon-footprints-sustainable-landscapes-ai";
+    ? "https://www.styly.fr/fr/blog/reduire-empreinte-carbone-paysages-durables-ia"
+    : "https://www.styly.fr/en/blog/reducing-carbon-footprints-sustainable-landscapes-ai";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/reducing-carbon-footprints-sustainable-landscapes-ai",
-    fr: "https://styly.io/fr/blog/reduire-empreinte-carbone-paysages-durables-ia"
+    en: "https://www.styly.fr/en/blog/reducing-carbon-footprints-sustainable-landscapes-ai",
+    fr: "https://www.styly.fr/fr/blog/reduire-empreinte-carbone-paysages-durables-ia"
   };
 
   return (

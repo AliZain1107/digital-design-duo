@@ -28,12 +28,12 @@ const ChatGPTInteriorDesign: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoData.fr : seoData.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"
-    : "https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design";
+    ? "https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"
+    : "https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/can-chatgpt-design-your-home-ai-interior-design",
-    fr: "https://styly.io/fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"
+    en: "https://www.styly.fr/en/blog/can-chatgpt-design-your-home-ai-interior-design",
+    fr: "https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur"
   };
 
   return (
@@ -151,12 +151,12 @@ const ChatGPTInteriorDesign: React.FC = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                 <img
-                  src="/ai-interior-design-technology.webp"
+                  src="/chatgpt-interior-design-assistant.webp"
                   alt="ChatGPT assistant design intérieur - Technologie numérique"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
                 <img
-                  src="/ai-room-design-free.webp"
+                  src="/ai-project-management-design.webp"
                   alt="Design chambre numérique gratuit - Transformation instantanée"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
@@ -418,12 +418,12 @@ const ChatGPTInteriorDesign: React.FC = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                 <img
-                  src="/ai-interior-design-technology.webp"
+                  src="/virtual-reality-interior-design.webp"
                   alt="ChatGPT interior design assistant - Digital technology"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />
                 <img
-                  src="/ai-room-design-free.webp"
+                  src="/ai-room-planner-sketch-3d-transformation.webp"
                   alt="Free digital room design - Instant transformation"
                   className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
                 />

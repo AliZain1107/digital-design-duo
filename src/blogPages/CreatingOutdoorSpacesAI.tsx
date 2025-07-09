@@ -22,12 +22,12 @@ const CreatingOutdoorSpacesAI: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/creer-espaces-exterieurs-ia-guide-design"
-    : "https://styly.io/en/blog/creating-outdoor-spaces-ai-design-guide";
+    ? "https://www.styly.fr/fr/blog/creer-espaces-exterieurs-ia-guide-design"
+    : "https://www.styly.fr/en/blog/creating-outdoor-spaces-ai-design-guide";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/creating-outdoor-spaces-ai-design-guide",
-    fr: "https://styly.io/fr/blog/creer-espaces-exterieurs-ia-guide-design"
+    en: "https://www.styly.fr/en/blog/creating-outdoor-spaces-ai-design-guide",
+    fr: "https://www.styly.fr/fr/blog/creer-espaces-exterieurs-ia-guide-design"
   };
 
   return (

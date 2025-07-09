@@ -23,8 +23,8 @@ const ResidentialInteriorDesignGuide: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/design-interieur-residentiel-guide-planification-espaces"
-    : "https://styly.io/en/blog/residential-interior-design-planning-spaces-guide";
+    ? "https://www.styly.fr/fr/blog/design-interieur-residentiel-guide-planification-espaces"
+    : "https://www.styly.fr/en/blog/residential-interior-design-planning-spaces-guide";
 
   return (
     <>

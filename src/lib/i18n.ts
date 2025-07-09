@@ -1048,8 +1048,8 @@ export interface Translations {
   applyToJoinNetwork: string;
   fillOutForm: string;
   quickFormDescription: string;
-  fullName: string;
-  fullNamePlaceholder: string;
+  collaboratorFullName: string;
+  collaboratorFullNamePlaceholder: string;
   emailAddress: string;
   emailPlaceholder: string;
   location: string;
@@ -1060,7 +1060,7 @@ export interface Translations {
   selectSpecialization: string;
   interiorDesign: string;
   architecture: string;
-  other: string;
+  collaboratorOther: string;
   submitApplication: string;
   submitting: string;
   collaboratorsClose: string;
@@ -1178,7 +1178,7 @@ export const translations: Record<Language, Translations> = {
       {
         question: "What makes our free AI interior design app unique in the world of interior design?",
         answer:
-          "Our AI room planner stands out by combining cutting-edge artificial intelligence with principles from legendary architects like Le Corbusier and Zaha Hadid. Our free interior design software requires no downloads or special tools, making professional AI interior design accessible to everyone from real estate professionals to homeowners using our interior design AI generator.",
+          "Our AI room planner stands out by combining cutting-edge artificial intelligence with principles from legendary architects like <a href='https://www.archdaily.com/tag/le-corbusier' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>Le Corbusier</a> and <a href='https://www.dezeen.com/tag/zaha-hadid/' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>Zaha Hadid</a>. Our free interior design software requires no downloads or special tools, making professional AI interior design accessible to everyone from real estate professionals to homeowners using our interior design AI generator.",
       },
       {
         question:
@@ -1196,12 +1196,12 @@ export const translations: Record<Language, Translations> = {
         question:
           "Does our AI room planner offer a variety of interior design styles to choose from?",
         answer:
-          "Absolutely! Our free interior design software offers a wide range of design styles from modern minimalist to classic traditional, industrial, Scandinavian, mid-century modern, and many more. You can also customize elements within each style with our interior design AI generator to create a unique look that perfectly matches your AI room design vision.",
+          "Absolutely! Our free interior design software offers a wide range of design styles from <a href='https://www.elledecor.com/design-decorate/room-ideas/g2441/modern-minimalist-decor/' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>modern minimalist</a> to classic traditional, industrial, <a href='https://www.architecturaldigest.com/gallery/scandinavian-design-ideas' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>Scandinavian</a>, mid-century modern, and many more. You can also customize elements within each style with our interior design AI generator to create a unique look that perfectly matches your AI room design vision.",
       },
       {
         question: "What kind of support does our AI interior design tool provide to its users?",
         answer:
-          "We offer comprehensive support including video tutorials, a detailed knowledge base, and responsive customer service for our free AI interior design. Our team is available to help with any questions or challenges you might encounter while using our AI room planner and virtual staging. Plus, our blog regularly features interior design tips and inspiration.",
+          "We offer comprehensive support including video tutorials, a detailed knowledge base, and responsive customer service for our free AI interior design. Our team is available to help with any questions or challenges you might encounter while using our AI room planner and virtual staging. Plus, our <a href='/blog' class='text-purple-600 hover:text-purple-800 underline'>blog</a> regularly features interior design tips and inspiration from leading sources like <a href='https://www.houzz.com/ideabooks' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>Houzz</a>.",
       },
     ],
 
@@ -2260,8 +2260,8 @@ export const translations: Record<Language, Translations> = {
     applyToJoinNetwork: "Apply to Join Our Network",
     fillOutForm: "Fill out the form below to start your application process",
     quickFormDescription: "Join our exclusive network in just 2 minutes. Only 4 fields required.",
-    fullName: "Full Name",
-    fullNamePlaceholder: "Enter your full name",
+    collaboratorFullName: "Full Name",
+    collaboratorFullNamePlaceholder: "Enter your full name",
     emailAddress: "Email Address",
     emailPlaceholder: "Enter your email address",
     location: "Location",
@@ -2272,7 +2272,7 @@ export const translations: Record<Language, Translations> = {
     selectSpecialization: "Select your specialization",
     interiorDesign: "Interior Design",
     architecture: "Architecture",
-    other: "Other",
+    collaboratorOther: "Other",
     submitApplication: "Submit Application",
     submitting: "Submitting...",
     collaboratorsClose: "Close",
@@ -2390,7 +2390,7 @@ export const translations: Record<Language, Translations> = {
         question:
           "Qu'est-ce qui rend notre logiciel design intérieur gratuit unique dans le monde du design d'intérieur IA?",
         answer:
-          "Notre planificateur chambre IA se distingue en combinant l'intelligence artificielle de pointe avec les principes d'architectes légendaires comme Le Corbusier et Zaha Hadid. Notre outil design intérieur ne nécessite aucun téléchargement ou outil spécial, rendant le design intérieur IA gratuit accessible à tous, des professionnels de l'immobilier aux propriétaires utilisant notre générateur design intérieur IA.",
+          "Notre planificateur chambre IA se distingue en combinant l'intelligence artificielle de pointe avec les principes d'architectes légendaires comme <a href='https://www.archdaily.com/tag/le-corbusier' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>Le Corbusier</a> et <a href='https://www.dezeen.com/tag/zaha-hadid/' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>Zaha Hadid</a>. Notre outil design intérieur ne nécessite aucun téléchargement ou outil spécial, rendant le design intérieur IA gratuit accessible à tous, des professionnels de l'immobilier aux propriétaires utilisant notre générateur design intérieur IA.",
       },
       {
         question:
@@ -2408,13 +2408,13 @@ export const translations: Record<Language, Translations> = {
         question:
           "Notre planificateur chambre IA offre-t-il une variété de styles de design intérieur parmi lesquels choisir?",
         answer:
-          "Absolument! Notre logiciel design intérieur gratuit offre une large gamme de styles de décoration intérieure, du minimaliste moderne au traditionnel classique, industriel, scandinave, mid-century moderne, et bien d'autres. Vous pouvez également personnaliser les éléments de chaque style avec notre générateur design intérieur IA pour créer un look unique qui correspond parfaitement à votre vision de design chambre IA.",
+          "Absolument! Notre logiciel design intérieur gratuit offre une large gamme de styles de décoration intérieure, du <a href='https://www.elledecor.com/design-decorate/room-ideas/g2441/modern-minimalist-decor/' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>minimaliste moderne</a> au traditionnel classique, industriel, <a href='https://www.architecturaldigest.com/gallery/scandinavian-design-ideas' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>scandinave</a>, mid-century moderne, et bien d'autres. Vous pouvez également personnaliser les éléments de chaque style avec notre générateur design intérieur IA pour créer un look unique qui correspond parfaitement à votre vision de design chambre IA.",
       },
       {
         question:
           "Quel type de support notre outil design intérieur fournit-il à ses utilisateurs?",
         answer:
-          "Nous offrons un support complet comprenant des tutoriels vidéo, une base de connaissances détaillée et un service client réactif pour notre ia design intérieur gratuit. Notre équipe est disponible pour vous aider avec toutes les questions ou défis que vous pourriez rencontrer lors de l'utilisation de notre planificateur chambre IA et home staging virtuel. De plus, notre blog présente régulièrement des conseils de décoration intérieure et de l'inspiration.",
+          "Nous offrons un support complet comprenant des tutoriels vidéo, une base de connaissances détaillée et un service client réactif pour notre ia design intérieur gratuit. Notre équipe est disponible pour vous aider avec toutes les questions ou défis que vous pourriez rencontrer lors de l'utilisation de notre planificateur chambre IA et home staging virtuel. De plus, notre <a href='/blog' class='text-purple-600 hover:text-purple-800 underline'>blog</a> présente régulièrement des conseils de décoration intérieure et de l'inspiration provenant de sources reconnues comme <a href='https://www.houzz.fr/ideabooks' target='_blank' rel='noopener noreferrer' class='text-purple-600 hover:text-purple-800 underline'>Houzz</a>.",
       },
     ],
 
@@ -3511,8 +3511,8 @@ export const translations: Record<Language, Translations> = {
     applyToJoinNetwork: "Postuler pour Rejoindre Notre Réseau",
     fillOutForm: "Remplissez le formulaire ci-dessous pour commencer votre processus de candidature",
     quickFormDescription: "Rejoignez notre réseau exclusif en seulement 2 minutes. Seulement 4 champs requis.",
-    fullName: "Nom Complet",
-    fullNamePlaceholder: "Entrez votre nom complet",
+    collaboratorFullName: "Nom Complet",
+    collaboratorFullNamePlaceholder: "Entrez votre nom complet",
     emailAddress: "Adresse Email",
     emailPlaceholder: "Entrez votre adresse email",
     location: "Localisation",
@@ -3523,7 +3523,7 @@ export const translations: Record<Language, Translations> = {
     selectSpecialization: "Sélectionnez votre spécialisation",
     interiorDesign: "Design d'Intérieur",
     architecture: "Architecture",
-    other: "Autre",
+    collaboratorOther: "Autre",
     submitApplication: "Soumettre la Candidature",
     submitting: "Envoi en cours...",
     collaboratorsClose: "Fermer",

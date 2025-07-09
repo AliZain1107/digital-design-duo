@@ -8,7 +8,11 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "health-check": "node scripts/url-health-check.js",
+    "fix-canonical-urls": "node scripts/fix-canonical-urls.js",
+    "prebuild": "npm run generate-sitemap"
   },
   "dependencies": {
     "@fontsource/baloo-2": "^5.2.5",

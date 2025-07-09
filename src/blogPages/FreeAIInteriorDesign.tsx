@@ -21,8 +21,8 @@ const FreeAIInteriorDesign: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/logiciel-gratuit-design-interieur-ia"
-    : "https://styly.io/en/blog/free-ai-interior-design-software";
+    ? "https://www.styly.fr/fr/blog/logiciel-gratuit-design-interieur-ia"
+    : "https://www.styly.fr/en/blog/free-ai-interior-design-software";
 
   return (
     <>
@@ -151,7 +151,7 @@ const FreeAIInteriorDesign: React.FC = () => {
           {/* Middle Image */}
           <div className="w-full">
             <img
-              src="/ai-room-design-free.webp"
+              src="/ai-interior-design-small-space-free.webp"
               alt={t.freeAIDesignBenefits}
               className="w-full h-auto rounded-lg shadow-md"
             />
@@ -199,7 +199,7 @@ const FreeAIInteriorDesign: React.FC = () => {
           {/* Room Decorator Image */}
           <div className="w-full">
             <img
-              src="/ai-room-decorator.webp"
+              src="/ai-redecorate-feature-results.webp"
               alt={t.freeAIDesignRoomDecorator}
               className="w-full h-auto rounded-lg shadow-md"
             />

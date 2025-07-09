@@ -22,12 +22,12 @@ const ImpactAIInteriorDesigner: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/impact-ia-role-designer-interieur"
-    : "https://styly.io/en/blog/impact-ai-role-interior-designer";
+    ? "https://www.styly.fr/fr/blog/impact-ia-role-designer-interieur"
+    : "https://www.styly.fr/en/blog/impact-ai-role-interior-designer";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/impact-ai-role-interior-designer",
-    fr: "https://styly.io/fr/blog/impact-ia-role-designer-interieur"
+    en: "https://www.styly.fr/en/blog/impact-ai-role-interior-designer",
+    fr: "https://www.styly.fr/fr/blog/impact-ia-role-designer-interieur"
   };
 
   return (

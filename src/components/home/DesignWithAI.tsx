@@ -7,12 +7,7 @@ const DesignWithAI: React.FC = () => {
   const [activePage, setActivePage] = useState(0);
   const [autoSlide, setAutoSlide] = useState(true);
   
-  // Debug logs to verify language and translations
-  console.log("Current language in DesignWithAI:", language);
-  console.log("Design section translations:", {
-    designExcellence: t.designExcellence,
-    explore: t.explore
-  });
+
 
   const marketSegments = [
     {

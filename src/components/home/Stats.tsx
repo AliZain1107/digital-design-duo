@@ -119,16 +119,18 @@ const Stats: React.FC = () => {
                     : "Be part of the creators transforming the design industry."
                   }
                 </p>
-                <Link
-                  to={language === 'fr' ? '/fr/collaborateurs' : '/en/collaborateurs'}
-                  className="inline-block bg-white text-[#593286] font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-xl hover:bg-orange-500 hover:text-white transition-all duration-300 hover:scale-105 font-baloo animate-cta-pulse min-h-[44px] min-w-[44px]"
+                <a
+                  href="https://app.styly.io/signin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white text-[#593286] font-bold text-lg px-10 py-4 rounded-full shadow-xl hover:bg-orange-500 hover:text-white transition-all duration-300 hover:scale-105 font-baloo"
                   aria-label={language === "fr" ? "Rejoindre la communauté Styly AI" : "Join the Styly AI community"}
                 >
                   {language === "fr"
                     ? "Rejoindre Maintenant"
                     : "Join Now"
                   }
-                </Link>
+                </a>
               </div>
             </div>
           </div>

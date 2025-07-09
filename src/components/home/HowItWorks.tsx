@@ -164,34 +164,41 @@ const HowItWorks: React.FC = () => {
 
         {/* CTA Section after How It Works */}
         <div className="text-center mt-16 pt-12 border-t border-gray-200">
-          <h3 className="text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 mb-4 text-center">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-baloo">
             {language === "fr"
               ? "Prêt à Essayer ?"
               : "Ready to Try It?"
             }
           </h3>
-          <p className="text-base sm:text-lg md:text-xl font-baloo font-normal leading-snug text-gray-600 tracking-wide max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto font-baloo">
             {language === "fr"
               ? "Découvrez la puissance de l'IA pour transformer vos espaces en quelques clics."
-              : <>Experience the power of <span className="font-davetica-wide bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">STYLY</span> to transform your spaces in just a few clicks.</>}
+              : "Experience the power of AI to transform your spaces in just a few clicks."
+            }
           </p>
-          <div className="flex flex-col items-center mt-10 pb-10">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="https://app.styly.io/signin"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-purple-600 to-purple-700 text-white font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg border border-transparent transition-all duration-200 hover:scale-105 hover:-translate-y-1 animate-cta-pulse group min-h-[44px] min-w-[44px]"
-              aria-label={language === "fr" ? "Essayer Styly AI maintenant" : "Start Free Trial"}
+              className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo relative z-10"
+              aria-label={language === "fr" ? "Essayer Styly AI maintenant" : "Try Styly AI now"}
             >
               {language === "fr"
                 ? "Essayer Maintenant"
-                : <span className="transition-all duration-300 group-hover:drop-shadow-[0_0_12px_white]">Try It Now</span>
+                : "Try It Now"
               }
             </a>
-            <ul className="mt-4 flex flex-col sm:flex-row gap-2 sm:gap-6 text-sm text-gray-500 font-baloo items-center justify-center">
-              <li className="flex items-center gap-1"><span className="text-green-500">✓</span> No credit card needed</li>
-              <li className="flex items-center gap-1"><span className="text-green-500">✓</span> Instant results</li>
-            </ul>
+            <a
+              href="/blog"
+              className="border-2 border-[#593286] text-[#593286] bg-white font-semibold text-lg px-8 py-4 rounded-full hover:bg-[#593286] hover:text-white transition-all duration-300 font-baloo relative z-10"
+              aria-label={language === "fr" ? "Voir des exemples de designs" : "See design examples"}
+            >
+              {language === "fr"
+                ? "Voir des Exemples"
+                : "Watch Demo"
+              }
+            </a>
           </div>
           <div className="mt-4">
             <span className="text-sm text-gray-500 font-baloo">

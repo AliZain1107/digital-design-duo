@@ -22,12 +22,12 @@ const BiophilicDesignAI: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/creation-designs-interieur-biophiliques-ia-styly"
-    : "https://styly.io/en/blog/creating-biophilic-interior-designs-styly-ai";
+    ? "https://www.styly.fr/blog/creation-designs-interieur-biophiliques-ia-styly"
+    : "https://www.styly.fr/en/blog/creating-biophilic-interior-designs-styly-ai";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/creating-biophilic-interior-designs-styly-ai",
-    fr: "https://styly.io/fr/blog/creation-designs-interieur-biophiliques-ia-styly"
+    en: "https://www.styly.fr/en/blog/creating-biophilic-interior-designs-styly-ai",
+    fr: "https://www.styly.fr/blog/creation-designs-interieur-biophiliques-ia-styly"
   };
 
   return (

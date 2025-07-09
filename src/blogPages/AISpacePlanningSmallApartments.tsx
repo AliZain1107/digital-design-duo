@@ -22,12 +22,12 @@ const AISpacePlanningSmallApartments: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/exploiter-ia-optimiser-planification-espace-petits-appartements"
-    : "https://styly.io/en/blog/leveraging-ai-to-optimize-space-planning-in-small-apartments";
+    ? "https://www.styly.fr/fr/blog/ia-optimisation-planification-espace-petits-appartements"
+    : "https://www.styly.fr/en/blog/ai-space-planning-optimization-small-apartments";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/leveraging-ai-to-optimize-space-planning-in-small-apartments",
-    fr: "https://styly.io/fr/blog/exploiter-ia-optimiser-planification-espace-petits-appartements"
+    en: "https://www.styly.fr/en/blog/ai-space-planning-optimization-small-apartments",
+    fr: "https://www.styly.fr/fr/blog/ia-optimisation-planification-espace-petits-appartements"
   };
 
   return (

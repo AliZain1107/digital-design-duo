@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY"
-              className="h-10 sm:h-12 md:h-14 w-auto"
+              className="h-7 sm:h-8 w-auto"
             />
           </Link>
         </div>
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
         </button>
 
         {/* Desktop Navigation - Premium spacing */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8 flex-shrink-0">
+        <nav className="hidden md:flex items-center gap-8 flex-shrink-0">
         {/* Pricing Button */}
         <a
           href="https://app.styly.io/pricing"
@@ -107,7 +107,7 @@ const Navbar: React.FC = () => {
               href="https://app.styly.io/signin"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center py-2.5 px-4 lg:px-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold text-sm lg:text-base transition-all duration-200 hover:from-orange-600 hover:to-orange-700 hover:shadow-md rounded-lg whitespace-nowrap tracking-wide active:scale-95 min-h-[44px] min-w-[44px]"
+              className="flex items-center justify-center py-2.5 px-4 lg:px-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold text-sm lg:text-base transition-all duration-200 hover:from-orange-600 hover:to-orange-700 hover:shadow-md rounded-lg whitespace-nowrap tracking-wide active:scale-95"
               aria-label="Sign In to STYLY AI"
             >
               {t.signIn}
@@ -118,7 +118,7 @@ const Navbar: React.FC = () => {
           <div className="ml-3 lg:ml-4">
             <DropdownMenu>
               <DropdownMenuTrigger
-                className="flex items-center gap-1 justify-center py-2.5 px-3 transition-all duration-200 hover:bg-gray-50 rounded-lg outline-none border-none min-w-[44px] min-h-[44px] active:scale-95"
+                className="flex items-center gap-1 justify-center py-2.5 px-3 transition-all duration-200 hover:bg-gray-50 rounded-lg outline-none border-none min-w-[44px] active:scale-95"
               >
                 <span className="text-sm">
                   {language === "en" ? "🇬🇧" : "🇫🇷"}

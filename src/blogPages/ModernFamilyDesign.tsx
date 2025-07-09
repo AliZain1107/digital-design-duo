@@ -22,12 +22,12 @@ const ModernFamilyDesign: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://styly.io/fr/blog/design-famille-moderne-ia-maisons-fonctionnelles"
-    : "https://styly.io/en/blog/modern-family-design-ai-functional-homes";
+    ? "https://www.styly.fr/fr/blog/design-famille-moderne-ia-maisons-fonctionnelles"
+    : "https://www.styly.fr/en/blog/modern-family-design-ai-functional-homes";
 
   const alternateUrls = {
-    en: "https://styly.io/en/blog/modern-family-design-ai-functional-homes",
-    fr: "https://styly.io/fr/blog/design-famille-moderne-ia-maisons-fonctionnelles"
+    en: "https://www.styly.fr/en/blog/modern-family-design-ai-functional-homes",
+    fr: "https://www.styly.fr/fr/blog/design-famille-moderne-ia-maisons-fonctionnelles"
   };
 
   return (
