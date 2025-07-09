@@ -75,6 +75,11 @@ export default {
           purple: '#4120A9',
           orange: '#FA6F40',
           lavender: '#D6D8FF',
+        },
+        // Brand colors for imported components
+        brand: {
+          orange: "#F97316",
+          purple: "#8B5CF6",
         }
       },
       fontFamily: {
@@ -113,6 +118,10 @@ export default {
         'marquee-right': {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0)' }
+        },
+        shine: {
+          "0%": { transform: "translateX(-100%) skewX(-20deg)" },
+          "100%": { transform: "translateX(200%) skewX(-20deg)" },
         }
       },
       animation: {
@@ -121,7 +130,8 @@ export default {
         'marquee': 'marquee 20s linear infinite',
         'showcase': 'showcase 30s linear infinite',
         'marquee-left': 'marquee-left 25s linear infinite',
-        'marquee-right': 'marquee-right 25s linear infinite'
+        'marquee-right': 'marquee-right 25s linear infinite',
+        shine: "shine 3s ease-in-out infinite"
       }
     }
   },
