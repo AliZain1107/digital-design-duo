@@ -9,13 +9,14 @@ import { AnimatePresence, motion } from "framer-motion"
 import ArtisticLoader from "./artistic-loader"
 import { cn } from "@/lib/utils"
 import { useLanguage } from "@/lib/i18n"
+import { InteriorRevealVideo } from "@/components/InteriorRevealVideo"
 
 type StagingModalProps = {
   isOpen: boolean
   onOpenChange: Dispatch<SetStateAction<boolean>>
 }
 
-type Step = "upload" | "loading" | "reveal" | "limit-reached"
+type Step = "upload" | "loading" | "reveal" | "video-complete" | "limit-reached"
 
 // API configuration
 const API_URL = import.meta.env.VITE_STYLY_API_URL || "https://api.styly.io"
@@ -503,17 +504,28 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
               </div>
             )}
 
-            {step === "reveal" && generatedImageUrl && (
+            {step === "reveal" && generatedImageUrl && imageUrl && (
+              <div className="w-full h-full">
+                <InteriorRevealVideo
+                  beforeImage={imageUrl}
+                  afterImage={generatedImageUrl}
+                  roomType={roomType}
+                  style={style}
+                  onVideoEnd={() => setStep("video-complete")}
+                />
+              </div>
+            )}
+
+            {step === "video-complete" && generatedImageUrl && (
               <div className="w-full h-full flex items-center justify-center p-4">
                 <div className="relative w-full h-full">
                   <motion.img
-                    layoutId="uploaded-image"
                     src={generatedImageUrl}
                     alt="Generated interior design"
                     className="w-full h-full object-cover rounded-2xl"
-                    initial={{ scale: 0.95, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    transition={{ duration: 0.6, ease: "circOut" }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
                   />
                   
                   {processingTime && (
