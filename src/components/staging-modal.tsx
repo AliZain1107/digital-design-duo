@@ -172,13 +172,22 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
       // Convert image to base64
       const base64Image = await fileToBase64(image)
 
+      // Room-specific positive prompts
+      const roomPrompts: Record<string, string> = {
+        "living room": "beautiful modern interior design, comfortable sofa, coffee table, area rug, accent chair, canvas painting on the wall, potted plant, floor lamp, throw pillows, side table",
+        "bedroom": "beautiful modern interior design, comfortable bed, nightstands, area rug, canvas painting on the wall, dresser, table lamps, window curtains, decorative pillows",
+        "kitchen": "beautiful modern interior design, kitchen island, bar stools, pendant lights, stainless steel appliances, backsplash, wooden cabinets, countertops, potted herbs",
+        "bathroom": "beautiful modern interior design, vanity with sink, mirror, towel rack, bath mat, shower curtain or glass door, wall art, storage cabinet, decorative plants",
+        "dining room": "beautiful modern interior design, dining table, dining chairs, chandelier or pendant light, area rug, sideboard or buffet, wall art, centerpiece, window treatments"
+      }
+
       // Prepare API request
       const requestBody = {
         base64_image: base64Image,
         room_type: roomType,
         style: style,
         color_theme: colorTheme,
-        positive: "high quality, professional staging, beautiful furniture, well-lit, inviting atmosphere"
+        positive: roomPrompts[roomType] || "high quality, professional staging, beautiful furniture, well-lit, inviting atmosphere"
       }
 
       // Make async API call
