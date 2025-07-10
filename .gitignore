@@ -28,3 +28,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Project specific
+AGENTIC_DEVELOPER_SYSTEM_PROMPT.md
+APPLE_LIQUID_GLASS_DESIGN_SYSTEM.md
+LIQUID_GLASS_DESIGN_PRINCIPLES.md
+liquid-glass-demo.html
+interior-staging-hero_black_white/
+interior-staging-hero_orange_creative/

@@ -49,9 +49,11 @@ export const InteriorRevealVideo: React.FC<InteriorRevealVideoProps> = ({
           autoPlay={isPlaying}
           showVolumeControls={false}
           onEnded={() => {
+            console.log('[InteriorRevealVideo] Video ended, triggering onVideoEnd callback');
             setIsPlaying(false);
             setHasEnded(true);
             setTimeout(() => {
+              console.log('[InteriorRevealVideo] Calling onVideoEnd after 1 second delay');
               onVideoEnd?.();
             }, 1000); // Keep final frame visible for 1 second before transitioning
           }}

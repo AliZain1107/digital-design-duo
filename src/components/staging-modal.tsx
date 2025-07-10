@@ -46,10 +46,18 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
   // Check generation limit on mount
   useEffect(() => {
     const count = localStorage.getItem(GENERATION_COUNT_KEY)
+    console.log('[Mount] Generation count from localStorage:', count, 'Limit:', GENERATION_LIMIT)
     if (count && parseInt(count) >= GENERATION_LIMIT) {
+      console.log('[Mount] Setting step to limit-reached')
       setStep("limit-reached")
     }
   }, [])
+
+  // Debug step changes
+  useEffect(() => {
+    console.log('[Step Change] New step:', step)
+    console.log('[Step Change] Current localStorage count:', localStorage.getItem(GENERATION_COUNT_KEY))
+  }, [step])
 
   // Auto-transition to reveal when generation completes if user already submitted
   useEffect(() => {
@@ -227,7 +235,9 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
         setGeneratedImageUrl(imageUrl)
         
         // Update generation count
-        localStorage.setItem(GENERATION_COUNT_KEY, String(currentCount + 1))
+        const newCount = currentCount + 1
+        localStorage.setItem(GENERATION_COUNT_KEY, String(newCount))
+        console.log('[Generate] Updated generation count:', newCount, 'Limit:', GENERATION_LIMIT)
         
         // Mark generation as complete but stay in loading step
         setIsGenerationComplete(true)
@@ -275,12 +285,17 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
   }
 
   const handleOpenChange = (open: boolean) => {
+    console.log('[handleOpenChange] Dialog open:', open)
     if (!open) {
       // Check if limit reached before resetting
       const count = localStorage.getItem(GENERATION_COUNT_KEY)
-      if (count && parseInt(count) >= GENERATION_LIMIT) {
+      const parsedCount = count ? parseInt(count) : 0
+      console.log('[handleOpenChange] Generation count:', count, 'Parsed:', parsedCount, 'Limit:', GENERATION_LIMIT)
+      if (parsedCount >= GENERATION_LIMIT) {
+        console.log('[handleOpenChange] Keeping step as limit-reached')
         setStep("limit-reached")
       } else {
+        console.log('[handleOpenChange] Resetting state')
         resetState()
       }
     }
@@ -300,6 +315,7 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
             exit={{ opacity: 0, filter: "blur(4px)" }}
             transition={{ duration: 0.5, ease: "circOut" }}
             className="w-full h-full"
+            onAnimationComplete={() => console.log('[AnimatePresence] Animation complete for step:', step)}
           >
             {step === "upload" && (
               <div className="flex flex-col md:flex-row h-full">
@@ -587,15 +603,17 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
                   onVideoEnd={() => {
                     // Check generation count to determine next step
                     const count = localStorage.getItem(GENERATION_COUNT_KEY)
-                    console.log('Video ended. Generation count:', count, 'Limit:', GENERATION_LIMIT, 'isSubmitted:', isSubmitted)
+                    const parsedCount = count ? parseInt(count) : 0
+                    console.log('[onVideoEnd] Generation count:', count, 'Parsed:', parsedCount, 'Limit:', GENERATION_LIMIT, 'isSubmitted:', isSubmitted)
+                    console.log('[onVideoEnd] Current step:', step)
                     
                     // If they've reached their generation limit, always show CTA
-                    if (count && parseInt(count) >= GENERATION_LIMIT) {
-                      console.log('Showing limit-reached CTA')
+                    if (parsedCount >= GENERATION_LIMIT) {
+                      console.log('[onVideoEnd] Count >= Limit, showing limit-reached CTA')
                       setStep("limit-reached")
                     } else {
                       // Otherwise show video-complete
-                      console.log('Showing video-complete')
+                      console.log('[onVideoEnd] Count < Limit, showing video-complete')
                       setStep("video-complete")
                     }
                   }}
