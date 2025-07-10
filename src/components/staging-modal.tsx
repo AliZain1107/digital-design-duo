@@ -10,6 +10,7 @@ import ArtisticLoader from "./artistic-loader"
 import { cn } from "@/lib/utils"
 import { useLanguage } from "@/lib/i18n"
 import { InteriorRevealVideo } from "@/components/InteriorRevealVideo"
+import { sendUserGenerationEmail } from "@/services/email.service"
 
 type StagingModalProps = {
   isOpen: boolean
@@ -257,11 +258,26 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
     }
   }
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (name && email) {
       setIsSubmitted(true)
-      // Here you could send the email/name to your backend
+      
+      // Send email notification
+      try {
+        await sendUserGenerationEmail({
+          name,
+          email,
+          roomType,
+          style,
+          colorTheme,
+          generatedAt: new Date().toISOString(),
+          language
+        })
+        console.log('[StagingModal] Email notification sent successfully')
+      } catch (error) {
+        console.error('[StagingModal] Failed to send email notification:', error)
+      }
       
       // If generation is complete, proceed to reveal
       if (isGenerationComplete && generatedImageUrl && imageUrl) {
