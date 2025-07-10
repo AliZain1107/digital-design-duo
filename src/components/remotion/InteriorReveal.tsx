@@ -34,6 +34,7 @@ export const InteriorReveal: React.FC<InteriorRevealProps> = ({
   const revealStart = fps * 6;
   const revealEnd = fps * 8;
   const finalStart = fps * 8;
+  const finalEnd = fps * 15; // Extended to 15 seconds total
 
   // Intro animations
   const logoScale = spring({
@@ -84,11 +85,13 @@ export const InteriorReveal: React.FC<InteriorRevealProps> = ({
     durationInFrames: 30,
   });
 
+  // Looping shimmer effect
+  const shimmerDuration = fps * 3; // 3 seconds per loop
+  const shimmerProgress = ((frame - finalStart) % shimmerDuration) / shimmerDuration;
   const shimmerX = interpolate(
-    frame,
-    [finalStart, fps * 10],
-    [-100, 200],
-    { extrapolateRight: 'clamp' }
+    shimmerProgress,
+    [0, 1],
+    [-100, 200]
   );
 
   return (
@@ -229,8 +232,8 @@ export const InteriorReveal: React.FC<InteriorRevealProps> = ({
         </AbsoluteFill>
       </Sequence>
 
-      {/* Final Reveal Sequence */}
-      <Sequence from={revealStart}>
+      {/* Final Reveal Sequence - No end frame, stays visible */}
+      <Sequence from={revealStart} durationInFrames={Infinity}>
         <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
           <div
             style={{

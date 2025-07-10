@@ -41,6 +41,7 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
   const [error, setError] = useState<string | null>(null)
   const [processingTime, setProcessingTime] = useState<number | null>(null)
   const [jobId, setJobId] = useState<string | null>(null)
+  const [isGenerationComplete, setIsGenerationComplete] = useState(false)
 
   // Check generation limit on mount
   useEffect(() => {
@@ -49,6 +50,13 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
       setStep("limit-reached")
     }
   }, [])
+
+  // Auto-transition to reveal when generation completes if user already submitted
+  useEffect(() => {
+    if (isGenerationComplete && isSubmitted && generatedImageUrl && imageUrl && step === "loading") {
+      setStep("reveal")
+    }
+  }, [isGenerationComplete, isSubmitted, generatedImageUrl, imageUrl, step])
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -221,7 +229,8 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
         // Update generation count
         localStorage.setItem(GENERATION_COUNT_KEY, String(currentCount + 1))
         
-        setStep("reveal")
+        // Mark generation as complete but stay in loading step
+        setIsGenerationComplete(true)
       } else {
         throw new Error('No job ID received')
       }
@@ -241,6 +250,13 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
     if (name && email) {
       setIsSubmitted(true)
       // Here you could send the email/name to your backend
+      
+      // If generation is complete, proceed to reveal
+      if (isGenerationComplete && generatedImageUrl && imageUrl) {
+        setStep("reveal")
+      }
+      // If generation is not complete yet, the form submission is recorded
+      // and we'll automatically proceed when generation completes
     }
   }
 
@@ -255,6 +271,7 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
     setGeneratedImageUrl(null)
     setJobId(null)
     setProcessingTime(null)
+    setIsGenerationComplete(false)
   }
 
   const handleOpenChange = (open: boolean) => {
@@ -458,15 +475,44 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
 
             {step === "loading" && (
               <div className="w-full h-full flex flex-col items-center justify-center p-8">
-                <ArtisticLoader color="bg-brand-purple" />
-                <h3 className="text-2xl font-semibold mt-8 text-gray-900">
-                  {language === 'fr' ? 'Création de votre vision...' : 'Crafting your vision...'}
-                </h3>
-                <p className="text-gray-600 mt-2 mb-8 max-w-md text-center">
-                  {language === 'fr' 
-                    ? "Les meilleures choses prennent du temps. Entrez vos coordonnées pour être notifié lorsque votre nouvel espace sera prêt."
-                    : "The best things take time. Enter your details to be notified when your new space is ready."}
-                </p>
+                {!isGenerationComplete && <ArtisticLoader color="bg-brand-purple" />}
+                {isGenerationComplete && (
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ type: "spring", duration: 0.5 }}
+                    className="p-4 bg-green-100 rounded-full mb-8"
+                  >
+                    <CheckCircle size={48} className="text-green-600" />
+                  </motion.div>
+                )}
+                <motion.h3 
+                  key={isGenerationComplete ? "ready" : "loading"}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="text-2xl font-semibold mt-8 text-gray-900"
+                >
+                  {isGenerationComplete
+                    ? (language === 'fr' ? 'Votre design est prêt!' : 'Your design is ready!')
+                    : (language === 'fr' ? 'Création de votre vision...' : 'Crafting your vision...')
+                  }
+                </motion.h3>
+                <motion.p 
+                  key={isGenerationComplete ? "unlock" : "wait"}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                  className="text-gray-600 mt-2 mb-8 max-w-md text-center"
+                >
+                  {isGenerationComplete
+                    ? (language === 'fr' 
+                        ? "Remplissez le formulaire ci-dessous pour débloquer et voir votre nouvel espace transformé."
+                        : "Fill in the form below to unlock and view your transformed space.")
+                    : (language === 'fr' 
+                        ? "Les meilleures choses prennent du temps. Entrez vos coordonnées pour être notifié lorsque votre nouvel espace sera prêt."
+                        : "The best things take time. Enter your details to be notified when your new space is ready.")
+                  }
+                </motion.p>
                 <form onSubmit={handleFormSubmit} className="w-full max-w-sm space-y-4">
                   <div className="relative">
                     <User className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
@@ -490,11 +536,38 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
                   </div>
                   <Button
                     type="submit"
-                    className="w-full h-12 bg-brand-orange text-white font-semibold hover:bg-brand-orange/90 rounded-full"
+                    className="w-full h-12 bg-brand-orange text-white font-semibold hover:bg-brand-orange/90 rounded-full disabled:opacity-50"
+                    disabled={!name || !email || isSubmitted}
                   >
-                    {language === 'fr' ? 'Me notifier et débloquer' : 'Notify Me & Unlock'}
+                    {isSubmitted 
+                      ? (
+                        <span className="flex items-center justify-center gap-2">
+                          <CheckCircle size={20} />
+                          {isGenerationComplete 
+                            ? (language === 'fr' ? 'Préparation...' : 'Preparing...')
+                            : (language === 'fr' ? 'Enregistré! En attente...' : 'Saved! Waiting...')
+                          }
+                        </span>
+                      )
+                      : isGenerationComplete 
+                        ? (language === 'fr' ? 'Débloquer la vidéo' : 'Unlock Video')
+                        : (language === 'fr' ? 'Me notifier et débloquer' : 'Notify Me & Unlock')
+                    }
                   </Button>
                 </form>
+                
+                {isSubmitted && !isGenerationComplete && (
+                  <motion.p 
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-sm text-green-600 mt-4 flex items-center gap-2"
+                  >
+                    <CheckCircle size={16} />
+                    {language === 'fr' 
+                      ? "Informations enregistrées! La vidéo se lancera automatiquement."
+                      : "Information saved! Video will start automatically."}
+                  </motion.p>
+                )}
                 
                 {jobId && (
                   <p className="text-xs text-gray-400 mt-4">
@@ -511,7 +584,21 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
                   afterImage={generatedImageUrl}
                   roomType={roomType}
                   style={style}
-                  onVideoEnd={() => setStep("video-complete")}
+                  onVideoEnd={() => {
+                    // Check generation count to determine next step
+                    const count = localStorage.getItem(GENERATION_COUNT_KEY)
+                    console.log('Video ended. Generation count:', count, 'Limit:', GENERATION_LIMIT, 'isSubmitted:', isSubmitted)
+                    
+                    // If they've reached their generation limit, always show CTA
+                    if (count && parseInt(count) >= GENERATION_LIMIT) {
+                      console.log('Showing limit-reached CTA')
+                      setStep("limit-reached")
+                    } else {
+                      // Otherwise show video-complete
+                      console.log('Showing video-complete')
+                      setStep("video-complete")
+                    }
+                  }}
                 />
               </div>
             )}
