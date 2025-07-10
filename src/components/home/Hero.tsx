@@ -208,7 +208,7 @@ const Hero: React.FC = () => {
               }
             </button>
               <a
-                href="/contact"
+                href="mailto:contact@styly.io?subject=Styly%20Design%20Inquiry"
               className="border-2 border-purple-700 bg-white text-purple-700 font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 hover:-translate-y-1 font-baloo relative z-10 min-h-[44px] min-w-[44px] flex items-center justify-center"
               aria-label={language === "fr" ? "Contactez-nous" : "Contact Us"}
             >
