@@ -62,6 +62,7 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
   // Auto-transition to reveal when generation completes if user already submitted
   useEffect(() => {
     if (isGenerationComplete && isSubmitted && generatedImageUrl && imageUrl && step === "loading") {
+      console.log('[StagingModal] Auto-transitioning to reveal (generation complete + form submitted)')
       setStep("reveal")
     }
   }, [isGenerationComplete, isSubmitted, generatedImageUrl, imageUrl, step])
@@ -240,6 +241,7 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
         console.log('[Generate] Updated generation count:', newCount, 'Limit:', GENERATION_LIMIT)
         
         // Mark generation as complete but stay in loading step
+        console.log('[StagingModal] Generation complete, waiting for form submission')
         setIsGenerationComplete(true)
       } else {
         throw new Error('No job ID received')
@@ -263,7 +265,10 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
       
       // If generation is complete, proceed to reveal
       if (isGenerationComplete && generatedImageUrl && imageUrl) {
+        console.log('[StagingModal] Form submitted with generation complete, transitioning to reveal')
         setStep("reveal")
+      } else {
+        console.log('[StagingModal] Form submitted but generation not complete yet')
       }
       // If generation is not complete yet, the form submission is recorded
       // and we'll automatically proceed when generation completes
@@ -601,19 +606,21 @@ export default function StagingModal({ isOpen, onOpenChange }: StagingModalProps
                   roomType={roomType}
                   style={style}
                   onVideoEnd={() => {
+                    console.log('[onVideoEnd] Called - Starting transition logic')
                     // Check generation count to determine next step
                     const count = localStorage.getItem(GENERATION_COUNT_KEY)
                     const parsedCount = count ? parseInt(count) : 0
                     console.log('[onVideoEnd] Generation count:', count, 'Parsed:', parsedCount, 'Limit:', GENERATION_LIMIT, 'isSubmitted:', isSubmitted)
                     console.log('[onVideoEnd] Current step:', step)
+                    console.log('[onVideoEnd] generatedImageUrl exists:', !!generatedImageUrl)
                     
                     // If they've reached their generation limit, always show CTA
                     if (parsedCount >= GENERATION_LIMIT) {
-                      console.log('[onVideoEnd] Count >= Limit, showing limit-reached CTA')
+                      console.log('[onVideoEnd] Count >= Limit, setting step to limit-reached')
                       setStep("limit-reached")
                     } else {
                       // Otherwise show video-complete
-                      console.log('[onVideoEnd] Count < Limit, showing video-complete')
+                      console.log('[onVideoEnd] Count < Limit, setting step to video-complete')
                       setStep("video-complete")
                     }
                   }}

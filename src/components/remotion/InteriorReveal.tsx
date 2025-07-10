@@ -232,8 +232,8 @@ export const InteriorReveal: React.FC<InteriorRevealProps> = ({
         </AbsoluteFill>
       </Sequence>
 
-      {/* Final Reveal Sequence - No end frame, stays visible */}
-      <Sequence from={revealStart} durationInFrames={Infinity}>
+      {/* Final Reveal Sequence */}
+      <Sequence from={revealStart} durationInFrames={450 - revealStart}>
         <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
           <div
             style={{
