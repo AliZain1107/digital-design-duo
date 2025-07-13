@@ -210,9 +210,10 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
 
 interface BlogSectionProps {
   maxPosts?: number; // Optional prop to limit number of posts shown
+  variant?: 'default' | 'blog-page'; // New prop to control styling variant
 }
 
-const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts }) => {
+const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts, variant = 'default' }) => {
   const { t, language } = useLanguage();
 
   // Function to parse date string and convert to Date object for sorting
@@ -229,14 +230,26 @@ const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts }) => {
   const displayedBlogPosts = maxPosts ? sortedBlogPosts.slice(0, maxPosts) : sortedBlogPosts;
 
   return (
-    <section className="relative pt-0 pb-0 bg-white overflow-hidden -mt-2" key={`blog-section-${language}`}> 
+    <section className="relative pt-32 pb-0 bg-white overflow-hidden -mt-2" key={`blog-section-${language}`}> 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Premium Header - match AgencyShowcase */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 mb-4 text-center font-baloo">
-            <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
-              {t.blogTrends}
-            </span>
+          <h2 className={`mb-4 text-center ${
+            variant === 'blog-page' 
+              ? 'text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900' // Styly Pro hero style
+              : 'text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 font-baloo' // Default style
+          }`}>
+            {variant === 'blog-page' ? (
+              // Blog page variant - no gradient animation, solid text
+              <span className="text-gray-900">
+                {t.blogTrends}
+              </span>
+            ) : (
+              // Default variant - with gradient animation
+              <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
+                {t.blogTrends}
+              </span>
+            )}
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-baloo">
             {t.blogDescription}

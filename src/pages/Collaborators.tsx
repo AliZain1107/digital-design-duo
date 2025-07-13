@@ -130,7 +130,7 @@ const Collaborators: React.FC = () => {
       <Navbar />
 
       {/* Hero Section - Styly Pro Launchpad Style */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-20 pt-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">

@@ -14,12 +14,6 @@ const BlogPostPage: React.FC = () => {
   // Determine language from route for finding the correct post
   const isEnglishRoute = location.pathname.startsWith("/en/blog");
 
-  // Remove URL-based language routing - use global language state instead
-  useEffect(() => {
-    // This effect can be used for any side effects when route changes
-    // Currently just ensuring the component re-renders when needed
-  }, [location.pathname, slug]);
-
   // Scroll to top when component mounts, slug changes, or language changes
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -70,27 +64,21 @@ const BlogPostPage: React.FC = () => {
   const seoDescription = `${post.title} - Styly.fr blog post.`;
 
   return (
-    <LanguageContext.Provider value={{
-      language,
-      setLanguage: () => {},
-      t: translations[language]
-    }}>
-      <div>
-        <SEO
-          title={seoTitle}
-          description={seoDescription}
-          ogUrl={canonicalUrl}
-          language={language}
-          alternateUrls={alternateUrls}
-          ogImage={post.image}
-        />
-        <Navbar />
-        <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-10">
-          <post.Component />
-        </div>
-        <Footer />
+    <div key={`blog-post-${language}-${slug}`}>
+      <SEO
+        title={seoTitle}
+        description={seoDescription}
+        ogUrl={canonicalUrl}
+        language={language}
+        alternateUrls={alternateUrls}
+        ogImage={post.image}
+      />
+      <Navbar />
+      <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-10 pt-20">
+        <post.Component />
       </div>
-    </LanguageContext.Provider>
+      <Footer />
+    </div>
   );
 };
 

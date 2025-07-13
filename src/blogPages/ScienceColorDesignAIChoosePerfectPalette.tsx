@@ -16,7 +16,7 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
 
   if (language === "fr") {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
         <Helmet>
           <title>La Science de la Couleur en Design : Comment l'IA Vous Aide à Choisir la Palette Parfaite | Styly.fr</title>
           <meta name="description" content="Découvrez la psychologie des couleurs et comment l'IA Styly révolutionne la sélection de palettes pour le design intérieur et extérieur. Guide complet couleurs design." />
@@ -32,14 +32,14 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
         </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              La Science de la Couleur en Design : Comment l'IA Vous Aide à Choisir la Palette Parfaite
+            </h1>
             <div className="text-sm text-gray-500 mb-2">
               <time dateTime="2025-06-28">28 juin 2025</time>
               <span className="mx-2">•</span>
               <span>Science Couleur & IA Design</span>
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              La Science de la Couleur en Design : Comment l'IA Vous Aide à Choisir la Palette Parfaite
-            </h1>
             <img
               src="/Blogpages/mini_magick20250608-11056-cx50sk (1).jpg"
               alt="Science couleur design IA - Styly AI pour sélection palette parfaite intérieur extérieur"
@@ -182,7 +182,7 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
 
   // English version
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
         <title>The Science of Color in Design: How AI Helps You Choose the Perfect Palette | Styly.fr</title>
         <meta name="description" content="Discover color psychology and how Styly AI revolutionizes palette selection for interior and exterior design. Complete guide to color design science." />
@@ -198,14 +198,14 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
       </Helmet>
       <article className="prose prose-lg max-w-none">
         <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            The Science of Color in Design: How AI Helps You Choose the Perfect Palette
+          </h1>
           <div className="text-sm text-gray-500 mb-2">
             <time dateTime="2025-06-28">June 28, 2025</time>
             <span className="mx-2">•</span>
             <span>Color Science & AI Design</span>
           </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            The Science of Color in Design: How AI Helps You Choose the Perfect Palette
-          </h1>
           <img
             src="/Blogpages/mini_magick20250608-11056-cx50sk (1).jpg"
             alt="Color science AI design - Styly AI for perfect palette selection interior exterior"
@@ -225,7 +225,7 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
             <img
-              src="/Blogpages/mini_magick20250608-11056-exfils.jpg"
+              src="https://unsplash.com/photos/4_jQL4JCS98/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUyNDM5OTE4fA&force=true"
               alt="AI color palette - Styly tools for modern design harmony"
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
@@ -257,7 +257,7 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
           </p>
 
           <img
-            src="/Blogpages/mini_magick20250608-11056-51krvz.jpg"
+            src="https://unsplash.com/photos/BlIhVfXbi9s/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUyNDM3NDY4fA&force=true"
             alt="AI color selection - Styly AI for harmonious and modern interior design"
             className="w-full h-64 object-cover rounded-lg shadow-md my-6"
           />

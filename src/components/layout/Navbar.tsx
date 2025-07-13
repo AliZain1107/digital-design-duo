@@ -143,7 +143,7 @@ const Navbar: React.FC = () => {
               href="https://app.styly.io/signin"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center py-2.5 px-4 lg:px-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold text-sm lg:text-base transition-all duration-200 hover:from-orange-600 hover:to-orange-700 hover:shadow-md rounded-lg whitespace-nowrap tracking-wide active:scale-95"
+              className="flex items-center justify-center py-2.5 px-4 lg:px-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold text-sm lg:text-base transition-all duration-200 hover:from-orange-600 hover:to-orange-700 hover:shadow-md hover:scale-105 hover:-translate-y-1 rounded-lg whitespace-nowrap tracking-wide active:scale-95"
               aria-label="Sign In to STYLY AI"
             >
               {t.signIn}

@@ -51,7 +51,7 @@ const Top5ChallengesInteriorDesign: React.FC = () => {
         <meta property="article:tag" content="Interior Design Challenges" />
       </Helmet>
 
-      <article className="max-w-4xl mx-auto px-4 py-8">
+      <article className="max-w-4xl mx-auto px-4 py-8 pt-20">
         <div className="prose prose-lg max-w-none">
           {language === "fr" ? (
             <>

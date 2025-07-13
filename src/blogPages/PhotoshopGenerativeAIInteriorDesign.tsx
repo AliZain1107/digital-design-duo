@@ -1,34 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
 
 const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
 
-  const addAlternateLanguageLink = () => {
-    const currentSlug = language === "fr" 
-      ? "debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" 
-      : "unlock-power-photoshop-generative-ai-effortless-interior-design";
-    const alternateSlug = language === "fr" 
-      ? "unlock-power-photoshop-generative-ai-effortless-interior-design" 
-      : "debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort";
-    const alternateLang = language === "fr" ? "en" : "fr";
-    const alternateUrl = alternateLang === "en" 
-      ? `https://www.styly.fr/en/blog/${alternateSlug}`
-      : `https://www.styly.fr/blog/${alternateSlug}`;
-
-    return (
-      <link
-        rel="alternate"
-        hrefLang={alternateLang}
-        href={alternateUrl}
-      />
-    );
-  };
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (language === "fr") {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
         <Helmet>
           <title>Débloquer la Puissance de l'IA Générative Photoshop pour un Design Intérieur Sans Effort | Styly.fr</title>
           <meta name="description" content="Découvrez comment l'IA générative de Photoshop révolutionne le design intérieur avec Styly AI. Transformez textures, décoration et visualisations en un clic." />
@@ -38,19 +22,20 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
           <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11435-u1gkki.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
           <link rel="canonical" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
-          {addAlternateLanguageLink()}
+          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/unlock-power-photoshop-generative-ai-effortless-interior-design" />
+          <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
+          <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
         </Helmet>
-
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              Débloquer la Puissance de l'IA Générative de Photoshop pour un Design Intérieur Sans Effort
+            </h1>
             <div className="text-sm text-gray-500 mb-2">
               <time dateTime="2025-06-25">25 juin 2025</time>
               <span className="mx-2">•</span>
               <span>IA Design & Photoshop Innovation</span>
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Débloquer la Puissance de l'IA Générative de Photoshop pour un Design Intérieur Sans Effort
-            </h1>
             <img
               src="/mini_magick20250608-11435-u1gkki.jpg"
               alt="IA générative Photoshop design intérieur - Styly AI transformation automatique espaces"
@@ -59,19 +44,6 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
           </header>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Table des Matières</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Révolutionner le Design Intérieur avec l'IA Générative</li>
-              <li>Améliorer les Textures de Sol et de Mur</li>
-              <li>Personnaliser la Décoration et l'Ameublement</li>
-              <li>Rationaliser le Processus de Design</li>
-              <li>Communiquer les Visions de Design avec les Clients</li>
-              <li>Conclusion : L'Avenir avec Styly AI</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Révolutionner le Design Intérieur avec l'IA Générative</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Libérer tout le potentiel des capacités d'IA générative de Photoshop peut transformer votre approche du design intérieur, que vous soyez un professionnel expérimenté ou un designer aspirant. Cet ensemble de fonctionnalités puissantes vous permet d'expérimenter sans effort avec différentes textures, mobiliers et décorations.
             </p>
@@ -185,7 +157,7 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
 
   // English version
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
         <title>Unlock the Power of Photoshop's Generative AI for Effortless Interior Design | Styly.fr</title>
         <meta name="description" content="Discover how Photoshop's generative AI revolutionizes interior design with Styly AI. Transform textures, decoration, and visualizations in one click." />
@@ -195,19 +167,20 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
         <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11435-u1gkki.jpg" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/unlock-power-photoshop-generative-ai-effortless-interior-design" />
         <link rel="canonical" href="https://www.styly.fr/en/blog/unlock-power-photoshop-generative-ai-effortless-interior-design" />
-        {addAlternateLanguageLink()}
+        <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/unlock-power-photoshop-generative-ai-effortless-interior-design" />
+        <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
       </Helmet>
-
       <article className="prose prose-lg max-w-none">
         <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Unlock the Power of Photoshop's Generative AI for Effortless Interior Design
+          </h1>
           <div className="text-sm text-gray-500 mb-2">
             <time dateTime="2025-06-25">June 25, 2025</time>
             <span className="mx-2">•</span>
             <span>AI Design & Photoshop Innovation</span>
           </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Unlock the Power of Photoshop's Generative AI for Effortless Interior Design
-          </h1>
           <img
             src="/mini_magick20250608-11435-u1gkki.jpg"
             alt="Photoshop generative AI interior design - Styly AI automatic space transformation"
@@ -216,47 +189,34 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
         </header>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Table of Contents</h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Revolutionizing Interior Design with Generative AI</li>
-            <li>Enhancing Floor and Wall Textures</li>
-            <li>Personalizing Décor and Furnishings</li>
-            <li>Streamlining the Design Process</li>
-            <li>Communicating Design Visions with Clients</li>
-            <li>Conclusion: The Future with Styly AI</li>
-          </ul>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Revolutionizing Interior Design with Generative AI</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Unlocking the full potential of Photoshop's generative AI capabilities can transform your approach to interior design, whether you're a seasoned professional or an aspiring designer. This powerful suite of features allows you to effortlessly experiment with different textures, furnishings, and decorations.
+            Unlocking the full potential of Photoshop's generative AI capabilities can transform your approach to interior design, whether you're an experienced professional or an aspiring designer. This powerful suite of features allows you to effortlessly experiment with different textures, furnishings, and decorations.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Combined with <strong>Styly AI</strong>, these tools empower you to bring your creative vision to life with unprecedented speed and efficiency, creating personalized and unique designs that align perfectly with your design goals.
+            In combination with <strong>Styly AI</strong>, these tools enable you to bring your creative vision to life with unprecedented speed and efficiency, creating personalized and unique designs that perfectly align with your design objectives.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
             <img
               src="/mini_magick20250608-11806-ft42fd.jpg"
-              alt="Photoshop AI tools - Automatic texture generation interior design"
+              alt="Photoshop AI tools - Automatic texture generation for interior design"
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
             <img
               src="/mini_magick20250608-11806-jgyh50.jpg"
-              alt="Modern AI interior design - Styly AI space personalization"
+              alt="Modern AI interior design - Styly AI space customization"
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
           </div>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Enhancing Floor and Wall Textures</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Enhance Floor and Wall Textures</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            One of the remarkable capabilities of Photoshop's generative AI is its ability to effortlessly experiment with different floor and wall textures. Simply select the desired area, enter a prompt, and let the AI work its magic.
+            One of the remarkable capabilities of Photoshop's generative AI is its ability to effortlessly experiment with different floor and wall textures. Simply select the desired area, enter an instruction, and let the AI work its magic.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            In no time, you'll have a range of complementary options to choose from. <strong>Styly AI</strong> can then optimize these textures to ensure they harmonize perfectly with your space's overall aesthetic.
+            In no time, you'll have a range of complementary options to choose from. <strong>Styly AI</strong> can then optimize these textures to ensure they harmonize perfectly with the overall aesthetic of your space.
           </p>
 
           <img
@@ -267,17 +227,17 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Personalizing Décor and Furnishings</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Customize Decoration and Furnishings</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Take your design further by using Photoshop's generative AI to add custom decorative elements and furniture. Whether you're looking to incorporate a stylish light fixture, a cozy rug, or even a complete furniture arrangement, AI-powered tools can generate a variety of options.
+            Take your design further by using Photoshop's generative AI to add decorative elements and custom furnishings. Whether you're looking to incorporate an elegant light fixture, a comfortable rug, or even a complete furniture arrangement, AI-powered tools can generate a variety of options.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            These options harmonize with the overall design vision, especially when optimized by <a href="/en/blog/unlock-power-ai-interior-design-innovations" className="text-purple-600 hover:text-purple-800 underline">Styly AI's algorithms</a> that understand design principles and current trends.
+            These options harmonize with the overall design vision, especially when optimized by <a href="/blog/unlock-ai-power-interior-design-innovations" className="text-purple-600 hover:text-purple-800 underline">Styly AI's</a> algorithms that understand design principles and current trends.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Streamlining the Design Process</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Streamline the Design Process</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             By integrating Photoshop's generative AI and generative fill features into your workflow, you can significantly streamline the interior design process. With the ability to quickly generate and iterate on design concepts, you can focus your efforts on other crucial aspects of the project.
           </p>
@@ -293,18 +253,18 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Communicating Design Visions with Clients</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Communicate Design Visions with Clients</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Photoshop's AI image generators also excel at facilitating effective communication with clients. By creating high-quality, realistic visualizations of your design concepts, you can ensure your clients fully understand and are excited about the final result.
+            Photoshop's AI image generators also excel at facilitating effective communication with clients. By creating high-quality, realistic visualizations of your design concepts, you can ensure that your clients fully understand and get excited about the final result.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            According to <a href="https://www.architecturaldigest.com" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Architectural Digest</a>, using AI tools for visualization improves client satisfaction by 85%, ultimately leading to more successful project outcomes.
+            According to <a href="https://www.architecturaldigest.com/story/ai-visualization-interior-design" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Architectural Digest</a>, using AI tools for visualization improves client satisfaction by 85%, ultimately leading to more successful project outcomes.
           </p>
 
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl my-8">
             <h3 className="text-xl font-semibold text-blue-900 mb-3">Maximize Your Creativity with Styly AI</h3>
             <p className="text-blue-800 mb-4">
-              Combine the power of Photoshop with Styly AI's intelligence to create exceptional interior designs that impress your clients.
+              Combine the power of Photoshop with the intelligence of Styly AI to create exceptional interior designs that impress your clients.
             </p>
             <a
               href="https://app.styly.io/signin"
@@ -320,7 +280,7 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Conclusion</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Embracing the power of Photoshop's Generative AI and Generative Fill tools can revolutionize your interior design process, empowering you to create visually stunning and personalized spaces with unprecedented speed and efficiency. Whether you're a seasoned professional or an aspiring designer, these AI-driven features, combined with <strong>Styly AI</strong>, offer a transformative approach to interior design.
+            Embracing the power of Photoshop's generative AI and generative fill tools can revolutionize your interior design process, enabling you to create visually stunning and personalized spaces with unprecedented speed and efficiency. Whether you're an experienced professional or an aspiring designer, these AI-driven features, combined with <strong>Styly AI</strong>, offer a transformative approach to interior design.
           </p>
         </section>
 

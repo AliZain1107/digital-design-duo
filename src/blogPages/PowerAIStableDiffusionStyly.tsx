@@ -122,7 +122,7 @@ const PowerAIStableDiffusionStyly: React.FC = () => {
         <link rel="canonical" href="https://www.styly.io/blog/the-power-of-ai-how-stable-diffusion-and-styly-reshaping-creativity" />
       </Helmet>
 
-      <article className="max-w-4xl mx-auto px-4 py-8">
+      <article className="max-w-4xl mx-auto px-4 py-8 pt-20">
         <header className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             {currentContent.title}

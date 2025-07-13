@@ -2,18 +2,13 @@ import React, { useEffect, useContext } from "react";
 import { useLocation } from "react-router-dom";
 import BlogSection from "@/components/home/BlogSection";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import SEO from "@/components/layout/SEO";
 import { LanguageContext, Language } from "@/lib/i18n";
 
 const Blog = () => {
-  const { language, setLanguage } = useContext(LanguageContext);
+  const { language } = useContext(LanguageContext);
   const location = useLocation();
-
-  // Remove URL-based language routing - use global language state instead
-  useEffect(() => {
-    // No need to set language based on URL - it's handled by the LanguageProvider
-    // The language state is managed globally and will update the content automatically
-  }, []);
 
   // Scroll to top when component mounts or language changes
   useEffect(() => {
@@ -43,7 +38,7 @@ const Blog = () => {
   };
 
   return (
-    <div>
+    <div key={`blog-${language}`}>
       <SEO
         title={currentMeta.title}
         description={currentMeta.description}
@@ -53,7 +48,10 @@ const Blog = () => {
         alternateUrls={alternateUrls}
       />
       <Navbar />
-      <BlogSection />
+      <div className="pb-16 md:pb-20 lg:pb-24">
+        <BlogSection variant="blog-page" />
+      </div>
+      <Footer />
     </div>
   );
 };
