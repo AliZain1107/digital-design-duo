@@ -201,7 +201,6 @@ const Index: React.FC = () => {
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "@id": "https://www.styly.fr/#primaryimage",
           "url": "https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2",
           "width": 1200,
           "height": 630
@@ -312,83 +311,90 @@ const Index: React.FC = () => {
   const canonicalUrl = currentUrl;
 
   return (
-    <div className="bg-white flex flex-col w-full min-h-screen  " key={`index-${language}`}>
-      <SEO
-        title={seoMeta.title}
-        description={seoMeta.description}
-        keywords={seoMeta.keywords}
-        structuredData={seoStructuredData}
-        ogUrl={canonicalUrl}
-        language={language}
-        alternateUrls={alternateUrls}
-      />
-      <div className="flex w-full flex-col">
-        <Navbar />
-        <Hero />
-        <WhoIsFor />
-        <VideoSection />
+    <>
+      <Navbar />
+      <div className="pt-16 bg-white flex flex-col w-full min-h-screen" key={`index-${language}`}>
+        <SEO
+          title={seoMeta.title}
+          description={seoMeta.description}
+          keywords={seoMeta.keywords}
+          structuredData={seoStructuredData}
+          ogUrl={canonicalUrl}
+          language={language}
+          alternateUrls={alternateUrls}
+        />
+        <div className="flex w-full flex-col">
+          <Hero />
+          <WhoIsFor />
+          <VideoSection />
 
 
 
-        <div className="mt-12 md:mt-20 lg:mt-24">
-          <SupportedBy />
+          <div className="mt-12 md:mt-20 lg:mt-24">
+            <SupportedBy />
+          </div>
+          <div className="mt-12 md:mt-16 lg:mt-20">
+            <ArchitectureRevolution />
+          </div>
+          <HowItWorks />
+          <Stats />
+
+
+
+          <Testimonials />
+
+
+
+          <div className="mt-0">
+            <BlogSection maxPosts={4} />
+          </div>
+          <FAQ />
+
+
+
+          <div className="mt-12">
+            <section className="relative w-full bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] py-12 px-4 sm:px-8 md:px-12 lg:px-[116px] flex flex-col items-start justify-center shadow-lg overflow-hidden">
+              {/* Blur overlay for smoother gradient */}
+              <div className="absolute inset-0 pointer-events-none backdrop-blur-2xl z-0" />
+              <h2 className="text-4xl md:text-5xl font-extrabold text-white text-left mb-4 font-baloo drop-shadow-lg z-10">
+                {language === "fr"
+                  ? <>Créez votre prochaine œuvre d'intérieur avec <span className="font-davetica tracking-widest">STYLY</span></>
+                  : <>Got All Your Questions Answered?</>
+                }
+              </h2>
+              <p className="text-xl md:text-2xl text-white/90 text-left mb-8 max-w-2xl font-baloo z-10">
+                {language === "fr"
+                  ? <>Donnez vie à vos idées instantanément. Essayez gratuitement les outils de design de <span className="font-davetica tracking-widest">STYLY</span>.</>
+                  : <>It's time to take action and create your first stunning designs with <span className="font-davetica tracking-widest">STYLY</span>.</>
+                }
+              </p>
+              <a
+                href="https://app.styly.io/signin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-[#593286] font-bold text-lg md:text-xl px-10 py-4 rounded-full shadow-lg hover:bg-[#FA6F40] hover:text-white transition-all duration-200 font-baloo z-10 animate-cta-pulse"
+              >
+                {language === "fr"
+                  ? <>Commencer avec <span className="font-davetica tracking-widest">STYLY</span></>
+                  : <>Create My First Design</>
+                }
+              </a>
+              <div className="mt-2 z-10">
+                {language === "fr" ? (
+                  <span className="text-xs text-white/80 font-baloo">aucune carte bancaire requise</span>
+                ) : (
+                  <span className="flex items-center text-xs text-white/80 font-baloo">
+                    <svg className="w-4 h-4 mr-1 text-gray-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    free signup in 30 seconds
+                  </span>
+                )}
+              </div>
+            </section>
+          </div>
+          <Footer />
         </div>
-        <div className="mt-12 md:mt-16 lg:mt-20">
-          <ArchitectureRevolution />
-        </div>
-        <HowItWorks />
-        <Stats />
-
-
-
-        <Testimonials />
-
-
-
-        <div className="mt-0">
-          <BlogSection maxPosts={4} />
-        </div>
-        <FAQ />
-
-
-
-        <div className="mt-12">
-          <section className="relative w-full bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] py-12 px-4 sm:px-8 md:px-12 lg:px-[116px] flex flex-col items-start justify-center shadow-lg overflow-hidden">
-            {/* Blur overlay for smoother gradient */}
-            <div className="absolute inset-0 pointer-events-none backdrop-blur-2xl z-0" />
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white text-left mb-4 font-baloo drop-shadow-lg z-10">
-              {language === "fr"
-                ? <>Créez votre prochaine œuvre d'intérieur avec <span className="font-davetica tracking-widest">STYLY</span></>
-                : <>Create Your Next Interior Masterpiece with <span className="font-davetica tracking-widest">STYLY</span></>
-              }
-            </h2>
-            <p className="text-xl md:text-2xl text-white/90 text-left mb-8 max-w-2xl font-baloo z-10">
-              {language === "fr"
-                ? <>Donnez vie à vos idées instantanément. Essayez gratuitement les outils de design de <span className="font-davetica tracking-widest">STYLY</span>.</>
-                : <>Bring your ideas to life instantly. Try <span className="font-davetica tracking-widest">STYLY</span>'s design tools for free.</>
-              }
-            </p>
-            <a
-              href="https://app.styly.io/signin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-[#593286] font-bold text-lg md:text-xl px-10 py-4 rounded-full shadow-lg hover:bg-[#FA6F40] hover:text-white transition-all duration-200 font-baloo z-10 animate-cta-pulse"
-            >
-              {language === "fr"
-                ? <>Commencer avec <span className="font-davetica tracking-widest">STYLY</span></>
-                : <>Start Using <span className="font-davetica tracking-widest">STYLY</span></>
-              }
-            </a>
-            <div className="mt-2 z-10">
-              <span className="text-xs text-white/80 font-baloo">
-                {language === "fr" ? "aucune carte bancaire requise" : "no credit card needed"}
-              </span>
-            </div>
-          </section>
-        </div>
-        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 

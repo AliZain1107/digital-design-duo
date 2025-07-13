@@ -13,6 +13,7 @@ import { Z_INDEX } from "@/lib/constants";
 const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
   // Debug log for current language
@@ -22,6 +23,17 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     console.log("Language changed to:", language);
   }, [language]);
+
+  // Scroll effect for navbar transparency
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Body scroll lock when mobile menu is open
   useEffect(() => {
@@ -67,10 +79,12 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-    <header className={`bg-white/98 backdrop-blur-md sticky top-0 w-full border-b border-gray-200/30`} style={{ zIndex: Z_INDEX.navbar }}>
+    <header className={`fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-gray-200/30 transition-all duration-300 ${
+      isScrolled ? 'bg-white/60' : 'bg-white/90'
+    }`}>
       <div className="max-w-6xl mx-auto flex h-14 sm:h-16 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo - Mobile optimized */}
-        <div className="flex items-center">
+        <div className="flex items-center h-full">
           <Link
             to="/"
             className="transition-opacity duration-200 hover:opacity-80"
@@ -78,7 +92,7 @@ const Navbar: React.FC = () => {
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY"
-              className="h-7 sm:h-8 w-auto"
+              className="h-7 sm:h-8 md:h-9 lg:h-10 w-auto"
             />
           </Link>
         </div>
@@ -93,7 +107,7 @@ const Navbar: React.FC = () => {
         </button>
 
         {/* Desktop Navigation - Premium spacing */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8 flex-shrink-0 h-full">
+        <nav className="hidden md:flex items-center gap-4 md:gap-6 lg:gap-8 xl:gap-10 flex-shrink-0 h-full">
         {/* Pricing Button */}
         <a
           href="https://app.styly.io/pricing"
@@ -124,7 +138,7 @@ const Navbar: React.FC = () => {
         </Link>
 
           {/* Sign In Button - Enhanced for mobile */}
-          <div className="ml-6 lg:ml-8">
+          <div className="ml-4 md:ml-6 lg:ml-8">
             <a
               href="https://app.styly.io/signin"
               target="_blank"
@@ -137,7 +151,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Language Dropdown - Enhanced */}
-          <div className="ml-3 lg:ml-4">
+          <div className="ml-3 md:ml-4 lg:ml-6">
             <DropdownMenu>
               <DropdownMenuTrigger
                 className="flex items-center gap-1 justify-center py-2.5 px-3 transition-all duration-200 hover:bg-gray-50 rounded-lg outline-none border-none min-w-[44px] active:scale-95"
@@ -187,7 +201,7 @@ const Navbar: React.FC = () => {
             <img
               src="https://cdn.builder.io/api/v1/image/assets/a22916bd9acc4a4986d78d713f5de3db/f99e29783a6ec2e80cc53da0266b73b066b99df2?placeholderIfAbsent=true"
               alt="STYLY Logo"
-              className="h-7 w-auto object-contain"
+              className="h-7 sm:h-8 md:h-9 lg:h-10 w-auto object-contain"
             />
           </Link>
           <button
