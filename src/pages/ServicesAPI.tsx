@@ -220,7 +220,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-white py-20 relative overflow-hidden">
+      <section className="bg-white py-20 pt-32 relative overflow-hidden">
         {/* Animated shimmer background (copied from homepage) */}
         <div className="absolute inset-0 overflow-hidden" style={{ opacity: 0.13 }}>
           <div

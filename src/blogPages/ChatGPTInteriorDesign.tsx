@@ -59,7 +59,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
         <link rel="alternate" hrefLang="x-default" href={alternateUrls.en} />
       </Helmet>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
         {language === "fr" ? (
           <>
             <article className="prose prose-lg max-w-none">

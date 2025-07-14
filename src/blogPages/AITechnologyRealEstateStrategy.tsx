@@ -1,34 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
 
 const AITechnologyRealEstateStrategy: React.FC = () => {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
 
-  const addAlternateLanguageLink = () => {
-    const currentSlug = language === "fr" 
-      ? "technologie-ia-pour-elever-strategie-immobiliere" 
-      : "ai-technology-to-elevate-your-real-estate-strategy";
-    const alternateSlug = language === "fr" 
-      ? "ai-technology-to-elevate-your-real-estate-strategy" 
-      : "technologie-ia-pour-elever-strategie-immobiliere";
-    const alternateLang = language === "fr" ? "en" : "fr";
-    const alternateUrl = alternateLang === "en" 
-      ? `https://www.styly.fr/en/blog/${alternateSlug}`
-      : `https://www.styly.fr/blog/${alternateSlug}`;
-
-    return (
-      <link
-        rel="alternate"
-        hrefLang={alternateLang}
-        href={alternateUrl}
-      />
-    );
-  };
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (language === "fr") {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
         <Helmet>
           <title>Technologie IA pour Élever Votre Stratégie Immobilière avec Styly AI | Styly.fr</title>
           <meta name="description" content="Découvrez comment la technologie IA révolutionne le marketing immobilier avec Styly AI : staging virtuel, évaluations automatisées et visualisations 3D pour agents immobiliers." />
@@ -38,19 +22,20 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
           <meta property="og:image" content="https://www.styly.fr/ai-room-planner-residential.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
           <link rel="canonical" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
-          {addAlternateLanguageLink()}
+          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/ai-technology-to-elevate-your-real-estate-strategy" />
+          <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
+          <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
         </Helmet>
-
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              Technologie IA pour Élever Votre Stratégie Immobilière
+            </h1>
             <div className="text-sm text-gray-500 mb-2">
               <time dateTime="2025-06-22">22 juin 2025</time>
               <span className="mx-2">•</span>
               <span>IA Immobilier & Stratégie Marketing</span>
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Technologie IA pour Élever Votre Stratégie Immobilière
-            </h1>
             <img
               src="/mini_magick20250608-11435-vuggjo.jpg"
               alt="Technologie IA immobilier - Styly AI planificateur résidentiel pour stratégie marketing immobilière"
@@ -59,22 +44,6 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
           </header>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Table des Matières</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Introduction</li>
-              <li>Sous-titres Alimentés par l'IA pour Vidéos Engageantes</li>
-              <li>Génération de Rapports de Marché Personnalisés avec l'IA</li>
-              <li>Exploiter les Données de Migration pour un Ciblage Précis</li>
-              <li>Harnacher la Puissance de ChatGPT</li>
-              <li>Évaluations Immobilières Automatisées avec l'IA</li>
-              <li>Optimiser les Descriptions d'Annonces avec l'IA</li>
-              <li>Réutiliser les Vidéos avec l'IA</li>
-              <li>Conclusion</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Dans le monde en évolution rapide de l'immobilier, la technologie est devenue un changeur de donne, et l'intelligence artificielle (IA) est à l'avant-garde de cette transformation. En tant que professionnel de l'immobilier, exploiter la puissance de l'IA peut vous donner un avantage significatif dans votre stratégie marketing.
             </p>
@@ -212,29 +181,30 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
 
   // English version
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
         <title>AI Technology to Elevate Your Real Estate Strategy with Styly AI | Styly.fr</title>
-        <meta name="description" content="Discover how AI technology revolutionizes real estate marketing with Styly AI: virtual staging, automated valuations, and 3D visualizations for real estate agents." />
-        <meta name="keywords" content="AI real estate, real estate technology, Styly AI, virtual staging AI, real estate marketing AI, property valuation AI, 3D real estate visualization" />
+        <meta name="description" content="Discover how AI technology is revolutionizing real estate marketing with Styly AI: virtual staging, automated valuations, and 3D visualizations for real estate agents." />
+        <meta name="keywords" content="AI real estate, real estate technology, Styly AI, AI virtual staging, AI real estate marketing, AI property valuation, 3D real estate visualization" />
         <meta property="og:title" content="AI Technology to Elevate Your Real Estate Strategy with Styly AI" />
         <meta property="og:description" content="Transform your real estate strategy with Styly's advanced AI tools for virtual staging and professional visualizations." />
         <meta property="og:image" content="https://www.styly.fr/ai-room-planner-residential.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/ai-technology-to-elevate-your-real-estate-strategy" />
         <link rel="canonical" href="https://www.styly.fr/en/blog/ai-technology-to-elevate-your-real-estate-strategy" />
-        {addAlternateLanguageLink()}
+        <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/ai-technology-to-elevate-your-real-estate-strategy" />
+        <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
       </Helmet>
-
       <article className="prose prose-lg max-w-none">
         <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            AI Technology to Elevate Your Real Estate Strategy
+          </h1>
           <div className="text-sm text-gray-500 mb-2">
             <time dateTime="2025-06-22">June 22, 2025</time>
             <span className="mx-2">•</span>
             <span>AI Real Estate & Marketing Strategy</span>
           </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            AI Technology to Elevate Your Real Estate Strategy
-          </h1>
           <img
             src="/mini_magick20250608-11435-vuggjo.jpg"
             alt="AI real estate technology - Styly AI residential planner for real estate marketing strategy"
@@ -243,32 +213,31 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
         </header>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Introduction</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            In the rapidly evolving world of real estate, technology has become a game-changer, and artificial intelligence (AI) is at the forefront of this transformation. As a real estate professional, harnessing the power of AI can give you a significant edge in your marketing strategy.
+            In the fast-evolving world of real estate, technology has become a game-changer, and artificial intelligence (AI) is at the forefront of this transformation. As a real estate professional, harnessing the power of AI can give you a significant advantage in your marketing strategy.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            <strong>Styly AI</strong> revolutionizes this approach by offering specialized tools for virtual staging, 3D visualizations, and real estate presentation optimization, helping you connect with your target audience more effectively and elevate your brand.
+            <strong>Styly AI</strong> is revolutionizing this approach by offering specialized tools for virtual staging, 3D visualizations, and real estate presentation optimization, helping you connect with your target audience more effectively and elevate your brand.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">AI-Powered Captions for Engaging Videos</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">AI-Powered Subtitles for Engaging Videos</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            One of the most exciting AI-powered tools in the real estate industry is the ability to generate captions for your talking videos. These captions not only provide accessibility for viewers but also offer a unique feature – AI-powered eye contact.
+            One of the most exciting AI-powered tools in the real estate industry is the ability to generate subtitles for your presentation videos. These subtitles not only offer accessibility for viewers but also provide a unique feature - AI-powered eye contact.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            By utilizing this technology with <strong>Styly AI</strong>, you can seamlessly maintain eye contact with your audience, even when reading a script, creating a more natural and engaging presentation. Additionally, these captions can be translated into other languages, allowing you to communicate with a wider audience.
+            Using this technology with <strong>Styly AI</strong>, you can maintain natural eye contact with your audience even while reading a script, creating a more natural and engaging presentation. Additionally, these subtitles can be translated into other languages, allowing you to communicate with a broader audience.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
             <img
-              src="/mini_magick20250608-11435-xqjldd.jpg"
+              src="/mini_magick20250608-11806-m9vzft.jpg"
               alt="Virtual reality interior design - Styly AI for immersive real estate presentations"
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
             <img
-              src="/mini_magick20250608-11435-u1gkki.jpg"
+              src="/mini_magick20250608-11806-nofife.jpg"
               alt="Real estate analytics dashboard - AI data for marketing strategy"
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
@@ -276,9 +245,9 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Generating Customized Market Reports with AI</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Generate Custom Market Reports with AI</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Another powerful AI tool at your disposal is the ability to generate tailored market reports using platforms like RPR (Realtors Property Resource). With just a few clicks, you can create professional-looking reports that include detailed market statistics, graphs, and even social media-optimized content.
+            Another powerful AI tool at your disposal is the ability to generate custom market reports using platforms like RPR (Realtors Property Resource). With just a few clicks, you can create professional-looking reports that include detailed market statistics, charts, and even social media-optimized content.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             <strong>Styly AI</strong> enhances this functionality by analyzing market trends and automatically generating property visualizations that match market data, creating a cohesive and professional presentation for your clients.
@@ -286,58 +255,58 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Tapping into Migration Data for Targeted Outreach</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Leverage Migration Data for Precise Targeting</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Leveraging data on population migration patterns can be a game-changer for your real estate marketing strategy. Websites like HowMoneyWalks.com provide AI-powered insights into where people are moving from and to, allowing you to identify the most promising target markets.
+            Leveraging data on population migration patterns can be a game-changer for your real estate marketing strategy. Websites like HowMoneyWalks.com provide AI-powered insights into where people are moving, allowing you to identify the most promising target markets.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            By understanding these migration patterns, you can strategically connect with real estate agents in the areas where your potential clients are relocating from, build referral relationships, and tailor your social media content to reach these specific audiences. <strong>Styly AI</strong> can create customized visualizations for these target markets.
+            By understanding these migration patterns, you can strategically connect with real estate agents in areas where your potential clients are moving from, build referral relationships, and tailor your social media content to reach these specific audiences. <strong>Styly AI</strong> can create customized visualizations for these target markets.
           </p>
 
           <img
-            src="/mini_magick20250608-11806-5s6kvf.jpg"
+            src="/mini_magick20250608-11806-o28i1.jpg"
             alt="Residential interior design guide - Styly AI planning for real estate strategy"
             className="w-full h-64 object-cover rounded-lg shadow-md my-6"
           />
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Harnessing the Power of ChatGPT</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Harness the Power of ChatGPT</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The recent emergence of ChatGPT has revolutionized the way we approach content creation. As a real estate professional, you can harness the power of this AI-powered language model to generate a wide range of marketing materials.
+            The recent emergence of ChatGPT has revolutionized how we approach content creation. As a real estate professional, you can harness the power of this AI-powered language model to generate a wide range of marketing materials.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            From property descriptions to social media posts and even video scripts, by customizing the prompts, you can ensure that the content aligns with your brand's tone and appeals to your target audience. Combined with <a href="/en/blog/how-real-estate-agents-are-boosting-sales-with-ai-powered-virtual-staging-the-2025-market-reality" className="text-purple-600 hover:text-purple-800 underline">Styly AI's visualization capabilities</a>, you create a comprehensive marketing strategy.
+            From property descriptions to social media posts and even video scripts, by customizing prompts, you can ensure the content aligns with your brand's tone and attracts your target audience. Combined with <a href="/blog/ai-virtual-staging-real-estate-2025" className="text-purple-600 hover:text-purple-800 underline">Styly AI's</a> visualization capabilities, you create a comprehensive marketing strategy.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Automated Property Valuations with AI</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Automated Real Estate Valuations with AI</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            AI-powered tools can also help you provide accurate and up-to-date property valuations for your clients. By leveraging machine learning algorithms that analyze market data, sale prices, and property characteristics, you can generate reliable home value estimates quickly and efficiently.
+            AI-powered tools can also help you provide accurate and up-to-date real estate valuations for your clients. By leveraging machine learning algorithms that analyze market data, sales prices, and property characteristics, you can generate reliable home value estimates quickly and efficiently.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            <strong>Styly AI</strong> complements these valuations by creating 3D visualizations and virtual staging that showcase the property's potential, helping clients understand the true value and improvement possibilities.
+            <strong>Styly AI</strong> complements these valuations by creating 3D visualizations and virtual staging that showcase the property's potential, helping clients understand the real value and improvement possibilities.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Optimizing Listing Descriptions with AI</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Optimize Listing Descriptions with AI</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            AI can also lend a hand in crafting compelling property listings. By using natural language processing (NLP) algorithms, you can analyze your existing listing descriptions and identify opportunities to improve their effectiveness.
+            AI can also lend a hand in crafting compelling real estate descriptions. Using natural language processing (NLP) algorithms, you can analyze your existing listing descriptions and identify opportunities to improve their effectiveness.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            AI-powered tools can suggest optimized word choices, highlight key selling points, and even generate personalized descriptions that resonate with your target audience. According to <a href="https://www.architecturaldigest.com/story/ai-virtual-staging-real-estate-2024" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Architectural Digest</a>, listings with AI virtual staging sell 40% faster.
+            AI-powered tools can suggest optimized word choices, highlight key selling points, and even generate personalized descriptions that resonate with your target audience. According to <a href="https://www.houzz.com/magazine/ai-virtual-staging-real-estate-2024" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Houzz</a>, listings with AI virtual staging sell 40% faster.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Repurposing Videos with AI</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Repurpose Videos with AI</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Finally, AI-powered tools can help you make the most of your existing video content. By using platforms that specialize in video repurposing, you can take your longer-form videos, such as home tours, and automatically break them down into shorter, bite-sized clips.
+            Finally, AI-powered tools can help you get the most out of your existing video content. Using platforms specialized in video repurposing, you can take your long-form videos, such as home tours, and automatically break them down into shorter, optimized clips.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            These clips are optimized for platforms like Instagram Reels. <strong>Styly AI</strong> can also generate compelling visual previews for each segment, maximizing the reach and engagement of your video content across multiple social media channels.
+            These clips are perfect for platforms like Instagram Reels. <strong>Styly AI</strong> can also generate attractive visual previews for each segment, maximizing engagement and reach of your video content across multiple social media channels.
           </p>
 
           <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-xl my-8">
@@ -359,14 +328,14 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Conclusion</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            In the dynamic world of real estate, embracing AI technology can be a game-changer for your marketing strategy. By leveraging the various AI tools we've explored, you can create captivating video content, generate customized market reports, target your outreach efforts, streamline content creation, automate property valuations, optimize listing descriptions, and repurpose your existing videos – all while standing out from the competition and providing an exceptional experience for your clients.
+            In the dynamic world of real estate, embracing AI technology can be a game-changer for your marketing strategy. By leveraging the various AI tools we've explored, you can create captivating video content, generate custom market reports, target your outreach efforts, streamline content creation, automate real estate valuations, optimize listing descriptions, and repurpose your existing videos - all while standing out from the competition and delivering an exceptional experience to your clients.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Connect with Us</h2>
           <p className="text-gray-700 mb-4">
-            Visit Styly AI today and start your journey to beautifully designed properties. Let your space tell your story with Styly AI – where design meets inspiration.
+            Visit Styly AI today and start your journey toward beautifully designed properties. Let your space tell your story with Styly AI - where design meets inspiration.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="https://www.facebook.com/profile.php?id=61558770901420" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">Facebook: Styly AI</a>

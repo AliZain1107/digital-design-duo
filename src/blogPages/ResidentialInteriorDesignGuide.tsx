@@ -45,7 +45,7 @@ const ResidentialInteriorDesignGuide: React.FC = () => {
       </Helmet>
 
       <div className="min-h-screen bg-white">
-        <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
           {language === "en" ? (
             <>
               <header className="mb-8">

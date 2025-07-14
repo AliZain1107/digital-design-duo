@@ -10,11 +10,9 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-
-
   if (language === "fr") {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
         <Helmet>
           <title>Comment la Génération d'Images IA Peut Inspirer Votre Design Intérieur en 2024 | Styly.fr</title>
           <meta name="description" content="Découvrez comment les outils de génération d'images IA comme Midjourney et Styly AI révolutionnent le design intérieur en 2024. Guide complet pour créer des espaces inspirants." />
@@ -30,14 +28,14 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
         </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              Comment la Génération d'Images IA Peut Inspirer Votre Design Intérieur en 2024
+            </h1>
             <div className="text-sm text-gray-500 mb-2">
               <time dateTime="2025-06-26">26 juin 2025</time>
               <span className="mx-2">•</span>
               <span>IA Génération Images & Design Innovation</span>
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Comment la Génération d'Images IA Peut Inspirer Votre Design Intérieur en 2024
-            </h1>
             <img
               src="/Blogpages/mini_magick20250608-11435-xqjldd.jpg"
               alt="Génération images IA design intérieur - Styly AI et Midjourney pour inspiration créative 2024"
@@ -46,25 +44,8 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
           </header>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Table des Matières</h2>
-            <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-6">
-              <li>Introduction : Adopter l'IA dans le Design Intérieur</li>
-              <li>Explorer Midjourney : Un Générateur d'Images IA</li>
-              <li>Prompts pour Idées de Design de Cuisine</li>
-              <li>Affiner et Améliorer les Designs</li>
-              <li>Appliquer l'IA aux Espaces Réels</li>
-              <li>Limitations et Considérations</li>
-              <li>Conclusion : Autonomiser Votre Processus de Design avec l'IA</li>
-            </ol>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">1. Introduction : Adopter l'IA dans le Design Intérieur</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Le monde du design intérieur évolue constamment, et l'émergence d'outils de génération d'images alimentés par l'IA ouvre de nouvelles voies pour la créativité et l'inspiration. Dans cet article, nous plongerons dans les possibilités passionnantes d'utiliser l'IA pour débloquer votre potentiel de design, sans sacrifier votre vision unique.
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-6">
-              <strong>Styly AI</strong> se positionne à l'avant-garde de cette révolution, offrant des outils qui transforment la façon dont nous concevons et visualisons nos espaces de vie.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -82,7 +63,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">2. Explorer Midjourney : Un Générateur d'Images IA</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Explorer Midjourney : Un Générateur d'Images IA</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Midjourney, un puissant générateur d'images IA, fait des vagues dans la communauté du design. En utilisant cet outil, nous pouvons exploiter la puissance de l'intelligence artificielle pour générer des idées et concepts frais qui peuvent servir de point de départ pour nos projets de design intérieur.
             </p>
@@ -98,7 +79,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">3. Prompts pour Idées de Design de Cuisine</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Prompts pour Idées de Design de Cuisine</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Pour démontrer les capacités de Midjourney, imaginons un nouveau design de cuisine. Nous créerons un prompt qui incorpore nos éléments désirés, tels que des verts sourds, des accents de bois, des carreaux vintage et une esthétique traditionnelle de style cottage.
             </p>
@@ -114,7 +95,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">4. Affiner et Améliorer les Designs</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Affiner et Améliorer les Designs</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Une fois que nous avons généré notre ensemble initial d'idées, nous explorerons le processus d'affinement et d'amélioration des designs. En fournissant des prompts plus spécifiques ou en sélectionnant des versions particulières à améliorer, nous pouvons affiner les détails et obtenir des images de meilleure qualité.
             </p>
@@ -130,7 +111,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">5. Appliquer l'IA aux Espaces Réels</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Appliquer l'IA aux Espaces Réels</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Pour pousser notre exploration plus loin, nous intégrerons Midjourney avec des espaces du monde réel. En téléchargeant une image d'une cuisine existante et en la combinant avec nos prompts de design, nous pouvons voir comment les concepts générés par l'IA peuvent être appliqués à un environnement spécifique.
             </p>
@@ -155,7 +136,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">6. Limitations et Considérations</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Limitations et Considérations</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Bien que les générateurs d'images IA comme Midjourney offrent des possibilités passionnantes, il est important de reconnaître leurs limitations actuelles. Nous discuterons des défis de précision, d'agencement et de légalité, soulignant la nécessité de maintenir un œil critique et une approche de design qualifiée.
             </p>
@@ -165,7 +146,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">7. Conclusion : Autonomiser Votre Processus de Design avec l'IA</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Conclusion : Autonomiser Votre Processus de Design avec l'IA</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               En conclusion, les outils de génération d'images alimentés par l'IA comme Midjourney et <strong>Styly AI</strong> présentent une opportunité transformatrice pour les designers d'intérieur. En adoptant cette technologie, nous pouvons débloquer de nouveaux niveaux de créativité, d'efficacité et d'inspiration.
             </p>
@@ -192,7 +173,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
 
   // English version
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
         <title>How AI-Powered Image Generation Can Inspire Your Interior Design in 2024 | Styly.fr</title>
         <meta name="description" content="Discover how AI image generation tools like Midjourney and Styly AI are revolutionizing interior design in 2024. Complete guide to creating inspiring spaces." />
@@ -208,14 +189,14 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
       </Helmet>
       <article className="prose prose-lg max-w-none">
         <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            How AI-Powered Image Generation Can Inspire Your Interior Design in 2024
+          </h1>
           <div className="text-sm text-gray-500 mb-2">
             <time dateTime="2025-06-26">June 26, 2025</time>
             <span className="mx-2">•</span>
             <span>AI Image Generation & Design Innovation</span>
           </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            How AI-Powered Image Generation Can Inspire Your Interior Design in 2024
-          </h1>
           <img
             src="/Blogpages/mini_magick20250608-11435-xqjldd.jpg"
             alt="AI image generation interior design - Styly AI and Midjourney for creative inspiration 2024"
@@ -224,25 +205,8 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
         </header>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Table of Contents</h2>
-          <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-6">
-            <li>Introduction: Embracing AI in Interior Design</li>
-            <li>Exploring Midjourney: An AI Image Generator</li>
-            <li>Prompting for Kitchen Design Ideas</li>
-            <li>Refining and Upscaling Designs</li>
-            <li>Applying AI to Real Spaces</li>
-            <li>Limitations and Considerations</li>
-            <li>Conclusion: Empowering Your Design Process with AI</li>
-          </ol>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">1. Introduction: Embracing AI in Interior Design</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             The world of interior design is constantly evolving, and the emergence of AI-powered image-generation tools is opening up new avenues for creativity and inspiration. In this article, we'll dive into the exciting possibilities of using AI to unlock your design potential, without sacrificing your unique vision.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            <strong>Styly AI</strong> stands at the forefront of this revolution, offering tools that transform how we conceive and visualize our living spaces.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -260,7 +224,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">2. Exploring Midjourney: An AI Image Generator</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Exploring Midjourney: An AI Image Generator</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Midjourney, a powerful AI image generator, has been making waves in the design community. By utilizing this tool, we can leverage the power of artificial intelligence to generate fresh ideas and concepts that can serve as a starting point for our interior design projects.
           </p>
@@ -276,7 +240,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">3. Prompting for Kitchen Design Ideas</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Prompting for Kitchen Design Ideas</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             To demonstrate the capabilities of Midjourney, let's imagine a new kitchen design. We'll craft a prompt that incorporates our desired elements, such as muted greens, wood accents, vintage tile, and a traditional cottage-style aesthetic.
           </p>
@@ -292,7 +256,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">4. Refining and Upscaling Designs</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Refining and Upscaling Designs</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Once we've generated our initial set of ideas, we'll explore the process of refining and upscaling the designs. By providing more specific prompts or selecting particular versions to enhance, we can refine the details and obtain higher-quality images.
           </p>
@@ -308,7 +272,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">5. Applying AI to Real Spaces</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Applying AI to Real Spaces</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             To take our exploration further, we'll integrate Midjourney with real-world spaces. By uploading an image of an existing kitchen and combining it with our design prompts, we can see how AI-generated concepts can be applied to a specific environment.
           </p>
@@ -333,7 +297,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">6. Limitations and Considerations</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Limitations and Considerations</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             While AI image generators like Midjourney offer exciting possibilities, it's important to recognize their current limitations. We'll discuss the challenges of accuracy, layout, and legality, emphasizing the need to maintain a critical eye and a skilled design approach.
           </p>
@@ -343,7 +307,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">7. Conclusion: Empowering Your Design Process with AI</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Conclusion: Empowering Your Design Process with AI</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             In conclusion, AI-powered image generation tools like Midjourney and <strong>Styly AI</strong> present a transformative opportunity for interior designers. By embracing this technology, we can unlock new levels of creativity, efficiency, and inspiration.
           </p>

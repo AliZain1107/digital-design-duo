@@ -10,30 +10,9 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Function to add alternate language links
-  const addAlternateLanguageLink = () => {
-    if (language === "fr") {
-      return (
-        <>
-          <link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
-          <link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
-          <link rel="alternate" hreflang="x-default" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
-        </>
-      );
-    } else {
-      return (
-        <>
-          <link rel="alternate" hreflang="en" href="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
-          <link rel="alternate" hreflang="fr" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
-          <link rel="alternate" hreflang="x-default" href="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
-        </>
-      );
-    }
-  };
-
   if (language === "fr") {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
         <Helmet>
           <title>Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment ! | Styly.fr</title>
           <meta name="description" content="Créez une salle de bain luxueuse sans vous ruiner grâce à l'IA. Découvrez comment Styly AI peut vous aider à transformer votre espace avec un budget limité." />
@@ -43,20 +22,20 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
           <meta property="og:image" content="https://www.styly.fr/luxury-bathroom-budget-ai-hero.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
           <link rel="canonical" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
-          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/luxury-bathroom-budget-ai-design" />
+          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
         </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !
+            </h1>
             <div className="text-sm text-gray-500 mb-2">
               <time dateTime="2025-06-25">25 juin 2025</time>
               <span className="mx-2">•</span>
               <span>Design IA & Rénovation Budget</span>
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !
-            </h1>
             <img
               src="/Blogpages/mini_magick20250608-11435-kitium.jpg"
               alt="Salle de bain luxueuse budget - Design IA Styly pour rénovation économique et élégante"
@@ -67,9 +46,6 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
           <section className="mb-8">
             <p className="text-gray-700 leading-relaxed mb-4">
               Créer une salle de bain luxueuse ne doit pas vider votre compte en banque. Avec la bonne approche et la puissance de l'IA, vous pouvez transformer votre espace en un refuge serein et opulent sans vous ruiner. Chez <strong>Styly AI</strong>, nous sommes là pour vous guider dans ce processus, vous montrant comment l'IA d'intérieur maison et l'IA de conception de chambre peuvent vous aider à obtenir un look haut de gamme avec un budget limité.
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-6">
-              Découvrez comment transformer votre salle de bain ordinaire en un espace digne des plus beaux hôtels, en utilisant des techniques intelligentes et des outils IA révolutionnaires.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -87,7 +63,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">1. Commencez par une Vision Claire</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Commencez par une Vision Claire</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Avant de plonger dans les étapes pratiques, il est essentiel d'avoir une vision claire de ce à quoi vous voulez que votre salle de bain luxueuse ressemble. Utilisez les outils alimentés par l'IA comme ceux fournis par <strong>Styly AI</strong> pour visualiser différents designs.
             </p>
@@ -97,7 +73,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">2. Concentrez-vous sur les Éléments Clés</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Concentrez-vous sur les Éléments Clés</h2>
             
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Accessoires et Robinetterie</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -117,7 +93,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">3. Adoptez des Solutions de Rangement Intelligentes</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Adoptez des Solutions de Rangement Intelligentes</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Une salle de bain sans encombrement semble plus luxueuse. Utilisez l'IA pour concevoir des solutions de rangement intelligentes qui maximisent l'espace et maintiennent votre salle de bain bien rangée.
             </p>
@@ -127,7 +103,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">4. L'Éclairage Compte</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">L'Éclairage Compte</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Le bon éclairage peut transformer votre salle de bain. Combinez la lumière naturelle avec un éclairage artificiel stratégiquement placé pour créer une atmosphère chaleureuse et accueillante.
             </p>
@@ -191,7 +167,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
 
   // English version
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
         <title>Need Luxury Bathroom on a Budget? Here's How! | Styly.fr</title>
         <meta name="description" content="Create a luxurious bathroom without breaking the bank using AI. Discover how Styly AI can help transform your space on a budget with smart design solutions." />
@@ -201,81 +177,80 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
         <meta property="og:image" content="https://www.styly.fr/luxury-bathroom-budget-ai-hero.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
         <link rel="canonical" href="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
-        {addAlternateLanguageLink()}
+        <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
+        <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
       </Helmet>
       <article className="prose prose-lg max-w-none">
         <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Need Luxury Bathroom on a Budget? Here's How!
+          </h1>
           <div className="text-sm text-gray-500 mb-2">
             <time dateTime="2025-06-25">June 25, 2025</time>
             <span className="mx-2">•</span>
             <span>AI Design & Budget Renovation</span>
           </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Need Luxury Bathroom on a Budget? Here's How!
-          </h1>
           <img
             src="/Blogpages/mini_magick20250608-11435-kitium.jpg"
-            alt="Luxury bathroom budget design - Styly AI for affordable elegant renovation"
+            alt="Luxury bathroom budget design - Styly AI for affordable and elegant renovation"
             className="w-full h-[400px] object-cover rounded-xl mb-6"
           />
         </header>
 
         <section className="mb-8">
           <p className="text-gray-700 leading-relaxed mb-4">
-            Creating a luxurious bathroom doesn't have to drain your bank account. With the right approach and the power of AI, you can transform your space into a serene and opulent retreat without breaking the bank. At <strong>Styly AI</strong>, we're here to guide you through this process, showing you how home interior AI and room design AI can help you achieve a high-end look on a budget.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Discover how to transform your ordinary bathroom into a space worthy of the finest hotels, using smart techniques and revolutionary AI tools.
+            Creating a luxurious bathroom doesn't have to drain your bank account. With the right approach and the power of AI, you can transform your space into a serene and opulent retreat without breaking the bank. At <strong>Styly AI</strong>, we're here to guide you through this process, showing you how interior home AI and room design AI can help you achieve a high-end look on a limited budget.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
             <img
-              src="/Blogpages/mini_magick20250608-11435-no5bhi.jpg"
-              alt="Modern bathroom AI design - Styly AI for luxury budget layout"
+              src="/Blogpages/mini_magick20250608-11056-2fhvm0.jpg"
+              alt="Modern bathroom design AI - Styly AI for luxury budget layout"
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
             <img
-              src="/Blogpages/mini_magick20250608-11806-dgwiu4.jpg"
-              alt="Budget bathroom renovation - AI tools for elegant decoration"
+              src="/Blogpages/mini_magick20250608-11056-2luts6.jpg"
+              alt="Bathroom renovation budget - AI tools for elegant decoration"
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
           </div>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">1. Start with a Vision</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Start with a Clear Vision</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Before diving into the practical steps, it's essential to have a clear vision of what you want your luxury bathroom to look like. Use AI-powered tools like those provided by <strong>Styly AI</strong> to visualize different designs.
+            Before diving into practical steps, it's essential to have a clear vision of what you want your luxurious bathroom to look like. Use AI-powered tools like those provided by <strong>Styly AI</strong> to visualize different designs.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            These tools can help you see how various elements will come together, allowing you to experiment with colors, materials, and layouts without spending a dime.
+            These tools can help you see how various elements will come together, allowing you to experiment with colors, materials, and layouts without spending a penny.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">2. Focus on Key Elements</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Focus on Key Elements</h2>
           
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Fixtures and Fittings</h3>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3">Fixtures and Hardware</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            High-quality fixtures and fittings can elevate the look of your bathroom. Look for sales and discounts on luxury brands or opt for high-quality replicas. Using <a href="https://www.styly.io" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">AI room design</a> tools, you can visualize how different fixtures will look in your space.
+            High-quality fixtures and hardware can elevate your bathroom's appearance. Look for sales and discounts on luxury brands or opt for high-quality replicas. Using <a href="https://www.styly.io" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">AI room design</a> tools, you can visualize how different fixtures will look in your space.
           </p>
 
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Tiles and Flooring</h3>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3">Tile and Flooring</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Choose tiles and flooring that mimic high-end materials. Porcelain tiles that look like marble or luxury vinyl resembling wood can give you a luxury look without the hefty price tag. Home interior AI tools can help you see how these options will appear in your bathroom.
+            Choose tiles and flooring that mimic high-end materials. Porcelain tiles that look like marble or luxury vinyl that resembles wood can give you a luxurious look without the high price tag. Interior home AI tools can help you see how these options will appear in your bathroom.
           </p>
 
           <img
-            src="/Blogpages/mini_magick20250608-11056-hjqk6b.jpg"
-            alt="Low budget bathroom renovation ideas - Styly AI for affordable luxury transformation"
+            src="/Blogpages/mini_magick20250608-11056-34szrr.jpg"
+            alt="Luxury bathroom budget ideas - Styly AI for affordable and elegant transformation"
             className="w-full h-64 object-cover rounded-lg shadow-md my-6"
           />
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">3. Embrace Smart Storage Solutions</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Embrace Smart Storage Solutions</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            A clutter-free bathroom feels more luxurious. Use AI to design smart storage solutions that maximize space and keep your bathroom tidy.
+            A clutter-free bathroom feels more luxurious. Use AI to design smart storage solutions that maximize space and keep your bathroom well-organized.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Floating shelves, built-in cabinets, and clever organizers can make a significant difference. <strong>Styly's</strong> AI tools can help you plan the perfect storage solutions tailored to your bathroom's layout.
@@ -283,33 +258,33 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">4. Lighting Matters</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Lighting Matters</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The right lighting can transform your bathroom. Combine natural light with strategically placed artificial lighting to create a warm and inviting atmosphere.
+            The right lighting can transform your bathroom. Combine natural light with strategically placed artificial lighting to create a warm and welcoming atmosphere.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Use AI to experiment with different lighting setups and find the perfect balance. Consider adding a statement light fixture for a touch of glamour according to <a href="https://www.architecturaldigest.com/story/bathroom-lighting-ideas" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Architectural Digest</a>.
+            Use AI to experiment with different lighting configurations and find the perfect balance. Consider adding a statement light fixture for a touch of glamour according to <a href="https://www.architecturaldigest.com/story/bathroom-lighting-tips" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Architectural Digest</a>.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">How to Use AI to Design Your Dream Bathroom</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Using AI to design your bathroom is simple and incredibly effective. Here's a step-by-step guide to get you started:
+            Using AI to design your bathroom is simple and incredibly effective. Here's a step-by-step guide to get started:
           </p>
           
           <ol className="list-decimal list-inside space-y-3 text-gray-700 mb-6">
-            <li><strong>Choose Your AI Tool</strong>: Select an AI tool that fits your needs. Styly offers user-friendly home interior AI and room design AI tools perfect for this task.</li>
-            <li><strong>Input Your Dimensions</strong>: Enter the dimensions of your bathroom into the AI tool. This will allow the software to create modern bathroom ideas AI.</li>
+            <li><strong>Choose Your AI Tool</strong>: Select an AI tool that fits your needs. Styly offers user-friendly interior home AI and room design AI tools perfect for this task.</li>
+            <li><strong>Input Your Dimensions</strong>: Enter your bathroom dimensions into the AI tool. This will allow the software to create modern bathroom AI ideas.</li>
             <li><strong>Experiment with Designs</strong>: Use the AI tool to experiment with different layouts, colors, materials, and fixtures.</li>
             <li><strong>Get Feedback</strong>: Share your AI-generated designs with friends, family, or even professional designers.</li>
-            <li><strong>Implement Your Design</strong>: Once you're satisfied with your design, start implementing it step-by-step.</li>
+            <li><strong>Implement Your Design</strong>: Once satisfied with your design, start implementing it step by step.</li>
           </ol>
 
           <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-xl my-8">
             <h3 className="text-xl font-semibold text-purple-900 mb-3">Transform Your Bathroom with Styly AI</h3>
             <p className="text-purple-800 mb-4">
-              Discover how to create a luxury bathroom on a budget with Styly AI's advanced design tools.
+              Discover how to create a luxurious bathroom on a limited budget with Styly AI's advanced tools.
             </p>
             <a
               href="https://app.styly.io/signin"
@@ -325,7 +300,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Conclusion</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Creating a luxury bathroom on a budget is entirely possible with a bit of creativity and the right tools. By leveraging AI technology, you can design a space that feels high-end without the high cost. At <strong>Styly AI</strong>, we're excited to help you on this journey, offering the tools and inspiration you need to make your dream bathroom a reality.
+            Creating a luxurious bathroom on a limited budget is entirely possible with a little creativity and the right tools. By leveraging AI technology, you can design a space that looks high-end without the high cost. At <strong>Styly AI</strong>, we're excited to help you on this journey, offering the tools and inspiration you need to make your dream bathroom a reality.
           </p>
         </section>
 

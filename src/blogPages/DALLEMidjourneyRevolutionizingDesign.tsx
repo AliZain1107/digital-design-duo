@@ -1,34 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
 
 const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
 
-  const addAlternateLanguageLink = () => {
-    const currentSlug = language === "fr"
-      ? "comment-dall-e-midjourney-styly-revolutionnent-design-interieur"
-      : "how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design";
-    const alternateSlug = language === "fr"
-      ? "how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design"
-      : "comment-dall-e-midjourney-styly-revolutionnent-design-interieur";
-    const alternateLang = language === "fr" ? "en" : "fr";
-    const alternateUrl = alternateLang === "en"
-      ? `https://www.styly.fr/en/blog/${alternateSlug}`
-      : `https://www.styly.fr/blog/${alternateSlug}`;
-
-    return (
-      <link
-        rel="alternate"
-        hrefLang={alternateLang}
-        href={alternateUrl}
-      />
-    );
-  };
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (language === "fr") {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
         <Helmet>
           <title>Comment DALL-E, Midjourney et Styly AI Révolutionnent le Design d'Intérieur | Styly.fr</title>
           <meta name="description" content="Découvrez comment les outils IA DALL-E, Midjourney et Styly AI transforment le design d'intérieur avec des rendus photoréalistes et des concepts créatifs innovants." />
@@ -38,19 +22,20 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
           <meta property="og:image" content="https://www.styly.fr/generative-ai-interior-design-revolution.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
           <link rel="canonical" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
-          {addAlternateLanguageLink()}
+          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design" />
+          <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
+          <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
         </Helmet>
-
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              Comment DALL-E, Midjourney et Styly AI Révolutionnent le Design d'Intérieur
+            </h1>
             <div className="text-sm text-gray-500 mb-2">
               <time dateTime="2025-06-24">24 juin 2025</time>
               <span className="mx-2">•</span>
               <span>Design IA & Innovation Technologique</span>
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Comment DALL-E, Midjourney et Styly AI Révolutionnent le Design d'Intérieur
-            </h1>
             <img
               src="/revolutionizing-architecture-interior.jpg"
               alt="Révolution IA design intérieur - DALL-E, Midjourney et Styly AI transforment la décoration moderne"
@@ -59,7 +44,6 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
           </header>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Libérer la Créativité avec l'Intelligence Artificielle</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Bien que l'IA en tant qu'outil artistique ait gagné une attention significative ces dernières années, le concept d'utilisation de l'IA pour des efforts créatifs n'est pas nouveau. Dès les années 1970, des systèmes pionniers comme AARON démontraient le potentiel de l'IA pour aider les artistes dans leur travail.
             </p>
@@ -80,6 +64,7 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
               />
             </div>
           </section>
+
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">DALL-E : Perfection Photoréaliste à Portée de Main</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -162,17 +147,17 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
 
             <div className="space-y-4">
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">1. Comment l'IA aide-t-elle à découvrir des idées d'intérieur maison ?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Comment l'IA aide-t-elle à découvrir des idées d'intérieur maison ?</h3>
                 <p className="text-gray-700">L'IA analyse vos préférences et fournit des suggestions de design personnalisées, vous aidant à trouver des idées qui correspondent à votre style unique.</p>
               </div>
 
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">2. Les outils IA peuvent-ils fonctionner avec les meubles et décors existants ?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Les outils IA peuvent-ils fonctionner avec les meubles et décors existants ?</h3>
                 <p className="text-gray-700">Oui, les outils IA peuvent intégrer vos meubles et décors existants dans de nouveaux plans de design, assurant un look cohérent.</p>
               </div>
 
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">3. Les outils de design alimentés par l'IA sont-ils coûteux ?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Les outils de design alimentés par l'IA sont-ils coûteux ?</h3>
                 <p className="text-gray-700">Beaucoup d'outils de design IA sont abordables, et certains offrent même des versions gratuites. Ils peuvent aussi aider à économiser de l'argent en prévenant les erreurs de design coûteuses.</p>
               </div>
             </div>
@@ -196,53 +181,54 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
 
   // English version
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
         <title>How DALL-E, Midjourney, and Styly AI are Revolutionizing Interior Design | Styly.fr</title>
         <meta name="description" content="Discover how AI tools DALL-E, Midjourney, and Styly AI are transforming interior design with photorealistic renders and innovative creative concepts." />
-        <meta name="keywords" content="DALL-E interior design, Midjourney decoration, Styly AI, artificial intelligence design, AI decoration tools, interior design AI, renovation AI, space planning" />
+        <meta name="keywords" content="DALL-E interior design, Midjourney decoration, Styly AI, artificial intelligence design, AI decoration tools, AI interior design, AI renovation, interior layout" />
         <meta property="og:title" content="How DALL-E, Midjourney, and Styly AI are Revolutionizing Interior Design" />
-        <meta property="og:description" content="Explore revolutionary AI tools transforming modern interior design with photorealistic renders and limitless creativity." />
+        <meta property="og:description" content="Explore revolutionary AI tools that transform modern interior design with photorealistic renders and unlimited creativity." />
         <meta property="og:image" content="https://www.styly.fr/generative-ai-interior-design-revolution.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design" />
         <link rel="canonical" href="https://www.styly.fr/en/blog/how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design" />
-        {addAlternateLanguageLink()}
+        <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design" />
+        <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
       </Helmet>
       <article className="prose prose-lg max-w-none">
         <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            How DALL-E, Midjourney, and Styly AI are Revolutionizing Interior Design
+          </h1>
           <div className="text-sm text-gray-500 mb-2">
             <time dateTime="2025-06-24">June 24, 2025</time>
             <span className="mx-2">•</span>
             <span>AI Design & Technology Innovation</span>
           </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            How DALL-E, Midjourney, and Styly AI are Revolutionizing Interior Design
-          </h1>
           <img
             src="/revolutionizing-architecture-interior.jpg"
-            alt="AI interior design revolution - DALL-E, Midjourney and Styly AI transforming modern decoration"
+            alt="AI interior design revolution - DALL-E, Midjourney and Styly AI transform modern decoration"
             className="w-full h-[400px] object-cover rounded-xl mb-6"
           />
         </header>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Unleashing Creativity with Artificial Intelligence</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            While AI as an artistic tool has gained significant attention in recent years, the concept of using AI for creative endeavors is not new. As early as the 1970s, pioneering systems like AARON were demonstrating the potential of AI to aid artists in their work.
+            While AI as an artistic tool has gained significant attention in recent years, the concept of using AI for creative endeavors is not new. As early as the 1970s, pioneering systems like AARON were demonstrating AI's potential to assist artists in their work.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Since then, the field of AI-powered art and design has continued to evolve, with the emergence of groundbreaking tools like <strong>DALL-E, Midjourney, and Styly AI</strong>. These AI-driven platforms are not only revolutionizing the world of art, but they are also transforming the landscape of interior design.
+            Since then, the field of AI-powered art and design has continued to evolve, with the emergence of revolutionary tools like <strong>DALL-E, Midjourney, and Styly AI</strong>. These AI-driven platforms are not only revolutionizing the world of art but also transforming the landscape of interior design.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
             <img
-              src="/mini_magick20250608-11435-rv504h.jpg"
+              src="/mini_magick20250608-11435-qtoi7f.jpg"
               alt="AI interior design technology - Revolutionary tools for modern decoration"
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
             <img
-              src="/mini_magick20250608-11806-994hao.jpg"
-              alt="AI room planner - 3D transformation for interior space planning"
+              src="/mini_magick20250608-11806-zqqh4r.jpg"
+              alt="AI room planner - 3D transformation for interior layout"
               className="w-full h-40 sm:h-48 object-cover rounded-lg shadow-sm"
             />
           </div>
@@ -251,30 +237,30 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">DALL-E: Photorealistic Perfection at Your Fingertips</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Developed by OpenAI, <strong>DALL-E</strong> is a digital image-generative AI model that can create stunning visuals from natural language descriptions. Drawing inspiration from the surrealist artist Salvador Dalí and the Pixar robot WALL-E, DALL-E has the remarkable ability to transform text prompts into highly realistic, detailed images.
+            Developed by OpenAI, <strong>DALL-E</strong> is a generative AI model for digital images capable of creating stunning visuals from natural language descriptions. Named after the surrealist artist Salvador Dalí and the Pixar robot WALL-E, DALL-E has the remarkable ability to transform text prompts into highly realistic and detailed images.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            What sets DALL-E apart is its mastery of photorealism. Unlike previous AI image generators that often produced blurry or abstract results, DALL-E can create images that closely resemble real-world photographs.
+            What sets DALL-E apart is its mastery of photorealism. Unlike previous AI image generators that often produced blurry or abstract results, DALL-E can create images that closely resemble real photographs.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Imagine being able to describe your ideal <a href="/en/blog/design-living-room-like-pro-styly" className="text-purple-600 hover:text-purple-800 underline">living room ideas</a>, complete with specific furniture pieces, lighting, and decor – and then see that vision come to life in a photorealistic rendering.
+            Imagine being able to describe your <a href="/blog/design-living-room-like-pro-styly" className="text-purple-600 hover:text-purple-800 underline">ideal living room</a>, complete with specific furniture, lighting, and decor - and then watching that vision come to life in a photorealistic render.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Midjourney: Unleashing Painterly Perfection</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Midjourney: Unleashing Pictorial Perfection</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            While DALL-E excels at photorealism, <strong>Midjourney</strong>, an independent research lab, has carved out a distinct niche in the AI art world with its unique, painterly aesthetic. Midjourney's text-to-image AI program has captivated the design community with its ability to transform written descriptions into visually stunning, art-inspired renderings.
+            While DALL-E excels at photorealism, <strong>Midjourney</strong>, an independent research lab, has carved out a distinct niche in the AI art world with its unique, painterly aesthetic. Midjourney's text-to-image AI program has captivated the design community with its ability to transform written descriptions into visually stunning, art-inspired renders.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            One of Midjourney's standout features is its exceptional handling of environments and atmospheres. Whether it's a cozy, cabin-inspired living room or a futuristic, sci-fi-inspired home office, Midjourney's AI can seamlessly blend real-world elements with captivating, artistic flair.
+            One of Midjourney's remarkable features is its exceptional handling of environments and atmospheres. Whether it's a cozy living room inspired by a chalet or a futuristic home office inspired by science fiction, Midjourney's AI can seamlessly blend real-world elements with captivating artistic flair.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Moreover, Midjourney's emphasis on adaptability allows designers to experiment with a wide range of artistic styles and techniques. From moody, impressionistic interiors to bold, abstract compositions, the platform's AI-powered algorithms can effortlessly translate written prompts into visually striking designs.
+            Additionally, Midjourney's emphasis on adaptability allows designers to experiment with a wide range of artistic styles and techniques. From impressionistic, moody interiors to bold, abstract compositions, the platform's AI-powered algorithms can effortlessly translate written prompts into visually striking designs.
           </p>
 
           <img
-            src="/mini_magick20250608-11806-ft42fd.jpg"
+            src="/mini_magick20250608-11806-37r89z.jpg"
             alt="AI virtual reality design - Immersive environments for modern interior decoration"
             className="w-full h-64 object-cover rounded-lg shadow-md my-6"
           />
@@ -283,29 +269,29 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Styly AI: Streamlining the Design Process</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Joining the ranks of DALL-E and Midjourney is <strong>Styly AI</strong>, a groundbreaking platform that seamlessly blends the power of AI with the artistry of interior design. Styly AI's AI-powered tools streamline the entire design process, empowering interior designers to focus on the creative aspects of their work.
+            Joining the ranks of DALL-E and Midjourney, <strong>Styly AI</strong> is a revolutionary platform that seamlessly blends AI power with the art of interior design. Styly's AI-powered tools streamline the entire design process, allowing interior designers to focus on the creative aspects of their work.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            One of Styly AI's standout features is the <strong>AI Room Planner</strong>, which allows designers to input the dimensions of a space and their client's preferences and then generates a range of layout options complete with furniture placement, lighting schemes, and color palettes.
+            One of Styly AI's remarkable features is the <strong>AI Room Planner</strong>, which allows designers to input room dimensions and client preferences, then generates a range of layout options complete with furniture placement, lighting schemes, and color palettes.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Moreover, Styly AI's <strong>AI Interior Designer</strong> takes personalization to new heights, generating custom-tailored design concepts based on your client's unique style and needs. By inputting detailed information about the space and the client's preferences, the AI can produce a series of visually stunning designs that perfectly capture the desired aesthetic.
+            Additionally, Styly's <strong>AI Interior Designer</strong> pushes personalization to new heights, generating custom design concepts based on your client's unique style and needs. By inputting detailed information about the space and client preferences, the AI can produce a series of visually stunning designs that perfectly capture the desired aesthetic.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Empowering Interior Designers with AI</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            As the world of interior design continues to evolve, the integration of AI-powered tools like DALL-E, Midjourney, and Styly AI is poised to become a game-changer for creative professionals. These platforms streamline the design process and unlock new avenues of artistic exploration.
+            As the world of interior design continues to evolve, the integration of AI-powered tools like DALL-E, Midjourney, and Styly AI is poised to become a game-changer for creative professionals. These platforms streamline the design process and open new avenues for artistic exploration.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            According to <a href="https://www.architecturaldigest.com/story/ai-interior-design-trends-2024" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Architectural Digest</a>, AI adoption in interior design is increasing by 40% annually, enabling designers to push the boundaries of what's possible.
+            According to <a href="https://www.architecturaldigest.com/story/ai-interior-design-trends-2024" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Architectural Digest</a>, the adoption of AI technologies in interior design is increasing by 40% annually, enabling designers to push the boundaries of what's possible.
           </p>
 
           <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-xl my-8">
-            <h3 className="text-xl font-semibold text-purple-900 mb-3">Experience the Future of Design with Styly AI</h3>
+            <h3 className="text-xl font-semibold text-purple-900 mb-3">Discover the Future of Design with Styly AI</h3>
             <p className="text-purple-800 mb-4">
-              Join the AI revolution in interior design with Styly AI's advanced tools and create stunning spaces that exceed your imagination.
+              Join the AI revolution in interior design with Styly AI's advanced tools and create beautiful spaces that exceed your imagination.
             </p>
             <a
               href="https://app.styly.io/signin"
@@ -321,7 +307,7 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Conclusion</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            AI is transforming the way we approach home interior design, making it more personalized, efficient, and creative. By leveraging AI tools like DALL-E, Midjourney, and Styly AI, you can discover top home interior ideas and transform your living spaces into something truly special.
+            AI is transforming how we approach interior design, making it more personalized, efficient, and creative. By leveraging AI tools like DALL-E, Midjourney, and Styly AI, you can discover the best home interior ideas and transform your living spaces into something truly special.
           </p>
         </section>
 
@@ -330,17 +316,17 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
 
           <div className="space-y-4">
             <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-2">1. How does AI help in discovering home interior ideas?</h3>
-              <p className="text-gray-700">AI analyzes your preferences and provides tailored design suggestions, helping you find ideas that match your unique style.</p>
+              <h3 className="font-semibold text-gray-900 mb-2">How does AI help discover home interior ideas?</h3>
+              <p className="text-gray-700">AI analyzes your preferences and provides personalized design suggestions, helping you find ideas that match your unique style.</p>
             </div>
 
             <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-2">2. Can AI tools work with existing furniture and decor?</h3>
-              <p className="text-gray-700">Yes, AI tools can incorporate your existing furniture and decor into new design plans, ensuring a cohesive look.</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Can AI tools work with existing furniture and decor?</h3>
+              <p className="text-gray-700">Yes, AI tools can integrate your existing furniture and decor into new design plans, ensuring a cohesive look.</p>
             </div>
 
             <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-2">3. Are AI-powered design tools expensive?</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Are AI-powered design tools expensive?</h3>
               <p className="text-gray-700">Many AI design tools are affordable, and some even offer free versions. They can also help save money by preventing costly design mistakes.</p>
             </div>
           </div>
@@ -349,7 +335,7 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Connect with Us</h2>
           <p className="text-gray-700 mb-4">
-            Follow us on social media to stay updated with the latest home interior ideas and AI innovations:
+            Follow us on social media to stay updated on the latest home interior ideas and AI innovations:
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="https://www.facebook.com/profile.php?id=61558770901420" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">Facebook: Styly AI</a>

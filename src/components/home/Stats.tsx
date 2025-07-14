@@ -123,7 +123,7 @@ const Stats: React.FC = () => {
                   href="https://app.styly.io/signin"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-white text-[#593286] font-bold text-lg px-10 py-4 rounded-full shadow-xl hover:bg-orange-500 hover:text-white transition-all duration-300 hover:scale-105 font-baloo"
+                  className="inline-block bg-white text-[#593286] font-bold text-lg px-10 py-4 rounded-full shadow-xl hover:bg-orange-500 hover:text-white transition-all duration-300 hover:scale-105 font-baloo animate-cta-pulse"
                   aria-label={language === "fr" ? "Rejoindre la communauté Styly AI" : "Join the Styly AI community"}
                 >
                   {language === "fr"

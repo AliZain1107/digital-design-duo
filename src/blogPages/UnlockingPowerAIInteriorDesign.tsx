@@ -51,7 +51,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
         {addAlternateLanguageLink()}
       </Helmet>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
         {language === "fr" ? (
           <article className="prose prose-lg max-w-none">
             <h1 className="text-3xl font-bold text-gray-800 mb-2">

@@ -170,35 +170,38 @@ const HowItWorks: React.FC = () => {
               : "Ready to Try It?"
             }
           </h3>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto font-baloo">
+          <p className="text-base sm:text-lg md:text-xl font-baloo font-normal leading-snug text-gray-600 tracking-wide max-w-2xl mx-auto mb-8">
             {language === "fr"
               ? "Découvrez la puissance de l'IA pour transformer vos espaces en quelques clics."
-              : "Experience the power of AI to transform your spaces in just a few clicks."
+              : <>
+                  Experience the power of <span className="font-davetica-wide bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">STYLY</span> to transform your spaces in just a few clicks.
+                </>
             }
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center items-center">
             <a
               href="https://app.styly.io/signin"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-[#593286] via-purple-500 to-[#FA6F40] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-baloo relative z-10"
+              className="bg-gradient-to-r from-purple-600 to-purple-700 text-white font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg border border-transparent transition-all duration-200 hover:scale-105 hover:-translate-y-1 animate-cta-pulse group min-h-[44px] min-w-[44px]"
               aria-label={language === "fr" ? "Essayer Styly AI maintenant" : "Try Styly AI now"}
             >
               {language === "fr"
                 ? "Essayer Maintenant"
-                : "Try It Now"
+                : <span className="transition-all duration-300 group-hover:drop-shadow-[0_0_12px_white]">Try It Now</span>
               }
             </a>
-            <a
-              href="/blog"
-              className="border-2 border-[#593286] text-[#593286] bg-white font-semibold text-lg px-8 py-4 rounded-full hover:bg-[#593286] hover:text-white transition-all duration-300 font-baloo relative z-10"
-              aria-label={language === "fr" ? "Voir des exemples de designs" : "See design examples"}
-            >
-              {language === "fr"
-                ? "Voir des Exemples"
-                : "Watch Demo"
-              }
-            </a>
+          </div>
+          {/* Feature row: No credit card needed | Instant results */}
+          <div className="flex flex-row justify-center items-center gap-4 mt-4 mb-2 text-center">
+            <div className="flex items-center text-gray-600 font-normal text-sm sm:text-base">
+              <svg className="w-5 h-5 text-green-400 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+              No credit card needed
+            </div>
+            <div className="flex items-center text-gray-600 font-normal text-sm sm:text-base">
+              <svg className="w-5 h-5 text-green-400 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+              Instant results
+            </div>
           </div>
           <div className="mt-4">
             <span className="text-sm text-gray-500 font-baloo">

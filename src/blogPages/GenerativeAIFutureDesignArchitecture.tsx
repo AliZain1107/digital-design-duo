@@ -36,7 +36,7 @@ const GenerativeAIFutureDesignArchitecture: React.FC = () => {
         <meta name="twitter:image" content="/generative-ai-interior-design-revolution.webp" />
       </Helmet>
 
-      <article className="max-w-4xl mx-auto px-4 py-8">
+      <article className="max-w-4xl mx-auto px-4 py-8 pt-20">
         <header className="mb-8">
           <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             {language === 'fr' ? 
