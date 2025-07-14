@@ -1,24 +1,39 @@
-# Allow all web crawlers
+# robots.txt for styly.fr
+
+# Sitemaps
+Sitemap: https://www.styly.fr/sitemap.xml
+Sitemap: https://www.styly.fr/sitemap-fr.xml
+
+# General settings for all bots
 User-agent: *
+Crawl-delay: 2
 Allow: /
 
-# Disallow admin and private areas
+# Disallowed sensitive and technical directories
+Disallow: /wp-admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
 Disallow: /admin/
 Disallow: /api/
 Disallow: /.env
 Disallow: /node_modules/
-
-# Disallow English routes (not actively used)
+Disallow: /private/
+Disallow: /_next/
 Disallow: /en/
 
-# Allow important directories
-Allow: /blog/
-Allow: /images/
-Allow: /css/
-Allow: /js/
+# AI bots explicitly allowed for visibility in AI search results
+User-agent: GPTBot
+Allow: /
 
-# Sitemap location for www.styly.fr (French-focused)
-Sitemap: https://www.styly.fr/sitemap-fr.xml
+User-agent: ClaudeBot
+Allow: /
 
-# Crawl delay to be nice to servers
-Crawl-delay: 1
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
