@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { useLanguage } from "@/lib/i18n";
 import { MapPin, Eye, Heart, Award } from "lucide-react";
 
@@ -23,7 +23,7 @@ const specialtyTranslations: Record<string, { en: string; fr: string }> = {
   "Zen & Wellness": { en: "Zen & Wellness", fr: "Zen & bien-être" },
 };
 
-const AgencyShowcase: React.FC = () => {
+const AgencyShowcase = forwardRef<HTMLElement, {}>((props, ref) => {
   const { language, t } = useLanguage();
 
   const agencies = [
@@ -110,7 +110,7 @@ const AgencyShowcase: React.FC = () => {
   ];
 
   return (
-    <section className="relative py-20 bg-white overflow-hidden">
+    <section ref={ref} className="relative py-20 bg-white overflow-hidden">
       {/* Background Pattern */}
       {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.05),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(168,85,247,0.06),transparent_50%)]"></div> */}
@@ -210,6 +210,6 @@ const AgencyShowcase: React.FC = () => {
       </div>
     </section>
   );
-};
+});
 
 export default AgencyShowcase;

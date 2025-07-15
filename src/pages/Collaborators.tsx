@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -114,8 +114,12 @@ const Collaborators: React.FC = () => {
     }
   ];
 
-
-
+  const partnersSectionRef = useRef<HTMLElement | null>(null);
+  const scrollToPartners = () => {
+    if (partnersSectionRef.current) {
+      partnersSectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
   return (
     <div className="bg-white flex flex-col w-full min-h-screen" key={`collaborators-${language}`}>
       <SEO
@@ -171,15 +175,16 @@ const Collaborators: React.FC = () => {
               </div>
               <div className="relative group">
                 <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
-                <a
-                  href="#agency-showcase"
+                <button
+                  type="button"
+                  onClick={scrollToPartners}
                   className="relative flex items-center justify-center py-4 px-8 rounded-lg bg-white text-purple-700 font-bold text-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10 font-baloo"
                   style={{minWidth: '200px'}}
                 >
                   <span className="flex items-center">
                     {language === "fr" ? "Voir les Partenaires" : "See Partners"}
                   </span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -541,7 +546,7 @@ const Collaborators: React.FC = () => {
       </section>
 
       {/* Agency Showcase Section */}
-      <AgencyShowcase />
+      <AgencyShowcase ref={partnersSectionRef} />
 
       {/* Application CTA Section - Styly Pro Launchpad Style */}
       <section className="bg-gradient-to-b from-purple-600 to-purple-800 text-white py-20">
