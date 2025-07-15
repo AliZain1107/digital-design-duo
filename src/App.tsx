@@ -13,6 +13,7 @@ import Privacy from "./pages/Privacy";
 import VideoGuide from "./pages/VideoGuide";
 import Collaborators from "./pages/Collaborators";
 import ServicesAPI from "./pages/ServicesAPI";
+import Docs from "./pages/Docs";
 import Upload from "./pages/Upload";
 import Pricing from "./pages/Pricing";
 import CookieBanner from "./components/layout/CookieBanner";
@@ -102,6 +103,14 @@ const App = () => (
               {/* English services API pages */}
               <Route path="/en/services-api" element={<ServicesAPI />} />
               <Route path="/en/services-api/" element={<ServicesAPI />} />
+
+              {/* French docs pages */}
+              <Route path="/fr/docs" element={<Docs />} />
+              <Route path="/fr/docs/" element={<Docs />} />
+
+              {/* English docs pages */}
+              <Route path="/en/docs" element={<Docs />} />
+              <Route path="/en/docs/" element={<Docs />} />
 
               {/* Legacy routes for backward compatibility */}
               <Route path="/conditions" element={<Terms />} />
