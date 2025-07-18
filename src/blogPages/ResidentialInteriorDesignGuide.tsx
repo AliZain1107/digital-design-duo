@@ -240,6 +240,9 @@ const ResidentialInteriorDesignGuide: React.FC = () => {
                     <a href="https://www.linkedin.com/company/stylyai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">
                       💼 LinkedIn: Styly AI
                     </a>
+                    <a href="https://tr.pinterest.com/STYLYIO" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">
+                      📌 Pinterest: STYLY
+                    </a>
                   </div>
                 </div>
               </article>
@@ -367,6 +370,9 @@ const ResidentialInteriorDesignGuide: React.FC = () => {
                     </a>
                     <a href="https://www.linkedin.com/company/stylyai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">
                       💼 LinkedIn : Styly AI
+                    </a>
+                    <a href="https://tr.pinterest.com/STYLYIO" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">
+                      📌 Pinterest : STYLY
                     </a>
                   </div>
                 </div>

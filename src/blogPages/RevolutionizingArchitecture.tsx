@@ -282,6 +282,14 @@ const RevolutionizingArchitecture: React.FC = () => {
               >
                 {t.facebook}
               </a>
+              <a
+                href="https://tr.pinterest.com/STYLYIO"
+                target="_blank"
+                className="text-blue-500"
+                rel="noopener"
+              >
+                Pinterest
+              </a>
             </div>
           </div>
         </div>

@@ -374,6 +374,7 @@ const ExpertTipsSaveBigHomeInteriors: React.FC = () => {
           <div className="flex flex-wrap gap-4">
             <a href="https://www.facebook.com/profile.php?id=61558770901420" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">Facebook: Styly AI</a>
             <a href="https://www.linkedin.com/company/stylyai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">LinkedIn: Styly AI</a>
+            <a href="https://tr.pinterest.com/STYLYIO" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">Pinterest: STYLY</a>
             <a href="https://www.instagram.com/stylyio" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">Instagram: @stylyio</a>
                 </div>
         </section>

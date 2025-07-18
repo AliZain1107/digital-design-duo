@@ -221,6 +221,14 @@ const DesignLivingRoomLikePro: React.FC = () => {
                 >
                   LinkedIn: Styly AI
                 </a>
+                <a
+                  href="https://tr.pinterest.com/STYLYIO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Pinterest: STYLY
+                </a>
               </div>
             </div>
           </>
@@ -406,6 +414,14 @@ const DesignLivingRoomLikePro: React.FC = () => {
                   className="text-blue-600 hover:underline"
                 >
                   LinkedIn: Styly AI
+                </a>
+                <a
+                  href="https://tr.pinterest.com/STYLYIO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Pinterest: STYLY
                 </a>
               </div>
             </div>

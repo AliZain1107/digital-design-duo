@@ -83,7 +83,8 @@ const Footer: React.FC = () => {
               {[
                 { name: "LinkedIn", url: "https://linkedin.com", icon: "/linkedin.svg" },
                 { name: "Facebook", url: "https://facebook.com", icon: "/facebook.svg" },
-                { name: "Instagram", url: "https://instagram.com", icon: "/instagram.svg" }
+                { name: "Instagram", url: "https://instagram.com", icon: "/instagram.svg" },
+                { name: "Pinterest", url: "https://tr.pinterest.com/STYLYIO", icon: "/pinterest.svg" }
               ].map((social, index) => (
                 <a
                   key={index}
