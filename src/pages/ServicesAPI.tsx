@@ -1,5 +1,5 @@
 import React, { useEffect, useContext, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/layout/SEO";
@@ -31,6 +31,7 @@ import { useCountUp } from "../components/home/Stats";
 const ServicesAPI: React.FC = () => {
   const { language, setLanguage, t } = useContext(LanguageContext);
   const location = useLocation();
+  const navigate = useNavigate();
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
   // Auto-scroll to top when page loads
@@ -265,6 +266,7 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
               <div className="relative group">
                 <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 blur-sm opacity-70 group-hover:opacity-100 animate-gradient-x z-0" />
                 <button
+                  onClick={() => navigate(`/${language === "fr" ? "fr" : "en"}/docs`)}
                   className="relative flex items-center justify-center py-4 px-8 rounded-lg bg-white text-purple-700 font-bold text-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 border border-transparent whitespace-nowrap z-10 font-baloo"
                   style={{minWidth: '200px'}} // scale for hero
                 >
@@ -695,7 +697,10 @@ console.log(result.design_url); // ${language === "fr" ? "URL du design génér�
                 }
               </p>
               <button
-                onClick={() => setIsContactFormOpen(true)}
+                type="button"
+                data-tally-open="w2YLQj"
+                data-tally-layout="modal"
+                data-tally-emoji-animation="none"
                 className="inline-block bg-white text-orange-600 font-bold text-lg md:text-xl px-10 py-4 rounded-full shadow-lg hover:bg-purple-600 hover:text-white transition-all duration-200 font-baloo z-10 animate-cta-pulse"
               >
                 {language === "fr" ? "Nous Contacter" : "Contact Us"}
