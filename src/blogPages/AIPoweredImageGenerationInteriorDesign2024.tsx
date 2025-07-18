@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
 
@@ -6,7 +6,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
   const { language } = useLanguage();
 
   // Scroll to top when component mounts
-  useEffect(() => {
+  React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 

@@ -207,13 +207,16 @@ const Hero: React.FC = () => {
                 : <span className="transition-all duration-300 group-hover:drop-shadow-[0_0_12px_white]">Start Free Trial</span>
               }
             </button>
-              <a
-                href="mailto:contact@styly.io?subject=Styly%20Design%20Inquiry"
-              className="border-2 border-purple-700 bg-white text-purple-700 font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 hover:-translate-y-1 font-baloo relative z-10 min-h-[44px] min-w-[44px] flex items-center justify-center"
-              aria-label={language === "fr" ? "Contactez-nous" : "Contact Us"}
-            >
-              {language === "fr" ? "Contactez-nous" : "Contact Us"} <span className="ml-2">&rarr;</span>
-            </a>
+              <button
+                type="button"
+                data-tally-open="3q8GLd"
+                data-tally-layout="modal"
+                data-tally-emoji-animation="none"
+                className="border-2 border-purple-700 bg-white text-purple-700 font-bold text-lg sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg transition-all duration-200 hover:bg-purple-50 hover:scale-105 hover:-translate-y-1 font-baloo relative z-10 min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label={language === "fr" ? "Contactez-nous" : "Contact Us"}
+              >
+                {language === "fr" ? "Contactez-nous" : "Contact Us"} <span className="ml-2">&rarr;</span>
+              </button>
           </div>
 
         </div>
