@@ -1,8 +1,7 @@
 # robots.txt for styly.fr
 
-# Sitemaps
+# Sitemap
 Sitemap: https://www.styly.fr/sitemap.xml
-Sitemap: https://www.styly.fr/sitemap-fr.xml
 
 # General settings for all bots
 User-agent: *

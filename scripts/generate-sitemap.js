@@ -249,56 +249,16 @@ function generateMainSitemap() {
   return generateSitemapXML(urls);
 }
 
-function generateFrenchSitemap() {
-  const urls = [];
-  const today = new Date().toISOString().split('T')[0];
+// Removed generateFrenchSitemap function - now using single consolidated sitemap
 
-  // Get blog posts from actual data file
-  const blogPosts = getBlogPostsFromDataFile();
-
-  // Add French main pages only
-  mainPages.forEach(page => {
-    urls.push({
-      loc: `${DOMAIN}/${page.path}`,
-      lastmod: today,
-      changefreq: page.changefreq,
-      priority: page.priority,
-      hreflang: [
-        { lang: 'fr', href: `${DOMAIN}/${page.path}` },
-        { lang: 'en', href: `${DOMAIN}/en/${page.path}` },
-        { lang: 'x-default', href: `${DOMAIN}/${page.path}` }
-      ]
-    });
-  });
-
-  // Add French blog posts only
-  blogPosts.forEach(post => {
-    urls.push({
-      loc: `${DOMAIN}/blog/${post.slugFr || post.slug}`,
-      lastmod: post.lastmod,
-      changefreq: 'monthly',
-      priority: '0.8',
-      hreflang: [
-        { lang: 'fr', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` },
-        { lang: 'en', href: `${DOMAIN}/en/blog/${post.slugEn}` },
-        { lang: 'x-default', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` }
-      ]
-    });
-  });
-
-  return generateSitemapXML(urls);
-}
-
-// Generate sitemaps
-console.log('Generating sitemaps...');
+// Generate single consolidated sitemap
+console.log('Generating consolidated French sitemap...');
 
 const mainSitemap = generateMainSitemap();
-const frenchSitemap = generateFrenchSitemap();
 
-// Write files
+// Write single sitemap file
 fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), mainSitemap);
-fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap-fr.xml'), frenchSitemap);
 
-console.log('✅ Sitemaps generated successfully!');
-console.log(`📁 Main sitemap: ${path.join(OUTPUT_DIR, 'sitemap.xml')}`);
-console.log(`📁 French sitemap: ${path.join(OUTPUT_DIR, 'sitemap-fr.xml')}`);
+console.log('✅ Consolidated sitemap generated successfully!');
+console.log(`📁 Sitemap: ${path.join(OUTPUT_DIR, 'sitemap.xml')}`);
+console.log('🎯 Contains only French URLs - no duplicate or conflicting sitemaps');
