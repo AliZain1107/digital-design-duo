@@ -18,10 +18,58 @@ const __dirname = path.dirname(__filename);
 const DOMAIN = 'https://www.styly.fr';
 const OUTPUT_DIR = path.join(__dirname, '../public');
 
-// Function to get blog posts - using fallback for now to avoid parsing issues
+// Function to get blog posts from actual data file
 function getBlogPostsFromDataFile() {
-  console.log('📚 Using fallback blog posts data for sitemap generation');
-  return getFallbackBlogPosts();
+  try {
+    // Read the actual blogPosts.tsx file
+    const blogPostsPath = path.join(__dirname, '../src/components/data/blogPosts.tsx');
+    const fileContent = fs.readFileSync(blogPostsPath, 'utf8');
+
+    // Extract blog posts data using regex
+    const blogPostsMatch = fileContent.match(/export const blogPosts: BlogPost\[\] = \[([\s\S]*?)\];/);
+    if (!blogPostsMatch) {
+      console.log('⚠️  Could not parse blogPosts.tsx, using fallback data');
+      return getFallbackBlogPosts();
+    }
+
+    // Extract individual blog post objects
+    const blogPostsContent = blogPostsMatch[1];
+    const posts = [];
+
+    // Split by blog post objects (each starts with id:)
+    const postObjects = blogPostsContent.split(/\{\s*id:\s*\d+/).slice(1); // Remove first empty element
+
+    for (let i = 0; i < postObjects.length; i++) {
+      const postContent = postObjects[i];
+
+      // Extract id, slugFr (or slug if no slugFr), and date
+      const idMatch = postContent.match(/^[^}]*?(\d+)/);
+      const slugFrMatch = postContent.match(/slugFr:\s*"([^"]+)"/);
+      const slugMatch = postContent.match(/slug:\s*"([^"]+)"/);
+      const dateMatch = postContent.match(/date:\s*"([^"]+)"/);
+
+      if (idMatch && dateMatch && (slugFrMatch || slugMatch)) {
+        const id = parseInt(idMatch[1]);
+        const slugFr = slugFrMatch ? slugFrMatch[1] : slugMatch[1];
+        const date = dateMatch[1];
+
+        posts.push({
+          id: id,
+          slugFr: slugFr,
+          slug: slugFr, // Use French slug as primary
+          lastmod: convertDateToISO(date)
+        });
+      }
+    }
+
+    console.log(`📚 Successfully parsed ${posts.length} blog posts from blogPosts.tsx`);
+    return posts.length > 0 ? posts : getFallbackBlogPosts();
+
+  } catch (error) {
+    console.log('⚠️  Error reading blogPosts.tsx:', error.message);
+    console.log('📚 Using fallback blog posts data for sitemap generation');
+    return getFallbackBlogPosts();
+  }
 }
 
 // Convert date formats to ISO
