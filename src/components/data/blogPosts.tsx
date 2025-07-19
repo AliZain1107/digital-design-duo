@@ -52,6 +52,17 @@ import GenZInstagramWorthyInteriors from "@/blogPages/GenZInstagramWorthyInterio
 import BuildHouseAIToolsPorchDesign from "@/blogPages/BuildHouseAIToolsPorchDesign";
 import UltimateGuideAIInteriorDesignTools2025 from "@/blogPages/UltimateGuideAIInteriorDesignTools2025";
 
+// New French blog components
+import ExpertTipsEconomiserDecorationInterieure2025 from "@/blogPages/ExpertTipsEconomiserDecorationInterieure2025";
+import SixPromptsVirauxDesignChambreIAStyly from "@/blogPages/SixPromptsVirauxDesignChambreIAStyly";
+import AssistantIADesignInterieurPromptsChatGPT from "@/blogPages/AssistantIADesignInterieurPromptsChatGPT";
+import BesoinSalleBainLuxueuseBudgetVoiciComment from "@/blogPages/BesoinSalleBainLuxueuseBudgetVoiciComment";
+import ChatGPTPeutIlConcevoirVotreMaisonIADesignInterieur from "@/blogPages/ChatGPTPeutIlConcevoirVotreMaisonIADesignInterieur";
+import CommentConstruireVotreMaisonOutilsIAConceptionPorche from "@/blogPages/CommentConstruireVotreMaisonOutilsIAConceptionPorche";
+import TendancesDesignInterieur2025 from "@/blogPages/TendancesDesignInterieur2025";
+import CommentDALLEMidjourneyRevolutionnentDesignInterieur from "@/blogPages/CommentDALLEMidjourneyRevolutionnentDesignInterieur";
+import CommentIAGenerativeRevolutionneDesignInterieur from "@/blogPages/CommentIAGenerativeRevolutionneDesignInterieur";
+
 export interface BlogPost {
   id: number;
   title: string;
@@ -66,6 +77,96 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 0,
+    title: "Interior Design Trends 2025: AI Revolutionizes Decoration",
+    titleFr: "Tendances Design Intérieur 2025 : L'IA Révolutionne la Décoration",
+    date: "Feb 15, 2025",
+    image: "/Blogpages/interior-design-trends-2025.jpg",
+    slug: "interior-design-trends-2025-ai-revolutionizes-decoration",
+    slugFr: "tendances-design-interieur-2025",
+    Component: TendancesDesignInterieur2025,
+  },
+  {
+    id: 1,
+    title: "How to Build Your House: AI Tools for Porch Design",
+    titleFr: "Comment Construire Votre Maison : Outils IA pour la Conception de Porche",
+    date: "Feb 10, 2025",
+    image: "/Blogpages/ai-porch-design-construction.jpg",
+    slug: "how-to-build-your-house-ai-tools-porch-design",
+    slugFr: "comment-construire-votre-maison-outils-ia-conception-porche",
+    Component: CommentConstruireVotreMaisonOutilsIAConceptionPorche,
+  },
+  {
+    id: 2,
+    title: "Can ChatGPT Design Your House? AI and Interior Design",
+    titleFr: "ChatGPT Peut-il Concevoir Votre Maison ? IA et Design Intérieur",
+    date: "Feb 5, 2025",
+    image: "/Blogpages/chatgpt-house-design-ai.jpg",
+    slug: "can-chatgpt-design-your-house-ai-interior-design",
+    slugFr: "chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur",
+    Component: ChatGPTPeutIlConcevoirVotreMaisonIADesignInterieur,
+  },
+  {
+    id: 3,
+    title: "Need a Luxury Bathroom on a Budget? Here's How",
+    titleFr: "Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment Faire",
+    date: "Feb 1, 2025",
+    image: "/Blogpages/luxury-bathroom-budget.jpg",
+    slug: "need-luxury-bathroom-budget-heres-how",
+    slugFr: "besoin-salle-bain-luxueuse-budget-voici-comment",
+    Component: BesoinSalleBainLuxueuseBudgetVoiciComment,
+  },
+  {
+    id: 4,
+    title: "AI Interior Design Assistant: Best ChatGPT and Styly AI Prompts",
+    titleFr: "Assistant IA Design Intérieur : Meilleurs Prompts ChatGPT et Styly AI",
+    date: "Jan 25, 2025",
+    image: "/Blogpages/ai-assistant-interior-design-prompts.jpg",
+    slug: "ai-interior-design-assistant-best-chatgpt-styly-ai-prompts",
+    slugFr: "assistant-ia-design-interieur-prompts-chatgpt",
+    Component: AssistantIADesignInterieurPromptsChatGPT,
+  },
+  {
+    id: 5,
+    title: "6 Viral Prompts for Bedroom Design with Styly AI",
+    titleFr: "6 Prompts Viraux pour le Design de Chambre avec l'IA Styly",
+    date: "Jan 20, 2025",
+    image: "/Blogpages/viral-bedroom-prompts-ai.jpg",
+    slug: "6-viral-prompts-bedroom-design-styly-ai",
+    slugFr: "6-prompts-viraux-design-chambre-ia-styly",
+    Component: SixPromptsVirauxDesignChambreIAStyly,
+  },
+  {
+    id: 6,
+    title: "10 Expert Tips to Save on Interior Decoration in 2025",
+    titleFr: "10 Conseils d'Experts pour Économiser sur la Décoration Intérieure en 2025",
+    date: "Jan 15, 2025",
+    image: "/Blogpages/expert-tips-save-money-decoration.jpg",
+    slug: "10-expert-tips-save-interior-decoration-2025",
+    slugFr: "10-conseils-experts-economiser-decoration-interieure-2025",
+    Component: ExpertTipsEconomiserDecorationInterieure2025,
+  },
+  {
+    id: 50,
+    title: "How Generative AI Revolutionizes Interior Design",
+    titleFr: "Comment l'IA Générative Révolutionne le Design Intérieur",
+    date: "Feb 12, 2025",
+    image: "/Blogpages/generative-ai-interior-design-revolution.jpg",
+    slug: "how-generative-ai-revolutionizes-interior-design",
+    slugFr: "comment-ia-generative-revolutionne-design-interieur",
+    Component: CommentIAGenerativeRevolutionneDesignInterieur,
+  },
+  {
+    id: 51,
+    title: "How DALL-E, Midjourney and Styly Revolutionize Interior Design",
+    titleFr: "Comment DALL-E, Midjourney et Styly Révolutionnent le Design Intérieur",
+    date: "Jan 30, 2025",
+    image: "/Blogpages/dalle-midjourney-styly-design.jpg",
+    slug: "how-dalle-midjourney-styly-revolutionize-interior-design",
+    slugFr: "comment-dall-e-midjourney-styly-revolutionnent-design-interieur",
+    Component: CommentDALLEMidjourneyRevolutionnentDesignInterieur,
+  },
+  {
+    id: 7,
     title: "The Science of Color in Design: How AI Helps You Choose the Perfect Palette",
     titleFr: "La Science de la Couleur en Design : Comment l'IA Vous Aide à Choisir la Palette Parfaite",
     date: "Jun 28, 2025",
@@ -75,7 +176,7 @@ export const blogPosts: BlogPost[] = [
     Component: ScienceColorDesignAIChoosePerfectPalette,
   },
   {
-    id: 1,
+    id: 8,
     title: "Leveraging AI to Optimize Space Planning in Small Apartments",
     titleFr: "Exploiter l'IA pour Optimiser la Planification d'Espace dans les Petits Appartements",
     date: "Jun 27, 2025",
@@ -85,7 +186,7 @@ export const blogPosts: BlogPost[] = [
     Component: LeveragingAIOptimizeSpacePlanningSmallApartments,
   },
   {
-    id: 2,
+    id: 9,
     title: "How AI-Powered Image Generation Can Inspire Your Interior Design in 2024",
     titleFr: "Comment la Génération d'Images IA Peut Inspirer Votre Design Intérieur en 2024",
     date: "Jun 26, 2025",
@@ -95,7 +196,7 @@ export const blogPosts: BlogPost[] = [
     Component: AIPoweredImageGenerationInteriorDesign2024,
   },
   {
-    id: 3,
+    id: 10,
     title: "Need Luxury Bathroom on a Budget? Here's How!",
     titleFr: "Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !",
     date: "Jun 25, 2025",

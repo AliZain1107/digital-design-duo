@@ -4,6 +4,22 @@
 # IMPORTANT: Specific rules MUST come before general patterns
 # Updated to ensure no-slash → slash → 200 (one hop) as requested
 
+# Specific 301 redirects for broken URLs (must come before general patterns)
+# Blog redirects to existing content
+/blog/comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025/  /blog/comment-agents-immobiliers-augmentent-ventes-staging-virtuel-ia-2025  301!
+/blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite/  /blog/science-couleur-design-ia-palette-parfaite  301!
+/blog/science-couleur-design-ia-palette-parfaite/  /blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite  301!
+
+# Core pages redirect to homepage for better UX
+/collaborateurs/  /  301!
+/conditions/  /  301!
+/confidentialite/  /  301!
+/get-started/  /  301!
+/pricing/  /  301!
+/upload/  /  301!
+/video/  /  301!
+/styly-pro/  /collaborateurs  301!
+
 # French-specific redirects (remove trailing slashes)
 /blog/10-conseils-experts-economiser-decoration-interieure-2025/  /blog/10-conseils-experts-economiser-decoration-interieure-2025  301!
 
@@ -21,30 +37,22 @@
 # English routes redirect to external site
 /en/*  https://www.styly.io/:splat  301!
 
-# Legal pages redirects (French only)
-/conditions/  /conditions  301!
-/confidentialite/  /confidentialite  301!
+# Legal pages redirects (French only) - trailing slash removal
 /privacy/  /privacy  301!
 /terms/  /terms  301!
 /fr/conditions/  /fr/conditions  301!
 /fr/confidentialite/  /fr/confidentialite  301!
 
-# Service pages redirects (French only)
+# Service pages redirects (French only) - trailing slash removal
 /services-api/  /services-api  301!
 /fr/services-api/  /fr/services-api  301!
-/collaborateurs/  /collaborateurs  301!
 /fr/collaborateurs/  /fr/collaborateurs  301!
 
-# Other pages redirects (French only)
-/upload/  /upload  301!
+# Other pages redirects (French only) - trailing slash removal
 /fr/upload/  /fr/upload  301!
-/pricing/  /pricing  301!
 /fr/pricing/  /fr/pricing  301!
-/styly-pro/  /styly-pro  301!
 /fr/styly-pro/  /fr/styly-pro  301!
-/get-started/  /get-started  301!
 /fr/get-started/  /fr/get-started  301!
-/video/  /video  301!
 /video-guide/  /video-guide  301!
 /fr/video/  /fr/video  301!
 
