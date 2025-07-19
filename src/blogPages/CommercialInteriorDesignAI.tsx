@@ -22,12 +22,12 @@ const CommercialInteriorDesignAI: React.FC = () => {
 
   const currentSeo = language === "fr" ? seoData.fr : seoData.en;
   const currentUrl = language === "fr"
-    ? "https://www.styly.fr/fr/blog/ia-avenir-design-interieur-commercial"
-    : "https://www.styly.fr/en/blog/ai-future-commercial-interior-design";
+    ? "https://www.styly.fr/blog/ia-avenir-design-interieur-commercial"
+    : "https://www.styly.fr/blog/ai-future-commercial-interior-design";
 
   const alternateUrls = {
-    en: "https://www.styly.fr/en/blog/ai-future-commercial-interior-design",
-    fr: "https://www.styly.fr/fr/blog/ia-avenir-design-interieur-commercial"
+    en: "https://www.styly.fr/blog/ai-future-commercial-interior-design",
+    fr: "https://www.styly.fr/blog/ia-avenir-design-interieur-commercial"
   };
 
   return (

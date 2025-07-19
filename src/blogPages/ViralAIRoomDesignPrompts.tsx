@@ -20,11 +20,11 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
           <meta property="og:title" content="6 Prompts Viraux de Design de Chambre IA : Créez Votre Chambre de Rêve avec STYLY.io" />
           <meta property="og:description" content="Découvrez 6 prompts viraux de design de chambre IA qui génèrent des résultats époustouflants." />
           <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11056-k6lwqq.jpg" />
-          <meta property="og:url" content="https://www.styly.fr/fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
-          <link rel="canonical" href="https://www.styly.fr/fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
-          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
-          <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
-          <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
+          <meta property="og:url" content="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
+          <link rel="canonical" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
+          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
+          <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
+          <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
         </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
@@ -54,15 +54,15 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
 
             <p className="text-gray-700 leading-relaxed mb-6">
               Que vous souhaitiez créer une{" "}
-              <a href="/fr/blog/huit-designs-chambres-ia-epoustouflants" className="text-blue-600 hover:text-blue-800 font-medium">
+              <a href="/blog/huit-designs-chambres-ia-epoustouflants" className="text-blue-600 hover:text-blue-800 font-medium">
                 chambre moderne époustouflante
               </a>
               {" "}ou suivre les{" "}
-              <a href="/fr/blog/tendances-design-interieur-2025" className="text-blue-600 hover:text-blue-800 font-medium">
+              <a href="/blog/tendances-design-interieur-2025" className="text-blue-600 hover:text-blue-800 font-medium">
                 dernières tendances design 2025
               </a>
               , ces prompts vous aideront à obtenir des résultats professionnels. Pour découvrir d'autres outils gratuits, consultez notre{" "}
-              <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:text-blue-800 font-medium">
+              <a href="/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:text-blue-800 font-medium">
                 guide complet des logiciels de design IA gratuits
               </a>
               .
@@ -275,11 +275,11 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
         <meta property="og:title" content="6 Viral AI Room Design Prompts: Create Your Dream Bedroom with STYLY.io" />
         <meta property="og:description" content="Discover 6 viral AI room design prompts that consistently generate jaw-dropping bedroom results." />
         <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11056-k6lwqq.jpg" />
-        <meta property="og:url" content="https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
-        <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
-        <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
-        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/en/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
+        <meta property="og:url" content="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
+        <link rel="canonical" href="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
+        <link rel="alternate" hrefLang="en" href="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
+        <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
       </Helmet>
       <article className="prose prose-lg max-w-none">
         <header className="mb-8">
@@ -309,15 +309,15 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
 
           <p className="text-gray-700 leading-relaxed mb-6">
             Whether you want to create a{" "}
-            <a href="/en/blog/AI-Bedroom" className="text-blue-600 hover:text-blue-800 font-medium">
+            <a href="/blog/AI-Bedroom" className="text-blue-600 hover:text-blue-800 font-medium">
               stunning modern bedroom
             </a>
             {" "}or follow the{" "}
-            <a href="/en/blog/2025-interior-design-trends" className="text-blue-600 hover:text-blue-800 font-medium">
+            <a href="/blog/2025-interior-design-trends" className="text-blue-600 hover:text-blue-800 font-medium">
               latest 2025 design trends
             </a>
             , these prompts will help you achieve professional results. For more free tools, check out our{" "}
-            <a href="/en/blog/free-ai-interior-design-software" className="text-blue-600 hover:text-blue-800 font-medium">
+            <a href="/blog/free-ai-interior-design-software" className="text-blue-600 hover:text-blue-800 font-medium">
               comprehensive guide to free AI design software
             </a>
             .

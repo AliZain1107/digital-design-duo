@@ -18,7 +18,7 @@ const AIDrivenCustomizationFuture: React.FC = () => {
       <link
         rel="alternate"
         hrefLang={alternateLang}
-        href={`https://www.styly.fr/${alternateLang}/blog/${alternateSlug}`}
+        href={`https://www.styly.fr/blog/${alternateSlug}`}
       />
     );
   };

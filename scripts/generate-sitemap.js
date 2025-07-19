@@ -211,9 +211,11 @@ function generateMainSitemap() {
 
   // Add blog posts (French only - English URLs redirect to styly.io)
   blogPosts.forEach(post => {
-    // French blog post only
+    const slug = post.slugFr || post.slug;
+
+    // French blog post only (without trailing slash - canonical version)
     urls.push({
-      loc: `${DOMAIN}/blog/${post.slugFr || post.slug}`,
+      loc: `${DOMAIN}/blog/${slug}`,
       lastmod: post.lastmod,
       changefreq: 'monthly',
       priority: '0.8'

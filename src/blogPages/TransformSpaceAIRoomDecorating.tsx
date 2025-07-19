@@ -38,9 +38,9 @@ const TransformSpaceAIRoomDecorating: React.FC = () => {
         <meta name="author" content="Styly.io" />
         <meta name="language" content={language} />
         {language === "fr" ? (
-          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/transform-space-ai-revolutionize-room-decorating" />
+          <link rel="alternate" hrefLang="en" href="https://www.styly.fr/blog/transform-space-ai-revolutionize-room-decorating" />
         ) : (
-          <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/fr/blog/transformer-espace-ia-revolutionner-decoration-chambre" />
+          <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/transformer-espace-ia-revolutionner-decoration-chambre" />
         )}
       </Helmet>
 
