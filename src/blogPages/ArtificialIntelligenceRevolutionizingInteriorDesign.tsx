@@ -24,11 +24,11 @@ const ArtificialIntelligenceRevolutionizingInteriorDesign: React.FC = () => {
         <title>{seoMeta[language].title}</title>
         <meta name="description" content={seoMeta[language].description} />
         <meta name="keywords" content={seoMeta[language].keywords} />
-        <link rel="canonical" href={`https://styly.io/${language === 'fr' ? 'fr/' : ''}blog/how-artificial-intelligence-is-revolutionizing-interior-design`} />
+        <link rel="canonical" href={`https://www.styly.fr/${language === 'fr' ? 'fr/' : ''}blog/how-artificial-intelligence-is-revolutionizing-interior-design`} />
         <meta property="og:title" content={seoMeta[language].title} />
         <meta property="og:description" content={seoMeta[language].description} />
         <meta property="og:image" content="/ai-interior-design-technology.webp" />
-        <meta property="og:url" content={`https://styly.io/${language === 'fr' ? 'fr/' : ''}blog/how-artificial-intelligence-is-revolutionizing-interior-design`} />
+        <meta property="og:url" content={`https://www.styly.fr/${language === 'fr' ? 'fr/' : ''}blog/how-artificial-intelligence-is-revolutionizing-interior-design`} />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seoMeta[language].title} />

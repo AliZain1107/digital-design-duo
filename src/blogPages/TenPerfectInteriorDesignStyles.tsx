@@ -13,9 +13,9 @@ const TenPerfectInteriorDesignStyles: React.FC = () => {
         <meta name="keywords" content="interior design styles, minimalist design, bohemian design, rustic design, mid-century modern, industrial design, coastal design, glamorous design, scandinavian design, traditional design, eclectic design" />
         <meta property="og:title" content="10 Perfect Interior Design Style: Timeless Elegance and Modern Flair" />
         <meta property="og:description" content="Discover 10 captivating interior design styles from minimalist to bohemian. Transform your home with timeless elegance and modern flair using Styly AI." />
-        <meta property="og:image" content="https://styly.io/interior-design-styles-collection.webp" />
-        <meta property="og:url" content="https://styly.io/blog/10-perfect-interior-design-style-timeless-elegance-modern-flair" />
-        <link rel="canonical" href="https://styly.io/blog/10-perfect-interior-design-style-timeless-elegance-modern-flair" />
+        <meta property="og:image" content="https://www.styly.fr/interior-design-styles-collection.webp" />
+        <meta property="og:url" content="https://www.styly.fr/blog/10-perfect-interior-design-style-timeless-elegance-modern-flair" />
+        <link rel="canonical" href="https://www.styly.fr/blog/10-perfect-interior-design-style-timeless-elegance-modern-flair" />
       </Helmet>
 
       <div className="min-h-screen bg-white">

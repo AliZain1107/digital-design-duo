@@ -27,7 +27,7 @@ const InteriorAIInterviewSophiaRenard: React.FC = () => {
         <meta property="og:title" content={seoMeta[language].title} />
         <meta property="og:description" content={seoMeta[language].description} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://styly.io/blog/interior-ai-and-interior-design-interview-sophia-renard" />
+        <meta property="og:url" content="https://www.styly.fr/blog/interior-ai-and-interior-design-interview-sophia-renard" />
         <meta property="og:image" content="/ai-interior-design-technology.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seoMeta[language].title} />

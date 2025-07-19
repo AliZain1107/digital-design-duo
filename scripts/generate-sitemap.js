@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
 /**
- * Bilingual Sitemap Generator for Styly.fr
- * Generates accurate sitemaps with proper bilingual URL structure
- * Reads from actual blog posts data and ensures proper hreflang implementation
+ * French-First Sitemap Generator for Styly.fr
+ * Generates sitemap focused on French content only
+ * English URLs redirect to styly.io so they should not be in sitemap
+ * This prevents confusing hreflang signals for Google indexing
  */
 
 import fs from 'fs';
@@ -210,90 +211,38 @@ function generateMainSitemap() {
   // Get blog posts from actual data file
   const blogPosts = getBlogPostsFromDataFile();
 
-  // Add root pages first
+  // Add root page (French only - English redirects to styly.io)
   urls.push({
     loc: `${DOMAIN}/`,
     lastmod: today,
     changefreq: 'weekly',
-    priority: '1.0',
-    hreflang: [
-      { lang: 'fr', href: `${DOMAIN}/` },
-      { lang: 'en', href: `${DOMAIN}/en` },
-      { lang: 'x-default', href: `${DOMAIN}/` }
-    ]
+    priority: '1.0'
+    // No hreflang - English URLs redirect to external domain
   });
 
-  urls.push({
-    loc: `${DOMAIN}/en`,
-    lastmod: today,
-    changefreq: 'weekly',
-    priority: '1.0',
-    hreflang: [
-      { lang: 'fr', href: `${DOMAIN}/` },
-      { lang: 'en', href: `${DOMAIN}/en` },
-      { lang: 'x-default', href: `${DOMAIN}/` }
-    ]
-  });
-
-  // Add other pages
+  // Add other pages (French only - English URLs redirect to styly.io)
   mainPages.forEach(page => {
-    const basePath = page.path;
-    const frenchUrl = `${DOMAIN}/${basePath}`;
-    const englishUrl = `${DOMAIN}/en/${basePath}`;
+    const frenchUrl = `${DOMAIN}/${page.path}`;
 
-    // French version
+    // French version only
     urls.push({
       loc: frenchUrl,
       lastmod: today,
       changefreq: page.changefreq,
-      priority: page.priority,
-      hreflang: [
-        { lang: 'fr', href: frenchUrl },
-        { lang: 'en', href: englishUrl },
-        { lang: 'x-default', href: frenchUrl }
-      ]
-    });
-
-    // English version
-    urls.push({
-      loc: englishUrl,
-      lastmod: today,
-      changefreq: page.changefreq,
-      priority: page.priority,
-      hreflang: [
-        { lang: 'fr', href: frenchUrl },
-        { lang: 'en', href: englishUrl },
-        { lang: 'x-default', href: frenchUrl }
-      ]
+      priority: page.priority
+      // No hreflang - English URLs redirect to external domain
     });
   });
 
-  // Add blog posts with proper bilingual structure
+  // Add blog posts (French only - English URLs redirect to styly.io)
   blogPosts.forEach(post => {
-    // French blog post (default language, no prefix)
+    // French blog post only
     urls.push({
       loc: `${DOMAIN}/blog/${post.slugFr || post.slug}`,
       lastmod: post.lastmod,
       changefreq: 'monthly',
-      priority: '0.8',
-      hreflang: [
-        { lang: 'fr', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` },
-        { lang: 'en', href: `${DOMAIN}/en/blog/${post.slugEn}` },
-        { lang: 'x-default', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` }
-      ]
-    });
-
-    // English blog post (with /en/ prefix)
-    urls.push({
-      loc: `${DOMAIN}/en/blog/${post.slugEn}`,
-      lastmod: post.lastmod,
-      changefreq: 'monthly',
-      priority: '0.8',
-      hreflang: [
-        { lang: 'fr', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` },
-        { lang: 'en', href: `${DOMAIN}/en/blog/${post.slugEn}` },
-        { lang: 'x-default', href: `${DOMAIN}/blog/${post.slugFr || post.slug}` }
-      ]
+      priority: '0.8'
+      // No hreflang - English URLs redirect to external domain
     });
   });
 

@@ -13,13 +13,13 @@ const ChatGPTInteriorDesign: React.FC = () => {
 
   const seoData = {
     en: {
-      title: "Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design | Styly.io",
+      title: "Can ChatGPT Design Your Home? Exploring AI's Role in Interior Design | Styly.fr",
       description: "Discover how ChatGPT and Styly empower smart, budget-friendly interior design with AI. Explore home decorating with your personal AI design assistant.",
       keywords: "ChatGPT interior design, AI design assistant, free AI home design, AI home decor, ChatGPT home decorating, AI interior design tools, artificial intelligence interior design, AI room planner, home design AI free, interior design AI",
       ogImage: "/ai-interior-design-technology.webp"
     },
     fr: {
-      title: "ChatGPT Peut-il Concevoir Votre Maison ? Explorer le Rôle de l'IA dans le Design d'Intérieur | Styly.io",
+      title: "ChatGPT Peut-il Concevoir Votre Maison ? Explorer le Rôle de l'IA dans le Design d'Intérieur | Styly.fr",
       description: "Découvrez comment ChatGPT et Styly permettent un design intérieur intelligent et économique avec l'IA. Explorez la décoration avec votre assistant IA personnel.",
       keywords: "ChatGPT design intérieur, assistant design IA, ia design intérieur gratuit, décoration maison IA, ChatGPT décoration maison, outils design intérieur IA, intelligence artificielle design intérieur, planificateur chambre IA, design maison IA gratuit, design intérieur IA",
       ogImage: "/ai-interior-design-technology.webp"

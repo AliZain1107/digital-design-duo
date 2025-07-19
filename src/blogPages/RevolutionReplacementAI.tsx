@@ -20,8 +20,8 @@ const RevolutionReplacementAI: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/ia-design-interieur-revolution-ou-remplacement"
-    : "https://styly.io/en/blog/ai-interior-design-revolution-or-replacement-discover-the-future-of-home-improvement";
+    ? "https://www.styly.fr/fr/blog/ia-design-interieur-revolution-ou-remplacement"
+    : "https://www.styly.fr/en/blog/ai-interior-design-revolution-or-replacement-discover-the-future-of-home-improvement";
 
   return (
     <>

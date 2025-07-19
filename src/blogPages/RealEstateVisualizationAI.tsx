@@ -21,8 +21,8 @@ const RealEstateVisualizationAI: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
   const canonicalUrl = language === "fr"
-    ? "https://styly.io/fr/blog/comment-ia-styly-transforme-visualisation-immobiliere"
-    : "https://styly.io/en/blog/how-styly-s-ai-is-transforming-real-estate-visualization";
+    ? "https://www.styly.fr/fr/blog/comment-ia-styly-transforme-visualisation-immobiliere"
+    : "https://www.styly.fr/en/blog/how-styly-s-ai-is-transforming-real-estate-visualization";
 
   return (
     <>

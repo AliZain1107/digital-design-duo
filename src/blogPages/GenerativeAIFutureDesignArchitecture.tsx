@@ -24,11 +24,11 @@ const GenerativeAIFutureDesignArchitecture: React.FC = () => {
         <title>{seoMeta[language].title}</title>
         <meta name="description" content={seoMeta[language].description} />
         <meta name="keywords" content={seoMeta[language].keywords} />
-        <link rel="canonical" href={`https://styly.io/${language === 'fr' ? 'fr/' : ''}blog/generative-ai-the-future-of-interior-design-and-architecture`} />
+        <link rel="canonical" href={`https://www.styly.fr/${language === 'fr' ? 'fr/' : ''}blog/generative-ai-the-future-of-interior-design-and-architecture`} />
         <meta property="og:title" content={seoMeta[language].title} />
         <meta property="og:description" content={seoMeta[language].description} />
         <meta property="og:image" content="/generative-ai-interior-design-revolution.webp" />
-        <meta property="og:url" content={`https://styly.io/${language === 'fr' ? 'fr/' : ''}blog/generative-ai-the-future-of-interior-design-and-architecture`} />
+        <meta property="og:url" content={`https://www.styly.fr/${language === 'fr' ? 'fr/' : ''}blog/generative-ai-the-future-of-interior-design-and-architecture`} />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seoMeta[language].title} />
