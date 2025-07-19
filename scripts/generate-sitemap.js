@@ -63,7 +63,29 @@ function getBlogPostsFromDataFile() {
     }
 
     console.log(`📚 Successfully parsed ${posts.length} blog posts from blogPosts.tsx`);
-    return posts.length > 0 ? posts : getFallbackBlogPosts();
+
+    // Only use fallback if we got zero posts (parsing completely failed)
+    if (posts.length === 0) {
+      console.log('⚠️  No posts found in parsed data, using fallback');
+      return getFallbackBlogPosts();
+    }
+
+    // Remove duplicates by slug to prevent sitemap duplication
+    const uniquePosts = [];
+    const seenSlugs = new Set();
+
+    for (const post of posts) {
+      const slug = post.slugFr || post.slug;
+      if (!seenSlugs.has(slug)) {
+        seenSlugs.add(slug);
+        uniquePosts.push(post);
+      } else {
+        console.log(`🔄 Skipping duplicate slug: ${slug}`);
+      }
+    }
+
+    console.log(`✅ Returning ${uniquePosts.length} unique blog posts (removed ${posts.length - uniquePosts.length} duplicates)`);
+    return uniquePosts;
 
   } catch (error) {
     console.log('⚠️  Error reading blogPosts.tsx:', error.message);
@@ -82,110 +104,15 @@ function convertDateToISO(dateStr) {
   }
 }
 
-// Enhanced blog posts data with all the missing entries
+// Minimal fallback blog posts data (only used if parsing completely fails)
 function getFallbackBlogPosts() {
+  console.log('🚨 WARNING: Using fallback data - this should not happen if blogPosts.tsx is properly formatted');
   return [
+    // Minimal fallback - only one entry to prevent empty sitemap
     {
       slug: "science-couleur-design-comment-ia-aide-choisir-palette-parfaite",
       slugFr: "science-couleur-design-comment-ia-aide-choisir-palette-parfaite",
-      slugEn: "the-science-of-color-in-design-how-ai-helps-you-choose-the-perfect-palette",
       lastmod: "2025-06-28"
-    },
-    {
-      slug: "comment-generation-images-ia-peut-inspirer-design-interieur-2024",
-      slugFr: "comment-generation-images-ia-peut-inspirer-design-interieur-2024",
-      slugEn: "how-ai-powered-image-generation-can-inspire-your-interior-design-in-2024",
-      lastmod: "2025-06-26"
-    },
-    {
-      slug: "10-conseils-experts-economiser-decoration-interieure-2025",
-      slugFr: "10-conseils-experts-economiser-decoration-interieure-2025",
-      slugEn: "10-expert-tips-to-save-big-on-home-interiors-in-2025",
-      lastmod: "2025-06-24"
-    },
-    {
-      slug: "chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur",
-      slugFr: "chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur",
-      slugEn: "can-chatgpt-design-your-home-ai-interior-design",
-      lastmod: "2025-06-17"
-    },
-    {
-      slug: "styly-viva-technology-avenir-design-ia",
-      slugFr: "styly-viva-technology-avenir-design-ia",
-      slugEn: "styly-viva-technology-future-ai-design",
-      lastmod: "2025-06-16"
-    },
-    {
-      slug: "concevoir-mise-en-scene-interieure-ia-aws-styly",
-      slugFr: "concevoir-mise-en-scene-interieure-ia-aws-styly",
-      slugEn: "designing-ai-interior-staging-aws-styly",
-      lastmod: "2025-06-15"
-    },
-    {
-      slug: "tendances-design-interieur-2025",
-      slugFr: "tendances-design-interieur-2025",
-      slugEn: "2025-interior-design-trends",
-      lastmod: "2025-06-10"
-    },
-    {
-      slug: "logiciel-gratuit-design-interieur-ia",
-      slugFr: "logiciel-gratuit-design-interieur-ia",
-      slugEn: "free-ai-interior-design-software",
-      lastmod: "2025-06-01"
-    },
-    {
-      slug: "impact-ia-role-designer-interieur",
-      slugFr: "impact-ia-role-designer-interieur",
-      slugEn: "impact-ai-role-interior-designer",
-      lastmod: "2025-05-15"
-    },
-    {
-      slug: "assistant-ia-design-interieur-prompts-chatgpt",
-      slugFr: "assistant-ia-design-interieur-prompts-chatgpt",
-      slugEn: "ai-assistant-interior-design-chatgpt-prompts",
-      lastmod: "2025-05-10"
-    },
-    {
-      slug: "intersection-ia-realite-virtuelle-design",
-      slugFr: "intersection-ia-realite-virtuelle-design",
-      slugEn: "intersection-ai-virtual-reality-design",
-      lastmod: "2025-05-10"
-    },
-    {
-      slug: "design-durabilite-ia-espaces-eco-responsables",
-      slugFr: "design-durabilite-ia-espaces-eco-responsables",
-      slugEn: "sustainable-design-ai-eco-friendly-spaces",
-      lastmod: "2025-05-08"
-    },
-    {
-      slug: "role-donnees-design-alimente-ia",
-      slugFr: "role-donnees-design-alimente-ia",
-      slugEn: "role-data-ai-powered-design",
-      lastmod: "2025-05-05"
-    },
-    {
-      slug: "design-famille-moderne-ia-maisons-fonctionnelles",
-      slugFr: "design-famille-moderne-ia-maisons-fonctionnelles",
-      slugEn: "modern-family-design-ai-functional-homes",
-      lastmod: "2025-05-03"
-    },
-    {
-      slug: "6-prompts-viraux-design-chambre-ia-styly",
-      slugFr: "6-prompts-viraux-design-chambre-ia-styly",
-      slugEn: "6-viral-ai-room-design-prompts-create-dream-bedroom-styly",
-      lastmod: "2025-05-01"
-    },
-    {
-      slug: "ia-design-accessible-espaces-inclusifs",
-      slugFr: "ia-design-accessible-espaces-inclusifs",
-      slugEn: "ai-accessible-design-inclusive-spaces",
-      lastmod: "2025-04-28"
-    },
-    {
-      slug: "comment-ia-generative-revolutionne-design-interieur",
-      slugFr: "comment-ia-generative-revolutionne-design-interieur",
-      slugEn: "how-generative-ai-revolutionizing-interior-design",
-      lastmod: "2024-06-23"
     }
   ];
 }
