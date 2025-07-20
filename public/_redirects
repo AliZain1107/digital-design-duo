@@ -112,4 +112,10 @@
 # ========================================
 # This MUST be the last rule - serves React app for all unmatched routes
 # This enables client-side routing for direct URL access
+
+# Explicit blog post routing for AWS Amplify
+/blog/* /index.html 200
+/fr/blog/* /index.html 200
+
+# General SPA fallback (MUST be last)
 /* /index.html 200
