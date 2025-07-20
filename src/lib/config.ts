@@ -18,14 +18,14 @@ export const SITE_CONFIG = {
   siteName: 'STYLY',
   siteDescription: 'STYLY is an AI-powered interior and exterior design platform that transforms empty spaces into beautifully furnished, realistic visuals.',
   
-  // Generate full URLs for pages
+  // Generate full URLs for pages (French is default, English gets /en prefix)
   getPageUrl: (path: string = '', language?: string) => {
     const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    const langPrefix = language && language !== 'en' ? `/${language}` : '';
+    const langPrefix = language === 'en' ? '/en' : ''; // French is default, English gets prefix
     return `${SITE_CONFIG.baseUrl}${langPrefix}${cleanPath ? `/${cleanPath}` : ''}`;
   },
-  
-  // Generate alternate language URLs
+
+  // Generate alternate language URLs (French is default, English gets /en prefix)
   getAlternateUrls: (path: string = '') => {
     const cleanPath = path.startsWith('/') ? path.slice(1) : path;
     return {

@@ -154,12 +154,12 @@ const SEO: React.FC<SEOProps> = ({
         }
       });
 
-      // Add x-default hreflang (usually points to English version)
-      if (alternateUrls.en) {
+      // Add x-default hreflang (points to French version since this is a French website)
+      if (alternateUrls.fr) {
         const defaultLink = document.createElement('link');
         defaultLink.rel = 'alternate';
         defaultLink.hreflang = 'x-default';
-        defaultLink.href = alternateUrls.en;
+        defaultLink.href = alternateUrls.fr;
         document.head.appendChild(defaultLink);
       }
     }
