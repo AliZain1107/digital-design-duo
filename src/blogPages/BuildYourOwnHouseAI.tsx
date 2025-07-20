@@ -1,8 +1,20 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const BuildYourOwnHouseAI: React.FC = () => {
   return (
-    <article className="prose prose-lg max-w-none">
+    <div>
+      <Helmet>
+        <title>How to Build Your Own House with AI Tools Including Porch Design | Styly.fr</title>
+        <meta name="description" content="Learn how to build your dream house using AI tools. Complete guide for porch design and home construction with artificial intelligence." />
+        <meta name="keywords" content="build house AI, AI home design, porch design AI, Styly AI, house construction AI, home building tools" />
+        <meta property="og:title" content="How to Build Your Own House with AI Tools Including Porch Design" />
+        <meta property="og:description" content="Learn how to build your dream house using AI tools and porch design with artificial intelligence." />
+        <meta property="og:url" content="https://www.styly.fr/blog/build-your-own-house-ai-tools-porch-design" />
+        <meta property="og:image" content="https://www.styly.fr/revolutionizing-architecture-design.jpg" />
+        <link rel="canonical" href="https://www.styly.fr/blog/build-your-own-house-ai-tools-porch-design" />
+      </Helmet>
+      <article className="prose prose-lg max-w-none">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">
         How to Build Your Own House with AI Tools Including Porch Design
       </h1>
@@ -117,7 +129,8 @@ const BuildYourOwnHouseAI: React.FC = () => {
           Start Building with Styly AI
         </a>
       </div>
-    </article>
+      </article>
+    </div>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
 import { Link } from "react-router-dom";
 import "@fontsource/nunito"; // Defaults to weight 400
@@ -9,14 +10,21 @@ const GenZInteriors: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{language === "fr" ? "Intérieurs Gen Z : Tendances Design 2025 | Styly.fr" : "Gen Z Interiors: Design Trends 2025 | Styly.fr"}</title>
+        <meta name="description" content={language === "fr" ? "Découvrez les tendances design intérieur Gen Z 2025. Guide complet pour créer des espaces modernes avec Styly AI." : "Discover Gen Z interior design trends 2025. Complete guide to creating modern spaces with Styly AI."} />
+        <meta name="keywords" content={language === "fr" ? "design Gen Z, intérieur moderne, Styly AI, tendances 2025, décoration jeune" : "Gen Z design, modern interior, Styly AI, 2025 trends, youth decoration"} />
+        <meta property="og:title" content={language === "fr" ? "Intérieurs Gen Z : Tendances Design 2025" : "Gen Z Interiors: Design Trends 2025"} />
+        <meta property="og:description" content={language === "fr" ? "Découvrez les tendances design intérieur Gen Z 2025 avec Styly AI." : "Discover Gen Z interior design trends 2025 with Styly AI."} />
+        <meta property="og:url" content={language === "fr" ? "https://www.styly.fr/blog/interieurs-gen-z-tendances-design-2025" : "https://www.styly.fr/en/blog/gen-z-interiors-design-trends-2025"} />
+        <link rel="canonical" href={language === "fr" ? "https://www.styly.fr/blog/interieurs-gen-z-tendances-design-2025" : "https://www.styly.fr/en/blog/gen-z-interiors-design-trends-2025"} />
+      </Helmet>
       <div className="flex flex-col gap-6 text-gray-600 text-[12px] leading-relaxed p-5">
-          <header className="mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              
-          {t.sustainableMaterials}
-        
-            </h1>
-          </header>
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            {language === "fr" ? "Intérieurs Gen Z : Tendances Design 2025" : "Gen Z Interiors: Design Trends 2025"}
+          </h1>
+        </header>
         <h3 className="text-xl md:text-5xl font-bold text-gray-800">
           {t.creatingTrendySpaces}
         </h3>

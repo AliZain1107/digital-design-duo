@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
 import { Link } from "react-router-dom";
 
@@ -7,11 +8,20 @@ const BuildHouseAI: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center px-4 py-10 space-y-10">
-          <header className="mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              {t.marketOverview}
-            </h1>
-          </header>
+      <Helmet>
+        <title>{language === "fr" ? "Guide Ultime Design Intérieur IA 2025 | Styly.fr" : "Ultimate AI Interior Design Guide 2025 | Styly.fr"}</title>
+        <meta name="description" content={language === "fr" ? "Guide complet du design intérieur avec l'intelligence artificielle. Tout savoir sur Styly AI et les outils de décoration moderne." : "Complete guide to interior design with artificial intelligence. Everything about Styly AI and modern decoration tools."} />
+        <meta name="keywords" content={language === "fr" ? "guide design IA, Styly AI, décoration intelligente, design intérieur 2025, outils IA maison" : "AI design guide, Styly AI, smart decoration, interior design 2025, home AI tools"} />
+        <meta property="og:title" content={language === "fr" ? "Guide Ultime Design Intérieur IA 2025" : "Ultimate AI Interior Design Guide 2025"} />
+        <meta property="og:description" content={language === "fr" ? "Guide complet du design intérieur avec l'intelligence artificielle et Styly AI." : "Complete guide to interior design with artificial intelligence and Styly AI."} />
+        <meta property="og:url" content={language === "fr" ? "https://www.styly.fr/blog/guide-ultime-design-interieur-ia-2025" : "https://www.styly.fr/en/blog/ultimate-ai-interior-design-guide-2025"} />
+        <link rel="canonical" href={language === "fr" ? "https://www.styly.fr/blog/guide-ultime-design-interieur-ia-2025" : "https://www.styly.fr/en/blog/ultimate-ai-interior-design-guide-2025"} />
+      </Helmet>
+      <header className="mb-8">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          {language === "fr" ? "Guide Ultime Design Intérieur IA 2025" : "Ultimate AI Interior Design Guide 2025"}
+        </h1>
+      </header>
       <div className="max-w-4xl text-sm text-gray-800 space-y-6">
         <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{t.marketOverview}</h2>
         <ul className="list-disc pl-5">
