@@ -60,11 +60,11 @@ const ServicesAPI: React.FC = () => {
   };
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
-  const currentUrl = language === "fr" ? "https://styly.io/fr/services-api" : "https://styly.io/en/services-api";
+  const currentUrl = language === "fr" ? "https://www.styly.fr/fr/services-api" : "https://www.styly.fr/en/services-api";
 
   const alternateUrls = {
-    en: "https://styly.io/en/services-api",
-    fr: "https://styly.io/fr/services-api"
+    en: "https://www.styly.fr/en/services-api",
+    fr: "https://www.styly.fr/fr/services-api"
   };
 
   const apiServices = [
@@ -168,7 +168,7 @@ const ServicesAPI: React.FC = () => {
 
   // Typewriter animation for code example
   const codeString = `// ${language === "fr" ? "Générer un design de sol IA" : "Generate AI floor design"}
-const response = await fetch('https://api.styly.io/v1/floor-generation', {
+const response = await fetch('https://api.styly.fr/v1/floor-generation', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_API_KEY',

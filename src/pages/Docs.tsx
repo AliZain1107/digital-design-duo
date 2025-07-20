@@ -76,14 +76,14 @@ const Docs: React.FC = () => {
 
   const seoData = {
     en: {
-      title: "API Documentation - Styly.io",
-      description: "Complete API documentation for Styly.io's AI-powered interior design services. Learn how to integrate our APIs into your applications.",
+      title: "API Documentation - Styly.fr",
+      description: "Complete API documentation for Styly.fr's AI-powered interior design services. Learn how to integrate our APIs into your applications.",
       keywords: "API documentation, Styly API, interior design API, AI design API, API integration, developer docs",
       ogImage: "/api-documentation-hero.webp"
     },
     fr: {
-      title: "Documentation API - Styly.io",
-      description: "Documentation API complète pour les services de design intérieur alimentés par l'IA de Styly.io. Apprenez à intégrer nos APIs dans vos applications.",
+      title: "Documentation API - Styly.fr",
+      description: "Documentation API complète pour les services de design intérieur alimentés par l'IA de Styly.fr. Apprenez à intégrer nos APIs dans vos applications.",
       keywords: "documentation API, API Styly, API design intérieur, API design IA, intégration API, docs développeur",
       ogImage: "/api-documentation-hero.webp"
     }
@@ -269,7 +269,7 @@ const Docs: React.FC = () => {
                 </button>
               </div>
               <pre className="text-green-400 text-sm overflow-x-auto">
-{`curl -X POST "https://api.styly.io/models/context/predict" \
+{`curl -X POST "https://api.styly.fr/models/context/predict" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your-api-key-here" \
   -d '{
@@ -485,7 +485,7 @@ const Docs: React.FC = () => {
                 </button>
               </div>
                 <pre className="text-green-400 text-sm overflow-x-auto">
-{`curl -X POST "https://api.styly.io/models/moodboard/predict" \
+{`curl -X POST "https://api.styly.fr/models/moodboard/predict" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your-api-key-here" \
   -d '{
@@ -712,7 +712,7 @@ const Docs: React.FC = () => {
                   </button>
                 </div>
                 <pre className="text-green-400 text-sm overflow-x-auto">
-{`curl -X POST "https://api.styly.io/models/moodboard/predict" \
+{`curl -X POST "https://api.styly.fr/models/moodboard/predict" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your-api-key-here" \
   -d '{
@@ -773,7 +773,7 @@ const Docs: React.FC = () => {
                   </button>
                 </div>
                 <pre className="text-green-400 text-sm overflow-x-auto">
-{`curl -X POST "https://api.styly.io/models/moodboard/predict?async=true" \
+{`curl -X POST "https://api.styly.fr/models/moodboard/predict?async=true" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your-api-key-here" \
   -d '{
@@ -841,7 +841,7 @@ const Docs: React.FC = () => {
                   <pre className="text-blue-400 text-sm overflow-x-auto">
 {`// Poll job status
 const pollJob = async (jobId) => {
-  const pollUrl = \`https://api.styly.io/jobs/\${jobId}\`;
+  const pollUrl = \`https://api.styly.fr/jobs/\${jobId}\`;
   
   while (true) {
     const response = await fetch(pollUrl, {
@@ -1075,7 +1075,7 @@ const pollJob = async (jobId) => {
                   </button>
                 </div>
                 <pre className="text-green-400 text-sm overflow-x-auto">
-{`curl -X POST "https://api.styly.io/models/staging/predict" \
+{`curl -X POST "https://api.styly.fr/models/staging/predict" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your-api-key-here" \
   -d '{
@@ -1135,7 +1135,7 @@ const pollJob = async (jobId) => {
                   </button>
                 </div>
                 <pre className="text-green-400 text-sm overflow-x-auto">
-{`curl -X POST "https://api.styly.io/models/staging/predict?async=true" \
+{`curl -X POST "https://api.styly.fr/models/staging/predict?async=true" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your-api-key-here" \
   -d '{
@@ -1202,7 +1202,7 @@ const pollJob = async (jobId) => {
                   <pre className="text-blue-400 text-sm overflow-x-auto">
 {`// Poll job status
 const pollJob = async (jobId) => {
-  const pollUrl = \`https://api.styly.io/jobs/\${jobId}\`;
+  const pollUrl = \`https://api.styly.fr/jobs/\${jobId}\`;
   
   while (true) {
     const response = await fetch(pollUrl, {

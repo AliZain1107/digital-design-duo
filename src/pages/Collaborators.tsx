@@ -58,11 +58,11 @@ const Collaborators: React.FC = () => {
   };
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
-  const currentUrl = language === "fr" ? "https://styly.io/fr/collaborateurs" : "https://styly.io/en/collaborators";
+  const currentUrl = language === "fr" ? "https://www.styly.fr/fr/collaborateurs" : "https://www.styly.fr/en/collaborators";
 
   const alternateUrls = {
-    en: "https://styly.io/en/collaborators",
-    fr: "https://styly.io/fr/collaborateurs"
+    en: "https://www.styly.fr/en/collaborators",
+    fr: "https://www.styly.fr/fr/collaborateurs"
   };
 
   const benefits = [
@@ -579,8 +579,8 @@ const Collaborators: React.FC = () => {
             <div className="mt-10">
               <p className="text-white/90">
                 {t.questionsReachUs}{" "}
-                <a href="mailto:partners@styly.io" className="underline hover:text-white transition-colors">
-                  partners@styly.io
+                <a href="mailto:partners@styly.fr" className="underline hover:text-white transition-colors">
+                  partners@styly.fr
                 </a>{" "}
                 {t.orDMUs}{" "}
                 <a href="https://instagram.com/stylyio" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">

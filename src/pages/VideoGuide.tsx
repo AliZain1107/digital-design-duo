@@ -76,23 +76,23 @@ const VideoGuide = () => {
   // SEO metadata based on language
   const seoMeta = {
     en: {
-      title: "Video Tutorials - Learn AI Interior Design | Styly.io",
-      description: "Watch our comprehensive video tutorials to master AI interior design. Learn how to use Styly.io's powerful features for home staging, room design, and more.",
-      keywords: "AI interior design tutorials, video guides, home staging videos, room design tutorials, Styly.io tutorials"
+      title: "Video Tutorials - Learn AI Interior Design | Styly.fr",
+      description: "Watch our comprehensive video tutorials to master AI interior design. Learn how to use Styly.fr's powerful features for home staging, room design, and more.",
+      keywords: "AI interior design tutorials, video guides, home staging videos, room design tutorials, Styly.fr tutorials"
     },
     fr: {
-      title: "Tutoriels Vidéo - Apprenez le Design Intérieur IA | Styly.io",
-      description: "Regardez nos tutoriels vidéo complets pour maîtriser le design intérieur IA. Apprenez à utiliser les fonctionnalités puissantes de Styly.io pour le home staging, la conception de pièces, et plus.",
-      keywords: "tutoriels design intérieur IA, guides vidéo, vidéos home staging, tutoriels conception pièces, tutoriels Styly.io"
+      title: "Tutoriels Vidéo - Apprenez le Design Intérieur IA | Styly.fr",
+      description: "Regardez nos tutoriels vidéo complets pour maîtriser le design intérieur IA. Apprenez à utiliser les fonctionnalités puissantes de Styly.fr pour le home staging, la conception de pièces, et plus.",
+      keywords: "tutoriels design intérieur IA, guides vidéo, vidéos home staging, tutoriels conception pièces, tutoriels Styly.fr"
     }
   };
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
-  const currentUrl = language === "fr" ? "https://styly.io/fr/video" : "https://styly.io/en/video";
+  const currentUrl = language === "fr" ? "https://www.styly.fr/fr/video" : "https://www.styly.fr/en/video";
 
   const alternateUrls = {
-    en: "https://styly.io/en/video",
-    fr: "https://styly.io/fr/video"
+    en: "https://www.styly.fr/en/video",
+    fr: "https://www.styly.fr/fr/video"
   };
 
   return (
@@ -175,7 +175,7 @@ const VideoGuide = () => {
             }
           </p>
           <a
-            href="https://app.styly.io/signin"
+            href="https://app.styly.fr/signin"
             className="inline-flex items-center px-6 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300"
           >
             {language === "fr" ? "Commencer Gratuitement" : "Get Started Free"}

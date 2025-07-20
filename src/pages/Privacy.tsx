@@ -32,24 +32,24 @@ const Privacy: React.FC = () => {
 
   const seoMeta = {
     en: {
-      title: "Privacy Policy - Styly.io",
-      description: "Privacy Policy of Styly.io - Learn how we collect, use, and protect your personal data. GDPR compliant privacy practices for our AI interior design platform.",
-      keywords: "privacy policy, data protection, GDPR, personal data, Styly.io privacy, AI interior design privacy"
+      title: "Privacy Policy - Styly.fr",
+      description: "Privacy Policy of Styly.fr - Learn how we collect, use, and protect your personal data. GDPR compliant privacy practices for our AI interior design platform.",
+      keywords: "privacy policy, data protection, GDPR, personal data, Styly.fr privacy, AI interior design privacy"
     },
     fr: {
-      title: "Politique de Confidentialité - Styly.io",
-      description: "Politique de Confidentialité de Styly.io - Découvrez comment nous collectons, utilisons et protégeons vos données personnelles. Pratiques de confidentialité conformes au RGPD pour notre plateforme de design d'intérieur IA.",
-      keywords: "politique de confidentialité, protection des données, RGPD, données personnelles, confidentialité Styly.io, confidentialité design IA"
+      title: "Politique de Confidentialité - Styly.fr",
+      description: "Politique de Confidentialité de Styly.fr - Découvrez comment nous collectons, utilisons et protégeons vos données personnelles. Pratiques de confidentialité conformes au RGPD pour notre plateforme de design d'intérieur IA.",
+      keywords: "politique de confidentialité, protection des données, RGPD, données personnelles, confidentialité Styly.fr, confidentialité design IA"
     }
   };
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
 
   // Generate language-specific URLs for hreflang
-  const currentUrl = language === "fr" ? "https://styly.io/fr/confidentialite" : "https://styly.io/en/privacy";
+  const currentUrl = language === "fr" ? "https://www.styly.fr/confidentialite" : "https://www.styly.fr/en/privacy";
   const alternateUrls = {
-    en: "https://styly.io/en/privacy",
-    fr: "https://styly.io/fr/confidentialite"
+    en: "https://www.styly.fr/en/privacy",
+    fr: "https://www.styly.fr/confidentialite"
   };
 
   return (

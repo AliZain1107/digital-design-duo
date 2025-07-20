@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import {ArrowLeft} from "lucide-react";
 
 const NotFound = () => {
@@ -13,7 +14,14 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+    <>
+      <Helmet>
+        <title>404 - Page Not Found | Styly.fr</title>
+        <meta name="description" content="Page not found. The page you're looking for doesn't exist or has been moved. Return to Styly.fr homepage." />
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://www.styly.fr/404" />
+      </Helmet>
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="max-w-md text-center">
         <h1 className="text-6xl font-extrabold text-[#f36f40] mb-4">404</h1>
         <h2 className="text-2xl font-semibold text-gray-800 mb-2">
@@ -31,6 +39,7 @@ const NotFound = () => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 

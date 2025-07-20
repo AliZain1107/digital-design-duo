@@ -45,7 +45,7 @@ const Index: React.FC = () => {
     keywords: "AI room design, interior design tool, free AI interior design, AI room planner, virtual staging, real estate visualization, home design AI, interior design app, room designer, AI home design, free interior design software, AI interior design generator, virtual home staging, AI powered design"
   };
 
-  // French meta - matching www.styly.io format with French translation
+  // French meta - matching www.styly.fr format with French translation
   const metaFr = {
     title: "Design de Chambre IA & Outil de Design Intérieur avec Crédits Gratuits | STYLY",
     description: "Transformez des espaces vides en intérieurs époustouflants et photoréalistes en quelques secondes avec STYLY - l'outil de design IA de référence. Téléchargez des photos via le web, mobile ou WhatsApp. Aucune compétence technique requise. Approuvé par plus de 20 000 professionnels de l'immobilier, designers d'intérieur et propriétaires dans le monde entier.",
@@ -369,7 +369,7 @@ const Index: React.FC = () => {
                 }
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-[#593286] font-bold text-lg md:text-xl px-10 py-4 rounded-full shadow-lg hover:bg-[#FA6F40] hover:text-white transition-all duration-200 font-baloo z-10 animate-cta-pulse"

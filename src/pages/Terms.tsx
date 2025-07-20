@@ -30,24 +30,24 @@ const Terms: React.FC = () => {
 
   const seoMeta = {
     en: {
-      title: "Terms of Service - Styly.io",
-      description: "Terms and Conditions of Use for Styly.io - AI-powered interior design platform. Read our legal terms, user obligations, and service conditions.",
-      keywords: "terms of service, legal terms, user agreement, Styly.io terms, AI interior design terms"
+      title: "Terms of Service - Styly.fr",
+      description: "Terms and Conditions of Use for Styly.fr - AI-powered interior design platform. Read our legal terms, user obligations, and service conditions.",
+      keywords: "terms of service, legal terms, user agreement, Styly.fr terms, AI interior design terms"
     },
     fr: {
-      title: "Conditions Générales d'Utilisation - Styly.io",
-      description: "Conditions Générales d'Utilisation de Styly.io - plateforme de design d'intérieur alimentée par l'IA. Consultez nos conditions légales, obligations des utilisateurs et conditions de service.",
-      keywords: "conditions générales, conditions légales, accord utilisateur, conditions Styly.io, conditions design IA"
+      title: "Conditions Générales d'Utilisation - Styly.fr",
+      description: "Conditions Générales d'Utilisation de Styly.fr - plateforme de design d'intérieur alimentée par l'IA. Consultez nos conditions légales, obligations des utilisateurs et conditions de service.",
+      keywords: "conditions générales, conditions légales, accord utilisateur, conditions Styly.fr, conditions design IA"
     }
   };
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
 
   // Generate language-specific URLs for hreflang
-  const currentUrl = language === "fr" ? "https://styly.io/fr/conditions" : "https://styly.io/en/terms";
+  const currentUrl = language === "fr" ? "https://www.styly.fr/conditions" : "https://www.styly.fr/en/terms";
   const alternateUrls = {
-    en: "https://styly.io/en/terms",
-    fr: "https://styly.io/fr/conditions"
+    en: "https://www.styly.fr/en/terms",
+    fr: "https://www.styly.fr/conditions"
   };
 
   return (

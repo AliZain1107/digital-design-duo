@@ -18,12 +18,12 @@ const Blog = () => {
   // SEO metadata based on language
   const seoMeta = {
     en: {
-      title: "AI Interior Design Blog - Latest Trends & Tips | Styly.io",
+      title: "AI Interior Design Blog - Latest Trends & Tips | Styly.fr",
       description: "Discover the latest AI interior design trends, tips, and insights. Learn how to transform your space with artificial intelligence and modern design techniques.",
       keywords: "AI interior design blog, design trends, interior design tips, AI home design, virtual staging, design inspiration"
     },
     fr: {
-      title: "Blog Design Intérieur IA - Tendances & Conseils | Styly.io",
+      title: "Blog Design Intérieur IA - Tendances & Conseils | Styly.fr",
       description: "Découvrez les dernières tendances en design intérieur IA, conseils et insights. Apprenez à transformer votre espace avec l'intelligence artificielle.",
       keywords: "blog design intérieur IA, tendances design, conseils décoration, design maison IA, staging virtuel, inspiration design"
     }
