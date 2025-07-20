@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLanguage } from "@/lib/i18n";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const RealEstateVirtualStaging: React.FC = () => {
   const { t, language } = useLanguage();
