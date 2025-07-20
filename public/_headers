@@ -1,6 +1,26 @@
 # Canonical URL headers to prevent duplicate content issues
 /*
   X-Robots-Tag: index, follow
+
+# Cache control for HTML pages (prevent stale content)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Cache control for prerendered pages
+/
+  Cache-Control: public, max-age=300, s-maxage=300
+
+/blog
+  Cache-Control: public, max-age=300, s-maxage=300
+
+/blog/*
+  Cache-Control: public, max-age=300, s-maxage=300
+
+/pricing
+  Cache-Control: public, max-age=300, s-maxage=300
+
+/upload
+  Cache-Control: public, max-age=300, s-maxage=300
   
 # French pages canonical headers
 /

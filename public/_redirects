@@ -45,7 +45,6 @@
 /fr/confidentialite/  /fr/confidentialite  301!
 
 # Service pages redirects (French only) - trailing slash removal
-/services-api/  /services-api  301!
 /fr/services-api/  /fr/services-api  301!
 /fr/collaborateurs/  /fr/collaborateurs  301!
 
