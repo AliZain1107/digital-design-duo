@@ -20,8 +20,7 @@ const CommentConstruireVotreMaisonOutilsIAConceptionPorche: React.FC = () => {
           <meta property="og:description" content="Maîtrisez la conception de porche avec les outils IA les plus avancés." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/ai-porch-design-construction.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/comment-construire-votre-maison-outils-ia-conception-porche" />
-          <link rel="canonical" href="https://www.styly.fr/blog/comment-construire-votre-maison-outils-ia-conception-porche" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">

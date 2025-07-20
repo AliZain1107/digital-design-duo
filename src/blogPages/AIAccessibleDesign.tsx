@@ -21,11 +21,11 @@ const AIAccessibleDesign: React.FC = () => {
           <meta property="og:description" content="Découvrez comment l'IA révolutionne le design accessible, créant des espaces inclusifs pour tous." />
           <meta property="og:image" content="https://www.styly.fr/accessible-design-modern-wheelchair-interior.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs" />
-          <link rel="canonical" href="https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -238,7 +238,7 @@ const AIAccessibleDesign: React.FC = () => {
         <meta property="og:description" content="Discover how AI is revolutionizing accessible design, creating inclusive spaces for everyone." />
         <meta property="og:image" content="https://www.styly.fr/accessible-design-modern-wheelchair-interior.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs" />

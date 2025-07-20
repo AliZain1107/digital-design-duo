@@ -35,20 +35,18 @@ const TransformingSmallLivingSpaces: React.FC = () => {
         <meta property="og:title" content={currentSeo.title} />
         <meta property="og:description" content={currentSeo.description} />
         <meta property="og:image" content={currentSeo.ogImage} />
-        <meta property="og:url" content={currentUrl} />
+        
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={currentSeo.title} />
         <meta name="twitter:description" content={currentSeo.description} />
         <meta name="twitter:image" content={currentSeo.ogImage} />
-        <link rel="canonical" href={currentUrl} />
       </Helmet>
 
       <div className="min-h-screen bg-white">
         <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
           {language === "en" ? (
             <>
-
 
               <article className="prose prose-lg max-w-none">
           <header className="mb-8">
@@ -219,7 +217,6 @@ const TransformingSmallLivingSpaces: React.FC = () => {
             </>
           ) : (
             <>
-
 
               <article className="prose prose-lg max-w-none">
                 <p className="text-xl text-gray-700 mb-8">

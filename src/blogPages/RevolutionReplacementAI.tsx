@@ -29,10 +29,10 @@ const RevolutionReplacementAI: React.FC = () => {
         <title>{currentMeta.title}</title>
         <meta name="description" content={currentMeta.description} />
         <meta name="keywords" content={currentMeta.keywords} />
-        <link rel="canonical" href={canonicalUrl} />
+        
         <meta property="og:title" content={currentMeta.title} />
         <meta property="og:description" content={currentMeta.description} />
-        <meta property="og:url" content={canonicalUrl} />
+        
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={currentMeta.title} />

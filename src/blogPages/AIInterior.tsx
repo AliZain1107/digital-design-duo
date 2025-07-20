@@ -14,8 +14,6 @@ const TipsToSaveBig2025: React.FC = () => {
         <meta name="keywords" content={language === "fr" ? "design intérieur IA, Styly AI, décoration intelligente, aménagement IA, design moderne" : "AI interior design, Styly AI, smart decoration, AI layout, modern design"} />
         <meta property="og:title" content={language === "fr" ? "Design Intérieur IA : Guide Complet 2025" : "AI Interior Design: Complete Guide 2025"} />
         <meta property="og:description" content={language === "fr" ? "Découvrez comment l'IA révolutionne le design intérieur avec Styly AI." : "Discover how AI revolutionizes interior design with Styly AI."} />
-        <meta property="og:url" content={language === "fr" ? "https://www.styly.fr/blog/design-interieur-ia-guide-complet" : "https://www.styly.fr/en/blog/ai-interior-design-complete-guide"} />
-        <link rel="canonical" href={language === "fr" ? "https://www.styly.fr/blog/design-interieur-ia-guide-complet" : "https://www.styly.fr/en/blog/ai-interior-design-complete-guide"} />
       </Helmet>
       <header className="mb-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">

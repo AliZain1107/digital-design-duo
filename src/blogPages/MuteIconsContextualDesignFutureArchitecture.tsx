@@ -21,7 +21,7 @@ const MuteIconsContextualDesignFutureArchitecture: React.FC = () => {
           <meta property="og:description" content="Explorez la philosophie architecturale avec Marcelo Spina et découvrez les icônes muettes dans le design contextuel." />
           <meta property="og:image" content="https://www.styly.fr/revolutionizing-architecture-hero.png" />
           <meta property="og:url" content="https://www.styly.fr/blog/icones-muettes-design-contextuel-avenir-architecture" />
-          <link rel="canonical" href="https://www.styly.fr/blog/icones-muettes-design-contextuel-avenir-architecture" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/mute-icons-contextual-design-and-the-future-of-architecture" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/icones-muettes-design-contextuel-avenir-architecture" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/icones-muettes-design-contextuel-avenir-architecture" />
@@ -166,7 +166,7 @@ const MuteIconsContextualDesignFutureArchitecture: React.FC = () => {
         <meta property="og:description" content="Explore architectural philosophy with Marcelo Spina and discover mute icons in contextual design." />
         <meta property="og:image" content="https://www.styly.fr/revolutionizing-architecture-hero.png" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/mute-icons-contextual-design-and-the-future-of-architecture" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/mute-icons-contextual-design-and-the-future-of-architecture" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/mute-icons-contextual-design-and-the-future-of-architecture" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/icones-muettes-design-contextuel-avenir-architecture" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/icones-muettes-design-contextuel-avenir-architecture" />

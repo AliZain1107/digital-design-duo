@@ -21,11 +21,11 @@ const SustainableDesignAI: React.FC = () => {
           <meta property="og:description" content="Apprenez comment l'IA révolutionne le design d'intérieur durable avec des espaces éco-responsables." />
           <meta property="og:image" content="https://www.styly.fr/sustainable-eco-friendly-interior-design.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/design-durabilite-ia-espaces-eco-responsables" />
-          <link rel="canonical" href="https://www.styly.fr/blog/design-durabilite-ia-espaces-eco-responsables" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/sustainable-design-ai-eco-friendly-spaces" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/design-durabilite-ia-espaces-eco-responsables" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/design-durabilite-ia-espaces-eco-responsables" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -179,7 +179,7 @@ const SustainableDesignAI: React.FC = () => {
         <meta property="og:description" content="Learn how AI revolutionizes sustainable interior design with eco-friendly spaces." />
         <meta property="og:image" content="https://www.styly.fr/sustainable-eco-friendly-interior-design.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/sustainable-design-ai-eco-friendly-spaces" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/sustainable-design-ai-eco-friendly-spaces" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/sustainable-design-ai-eco-friendly-spaces" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/design-durabilite-ia-espaces-eco-responsables" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/design-durabilite-ia-espaces-eco-responsables" />

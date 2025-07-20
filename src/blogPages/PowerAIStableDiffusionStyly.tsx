@@ -119,7 +119,6 @@ const PowerAIStableDiffusionStyly: React.FC = () => {
         <meta property="og:description" content={currentContent.metaDescription} />
         <meta property="og:image" content="/ai-interior-design-technology.webp" />
         <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://www.styly.fr/blog/the-power-of-ai-how-stable-diffusion-and-styly-reshaping-creativity" />
       </Helmet>
 
       <article className="max-w-4xl mx-auto px-4 py-8 pt-20">

@@ -21,11 +21,11 @@ const ModernFamilyDesign: React.FC = () => {
           <meta property="og:description" content="Découvrez comment l'IA aide à créer des maisons fonctionnelles et élégantes pour les familles modernes." />
           <meta property="og:image" content="https://www.styly.fr/modern-family-home-functional-stylish.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/design-famille-moderne-ia-maisons-fonctionnelles" />
-          <link rel="canonical" href="https://www.styly.fr/blog/design-famille-moderne-ia-maisons-fonctionnelles" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/modern-family-design-ai-functional-homes" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/design-famille-moderne-ia-maisons-fonctionnelles" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/design-famille-moderne-ia-maisons-fonctionnelles" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -169,7 +169,7 @@ const ModernFamilyDesign: React.FC = () => {
         <meta property="og:description" content="Discover how AI helps create functional, stylish homes for modern families." />
         <meta property="og:image" content="https://www.styly.fr/modern-family-home-functional-stylish.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/modern-family-design-ai-functional-homes" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/modern-family-design-ai-functional-homes" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/modern-family-design-ai-functional-homes" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/design-famille-moderne-ia-maisons-fonctionnelles" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/design-famille-moderne-ia-maisons-fonctionnelles" />

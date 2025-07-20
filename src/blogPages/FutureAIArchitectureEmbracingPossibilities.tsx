@@ -21,7 +21,7 @@ const FutureAIArchitectureEmbracingPossibilities: React.FC = () => {
           <meta property="og:description" content="Découvrez comment l'IA révolutionne l'architecture avec les perspectives du Responsable Technologie Design de BIG." />
           <meta property="og:image" content="https://www.styly.fr/revolutionizing-architecture-hero.png" />
           <meta property="og:url" content="https://www.styly.fr/blog/avenir-ia-architecture-embrasser-possibilites" />
-          <link rel="canonical" href="https://www.styly.fr/blog/avenir-ia-architecture-embrasser-possibilites" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/the-future-of-ai-in-architecture-embracing-the-possibilities" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/avenir-ia-architecture-embrasser-possibilites" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/avenir-ia-architecture-embrasser-possibilites" />
@@ -160,7 +160,7 @@ const FutureAIArchitectureEmbracingPossibilities: React.FC = () => {
         <meta property="og:description" content="Discover how AI is revolutionizing architecture with insights from BIG's Design Technology Manager." />
         <meta property="og:image" content="https://www.styly.fr/revolutionizing-architecture-hero.png" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/the-future-of-ai-in-architecture-embracing-the-possibilities" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/the-future-of-ai-in-architecture-embracing-the-possibilities" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/the-future-of-ai-in-architecture-embracing-the-possibilities" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/avenir-ia-architecture-embrasser-possibilites" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/avenir-ia-architecture-embrasser-possibilites" />

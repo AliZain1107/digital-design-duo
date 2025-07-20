@@ -8,7 +8,7 @@ const TopHomeInteriorIdeasAI: React.FC = () => {
   return (
     <>
       <Helmet>
-          <link rel="canonical" href="https://www.styly.fr/blog/tophomeinteriorideasai" />
+          
         <title>
           {language === "fr" 
             ? "Découvrir les Meilleures Idées d'Intérieur Maison avec l'IA | Styly.io"

@@ -26,7 +26,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
   return (
     <>
       <Helmet>
-          <link rel="canonical" href="https://www.styly.fr/blog/unlockingpoweraiinteriordesign" />
+          
         <title>
           {language === "fr" 
             ? "Débloquer la Puissance de l'IA pour le Design Intérieur : Guide des Dernières Innovations | Styly.fr"
@@ -68,8 +68,6 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 <strong>Des outils innovants transforment le design intérieur</strong> : ChatGPT, DALL-E, Midjourney et <span className="font-davetica-wide">STYLY</span> (gratuit) facilitent la création d'espaces, de la planification à la visualisation 3D.
               </p>
             </div>
-
-
 
             <p className="text-lg text-gray-700 mb-6">
               De nouveaux outils numériques comme ChatGPT, DALL-E et Midjourney transforment la façon de concevoir et décorer les espaces. Découvrez comment ces solutions facilitent la création et multiplient les possibilités pour votre intérieur.
@@ -196,8 +194,6 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
               </ul>
             </div>
 
-
-
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
               <h3 className="text-lg font-semibold text-orange-800 mb-2">
                 🎯 Prêt à Transformer Votre Intérieur ?
@@ -231,8 +227,6 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 <strong>Innovative tools are transforming interior design</strong>—ChatGPT, DALL-E, Midjourney, and <span className="font-davetica-wide">STYLY</span> (free) make it easy to plan and visualize spaces from start to finish.
               </p>
             </div>
-
-
 
             <p className="text-lg text-gray-700 mb-6">
               New digital tools like ChatGPT, DALL-E, and Midjourney are changing how we design and decorate spaces. Discover how these solutions make creation easier and open up new possibilities for your home.
@@ -358,8 +352,6 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 <li>• <strong>Predictive Personalization</strong>: Tools anticipate your future preferences</li>
               </ul>
             </div>
-
-
 
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
               <h3 className="text-lg font-semibold text-orange-800 mb-2">

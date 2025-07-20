@@ -5,12 +5,10 @@ import { useLanguage } from "@/lib/i18n";
 const DesignLivingRoomLikePro: React.FC = () => {
   const { language, t } = useLanguage();
 
-
-
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
-          <link rel="canonical" href="https://www.styly.fr/blog/designlivingroomlikepro" />
+          
         <title>
           {language === "fr"
             ? "Concevoir Votre Salon Comme un Professionnel avec Styly | Styly AI"

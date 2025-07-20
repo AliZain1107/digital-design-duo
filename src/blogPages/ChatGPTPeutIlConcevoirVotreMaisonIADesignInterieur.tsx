@@ -20,8 +20,7 @@ const ChatGPTPeutIlConcevoirVotreMaisonIADesignInterieur: React.FC = () => {
           <meta property="og:description" content="Explorez les possibilités de l'IA pour concevoir votre maison avec ChatGPT et Styly AI." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/chatgpt-house-design-ai.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur" />
-          <link rel="canonical" href="https://www.styly.fr/blog/chatgpt-peut-il-concevoir-votre-maison-ia-design-interieur" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">

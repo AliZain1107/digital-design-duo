@@ -21,8 +21,7 @@ const ExpertTipsEconomiserDecorationInterieure2025: React.FC = () => {
           <meta property="og:description" content="Transformez votre intérieur sans vous ruiner grâce à ces conseils d'experts et l'IA Styly." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/expert-tips-save-money-decoration.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />
-          <link rel="canonical" href="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">

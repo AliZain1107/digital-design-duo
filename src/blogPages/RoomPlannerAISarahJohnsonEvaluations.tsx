@@ -26,7 +26,7 @@ const RoomPlannerAISarahJohnsonEvaluations: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
-          <link rel="canonical" href="https://www.styly.fr/blog/roomplanneraisarahjohnsonevaluations" />
+          
         <title>
           {language === "fr" 
             ? "Le Bon, le Mauvais et le Planificateur IA : Évaluations Honnêtes de Sarah Johnson sur Styly.io | Styly.io"

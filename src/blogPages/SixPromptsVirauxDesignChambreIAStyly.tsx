@@ -21,8 +21,7 @@ const SixPromptsVirauxDesignChambreIAStyly: React.FC = () => {
           <meta property="og:description" content="Créez des designs de chambre viraux avec ces 6 prompts optimisés pour Styly AI." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/viral-bedroom-prompts-ai.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
-          <link rel="canonical" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">

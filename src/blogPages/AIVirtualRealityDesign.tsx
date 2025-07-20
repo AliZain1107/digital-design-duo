@@ -21,11 +21,11 @@ const AIVirtualRealityDesign: React.FC = () => {
           <meta property="og:description" content="Explorez comment l'IA et la Réalité Virtuelle révolutionnent le design d'intérieur avec des expériences immersives." />
           <meta property="og:image" content="https://www.styly.fr/ai-virtual-reality-design-hero.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/intersection-ia-realite-virtuelle-design" />
-          <link rel="canonical" href="https://www.styly.fr/blog/intersection-ia-realite-virtuelle-design" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/intersection-ai-virtual-reality-design" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/intersection-ia-realite-virtuelle-design" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/intersection-ia-realite-virtuelle-design" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -182,7 +182,7 @@ const AIVirtualRealityDesign: React.FC = () => {
         <meta property="og:description" content="Explore how AI and Virtual Reality are revolutionizing interior design with immersive experiences." />
         <meta property="og:image" content="https://www.styly.fr/ai-virtual-reality-design-hero.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/intersection-ai-virtual-reality-design" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/intersection-ai-virtual-reality-design" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/intersection-ai-virtual-reality-design" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/intersection-ia-realite-virtuelle-design" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/intersection-ia-realite-virtuelle-design" />

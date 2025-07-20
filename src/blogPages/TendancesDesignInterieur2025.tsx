@@ -20,8 +20,7 @@ const TendancesDesignInterieur2025: React.FC = () => {
           <meta property="og:description" content="Explorez les tendances design 2025 et comment l'IA transforme la décoration intérieure." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/interior-design-trends-2025.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/tendances-design-interieur-2025" />
-          <link rel="canonical" href="https://www.styly.fr/blog/tendances-design-interieur-2025" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">

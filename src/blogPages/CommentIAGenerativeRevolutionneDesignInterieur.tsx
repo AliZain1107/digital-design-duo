@@ -20,8 +20,7 @@ const CommentIAGenerativeRevolutionneDesignInterieur: React.FC = () => {
           <meta property="og:description" content="Explorez la révolution de l'IA générative dans le design intérieur avec Styly AI." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/generative-ai-interior-design-revolution.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />
-          <link rel="canonical" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">

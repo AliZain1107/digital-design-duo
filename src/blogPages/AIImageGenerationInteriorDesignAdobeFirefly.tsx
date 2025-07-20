@@ -161,7 +161,6 @@ const AIImageGenerationInteriorDesignAdobeFirefly: React.FC = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={currentContent.title} />
         <meta name="twitter:description" content={currentContent.metaDescription} />
-        <link rel="canonical" href={`https://www.styly.fr/blog/ai-image-generation-interior-design-by-adobe-firefly`} />
       </Helmet>
 
       <div className="min-h-screen bg-white">

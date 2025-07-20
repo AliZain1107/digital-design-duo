@@ -21,11 +21,11 @@ const GenZInstagramWorthyInteriors: React.FC = () => {
           <meta property="og:description" content="Créez des espaces parfaits pour Instagram avec les outils IA de Styly. Tendances, astuces et designs qui cartonnent sur les réseaux sociaux." />
           <meta property="og:image" content="https://www.styly.fr/qnYlT0wFEUMW2fJMNr5YOVjpoM.png" />
           <meta property="og:url" content="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram" />
-          <link rel="canonical" href="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/gen-z-s-ultimate-guide-to-instagram-worthy-interiors" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -195,7 +195,7 @@ const GenZInstagramWorthyInteriors: React.FC = () => {
         <meta property="og:description" content="Create Instagram-perfect spaces with Styly AI tools. Trends, tips, and designs that go viral on social media." />
         <meta property="og:image" content="https://www.styly.fr/qnYlT0wFEUMW2fJMNr5YOVjpoM.png" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/gen-z-s-ultimate-guide-to-instagram-worthy-interiors" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/gen-z-s-ultimate-guide-to-instagram-worthy-interiors" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/gen-z-s-ultimate-guide-to-instagram-worthy-interiors" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/guide-ultime-generation-z-interieurs-dignes-instagram" />

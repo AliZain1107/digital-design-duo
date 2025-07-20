@@ -38,7 +38,6 @@ const InteriorDesignTrends2025: React.FC = () => {
         <meta name="twitter:title" content={currentMeta.title} />
         <meta name="twitter:description" content={currentMeta.description} />
         <meta name="twitter:image" content="/2025-interior-design-trends-hero.webp" />
-        <link rel="canonical" href={canonicalUrl} />
       </Helmet>
 
       <div className="flex flex-col items-center px-4 py-10 space-y-12">

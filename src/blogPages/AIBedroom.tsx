@@ -14,8 +14,6 @@ const AiBedroomDesign: React.FC = () => {
         <meta name="keywords" content={language === "fr" ? "design chambre IA, Styly AI, décoration chambre, design intérieur IA, chambre moderne" : "AI bedroom design, Styly AI, bedroom decoration, AI interior design, modern bedroom"} />
         <meta property="og:title" content={language === "fr" ? "Design de Chambre IA : Guide Complet 2025" : "AI Bedroom Design: Complete Guide 2025"} />
         <meta property="og:description" content={language === "fr" ? "Découvrez comment l'IA révolutionne le design de chambre avec Styly AI." : "Discover how AI revolutionizes bedroom design with Styly AI."} />
-        <meta property="og:url" content={language === "fr" ? "https://www.styly.fr/blog/design-chambre-ia-guide-complet" : "https://www.styly.fr/en/blog/ai-bedroom-design-complete-guide"} />
-        <link rel="canonical" href={language === "fr" ? "https://www.styly.fr/blog/design-chambre-ia-guide-complet" : "https://www.styly.fr/en/blog/ai-bedroom-design-complete-guide"} />
       </Helmet>
       <header className="mb-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">

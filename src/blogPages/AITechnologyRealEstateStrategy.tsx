@@ -21,11 +21,11 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
           <meta property="og:description" content="Transformez votre stratégie immobilière avec les outils IA avancés de Styly pour le staging virtuel et les visualisations professionnelles." />
           <meta property="og:image" content="https://www.styly.fr/ai-room-planner-residential.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
-          <link rel="canonical" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/ai-technology-to-elevate-your-real-estate-strategy" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -190,7 +190,7 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
         <meta property="og:description" content="Transform your real estate strategy with Styly's advanced AI tools for virtual staging and professional visualizations." />
         <meta property="og:image" content="https://www.styly.fr/ai-room-planner-residential.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/ai-technology-to-elevate-your-real-estate-strategy" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/ai-technology-to-elevate-your-real-estate-strategy" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/ai-technology-to-elevate-your-real-estate-strategy" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/technologie-ia-pour-elever-strategie-immobiliere" />

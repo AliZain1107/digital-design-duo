@@ -14,8 +14,6 @@ const BuildHouseAI: React.FC = () => {
         <meta name="keywords" content={language === "fr" ? "guide design IA, Styly AI, décoration intelligente, design intérieur 2025, outils IA maison" : "AI design guide, Styly AI, smart decoration, interior design 2025, home AI tools"} />
         <meta property="og:title" content={language === "fr" ? "Guide Ultime Design Intérieur IA 2025" : "Ultimate AI Interior Design Guide 2025"} />
         <meta property="og:description" content={language === "fr" ? "Guide complet du design intérieur avec l'intelligence artificielle et Styly AI." : "Complete guide to interior design with artificial intelligence and Styly AI."} />
-        <meta property="og:url" content={language === "fr" ? "https://www.styly.fr/blog/guide-ultime-design-interieur-ia-2025" : "https://www.styly.fr/en/blog/ultimate-ai-interior-design-guide-2025"} />
-        <link rel="canonical" href={language === "fr" ? "https://www.styly.fr/blog/guide-ultime-design-interieur-ia-2025" : "https://www.styly.fr/en/blog/ultimate-ai-interior-design-guide-2025"} />
       </Helmet>
       <header className="mb-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">

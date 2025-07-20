@@ -21,11 +21,11 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
           <meta property="og:description" content="Transformez votre workflow design intérieur avec l'IA de Photoshop et Styly. Guide expert pour créer des espaces époustouflants." />
           <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11435-u1gkki.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
-          <link rel="canonical" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/unlock-power-photoshop-generative-ai-effortless-interior-design" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -166,7 +166,7 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
         <meta property="og:description" content="Transform your interior design workflow with Photoshop's AI and Styly. Expert guide to creating stunning spaces." />
         <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11435-u1gkki.jpg" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/unlock-power-photoshop-generative-ai-effortless-interior-design" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/unlock-power-photoshop-generative-ai-effortless-interior-design" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/unlock-power-photoshop-generative-ai-effortless-interior-design" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/debloquer-puissance-photoshop-ia-generative-design-interieur-sans-effort" />

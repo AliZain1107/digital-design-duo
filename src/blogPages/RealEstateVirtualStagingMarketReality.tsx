@@ -21,11 +21,11 @@ const RealEstateVirtualStagingMarketReality: React.FC = () => {
           <meta property="og:description" content="La réalité du marché 2025 : découvrez les statistiques et stratégies des agents immobiliers qui utilisent l'IA pour transformer leurs ventes." />
           <meta property="og:image" content="https://www.styly.fr/7pXKKwoQmwCK8yXNxn8iydkfI.png" />
           <meta property="og:url" content="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025" />
-          <link rel="canonical" href="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-real-estate-agents-are-boosting-sales-with-ai-powered-virtual-staging-the-2025-market-reality" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -177,7 +177,7 @@ const RealEstateVirtualStagingMarketReality: React.FC = () => {
         <meta property="og:description" content="The 2025 market reality: discover the statistics and strategies of real estate agents using AI to transform their sales." />
         <meta property="og:image" content="https://www.styly.fr/7pXKKwoQmwCK8yXNxn8iydkfI.png" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/how-real-estate-agents-are-boosting-sales-with-ai-powered-virtual-staging-the-2025-market-reality" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/how-real-estate-agents-are-boosting-sales-with-ai-powered-virtual-staging-the-2025-market-reality" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-real-estate-agents-are-boosting-sales-with-ai-powered-virtual-staging-the-2025-market-reality" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025" />

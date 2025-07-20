@@ -20,8 +20,7 @@ const CommentDALLEMidjourneyRevolutionnentDesignInterieur: React.FC = () => {
           <meta property="og:description" content="Explorez les outils IA révolutionnaires pour le design intérieur et la décoration." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/dalle-midjourney-styly-design.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
-          <link rel="canonical" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">

@@ -10,10 +10,6 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-
-
-
-
   if (language === "fr") {
     return (
       <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
@@ -25,11 +21,11 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
           <meta property="og:description" content="Explorez comment l'IA transforme la sélection des couleurs en design avec des palettes scientifiquement optimisées." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/mini_magick20250608-11056-cx50sk (1).jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite" />
-          <link rel="canonical" href="https://www.styly.fr/blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/the-science-of-color-in-design-how-ai-helps-you-choose-the-perfect-palette" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -191,7 +187,7 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
         <meta property="og:description" content="Explore how AI transforms color selection in design with scientifically optimized palettes." />
         <meta property="og:image" content="https://www.styly.fr/Blogpages/mini_magick20250608-11056-cx50sk (1).jpg" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/the-science-of-color-in-design-how-ai-helps-you-choose-the-perfect-palette" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/the-science-of-color-in-design-how-ai-helps-you-choose-the-perfect-palette" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/the-science-of-color-in-design-how-ai-helps-you-choose-the-perfect-palette" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite" />

@@ -26,7 +26,7 @@ const FuturisticInteriorDesignStyles: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
-          <link rel="canonical" href="https://www.styly.fr/blog/futuristicinteriordesignstyles" />
+          
         <title>
           {language === "fr" 
             ? "Styles de Design Intérieur Futuriste : Comment l'IA Styly Façonne les Maisons de Demain | Styly.io"

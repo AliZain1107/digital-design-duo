@@ -12,7 +12,6 @@ const BuildYourOwnHouseAI: React.FC = () => {
         <meta property="og:description" content="Learn how to build your dream house using AI tools and porch design with artificial intelligence." />
         <meta property="og:url" content="https://www.styly.fr/blog/build-your-own-house-ai-tools-porch-design" />
         <meta property="og:image" content="https://www.styly.fr/revolutionizing-architecture-design.jpg" />
-        <link rel="canonical" href="https://www.styly.fr/blog/build-your-own-house-ai-tools-porch-design" />
       </Helmet>
       <article className="prose prose-lg max-w-none">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">

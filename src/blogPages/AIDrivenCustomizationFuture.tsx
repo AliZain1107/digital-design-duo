@@ -26,7 +26,7 @@ const AIDrivenCustomizationFuture: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <Helmet>
-          <link rel="canonical" href="https://www.styly.fr/blog/aidrivencustomizationfuture" />
+          
         <title>
           {language === "fr" 
             ? "Pourquoi la Personnalisation IA est l'Avenir du Design Intérieur | Styly.io"

@@ -8,7 +8,7 @@ const AIGeneratedDesignIdeasMidjourney: React.FC = () => {
   return (
     <>
       <Helmet>
-          <link rel="canonical" href="https://www.styly.fr/blog/aigenerateddesignideasmidjourney" />
+          
         <title>
           {language === 'fr' 
             ? "Idées de Design Générées par l'IA : Midjourney comme Outil Puissant pour les Designers d'Intérieur | Styly.io"

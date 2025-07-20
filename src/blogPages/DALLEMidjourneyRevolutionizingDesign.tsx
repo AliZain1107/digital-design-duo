@@ -21,11 +21,11 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
           <meta property="og:description" content="Explorez les outils IA révolutionnaires qui transforment le design d'intérieur moderne avec des rendus photoréalistes et une créativité sans limites." />
           <meta property="og:image" content="https://www.styly.fr/generative-ai-interior-design-revolution.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
-          <link rel="canonical" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -190,7 +190,7 @@ const DALLEMidjourneyRevolutionizingDesign: React.FC = () => {
         <meta property="og:description" content="Explore revolutionary AI tools that transform modern interior design with photorealistic renders and unlimited creativity." />
         <meta property="og:image" content="https://www.styly.fr/generative-ai-interior-design-revolution.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-dall-e-midjourney-styly-revolutionnent-design-interieur" />

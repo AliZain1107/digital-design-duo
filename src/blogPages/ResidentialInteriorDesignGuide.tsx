@@ -35,13 +35,12 @@ const ResidentialInteriorDesignGuide: React.FC = () => {
         <meta property="og:title" content={currentSeo.title} />
         <meta property="og:description" content={currentSeo.description} />
         <meta property="og:image" content={currentSeo.ogImage} />
-        <meta property="og:url" content={currentUrl} />
+        
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={currentSeo.title} />
         <meta name="twitter:description" content={currentSeo.description} />
         <meta name="twitter:image" content={currentSeo.ogImage} />
-        <link rel="canonical" href={currentUrl} />
       </Helmet>
 
       <div className="min-h-screen bg-white">

@@ -12,12 +12,12 @@ const AIInteriorDesignRevolutionReplacement: React.FC = () => {
           <title>IA & Design Intérieur : Révolution ou Remplacement ? | Styly.io</title>
           <meta name="description" content="Découvrez si l'IA révolutionne ou remplace le design intérieur traditionnel. Analyse complète de l'impact de l'intelligence artificielle sur l'avenir du design." />
           <meta name="keywords" content="IA design intérieur, intelligence artificielle décoration, révolution design, avenir design intérieur, Styly.io" />
-          <link rel="canonical" href="https://www.styly.fr/fr/blog/ia-design-interieur-revolution-ou-remplacement" />
+          
           <meta property="og:title" content="IA & Design Intérieur : Révolution ou Remplacement ?" />
           <meta property="og:description" content="Analyse approfondie de l'impact de l'IA sur le design intérieur : révolution créative ou remplacement des designers ?" />
           <meta property="og:image" content="/ai-interior-design-revolution-replacement.webp" />
           <meta property="og:url" content="https://www.styly.fr/fr/blog/ia-design-interieur-revolution-ou-remplacement" />
-        </Helmet>
+      </Helmet>
 
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -124,7 +124,7 @@ const AIInteriorDesignRevolutionReplacement: React.FC = () => {
         <title>AI & Interior Design: Revolution or Replacement? | Styly.io</title>
         <meta name="description" content="Discover whether AI is revolutionizing or replacing traditional interior design. Complete analysis of artificial intelligence's impact on the future of design." />
         <meta name="keywords" content="AI interior design, artificial intelligence decoration, design revolution, future interior design, Styly.io" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/ai-interior-design-revolution-or-replacement" />
+        
         <meta property="og:title" content="AI & Interior Design: Revolution or Replacement?" />
         <meta property="og:description" content="In-depth analysis of AI's impact on interior design: creative revolution or designer replacement?" />
         <meta property="og:image" content="/ai-interior-design-revolution-replacement.webp" />

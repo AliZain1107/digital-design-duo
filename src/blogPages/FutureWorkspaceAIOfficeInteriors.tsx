@@ -19,8 +19,6 @@ const FutureWorkspaceAIOfficeInteriors: React.FC = () => {
         <meta name="keywords" content={language === "fr" ? "bureau IA, espace travail futur, Styly AI, design bureau intelligent, aménagement bureau moderne" : "AI office, future workspace, Styly AI, smart office design, modern office layout"} />
         <meta property="og:title" content={language === "fr" ? "L'Avenir des Espaces de Travail : Bureaux IA" : "The Future of Workspace: AI Office Interiors"} />
         <meta property="og:description" content={language === "fr" ? "Découvrez comment l'IA transforme les espaces de bureau modernes avec Styly AI." : "Discover how AI transforms modern office spaces with Styly AI."} />
-        <meta property="og:url" content={language === "fr" ? "https://www.styly.fr/blog/avenir-espaces-travail-bureaux-ia" : "https://www.styly.fr/en/blog/future-workspace-ai-office-interiors"} />
-        <link rel="canonical" href={language === "fr" ? "https://www.styly.fr/blog/avenir-espaces-travail-bureaux-ia" : "https://www.styly.fr/en/blog/future-workspace-ai-office-interiors"} />
       </Helmet>
       <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
         {language === "fr" ? (

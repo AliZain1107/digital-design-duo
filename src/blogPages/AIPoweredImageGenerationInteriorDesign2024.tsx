@@ -32,11 +32,11 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
           <meta property="og:description" content="Explorez les possibilités infinies de l'IA pour transformer votre processus de design intérieur avec des outils révolutionnaires." />
           <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11435-xqjldd.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/comment-generation-images-ia-peut-inspirer-design-interieur-2024" />
-          <link rel="canonical" href="https://www.styly.fr/blog/comment-generation-images-ia-peut-inspirer-design-interieur-2024" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-ai-powered-image-generation-can-inspire-your-interior-design-in-2024" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-generation-images-ia-peut-inspirer-design-interieur-2024" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-generation-images-ia-peut-inspirer-design-interieur-2024" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -193,7 +193,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
         <meta property="og:description" content="Explore the endless possibilities of AI to transform your interior design process with revolutionary tools." />
         <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11435-xqjldd.jpg" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/how-ai-powered-image-generation-can-inspire-your-interior-design-in-2024" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/how-ai-powered-image-generation-can-inspire-your-interior-design-in-2024" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-ai-powered-image-generation-can-inspire-your-interior-design-in-2024" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-generation-images-ia-peut-inspirer-design-interieur-2024" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-generation-images-ia-peut-inspirer-design-interieur-2024" />

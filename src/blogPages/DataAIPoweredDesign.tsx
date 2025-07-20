@@ -21,11 +21,11 @@ const DataAIPoweredDesign: React.FC = () => {
           <meta property="og:description" content="Découvrez comment le design IA basé sur les données crée une meilleure esthétique et fonctionnalité." />
           <meta property="og:image" content="https://www.styly.fr/data-analytics-interior-design-dashboard.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/role-donnees-design-alimente-ia" />
-          <link rel="canonical" href="https://www.styly.fr/blog/role-donnees-design-alimente-ia" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/role-data-ai-powered-design" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/role-donnees-design-alimente-ia" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/role-donnees-design-alimente-ia" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -163,7 +163,7 @@ const DataAIPoweredDesign: React.FC = () => {
         <meta property="og:description" content="Discover how data-driven AI design creates better aesthetics and functionality." />
         <meta property="og:image" content="https://www.styly.fr/data-analytics-interior-design-dashboard.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/role-data-ai-powered-design" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/role-data-ai-powered-design" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/role-data-ai-powered-design" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/role-donnees-design-alimente-ia" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/role-donnees-design-alimente-ia" />

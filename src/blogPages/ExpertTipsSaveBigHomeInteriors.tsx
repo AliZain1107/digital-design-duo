@@ -21,7 +21,7 @@ const ExpertTipsSaveBigHomeInteriors: React.FC = () => {
           <meta property="og:description" content="Transformez votre maison sans vous ruiner grâce aux outils IA gratuits de Styly et nos conseils d'experts pour 2025." />
         <meta property="og:image" content="https://www.styly.fr/expert-tips-save-big-home-interiors-hero.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />
-          <link rel="canonical" href="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />
+          
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/10-expert-tips-to-save-big-on-home-interiors-in-2025" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />
@@ -207,7 +207,7 @@ const ExpertTipsSaveBigHomeInteriors: React.FC = () => {
         <meta property="og:description" content="Transform your home without breaking the bank using Styly's free AI tools and our expert tips for 2025." />
         <meta property="og:image" content="https://www.styly.fr/expert-tips-save-big-home-interiors-hero.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/10-expert-tips-to-save-big-on-home-interiors-in-2025" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/10-expert-tips-to-save-big-on-home-interiors-in-2025" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/10-expert-tips-to-save-big-on-home-interiors-in-2025" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/10-conseils-experts-economiser-decoration-interieure-2025" />

@@ -21,7 +21,7 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
           <meta property="og:description" content="Découvrez les meilleurs prompts pour utiliser ChatGPT, Gemini et Mistral en design intérieur." />
           <meta property="og:image" content="https://www.styly.fr/ai-interior-design-technology.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt" />
-          <link rel="canonical" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt" />
@@ -174,7 +174,7 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
         <meta property="og:description" content="Discover the best prompts for using ChatGPT, Gemini, and Mistral in interior design." />
         <meta property="og:image" content="https://www.styly.fr/ai-interior-design-technology.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/ai-assistant-interior-design-chatgpt-prompts" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt" />

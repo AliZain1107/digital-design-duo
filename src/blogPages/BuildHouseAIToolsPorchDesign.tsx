@@ -21,11 +21,11 @@ const BuildHouseAIToolsPorchDesign: React.FC = () => {
           <meta property="og:description" content="Révolutionnez votre projet de construction avec les outils IA de Styly. Plans, design extérieur et conception de porche optimisés par l'intelligence artificielle." />
           <meta property="og:image" content="https://www.styly.fr/revolutionizing-architecture-design.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/comment-construire-votre-maison-outils-ia-conception-porche" />
-          <link rel="canonical" href="https://www.styly.fr/blog/comment-construire-votre-maison-outils-ia-conception-porche" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-to-build-your-own-house-with-ai-tools-including-porch-design" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-construire-votre-maison-outils-ia-conception-porche" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-construire-votre-maison-outils-ia-conception-porche" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -209,7 +209,7 @@ const BuildHouseAIToolsPorchDesign: React.FC = () => {
         <meta property="og:description" content="Revolutionize your building project with Styly AI tools. Plans, exterior design, and porch conception optimized by artificial intelligence." />
         <meta property="og:image" content="https://www.styly.fr/revolutionizing-architecture-design.jpg" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/how-to-build-your-own-house-with-ai-tools-including-porch-design" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/how-to-build-your-own-house-with-ai-tools-including-porch-design" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-to-build-your-own-house-with-ai-tools-including-porch-design" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-construire-votre-maison-outils-ia-conception-porche" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-construire-votre-maison-outils-ia-conception-porche" />

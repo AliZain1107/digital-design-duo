@@ -21,11 +21,11 @@ const LeveragingAIOptimizeSpacePlanningSmallApartments: React.FC = () => {
           <meta property="og:description" content="Transformez votre petit appartement avec les outils IA de Styly pour un aménagement optimal et fonctionnel." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/mini_magick20250608-11056-2qt7xn.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/exploiter-ia-optimiser-planification-espace-petits-appartements" />
-          <link rel="canonical" href="https://www.styly.fr/blog/exploiter-ia-optimiser-planification-espace-petits-appartements" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/leveraging-ai-to-optimize-space-planning-in-small-apartments" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/exploiter-ia-optimiser-planification-espace-petits-appartements" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/exploiter-ia-optimiser-planification-espace-petits-appartements" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -183,7 +183,7 @@ const LeveragingAIOptimizeSpacePlanningSmallApartments: React.FC = () => {
         <meta property="og:description" content="Transform your small apartment with Styly's AI tools for optimal and functional layout planning." />
         <meta property="og:image" content="https://www.styly.fr/Blogpages/mini_magick20250608-11056-2qt7xn.jpg" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/leveraging-ai-to-optimize-space-planning-in-small-apartments" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/leveraging-ai-to-optimize-space-planning-in-small-apartments" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/leveraging-ai-to-optimize-space-planning-in-small-apartments" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/exploiter-ia-optimiser-planification-espace-petits-appartements" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/exploiter-ia-optimiser-planification-espace-petits-appartements" />

@@ -109,7 +109,6 @@ const ComparisonBest2024GenerativeAIInteriorDesignTools: React.FC = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={currentContent.title} />
         <meta name="twitter:description" content={currentContent.metaDescription} />
-        <link rel="canonical" href={`https://www.styly.fr/blog/comparison-of-best-2024-generative-ia-interior-design-tools`} />
       </Helmet>
 
       <div className="min-h-screen bg-white">

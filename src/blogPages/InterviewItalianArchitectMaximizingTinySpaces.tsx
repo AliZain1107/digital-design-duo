@@ -81,7 +81,6 @@ const InterviewItalianArchitectMaximizingTinySpaces: React.FC = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={currentContent.title} />
         <meta name="twitter:description" content={currentContent.metaDescription} />
-        <link rel="canonical" href={`https://www.styly.fr/blog/intervew-with-italien-architect-maximizing-tiny-spaces`} />
       </Helmet>
 
       <div className="min-h-screen bg-white">

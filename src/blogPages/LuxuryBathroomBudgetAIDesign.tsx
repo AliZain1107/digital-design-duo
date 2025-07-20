@@ -21,11 +21,11 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
           <meta property="og:description" content="Transformez votre salle de bain en un refuge luxueux sans dépenser une fortune grâce aux outils IA de Styly." />
           <meta property="og:image" content="https://www.styly.fr/luxury-bathroom-budget-ai-hero.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
-          <link rel="canonical" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -176,7 +176,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
         <meta property="og:description" content="Transform your bathroom into a luxurious retreat without the high cost using Styly AI's smart design tools." />
         <meta property="og:image" content="https://www.styly.fr/luxury-bathroom-budget-ai-hero.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/need-luxury-bathroom-on-budget-here-is-how" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />

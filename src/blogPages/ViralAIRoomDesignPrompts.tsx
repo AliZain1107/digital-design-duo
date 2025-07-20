@@ -21,11 +21,11 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
           <meta property="og:description" content="Découvrez 6 prompts viraux de design de chambre IA qui génèrent des résultats époustouflants." />
           <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11056-k6lwqq.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
-          <link rel="canonical" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -276,7 +276,7 @@ const ViralAIRoomDesignPrompts: React.FC = () => {
         <meta property="og:description" content="Discover 6 viral AI room design prompts that consistently generate jaw-dropping bedroom results." />
         <meta property="og:image" content="https://www.styly.fr/mini_magick20250608-11056-k6lwqq.jpg" />
         <meta property="og:url" content="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
-        <link rel="canonical" href="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/6-prompts-viraux-design-chambre-ia-styly" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/6-viral-ai-room-design-prompts-create-dream-bedroom-styly" />

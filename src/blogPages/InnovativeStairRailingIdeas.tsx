@@ -26,7 +26,7 @@ const InnovativeStairRailingIdeas: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
-          <link rel="canonical" href="https://www.styly.fr/blog/innovativestairrailingideas" />
+          
         <title>
           {language === "fr" 
             ? "Idées Innovantes de Rampes d'Escalier Intérieur : Designs Personnalisés par l'IA Styly | Styly.io"

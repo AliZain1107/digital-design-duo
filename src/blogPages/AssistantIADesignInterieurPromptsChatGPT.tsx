@@ -21,8 +21,7 @@ const AssistantIADesignInterieurPromptsChatGPT: React.FC = () => {
           <meta property="og:description" content="Maîtrisez l'art des prompts IA pour révolutionner votre approche du design intérieur." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/ai-assistant-interior-design-prompts.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt" />
-          <link rel="canonical" href="https://www.styly.fr/blog/assistant-ia-design-interieur-prompts-chatgpt" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">

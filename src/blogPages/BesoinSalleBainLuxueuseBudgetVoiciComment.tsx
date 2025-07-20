@@ -21,8 +21,7 @@ const BesoinSalleBainLuxueuseBudgetVoiciComment: React.FC = () => {
           <meta property="og:description" content="Transformez votre salle de bain en espace luxueux sans vous ruiner avec Styly AI." />
           <meta property="og:image" content="https://www.styly.fr/Blogpages/luxury-bathroom-budget.jpg" />
           <meta property="og:url" content="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
-          <link rel="canonical" href="https://www.styly.fr/blog/besoin-salle-bain-luxueuse-budget-voici-comment" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">

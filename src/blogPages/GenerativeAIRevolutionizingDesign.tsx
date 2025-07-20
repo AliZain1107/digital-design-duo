@@ -21,11 +21,11 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
           <meta property="og:description" content="Explorez comment l'IA générative transforme le design intérieur avec des outils révolutionnaires et des technologies avancées." />
           <meta property="og:image" content="https://www.styly.fr/ai-room-decorator.webp" />
           <meta property="og:url" content="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />
-          <link rel="canonical" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -190,7 +190,7 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
         <meta property="og:description" content="Explore how generative AI transforms interior design with revolutionary tools and advanced technologies." />
         <meta property="og:image" content="https://www.styly.fr/ai-room-decorator.webp" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/how-generative-ai-revolutionizing-interior-design" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/comment-ia-generative-revolutionne-design-interieur" />

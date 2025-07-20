@@ -39,9 +39,9 @@ const CulturalDesignAI: React.FC = () => {
         <meta property="og:title" content={currentSeo.title} />
         <meta property="og:description" content={currentSeo.description} />
         <meta property="og:image" content={currentSeo.ogImage} />
-        <meta property="og:url" content={currentUrl} />
+        
         <meta property="og:type" content="article" />
-        <link rel="canonical" href={currentUrl} />
+        
         <link rel="alternate" hrefLang="en" href={alternateUrls.en} />
         <link rel="alternate" hrefLang="fr" href={alternateUrls.fr} />
         <meta name="robots" content="index, follow" />

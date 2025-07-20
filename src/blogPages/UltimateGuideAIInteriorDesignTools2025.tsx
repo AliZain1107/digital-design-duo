@@ -21,11 +21,11 @@ const UltimateGuideAIInteriorDesignTools2025: React.FC = () => {
           <meta property="og:description" content="Analyse détaillée des plateformes IA de design intérieur. Fonctionnalités, prix, avantages et pourquoi Styly AI se démarque en 2025." />
           <meta property="og:image" content="https://www.styly.fr/HTHsreSJo6OnIBmT0l515eu02c.png" />
           <meta property="og:url" content="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025-comparaison" />
-          <link rel="canonical" href="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025-comparaison" />
+          
           <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/the-ultimate-guide-to-ai-interior-design-tools-in-2025" />
           <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025-comparaison" />
           <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025-comparaison" />
-        </Helmet>
+      </Helmet>
         <article className="prose prose-lg max-w-none">
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -234,7 +234,7 @@ const UltimateGuideAIInteriorDesignTools2025: React.FC = () => {
         <meta property="og:description" content="Detailed analysis of AI interior design platforms. Features, pricing, benefits and why Styly AI stands out in 2025." />
         <meta property="og:image" content="https://www.styly.fr/HTHsreSJo6OnIBmT0l515eu02c.png" />
         <meta property="og:url" content="https://www.styly.fr/en/blog/the-ultimate-guide-to-ai-interior-design-tools-in-2025" />
-        <link rel="canonical" href="https://www.styly.fr/en/blog/the-ultimate-guide-to-ai-interior-design-tools-in-2025" />
+        
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/the-ultimate-guide-to-ai-interior-design-tools-in-2025" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025-comparaison" />
         <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/guide-ultime-outils-design-interieur-ia-2025-comparaison" />

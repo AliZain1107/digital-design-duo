@@ -14,8 +14,6 @@ const BuildHouseAI: React.FC = () => {
         <meta name="keywords" content={language === "fr" ? "construire maison IA, Styly AI, construction intelligente, design architectural IA" : "build house AI, Styly AI, smart construction, AI architectural design"} />
         <meta property="og:title" content={language === "fr" ? "Comment Construire sa Maison avec l'IA" : "How to Build Your House with AI"} />
         <meta property="og:description" content={language === "fr" ? "Guide complet pour construire votre maison avec l'intelligence artificielle et Styly." : "Complete guide to building your house with artificial intelligence and Styly."} />
-        <meta property="og:url" content={language === "fr" ? "https://www.styly.fr/blog/construire-maison-ia" : "https://www.styly.fr/en/blog/build-house-ai"} />
-        <link rel="canonical" href={language === "fr" ? "https://www.styly.fr/blog/construire-maison-ia" : "https://www.styly.fr/en/blog/build-house-ai"} />
       </Helmet>
       <header className="mb-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">

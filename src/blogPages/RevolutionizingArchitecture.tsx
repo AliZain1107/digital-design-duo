@@ -39,7 +39,6 @@ const RevolutionizingArchitecture: React.FC = () => {
         <meta name="twitter:title" content={currentMeta.title} />
         <meta name="twitter:description" content={currentMeta.description} />
         <meta name="twitter:image" content="/revolutionizing-architecture-hero.png" />
-        <link rel="canonical" href={canonicalUrl} />
       </Helmet>
 
       <div className="flex flex-col items-center px-4 py-10 space-y-12">

@@ -93,7 +93,6 @@ const AheadOfTheCurveInteriorDesignTrends2024: React.FC = () => {
         <meta property="og:description" content={currentContent.metaDescription} />
         <meta property="og:image" content="/interior-design-styles-collection.webp" />
         <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://www.styly.fr/blog/ahead-of-the-curve-the-top-interior-design-trends-for-2024" />
       </Helmet>
 
       <article className="max-w-4xl mx-auto px-4 py-8">
