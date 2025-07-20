@@ -1,14 +1,25 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
+import { useLocation } from "react-router-dom";
 
 const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
-  const { language } = useLanguage();
+  const { language: globalLanguage } = useLanguage();
+  const location = useLocation();
+
+  // Determine language from route - French URLs don't have /en/ prefix
+  const isEnglishRoute = location.pathname.startsWith("/en/blog");
+  const language = isEnglishRoute ? "en" : "fr";
 
   // Scroll to top when component mounts
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Debug log for language detection
+  React.useEffect(() => {
+    console.log(`[AIPoweredImageGeneration] Route: ${location.pathname}, Detected language: ${language}`);
+  }, [location.pathname, language]);
 
   if (language === "fr") {
     return (
