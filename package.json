@@ -12,6 +12,7 @@
     "preview": "vite preview",
     "prerender": "node scripts/prerender-pages.js",
     "verify-prerender": "node scripts/verify-prerender.js",
+    "test-google-indexing": "node scripts/google-indexing-test.js",
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "generate-meta": "node scripts/generate-meta-tags.js",
     "health-check": "node scripts/url-health-check.js",
