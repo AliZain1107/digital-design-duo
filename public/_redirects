@@ -10,15 +10,16 @@
 /blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite/  /blog/science-couleur-design-ia-palette-parfaite  301!
 /blog/science-couleur-design-ia-palette-parfaite/  /blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite  301!
 
-# Core pages redirect to homepage for better UX
-/collaborateurs/  /  301!
-/conditions/  /  301!
-/confidentialite/  /  301!
-/get-started/  /  301!
-/pricing/  /  301!
-/upload/  /  301!
-/video/  /  301!
-/styly-pro/  /collaborateurs  301!
+# Core pages - serve prerendered HTML (remove trailing slashes only)
+/collaborateurs/  /collaborateurs  301!
+/conditions/  /conditions  301!
+/confidentialite/  /confidentialite  301!
+/get-started/  /get-started  301!
+/pricing/  /pricing  301!
+/upload/  /upload  301!
+/video/  /video  301!
+/styly-pro/  /styly-pro  301!
+/services-api/  /services-api  301!
 
 # French-specific redirects (remove trailing slashes)
 /blog/10-conseils-experts-economiser-decoration-interieure-2025/  /blog/10-conseils-experts-economiser-decoration-interieure-2025  301!
@@ -58,6 +59,29 @@
 
 # Catch-all for any other trailing slash URLs
 /*/  /:splat  301!
+
+# ========================================
+# PRERENDERED PAGES CONFIGURATION
+# ========================================
+# Serve prerendered HTML files for better SEO
+# These rules ensure Google crawlers see full content
+
+# Blog posts - serve prerendered HTML files
+/blog/* /blog/:splat/index.html 200
+
+# Core pages - serve prerendered HTML files
+/pricing /pricing/index.html 200
+/upload /upload/index.html 200
+/collaborateurs /collaborateurs/index.html 200
+/services-api /services-api/index.html 200
+/styly-pro /styly-pro/index.html 200
+/get-started /get-started/index.html 200
+/video /video/index.html 200
+/conditions /conditions/index.html 200
+/confidentialite /confidentialite/index.html 200
+
+# Blog index page
+/blog /blog/index.html 200
 
 # ========================================
 # SPA ROUTING CONFIGURATION (CRITICAL!)
