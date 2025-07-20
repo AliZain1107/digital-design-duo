@@ -11,9 +11,9 @@ frontend:
         - npm run build
         - echo "SPA build completed successfully!"
         - echo "Verifying _redirects file exists..."
-        - ls -la dist/_redirects || echo "WARNING: _redirects file not found"
+        - "ls -la dist/_redirects || echo 'WARNING: _redirects file not found'"
         - echo "Verifying index.html exists..."
-        - ls -la dist/index.html || echo "ERROR: index.html not found"
+        - "ls -la dist/index.html || echo 'ERROR: index.html not found'"
   artifacts:
     baseDirectory: dist
     files:
@@ -22,10 +22,3 @@ frontend:
     paths:
       - node_modules/**/*
       - .npm/**/*
-  customHeaders:
-    - pattern: '**/*'
-      headers:
-        - key: 'X-Frame-Options'
-          value: 'DENY'
-        - key: 'X-Content-Type-Options'
-          value: 'nosniff'
