@@ -7,9 +7,9 @@ frontend:
         - npm ci
     build:
       commands:
-        - echo "Building SEO-optimized version with prerendering..."
-        - npm run build:seo
-        - echo "Build completed successfully!"
+        - echo "Building React SPA with dynamic routing..."
+        - npm run build
+        - echo "SPA build completed successfully!"
   artifacts:
     baseDirectory: dist
     files:

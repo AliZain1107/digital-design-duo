@@ -57,9 +57,9 @@
 # Serve prerendered HTML files for better SEO
 # These rules ensure Google crawlers see full content
 
-# TEMPORARY: Use SPA fallback until prerendering is fixed
-# All pages serve the main React app which handles routing
-# This prevents 404 errors while we fix prerendering
+# SPA ROUTING: All routes serve React app for dynamic routing
+# React Router handles all page routing dynamically
+# This is the correct approach for a Single Page Application
 
 # ========================================
 # SPA ROUTING CONFIGURATION (CRITICAL!)
