@@ -5,7 +5,7 @@
 # Updated to ensure no-slash → slash → 200 (one hop) as requested
 
 # Specific 301 redirects for broken URLs (must come before general patterns)
-# Blog redirects to existing content
+# Specific blog redirects for renamed posts only
 /blog/comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025/  /blog/comment-agents-immobiliers-augmentent-ventes-staging-virtuel-ia-2025  301!
 /blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite/  /blog/science-couleur-design-ia-palette-parfaite  301!
 /blog/science-couleur-design-ia-palette-parfaite/  /blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite  301!
@@ -21,16 +21,8 @@
 /styly-pro/  /styly-pro  301!
 /services-api/  /services-api  301!
 
-# French-specific redirects (remove trailing slashes)
-/blog/10-conseils-experts-economiser-decoration-interieure-2025/  /blog/10-conseils-experts-economiser-decoration-interieure-2025  301!
-
-# Blog index redirects (French only)
+# Blog index redirect only (remove trailing slash)
 /blog/  /blog  301!
-/fr/blog/  /fr/blog  301!
-
-# Blog post redirects - French patterns only
-/blog/*/  /blog/:splat  301!
-/fr/blog/*/  /fr/blog/:splat  301!
 
 # General page redirects (French only)
 /fr/  /fr  301!
