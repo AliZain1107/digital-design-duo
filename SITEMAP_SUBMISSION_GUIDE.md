@@ -2,31 +2,31 @@
 
 ## 📋 Overview
 
-This guide explains how to submit the updated sitemaps to Google Search Console for optimal indexing and SEO performance.
+This guide explains how to submit the consolidated sitemap to Google Search Console for optimal indexing and SEO performance.
 
-## 🎯 Sitemaps Created
+## 🎯 Sitemap Structure
 
-### 1. **Main Sitemap (styly.io)**
+### ✅ **Single Consolidated Sitemap**
 - **File**: `public/sitemap.xml`
-- **URL**: `https://styly.io/sitemap.xml`
-- **Purpose**: Primary sitemap for the main domain
-- **Content**: All pages, blog posts, and multilingual versions
-
-### 2. **French Sitemap (www.styly.fr)**
-- **File**: `public/sitemap-fr.xml`
-- **URL**: `https://www.styly.fr/siteap-fr.xml`
-- **Purpose**: French-focused sitemap for French domain
-- **Content**: French pages and blog posts with proper hreflang tags
+- **URL**: `https://www.styly.fr/sitemap.xml`
+- **Purpose**: Unified sitemap for www.styly.fr domain
+- **Content**: French pages and blog posts only (no English URLs)
+- **Benefits**:
+  - No duplicate content issues
+  - Cleaner Google indexing
+  - No conflicting hreflang signals
+  - Simplified maintenance
 
 ## 🚀 Google Search Console Submission Steps
 
-### For styly.io Domain:
+### For www.styly.fr Domain:
 
 1. **Access Google Search Console**
    - Go to [Google Search Console](https://search.google.com/search-console)
-   - Select the `styly.io` property
+   - Select the `www.styly.fr` property
+   - (If not added, add it as a new property first)
 
-2. **Submit Main Sitemap**
+2. **Submit Consolidated Sitemap**
    - Navigate to **Sitemaps** in the left sidebar
    - Click **Add a new sitemap**
    - Enter: `sitemap.xml`
@@ -35,96 +35,105 @@ This guide explains how to submit the updated sitemaps to Google Search Console 
 3. **Verify Submission**
    - Check that the sitemap shows as "Success"
    - Monitor for any errors or warnings
+   - Verify all French URLs are being indexed
 
-### For www.styly.fr Domain:
+### ⚠️ **Important Notes:**
+- **No separate French sitemap needed** - everything is in one file
+- **English URLs redirect** to styly.io so they're not in this sitemap
+- **Only submit to www.styly.fr** property in Google Search Console
 
-1. **Access French Property**
-   - In Google Search Console, select the `www.styly.fr` property
-   - (If not added, add it as a new property first)
+## 📊 What's Included in the Consolidated Sitemap
 
-2. **Submit French Sitemap**
-   - Navigate to **Sitemaps**
-   - Click **Add a new sitemap**
-   - Enter: `sitemap-fr.xml`
-   - Click **Submit**
-
-## 📊 What's Included in the Sitemaps
-
-### ✅ **Pages Indexed:**
-- **Main Pages**: Home, About, Pricing, Get Started
-- **New Pages**: Styly Pro/Collaborators, Services API
-- **Blog Index**: English and French blog listings
-- **Legal Pages**: Terms, Privacy Policy (multilingual)
+### ✅ **Pages Indexed (French Only):**
+- **Main Pages**: Home, Upload, Pricing, Get Started
+- **Business Pages**: Styly Pro, Collaborators, Services API
+- **Blog Index**: French blog listing only
+- **Legal Pages**: Conditions, Confidentialité (French only)
 - **Video Guide**: Tutorial and help pages
+- **All Blog Posts**: 50+ French blog posts with proper metadata
 
-### ✅ **Latest Blog Posts Added:**
-1. **ChatGPT Interior Design** (June 17, 2025)
-2. **Styly & VivaTech Partnership** (June 16, 2025)
-3. **AWS Interior Staging** (June 15, 2025)
-4. **All existing blog posts** with updated metadata
+### ✅ **Current Blog Posts (Latest):**
+1. **Interior Design Trends 2025** (February 2025)
+2. **Build House with AI Tools** (February 2025)
+3. **ChatGPT Interior Design** (February 2025)
+4. **Luxury Bathroom on Budget** (January 2025)
+5. **AI Interior Design Prompts** (January 2025)
+6. **All migrated blog posts** with French URLs
 
 ### ✅ **SEO Optimizations:**
-- **Hreflang tags** for multilingual content
-- **Image metadata** for better visual search
-- **Mobile-friendly** markup
-- **Priority and frequency** settings
-- **Last modified dates** for freshness signals
+- **French-first approach** - no conflicting language signals
+- **Mobile-friendly** markup for all pages
+- **Priority and frequency** settings optimized
+- **Last modified dates** for content freshness
+- **Clean URL structure** without trailing slashes
 
 ## 🔧 Technical Details
 
 ### Robots.txt Configuration:
 ```
-# Main domain (styly.io)
-Sitemap: https://styly.io/sitemap.xml
+# Single sitemap for www.styly.fr
 Sitemap: https://www.styly.fr/sitemap.xml
 
-# French domain (www.styly.fr)
-Sitemap: https://www.styly.fr/sitemap-fr.xml
+# English routes disallowed (redirect to styly.io)
+Disallow: /en/
 ```
 
-### Hreflang Implementation:
-- **English**: `hreflang="en"`
-- **French**: `hreflang="fr"`
-- **Default**: `hreflang="x-default"`
+### URL Structure:
+- **French Pages**: `https://www.styly.fr/[page]`
+- **French Blog**: `https://www.styly.fr/blog/[slug]`
+- **No English URLs** in sitemap (they redirect externally)
 
 ## 📈 Expected Results
 
 ### **Immediate Benefits:**
-- ✅ Faster indexing of new blog posts
-- ✅ Better multilingual SEO performance
-- ✅ Improved search visibility for new pages
-- ✅ Enhanced crawl efficiency
+- ✅ Cleaner Google indexing (no duplicate content)
+- ✅ Faster indexing of French content
+- ✅ Eliminated 404 errors from English URLs
+- ✅ Enhanced crawl efficiency with single sitemap
 
 ### **Long-term Benefits:**
-- 📈 Increased organic traffic
-- 🌍 Better international SEO
-- 🔍 Improved search rankings
+- 📈 Improved French SEO performance
+- 🔍 Better search rankings for French keywords
 - 📱 Enhanced mobile search presence
+- 🎯 Focused domain authority for www.styly.fr
 
 ## 🔍 Monitoring & Maintenance
 
 ### **Weekly Checks:**
 - Monitor sitemap status in Google Search Console
 - Check for crawl errors or warnings
-- Review indexing coverage reports
+- Review indexing coverage reports for French URLs
 
 ### **Monthly Updates:**
-- Add new blog posts to sitemaps
+- Run sitemap generation script for new blog posts
 - Update lastmod dates for changed content
 - Review and optimize priority settings
 
 ### **Quarterly Reviews:**
-- Analyze search performance data
-- Update hreflang tags if needed
-- Optimize image metadata and descriptions
+- Analyze French search performance data
+- Optimize content for French keywords
+- Review and update blog post metadata
 
 ## 🎯 Next Steps
 
-1. **Submit both sitemaps** to Google Search Console
+1. **Submit consolidated sitemap** to Google Search Console (www.styly.fr property)
 2. **Monitor indexing status** over the next 24-48 hours
 3. **Check for any errors** and resolve if needed
-4. **Set up automated monitoring** for ongoing optimization
-5. **Update sitemaps** when new content is added
+4. **Remove any old sitemap references** from Google Search Console
+5. **Set up automated monitoring** for ongoing optimization
+
+## 🛠️ Sitemap Generation
+
+To regenerate the sitemap when adding new content:
+```bash
+node scripts/generate-sitemap.js
+```
+
+This script automatically:
+- Reads blog posts from `src/components/data/blogPosts.tsx`
+- Generates French URLs only
+- Updates lastmod dates
+- Maintains clean URL structure
 
 ## 📞 Support
 
@@ -134,6 +143,6 @@ If you encounter any issues with sitemap submission or need assistance with Goog
 
 ---
 
-**Last Updated**: June 17, 2025  
-**Sitemaps Version**: 2.0  
-**Status**: Ready for submission ✅
+**Last Updated**: July 20, 2025
+**Sitemap Version**: 3.0 (Consolidated)
+**Status**: Single sitemap ready for submission ✅
