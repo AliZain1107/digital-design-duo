@@ -1,4 +1,4 @@
-# robots.txt for styly.fr
+# robots.txt for styly.fr - Updated to fix 404 blog post issues
 
 # Sitemap
 Sitemap: https://www.styly.fr/sitemap.xml
