@@ -52,12 +52,17 @@ const AISpacePlanningSmallApartments: React.FC = () => {
       </Helmet>
 
       <article className="max-w-4xl mx-auto px-4 py-8">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {currentSeo.title}
+            </h1>
+          </header>
         <div className="prose prose-lg max-w-none">
           {language === "fr" ? (
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Les petits appartements présentent des défis de design uniques, surtout quand on essaie de créer des espaces fonctionnels et esthétiquement plaisants. Avec une superficie limitée, il est essentiel de maximiser chaque centimètre carré. Heureusement, les outils alimentés par l'IA comme ceux offerts par STYLY.io peuvent révolutionner votre approche de la planification d'espace. Utiliser un{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}peut simplifier le processus, vous aidant à tirer le meilleur parti des petits espaces de vie sans compromettre le style.
@@ -123,7 +128,7 @@ const AISpacePlanningSmallApartments: React.FC = () => {
                   Découvrez comment STYLY.io peut transformer votre petit appartement en un espace fonctionnel et élégant.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Optimiser Mon Espace
@@ -229,7 +234,7 @@ const AISpacePlanningSmallApartments: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Small apartments come with unique design challenges, especially when trying to create functional and aesthetically pleasing spaces. With limited square footage, it's essential to maximize every inch. Fortunately, AI-powered tools like those offered by STYLY.io can revolutionize how you approach space planning. Using an{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}can simplify the process, helping you make the most out of small living areas without compromising on style.
@@ -295,7 +300,7 @@ const AISpacePlanningSmallApartments: React.FC = () => {
                   Discover how STYLY.io can transform your small apartment into a functional and stylish space.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Optimize My Space

@@ -52,12 +52,17 @@ const TextureImportanceDesign: React.FC = () => {
       </Helmet>
 
       <article className="max-w-4xl mx-auto px-4 py-8 pt-20">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {currentSeo.title}
+            </h1>
+          </header>
         <div className="prose prose-lg max-w-none">
           {language === "fr" ? (
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Beaucoup de personnes se concentrent sur la couleur, les meubles et la disposition quand il s'agit de design d'intérieur. Cependant, l'un des éléments les plus négligés mais cruciaux est la texture. La texture ajoute de la profondeur, de l'intérêt et de la chaleur à un espace, transformant une pièce de plate et sans vie à vibrante et engageante. Que vous conceviez un salon confortable, une salle de bain luxueuse ou une cuisine moderne, comprendre le rôle de la texture est essentiel. Dans ce blog, nous explorons pourquoi la texture est si importante en design d'intérieur et comment STYLY.io, votre{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}de référence, peut vous aider à l'intégrer sans effort dans votre maison.
@@ -122,7 +127,7 @@ const TextureImportanceDesign: React.FC = () => {
                   Découvrez comment STYLY.io peut transformer vos espaces avec des textures parfaitement intégrées.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-rose-600 to-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-rose-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Explorer les Textures
@@ -240,7 +245,7 @@ const TextureImportanceDesign: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Many people focus on color, furniture, and layout when it comes to interior design. However, one of the most overlooked yet crucial elements is texture. Texture adds depth, interest, and warmth to a space, transforming a room from flat and lifeless to vibrant and engaging. Whether you're designing a cozy living room, a luxurious bathroom, or a modern kitchen, understanding the role of texture is essential. In this blog, we'll explore why texture is so important in interior design and how STYLY.io, your go-to{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 , can help you integrate it effortlessly into your home.
@@ -305,7 +310,7 @@ const TextureImportanceDesign: React.FC = () => {
                   Discover how STYLY.io can transform your spaces with perfectly integrated textures.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-rose-600 to-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-rose-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Explore Textures

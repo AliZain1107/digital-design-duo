@@ -123,7 +123,7 @@ const FutureAIArchitectureEmbracingPossibilities: React.FC = () => {
                 Explorez les technologies IA avancées et transformez votre processus de design architectural avec Styly AI.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -262,7 +262,7 @@ const FutureAIArchitectureEmbracingPossibilities: React.FC = () => {
               Explore advanced AI technologies and transform your architectural design process with Styly AI.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

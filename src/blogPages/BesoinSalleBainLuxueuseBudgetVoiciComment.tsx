@@ -161,7 +161,7 @@ const BesoinSalleBainLuxueuseBudgetVoiciComment: React.FC = () => {
             <div className="bg-purple-50 p-6 rounded-lg mt-6">
               <p className="text-purple-800 font-medium">
                 Prêt à créer votre salle de bain de rêve ? 
-                <a href="https://app.styly.io/signin" className="text-purple-600 hover:text-purple-800 underline ml-1">
+                <a href="https://app.styly.fr/signin" className="text-purple-600 hover:text-purple-800 underline ml-1">
                   Visualisez vos idées avec Styly AI
                 </a> et transformez votre espace sans vous ruiner.
               </p>

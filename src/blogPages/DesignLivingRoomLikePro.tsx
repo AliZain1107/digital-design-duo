@@ -10,6 +10,7 @@ const DesignLivingRoomLikePro: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
+          <link rel="canonical" href="https://www.styly.fr/blog/designlivingroomlikepro" />
         <title>
           {language === "fr"
             ? "Concevoir Votre Salon Comme un Professionnel avec Styly | Styly AI"
@@ -38,6 +39,16 @@ const DesignLivingRoomLikePro: React.FC = () => {
       </Helmet>
 
       <article className="prose prose-lg max-w-none">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              
+          {language === "fr"
+            ? "Concevoir Votre Salon Comme un Professionnel avec Styly | Styly AI"
+            : "Design Your Living Room Like a Pro with Styly | Styly AI"
+          }
+        
+            </h1>
+          </header>
         {language === "fr" ? (
           <>
             <p className="text-lg text-gray-700 mb-6">
@@ -171,7 +182,7 @@ const DesignLivingRoomLikePro: React.FC = () => {
                 Visitez Styly aujourd'hui et commencez votre voyage vers une maison conçue professionnellement. Avec Styly, concevoir votre salon comme un pro n'a jamais été aussi facile.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -365,7 +376,7 @@ const DesignLivingRoomLikePro: React.FC = () => {
                 Visit Styly today and start your journey to a professionally designed home. With Styly, designing your living room like a pro has never been easier.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

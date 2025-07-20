@@ -21,6 +21,7 @@ const InteriorAIInterviewSophiaRenard: React.FC = () => {
   return (
     <>
       <Helmet>
+          <link rel="canonical" href="https://www.styly.fr/blog/interioraiinterviewsophiarenard" />
         <title>{seoMeta[language].title}</title>
         <meta name="description" content={seoMeta[language].description} />
         <meta name="keywords" content={seoMeta[language].keywords} />

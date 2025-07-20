@@ -26,6 +26,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
   return (
     <>
       <Helmet>
+          <link rel="canonical" href="https://www.styly.fr/blog/unlockingpoweraiinteriordesign" />
         <title>
           {language === "fr" 
             ? "Débloquer la Puissance de l'IA pour le Design Intérieur : Guide des Dernières Innovations | Styly.fr"
@@ -104,7 +105,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 <li>• <strong>ChatGPT</strong> : Conseils déco, palettes couleurs et aménagement d'espace</li>
                 <li>• <strong>DALL-E</strong> : Génération d'images photoréalistes à partir de descriptions textuelles</li>
                 <li>• <strong>Midjourney</strong> : Création de visuels conceptuels et planches d'ambiance</li>
-                <li>• <strong><span className="font-davetica-wide">STYLY</span></strong> : Plateforme gratuite de <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">design intérieur</a> avec rendu 3D</li>
+                <li>• <strong><span className="font-davetica-wide">STYLY</span></strong> : Plateforme gratuite de <a href="https://app.styly.fr/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">design intérieur</a> avec rendu 3D</li>
               </ul>
             </div>
 
@@ -205,7 +206,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 Discover the power of <span className="font-davetica-wide">STYLY</span>, the tool that transforms interior design. Create extraordinary spaces with just a few clicks!
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"
@@ -267,7 +268,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 <li>• <strong>ChatGPT</strong>: Advice on decor, color palettes, and space planning</li>
                 <li>• <strong>DALL-E</strong>: Photorealistic image generation from text descriptions</li>
                 <li>• <strong>Midjourney</strong>: Concept visuals and mood boards</li>
-                <li>• <strong><span className="font-davetica-wide">STYLY</span></strong>: Free <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">interior design</a> platform with 3D rendering</li>
+                <li>• <strong><span className="font-davetica-wide">STYLY</span></strong>: Free <a href="https://app.styly.fr/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">interior design</a> platform with 3D rendering</li>
               </ul>
             </div>
 
@@ -368,7 +369,7 @@ const UnlockingPowerAIInteriorDesign: React.FC = () => {
                 Discover the power of <span className="font-davetica-wide">STYLY</span>, the tool that transforms interior design. Create extraordinary spaces with just a few clicks!
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"

@@ -42,6 +42,11 @@ const InteriorDesignTrends2025: React.FC = () => {
       </Helmet>
 
       <div className="flex flex-col items-center px-4 py-10 space-y-12">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {currentMeta.title}
+            </h1>
+          </header>
         <div className="max-w-3xl space-y-6 text-gray-800 text-sm">
           {/* Table of Contents */}
           <div>
@@ -114,7 +119,7 @@ const InteriorDesignTrends2025: React.FC = () => {
               <div className="bg-purple-50 p-4 rounded-lg mt-3">
                 <p className="text-purple-700 font-medium">
                   <a
-                    href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+                    href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -235,7 +240,7 @@ const InteriorDesignTrends2025: React.FC = () => {
             <div className="bg-orange-50 p-4 rounded-lg mt-4">
               <p className="text-orange-700 font-medium">
                 <a
-                  href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+                  href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -259,7 +264,7 @@ const InteriorDesignTrends2025: React.FC = () => {
               {t.interiorTrends2025CTAText}
             </p>
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[rgba(250,111,64,1)] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
@@ -273,7 +278,7 @@ const InteriorDesignTrends2025: React.FC = () => {
             <p className="font-semibold">{t.followUsHere}</p>
             <div className="flex justify-center space-x-4 mt-2">
               <a
-                href="https://www.instagram.com/styly.io/"
+                href="https://www.instagram.com/styly.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-purple-600 hover:text-purple-800 transition-colors"
@@ -289,7 +294,7 @@ const InteriorDesignTrends2025: React.FC = () => {
                 {t.linkedin}
               </a>
               <a
-                href="https://www.facebook.com/styly.io/"
+                href="https://www.facebook.com/styly.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-purple-600 hover:text-purple-800 transition-colors"

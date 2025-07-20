@@ -163,7 +163,7 @@ const ExpertTipsSaveBigHomeInteriors: React.FC = () => {
                 Commencez avec <strong>Styly AI</strong> aujourd'hui et enlevez le stress des intérieurs de maison en 2025. Découvrez l'avenir du design avec les outils de <strong>design de chambre gratuit IA</strong> et transformez votre espace comme un pro !
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   target="_blank"
                   rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -349,7 +349,7 @@ const ExpertTipsSaveBigHomeInteriors: React.FC = () => {
               Get started with <strong>Styly AI</strong> today and take the stress out of home interiors in 2025. Experience the future of design with <strong>free AI room design</strong> tools and transform your space like a pro!
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   target="_blank"
                   rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

@@ -119,7 +119,7 @@ const PowerAIStableDiffusionStyly: React.FC = () => {
         <meta property="og:description" content={currentContent.metaDescription} />
         <meta property="og:image" content="/ai-interior-design-technology.webp" />
         <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://www.styly.io/blog/the-power-of-ai-how-stable-diffusion-and-styly-reshaping-creativity" />
+        <link rel="canonical" href="https://www.styly.fr/blog/the-power-of-ai-how-stable-diffusion-and-styly-reshaping-creativity" />
       </Helmet>
 
       <article className="max-w-4xl mx-auto px-4 py-8 pt-20">
@@ -210,9 +210,9 @@ const PowerAIStableDiffusionStyly: React.FC = () => {
             <div className="text-center mt-8">
               <p className="text-sm text-gray-600 mb-4">Follow US here!</p>
               <div className="flex justify-center space-x-4">
-                <a href="https://instagram.com/styly.io" className="text-pink-600 hover:underline font-medium">Instagram</a>
+                <a href="https://instagram.com/styly.fr" className="text-pink-600 hover:underline font-medium">Instagram</a>
                 <a href="https://linkedin.com/company/styly-io" className="text-blue-600 hover:underline font-medium">LinkedIn</a>
-                <a href="https://facebook.com/styly.io" className="text-blue-700 hover:underline font-medium">Facebook</a>
+                <a href="https://facebook.com/styly.fr" className="text-blue-700 hover:underline font-medium">Facebook</a>
               </div>
             </div>
           </section>

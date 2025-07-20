@@ -10,6 +10,13 @@ const GenZInteriors: React.FC = () => {
   return (
     <>
       <div className="flex flex-col gap-6 text-gray-600 text-[12px] leading-relaxed p-5">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              
+          {t.sustainableMaterials}
+        
+            </h1>
+          </header>
         <h3 className="text-xl md:text-5xl font-bold text-gray-800">
           {t.creatingTrendySpaces}
         </h3>
@@ -95,7 +102,7 @@ const GenZInteriors: React.FC = () => {
         <div className="bg-purple-50 p-4 rounded-lg mt-3">
           <p className="text-purple-700 font-medium">
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
@@ -249,7 +256,7 @@ const GenZInteriors: React.FC = () => {
         <div className="bg-orange-50 p-4 rounded-lg mt-4">
           <p className="text-orange-700 font-medium text-[12px]">
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"

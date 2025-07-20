@@ -189,7 +189,7 @@ const NewBlog2: React.FC = () => {
                   Découvrez la puissance de <span className="font-davetica-wide">STYLY</span>, l'outil qui révolutionne le design intérieur. Créez des espaces extraordinaires en quelques clics !
                 </p>
                 <a
-                  href="https://app.styly.io/signin?lang=fr"
+                  href="https://app.styly.fr/signin?lang=fr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"
@@ -329,7 +329,7 @@ const NewBlog2: React.FC = () => {
                   Discover the power of <span className="font-davetica-wide">STYLY</span>, the tool that transforms interior design. Create extraordinary spaces with just a few clicks!
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"

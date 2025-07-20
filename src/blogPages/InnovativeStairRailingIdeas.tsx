@@ -26,6 +26,7 @@ const InnovativeStairRailingIdeas: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
+          <link rel="canonical" href="https://www.styly.fr/blog/innovativestairrailingideas" />
         <title>
           {language === "fr" 
             ? "Idées Innovantes de Rampes d'Escalier Intérieur : Designs Personnalisés par l'IA Styly | Styly.io"
@@ -52,6 +53,16 @@ const InnovativeStairRailingIdeas: React.FC = () => {
       </Helmet>
 
       <article className="prose prose-lg max-w-none">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              
+          {language === "fr" 
+            ? "Idées Innovantes de Rampes d'Escalier Intérieur : Designs Personnalisés par l'IA Styly"
+            : "Innovative Interior Stair Railing Ideas: Custom Designs Powered by Styly AI | Styly.io"
+          }
+        
+            </h1>
+          </header>
         {language === "fr" ? (
           <>
             <p className="text-lg text-gray-700 mb-6">
@@ -186,7 +197,7 @@ const InnovativeStairRailingIdeas: React.FC = () => {
                 Explorez les possibilités avec Styly IA et élevez le design de votre maison avec des rampes d'escalier innovantes.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -373,7 +384,7 @@ const InnovativeStairRailingIdeas: React.FC = () => {
                 Explore the possibilities with Styly AI and elevate your home's design with innovative stair railings.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -135,7 +135,7 @@ const ArchitectLeadersGenerativeAIDriveValue: React.FC = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={currentContent.title} />
         <meta name="twitter:description" content={currentContent.metaDescription} />
-        <link rel="canonical" href={`https://www.styly.io/blog/how-can-architect-leaders-use-generative-ai-to-drive-value`} />
+        <link rel="canonical" href={`https://www.styly.fr/blog/how-can-architect-leaders-use-generative-ai-to-drive-value`} />
       </Helmet>
 
       <div className="min-h-screen bg-white">

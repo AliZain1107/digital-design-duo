@@ -177,7 +177,7 @@ const TendancesDesignInterieur2025: React.FC = () => {
             <div className="bg-purple-50 p-6 rounded-lg mt-6">
               <p className="text-purple-800 font-medium">
                 Prêt à adopter les tendances 2025 ? 
-                <a href="https://app.styly.io/signin" className="text-purple-600 hover:text-purple-800 underline ml-1">
+                <a href="https://app.styly.fr/signin" className="text-purple-600 hover:text-purple-800 underline ml-1">
                   Explorez Styly AI
                 </a> et créez l'intérieur de demain dès aujourd'hui.
               </p>

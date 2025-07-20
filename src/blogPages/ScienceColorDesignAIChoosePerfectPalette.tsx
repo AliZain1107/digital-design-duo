@@ -147,7 +147,7 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
                 Explorez la science des couleurs et créez des harmonies parfaites avec les outils avancés de Styly AI.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -278,7 +278,7 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
 
           <h3 className="text-xl font-semibold text-gray-800 mb-3">1. Time-Saving</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Instead of manually comparing colors or experimenting with paint swatches, <a href="https://www.styly.io" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Styly's AI room design tool</a> offers instant recommendations. This saves time and makes the design process more efficient.
+            Instead of manually comparing colors or experimenting with paint swatches, <a href="https://www.styly.fr" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">Styly's AI room design tool</a> offers instant recommendations. This saves time and makes the design process more efficient.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-800 mb-3">2. Personalized Suggestions</h3>
@@ -313,7 +313,7 @@ const ScienceColorDesignAIChoosePerfectPalette: React.FC = () => {
               Explore color science and create perfect harmonies with Styly AI's advanced tools.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

@@ -153,7 +153,7 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
                 Explorez les outils IA génératifs et transformez votre processus de design avec les technologies avancées de Styly AI.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -322,7 +322,7 @@ const GenerativeAIRevolutionizingDesign: React.FC = () => {
               Explore generative AI tools and transform your design process with Styly AI's advanced technologies.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

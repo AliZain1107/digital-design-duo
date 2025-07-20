@@ -122,7 +122,7 @@ const RealEstateVisualizationAI: React.FC = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
-                      href="https://app.styly.io/signin"
+                      href="https://app.styly.fr/signin"
                       className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -246,7 +246,7 @@ const RealEstateVisualizationAI: React.FC = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
-                      href="https://app.styly.io/signin"
+                      href="https://app.styly.fr/signin"
                       className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
                       target="_blank"
                       rel="noopener noreferrer"

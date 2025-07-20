@@ -138,7 +138,7 @@ const AIVirtualRealityDesign: React.FC = () => {
                 Découvrez comment l'IA et la VR transforment le design d'intérieur avec les outils avancés de Styly AI.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -226,7 +226,7 @@ const AIVirtualRealityDesign: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">AI and Virtual Reality: A Perfect Match for Design</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            AI is empowering homeowners, designers, and architects by simplifying complex design processes. With tools like <a href="https://www.styly.io" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">STYLY.io</a>, users can create personalized designs in minutes.
+            AI is empowering homeowners, designers, and architects by simplifying complex design processes. With tools like <a href="https://www.styly.fr" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">STYLY.io</a>, users can create personalized designs in minutes.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Here's how AI enhances the process:
@@ -299,7 +299,7 @@ const AIVirtualRealityDesign: React.FC = () => {
               Discover how AI and VR are transforming interior design with Styly AI's advanced tools.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

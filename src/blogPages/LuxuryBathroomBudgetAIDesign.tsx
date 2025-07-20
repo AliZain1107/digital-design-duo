@@ -132,7 +132,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
                 Découvrez comment créer une salle de bain luxueuse avec un budget limité grâce aux outils avancés de Styly AI.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -232,7 +232,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
           
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Fixtures and Hardware</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            High-quality fixtures and hardware can elevate your bathroom's appearance. Look for sales and discounts on luxury brands or opt for high-quality replicas. Using <a href="https://www.styly.io" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">AI room design</a> tools, you can visualize how different fixtures will look in your space.
+            High-quality fixtures and hardware can elevate your bathroom's appearance. Look for sales and discounts on luxury brands or opt for high-quality replicas. Using <a href="https://www.styly.fr" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">AI room design</a> tools, you can visualize how different fixtures will look in your space.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Tile and Flooring</h3>
@@ -287,7 +287,7 @@ const LuxuryBathroomBudgetAIDesign: React.FC = () => {
               Discover how to create a luxurious bathroom on a limited budget with Styly AI's advanced tools.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

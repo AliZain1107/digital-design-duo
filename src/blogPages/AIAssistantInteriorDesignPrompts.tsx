@@ -137,7 +137,7 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
                 Explorez les meilleurs prompts pour ChatGPT, Gemini et Mistral avec les outils avancés de Styly AI.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -290,7 +290,7 @@ const AIAssistantInteriorDesignPrompts: React.FC = () => {
               Explore the best prompts for ChatGPT, Gemini, and Mistral with Styly AI's advanced tools.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

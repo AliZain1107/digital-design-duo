@@ -148,7 +148,7 @@ const TenPerfectInteriorDesignStyles: React.FC = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="https://app.styly.io/signin"
+                    href="https://app.styly.fr/signin"
                     className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                   >
                     Commencer Gratuitement
@@ -332,7 +332,7 @@ const TenPerfectInteriorDesignStyles: React.FC = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="https://app.styly.io/signin"
+                    href="https://app.styly.fr/signin"
                     className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                   >
                     Start Free

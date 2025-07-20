@@ -26,6 +26,7 @@ const AIDrivenCustomizationFuture: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <Helmet>
+          <link rel="canonical" href="https://www.styly.fr/blog/aidrivencustomizationfuture" />
         <title>
           {language === "fr" 
             ? "Pourquoi la Personnalisation IA est l'Avenir du Design Intérieur | Styly.io"
@@ -52,6 +53,16 @@ const AIDrivenCustomizationFuture: React.FC = () => {
       </Helmet>
 
       <article className="prose prose-lg max-w-none">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              
+          {language === "fr" 
+            ? "Pourquoi la Personnalisation IA est l'Avenir du Design Intérieur"
+            : "Why AI-Driven Customization is the Future of Interior Design | Styly.io"
+          }
+        
+            </h1>
+          </header>
         {language === "fr" ? (
           <>
             <p className="text-lg text-gray-700 mb-6">
@@ -172,7 +183,7 @@ const AIDrivenCustomizationFuture: React.FC = () => {
                 Découvrez comment Styly peut révolutionner votre approche du design intérieur avec nos outils IA gratuits et intuitifs.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -345,7 +356,7 @@ const AIDrivenCustomizationFuture: React.FC = () => {
                 Discover how Styly can revolutionize your approach to interior design with our free and intuitive AI tools.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

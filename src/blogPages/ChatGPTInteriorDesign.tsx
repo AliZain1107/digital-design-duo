@@ -181,7 +181,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                Pour une expérience <strong>design intérieur gratuit</strong> avec des sorties visuelles, des plateformes comme <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">STYLY</a> offrent un staging virtuel, en complément de l'assistance textuelle de ChatGPT.
+                Pour une expérience <strong>design intérieur gratuit</strong> avec des sorties visuelles, des plateformes comme <a href="https://app.styly.fr/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">STYLY</a> offrent un staging virtuel, en complément de l'assistance textuelle de ChatGPT.
               </p>
 
               <h2 id="limitations-ia" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
@@ -217,7 +217,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-gray-800">1. <span className="font-davetica-wide">STYLY</span></h4>
-                    <p className="text-gray-700">Un outil pour la planification immersive de pièces. <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">Essayer gratuitement</a></p>
+                    <p className="text-gray-700">Un outil pour la planification immersive de pièces. <a href="https://app.styly.fr/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">Essayer gratuitement</a></p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">2. Houzz</h4>
@@ -269,7 +269,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                Avez-vous déjà expérimenté des outils numériques pour le design d'intérieur ? Connectez-vous avec <a href="https://app.styly.io/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">STYLY</a> et transformez vos intérieurs avec la puissance de la technologie.
+                Avez-vous déjà expérimenté des outils numériques pour le design d'intérieur ? Connectez-vous avec <a href="https://app.styly.fr/signin?lang=fr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">STYLY</a> et transformez vos intérieurs avec la puissance de la technologie.
               </p>
 
               <p className="text-gray-700 mb-6">
@@ -316,7 +316,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
                   Découvrez la puissance de <span className="font-davetica-wide">STYLY</span>, l'outil qui révolutionne le design intérieur. Créez des espaces extraordinaires en quelques clics !
                 </p>
                 <a
-                  href="https://app.styly.io/signin?lang=fr"
+                  href="https://app.styly.fr/signin?lang=fr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"
@@ -448,7 +448,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                For a <strong>free digital interior design</strong> experience with visual outputs, platforms like <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">STYLY</a> offer virtual staging, complementing ChatGPT's text-based assistance.
+                For a <strong>free digital interior design</strong> experience with visual outputs, platforms like <a href="https://app.styly.fr/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">STYLY</a> offer virtual staging, complementing ChatGPT's text-based assistance.
               </p>
 
               <h2 id="ai-limitations" className="text-2xl font-bold text-gray-800 mt-8 mb-4">
@@ -484,7 +484,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-gray-800">1. <span className="font-davetica-wide">STYLY</span></h4>
-                    <p className="text-gray-700">A tool for immersive room planning. <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">Try for free</a></p>
+                    <p className="text-gray-700">A tool for immersive room planning. <a href="https://app.styly.fr/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">Try for free</a></p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">2. Houzz</h4>
@@ -536,7 +536,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
               </div>
 
               <p className="text-gray-700 mb-6">
-                Have you ever tried digital tools for interior design? Connect with <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">STYLY</a> and transform your interiors with the power of technology.
+                Have you ever tried digital tools for interior design? Connect with <a href="https://app.styly.fr/signin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-davetica-wide">STYLY</a> and transform your interiors with the power of technology.
               </p>
 
               <p className="text-gray-700 mb-6">
@@ -583,7 +583,7 @@ const ChatGPTInteriorDesign: React.FC = () => {
                   Discover the power of <span className="font-davetica-wide">STYLY</span>, the tool that transforms interior design. Create extraordinary spaces with just a few clicks!
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1"

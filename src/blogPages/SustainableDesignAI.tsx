@@ -128,7 +128,7 @@ const SustainableDesignAI: React.FC = () => {
                 Découvrez comment STYLY.io peut vous aider à concevoir des intérieurs beaux et durables pour un avenir plus vert.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
@@ -286,7 +286,7 @@ const SustainableDesignAI: React.FC = () => {
               Discover how STYLY.io can help you design beautiful and sustainable interiors for a greener future.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"

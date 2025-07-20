@@ -26,6 +26,7 @@ const RoomPlannerAISarahJohnsonEvaluations: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
+          <link rel="canonical" href="https://www.styly.fr/blog/roomplanneraisarahjohnsonevaluations" />
         <title>
           {language === "fr" 
             ? "Le Bon, le Mauvais et le Planificateur IA : Évaluations Honnêtes de Sarah Johnson sur Styly.io | Styly.io"
@@ -52,6 +53,16 @@ const RoomPlannerAISarahJohnsonEvaluations: React.FC = () => {
       </Helmet>
 
       <article className="prose prose-lg max-w-none">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              
+          {language === "fr" 
+            ? "Le Bon, le Mauvais et le Planificateur IA : Évaluations Honnêtes de Sarah Johnson sur Styly.io"
+            : "The Good, The Bad, and The Room Planner AI: Sarah Johnson's Honest Styly.io Evaluations | Styly.io"
+          }
+        
+            </h1>
+          </header>
         {language === "fr" ? (
           <>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
@@ -201,7 +212,7 @@ const RoomPlannerAISarahJohnsonEvaluations: React.FC = () => {
                 Pourquoi ne pas l'essayer ? Vous pourriez être surpris de ce que vous pouvez créer avec ce planificateur de chambre IA.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -387,7 +398,7 @@ const RoomPlannerAISarahJohnsonEvaluations: React.FC = () => {
                 Why not give it a try? You might be surprised at what you can create with this AI room planner.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

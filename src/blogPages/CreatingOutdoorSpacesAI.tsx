@@ -52,12 +52,17 @@ const CreatingOutdoorSpacesAI: React.FC = () => {
       </Helmet>
 
       <article className="max-w-4xl mx-auto px-4 py-8 pt-20">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {currentSeo.title}
+            </h1>
+          </header>
         <div className="prose prose-lg max-w-none">
           {language === "fr" ? (
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Ces dernières années, la technologie IA a révolutionné la façon dont nous concevons et personnalisons nos espaces de vie. Chez STYLY.io, nous croyons en l'exploitation du pouvoir de l'IA pour créer non seulement de beaux intérieurs mais aussi des environnements extérieurs à couper le souffle. Que vous cherchiez à transformer votre arrière-cour en une retraite tranquille ou concevoir un jardin sophistiqué qui reflète votre style, les{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   outils alimentés par l'IA
                 </a>
                 {" "}peuvent rendre le processus fluide et inspirant.
@@ -118,7 +123,7 @@ const CreatingOutdoorSpacesAI: React.FC = () => {
                   Découvrez comment STYLY.io peut vous aider à créer l'oasis extérieur parfait avec l'IA.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-teal-600 to-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-teal-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Commencer Design Extérieur
@@ -212,7 +217,7 @@ const CreatingOutdoorSpacesAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 In recent years, AI technology has revolutionized the way we design and personalize our living spaces. At STYLY.io, we believe in harnessing the power of AI to create not only beautiful interiors but also breathtaking outdoor environments. Whether you're looking to transform your backyard into a tranquil retreat or design a sophisticated garden that reflects your style,{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI-powered tools
                 </a>
                 {" "}can make the process seamless and inspiring.
@@ -273,7 +278,7 @@ const CreatingOutdoorSpacesAI: React.FC = () => {
                   Discover how STYLY.io can help you create the perfect outdoor oasis with AI.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-teal-600 to-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-teal-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Start Outdoor Design

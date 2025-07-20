@@ -213,7 +213,7 @@ const StylyAIPoweredImageGeneration: React.FC = () => {
               }
             </p>
             <a 
-              href="https://styly.io" 
+              href="https://styly.fr" 
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
             >
               {language === 'fr' ? "Essayer Styly Gratuitement" : "Try Styly for Free"}

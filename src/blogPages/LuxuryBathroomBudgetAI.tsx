@@ -198,7 +198,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
         
         <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Fixtures and Fittings</h3>
         <p>
-          High-quality fixtures and fittings can elevate the look of your bathroom. Look for sales and discounts on luxury brands or opt for high-quality replicas. Using <a href="https://www.styly.io" className="text-blue-600 hover:underline"><strong>AI room design</strong></a> tools, you can visualize how different fixtures will look in your space and ensure they fit your design vision.
+          High-quality fixtures and fittings can elevate the look of your bathroom. Look for sales and discounts on luxury brands or opt for high-quality replicas. Using <a href="https://www.styly.fr" className="text-blue-600 hover:underline"><strong>AI room design</strong></a> tools, you can visualize how different fixtures will look in your space and ensure they fit your design vision.
         </p>
 
         <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Tiles and Flooring</h3>
@@ -254,7 +254,7 @@ const LuxuryBathroomBudgetAI: React.FC = () => {
 
         <ol className="list-decimal pl-6 mb-6 space-y-3">
           <li><strong>Choose Your AI Tool:</strong> Select an AI tool that fits your needs. Styly offers user-friendly <strong>home interior AI</strong> and <strong>room design AI</strong> tools that are perfect for this task.</li>
-          <li><strong>Input Your Dimensions:</strong> Enter the dimensions of your bathroom into the AI tool. This will allow the software to create <a href="https://www.styly.io" className="text-blue-600 hover:underline"><strong>modern bathroom ideas AI</strong></a>.</li>
+          <li><strong>Input Your Dimensions:</strong> Enter the dimensions of your bathroom into the AI tool. This will allow the software to create <a href="https://www.styly.fr" className="text-blue-600 hover:underline"><strong>modern bathroom ideas AI</strong></a>.</li>
           <li><strong>Experiment with Designs:</strong> Use the AI tool to experiment with different layouts, colors, materials, and fixtures. Don't be afraid to try out bold ideas – the AI can help you visualize them before making any commitments.</li>
           <li><strong>Get Feedback:</strong> Share your AI-generated designs with friends, family, or even professional designers to get feedback and refine your ideas.</li>
           <li><strong>Implement Your Design:</strong> Once you're satisfied with your design, start implementing it step-by-step. The AI tool can guide where to start and how to proceed.</li>

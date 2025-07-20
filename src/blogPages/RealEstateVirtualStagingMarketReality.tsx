@@ -133,7 +133,7 @@ const RealEstateVirtualStagingMarketReality: React.FC = () => {
                 Découvrez l'avantage réel du marché de la mise en scène virtuelle alimentée par IA avec Styly AI. Notre plateforme aide les professionnels de l'immobilier à maximiser les valeurs des propriétés dans n'importe quel marché.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -289,7 +289,7 @@ const RealEstateVirtualStagingMarketReality: React.FC = () => {
               Discover the real market advantage of AI-powered virtual staging with Styly AI. Our platform helps real estate professionals maximize property values in any market.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

@@ -151,7 +151,7 @@ const GenZInstagramWorthyInteriors: React.FC = () => {
                 Prêt à transformer votre espace en contenu viral ? Styly AI vous aide à créer l'aesthetic parfait pour votre génération, optimisé pour les réseaux sociaux et votre bien-être.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -325,7 +325,7 @@ const GenZInstagramWorthyInteriors: React.FC = () => {
               Ready to transform your space into viral content? Styly AI helps you create the perfect aesthetic for your generation, optimized for social media and your well-being.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

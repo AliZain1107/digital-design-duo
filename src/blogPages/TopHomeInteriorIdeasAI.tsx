@@ -8,6 +8,7 @@ const TopHomeInteriorIdeasAI: React.FC = () => {
   return (
     <>
       <Helmet>
+          <link rel="canonical" href="https://www.styly.fr/blog/tophomeinteriorideasai" />
         <title>
           {language === "fr" 
             ? "Découvrir les Meilleures Idées d'Intérieur Maison avec l'IA | Styly.io"
@@ -132,7 +133,7 @@ const TopHomeInteriorIdeasAI: React.FC = () => {
                     Discover endless interior design possibilities with Styly.io's AI-powered tools and create the home of your dreams.
                   </p>
                   <a 
-                    href="https://app.styly.io/signin" 
+                    href="https://app.styly.fr/signin" 
                     className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                   >
                     Start Designing with AI
@@ -275,7 +276,7 @@ const TopHomeInteriorIdeasAI: React.FC = () => {
                     Découvrez des possibilités infinies de design intérieur avec les outils alimentés par l'IA de Styly.io et créez la maison de vos rêves.
                   </p>
                   <a 
-                    href="https://app.styly.io/signin" 
+                    href="https://app.styly.fr/signin" 
                     className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                   >
                     Commencer à Designer avec l'IA

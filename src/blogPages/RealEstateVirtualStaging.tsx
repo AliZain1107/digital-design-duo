@@ -45,6 +45,11 @@ const RealEstateVirtualStaging: React.FC = () => {
         <meta name="twitter:description" content={currentMeta.description} />
       </Helmet>
       <div className="flex flex-col gap-6 text-gray-600 text-base leading-relaxed p-5">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {currentMeta.title}
+            </h1>
+          </header>
         <p>
           {t.realEstateLandscape}
           <a
@@ -183,7 +188,7 @@ const RealEstateVirtualStaging: React.FC = () => {
         <div className="bg-purple-50 p-4 rounded-lg mt-4">
           <p className="text-purple-700 font-medium">
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
@@ -365,7 +370,7 @@ const RealEstateVirtualStaging: React.FC = () => {
         <div className="bg-orange-50 p-4 rounded-lg mt-4">
           <p className="text-orange-700 font-medium">
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"

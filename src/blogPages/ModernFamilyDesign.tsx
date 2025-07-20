@@ -125,7 +125,7 @@ const ModernFamilyDesign: React.FC = () => {
                 Découvrez comment STYLY.io peut transformer votre maison en un espace fonctionnel et élégant pour toute la famille.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
@@ -273,7 +273,7 @@ const ModernFamilyDesign: React.FC = () => {
               Discover how STYLY.io can transform your home into a functional and elegant space for the whole family.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"

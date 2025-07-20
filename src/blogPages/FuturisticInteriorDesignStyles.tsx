@@ -26,6 +26,7 @@ const FuturisticInteriorDesignStyles: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <Helmet>
+          <link rel="canonical" href="https://www.styly.fr/blog/futuristicinteriordesignstyles" />
         <title>
           {language === "fr" 
             ? "Styles de Design Intérieur Futuriste : Comment l'IA Styly Façonne les Maisons de Demain | Styly.io"
@@ -52,6 +53,16 @@ const FuturisticInteriorDesignStyles: React.FC = () => {
       </Helmet>
 
       <article className="prose prose-lg max-w-none">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              
+          {language === "fr" 
+            ? "Styles de Design Intérieur Futuriste : Comment l'IA Styly Façonne les Maisons de Demain"
+            : "Futuristic Interior Design Styles: How Styly AI Shapes Tomorrow's Homes Today | Styly.io"
+          }
+        
+            </h1>
+          </header>
         {language === "fr" ? (
           <>
             <p className="text-lg text-gray-700 mb-6">
@@ -166,7 +177,7 @@ const FuturisticInteriorDesignStyles: React.FC = () => {
                 Découvrez comment Styly IA peut vous aider à créer des espaces futuristes dès aujourd'hui avec nos outils de design avancés.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -333,7 +344,7 @@ const FuturisticInteriorDesignStyles: React.FC = () => {
                 Discover how Styly AI can help you create futuristic spaces today with our advanced design tools.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

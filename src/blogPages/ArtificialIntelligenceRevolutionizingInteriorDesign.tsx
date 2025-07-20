@@ -247,13 +247,13 @@ const ArtificialIntelligenceRevolutionizingInteriorDesign: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://styly.io" 
+                href="https://styly.fr" 
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center"
               >
                 {language === 'fr' ? "Commencer avec Styly AI" : "Get Started with Styly AI"}
               </a>
               <a 
-                href="https://app.styly.io/signin" 
+                href="https://app.styly.fr/signin" 
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors text-center"
               >
                 {language === 'fr' ? "Essayer Gratuitement" : "Try for Free"}

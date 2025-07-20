@@ -52,12 +52,17 @@ const CulturalDesignAI: React.FC = () => {
       </Helmet>
 
       <article className="max-w-4xl mx-auto px-4 py-8 pt-20">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {currentSeo.title}
+            </h1>
+          </header>
         <div className="prose prose-lg max-w-none">
           {language === "fr" ? (
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Créer des espaces qui résonnent avec diverses cultures est crucial dans le paysage du design d'aujourd'hui. Que vous planifiez un intérieur de maison ou travailliez avec un cabinet d'architecture, la sensibilité culturelle peut élever vos designs, les rendant plus significatifs et pertinents. Les outils alimentés par l'IA de STYLY.io peuvent aider dans ce processus, vous permettant d'intégrer harmonieusement des éléments culturels dans vos projets de design. Notre{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   planificateur de pièce IA
                 </a>
                 {" "}comprend et respecte la diversité culturelle.
@@ -122,7 +127,7 @@ const CulturalDesignAI: React.FC = () => {
                   Découvrez comment STYLY.io peut vous aider à concevoir des intérieurs qui célèbrent la diversité culturelle.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Explorer les Cultures
@@ -228,7 +233,7 @@ const CulturalDesignAI: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Creating spaces that resonate with diverse cultures is crucial in today's design landscape. Whether planning a home interior or working with an architectural firm, cultural sensitivity can elevate your designs, making them more meaningful and relevant. STYLY.io's AI-powered tools can assist in this process, enabling you to integrate cultural elements seamlessly into your design projects. Our{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   AI room planner
                 </a>
                 {" "}understands and respects cultural diversity.
@@ -293,7 +298,7 @@ const CulturalDesignAI: React.FC = () => {
                   Discover how STYLY.io can help you design interiors that celebrate cultural diversity.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Explore Cultures

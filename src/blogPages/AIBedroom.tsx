@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
 import { Link } from "react-router-dom";
 
@@ -7,6 +8,20 @@ const AiBedroomDesign: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center px-4 py-10 space-y-12">
+      <Helmet>
+        <title>{language === "fr" ? "Design de Chambre IA : Guide Complet 2025 | Styly.fr" : "AI Bedroom Design: Complete Guide 2025 | Styly.fr"}</title>
+        <meta name="description" content={language === "fr" ? "Découvrez comment l'IA révolutionne le design de chambre. Guide complet avec Styly AI pour créer des chambres personnalisées et modernes." : "Discover how AI revolutionizes bedroom design. Complete guide with Styly AI to create personalized and modern bedrooms."} />
+        <meta name="keywords" content={language === "fr" ? "design chambre IA, Styly AI, décoration chambre, design intérieur IA, chambre moderne" : "AI bedroom design, Styly AI, bedroom decoration, AI interior design, modern bedroom"} />
+        <meta property="og:title" content={language === "fr" ? "Design de Chambre IA : Guide Complet 2025" : "AI Bedroom Design: Complete Guide 2025"} />
+        <meta property="og:description" content={language === "fr" ? "Découvrez comment l'IA révolutionne le design de chambre avec Styly AI." : "Discover how AI revolutionizes bedroom design with Styly AI."} />
+        <meta property="og:url" content={language === "fr" ? "https://www.styly.fr/blog/design-chambre-ia-guide-complet" : "https://www.styly.fr/en/blog/ai-bedroom-design-complete-guide"} />
+        <link rel="canonical" href={language === "fr" ? "https://www.styly.fr/blog/design-chambre-ia-guide-complet" : "https://www.styly.fr/en/blog/ai-bedroom-design-complete-guide"} />
+      </Helmet>
+      <header className="mb-8">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          {language === "fr" ? "Design de Chambre IA : Guide Complet 2025" : "AI Bedroom Design: Complete Guide 2025"}
+        </h1>
+      </header>
       <div className="max-w-3xl space-y-6 text-gray-800 text-sm">
         {/* Table of Contents */}
         <div>
@@ -58,7 +73,7 @@ const AiBedroomDesign: React.FC = () => {
           <div className="bg-purple-50 p-4 rounded-lg mt-3">
             <p className="text-purple-700 font-medium">
               <a
-                href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+                href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -203,7 +218,7 @@ const AiBedroomDesign: React.FC = () => {
           <div className="bg-orange-50 p-4 rounded-lg mt-4">
             <p className="text-orange-700 font-medium">
               <a
-                href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+                href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"

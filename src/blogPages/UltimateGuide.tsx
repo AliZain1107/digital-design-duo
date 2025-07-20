@@ -7,6 +7,11 @@ const BuildHouseAI: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center px-4 py-10 space-y-10">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {t.marketOverview}
+            </h1>
+          </header>
       <div className="max-w-4xl text-sm text-gray-800 space-y-6">
         <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{t.marketOverview}</h2>
         <ul className="list-disc pl-5">
@@ -46,7 +51,7 @@ const BuildHouseAI: React.FC = () => {
         <div className="bg-purple-50 p-4 rounded-lg mt-3">
           <p className="text-purple-700 font-medium">
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
@@ -110,7 +115,7 @@ const BuildHouseAI: React.FC = () => {
         <div className="bg-orange-50 p-4 rounded-lg mt-4">
           <p className="text-orange-700 font-medium">
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"

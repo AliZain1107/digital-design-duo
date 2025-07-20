@@ -136,7 +136,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
                 Explorez comment la génération d'images IA peut transformer votre processus de design intérieur avec les outils avancés de Styly AI.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -297,7 +297,7 @@ const AIPoweredImageGenerationInteriorDesign2024: React.FC = () => {
               Explore how AI image generation can transform your interior design process with Styly AI's advanced tools.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

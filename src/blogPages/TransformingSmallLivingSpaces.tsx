@@ -51,6 +51,11 @@ const TransformingSmallLivingSpaces: React.FC = () => {
 
 
               <article className="prose prose-lg max-w-none">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {currentSeo.title}
+            </h1>
+          </header>
                 <p className="text-xl text-gray-700 mb-8">
                   In today's world, urban living often means making the most of small spaces. Compact homes can be cozy, efficient, and stylish if designed thoughtfully. At Styly AI, we leverage the power of AI to bring innovative interior design solutions to small spaces, ensuring they are functional and aesthetically pleasing.
                 </p>

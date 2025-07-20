@@ -119,7 +119,7 @@ const DataAIPoweredDesign: React.FC = () => {
                 Explorez comment les insights basés sur les données transforment votre processus de design avec STYLY.io.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -261,7 +261,7 @@ const DataAIPoweredDesign: React.FC = () => {
               Explore how data-driven insights transform your design process with STYLY.io.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"

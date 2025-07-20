@@ -52,12 +52,17 @@ const ImpactAIInteriorDesigner: React.FC = () => {
       </Helmet>
 
       <article className="max-w-4xl mx-auto px-4 py-8 pt-20">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {currentSeo.title}
+            </h1>
+          </header>
         <div className="prose prose-lg max-w-none">
           {language === "fr" ? (
             <>
               <p className="text-lg text-gray-700 mb-6">
                 Dans le monde en constante évolution du design d'intérieur, l'intelligence artificielle (IA) émerge comme un véritable game-changer. Loin de remplacer l'expertise des designers professionnels, les outils IA comme{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   STYLY.io
                 </a>
                 {" "}redéfinissent la façon dont la créativité et la technologie travaillent ensemble. Cette synergie façonne un avenir collaboratif où designers et solutions pilotées par l'IA co-créent des espaces magnifiques et fonctionnels.
@@ -195,7 +200,7 @@ const ImpactAIInteriorDesigner: React.FC = () => {
 
               <p className="text-gray-700 mb-6">
                 Les outils de{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   design d'intérieur IA
                 </a>
                 {" "}de STYLY.io facilitent l'expérimentation et l'affinement des idées, améliorant finalement le processus de design pour les professionnels et les propriétaires.
@@ -209,7 +214,7 @@ const ImpactAIInteriorDesigner: React.FC = () => {
                   Explorez comment l'IA peut transformer votre processus de design et donner vie à vos idées créatives.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Essayer STYLY.io Gratuitement
@@ -240,7 +245,7 @@ const ImpactAIInteriorDesigner: React.FC = () => {
             <>
               <p className="text-lg text-gray-700 mb-6">
                 In the ever-evolving world of interior design, artificial intelligence (AI) is emerging as a game-changer. Far from replacing the expertise of professional designers, AI tools like{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   STYLY.io
                 </a>
                 {" "}are redefining how creativity and technology work together. This synergy is shaping a collaborative future where designers and AI-driven solutions co-create stunning, functional spaces.
@@ -378,7 +383,7 @@ const ImpactAIInteriorDesigner: React.FC = () => {
 
               <p className="text-gray-700 mb-6">
                 STYLY.io's{" "}
-                <a href="https://app.styly.io/signin" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="https://app.styly.fr/signin" className="text-blue-600 hover:text-blue-800 font-medium">
                   interior design AI
                 </a>
                 {" "}tools make experimenting and refining ideas easier, ultimately enhancing the design process for professionals and homeowners.
@@ -392,7 +397,7 @@ const ImpactAIInteriorDesigner: React.FC = () => {
                   Explore how AI can transform your design process and bring your creative ideas to life.
                 </p>
                 <a
-                  href="https://app.styly.io/signin"
+                  href="https://app.styly.fr/signin"
                   className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mr-4"
                 >
                   Try STYLY.io Free

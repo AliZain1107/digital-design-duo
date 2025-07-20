@@ -101,7 +101,7 @@ const LeveragingAIOptimizeSpacePlanningSmallApartments: React.FC = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Concevoir des Intérieurs en Ligne pour une Utilisation Efficace de l'Espace</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Styly vous permet de <strong>concevoir l'intérieur en ligne</strong>, vous permettant de visualiser et d'affiner chaque aspect de votre appartement, du placement des meubles aux schémas de couleurs. Vous pouvez explorer des <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">idées de décoration maison</a> et utiliser l'IA pour voir comment différents éléments s'assembleront dans votre petit espace.
+              Styly vous permet de <strong>concevoir l'intérieur en ligne</strong>, vous permettant de visualiser et d'affiner chaque aspect de votre appartement, du placement des meubles aux schémas de couleurs. Vous pouvez explorer des <a href="https://app.styly.fr/signin" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">idées de décoration maison</a> et utiliser l'IA pour voir comment différents éléments s'assembleront dans votre petit espace.
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
               Par exemple, l'IA peut recommander des cloisons subtiles comme des bibliothèques ou des tapis pour séparer visuellement vos espaces de vie et de salle à manger sans sacrifier la superficie.
@@ -139,7 +139,7 @@ const LeveragingAIOptimizeSpacePlanningSmallApartments: React.FC = () => {
                 Découvrez comment maximiser chaque centimètre carré de votre espace avec les outils avancés de planification IA de Styly.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -263,7 +263,7 @@ const LeveragingAIOptimizeSpacePlanningSmallApartments: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Design Interiors Online for Efficient Space Use</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Styly enables you to <strong>design the interior online</strong>, allowing you to visualize and fine-tune every aspect of your apartment from furniture placement to color schemes. You can explore <a href="https://app.styly.io/signin" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">home decor ideas</a> and use AI to see how different elements will fit together in your small space.
+            Styly enables you to <strong>design the interior online</strong>, allowing you to visualize and fine-tune every aspect of your apartment from furniture placement to color schemes. You can explore <a href="https://app.styly.fr/signin" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 underline">home decor ideas</a> and use AI to see how different elements will fit together in your small space.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             For instance, AI can recommend subtle partitions like bookshelves or rugs to visually separate your living and dining areas without sacrificing square footage.
@@ -301,7 +301,7 @@ const LeveragingAIOptimizeSpacePlanningSmallApartments: React.FC = () => {
               Discover how to maximize every square inch of your space with Styly's advanced AI planning tools.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

@@ -165,7 +165,7 @@ const BuildHouseAIToolsPorchDesign: React.FC = () => {
                 Prêt à révolutionner votre projet de construction ? Styly AI vous accompagne de la conception à la réalisation, en optimisant chaque détail pour créer la maison de vos rêves.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -353,7 +353,7 @@ const BuildHouseAIToolsPorchDesign: React.FC = () => {
               Ready to revolutionize your construction project? Styly AI accompanies you from conception to completion, optimizing every detail to create the home of your dreams.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

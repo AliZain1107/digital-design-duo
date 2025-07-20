@@ -156,7 +156,7 @@ const AIAccessibleDesign: React.FC = () => {
               Créez des espaces accessibles et inclusifs avec les outils avancés de Styly AI.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -373,7 +373,7 @@ const AIAccessibleDesign: React.FC = () => {
               Create accessible and inclusive spaces with Styly AI's advanced tools.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

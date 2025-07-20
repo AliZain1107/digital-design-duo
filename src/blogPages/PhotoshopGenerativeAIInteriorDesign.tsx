@@ -122,7 +122,7 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
                 Combinez la puissance de Photoshop avec l'intelligence de Styly AI pour créer des designs intérieurs exceptionnels qui impressionnent vos clients.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -267,7 +267,7 @@ const PhotoshopGenerativeAIInteriorDesign: React.FC = () => {
               Combine the power of Photoshop with the intelligence of Styly AI to create exceptional interior designs that impress your clients.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"

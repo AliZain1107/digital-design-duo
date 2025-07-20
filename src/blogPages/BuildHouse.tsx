@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useLanguage } from "@/lib/i18n";
 import { Link } from "react-router-dom";
 
@@ -7,6 +8,20 @@ const BuildHouseAI: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center px-4 py-10 space-y-10">
+      <Helmet>
+        <title>{language === "fr" ? "Comment Construire sa Maison avec l'IA | Styly.fr" : "How to Build Your House with AI | Styly.fr"}</title>
+        <meta name="description" content={language === "fr" ? "Guide complet pour construire votre maison avec l'intelligence artificielle. Outils IA, conseils d'experts et solutions Styly." : "Complete guide to building your house with artificial intelligence. AI tools, expert advice and Styly solutions."} />
+        <meta name="keywords" content={language === "fr" ? "construire maison IA, Styly AI, construction intelligente, design architectural IA" : "build house AI, Styly AI, smart construction, AI architectural design"} />
+        <meta property="og:title" content={language === "fr" ? "Comment Construire sa Maison avec l'IA" : "How to Build Your House with AI"} />
+        <meta property="og:description" content={language === "fr" ? "Guide complet pour construire votre maison avec l'intelligence artificielle et Styly." : "Complete guide to building your house with artificial intelligence and Styly."} />
+        <meta property="og:url" content={language === "fr" ? "https://www.styly.fr/blog/construire-maison-ia" : "https://www.styly.fr/en/blog/build-house-ai"} />
+        <link rel="canonical" href={language === "fr" ? "https://www.styly.fr/blog/construire-maison-ia" : "https://www.styly.fr/en/blog/build-house-ai"} />
+      </Helmet>
+      <header className="mb-8">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          {language === "fr" ? "Comment Construire sa Maison avec l'IA" : "How to Build Your House with AI"}
+        </h1>
+      </header>
       <div className="max-w-4xl text-sm text-gray-800 space-y-6">
         {/* Market Overview */}
         <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">{t.marketOverview}</h2>
@@ -50,7 +65,7 @@ const BuildHouseAI: React.FC = () => {
         <div className="bg-purple-50 p-4 rounded-lg mt-3">
           <p className="text-purple-700 font-medium">
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
@@ -117,7 +132,7 @@ const BuildHouseAI: React.FC = () => {
         <div className="bg-orange-50 p-4 rounded-lg mt-4">
           <p className="text-orange-700 font-medium">
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"

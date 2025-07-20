@@ -42,7 +42,7 @@ const AIInteriorDesignRevolutionReplacement: React.FC = () => {
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">L'IA comme Révolution Créative</h2>
           <p>
-            L'intelligence artificielle, loin de remplacer les designers, révolutionne leur façon de travailler. Les outils comme <a href="https://styly.io" className="text-blue-600 hover:underline">Styly.io</a> permettent aux professionnels d'explorer rapidement de multiples concepts, de visualiser des idées complexes et d'optimiser leurs processus créatifs.
+            L'intelligence artificielle, loin de remplacer les designers, révolutionne leur façon de travailler. Les outils comme <a href="https://styly.fr" className="text-blue-600 hover:underline">Styly.io</a> permettent aux professionnels d'explorer rapidement de multiples concepts, de visualiser des idées complexes et d'optimiser leurs processus créatifs.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Avantages de l'IA pour les Designers</h3>
@@ -154,7 +154,7 @@ const AIInteriorDesignRevolutionReplacement: React.FC = () => {
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">AI as Creative Revolution</h2>
         <p>
-          Artificial intelligence, far from replacing designers, is revolutionizing how they work. Tools like <a href="https://styly.io" className="text-blue-600 hover:underline">Styly.io</a> enable professionals to rapidly explore multiple concepts, visualize complex ideas, and optimize their creative processes.
+          Artificial intelligence, far from replacing designers, is revolutionizing how they work. Tools like <a href="https://styly.fr" className="text-blue-600 hover:underline">Styly.io</a> enable professionals to rapidly explore multiple concepts, visualize complex ideas, and optimize their creative processes.
         </p>
 
         <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Benefits of AI for Designers</h3>

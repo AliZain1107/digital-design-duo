@@ -146,7 +146,7 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
                 Transformez vos propriétés avec le staging virtuel IA et les visualisations 3D professionnelles qui impressionnent les clients et accélèrent les ventes.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
@@ -315,7 +315,7 @@ const AITechnologyRealEstateStrategy: React.FC = () => {
               Transform your properties with AI virtual staging and professional 3D visualizations that impress clients and accelerate sales.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"

@@ -179,7 +179,7 @@ const UltimateGuideAIInteriorDesignTools2025: React.FC = () => {
                 Rejoignez les milliers d'utilisateurs qui ont déjà adopté <strong>Styly AI</strong>. Transformez vos espaces avec l'outil de design intérieur IA le plus avancé de 2025.
               </p>
               <a
-                href="https://app.styly.io/signin"
+                href="https://app.styly.fr/signin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
@@ -392,7 +392,7 @@ const UltimateGuideAIInteriorDesignTools2025: React.FC = () => {
               Join the thousands of users who have already adopted <strong>Styly AI</strong>. Transform your spaces with the most advanced AI interior design tool of 2025.
             </p>
             <a
-              href="https://app.styly.io/signin"
+              href="https://app.styly.fr/signin"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"

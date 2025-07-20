@@ -43,6 +43,11 @@ const RevolutionizingArchitecture: React.FC = () => {
       </Helmet>
 
       <div className="flex flex-col items-center px-4 py-10 space-y-12">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              {currentMeta.title}
+            </h1>
+          </header>
         <div className="max-w-3xl space-y-6 text-gray-800 text-sm">
           {/* Table of Contents */}
           <div>
@@ -123,7 +128,7 @@ const RevolutionizingArchitecture: React.FC = () => {
                 <div className="bg-purple-50 p-4 rounded-lg mt-3">
                   <p className="text-purple-700 font-medium">
                     <a
-                      href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+                      href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
@@ -221,7 +226,7 @@ const RevolutionizingArchitecture: React.FC = () => {
             <div className="bg-orange-50 p-4 rounded-lg mt-4">
               <p className="text-orange-700 font-medium">
                 <a
-                  href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+                  href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -245,7 +250,7 @@ const RevolutionizingArchitecture: React.FC = () => {
               {t.revolutionizingArchitectureCTAText}
             </p>
             <a
-              href={language === "fr" ? "https://app.styly.io/signin?lang=fr" : "https://app.styly.io/signin"}
+              href={language === "fr" ? "https://app.styly.fr/signin?lang=fr" : "https://app.styly.fr/signin"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[rgba(250,111,64,1)] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
