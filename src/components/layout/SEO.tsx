@@ -233,8 +233,8 @@ const SEO: React.FC<SEOProps> = ({
       addAlternateLanguageLink('fr', `${baseUrl}/fr`);
     }
 
-    // Add x-default hreflang (points to default language)
-    addAlternateLanguageLink('x-default', alternateUrls?.en || `${ogUrl.replace(/\/(en|fr)$/, '')}/en`);
+    // Add x-default hreflang (points to French as default language for French website)
+    addAlternateLanguageLink('x-default', alternateUrls?.fr || `${ogUrl.replace(/\/(en|fr)$/, '')}`);
 
     // Add link preconnect for performance optimization
     const addPreconnect = (url: string, crossorigin: boolean = false) => {

@@ -61,7 +61,7 @@ const StylyVivaTechPartnership: React.FC = () => {
         {/* Hreflang tags */}
         <link rel="alternate" hrefLang="en" href={alternateUrls.en} />
         <link rel="alternate" hrefLang="fr" href={alternateUrls.fr} />
-        <link rel="alternate" hrefLang="x-default" href={alternateUrls.en} />
+        <link rel="alternate" hrefLang="x-default" href={alternateUrls.fr} />
       </Helmet>
 
       <div className="max-w-4xl mx-auto px-4 py-8 pt-20">

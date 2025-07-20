@@ -241,7 +241,7 @@ const AIAccessibleDesign: React.FC = () => {
         <link rel="canonical" href="https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces" />
         <link rel="alternate" hrefLang="en" href="https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces" />
         <link rel="alternate" hrefLang="fr" href="https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs" />
-        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/en/blog/ai-accessible-design-inclusive-spaces" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.styly.fr/blog/ia-design-accessible-espaces-inclusifs" />
       </Helmet>
       <article className="prose prose-lg max-w-none">
         <header className="mb-8">
