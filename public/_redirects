@@ -57,22 +57,9 @@
 # Serve prerendered HTML files for better SEO
 # These rules ensure Google crawlers see full content
 
-# Blog posts - serve prerendered HTML files
-/blog/* /blog/:splat/index.html 200
-
-# Core pages - serve prerendered HTML files
-/pricing /pricing/index.html 200
-/upload /upload/index.html 200
-/collaborateurs /collaborateurs/index.html 200
-/services-api /services-api/index.html 200
-/styly-pro /styly-pro/index.html 200
-/get-started /get-started/index.html 200
-/video /video/index.html 200
-/conditions /conditions/index.html 200
-/confidentialite /confidentialite/index.html 200
-
-# Blog index page
-/blog /blog/index.html 200
+# TEMPORARY: Use SPA fallback until prerendering is fixed
+# All pages serve the main React app which handles routing
+# This prevents 404 errors while we fix prerendering
 
 # ========================================
 # SPA ROUTING CONFIGURATION (CRITICAL!)
