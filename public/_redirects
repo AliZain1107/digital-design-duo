@@ -10,6 +10,12 @@
 /blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite/  /blog/science-couleur-design-ia-palette-parfaite  301!
 /blog/science-couleur-design-ia-palette-parfaite/  /blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite  301!
 
+# Redirect English slugs on French routes to correct French slugs
+/blog/free-ai-interior-design-software  /blog/logiciel-gratuit-design-interieur-ia  301!
+/blog/free-ai-interior-design-software/  /blog/logiciel-gratuit-design-interieur-ia  301!
+/blog/2025-interior-design-trends  /blog/tendances-design-interieur-2025  301!
+/blog/2025-interior-design-trends/  /blog/tendances-design-interieur-2025  301!
+
 # Core pages - serve prerendered HTML (remove trailing slashes only)
 /collaborateurs/  /collaborateurs  301!
 /conditions/  /conditions  301!

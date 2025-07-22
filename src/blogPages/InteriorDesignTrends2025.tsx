@@ -21,7 +21,7 @@ const InteriorDesignTrends2025: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
   const canonicalUrl = language === "fr"
-    ? "https://www.styly.fr/fr/blog/tendances-design-interieur-2025"
+    ? "https://www.styly.fr/blog/tendances-design-interieur-2025"
     : "https://www.styly.fr/en/blog/2025-interior-design-trends";
 
   return (

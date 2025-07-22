@@ -21,7 +21,7 @@ const FreeAIInteriorDesign: React.FC = () => {
 
   const currentMeta = language === "fr" ? seoMeta.fr : seoMeta.en;
   const canonicalUrl = language === "fr"
-    ? "https://www.styly.fr/fr/blog/logiciel-gratuit-design-interieur-ia"
+    ? "https://www.styly.fr/blog/logiciel-gratuit-design-interieur-ia"
     : "https://www.styly.fr/en/blog/free-ai-interior-design-software";
 
   return (
