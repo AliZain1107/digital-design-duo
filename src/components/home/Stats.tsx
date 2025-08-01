@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useLanguage } from "@/lib/i18n";
-import { Link, useLocation } from "react-router-dom";
+import { useLanguage } from "../../lib/i18n";
+// import { Link, useLocation } from "react-router-dom";
 
 export const useCountUp = (end: number, duration: number = 2000) => {
   const [count, setCount] = useState(0);

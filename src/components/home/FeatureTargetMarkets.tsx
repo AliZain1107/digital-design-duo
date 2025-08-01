@@ -68,9 +68,9 @@ const FeatureTargetMarkets: React.FC = () => {
         <div className="w-full max-w-5xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
             {marketSegments.map((segment) => (
-              <Link
+              <a
                 key={segment.id}
-                to={segment.link}
+                href={segment.link}
                 className="group relative block overflow-hidden rounded-lg shadow-md transform transition-all duration-500 hover:scale-[1.02] hover:shadow-lg"
               >
                 {/* Smaller image with consistent aspect ratio */}
@@ -86,21 +86,21 @@ const FeatureTargetMarkets: React.FC = () => {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/90 to-purple-900/50 backdrop-blur-sm transform transition-transform duration-500 py-2 sm:py-3">
                   <h3 className="text-center text-white font-semibold text-xs sm:text-sm md:text-base px-2">{segment.title}</h3>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
 
           {/* Extra CTA */}
           <div className="text-center mt-16">
-            <Link 
-              to="/solutions"
+            <a
+              href="/solutions"
               className="inline-flex items-center justify-center bg-purple-700 text-white py-4 px-8 rounded-full font-bold text-lg hover:bg-purple-800 transition-colors shadow-lg"
             >
               <span>Explore All Solutions</span>
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

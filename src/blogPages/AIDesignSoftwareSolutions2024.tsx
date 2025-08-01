@@ -79,7 +79,7 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                 </p>
 
                 <p className="text-gray-700 mb-8">
-                  <Link to="/blog/ultimate-guide-ai-interior-design-tools-2025" className="text-blue-600 hover:text-blue-800 font-medium">Interior design AI</Link> has become the talk of the town among preeminent designers. With more and more positive use cases of AI-powered tools emerging every day, interior designers are rapidly making the 'AI shift' to supercharge their workflows and deliver state-of-the-art designs regularly.
+                  <a href="/blog/ultimate-guide-ai-interior-design-tools-2025" className="text-blue-600 hover:text-blue-800 font-medium">Interior design AI</a> has become the talk of the town among preeminent designers. With more and more positive use cases of AI-powered tools emerging every day, interior designers are rapidly making the 'AI shift' to supercharge their workflows and deliver state-of-the-art designs regularly.
                 </p>
 
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Advantages of AI for Interior Design</h2>
@@ -91,7 +91,7 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                   <section className="bg-green-50 p-6 rounded-lg">
                     <h3 className="text-xl font-semibold text-green-900 mb-3">1. Space Planning</h3>
                     <p className="text-green-800">
-                      Space planning is undoubtedly the most important aspect of any interior design. Accurate measurements and dimensions are crucial in optimizing the layout of a space. This is where an <Link to="/" className="text-green-600 hover:text-green-800 font-medium">AI room planner</Link> can come in handy. By automatically analyzing the space and calculating furniture measurements, an AI-based interior design tool can help you plan a room to perfection.
+                      Space planning is undoubtedly the most important aspect of any interior design. Accurate measurements and dimensions are crucial in optimizing the layout of a space. This is where an <a href="/" className="text-green-600 hover:text-green-800 font-medium">AI room planner</a> can come in handy. By automatically analyzing the space and calculating furniture measurements, an AI-based interior design tool can help you plan a room to perfection.
                     </p>
                   </section>
 
@@ -174,7 +174,7 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                         <li><strong>RoomGPT:</strong> Free and paid versions starting at $59/month</li>
                         <li><strong>Houzz Pro:</strong> $60 per user per month</li>
                         <li><strong>SketchUp:</strong> Premium pricing for creative features</li>
-                        <li><strong>Styly.io:</strong> <Link to="/blog/free-ai-interior-design-software" className="text-blue-600 hover:text-blue-800 font-medium">Free plan with 5 designs</Link>, $19/month for up to 50 designs</li>
+                        <li><strong>Styly.io:</strong> <a href="/blog/free-ai-interior-design-software" className="text-blue-600 hover:text-blue-800 font-medium">Free plan with 5 designs</a>, $19/month for up to 50 designs</li>
                       </ul>
                     </div>
                   </div>
@@ -201,18 +201,18 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link
-                      to="/"
+                    <a
+                      href="/"
                       className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center"
                     >
                       Start Designing for Free
-                    </Link>
-                    <Link
-                      to="/blog"
+                    </a>
+                    <a
+                      href="/blog"
                       className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
                     >
                       Explore More Articles
-                    </Link>
+                    </a>
                   </div>
                 </div>
 
@@ -222,21 +222,21 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-700">
                     <li>
-                      <Link to="/blog/ultimate-guide-ai-interior-design-tools-2025" className="text-blue-600 hover:text-blue-800 font-medium">
+                      <a href="/blog/ultimate-guide-ai-interior-design-tools-2025" className="text-blue-600 hover:text-blue-800 font-medium">
                         → Ultimate Guide to AI Interior Design Tools 2025
-                      </Link>
+                      </a>
                       {" "}for comprehensive tool comparison
                     </li>
                     <li>
-                      <Link to="/blog/free-ai-interior-design-software" className="text-blue-600 hover:text-blue-800 font-medium">
+                      <a href="/blog/free-ai-interior-design-software" className="text-blue-600 hover:text-blue-800 font-medium">
                         → Free AI Interior Design Software
-                      </Link>
+                      </a>
                       {" "}for budget-friendly options
                     </li>
                     <li>
-                      <Link to="/blog/ai-space-planning-optimization-small-apartments" className="text-blue-600 hover:text-blue-800 font-medium">
+                      <a href="/blog/ai-space-planning-optimization-small-apartments" className="text-blue-600 hover:text-blue-800 font-medium">
                         → AI Space Planning Optimization
-                      </Link>
+                      </a>
                       {" "}for advanced planning techniques
                     </li>
                   </ul>
@@ -313,7 +313,7 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                   <section className="bg-green-50 p-6 rounded-lg">
                     <h3 className="text-xl font-semibold text-green-900 mb-3">1. Planification d'Espace</h3>
                     <p className="text-green-800">
-                      La planification d'espace est indéniablement l'aspect le plus important de tout design d'intérieur. C'est là qu'un <Link to="/" className="text-green-600 hover:text-green-800 font-medium">planificateur de pièce IA</Link> peut être utile.
+                      La planification d'espace est indéniablement l'aspect le plus important de tout design d'intérieur. C'est là qu'un <a href="/" className="text-green-600 hover:text-green-800 font-medium">planificateur de pièce IA</a> peut être utile.
                     </p>
                   </section>
 
@@ -354,7 +354,7 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                         <li><strong>RoomGPT :</strong> Versions gratuite et payante à partir de 59$/mois</li>
                         <li><strong>Houzz Pro :</strong> 60$ par utilisateur par mois</li>
                         <li><strong>SketchUp :</strong> Tarification premium pour fonctionnalités créatives</li>
-                        <li><strong>Styly.io :</strong> <Link to="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:text-blue-800 font-medium">Plan gratuit avec 5 designs</Link>, 19$/mois pour jusqu'à 50 designs</li>
+                        <li><strong>Styly.io :</strong> <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-blue-600 hover:text-blue-800 font-medium">Plan gratuit avec 5 designs</a>, 19$/mois pour jusqu'à 50 designs</li>
                       </ul>
                     </div>
                   </div>
@@ -381,18 +381,18 @@ const AIDesignSoftwareSolutions2024: React.FC = () => {
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link
-                      to="/"
+                    <a
+                      href="/"
                       className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center"
                     >
                       Commencer Gratuitement
-                    </Link>
-                    <Link
-                      to="/fr/blog"
+                    </a>
+                    <a
+                      href="/fr/blog"
                       className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
                     >
                       Explorer Plus d'Articles
-                    </Link>
+                    </a>
                   </div>
                 </div>
 

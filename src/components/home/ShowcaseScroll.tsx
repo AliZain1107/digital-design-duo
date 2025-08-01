@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { useLanguage } from "@/lib/i18n";
+import { useLanguage } from "../../lib/i18n";
 
 const ShowcaseScroll: React.FC = () => {
   const { language, t } = useLanguage();

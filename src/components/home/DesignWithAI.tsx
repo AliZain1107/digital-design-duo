@@ -114,7 +114,7 @@ const DesignWithAI: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 transition-opacity duration-500">
             {visibleSegments.map((segment, index) => (
               <div key={`${activePage}-${index}`} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 transform hover:translate-y-[-2px]">
-                <Link to={segment.link} className="block">
+                <a href={segment.link} className="block">
                   <div className="aspect-[4/3] w-full">
                     <img
                       src={segment.image}
@@ -129,7 +129,7 @@ const DesignWithAI: React.FC = () => {
                   <div className="py-3 px-3 text-center">
                     <h3 className="font-semibold text-gray-800 text-sm md:text-base">{segment.title}</h3>
                   </div>
-                </Link>
+                </a>
               </div>
             ))}
           </div>

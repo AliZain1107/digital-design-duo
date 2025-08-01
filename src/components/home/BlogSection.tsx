@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useLanguage } from "@/lib/i18n";
-import { blogPosts } from "@/components/data/blogPosts";
-import type { BlogPost } from "@/components/data/blogPosts";
+// import { Link } from "react-router-dom";
+import { useLanguage } from "../../lib/i18n";
+import { blogPosts } from "../../components/data/blogPosts";
+import type { BlogPost } from "../../components/data/blogPosts";
 
 const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   const { t, language } = useLanguage();
@@ -175,8 +175,8 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   };
 
   return (
-    <Link
-      to={getBlogUrl()}
+    <a
+      href={getBlogUrl()}
       className="bg-white shadow-sm rounded-[16px] w-full overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-300"
     >
       {/* Smaller, responsive image container */}
@@ -204,7 +204,7 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
         </h3>
         <p className="text-[10px] sm:text-[11px] text-[#999] tracking-wide mt-2">{post.date}</p>
       </div>
-    </Link>
+    </a>
   );
 };
 
@@ -237,7 +237,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts, variant = 'default'
           <h2 className={`mb-4 text-center ${
             variant === 'blog-page' 
               ? 'text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900' // Styly Pro hero style
-              : 'text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 font-baloo' // Default style
+              : 'text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 ' // Default style
           }`}>
             {variant === 'blog-page' ? (
               // Blog page variant - no gradient animation, solid text

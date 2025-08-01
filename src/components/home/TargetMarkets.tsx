@@ -124,9 +124,9 @@ const TargetMarkets: React.FC = () => {
           className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6 transition-opacity duration-300 ease-in-out max-w-4xl mx-auto"
         >
           {currentSegments().map((segment, index) => (
-            <Link
+            <a
               key={`segment-${startIndex + index}`}
-              to={segment.link}
+              href={segment.link}
               className="block group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 h-full bg-white"
             >
               <div className="relative h-full flex flex-col">
@@ -151,7 +151,7 @@ const TargetMarkets: React.FC = () => {
                   </h3>
                 </div>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
 

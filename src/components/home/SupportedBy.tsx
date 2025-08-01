@@ -1,12 +1,12 @@
 import React from "react";
-import { useLanguage } from "@/lib/i18n";
+import { useLanguage } from "../../lib/i18n";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
-} from "@/components/ui/carousel";
+} from "../../components/ui/carousel";
 import type { EmblaCarouselType } from 'embla-carousel';
 
 const SupportedBy: React.FC = () => {
@@ -68,6 +68,7 @@ const SupportedBy: React.FC = () => {
   }, [emblaApi]);
 
   return (
+    
     <section
       className="-mt-16 pb-2 sm:pb-3 md:pb-4 lg:pb-6 px-4 sm:px-6 md:px-8 lg:px-12 max-w-full overflow-hidden"
       key={`supported-by-${language}`}

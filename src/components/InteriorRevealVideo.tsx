@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Player } from '@remotion/player';
 import { InteriorReveal } from './remotion/InteriorReveal';
-import { useLanguage } from '@/lib/i18n';
+import { useLanguage } from '../lib/i18n';
 
 interface InteriorRevealVideoProps {
   beforeImage: string;
@@ -77,7 +77,7 @@ export const InteriorRevealVideo: React.FC<InteriorRevealVideoProps> = ({
         autoPlay={true}
         showVolumeControls={false}
         acknowledgeRemotionLicense={true}
-        onEnded={handleVideoEnd}
+        // onEnded={handleVideoEnd}
       />
     </div>
   );

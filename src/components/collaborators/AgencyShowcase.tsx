@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import { useLanguage } from "@/lib/i18n";
+import { useLanguage } from "../../lib/i18n";
 import { MapPin, Eye, Heart, Award } from "lucide-react";
 
 const countryTranslations: Record<string, { en: string; fr: string }> = {
@@ -23,7 +23,7 @@ const specialtyTranslations: Record<string, { en: string; fr: string }> = {
   "Zen & Wellness": { en: "Zen & Wellness", fr: "Zen & bien-être" },
 };
 
-const AgencyShowcase = forwardRef<HTMLElement, {}>((props, ref) => {
+const AgencyShowcase = forwardRef<HTMLElement,{}>((props, ref) => {
   const { language, t } = useLanguage();
 
   const agencies = [
@@ -110,7 +110,7 @@ const AgencyShowcase = forwardRef<HTMLElement, {}>((props, ref) => {
   ];
 
   return (
-    <section ref={ref} className="relative py-20 bg-white overflow-hidden">
+    <section ref={ref}  className="relative py-20 bg-white overflow-hidden">
       {/* Background Pattern */}
       {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.05),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(168,85,247,0.06),transparent_50%)]"></div> */}
@@ -118,7 +118,7 @@ const AgencyShowcase = forwardRef<HTMLElement, {}>((props, ref) => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Premium Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 mb-4 text-center font-baloo">
+          <h2 className="text-4xl  font-extrabold tracking-tight leading-tight text-gray-900 mb-4 text-center font-baloo">
             {language === "fr" ? "Nos Partenaires Certifiés" : "Our Certified Partners"}
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-baloo">

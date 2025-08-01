@@ -1,6 +1,6 @@
 import React from "react";
 import ShowcaseScroll from "./ShowcaseScroll";
-import { useLanguage } from "@/lib/i18n";
+import { useLanguage } from "../../lib/i18n";
 
 const ArchitectureRevolution: React.FC = () => {
   const { t } = useLanguage();

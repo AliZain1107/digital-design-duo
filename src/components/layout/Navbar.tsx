@@ -1,21 +1,27 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { useLanguage } from "@/lib/i18n";
-import { Z_INDEX } from "@/lib/constants";
+} from  "../../components/ui/dropdown-menu";
+import { useLanguage } from "../../../src/lib/i18n.ts";
+// import { useLanguage } from "../../lib/LanguageProvider";
+
+
+import { Z_INDEX } from "../../lib/constants";
+import { usePageContext } from '../../renderer/usePageContext.jsx';
+
 
 const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
 
+     const { urlPathname:location } = usePageContext();
+  
   // Debug log for current language
   console.log("Current language in Navbar:", language);
 
@@ -85,8 +91,8 @@ const Navbar: React.FC = () => {
       <div className="max-w-6xl mx-auto flex h-14 sm:h-16 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo - Mobile optimized */}
         <div className="flex items-center h-full">
-          <Link
-            to="/"
+          <a
+            href="/"
             className="transition-opacity duration-200 hover:opacity-80"
           >
             <img
@@ -94,7 +100,7 @@ const Navbar: React.FC = () => {
               alt="STYLY"
               className="h-7 sm:h-8 md:h-9 lg:h-10 w-auto"
             />
-          </Link>
+          </a>
         </div>
 
         {/* Mobile menu button - Enhanced touch target */}
@@ -120,22 +126,22 @@ const Navbar: React.FC = () => {
         </a>
 
         {/* Styly Pro Button */}
-        <Link
-          to="/collaborateurs"
+        <a
+          href="/collaborateurs"
           className={`flex items-center h-full font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/collaborateurs") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
           aria-label="Go to Styly Pro"
         >
           {language === "fr" ? "Styly Pro" : "Styly Pro"}
-        </Link>
+        </a>
 
         {/* Services API Button */}
-        <Link
-          to="/services-api"
+        <a
+          href="/services-api"
           className={`flex items-center h-full font-medium text-[15px] transition-colors duration-300 whitespace-nowrap tracking-tight ${isActive("/services-api") ? "text-purple-600" : "text-gray-600 hover:text-gray-900"}`}
           aria-label="Go to API"
         >
           {t.servicesAPI}
-        </Link>
+        </a>
 
           {/* Sign In Button - Enhanced for mobile */}
           <div className="ml-4 md:ml-6 lg:ml-8">
@@ -193,8 +199,8 @@ const Navbar: React.FC = () => {
       >
         {/* Mobile Header */}
         <div className="flex justify-between items-center h-14 px-4 border-b border-gray-100 bg-white">
-          <Link
-            to="/"
+          <a
+            href="/"
             className="transition-opacity duration-200 hover:opacity-80 flex items-center"
             onClick={() => setMobileMenuOpen(false)}
           >
@@ -203,7 +209,7 @@ const Navbar: React.FC = () => {
               alt="STYLY Logo"
               className="h-7 sm:h-8 md:h-9 lg:h-10 w-auto object-contain"
             />
-          </Link>
+          </a>
           <button
             className="p-3 -mr-2 text-gray-500 hover:text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200 active:scale-95"
             onClick={toggleMobileMenu}
@@ -227,21 +233,21 @@ const Navbar: React.FC = () => {
               {t.pricing}
             </a>
 
-            <Link
-              to="/collaborateurs"
+            <a
+              href="/collaborateurs"
               className="flex items-center text-gray-700 font-medium py-4 px-4 hover:text-purple-700 hover:bg-gray-50 transition-all duration-200 rounded-xl text-base active:scale-98 touch-manipulation"
               onClick={() => setMobileMenuOpen(false)}
             >
               {language === "fr" ? "Styly Pro" : "Styly Pro"}
-            </Link>
+            </a>
 
-            <Link
-              to="/services-api"
+            <a
+              href="/services-api"
               className="flex items-center text-gray-700 font-medium py-4 px-4 hover:text-purple-700 hover:bg-gray-50 transition-all duration-200 rounded-xl text-base active:scale-98 touch-manipulation"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.servicesAPI}
-            </Link>
+            </a>
           </div>
 
           {/* CTA Button */}

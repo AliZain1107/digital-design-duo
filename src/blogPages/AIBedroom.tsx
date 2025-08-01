@@ -55,12 +55,12 @@ const AiBedroomDesign: React.FC = () => {
             </a>
           </p>
           <p className="mt-2">
-            <Link
-              to="/blog/free-ai-interior-design-software"
+            <a
+              href="/blog/free-ai-interior-design-software"
               className="text-purple-600 hover:underline"
             >
               Discover our comprehensive guide to free AI interior design software
-            </Link>
+            </a>
           </p>
         </section>
 
@@ -155,12 +155,12 @@ const AiBedroomDesign: React.FC = () => {
             </a>
           </p>
           <p className="mt-2">
-            <Link
-              to="/blog/2025-interior-design-trends"
+            <a
+              href="/blog/2025-interior-design-trends"
               className="text-purple-600 hover:underline"
             >
               Explore the latest 2025 interior design trends for bedrooms
-            </Link>
+            </a>
           </p>
         </section>
 
@@ -206,12 +206,12 @@ const AiBedroomDesign: React.FC = () => {
           <p>{t.conclusionText}</p>
           <p>{t.keywords}</p>
           <p className="mt-2">
-            <Link
-              to="/blog/revolutionizing-architecture-engineering-construction-ai"
+            <a
+              href="/blog/revolutionizing-architecture-engineering-construction-ai"
               className="text-purple-600 hover:underline"
             >
               Learn how AI is transforming the entire architecture and construction industry
-            </Link>
+            </a>
           </p>
           <div className="bg-orange-50 p-4 rounded-lg mt-4">
             <p className="text-orange-700 font-medium">

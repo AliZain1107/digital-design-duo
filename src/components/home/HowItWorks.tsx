@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useLanguage } from "@/lib/i18n";
-import BeforeAfterSlider from "@/components/ui/BeforeAfterSlider";
+// import { Link } from "react-router-dom";
+import { useLanguage } from "../../lib/i18n";
+import BeforeAfterSlider from "../../components/ui/BeforeAfterSlider";
 
 const HowItWorks: React.FC = () => {
   const { t, language } = useLanguage();

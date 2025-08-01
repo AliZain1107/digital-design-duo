@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import { useLanguage } from "@/lib/i18n";
-import AgencyShowcase from "@/components/collaborators/AgencyShowcase";
+import { useLanguage } from "../../lib/i18n";
+import AgencyShowcase from "../../components/collaborators/AgencyShowcase";
 
 interface Testimonial {
   name: string;

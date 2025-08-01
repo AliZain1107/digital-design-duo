@@ -77,23 +77,20 @@ const AICustomizationFutureDesign: React.FC = () => {
                   <section className="bg-blue-50 p-6 rounded-lg">
                     <h3 className="text-2xl font-semibold text-blue-900 mb-4">1. Personalized Design Solutions</h3>
                     <p className="text-blue-800">
-                      One of the most significant advantages of AI in interior design is its ability to deliver personalized solutions. By analyzing user preferences, AI can suggest design elements that match individual tastes, whether it's for a modern living room, a cozy bedroom, or a functional kitchen. With AI, homeowners can explore different <Link to="/blog/ultimate-guide-ai-interior-design-tools-2025" className="text-blue-600 hover:text-blue-800 font-medium">interior design styles</Link> and find the one that best suits their needs.
-                    </p>
-                  </section>
+                      One of the most significant advantages of AI in interior design is its ability to deliver personalized solutions. By analyzing user preferences, AI can suggest design elements that match individual tastes, whether it's for a modern living room, a cozy bedroom, or a functional kitchen. With AI, homeowners can explore different <a href="/blog/ultimate-guide-ai-interior-design-tools-2025" className="text-blue-600 hover:text-blue-800 font-medium">interior design styles</a> and find the one that best suits their needs.
+                    </p>             </section>
 
                   <section className="bg-green-50 p-6 rounded-lg">
                     <h3 className="text-2xl font-semibold text-green-900 mb-4">2. Efficient Space Planning</h3>
                     <p className="text-green-800">
-                      <Link to="/" className="text-green-600 hover:text-green-800 font-medium">AI room design</Link> tools allow users to optimize their space efficiently. Whether you're working with a small apartment or a spacious house, AI can help you make the most of your available space. These tools can recommend the best furniture layout, identify optimal color schemes, and even suggest storage solutions tailored to your specific needs.
-                    </p>
-                  </section>
+                      <a href="/" className="text-green-600 hover:text-green-800 font-medium">AI room design</a> tools allow users to optimize their space efficiently. Whether you're working with a small apartment or a spacious house, AI can help you make the most of your available space. These tools can recommend the best furniture layout, identify optimal color schemes, and even suggest storage solutions tailored to your specific needs.
+                    </p>               </section>
 
                   <section className="bg-purple-50 p-6 rounded-lg">
                     <h3 className="text-2xl font-semibold text-purple-900 mb-4">3. Cost-Effective and Accessible</h3>
                     <p className="text-purple-800">
-                      AI interior design tools are not only powerful but also cost-effective. Many platforms, including Styly, offer <Link to="/blog/free-ai-interior-design-software" className="text-purple-600 hover:text-purple-800 font-medium">AI interior design free</Link> of charge, making professional-level design accessible to everyone. This democratization of design is empowering homeowners, DIY enthusiasts, and even architectural firms to create beautiful spaces without breaking the bank.
-                    </p>
-                  </section>
+                      AI interior design tools are not only powerful but also cost-effective. Many platforms, including Styly, offer <a href="/blog/free-ai-interior-design-software" className="text-purple-600 hover:text-purple-800 font-medium">AI interior design free</a> of charge, making professional-level design accessible to everyone. This democratization of design is empowering homeowners, DIY enthusiasts, and even architectural firms to create beautiful spaces without breaking the bank.
+                    </p>          </section>
 
                   <img
                     src="/ai-home-decor-ideas-styly.webp"
@@ -172,12 +169,12 @@ const AICustomizationFutureDesign: React.FC = () => {
                   </p>
                   
                   <div className="text-center">
-                    <Link
-                      to="/"
+                    <a
+                      href="/"
                       className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                     >
                       Start Designing with STYLY.io
-                    </Link>
+                    </a>
                   </div>
                 </div>
 
@@ -187,21 +184,21 @@ const AICustomizationFutureDesign: React.FC = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-700">
                     <li>
-                      <Link to="/blog/ultimate-guide-ai-interior-design-tools-2025" className="text-blue-600 hover:text-blue-800 font-medium">
-                        → Ultimate Guide to AI Interior Design Tools
-                      </Link>
+                      <a href="/blog/ultimate-guide-ai-interior-design-tools-2025" className="text-blue-600 hover:text-blue-800 font-medium">
+                        Ultimate Guide to AI Interior Design Tools
+                      </a>
                       {" "}for comprehensive AI design solutions
                     </li>
                     <li>
-                      <Link to="/blog/free-ai-interior-design-software" className="text-blue-600 hover:text-blue-800 font-medium">
-                        → Free AI Interior Design Software
-                      </Link>
+                      <a href="/blog/free-ai-interior-design-software" className="text-blue-600 hover:text-blue-800 font-medium">
+                        Free AI Interior Design Software
+                      </a>
                       {" "}for budget-friendly design tools
                     </li>
                     <li>
-                      <Link to="/blog/ai-space-planning-optimization-small-apartments" className="text-blue-600 hover:text-blue-800 font-medium">
-                        → AI Space Planning for Small Apartments
-                      </Link>
+                      <a href="/blog/ai-space-planning-optimization-small-apartments" className="text-blue-600 hover:text-blue-800 font-medium">
+                        AI Space Planning for Small Apartments
+                      </a>
                       {" "}for efficient space optimization
                     </li>
                   </ul>
@@ -278,16 +275,14 @@ const AICustomizationFutureDesign: React.FC = () => {
                   <section className="bg-green-50 p-6 rounded-lg">
                     <h3 className="text-2xl font-semibold text-green-900 mb-4">2. Planification d'Espace Efficace</h3>
                     <p className="text-green-800">
-                      Les outils de <Link to="/" className="text-green-600 hover:text-green-800 font-medium">design de pièce IA</Link> permettent aux utilisateurs d'optimiser leur espace efficacement. Que vous travailliez avec un petit appartement ou une maison spacieuse, l'IA peut vous aider à tirer le meilleur parti de votre espace disponible.
-                    </p>
-                  </section>
+                      Les outils de <a href="/" className="text-green-600 hover:text-green-800 font-medium">design de pièce IA</a> permettent aux utilisateurs d'optimiser leur espace efficacement. Que vous travailliez avec un petit appartement ou une maison spacieuse, l'IA peut vous aider à tirer le meilleur parti de votre espace disponible.
+                    </p>                 </section>
 
                   <section className="bg-purple-50 p-6 rounded-lg">
                     <h3 className="text-2xl font-semibold text-purple-900 mb-4">3. Rentable et Accessible</h3>
                     <p className="text-purple-800">
-                      Les outils de design d'intérieur IA ne sont pas seulement puissants mais aussi rentables. De nombreuses plateformes, y compris Styly, offrent des <Link to="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-purple-600 hover:text-purple-800 font-medium">outils de design d'intérieur IA gratuits</Link>, rendant le design de niveau professionnel accessible à tous.
-                    </p>
-                  </section>
+                      Les outils de design d'intérieur IA ne sont pas seulement puissants mais aussi rentables. De nombreuses plateformes, y compris Styly, offrent des <a href="/fr/blog/logiciel-gratuit-design-interieur-ia" className="text-purple-600 hover:text-purple-800 font-medium">outils de design d'intérieur IA gratuits</a>, rendant le design de niveau professionnel accessible à tous.
+                    </p>      </section>
 
                   <h2 className="text-3xl font-bold text-gray-900 mb-6">Personnalisation Pilotée par l'IA : L'Avenir des Idées d'Intérieur</h2>
                   
@@ -325,12 +320,12 @@ const AICustomizationFutureDesign: React.FC = () => {
                   </p>
                   
                   <div className="text-center">
-                    <Link
-                      to="/"
+                    <a
+                      href="/"
                       className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                     >
                       Commencer à Concevoir avec STYLY.io
-                    </Link>
+                    </a>
                   </div>
                 </div>
 

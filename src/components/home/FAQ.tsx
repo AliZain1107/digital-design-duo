@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLanguage } from "@/lib/i18n";
+import { useLanguage } from "../../lib/i18n";
 
 interface FAQItem {
   id: number;

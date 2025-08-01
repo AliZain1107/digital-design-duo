@@ -113,14 +113,14 @@ const MarketSegmentCarousel: React.FC = () => {
                 </h3>
               </div>
             </div>
-            <Link to={marketSegments[activeIndex].link} className="block w-full h-full relative">
+            <a href={marketSegments[activeIndex].link} className="block w-full h-full relative">
               <img
                 src={marketSegments[activeIndex].image}
                 alt={marketSegments[activeIndex].title}
                 className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                 loading="eager"
               />
-            </Link>
+            </a>
             
             {/* Navigation Arrows */}
             <button 

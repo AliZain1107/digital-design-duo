@@ -1,0 +1,55 @@
+import PropTypes from 'prop-types'
+import React, { useEffect, useContext } from "react";
+
+
+import { Helmet } from "react-helmet";
+import {ArrowLeft} from "lucide-react";
+
+import { usePageContext } from './usePageContext';
+
+
+  export const Page: React.FC = () => {
+  
+     const { urlPathname:location } = usePageContext();
+  
+
+  useEffect(() => {
+    console.error(
+      "404 Error: User attempted to access non-existent route:",
+      location
+    );
+  }, [location]);
+
+  return (
+    <>
+      <Helmet>
+        <title>404 - Page Not Found | Styly.fr</title>
+        <meta name="description" content="Page not found. The page you're looking for doesn't exist or has been moved. Return to Styly.fr homepage." />
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://www.styly.fr/404" />
+      </Helmet>
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+      <div className="max-w-md text-center">
+        <h1 className="text-6xl font-extrabold text-[#f36f40] mb-4">404</h1>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+          Page Not Found
+        </h2>
+        <p className="text-gray-600 mb-6">
+          Sorry, the page you're looking for doesn't exist or has been moved.
+        </p>
+        <a
+          href="/"
+          className="inline-flex items-center px-4 py-2 bg-[#fa6f40] text-white rounded-md hover:bg-[rgba(250,131,84,1)] transition"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Return Home
+        </a>
+      </div>
+    </div>
+    </>
+  );
+};
+
+export default {
+  Page,
+};
