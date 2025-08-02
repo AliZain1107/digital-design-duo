@@ -18,7 +18,7 @@ async function render(pageContext) {
     <PageShell pageContext={pageContext}>
       <Page {...pageProps} />
     </PageShell>
-    </LanguageProvider>
+    // </LanguageProvider>
   )
 }
 

@@ -1,14 +1,16 @@
-// import react from '@vitejs/plugin-react'
-// import ssr from 'vite-plugin-ssr/plugin'
-// import path from 'path';
+  // import react from '@vitejs/plugin-react'
+  // import ssr from 'vite-plugin-ssr/plugin'
+  // import path from 'path';
 
-// export default {
-//   plugins: [react(), ssr()],
-//   alias: {
-//       '@': path.resolve(__dirname, './src')
-//     }
-// }
+  // export default {
+  //   plugins: [react(), ssr()],
 
+  //   alias: {
+  //       '@': path.resolve(__dirname, './src')
+  //     }
+      
+  // }
+  
 // vite.config.mjs
 import { defineConfig } from 'vite';
 import ssr from 'vite-plugin-ssr/plugin';
@@ -40,9 +42,9 @@ export default defineConfig({
 //   plugins: [react(), ssr()],
 //    build: {
 //     outDir: 'dist',
-//     rollupOptions: {
-//       input: './server/entry.ts', // <-- must point to your server entry
-//     },
+//     // rollupOptions: {
+//     //   input: './server/index.js', // <-- must point to your server entry
+//     // },
 //   resolve: {
 //     alias: {
 //       '@': path.resolve(__dirname, './src'),
