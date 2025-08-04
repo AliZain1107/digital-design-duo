@@ -13,7 +13,6 @@ import { LanguageProvider } from '@/lib/LanguageProvider'
 async function render(pageContext) {
 const { Page, pageProps } = pageContext
 if (!Page) throw new Error('My render() hook expects pageContext.Page to be defined')
-  // This render() hook only supports SSR, see https://vite-plugin-ssr.com/render-modes for how to modify render() to support SPA
   const pageHtml = ReactDOMServer.renderToString(
     <LanguageProvider>
       {/* <Navbar /> */}
@@ -24,7 +23,6 @@ if (!Page) throw new Error('My render() hook expects pageContext.Page to be defi
    </LanguageProvider>
   )
 
-  // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports
   const title = (documentProps && documentProps.title) || 'Vite SSR app'
   const desc = (documentProps && documentProps.description) || 'App using Vite + vite-plugin-ssr'
