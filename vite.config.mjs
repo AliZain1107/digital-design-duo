@@ -1,9 +1,7 @@
-
-  
 // vite.config.mjs
 import { defineConfig } from 'vite';
-import ssr from 'vite-plugin-ssr/plugin';
 import react from '@vitejs/plugin-react';
+import vike from 'vike/plugin';
 import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
@@ -18,9 +16,11 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    ssr(), // keep ssr() after react() if using JSX plugin
+    vike(),
   ],
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    manifest: true,
+    ssrManifest: true
   }
 });
