@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Video End Issue</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .code {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        .issue {
+            color: #dc2626;
+            font-weight: bold;
+        }
+        .solution {
+            color: #059669;
+            font-weight: bold;
+        }
+        .flow-diagram {
+            background-color: #f0f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Debug Analysis: CTA Not Showing After Video Ends</h1>
+
+    <div class="section">
+        <h2>🔍 Issue Summary</h2>
+        <p class="issue">The CTA (Call-to-Action) is not showing after the video ends. Instead, users see a black screen.</p>
+    </div>
+
+    <div class="section">
+        <h2>📊 Current Flow Analysis</h2>
+        <div class="flow-diagram">
+            <h3>Expected Flow:</h3>
+            <ol>
+                <li><strong>Video Plays</strong> → InteriorRevealVideo component renders with Remotion Player</li>
+                <li><strong>Video Ends</strong> → onEnded callback fires</li>
+                <li><strong>State Updates</strong> → hasEnded becomes true, onVideoEnd callback is called</li>
+                <li><strong>Step Transition</strong> → staging-modal transitions to "limit-reached" or "video-complete"</li>
+                <li><strong>CTA Shows</strong> → User sees the appropriate CTA</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🐛 Issues Found</h2>
+        
+        <h3>1. Video Component State Management</h3>
+        <div class="code">
+// InteriorRevealVideo.tsx
+onEnded={() => {
+    console.log('[InteriorRevealVideo] Video ended, triggering onVideoEnd callback');
+    setIsPlaying(false);
+    setHasEnded(true);
+    setTimeout(() => {
+        console.log('[InteriorRevealVideo] Calling onVideoEnd after 1 second delay');
+        onVideoEnd?.();
+    }, 1000);
+}}
+        </div>
+        <p class="issue">Issue: When hasEnded becomes true, the component shows a static final frame instead of letting the parent handle the transition.</p>
+
+        <h3>2. Remotion Sequence Duration</h3>
+        <div class="code">
+// InteriorReveal.tsx
+&lt;Sequence from={revealStart} durationInFrames={Infinity}&gt;
+        </div>
+        <p class="issue">Issue: The final sequence has Infinity duration, which might prevent the onEnded callback from firing properly.</p>
+
+        <h3>3. Video Duration Mismatch</h3>
+        <div class="code">
+// InteriorRevealVideo.tsx
+durationInFrames={450}  // 15 seconds at 30fps
+
+// InteriorReveal.tsx
+const finalEnd = fps * 15; // Also 15 seconds
+        </div>
+        <p>The video is set to exactly 450 frames (15 seconds), but the last sequence starts at frame 240 (8 seconds) with infinite duration.</p>
+    </div>
+
+    <div class="section">
+        <h2>💡 Root Cause</h2>
+        <p class="solution">The main issue appears to be that the InteriorRevealVideo component handles the "hasEnded" state internally and shows its own final frame instead of allowing the parent component to transition to the next step.</p>
+        
+        <h3>The Problem Flow:</h3>
+        <ol>
+            <li>Video ends → hasEnded = true</li>
+            <li>Component renders the static final frame (lines 62-102)</li>
+            <li>onVideoEnd is called after 1 second</li>
+            <li>Parent updates step to "limit-reached"</li>
+            <li>But the InteriorRevealVideo is still showing its own content</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>✅ Recommended Solutions</h2>
+        
+        <h3>Solution 1: Remove Internal State Management (Recommended)</h3>
+        <div class="code">
+// Remove hasEnded state and conditional rendering
+// Let the parent component handle all transitions
+export const InteriorRevealVideo: React.FC&lt;InteriorRevealVideoProps&gt; = ({
+  beforeImage,
+  afterImage,
+  roomType,
+  style,
+  onVideoEnd,
+}) => {
+  return (
+    &lt;div className="w-full h-full flex items-center justify-center bg-black rounded-2xl overflow-hidden"&gt;
+      &lt;Player
+        // ... existing props
+        onEnded={() => {
+          console.log('[InteriorRevealVideo] Video ended');
+          onVideoEnd?.();
+        }}
+      /&gt;
+    &lt;/div&gt;
+  );
+};
+        </div>
+
+        <h3>Solution 2: Fix the Remotion Composition Duration</h3>
+        <div class="code">
+// Change the final sequence to have a proper end
+&lt;Sequence from={revealStart} durationInFrames={finalEnd - revealStart}&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📝 Debug Steps</h2>
+        <ol>
+            <li>Check browser console for the log messages</li>
+            <li>Verify localStorage generation count</li>
+            <li>Monitor step transitions in React DevTools</li>
+            <li>Check if onVideoEnd is actually being called</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>🔧 Quick Test</h2>
+        <p>To quickly test if this is the issue, you can temporarily modify the onVideoEnd callback to use a shorter timeout:</p>
+        <div class="code">
+setTimeout(() => {
+    onVideoEnd?.();
+}, 100); // Reduce from 1000ms to 100ms
+        </div>
+    </div>
+</body>
+</html>

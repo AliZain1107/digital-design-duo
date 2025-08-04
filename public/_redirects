@@ -1,0 +1,127 @@
+# Redirect URLs with trailing slashes to URLs without trailing slashes
+# This fixes 404 errors caused by external tools adding trailing slashes
+# Force redirects with 301! to ensure they take precedence
+# IMPORTANT: Specific rules MUST come before general patterns
+# Updated to ensure no-slash → slash → 200 (one hop) as requested
+
+# Specific 301 redirects for broken URLs (must come before general patterns)
+# Specific blog redirects for renamed posts only
+/blog/comment-agents-immobiliers-augmentent-ventes-mise-en-scene-virtuelle-ia-2025/  /blog/comment-agents-immobiliers-augmentent-ventes-staging-virtuel-ia-2025  301!
+/blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite/  /blog/science-couleur-design-ia-palette-parfaite  301!
+/blog/science-couleur-design-ia-palette-parfaite/  /blog/science-couleur-design-comment-ia-aide-choisir-palette-parfaite  301!
+
+# Redirect English slugs on French routes to correct French slugs
+/blog/free-ai-interior-design-software  /blog/logiciel-gratuit-design-interieur-ia  301!
+/blog/free-ai-interior-design-software/  /blog/logiciel-gratuit-design-interieur-ia  301!
+/blog/2025-interior-design-trends  /blog/tendances-design-interieur-2025  301!
+/blog/2025-interior-design-trends/  /blog/tendances-design-interieur-2025  301!
+
+# Core pages - serve prerendered HTML (remove trailing slashes only)
+/collaborateurs/  /collaborateurs  301!
+/conditions/  /conditions  301!
+/confidentialite/  /confidentialite  301!
+/get-started/  /get-started  301!
+/pricing/  /pricing  301!
+/upload/  /upload  301!
+/video/  /video  301!
+/styly-pro/  /styly-pro  301!
+/services-api/  /services-api  301!
+
+# Blog index redirect only (remove trailing slash)
+/blog/  /blog  301!
+
+# General page redirects (French only)
+/fr/  /fr  301!
+
+# English routes redirect to external site
+/en/*  https://www.styly.io/:splat  301!
+
+# Legal pages redirects (French only) - trailing slash removal
+/privacy/  /privacy  301!
+/terms/  /terms  301!
+/fr/conditions/  /fr/conditions  301!
+/fr/confidentialite/  /fr/confidentialite  301!
+
+# Service pages redirects (French only) - trailing slash removal
+/fr/services-api/  /fr/services-api  301!
+/fr/collaborateurs/  /fr/collaborateurs  301!
+
+# Other pages redirects (French only) - trailing slash removal
+/fr/upload/  /fr/upload  301!
+/fr/pricing/  /fr/pricing  301!
+/fr/styly-pro/  /fr/styly-pro  301!
+/fr/get-started/  /fr/get-started  301!
+/video-guide/  /video-guide  301!
+/fr/video/  /fr/video  301!
+
+# Catch-all for any other trailing slash URLs
+/*/  /:splat  301!
+
+# ========================================
+# PRERENDERED PAGES CONFIGURATION
+# ========================================
+# Serve prerendered HTML files for better SEO
+# These rules ensure Google crawlers see full content
+
+# SPA ROUTING: All routes serve React app for dynamic routing
+# React Router handles all page routing dynamically
+# This is the correct approach for a Single Page Application
+
+# ========================================
+# SPA ROUTING CONFIGURATION (CRITICAL!)
+# ========================================
+# This section is ESSENTIAL for React Router to work with direct URL access
+# Without this, all direct URL access will return 404 errors
+
+# Static files should be served directly (highest priority)
+/favicon.ico /favicon.ico 200
+/robots.txt /robots.txt 200
+/sitemap.xml /sitemap.xml 200
+/manifest.json /manifest.json 200
+/browserconfig.xml /browserconfig.xml 200
+/humans.txt /humans.txt 200
+/_headers /_headers 200
+
+# Asset directories and file extensions
+/assets/* /assets/:splat 200
+/images/* /images/:splat 200
+/fonts/* /fonts/:splat 200
+/Blogpages/* /Blogpages/:splat 200
+/companies\ logo/* /companies\ logo/:splat 200
+/lovable-uploads/* /lovable-uploads/:splat 200
+/revolution/* /revolution/:splat 200
+/testimonials/* /testimonials/:splat 200
+
+# Static file extensions
+/*.png /:splat.png 200
+/*.jpg /:splat.jpg 200
+/*.jpeg /:splat.jpeg 200
+/*.webp /:splat.webp 200
+/*.gif /:splat.gif 200
+/*.svg /:splat.svg 200
+/*.ico /:splat.ico 200
+/*.woff /:splat.woff 200
+/*.woff2 /:splat.woff2 200
+/*.otf /:splat.otf 200
+/*.ttf /:splat.ttf 200
+/*.css /:splat.css 200
+/*.js /:splat.js 200
+/*.json /:splat.json 200
+/*.xml /:splat.xml 200
+/*.txt /:splat.txt 200
+/*.csv /:splat.csv 200
+/*.mp4 /:splat.mp4 200
+/*.avif /:splat.avif 200
+
+# ========================================
+# CRITICAL: SPA FALLBACK RULE
+# ========================================
+# This MUST be the last rule - serves React app for all unmatched routes
+# This enables client-side routing for direct URL access
+
+# Explicit blog post routing for AWS Amplify
+/blog/* /index.html 200
+/fr/blog/* /index.html 200
+
+# General SPA fallback (MUST be last)
+/* /index.html 200

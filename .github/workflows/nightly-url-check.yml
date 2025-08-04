@@ -1,0 +1,143 @@
+name: Nightly URL Health Check
+
+on:
+  schedule:
+    # Run every night at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  url-health-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Make scripts executable
+      run: |
+        chmod +x scripts/url-health-check.js
+        chmod +x scripts/generate-sitemap.js
+        
+    - name: Run URL Health Check
+      id: health-check
+      run: |
+        node scripts/url-health-check.js
+      continue-on-error: true
+      
+    - name: Upload error report if failures exist
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: url-health-report-${{ github.run_number }}
+        path: |
+          url-health-report.json
+          url-errors.csv
+        retention-days: 30
+        
+    - name: Create Issue on Failure
+      if: failure()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          
+          // Read error report
+          let errorReport = '';
+          try {
+            const report = JSON.parse(fs.readFileSync('url-health-report.json', 'utf8'));
+            errorReport = `
+          ## 🚨 URL Health Check Failed
+          
+          **Timestamp:** ${report.timestamp}
+          **Total URLs Checked:** ${report.totalUrls}
+          **Successful:** ${report.successful}
+          **Failed:** ${report.failed}
+          **Execution Time:** ${report.executionTime}ms
+          
+          ### Failed URLs:
+          ${report.errors.map(error => `- \`${error.url}\` - ${error.error}`).join('\n')}
+          
+          ### Action Required:
+          1. Check the failed URLs manually
+          2. Fix any broken routes or redirects
+          3. Update sitemap if necessary
+          4. Re-run the health check
+          
+          **Workflow Run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          `;
+          } catch (e) {
+            errorReport = `
+          ## 🚨 URL Health Check Failed
+          
+          The health check script encountered an error. Please check the workflow logs for details.
+          
+          **Workflow Run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          `;
+          }
+          
+          // Check if there's already an open issue
+          const issues = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            labels: ['url-health-check', 'automated']
+          });
+          
+          if (issues.data.length > 0) {
+            // Update existing issue
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issues.data[0].number,
+              body: errorReport
+            });
+          } else {
+            // Create new issue
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚨 URL Health Check Failed - ${new Date().toISOString().split('T')[0]}`,
+              body: errorReport,
+              labels: ['bug', 'url-health-check', 'automated', 'high-priority']
+            });
+          }
+          
+    - name: Close Issue on Success
+      if: success()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          // Close any open health check issues
+          const issues = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            labels: ['url-health-check', 'automated']
+          });
+          
+          for (const issue of issues.data) {
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              state: 'closed'
+            });
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: `✅ URL Health Check passed. All URLs are now healthy. Closing this issue.`
+            });
+          }
+          
+    - name: Notify on Success
+      if: success()
+      run: |
+        echo "✅ All URLs are healthy! No issues found."

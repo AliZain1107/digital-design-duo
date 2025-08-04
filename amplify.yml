@@ -1,0 +1,24 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "Installing dependencies..."
+        - npm ci
+    build:
+      commands:
+        - echo "Building React SPA with dynamic routing..."
+        - npm run build
+        - echo "SPA build completed successfully!"
+        - echo "Verifying _redirects file exists..."
+        - "ls -la dist/_redirects || echo 'WARNING: _redirects file not found'"
+        - echo "Verifying index.html exists..."
+        - "ls -la dist/index.html || echo 'ERROR: index.html not found'"
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .npm/**/*

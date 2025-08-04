@@ -1,0 +1,270 @@
+import React from "react";
+// import { Link } from "react-router-dom";
+import { useLanguage } from "../../lib/i18n";
+import { blogPosts } from "../../components/data/blogPosts";
+import type { BlogPost } from "../../components/data/blogPosts";
+
+const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => {
+  const { t, language } = useLanguage();
+
+  // Get the translated title for specific blog posts
+  const getTranslatedTitle = () => {
+    if (post.slug === "revolutionizing-architecture-engineering-construction-ai") {
+      return t.revolutionizingArchitectureTitle;
+    }
+    if (post.slug === "2025-interior-design-trends") {
+      return t.interiorTrends2025Title;
+    }
+    if (post.slug === "free-ai-interior-design-software") {
+      return t.freeAIDesignTitle;
+    }
+    if (post.slug === "real-estate-agents-ai-virtual-staging") {
+      return t.realEstateAgentsAIVirtualStagingTitle;
+    }
+    if (post.slug === "gen-z-instagram-worthy-interiors") {
+      return t.genZInstagramWorthyInteriorsTitle;
+    }
+
+    if (post.slug === "ultimate-guide-AI") {
+      return t.ultimateGuideAIInteriorDesignTitle;
+    }
+    if (post.slug === "AI-Bedroom") {
+      return t.eightStunningAIBedroomDesignsTitle;
+    }
+    if (post.slug === "AI-Interior") {
+      return t.expertTipsHomeInteriorsTitle;
+    }
+    if (post.slug === "6-viral-ai-room-design-prompts-create-dream-bedroom-styly") {
+      return t.viralAIRoomDesignPromptsTitle;
+    }
+    if (post.slug === "impact-ai-role-interior-designer") {
+      return t.impactAIInteriorDesignerTitle;
+    }
+    if (post.slug === "intersection-ai-virtual-reality-design") {
+      return t.aiVirtualRealityDesignTitle;
+    }
+    if (post.slug === "ai-accessible-design-inclusive-spaces") {
+      return t.aiAccessibleDesignTitle;
+    }
+    if (post.slug === "role-data-ai-powered-design") {
+      return t.dataAIPoweredDesignTitle;
+    }
+    if (post.slug === "modern-family-design-ai-functional-homes") {
+      return t.modernFamilyDesignTitle;
+    }
+    if (post.slug === "sustainable-design-ai-eco-friendly-spaces") {
+      return t.sustainableDesignAITitle;
+    }
+    if (post.slug === "ai-space-planning-optimization-small-apartments") {
+      return t.aiSpacePlanningSmallApartmentsTitle;
+    }
+    if (post.slug === "creating-biophilic-interior-designs-styly-ai") {
+      return t.biophilicDesignAITitle;
+    }
+    if (post.slug === "science-color-design-ai-perfect-palette") {
+      return t.scienceColorDesignTitle;
+    }
+    if (post.slug === "reducing-carbon-footprints-sustainable-landscapes-ai") {
+      return t.sustainableLandscapesAITitle;
+    }
+    if (post.slug === "ai-landscape-design-outdoor-spaces-styly") {
+      return t.aiLandscapeDesignTitle;
+    }
+    if (post.slug === "cultural-interior-design-ai-sensitive-spaces") {
+      return t.culturalDesignAITitle;
+    }
+    if (post.slug === "texture-importance-interior-design-styly") {
+      return t.textureImportanceDesignTitle;
+    }
+    if (post.slug === "top-5-challenges-interior-design-ai-solutions") {
+      return t.top5ChallengesInteriorDesignTitle;
+    }
+    if (post.slug === "ai-future-commercial-interior-design") {
+      return t.commercialInteriorDesignAITitle;
+    }
+    if (post.slug === "creating-outdoor-spaces-ai-design-guide") {
+      return t.creatingOutdoorSpacesAITitle;
+    }
+    if (post.slug === "cost-effectiveness-ai-design-styly-savings") {
+      return t.costEffectivenessAIDesignTitle;
+    }
+    if (post.slug === "transforming-small-living-spaces-design-solutions") {
+      return t.transformingSmallLivingSpacesTitle;
+    }
+    if (post.slug === "designing-future-workspace-ai-powered-office-interiors") {
+      return t.futureWorkspaceAIOfficeInteriorsTitle;
+    }
+    if (post.slug === "futuristic-interior-design-styles-styly-ai") {
+      return t.futuristicInteriorDesignStylesTitle;
+    }
+    if (post.slug === "room-planner-ai-sarah-johnson-styly-evaluations") {
+      return t.roomPlannerAISarahJohnsonEvaluationsTitle;
+    }
+    if (post.slug === "designing-ai-interior-staging-aws-styly") {
+      return t.newBlog2Title;
+    }
+    if (post.slug === "ai-driven-customization-future-interior-design") {
+      return t.aiDrivenCustomizationFutureTitle;
+    }
+    if (post.slug === "residential-interior-design-guide-planning-spaces") {
+      return t.residentialInteriorDesignGuideTitle;
+    }
+    if (post.slug === "innovative-interior-stair-railing-ideas-styly-ai") {
+      return t.innovativeStairRailingIdeasTitle;
+    }
+    if (post.slug === "design-living-room-like-pro-styly") {
+      return t.designLivingRoomLikeProTitle;
+    }
+    if (post.slug === "how-generative-ai-revolutionizing-interior-design") {
+      return t.generativeAIRevolutionizingDesignTitle;
+    }
+    if (post.slug === "ai-assistant-interior-design-chatgpt-prompts") {
+      return t.aiAssistantInteriorDesignPromptsTitle;
+    }
+    if (post.slug === "styly-viva-technology-future-ai-design") {
+      return t.stylyVivaTechPartnershipTitle;
+    }
+    if (post.slug === "can-chatgpt-design-your-home-ai-interior-design") {
+      return t.chatGPTInteriorDesignTitle;
+    }
+    if (post.slug === "unlocking-power-ai-interior-design-latest-innovations") {
+      return t.unlockingPowerAIInteriorDesignTitle;
+    }
+    // New migrated blog posts
+    if (post.slug === "the-science-of-color-in-design-how-ai-helps-you-choose-the-perfect-palette") {
+      return language === "fr" ? "La Science de la Couleur en Design : Comment l'IA Vous Aide à Choisir la Palette Parfaite" : "The Science of Color in Design: How AI Helps You Choose the Perfect Palette";
+    }
+    if (post.slug === "leveraging-ai-to-optimize-space-planning-in-small-apartments") {
+      return language === "fr" ? "Exploiter l'IA pour Optimiser la Planification d'Espace dans les Petits Appartements" : "Leveraging AI to Optimize Space Planning in Small Apartments";
+    }
+    if (post.slug === "need-luxury-bathroom-on-budget-here-is-how") {
+      return language === "fr" ? "Besoin d'une Salle de Bain Luxueuse avec un Budget ? Voici Comment !" : "Need Luxury Bathroom on a Budget? Here's How!";
+    }
+    if (post.slug === "how-ai-powered-image-generation-can-inspire-your-interior-design-in-2024") {
+      return language === "fr" ? "Comment la Génération d'Images IA Peut Inspirer Votre Design Intérieur en 2024" : "How AI-Powered Image Generation Can Inspire Your Interior Design in 2024";
+    }
+    if (post.slug === "how-dall-e-midjourney-and-styly-are-revolutionizing-interior-design") {
+      return language === "fr" ? "Comment DALL-E, Midjourney et Styly AI Révolutionnent le Design d'Intérieur" : "How DALL-E, Midjourney, and Styly AI are Revolutionizing Interior Design";
+    }
+    if (post.slug === "unlock-the-power-of-photoshop-generative-ai-for-effortless-interior-design") {
+      return language === "fr" ? "Débloquer la Puissance de l'IA Générative Photoshop pour le Design d'Intérieur Sans Effort" : "Unlock the Power of Photoshop's Generative AI for Effortless Interior Design";
+    }
+    if (post.slug === "ai-technology-to-elevate-your-real-estate-strategy") {
+      return language === "fr" ? "Technologie IA pour Élever Votre Stratégie Immobilière" : "AI Technology to Elevate Your Real Estate Strategy";
+    }
+    // For other blog posts, use the original title
+    return post.title;
+  };
+
+  // Get the appropriate slug based on language
+  const getSlug = () => {
+    if (language === "fr" && post.slugFr) {
+      return post.slugFr;
+    }
+    return post.slug;
+  };
+
+  // Generate language-specific URL
+  const getBlogUrl = () => {
+    const slug = getSlug();
+    if (language === "fr") {
+      return `/blog/${slug}`;
+    } else {
+      return `/en/blog/${slug}`;
+    }
+  };
+
+  return (
+    <a
+      href={getBlogUrl()}
+      className="bg-white shadow-sm rounded-[16px] w-full overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-300"
+    >
+      {/* Smaller, responsive image container */}
+      <div className="h-[160px] sm:h-[180px] w-full bg-white flex items-center justify-center p-3">
+        <img
+          src={post.image}
+          alt={language === 'fr' && post.titleFr ? post.titleFr : getTranslatedTitle()}
+          className="w-full h-[140px] sm:h-[160px] object-cover rounded-[8px]"
+          />
+      </div>
+
+      {/* Text content */}
+      <div className="flex flex-col px-3 py-3">
+        <h3 className="text-[18px] sm:text-[20px] font-bold text-[#333] leading-[1.4] line-clamp-2">
+          {(() => {
+            const title = language === 'fr' && post.titleFr ? post.titleFr : getTranslatedTitle();
+            // Replace 'Styly' or 'Styly.io' (case-insensitive) with STYLY in Davetica font
+            const parts = title.split(/(Styly\.io|Styly|styly\.io|styly)/gi);
+            return parts.map((part, i) =>
+              /^(Styly\.io|Styly)$/i.test(part)
+                ? <span key={i} className="font-davetica-wide">STYLY</span>
+                : part
+            );
+          })()}
+        </h3>
+        <p className="text-[10px] sm:text-[11px] text-[#999] tracking-wide mt-2">{post.date}</p>
+      </div>
+    </a>
+  );
+};
+
+interface BlogSectionProps {
+  maxPosts?: number; // Optional prop to limit number of posts shown
+  variant?: 'default' | 'blog-page'; // New prop to control styling variant
+}
+
+const BlogSection: React.FC<BlogSectionProps> = ({ maxPosts, variant = 'default' }) => {
+  const { t, language } = useLanguage();
+
+  // Function to parse date string and convert to Date object for sorting
+  const parseDate = (dateString: string): Date => {
+    // Handle different date formats
+    const date = new Date(dateString);
+    return date;
+  };
+
+  // Sort blog posts by date (most recent first) and optionally limit the number
+  const sortedBlogPosts = [...blogPosts]
+    .sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());
+
+  const displayedBlogPosts = maxPosts ? sortedBlogPosts.slice(0, maxPosts) : sortedBlogPosts;
+
+  return (
+    <section className="relative pt-32 pb-0 bg-white overflow-hidden -mt-2" key={`blog-section-${language}`}> 
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Premium Header - match AgencyShowcase */}
+        <div className="text-center mb-16">
+          <h2 className={`mb-4 text-center ${
+            variant === 'blog-page' 
+              ? 'text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900' // Styly Pro hero style
+              : 'text-4xl font-baloo font-extrabold tracking-tight leading-tight text-gray-900 ' // Default style
+          }`}>
+            {variant === 'blog-page' ? (
+              // Blog page variant - no gradient animation, solid text
+              <span className="text-gray-900">
+                {t.blogTrends}
+              </span>
+            ) : (
+              // Default variant - with gradient animation
+              <span className="bg-gradient-to-r from-[#593286] via-purple-400 to-[#FA6F40] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-x">
+                {t.blogTrends}
+              </span>
+            )}
+          </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-baloo">
+            {t.blogDescription}
+          </p>
+        </div>
+        <div className="flex items-center justify-center mt-0 mb-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6 w-full max-w-6xl px-4">
+            {displayedBlogPosts.map((post) => (
+              <BlogPostCard key={post.id} post={post} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BlogSection;

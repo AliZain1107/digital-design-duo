@@ -1,0 +1,44 @@
+# robots.txt for styly.fr - Updated to fix 404 blog post issues
+
+# Sitemap
+Sitemap: https://www.styly.fr/sitemap.xml
+
+# General settings for all bots
+User-agent: *
+Crawl-delay: 2
+
+# EXPLICITLY ALLOW French content (default language)
+Allow: /
+Allow: /blog/
+Allow: /blog/*
+
+# Disallowed sensitive and technical directories
+Disallow: /wp-admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.env
+Disallow: /node_modules/
+Disallow: /private/
+Disallow: /_next/
+
+# Disallow English routes (redirect to external site)
+Disallow: /en/
+
+# AI bots explicitly allowed for visibility in AI search results
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
