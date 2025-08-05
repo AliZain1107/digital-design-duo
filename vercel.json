@@ -1,15 +1,28 @@
 {
   "version": 2,
-
-
- "builds": [
-    { "src": "api/[[...slug]].js", "use": "@vercel/node" },
-    { "src": "dist/client/**", "use": "@vercel/static" }
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "zeroConfig": true
+      }
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/api/[[...slug]].js" }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+    {
+      "src": "^/assets/(.*)",
+      "headers": { "cache-control": "public, max-age=31536000, immutable" },
+      "dest": "/assets/$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
