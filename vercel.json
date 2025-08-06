@@ -4,6 +4,10 @@
     {
       "src": "api/[[...slug]].js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "dist/client/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -11,10 +15,5 @@
       "src": "/(.*)",
       "dest": "api/[[...slug]].js"
     }
-  ],
-  "functions": {
-    "api/[[...slug]].js": {
-      "includeFiles": "dist/**"
-    }
-  }
+  ]
 }
