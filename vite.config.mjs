@@ -1,6 +1,7 @@
+// vite.config.mjs
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { ssr } from 'vite-plugin-ssr/plugin';
+import vike from 'vike/plugin';
 import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
@@ -15,24 +16,11 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    ssr({
-      prerender: false // Disable prerendering for SSR
-    }),
+    vike(),
   ],
   build: {
     outDir: 'dist',
     manifest: true,
-    rollupOptions: {
-      output: {
-        manualChunks: undefined
-      }
-    }
-  },
-  ssr: {
-    noExternal: [
-      '@radix-ui/react-slot',
-      'lucide-react',
-      // Add other problematic dependencies here
-    ]
+    ssrManifest: true
   }
 });
