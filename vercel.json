@@ -8,14 +8,6 @@
   ],
   "routes": [
     {
-      "src": "/_static/(.*)",
-      "dest": "/dist/client/_static/$1"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/dist/client/assets/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "api/[[...slug]].js"
     }
