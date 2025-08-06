@@ -36,3 +36,4 @@ LIQUID_GLASS_DESIGN_PRINCIPLES.md
 liquid-glass-demo.html
 interior-staging-hero_black_white/
 interior-staging-hero_orange_creative/
+.env*.local

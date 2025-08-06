@@ -1,28 +1,20 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "zeroConfig": true
-      }
+      "src": "api/[[...slug]].js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "^/assets/(.*)",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" },
-      "dest": "/assets/$1"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "api/[[...slug]].js"
     }
-  ]
+  ],
+  "functions": {
+    "api/[[...slug]].js": {
+      "includeFiles": "dist/**"
+    }
+  }
 }
